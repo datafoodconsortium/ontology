@@ -31,6 +31,6 @@ To finish, on the "distributor side" you will propose on your shop a product whi
 This is not exhaustive but we hope it helps the understanding !
 
 ## The machine readable business ontology
-This is tha owl file.
+This is the owl file.
 
 Again, consider all that as a work in progress. We are happy to receive feedback and iterate to try to see which cases are not covered by the ontology we came up with so that we can evolve it !
