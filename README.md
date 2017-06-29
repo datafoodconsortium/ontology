@@ -7,12 +7,12 @@ For information we are working on a prototype to show how that's gonna work in r
 
 So you'll find in this repo 3 files :
 
-## - The business concepts definitions
+## The business concepts definitions
 We have worked together on what are the common business concepts that we all share ? What is the meta model for our business? A way to describe it that encompasses all our specificities ?
 It is structured around 5 categories, what, who, how, where, when.
 
-## - The semantic model
-It shows how all those concepts organize together operationnay in our daily business.
+## The semantic model
+It shows how all those concepts organize together operationnaly in our daily business.
 Let's comment it a bit to help you understand :
 
 - the real product (physical product, tangible product) is the product you can touch with your hand, eat, transport. They correspond to certain batches (for example the day the eggs were picked), and they can be stored, either in bulked, or as products already packaged.
@@ -30,7 +30,7 @@ To finish, on the "distributor side" you will propose on your shop a product whi
 
 This is not exhaustive but we hope it helps the understanding !
 
-## - The maching readable business ontology
+## The machine readable business ontology
 This is tha owl file.
 
 Again, consider all that as a work in progress. We are happy to receive feedback and iterate to try to see which cases are not covered by the ontology we came up with so that we can evolve it !
