@@ -42,7 +42,9 @@ This is not exhaustive but we hope it helps the understanding !
 We structured concepts 5 categories, what, who, how, where, when. Definitions are explained here. We need to intergate those definitions in Protégé so that they appears in the machine readable file.
 
 ### The concepts properties
-Some properties need more than a label to describe them. We have tried to list a first set of properties that we were using as platforms. This is not exhaustive but we are trying to identify the minimum properties we need for the useful info to flow between platforms, so we may add more when neede. If you need more tell us! We tried also to identify the accurate cardinalities (is this info compulsory? Can we have only one, or more than one?)
+- Some properties need more than a label to describe them. We have tried to list a first set of properties that we were using as platforms. This is not exhaustive but we are trying to identify the minimum properties we need for the useful info to flow between platforms, so we may add more when neede. If you need more tell us! We tried also to identify the accurate cardinalities (is this info compulsory? Can we have only one, or more than one?)
+- Some properties or rules sometimes don’t need to be in the model but will be more “UI” issues.
+For instance, a certification always apply to a product. But a platform might want to offer their users the possibility to set up a property to a producer, so that all products from that producer inherit properties. This doesn’t mean that a producer should have the property associated in the business model. Conceptually, a certification is given for a product, the product is certified, not the producer.
 
 ### The business rules
 Some concepts are inferred from one another through some deduction / calculation logic. For instance quantities sold on a sale session is the sum of quatities in each order. We have started to list some business rules that we will need to program later on. *The business rules are not yet encoded.*
