@@ -12,13 +12,10 @@
   xml:base="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary">
   <owl:Ontology rdf:about=""/>
   <owl:Class rdf:ID="Certification">
+    <rdfs:label xml:lang="fr">certification</rdfs:label>
+    <rdfs:label xml:lang="en">certification</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Certification"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
+      <owl:Class rdf:ID="DFC_ProductGlossary_Facet"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -29,29 +26,17 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="DFC_ProductGlossary_Facet"/>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Certification"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="specializes"/>
+        </owl:onProperty>
+      </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#DFC_ProductGlossary_Facet">
-    <rdfs:label xml:lang="en">Subject of the facets thesaurus</rdfs:label>
     <rdfs:label xml:lang="fr">Sujet du Thésaurus à Facettes</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Subject of the facets thesaurus</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
@@ -61,14 +46,12 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:ID="PartOrigin">
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#specializes"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#PartOrigin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -76,125 +59,174 @@
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#generalizes"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PartOrigin">
+    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
         <owl:allValuesFrom rdf:resource="#PartOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#generalizes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#PartOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#specializes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">part of natural "living" origin concerned</rdfs:label>
+    <rdfs:label xml:lang="fr">partie de la source "vivante" d'origine concernée</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="TerritorialOrigin">
+    <rdfs:label xml:lang="en">territorial origin</rdfs:label>
+    <rdfs:label xml:lang="fr">origine territoriale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#TerritorialOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#generalizes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#TerritorialOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#specializes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="GlobalGenericOrigin">
+    <rdfs:label xml:lang="en">Global generic origin</rdfs:label>
+    <rdfs:label xml:lang="fr">Origines génériques globales</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#GlobalGenericOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#specializes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#GlobalGenericOrigin"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#generalizes"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:label xml:lang="fr">partie de la source "vivante" d'origine concernée</rdfs:label>
-    <rdfs:label xml:lang="en">part of natural "living" origin concerned</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="DFC_ProductGlossary_Type">
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#specializes"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#generalizes"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#specializes"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   </owl:Class>
   <owl:Class rdf:ID="Unit">
-    <rdfs:label xml:lang="fr">unité</rdfs:label>
     <rdfs:label xml:lang="en">unit</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="DFC_ProductGlossary_Measure"/>
-    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">unité</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="measures"/>
         </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="Dimension"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#measures"/>
+        </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Dimension"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#measures"/>
-        </owl:onProperty>
-      </owl:Restriction>
+      <owl:Class rdf:ID="DFC_ProductGlossary_Measure"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="NatureOrigin">
+    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#generalizes"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:label xml:lang="fr">source "vivante" d'origine</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#specializes"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">natural "living" origin</rdfs:label>
+    <rdfs:label xml:lang="fr">source "vivante" d'origine</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#Dimension">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="#DFC_ProductGlossary_Measure"/>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Unit"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="measuredBy"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Unit"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="fr">dimension</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DFC_ProductGlossary_Measure"/>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">dimension</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="GeographicalOrigin">
-    <rdfs:label xml:lang="fr">origine géographique</rdfs:label>
-    <rdfs:label xml:lang="en">geographical origin</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#GeographicalOrigin"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#GeographicalOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
+    <rdfs:label xml:lang="fr">dimension</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="ProductType">
+    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Type"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#generalizes"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#ProductType"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -203,46 +235,37 @@
         <owl:allValuesFrom rdf:resource="#ProductType"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#ProductType"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Type"/>
-    <rdfs:label xml:lang="fr">type de produit (classification générale)</rdfs:label>
     <rdfs:label xml:lang="en">product type (general taxonomy)</rdfs:label>
+    <rdfs:label xml:lang="fr">type de produit (classification générale)</rdfs:label>
   </owl:Class>
   <owl:Class rdf:ID="Process">
-    <rdfs:label xml:lang="fr">procédé appliqué</rdfs:label>
     <rdfs:label xml:lang="en">process applied</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
+    <rdfs:label xml:lang="fr">procédé appliqué</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Process"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Process"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#specializes"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Process"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Process"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#generalizes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
   </owl:Class>
   <owl:Class rdf:about="#DFC_ProductGlossary_Measure">
-    <rdfs:label xml:lang="en">unit of measures thesaurus</rdfs:label>
     <rdfs:label xml:lang="fr">thesaurus des unités de mesure</rdfs:label>
+    <rdfs:label xml:lang="en">unit of measures thesaurus</rdfs:label>
   </owl:Class>
   <owl:ObjectProperty rdf:about="#measures">
-    <rdfs:label xml:lang="en">measures</rdfs:label>
     <rdfs:label xml:lang="fr">mesure</rdfs:label>
+    <rdfs:label xml:lang="en">measures</rdfs:label>
     <rdfs:subPropertyOf>
       <owl:ObjectProperty rdf:ID="DFC_ProductGlossary_ObjectProperty"/>
     </rdfs:subPropertyOf>
@@ -252,8 +275,8 @@
     <rdfs:domain rdf:resource="#Unit"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#generalizes">
-    <rdfs:label xml:lang="en">generalizes</rdfs:label>
     <rdfs:label xml:lang="fr">généralise</rdfs:label>
+    <rdfs:label xml:lang="en">generalizes</rdfs:label>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#specializes"/>
     </owl:inverseOf>
@@ -264,27 +287,27 @@
     <rdfs:domain rdf:resource="#DFC_ProductGlossary_Facet"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_ProductGlossary_ObjectProperty"/>
     <owl:inverseOf rdf:resource="#generalizes"/>
-    <rdfs:label xml:lang="en">specializes</rdfs:label>
     <rdfs:label xml:lang="fr">spécialise</rdfs:label>
+    <rdfs:label xml:lang="en">specializes</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#measuredBy">
     <rdfs:domain rdf:resource="#Dimension"/>
-    <rdfs:label xml:lang="en">measured by</rdfs:label>
     <rdfs:label xml:lang="fr">mesuré en</rdfs:label>
+    <rdfs:label xml:lang="en">measured by</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#DFC_ProductGlossary_ObjectProperty"/>
     <owl:inverseOf rdf:resource="#measures"/>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="en">description</rdfs:label>
-    <rdfs:label xml:lang="fr">description</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:ID="quantity">
-    <rdfs:label xml:lang="en">quantity</rdfs:label>
+  <owl:DatatypeProperty rdf:ID="quantity">
     <rdfs:label xml:lang="fr">quantité</rdfs:label>
+    <rdfs:label xml:lang="en">quantity</rdfs:label>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="description">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label xml:lang="fr">description</rdfs:label>
+    <rdfs:label xml:lang="en">description</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:FunctionalProperty>
   <ProductType rdf:ID="DFC_ProductType_2">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -294,14 +317,11 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >N/A (Unknow)</rdfs:label>
   </Process>
+  <GlobalGenericOrigin rdf:ID="MerNoire"/>
   <NatureOrigin rdf:ID="NatureOrigin_8">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >N/A (Unknow)</rdfs:label>
   </NatureOrigin>
-  <GeographicalOrigin rdf:ID="GeographicalOrigin_12">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Unknow)</rdfs:label>
-  </GeographicalOrigin>
   <PartOrigin rdf:ID="PartOrigin_1">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >N/A (Multi-origin)</rdfs:label>
@@ -314,6 +334,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >N/A (Multi-origin)</rdfs:label>
   </NatureOrigin>
+  <GlobalGenericOrigin rdf:ID="AtlanticNordEst"/>
   <PartOrigin rdf:ID="PartOrigin_2">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >N/A (Unknow)</rdfs:label>
@@ -329,17 +350,17 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Products pack</rdfs:label>
     <generalizes>
-      <ProductType rdf:ID="DFC_Specie_7">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Soup</rdfs:label>
-        <specializes rdf:resource="#DFC_ProductType_3"/>
-      </ProductType>
-    </generalizes>
-    <generalizes>
       <ProductType rdf:ID="DFC_Specie_6">
         <specializes rdf:resource="#DFC_ProductType_3"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Mixed salad</rdfs:label>
+      </ProductType>
+    </generalizes>
+    <generalizes>
+      <ProductType rdf:ID="DFC_Specie_7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Soup</rdfs:label>
+        <specializes rdf:resource="#DFC_ProductType_3"/>
       </ProductType>
     </generalizes>
   </ProductType>
@@ -347,17 +368,17 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Assemble</rdfs:label>
     <generalizes>
-      <Process rdf:ID="Process_5">
-        <specializes rdf:resource="#Process_3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Mix</rdfs:label>
-      </Process>
-    </generalizes>
-    <generalizes>
       <Process rdf:ID="Process_4">
         <specializes rdf:resource="#Process_3"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Aggregate</rdfs:label>
+      </Process>
+    </generalizes>
+    <generalizes>
+      <Process rdf:ID="Process_5">
+        <specializes rdf:resource="#Process_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Mix</rdfs:label>
       </Process>
     </generalizes>
   </Process>
@@ -365,28 +386,21 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >number</rdfs:label>
     <measuredBy>
-      <Unit rdf:ID="Unit_8">
-        <measures rdf:resource="#Dimension_7"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >dozen</rdfs:label>
-      </Unit>
-    </measuredBy>
-    <measuredBy>
       <Unit rdf:ID="Unit_12">
         <measures rdf:resource="#Dimension_7"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >unit</rdfs:label>
       </Unit>
     </measuredBy>
-  </Dimension>
-  <Dimension rdf:ID="Dimension_5">
     <measuredBy>
-      <Unit rdf:ID="Unit_10">
+      <Unit rdf:ID="Unit_8">
+        <measures rdf:resource="#Dimension_7"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >liter</rdfs:label>
-        <measures rdf:resource="#Dimension_5"/>
+        >dozen</rdfs:label>
       </Unit>
     </measuredBy>
+  </Dimension>
+  <Dimension rdf:ID="Dimension_5">
     <measuredBy>
       <Unit rdf:ID="Unit_13">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -394,41 +408,41 @@
         <measures rdf:resource="#Dimension_5"/>
       </Unit>
     </measuredBy>
+    <measuredBy>
+      <Unit rdf:ID="Unit_10">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >liter</rdfs:label>
+        <measures rdf:resource="#Dimension_5"/>
+      </Unit>
+    </measuredBy>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >volume</rdfs:label>
   </Dimension>
-  <GeographicalOrigin rdf:ID="GeographicalOrigin_15">
-    <specializes>
-      <GeographicalOrigin rdf:ID="GeographicalOrigin_13">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Europe</rdfs:label>
-        <generalizes>
-          <GeographicalOrigin rdf:ID="GeographicalOrigin_14">
-            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Greece</rdfs:label>
-            <specializes rdf:resource="#GeographicalOrigin_13"/>
-          </GeographicalOrigin>
-        </generalizes>
-        <generalizes rdf:resource="#GeographicalOrigin_15"/>
-        <generalizes>
-          <GeographicalOrigin rdf:ID="GeographicalOrigin_1">
-            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-            >Italy</rdfs:label>
-            <specializes rdf:resource="#GeographicalOrigin_13"/>
-          </GeographicalOrigin>
-        </generalizes>
-      </GeographicalOrigin>
-    </specializes>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >France</rdfs:label>
+  <TerritorialOrigin rdf:ID="Europe">
     <generalizes>
-      <GeographicalOrigin rdf:ID="GeographicalOrigin_16">
-        <specializes rdf:resource="#GeographicalOrigin_15"/>
+      <TerritorialOrigin rdf:ID="France">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Brittany</rdfs:label>
-      </GeographicalOrigin>
+        >Italy</rdfs:label>
+        <specializes rdf:resource="#Europe"/>
+      </TerritorialOrigin>
     </generalizes>
-  </GeographicalOrigin>
+    <generalizes>
+      <TerritorialOrigin rdf:ID="Germany">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >France</rdfs:label>
+        <specializes rdf:resource="#Europe"/>
+      </TerritorialOrigin>
+    </generalizes>
+    <generalizes>
+      <TerritorialOrigin rdf:ID="Italy">
+        <specializes rdf:resource="#Europe"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Greece</rdfs:label>
+      </TerritorialOrigin>
+    </generalizes>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Europe</rdfs:label>
+  </TerritorialOrigin>
   <NatureOrigin rdf:ID="NatureOrigin_10">
     <specializes>
       <NatureOrigin rdf:ID="NatureOrigin_9">
@@ -449,17 +463,17 @@
   </NatureOrigin>
   <Process rdf:ID="Process_6">
     <generalizes>
-      <Process rdf:ID="Process_8">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Cut</rdfs:label>
-        <specializes rdf:resource="#Process_6"/>
-      </Process>
-    </generalizes>
-    <generalizes>
       <Process rdf:ID="Process_7">
         <specializes rdf:resource="#Process_6"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Picked</rdfs:label>
+      </Process>
+    </generalizes>
+    <generalizes>
+      <Process rdf:ID="Process_8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Cut</rdfs:label>
+        <specializes rdf:resource="#Process_6"/>
       </Process>
     </generalizes>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -469,17 +483,17 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >weight</rdfs:label>
     <measuredBy>
-      <Unit rdf:ID="Unit_9">
-        <measures rdf:resource="#Dimension_6"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >kilogram</rdfs:label>
-      </Unit>
-    </measuredBy>
-    <measuredBy>
       <Unit rdf:ID="Unit_11">
         <measures rdf:resource="#Dimension_6"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >gram</rdfs:label>
+      </Unit>
+    </measuredBy>
+    <measuredBy>
+      <Unit rdf:ID="Unit_9">
+        <measures rdf:resource="#Dimension_6"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >kilogram</rdfs:label>
       </Unit>
     </measuredBy>
   </Dimension>

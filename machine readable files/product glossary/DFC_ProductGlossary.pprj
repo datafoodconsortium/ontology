@@ -1,4 +1,4 @@
-; Mon May 28 10:29:14 CEST 2018
+; Tue Mar 26 19:17:08 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,14 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[DFC_ProductGlossary_ProjectKB_Class31]
-		[DFC_ProductGlossary_ProjectKB_Class32]
-		[DFC_ProductGlossary_ProjectKB_Class33]
-		[DFC_ProductGlossary_ProjectKB_Class34]
-		[DFC_ProductGlossary_ProjectKB_Class35]
-		[DFC_ProductGlossary_ProjectKB_Class36]
-		[DFC_ProductGlossary_ProjectKB_Class37]
-		[DFC_ProductGlossary_ProjectKB_Class38]))
+		[DFC_ProductGlossary_ProjectKB_Class60]
+		[DFC_ProductGlossary_ProjectKB_Class61]
+		[DFC_ProductGlossary_ProjectKB_Class62]
+		[DFC_ProductGlossary_ProjectKB_Class63]
+		[DFC_ProductGlossary_ProjectKB_Class64]))
 
 ([CLSES_TAB] of  Widget
 
@@ -22,918 +19,276 @@
 	(property_list [Instance_47])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
-([DFC_Ontology_ProjectKB_Class1] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class0] of  Map
+)
+
+([DFC_ProductGlossary_ProjectKB_Class1] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class2])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class2])
 	(widget_class_name "se.liu.ida.JessTab.JessTab"))
 
-([DFC_Ontology_ProjectKB_Class10] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class10] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class11] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class11] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class12])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class12])
 	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
-([DFC_Ontology_ProjectKB_Class12] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class12] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class13] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class13] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class14])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class14])
 	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
-([DFC_Ontology_ProjectKB_Class14] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class14] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class15] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class15] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class16])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.protege2yed.swing.SEAMLESS_Protege2yEdTab"))
-
-([DFC_Ontology_ProjectKB_Class16] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class17] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class18])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class16])
 	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
 
-([DFC_Ontology_ProjectKB_Class18] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class16] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class19] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class17] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class20])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([DFC_Ontology_ProjectKB_Class2] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class20] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class21] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class22])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class18])
 	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
-([DFC_Ontology_ProjectKB_Class22] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class18] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class23] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class19] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class24])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class20])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
+
+([DFC_ProductGlossary_ProjectKB_Class2] of  Property_List
+)
+
+([DFC_ProductGlossary_ProjectKB_Class20] of  Property_List
+)
+
+([DFC_ProductGlossary_ProjectKB_Class21] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class22])
 	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
 
-([DFC_Ontology_ProjectKB_Class24] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class22] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class25] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class23] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class26])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class24])
 	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
 
-([DFC_Ontology_ProjectKB_Class26] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class24] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class27] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class25] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class28])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class26])
 	(widget_class_name "TGViztab.TGVizTab"))
 
-([DFC_Ontology_ProjectKB_Class28] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class26] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class29] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class27] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class30])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class28])
 	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
 
-([DFC_Ontology_ProjectKB_Class3] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class4])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
-
-([DFC_Ontology_ProjectKB_Class30] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class28] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class31] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class29] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class32])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class30])
 	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
-([DFC_Ontology_ProjectKB_Class32] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class33] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class3] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class34])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+	(property_list [DFC_ProductGlossary_ProjectKB_Class4])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
 
-([DFC_Ontology_ProjectKB_Class34] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class30] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class35] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class31] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class36])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class32])
 	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
 
-([DFC_Ontology_ProjectKB_Class36] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class32] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class37] of  Widget
-
-	(is_hidden FALSE)
-	(property_list [DFC_Ontology_ProjectKB_Class38])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.SEAMLESSPlugin.SEAMLESS_Tab"))
-
-([DFC_Ontology_ProjectKB_Class38] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class39] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class33] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class40])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class34])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
+
+([DFC_ProductGlossary_ProjectKB_Class34] of  Property_List
+)
+
+([DFC_ProductGlossary_ProjectKB_Class35] of  Widget
+
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class36])
 	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
 
-([DFC_Ontology_ProjectKB_Class4] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class36] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class40] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class41] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class37] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class42])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class38])
 	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
 
-([DFC_Ontology_ProjectKB_Class42] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class38] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class43] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class39] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class44])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class40])
 	(widget_class_name "script.ProtegeScriptTab"))
 
-([DFC_Ontology_ProjectKB_Class44] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class4] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class45] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class40] of  Property_List
+)
+
+([DFC_ProductGlossary_ProjectKB_Class41] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class46])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class42])
 	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
 
-([DFC_Ontology_ProjectKB_Class46] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class42] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class47] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class43] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class48])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class44])
 	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
 
-([DFC_Ontology_ProjectKB_Class48] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class44] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class49] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class45] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class50])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.exportProtege2Excel.SEAMLESS_Protege2ExcelTab"))
-
-([DFC_Ontology_ProjectKB_Class5] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class6])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([DFC_Ontology_ProjectKB_Class50] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class51] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class52])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class46])
 	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
 
-([DFC_Ontology_ProjectKB_Class52] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class46] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class53] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class47] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class54])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class48])
 	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
 
-([DFC_Ontology_ProjectKB_Class54] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class48] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class55] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class49] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class56])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class50])
 	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
 
-([DFC_Ontology_ProjectKB_Class56] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class57] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class5] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class58])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([DFC_Ontology_ProjectKB_Class58] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class59] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class60])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([DFC_Ontology_ProjectKB_Class6] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class60] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class7] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class8])
-	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
-
-([DFC_Ontology_ProjectKB_Class8] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class9] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class10])
+	(property_list [DFC_ProductGlossary_ProjectKB_Class6])
 	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
-([DFC_ProductGlossary_ProjectKB_Class100] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Facet")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class103])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10289] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Dimension")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10446])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class103] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class104]
-		[DFC_ProductGlossary_ProjectKB_Class107]
-		[DFC_ProductGlossary_ProjectKB_Class110]
-		[DFC_ProductGlossary_ProjectKB_Class113]
-		[DFC_ProductGlossary_ProjectKB_Class115]
-		[DFC_ProductGlossary_ProjectKB_Class117]
-		[DFC_ProductGlossary_ProjectKB_Class119]
-		[DFC_ProductGlossary_ProjectKB_Class121]
-		[DFC_ProductGlossary_ProjectKB_Class123]
-		[DFC_ProductGlossary_ProjectKB_Class125]))
-
-([DFC_ProductGlossary_ProjectKB_Class104] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class105])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10422] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Measure")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10425])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10425] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10426]
-		[DFC_ProductGlossary_ProjectKB_Class10429]
-		[DFC_ProductGlossary_ProjectKB_Class10432]
-		[DFC_ProductGlossary_ProjectKB_Class10435]
-		[DFC_ProductGlossary_ProjectKB_Class10437]
-		[DFC_ProductGlossary_ProjectKB_Class10439]
-		[DFC_ProductGlossary_ProjectKB_Class10441]
-		[DFC_ProductGlossary_ProjectKB_Class10443]))
-
-([DFC_ProductGlossary_ProjectKB_Class10426] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10427])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10427] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10428]))
-
-([DFC_ProductGlossary_ProjectKB_Class10428] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10429] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10430]
-		[DFC_ProductGlossary_ProjectKB_Class10431]))
-
-([DFC_ProductGlossary_ProjectKB_Class10430] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10431] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10432] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10433])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10433] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10434]))
-
-([DFC_ProductGlossary_ProjectKB_Class10434] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10435] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10436]))
-
-([DFC_ProductGlossary_ProjectKB_Class10436] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class50] of  Property_List
 )
 
-([DFC_ProductGlossary_ProjectKB_Class10437] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class51] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10438]))
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class52])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
 
-([DFC_ProductGlossary_ProjectKB_Class10438] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class52] of  Property_List
 )
 
-([DFC_ProductGlossary_ProjectKB_Class10439] of  Widget
+([DFC_ProductGlossary_ProjectKB_Class53] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10440]))
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class54])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
 
-([DFC_ProductGlossary_ProjectKB_Class10440] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class54] of  Property_List
 )
 
-([DFC_ProductGlossary_ProjectKB_Class10441] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10442]))
-
-([DFC_ProductGlossary_ProjectKB_Class10442] of  Property_List
+([DFC_ProductGlossary_ProjectKB_Class6] of  Property_List
 )
 
-([DFC_ProductGlossary_ProjectKB_Class10443] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10444])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10444] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10445]))
-
-([DFC_ProductGlossary_ProjectKB_Class10445] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10446] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10447]
-		[DFC_ProductGlossary_ProjectKB_Class10450]
-		[DFC_ProductGlossary_ProjectKB_Class10453]
-		[DFC_ProductGlossary_ProjectKB_Class10456]
-		[DFC_ProductGlossary_ProjectKB_Class10458]
-		[DFC_ProductGlossary_ProjectKB_Class10460]
-		[DFC_ProductGlossary_ProjectKB_Class10462]
-		[DFC_ProductGlossary_ProjectKB_Class10464]
-		[DFC_ProductGlossary_ProjectKB_Class10467]))
-
-([DFC_ProductGlossary_ProjectKB_Class10447] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10448])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10448] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10449]))
-
-([DFC_ProductGlossary_ProjectKB_Class10449] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10450] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10451]
-		[DFC_ProductGlossary_ProjectKB_Class10452]))
-
-([DFC_ProductGlossary_ProjectKB_Class10451] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10452] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10453] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10454])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10454] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10455]))
-
-([DFC_ProductGlossary_ProjectKB_Class10455] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10456] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10457]))
-
-([DFC_ProductGlossary_ProjectKB_Class10457] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10458] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10459]))
-
-([DFC_ProductGlossary_ProjectKB_Class10459] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10460] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10461]))
-
-([DFC_ProductGlossary_ProjectKB_Class10461] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10462] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10463]))
-
-([DFC_ProductGlossary_ProjectKB_Class10463] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10464] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10465])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10465] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10466]))
-
-([DFC_ProductGlossary_ProjectKB_Class10466] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10467] of  Widget
-
-	(height 240)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#measuredBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10468])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 490)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class10468] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10469] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Unit")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10472])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10472] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10473]
-		[DFC_ProductGlossary_ProjectKB_Class10476]
-		[DFC_ProductGlossary_ProjectKB_Class10479]
-		[DFC_ProductGlossary_ProjectKB_Class10482]
-		[DFC_ProductGlossary_ProjectKB_Class10484]
-		[DFC_ProductGlossary_ProjectKB_Class10486]
-		[DFC_ProductGlossary_ProjectKB_Class10488]
-		[DFC_ProductGlossary_ProjectKB_Class10490]
-		[DFC_ProductGlossary_ProjectKB_Class10493]))
-
-([DFC_ProductGlossary_ProjectKB_Class10473] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10474])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10474] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10475]))
-
-([DFC_ProductGlossary_ProjectKB_Class10475] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10476] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10477]
-		[DFC_ProductGlossary_ProjectKB_Class10478]))
-
-([DFC_ProductGlossary_ProjectKB_Class10477] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10478] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10479] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10480])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10480] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10481]))
-
-([DFC_ProductGlossary_ProjectKB_Class10481] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10482] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10483]))
-
-([DFC_ProductGlossary_ProjectKB_Class10483] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10484] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10485]))
-
-([DFC_ProductGlossary_ProjectKB_Class10485] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10486] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10487]))
-
-([DFC_ProductGlossary_ProjectKB_Class10487] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10488] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10489]))
-
-([DFC_ProductGlossary_ProjectKB_Class10489] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10490] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10491])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10491] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10492]))
-
-([DFC_ProductGlossary_ProjectKB_Class10492] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10493] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#measures")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10494])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 490)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class10494] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class105] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class106]))
-
-([DFC_ProductGlossary_ProjectKB_Class106] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class107] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class108]
-		[DFC_ProductGlossary_ProjectKB_Class109]))
-
-([DFC_ProductGlossary_ProjectKB_Class108] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class109] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class110] of  Widget
-
-	(height -300)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class111])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 250)
-	(y 530))
-
-([DFC_ProductGlossary_ProjectKB_Class111] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class112]))
-
-([DFC_ProductGlossary_ProjectKB_Class112] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class113] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class114]))
-
-([DFC_ProductGlossary_ProjectKB_Class114] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class115] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class116]))
-
-([DFC_ProductGlossary_ProjectKB_Class116] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class117] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class118]))
-
-([DFC_ProductGlossary_ProjectKB_Class118] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class119] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class120]))
-
-([DFC_ProductGlossary_ProjectKB_Class120] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class121] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class122])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class122] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class123] of  Widget
-
-	(height 240)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#generalizes")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class124])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 120))
-
-([DFC_ProductGlossary_ProjectKB_Class124] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class125] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#specializes")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class126])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class126] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class31] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Class")
-	(string_value "%3ANAME"))
-
-([DFC_ProductGlossary_ProjectKB_Class32] of  String
+([DFC_ProductGlossary_ProjectKB_Class60] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([DFC_ProductGlossary_ProjectKB_Class33] of  String
+([DFC_ProductGlossary_ProjectKB_Class61] of  String
 
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Measure")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_ProductGlossary_ProjectKB_Class34] of  String
-
-	(name ":META-CLASS")
+	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "%3ANAME"))
 
-([DFC_ProductGlossary_ProjectKB_Class35] of  String
+([DFC_ProductGlossary_ProjectKB_Class62] of  String
 
 	(name ":PAL-CONSTRAINT")
 	(string_value "%3APAL-NAME"))
 
-([DFC_ProductGlossary_ProjectKB_Class36] of  String
+([DFC_ProductGlossary_ProjectKB_Class63] of  String
 
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#ProductType")
-	(string_value "http%3A%2F%2Fwww.virtual-assembly.org%2FDataFoodConsortium%2FProductGlossary%23specializes{+%2F+}http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
 
-([DFC_ProductGlossary_ProjectKB_Class37] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Facet")
-	(string_value "http%3A%2F%2Fwww.virtual-assembly.org%2FDataFoodConsortium%2FProductGlossary%23specializes{+%2F+}http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_ProductGlossary_ProjectKB_Class38] of  String
+([DFC_ProductGlossary_ProjectKB_Class64] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Thing")
 	(string_value "%3ANAME"))
 
-([DFC_ProductGlossary_ProjectKB_Class39] of  Map_Entry
+([DFC_ProductGlossary_ProjectKB_Class7] of  Widget
 
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class8])
+	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
-([DFC_ProductGlossary_ProjectKB_Class40] of  Map_Entry
+([DFC_ProductGlossary_ProjectKB_Class8] of  Property_List
+)
 
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
+([DFC_ProductGlossary_ProjectKB_Class9] of  Widget
 
-([DFC_ProductGlossary_ProjectKB_Class41] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
+	(is_hidden TRUE)
+	(property_list [DFC_ProductGlossary_ProjectKB_Class10])
+	(widget_class_name "ezpal.EZPalTab"))
 
 ([empty.owl_ProjectKB_Class5] of  String
 
@@ -1079,7 +434,6 @@
 	(display_multi_parent_class_icon FALSE)
 	(is_readonly FALSE)
 	(tabbed_instance_form_layout TRUE)
-	(undo_enabled TRUE)
 	(update_modification_slots FALSE))
 
 ([Instance_581] of  Widget
@@ -1662,11 +1016,7 @@
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
 ([KB_325529_Class0] of  Map
-
-	(entries
-		[DFC_ProductGlossary_ProjectKB_Class39]
-		[DFC_ProductGlossary_ProjectKB_Class40]
-		[DFC_ProductGlossary_ProjectKB_Class41]))
+)
 
 ([KB_325529_Class4] of  String
 
@@ -1676,7 +1026,7 @@
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
-	(string_value "edu.stanford.smi.protegex.owl.ui.cls.PropertiesClassDefinitionWidget"))
+	(string_value "edu.stanford.smi.protegex.owl.ui.cls.LogicClassDefinitionWidgetType"))
 
 ([KB_465546_Instance_567] of  Widget
 
@@ -1684,9 +1034,6 @@
 	(name "http://protege.stanford.edu/plugins/owl/protege#ExternalResource")
 	(property_list [XY_Instance_890])
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([KB_608909_Class3] of  Map
-)
 
 ([KB_632156_Instance_0] of  String
 
@@ -6279,14 +5626,10 @@
 		[KB_313796_Instance_943]
 		[KB_938545_Instance_661]
 		[KB_713803_Instance_648]
-		[DFC_ProductGlossary_ProjectKB_Class100]
-		[DFC_ProductGlossary_ProjectKB_Class10289]
 		[KB_301165_Instance_856]
 		[KB_691299_Instance_537]
 		[KB_303942_Instance_68]
 		[KB_465546_Instance_567]
-		[DFC_ProductGlossary_ProjectKB_Class10422]
-		[DFC_ProductGlossary_ProjectKB_Class10469]
 		[STANDARD_FACET_FORM_WIDGET]
 		[KB_713803_Instance_780]
 		[KB_868747_Instance_76]
@@ -6323,8 +5666,8 @@
 		"http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
 		":ANNOTATED-INSTANCE"
 		"http://www.w3.org/2003/11/swrl#BuiltinAtom"
-		":OWL-ONTOLOGY-POINTER-CLASS"
 		"http://www.w3.org/2002/07/owl#Ontology"
+		":OWL-ONTOLOGY-POINTER-CLASS"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
 		":VALUE-TYPE"
@@ -6381,8 +5724,8 @@
 		"http://www.w3.org/2001/XMLSchema#normalizedString"
 		"http://protege.stanford.edu/plugins/owl/protege#FROM"
 		"http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
-		"http://www.w3.org/2002/07/owl#someValuesFrom"
 		"http://protege.stanford.edu/plugins/owl/protege#classificationStatus"
+		"http://www.w3.org/2002/07/owl#someValuesFrom"
 		"http://protege.stanford.edu/plugins/owl/protege#inferredSuperclassOf"
 		"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
@@ -6508,48 +5851,18 @@
 		[Instance_2534]
 		[Instance_86]
 		[Instance_2600]
+		[FORMS_TAB]
 		[Instance_3234]
-		[KB_865583_Instance_8]
-		[DFC_Ontology_ProjectKB_Class39]
-		[DFC_Ontology_ProjectKB_Class25]
-		[DFC_Ontology_ProjectKB_Class45]
 		[Instance_43]
 		[CLSES_TAB]
-		[DFC_Ontology_ProjectKB_Class53]
 		[KB_865583_Instance_6]
-		[DFC_Ontology_ProjectKB_Class47]
-		[FORMS_TAB]
 		[INSTANCES_TAB]
-		[DFC_Ontology_ProjectKB_Class11]
-		[DFC_Ontology_ProjectKB_Class9]
-		[DFC_Ontology_ProjectKB_Class1]
 		[Instance_45]
-		[DFC_Ontology_ProjectKB_Class51]
-		[DFC_Ontology_ProjectKB_Class21]
-		[DFC_Ontology_ProjectKB_Class23]
-		[DFC_Ontology_ProjectKB_Class17]
-		[DFC_Ontology_ProjectKB_Class55]
 		[KB_865583_Instance_12]
-		[DFC_Ontology_ProjectKB_Class19]
-		[DFC_Ontology_ProjectKB_Class13]
-		[DFC_Ontology_ProjectKB_Class59]
-		[DFC_Ontology_ProjectKB_Class3]
-		[DFC_Ontology_ProjectKB_Class43]
+		[KB_865583_Instance_8]
 		[KB_865583_Instance_4]
-		[DFC_Ontology_ProjectKB_Class49]
-		[DFC_Ontology_ProjectKB_Class15]
-		[DFC_Ontology_ProjectKB_Class37]
 		[SLOTS_TAB]
-		[DFC_Ontology_ProjectKB_Class41]
-		[KB_865583_Instance_10]
-		[DFC_Ontology_ProjectKB_Class27]
-		[DFC_Ontology_ProjectKB_Class31]
-		[DFC_Ontology_ProjectKB_Class29]
-		[DFC_Ontology_ProjectKB_Class57]
-		[DFC_Ontology_ProjectKB_Class35]
-		[DFC_Ontology_ProjectKB_Class5]
-		[DFC_Ontology_ProjectKB_Class33]
-		[DFC_Ontology_ProjectKB_Class7]))
+		[KB_865583_Instance_10]))
 
 ([SLOTS_TAB] of  Widget
 
@@ -6957,6 +6270,19 @@
 
 	(name "vertical_stretcher")
 	(string_value "http://www.w3.org/2002/07/owl#imports"))
+
+([XY_Instance_217] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name ":OWL-ONTOLOGY-PREFIXES")
+	(property_list [XY_Instance_218])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([XY_Instance_218] of  Property_List
+)
 
 ([XY_Instance_235] of  Widget
 
