@@ -1,4 +1,4 @@
-; Mon May 28 10:45:31 CEST 2018
+; Tue Mar 26 19:18:59 CET 2019
 ; 
 ;+ (version "3.5")
 ;+ (build "Build 663")
@@ -6,16 +6,11 @@
 ([BROWSER_SLOT_NAMES] of  Property_List
 
 	(properties
-		[DFC_FullModel_ProjectKB_Class4]
-		[DFC_FullModel_ProjectKB_Class5]
-		[DFC_FullModel_ProjectKB_Class30006]
-		[DFC_FullModel_ProjectKB_Class30007]
-		[DFC_FullModel_ProjectKB_Class30008]
-		[DFC_FullModel_ProjectKB_Class30009]
-		[DFC_FullModel_ProjectKB_Class30010]
-		[DFC_FullModel_ProjectKB_Class30011]
-		[DFC_FullModel_ProjectKB_Class30012]
-		[DFC_FullModel_ProjectKB_Class30013]))
+		[DFC_FullModel_ProjectKB_Class55]
+		[DFC_FullModel_ProjectKB_Class56]
+		[DFC_FullModel_ProjectKB_Class57]
+		[DFC_FullModel_ProjectKB_Class58]
+		[DFC_FullModel_ProjectKB_Class59]))
 
 ([CLSES_TAB] of  Widget
 
@@ -24,3148 +19,276 @@
 	(property_list [Instance_47])
 	(widget_class_name "edu.stanford.smi.protege.widget.ClsesTab"))
 
-([DFC_BusinessOntology_ProjectKB_Class10004] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class10005])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_BusinessOntology_ProjectKB_Class10005] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class10162]))
-
-([DFC_BusinessOntology_ProjectKB_Class10162] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20004] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DFC_BusinessOntology_Relation")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20007])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_BusinessOntology_ProjectKB_Class20007] of  Property_List
-
-	(properties
-		[DFC_BusinessOntology_ProjectKB_Class20008]
-		[DFC_BusinessOntology_ProjectKB_Class20011]
-		[DFC_BusinessOntology_ProjectKB_Class20014]
-		[DFC_BusinessOntology_ProjectKB_Class20017]
-		[DFC_BusinessOntology_ProjectKB_Class20019]
-		[DFC_BusinessOntology_ProjectKB_Class20021]
-		[DFC_BusinessOntology_ProjectKB_Class20023]
-		[DFC_BusinessOntology_ProjectKB_Class20025]))
-
-([DFC_BusinessOntology_ProjectKB_Class20008] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20009])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_BusinessOntology_ProjectKB_Class20009] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class20010]))
-
-([DFC_BusinessOntology_ProjectKB_Class20010] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20011] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_BusinessOntology_ProjectKB_Class20012]
-		[DFC_BusinessOntology_ProjectKB_Class20013]))
-
-([DFC_BusinessOntology_ProjectKB_Class20012] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_BusinessOntology_ProjectKB_Class20013] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_BusinessOntology_ProjectKB_Class20014] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20015])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 310))
-
-([DFC_BusinessOntology_ProjectKB_Class20015] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class20016]))
-
-([DFC_BusinessOntology_ProjectKB_Class20016] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20017] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20018]))
-
-([DFC_BusinessOntology_ProjectKB_Class20018] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20019] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20020]))
-
-([DFC_BusinessOntology_ProjectKB_Class20020] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20021] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20022]))
-
-([DFC_BusinessOntology_ProjectKB_Class20022] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20023] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20024]))
-
-([DFC_BusinessOntology_ProjectKB_Class20024] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20025] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20026]))
-
-([DFC_BusinessOntology_ProjectKB_Class20026] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20097] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#FunctionalProduct")
-	(property_list [DFC_FullModel_ProjectKB_Class16031])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_BusinessOntology_ProjectKB_Class20223] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#TechnicalProduct")
-	(property_list [DFC_FullModel_ProjectKB_Class16123])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_BusinessOntology_ProjectKB_Class20357] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#Enterprise")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20360])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_BusinessOntology_ProjectKB_Class20360] of  Property_List
-
-	(properties
-		[DFC_BusinessOntology_ProjectKB_Class20361]
-		[DFC_BusinessOntology_ProjectKB_Class20364]
-		[DFC_BusinessOntology_ProjectKB_Class20367]
-		[DFC_BusinessOntology_ProjectKB_Class20370]
-		[DFC_BusinessOntology_ProjectKB_Class20372]
-		[DFC_BusinessOntology_ProjectKB_Class20374]
-		[DFC_BusinessOntology_ProjectKB_Class20376]
-		[DFC_BusinessOntology_ProjectKB_Class20378]
-		[DFC_BusinessOntology_ProjectKB_Class20380]
-		[DFC_BusinessOntology_ProjectKB_Class20383]
-		[DFC_BusinessOntology_ProjectKB_Class20385]))
-
-([DFC_BusinessOntology_ProjectKB_Class20361] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20362])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_BusinessOntology_ProjectKB_Class20362] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class20363]))
-
-([DFC_BusinessOntology_ProjectKB_Class20363] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20364] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_BusinessOntology_ProjectKB_Class20365]
-		[DFC_BusinessOntology_ProjectKB_Class20366]))
-
-([DFC_BusinessOntology_ProjectKB_Class20365] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_BusinessOntology_ProjectKB_Class20366] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_BusinessOntology_ProjectKB_Class20367] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20368])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_BusinessOntology_ProjectKB_Class20368] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class20369]))
-
-([DFC_BusinessOntology_ProjectKB_Class20369] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20370] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20371]))
-
-([DFC_BusinessOntology_ProjectKB_Class20371] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20372] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20373]))
-
-([DFC_BusinessOntology_ProjectKB_Class20373] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20374] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20375])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_BusinessOntology_ProjectKB_Class20375] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20376] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20377]))
-
-([DFC_BusinessOntology_ProjectKB_Class20377] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20378] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20379])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_BusinessOntology_ProjectKB_Class20379] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20380] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20381])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_BusinessOntology_ProjectKB_Class20381] of  Property_List
-
-	(properties [DFC_BusinessOntology_ProjectKB_Class20382]))
-
-([DFC_BusinessOntology_ProjectKB_Class20382] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_BusinessOntology_ProjectKB_Class20383] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#supplies")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20384])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 180))
-
-([DFC_BusinessOntology_ProjectKB_Class20384] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20385] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#offers")
-	(property_list [DFC_BusinessOntology_ProjectKB_Class20386])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 180))
-
-([DFC_BusinessOntology_ProjectKB_Class20386] of  Property_List
-)
-
-([DFC_BusinessOntology_ProjectKB_Class20387] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#SuppliedProduct")
-	(property_list [DFC_FullModel_ProjectKB_Class16076])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_FullModel_ProjectKB_Class10] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#producedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class11])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 480))
-
-([DFC_FullModel_ProjectKB_Class10006] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct")
-	(property_list [DFC_FullModel_ProjectKB_Class10241])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_FullModel_ProjectKB_Class10241] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class10242]
-		[DFC_FullModel_ProjectKB_Class10245]
-		[DFC_FullModel_ProjectKB_Class10248]
-		[DFC_FullModel_ProjectKB_Class10251]
-		[DFC_FullModel_ProjectKB_Class10253]
-		[DFC_FullModel_ProjectKB_Class10255]
-		[DFC_FullModel_ProjectKB_Class10257]
-		[DFC_FullModel_ProjectKB_Class10259]
-		[DFC_FullModel_ProjectKB_Class10261]
-		[DFC_FullModel_ProjectKB_Class10264]
-		[DFC_FullModel_ProjectKB_Class10266]
-		[DFC_FullModel_ProjectKB_Class10268]
-		[DFC_FullModel_ProjectKB_Class10389]
-		[DFC_FullModel_ProjectKB_Class10609]
-		[DFC_FullModel_ProjectKB_Class10841]
-		[DFC_FullModel_ProjectKB_Class11085]
-		[DFC_FullModel_ProjectKB_Class14008]
-		[DFC_FullModel_ProjectKB_Class15473]
-		[DFC_FullModel_ProjectKB_Class6]
-		[DFC_FullModel_ProjectKB_Class40006]))
-
-([DFC_FullModel_ProjectKB_Class10242] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class10243])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class10243] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class10244]))
-
-([DFC_FullModel_ProjectKB_Class10244] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class10245] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class10246]
-		[DFC_FullModel_ProjectKB_Class10247]))
-
-([DFC_FullModel_ProjectKB_Class10246] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_FullModel_ProjectKB_Class10247] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class10248] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class10249])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_FullModel_ProjectKB_Class10249] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class10250]))
-
-([DFC_FullModel_ProjectKB_Class10250] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class10251] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class10252]))
-
-([DFC_FullModel_ProjectKB_Class10252] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10253] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class10254]))
-
-([DFC_FullModel_ProjectKB_Class10254] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10255] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class10256])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class10256] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10257] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class10258]))
-
-([DFC_FullModel_ProjectKB_Class10258] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10259] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class10260])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class10260] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10261] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_FullModel_ProjectKB_Class10262])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class10262] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class10263]))
-
-([DFC_FullModel_ProjectKB_Class10263] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class10264] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType")
-	(property_list [DFC_FullModel_ProjectKB_Class10265])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class10265] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10266] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#concernedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class10267])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class10267] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10268] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#listenBy")
-	(property_list [DFC_FullModel_ProjectKB_Class10269])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class10269] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10389] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class10390])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 120))
-
-([DFC_FullModel_ProjectKB_Class10390] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10609] of  Widget
-
-	(height -190)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf")
-	(property_list [DFC_FullModel_ProjectKB_Class10610])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 670))
-
-([DFC_FullModel_ProjectKB_Class10610] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class10841] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class10842])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class10842] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class11] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class11085] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf")
-	(property_list [DFC_FullModel_ProjectKB_Class11086])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 180)
-	(y 630))
-
-([DFC_FullModel_ProjectKB_Class11086] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class12] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#consumedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class13])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 480))
-
-([DFC_FullModel_ProjectKB_Class13] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class14] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#consumedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class15])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 480))
-
-([DFC_FullModel_ProjectKB_Class14008] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class14009])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 240))
-
-([DFC_FullModel_ProjectKB_Class14009] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class15] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class15473] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess")
-	(property_list [DFC_FullModel_ProjectKB_Class15474])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class15474] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16031] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class16032]
-		[DFC_FullModel_ProjectKB_Class16035]
-		[DFC_FullModel_ProjectKB_Class16038]
-		[DFC_FullModel_ProjectKB_Class16041]
-		[DFC_FullModel_ProjectKB_Class16043]
-		[DFC_FullModel_ProjectKB_Class16045]
-		[DFC_FullModel_ProjectKB_Class16047]
-		[DFC_FullModel_ProjectKB_Class16049]
-		[DFC_FullModel_ProjectKB_Class16051]
-		[DFC_FullModel_ProjectKB_Class16054]
-		[DFC_FullModel_ProjectKB_Class16056]
-		[DFC_FullModel_ProjectKB_Class16058]
-		[DFC_FullModel_ProjectKB_Class16060]
-		[DFC_FullModel_ProjectKB_Class16062]
-		[DFC_FullModel_ProjectKB_Class16064]
-		[DFC_FullModel_ProjectKB_Class16066]
-		[DFC_FullModel_ProjectKB_Class16068]
-		[DFC_FullModel_ProjectKB_Class16070]
-		[DFC_FullModel_ProjectKB_Class16072]
-		[DFC_FullModel_ProjectKB_Class16074]
-		[DFC_FullModel_ProjectKB_Class8]
-		[DFC_FullModel_ProjectKB_Class40008]))
-
-([DFC_FullModel_ProjectKB_Class16032] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class16033])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16033] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16034]))
-
-([DFC_FullModel_ProjectKB_Class16034] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16035] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class16036]
-		[DFC_FullModel_ProjectKB_Class16037]))
-
-([DFC_FullModel_ProjectKB_Class16036] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_FullModel_ProjectKB_Class16037] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class16038] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class16039])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_FullModel_ProjectKB_Class16039] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16040]))
-
-([DFC_FullModel_ProjectKB_Class16040] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16041] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class16042]))
-
-([DFC_FullModel_ProjectKB_Class16042] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16043] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16044]))
-
-([DFC_FullModel_ProjectKB_Class16044] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16045] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class16046])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16046] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16047] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class16048]))
-
-([DFC_FullModel_ProjectKB_Class16048] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16049] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class16050])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16050] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16051] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_FullModel_ProjectKB_Class16052])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class16052] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16053]))
-
-([DFC_FullModel_ProjectKB_Class16053] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16054] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType")
-	(property_list [DFC_FullModel_ProjectKB_Class16055])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16055] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16056] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#concernedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16057])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16057] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16058] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#listenBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16059])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16059] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16060] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16061])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 120))
-
-([DFC_FullModel_ProjectKB_Class16061] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16062] of  Widget
-
-	(height -190)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16063])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 670))
-
-([DFC_FullModel_ProjectKB_Class16063] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16064] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16065])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class16065] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16066] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16067])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 180)
-	(y 630))
-
-([DFC_FullModel_ProjectKB_Class16067] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16068] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16069])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 240))
-
-([DFC_FullModel_ProjectKB_Class16069] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16070] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess")
-	(property_list [DFC_FullModel_ProjectKB_Class16071])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16071] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16072] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#offeredBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16073])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class16073] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16074] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#satisfiedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16075])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 360))
-
-([DFC_FullModel_ProjectKB_Class16075] of  Property_List
+([DFC_FullModel_ProjectKB_Class0] of  Map
 )
 
-([DFC_FullModel_ProjectKB_Class16076] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class16077]
-		[DFC_FullModel_ProjectKB_Class16080]
-		[DFC_FullModel_ProjectKB_Class16083]
-		[DFC_FullModel_ProjectKB_Class16086]
-		[DFC_FullModel_ProjectKB_Class16088]
-		[DFC_FullModel_ProjectKB_Class16090]
-		[DFC_FullModel_ProjectKB_Class16092]
-		[DFC_FullModel_ProjectKB_Class16094]
-		[DFC_FullModel_ProjectKB_Class16096]
-		[DFC_FullModel_ProjectKB_Class16099]
-		[DFC_FullModel_ProjectKB_Class16101]
-		[DFC_FullModel_ProjectKB_Class16103]
-		[DFC_FullModel_ProjectKB_Class16105]
-		[DFC_FullModel_ProjectKB_Class16107]
-		[DFC_FullModel_ProjectKB_Class16109]
-		[DFC_FullModel_ProjectKB_Class16111]
-		[DFC_FullModel_ProjectKB_Class16113]
-		[DFC_FullModel_ProjectKB_Class16115]
-		[DFC_FullModel_ProjectKB_Class16117]
-		[DFC_FullModel_ProjectKB_Class16119]
-		[DFC_FullModel_ProjectKB_Class16121]
-		[DFC_FullModel_ProjectKB_Class10]
-		[DFC_FullModel_ProjectKB_Class12]
-		[DFC_FullModel_ProjectKB_Class40010]))
-
-([DFC_FullModel_ProjectKB_Class16077] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class16078])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16078] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16079]))
-
-([DFC_FullModel_ProjectKB_Class16079] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16080] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class16081]
-		[DFC_FullModel_ProjectKB_Class16082]))
-
-([DFC_FullModel_ProjectKB_Class16081] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_FullModel_ProjectKB_Class16082] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class16083] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class16084])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_FullModel_ProjectKB_Class16084] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16085]))
-
-([DFC_FullModel_ProjectKB_Class16085] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16086] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class16087]))
-
-([DFC_FullModel_ProjectKB_Class16087] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16088] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16089]))
+([DFC_FullModel_ProjectKB_Class1] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16089] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class2])
+	(widget_class_name "se.liu.ida.JessTab.JessTab"))
 
-([DFC_FullModel_ProjectKB_Class16090] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class16091])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16091] of  Property_List
+([DFC_FullModel_ProjectKB_Class10] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16092] of  Widget
+([DFC_FullModel_ProjectKB_Class11] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class16093]))
-
-([DFC_FullModel_ProjectKB_Class16093] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class12])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
 
-([DFC_FullModel_ProjectKB_Class16094] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class16095])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16095] of  Property_List
+([DFC_FullModel_ProjectKB_Class12] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16096] of  Widget
+([DFC_FullModel_ProjectKB_Class13] of  Widget
 
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_FullModel_ProjectKB_Class16097])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class14])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
 
-([DFC_FullModel_ProjectKB_Class16097] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16098]))
-
-([DFC_FullModel_ProjectKB_Class16098] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16099] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType")
-	(property_list [DFC_FullModel_ProjectKB_Class16100])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16100] of  Property_List
+([DFC_FullModel_ProjectKB_Class14] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16101] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#concernedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16102])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16102] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16103] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#listenBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16104])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16104] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class15] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16105] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16106])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 120))
-
-([DFC_FullModel_ProjectKB_Class16106] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class16])
+	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
 
-([DFC_FullModel_ProjectKB_Class16107] of  Widget
-
-	(height -190)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16108])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 670))
-
-([DFC_FullModel_ProjectKB_Class16108] of  Property_List
+([DFC_FullModel_ProjectKB_Class16] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16109] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16110])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class16110] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class17] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16111] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16112])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 180)
-	(y 630))
-
-([DFC_FullModel_ProjectKB_Class16112] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class18])
+	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
 
-([DFC_FullModel_ProjectKB_Class16113] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16114])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 240))
-
-([DFC_FullModel_ProjectKB_Class16114] of  Property_List
+([DFC_FullModel_ProjectKB_Class18] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16115] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess")
-	(property_list [DFC_FullModel_ProjectKB_Class16116])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16116] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class19] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16117] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#industrializes")
-	(property_list [DFC_FullModel_ProjectKB_Class16118])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 360))
-
-([DFC_FullModel_ProjectKB_Class16118] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class20])
+	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
 
-([DFC_FullModel_ProjectKB_Class16119] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#referenceOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16120])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 360))
-
-([DFC_FullModel_ProjectKB_Class16120] of  Property_List
+([DFC_FullModel_ProjectKB_Class2] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16121] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#suppliedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16122])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 400)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class16122] of  Property_List
+([DFC_FullModel_ProjectKB_Class20] of  Property_List
 )
-
-([DFC_FullModel_ProjectKB_Class16123] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class16124]
-		[DFC_FullModel_ProjectKB_Class16127]
-		[DFC_FullModel_ProjectKB_Class16130]
-		[DFC_FullModel_ProjectKB_Class16133]
-		[DFC_FullModel_ProjectKB_Class16135]
-		[DFC_FullModel_ProjectKB_Class16137]
-		[DFC_FullModel_ProjectKB_Class16139]
-		[DFC_FullModel_ProjectKB_Class16141]
-		[DFC_FullModel_ProjectKB_Class16143]
-		[DFC_FullModel_ProjectKB_Class16146]
-		[DFC_FullModel_ProjectKB_Class16148]
-		[DFC_FullModel_ProjectKB_Class16150]
-		[DFC_FullModel_ProjectKB_Class16152]
-		[DFC_FullModel_ProjectKB_Class16154]
-		[DFC_FullModel_ProjectKB_Class16156]
-		[DFC_FullModel_ProjectKB_Class16158]
-		[DFC_FullModel_ProjectKB_Class16160]
-		[DFC_FullModel_ProjectKB_Class16162]
-		[DFC_FullModel_ProjectKB_Class16164]
-		[DFC_FullModel_ProjectKB_Class16166]
-		[DFC_FullModel_ProjectKB_Class16168]
-		[DFC_FullModel_ProjectKB_Class14]
-		[DFC_FullModel_ProjectKB_Class40012]))
-
-([DFC_FullModel_ProjectKB_Class16124] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class16125])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16125] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16126]))
-
-([DFC_FullModel_ProjectKB_Class16126] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16127] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class16128]
-		[DFC_FullModel_ProjectKB_Class16129]))
 
-([DFC_FullModel_ProjectKB_Class16128] of  String
+([DFC_FullModel_ProjectKB_Class21] of  Widget
 
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class22])
+	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
 
-([DFC_FullModel_ProjectKB_Class16129] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class16130] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class16131])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_FullModel_ProjectKB_Class16131] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16132]))
-
-([DFC_FullModel_ProjectKB_Class16132] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16133] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class16134]))
-
-([DFC_FullModel_ProjectKB_Class16134] of  Property_List
+([DFC_FullModel_ProjectKB_Class22] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16135] of  Widget
+([DFC_FullModel_ProjectKB_Class23] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16136]))
-
-([DFC_FullModel_ProjectKB_Class16136] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class24])
+	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
 
-([DFC_FullModel_ProjectKB_Class16137] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class16138])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16138] of  Property_List
+([DFC_FullModel_ProjectKB_Class24] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16139] of  Widget
+([DFC_FullModel_ProjectKB_Class25] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class16140]))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class26])
+	(widget_class_name "TGViztab.TGVizTab"))
 
-([DFC_FullModel_ProjectKB_Class16140] of  Property_List
+([DFC_FullModel_ProjectKB_Class26] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16141] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class16142])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16142] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class16143] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#description")
-	(property_list [DFC_FullModel_ProjectKB_Class16144])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralAreaWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class16144] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class16145]))
+([DFC_FullModel_ProjectKB_Class27] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16145] of  Boolean
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class28])
+	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
 
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class16146] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType")
-	(property_list [DFC_FullModel_ProjectKB_Class16147])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class16147] of  Property_List
+([DFC_FullModel_ProjectKB_Class28] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16148] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#concernedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16149])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16149] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class29] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16150] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#listenBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16151])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16151] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class30])
+	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
 
-([DFC_FullModel_ProjectKB_Class16152] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16153])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 120))
-
-([DFC_FullModel_ProjectKB_Class16153] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class3] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16154] of  Widget
-
-	(height -190)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16155])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 0)
-	(y 670))
-
-([DFC_FullModel_ProjectKB_Class16155] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class4])
+	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
 
-([DFC_FullModel_ProjectKB_Class16156] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16157])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class16157] of  Property_List
+([DFC_FullModel_ProjectKB_Class30] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16158] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf")
-	(property_list [DFC_FullModel_ProjectKB_Class16159])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 200)
-	(x 180)
-	(y 630))
-
-([DFC_FullModel_ProjectKB_Class16159] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class31] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16160] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin")
-	(property_list [DFC_FullModel_ProjectKB_Class16161])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 240))
-
-([DFC_FullModel_ProjectKB_Class16161] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class32])
+	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
 
-([DFC_FullModel_ProjectKB_Class16162] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess")
-	(property_list [DFC_FullModel_ProjectKB_Class16163])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 800)
-	(y 180))
-
-([DFC_FullModel_ProjectKB_Class16163] of  Property_List
+([DFC_FullModel_ProjectKB_Class32] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class16164] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#offeredBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16165])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class16165] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class33] of  Widget
 
-([DFC_FullModel_ProjectKB_Class16166] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#satisfies")
-	(property_list [DFC_FullModel_ProjectKB_Class16167])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 360))
-
-([DFC_FullModel_ProjectKB_Class16167] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class34])
+	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
 
-([DFC_FullModel_ProjectKB_Class16168] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#industrializedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class16169])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 360))
-
-([DFC_FullModel_ProjectKB_Class16169] of  Property_List
+([DFC_FullModel_ProjectKB_Class34] of  Property_List
 )
-
-([DFC_FullModel_ProjectKB_Class20006] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#ConsumptionFlow")
-	(property_list [DFC_FullModel_ProjectKB_Class30233])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_FullModel_ProjectKB_Class30006] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Measure")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_FullModel_ProjectKB_Class30007] of  String
-
-	(name ":META-CLASS")
-	(string_value "%3ANAME"))
-
-([DFC_FullModel_ProjectKB_Class30008] of  String
-
-	(name ":PAL-CONSTRAINT")
-	(string_value "%3APAL-NAME"))
-
-([DFC_FullModel_ProjectKB_Class30009] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#SuppliedProduct")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label{+%3C+}http%3A%2F%2Fwww.virtual-assembly.org%2FDataFoodConsortium%2FBusinessOntology%23suppliedBy"))
-
-([DFC_FullModel_ProjectKB_Class30010] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#ProductType")
-	(string_value "http%3A%2F%2Fwww.virtual-assembly.org%2FDataFoodConsortium%2FProductGlossary%23specializes{+%2F+}http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_FullModel_ProjectKB_Class30011] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Facet")
-	(string_value "http%3A%2F%2Fwww.virtual-assembly.org%2FDataFoodConsortium%2FProductGlossary%23specializes{+%2F+}http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_FullModel_ProjectKB_Class30012] of  String
-
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DFC_BusinessOntology_Subject")
-	(string_value "http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label"))
-
-([DFC_FullModel_ProjectKB_Class30013] of  String
-
-	(name "http://www.w3.org/2002/07/owl#Thing")
-	(string_value "%3ANAME"))
-
-([DFC_FullModel_ProjectKB_Class30014] of  Map_Entry
-
-	(key "add_name_on_instance_form")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([DFC_FullModel_ProjectKB_Class30015] of  Map_Entry
-
-	(key "change_tracking_active")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([DFC_FullModel_ProjectKB_Class30016] of  Map_Entry
-
-	(key "suppress_instance_counting")
-	(key_class "java.lang.String")
-	(value "false")
-	(value_class "java.lang.String"))
-
-([DFC_FullModel_ProjectKB_Class30233] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class30234]
-		[DFC_FullModel_ProjectKB_Class30237]
-		[DFC_FullModel_ProjectKB_Class30240]
-		[DFC_FullModel_ProjectKB_Class30243]
-		[DFC_FullModel_ProjectKB_Class30245]
-		[DFC_FullModel_ProjectKB_Class30247]
-		[DFC_FullModel_ProjectKB_Class30249]
-		[DFC_FullModel_ProjectKB_Class30251]
-		[DFC_FullModel_ProjectKB_Class30253]
-		[DFC_FullModel_ProjectKB_Class30255]
-		[DFC_FullModel_ProjectKB_Class30257]
-		[DFC_FullModel_ProjectKB_Class30259]))
-
-([DFC_FullModel_ProjectKB_Class30234] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class30235])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class30235] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class30236]))
-
-([DFC_FullModel_ProjectKB_Class30236] of  Boolean
 
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
+([DFC_FullModel_ProjectKB_Class35] of  Widget
 
-([DFC_FullModel_ProjectKB_Class30237] of  Property_List
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class36])
+	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
 
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class30238]
-		[DFC_FullModel_ProjectKB_Class30239]))
-
-([DFC_FullModel_ProjectKB_Class30238] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_FullModel_ProjectKB_Class30239] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class30240] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class30241])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 310))
-
-([DFC_FullModel_ProjectKB_Class30241] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class30242]))
-
-([DFC_FullModel_ProjectKB_Class30242] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class30243] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class30244]))
-
-([DFC_FullModel_ProjectKB_Class30244] of  Property_List
+([DFC_FullModel_ProjectKB_Class36] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30245] of  Widget
+([DFC_FullModel_ProjectKB_Class37] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class30246]))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class38])
+	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
 
-([DFC_FullModel_ProjectKB_Class30246] of  Property_List
+([DFC_FullModel_ProjectKB_Class38] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30247] of  Widget
+([DFC_FullModel_ProjectKB_Class39] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class30248]))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class40])
+	(widget_class_name "script.ProtegeScriptTab"))
 
-([DFC_FullModel_ProjectKB_Class30248] of  Property_List
+([DFC_FullModel_ProjectKB_Class4] of  Property_List
 )
-
-([DFC_FullModel_ProjectKB_Class30249] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class30250]))
-
-([DFC_FullModel_ProjectKB_Class30250] of  Property_List
+([DFC_FullModel_ProjectKB_Class40] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30251] of  Widget
+([DFC_FullModel_ProjectKB_Class41] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class30252]))
-
-([DFC_FullModel_ProjectKB_Class30252] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class42])
+	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
 
-([DFC_FullModel_ProjectKB_Class30253] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#incomeOf")
-	(property_list [DFC_FullModel_ProjectKB_Class30254])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class30254] of  Property_List
+([DFC_FullModel_ProjectKB_Class42] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30255] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#consumes")
-	(property_list [DFC_FullModel_ProjectKB_Class30256])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class30256] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class43] of  Widget
 
-([DFC_FullModel_ProjectKB_Class30257] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#quantity")
-	(property_list [DFC_FullModel_ProjectKB_Class30258])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 200)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class30258] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class44])
+	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
 
-([DFC_FullModel_ProjectKB_Class30259] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#unity")
-	(property_list [DFC_FullModel_ProjectKB_Class30260])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 400)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class30260] of  Property_List
+([DFC_FullModel_ProjectKB_Class44] of  Property_List
 )
-
-([DFC_FullModel_ProjectKB_Class30261] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#ProductionFlow")
-	(property_list [DFC_FullModel_ProjectKB_Class30264])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_FullModel_ProjectKB_Class30264] of  Property_List
-
-	(properties
-		[DFC_FullModel_ProjectKB_Class30265]
-		[DFC_FullModel_ProjectKB_Class30268]
-		[DFC_FullModel_ProjectKB_Class30271]
-		[DFC_FullModel_ProjectKB_Class30274]
-		[DFC_FullModel_ProjectKB_Class30276]
-		[DFC_FullModel_ProjectKB_Class30278]
-		[DFC_FullModel_ProjectKB_Class30280]
-		[DFC_FullModel_ProjectKB_Class30282]
-		[DFC_FullModel_ProjectKB_Class30284]
-		[DFC_FullModel_ProjectKB_Class30286]
-		[DFC_FullModel_ProjectKB_Class30288]
-		[DFC_FullModel_ProjectKB_Class30290]))
 
-([DFC_FullModel_ProjectKB_Class30265] of  Widget
+([DFC_FullModel_ProjectKB_Class45] of  Widget
 
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_FullModel_ProjectKB_Class30266])
-	(width 0)
-	(x 0)
-	(y 0))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class46])
+	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
 
-([DFC_FullModel_ProjectKB_Class30266] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class30267]))
-
-([DFC_FullModel_ProjectKB_Class30267] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class30268] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_FullModel_ProjectKB_Class30269]
-		[DFC_FullModel_ProjectKB_Class30270]))
-
-([DFC_FullModel_ProjectKB_Class30269] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_FullModel_ProjectKB_Class30270] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_FullModel_ProjectKB_Class30271] of  Widget
-
-	(height -130)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_FullModel_ProjectKB_Class30272])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 310))
-
-([DFC_FullModel_ProjectKB_Class30272] of  Property_List
-
-	(properties [DFC_FullModel_ProjectKB_Class30273]))
-
-([DFC_FullModel_ProjectKB_Class30273] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_FullModel_ProjectKB_Class30274] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_FullModel_ProjectKB_Class30275]))
-
-([DFC_FullModel_ProjectKB_Class30275] of  Property_List
+([DFC_FullModel_ProjectKB_Class46] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30276] of  Widget
+([DFC_FullModel_ProjectKB_Class47] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class30277]))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class48])
+	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
 
-([DFC_FullModel_ProjectKB_Class30277] of  Property_List
+([DFC_FullModel_ProjectKB_Class48] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30278] of  Widget
+([DFC_FullModel_ProjectKB_Class49] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_FullModel_ProjectKB_Class30279]))
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class50])
+	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
 
-([DFC_FullModel_ProjectKB_Class30279] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class5] of  Widget
 
-([DFC_FullModel_ProjectKB_Class30280] of  Widget
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class6])
+	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_FullModel_ProjectKB_Class30281]))
-
-([DFC_FullModel_ProjectKB_Class30281] of  Property_List
+([DFC_FullModel_ProjectKB_Class50] of  Property_List
 )
-
-([DFC_FullModel_ProjectKB_Class30282] of  Widget
 
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_FullModel_ProjectKB_Class30283]))
+([DFC_FullModel_ProjectKB_Class51] of  Widget
 
-([DFC_FullModel_ProjectKB_Class30283] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class52])
+	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
 
-([DFC_FullModel_ProjectKB_Class30284] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#outcomeOf")
-	(property_list [DFC_FullModel_ProjectKB_Class30285])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class30285] of  Property_List
+([DFC_FullModel_ProjectKB_Class52] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class30286] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#produces")
-	(property_list [DFC_FullModel_ProjectKB_Class30287])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_FullModel_ProjectKB_Class30287] of  Property_List
-)
+([DFC_FullModel_ProjectKB_Class53] of  Widget
 
-([DFC_FullModel_ProjectKB_Class30288] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#quantity")
-	(property_list [DFC_FullModel_ProjectKB_Class30289])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 200)
-	(x 200)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class30289] of  Property_List
-)
+	(is_hidden TRUE)
+	(property_list [DFC_FullModel_ProjectKB_Class54])
+	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
 
-([DFC_FullModel_ProjectKB_Class30290] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#unity")
-	(property_list [DFC_FullModel_ProjectKB_Class30291])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 400)
-	(y 60))
-
-([DFC_FullModel_ProjectKB_Class30291] of  Property_List
+([DFC_FullModel_ProjectKB_Class54] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class4] of  String
+([DFC_FullModel_ProjectKB_Class55] of  String
 
 	(name ":INSTANCE-ANNOTATION")
 	(string_value "%3AANNOTATION-TEXT"))
 
-([DFC_FullModel_ProjectKB_Class40006] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit")
-	(property_list [DFC_FullModel_ProjectKB_Class40007])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 800)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class40007] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class40008] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit")
-	(property_list [DFC_FullModel_ProjectKB_Class40009])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 800)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class40009] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class40010] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit")
-	(property_list [DFC_FullModel_ProjectKB_Class40011])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 800)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class40011] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class40012] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit")
-	(property_list [DFC_FullModel_ProjectKB_Class40013])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 200)
-	(x 800)
-	(y 300))
-
-([DFC_FullModel_ProjectKB_Class40013] of  Property_List
-)
-
-([DFC_FullModel_ProjectKB_Class5] of  String
+([DFC_FullModel_ProjectKB_Class56] of  String
 
 	(name "http://www.w3.org/2002/07/owl#Class")
 	(string_value "%3ANAME"))
 
-([DFC_FullModel_ProjectKB_Class6] of  Widget
+([DFC_FullModel_ProjectKB_Class57] of  String
 
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#consumedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class7])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 400)
-	(y 300))
+	(name ":PAL-CONSTRAINT")
+	(string_value "%3APAL-NAME"))
 
-([DFC_FullModel_ProjectKB_Class7] of  Property_List
+([DFC_FullModel_ProjectKB_Class58] of  String
+
+	(name ":META-CLASS")
+	(string_value "%3ANAME"))
+
+([DFC_FullModel_ProjectKB_Class59] of  String
+
+	(name "http://www.w3.org/2002/07/owl#Thing")
+	(string_value "%3ANAME"))
+
+([DFC_FullModel_ProjectKB_Class6] of  Property_List
 )
 
-([DFC_FullModel_ProjectKB_Class8] of  Widget
-
-	(height 120)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#consumedBy")
-	(property_list [DFC_FullModel_ProjectKB_Class9])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 390)
-	(x 400)
-	(y 480))
-
-([DFC_FullModel_ProjectKB_Class9] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class1] of  Widget
+([DFC_FullModel_ProjectKB_Class7] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class2])
-	(widget_class_name "se.liu.ida.JessTab.JessTab"))
-
-([DFC_Ontology_ProjectKB_Class10] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class11] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class12])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.InstanceTreeTab"))
-
-([DFC_Ontology_ProjectKB_Class12] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class13] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class14])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalConstraintsTab"))
-
-([DFC_Ontology_ProjectKB_Class14] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class15] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class16])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.protege2yed.swing.SEAMLESS_Protege2yEdTab"))
-
-([DFC_Ontology_ProjectKB_Class16] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class17] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class18])
-	(widget_class_name "edu.stanford.smi.protegex.evaluation.MetaAnalysis"))
-
-([DFC_Ontology_ProjectKB_Class18] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class19] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class20])
-	(widget_class_name "uk.ac.man.cs.mig.coode.owlviz.ui.OWLVizTab"))
-
-([DFC_Ontology_ProjectKB_Class2] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class20] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class21] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class22])
-	(widget_class_name "edu.stanford.smi.protege.query.LuceneQueryPlugin"))
-
-([DFC_Ontology_ProjectKB_Class22] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class23] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class24])
-	(widget_class_name "org.protege.owl.mm.portability.protege3.MappingMasterTab"))
-
-([DFC_Ontology_ProjectKB_Class24] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class25] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class26])
-	(widget_class_name "edu.stanford.smi.protegex.changeanalysis.ChangeAnalysisTab"))
-
-([DFC_Ontology_ProjectKB_Class26] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class27] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class28])
-	(widget_class_name "TGViztab.TGVizTab"))
-
-([DFC_Ontology_ProjectKB_Class28] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class29] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class30])
-	(widget_class_name "edu.stanford.smi.protegex.changes.changesKBViewTab.ChangesKBViewTab"))
-
-([DFC_Ontology_ProjectKB_Class3] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class4])
-	(widget_class_name "edu.stanford.smi.protege.widget.ProtegePropertiesTab"))
-
-([DFC_Ontology_ProjectKB_Class30] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class31] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class32])
-	(widget_class_name "edu.stanford.smi.protegex.xml.tab.XMLTab"))
-
-([DFC_Ontology_ProjectKB_Class32] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class33] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class34])
-	(widget_class_name "edu.stanford.smi.protegex.widget.pal.PalQueriesTab"))
-
-([DFC_Ontology_ProjectKB_Class34] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class35] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class36])
-	(widget_class_name "edu.stanford.smi.protegex.chatPlugin.ChatTab"))
-
-([DFC_Ontology_ProjectKB_Class36] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class37] of  Widget
-
-	(is_hidden FALSE)
-	(property_list [DFC_Ontology_ProjectKB_Class38])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.SEAMLESSPlugin.SEAMLESS_Tab"))
-
-([DFC_Ontology_ProjectKB_Class38] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class39] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class40])
-	(widget_class_name "org.protege.owl.axiome.ui.AxiomeTab"))
-
-([DFC_Ontology_ProjectKB_Class4] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class40] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class41] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class42])
-	(widget_class_name "edu.stanford.smi.protege.keywordsearch.StringSearch"))
-
-([DFC_Ontology_ProjectKB_Class42] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class43] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class44])
-	(widget_class_name "script.ProtegeScriptTab"))
-
-([DFC_Ontology_ProjectKB_Class44] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class45] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class46])
-	(widget_class_name "edu.stanford.smi.protegex.changes.ChangesTab"))
-
-([DFC_Ontology_ProjectKB_Class46] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class47] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class48])
-	(widget_class_name "edu.stanford.smi.protegex.fctab.FacetConstraintsTab"))
-
-([DFC_Ontology_ProjectKB_Class48] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class49] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class50])
-	(widget_class_name "fr.pcoinnovation.websemantic.protege.exportProtege2Excel.SEAMLESS_Protege2ExcelTab"))
-
-([DFC_Ontology_ProjectKB_Class5] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class6])
-	(widget_class_name "ezpal.EZPalTab"))
-
-([DFC_Ontology_ProjectKB_Class50] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class51] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class52])
-	(widget_class_name "edu.stanford.smi.protege.widget.instance_tree.KnowledgeTreeTab"))
-
-([DFC_Ontology_ProjectKB_Class52] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class53] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class54])
-	(widget_class_name "edu.stanford.smi.protegex.datamaster.DataMasterTab"))
-
-([DFC_Ontology_ProjectKB_Class54] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class55] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class56])
-	(widget_class_name "dfki.protege.ontoviz_tab.OntovizTab"))
-
-([DFC_Ontology_ProjectKB_Class56] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class57] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class58])
-	(widget_class_name "edu.stanford.smi.protegex.changes.stats.ChangeStatisticsTab"))
-
-([DFC_Ontology_ProjectKB_Class58] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class59] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class60])
-	(widget_class_name "edu.stanford.smi.protegex.prompt.PromptTab"))
-
-([DFC_Ontology_ProjectKB_Class6] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class60] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class66] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DFC_BusinessOntology_Subject")
-	(property_list [DFC_Ontology_ProjectKB_Class69])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_Ontology_ProjectKB_Class69] of  Property_List
-
-	(properties
-		[DFC_Ontology_ProjectKB_Class70]
-		[DFC_Ontology_ProjectKB_Class73]
-		[DFC_Ontology_ProjectKB_Class76]
-		[DFC_Ontology_ProjectKB_Class79]
-		[DFC_Ontology_ProjectKB_Class81]
-		[DFC_Ontology_ProjectKB_Class83]
-		[DFC_Ontology_ProjectKB_Class85]
-		[DFC_Ontology_ProjectKB_Class87]
-		[DFC_BusinessOntology_ProjectKB_Class10004]))
-
-([DFC_Ontology_ProjectKB_Class7] of  Widget
-
-	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class8])
+	(property_list [DFC_FullModel_ProjectKB_Class8])
 	(widget_class_name "edu.stanford.smi.protegex.server_changes.prompt.UsersTab"))
 
-([DFC_Ontology_ProjectKB_Class70] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_Ontology_ProjectKB_Class71])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_Ontology_ProjectKB_Class71] of  Property_List
-
-	(properties [DFC_Ontology_ProjectKB_Class72]))
-
-([DFC_Ontology_ProjectKB_Class72] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_Ontology_ProjectKB_Class73] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_Ontology_ProjectKB_Class74]
-		[DFC_Ontology_ProjectKB_Class75]))
-
-([DFC_Ontology_ProjectKB_Class74] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_Ontology_ProjectKB_Class75] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_Ontology_ProjectKB_Class76] of  Widget
-
-	(height -80)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_Ontology_ProjectKB_Class77])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 260))
-
-([DFC_Ontology_ProjectKB_Class77] of  Property_List
-
-	(properties [DFC_Ontology_ProjectKB_Class78]))
-
-([DFC_Ontology_ProjectKB_Class78] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_Ontology_ProjectKB_Class79] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_Ontology_ProjectKB_Class80]))
-
-([DFC_Ontology_ProjectKB_Class8] of  Property_List
+([DFC_FullModel_ProjectKB_Class8] of  Property_List
 )
 
-([DFC_Ontology_ProjectKB_Class80] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class81] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_Ontology_ProjectKB_Class82]))
-
-([DFC_Ontology_ProjectKB_Class82] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class83] of  Widget
-
-	(height 180)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_Ontology_ProjectKB_Class84])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiLiteralWidget")
-	(width 400)
-	(x 400)
-	(y 0))
-
-([DFC_Ontology_ProjectKB_Class84] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class85] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_Ontology_ProjectKB_Class86]))
-
-([DFC_Ontology_ProjectKB_Class86] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class87] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_Ontology_ProjectKB_Class88])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_Ontology_ProjectKB_Class88] of  Property_List
-)
-
-([DFC_Ontology_ProjectKB_Class9] of  Widget
+([DFC_FullModel_ProjectKB_Class9] of  Widget
 
 	(is_hidden TRUE)
-	(property_list [DFC_Ontology_ProjectKB_Class10])
-	(widget_class_name "ca.uvic.csr.shrimp.jambalaya.JambalayaTab"))
-
-([DFC_ProductGlossary_ProjectKB_Class100] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Facet")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class103])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10289] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Dimension")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10446])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class103] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class104]
-		[DFC_ProductGlossary_ProjectKB_Class107]
-		[DFC_ProductGlossary_ProjectKB_Class110]
-		[DFC_ProductGlossary_ProjectKB_Class113]
-		[DFC_ProductGlossary_ProjectKB_Class115]
-		[DFC_ProductGlossary_ProjectKB_Class117]
-		[DFC_ProductGlossary_ProjectKB_Class119]
-		[DFC_ProductGlossary_ProjectKB_Class121]
-		[DFC_ProductGlossary_ProjectKB_Class123]
-		[DFC_ProductGlossary_ProjectKB_Class125]))
-
-([DFC_ProductGlossary_ProjectKB_Class104] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class105])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10422] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_Measure")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10425])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10425] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10426]
-		[DFC_ProductGlossary_ProjectKB_Class10429]
-		[DFC_ProductGlossary_ProjectKB_Class10432]
-		[DFC_ProductGlossary_ProjectKB_Class10435]
-		[DFC_ProductGlossary_ProjectKB_Class10437]
-		[DFC_ProductGlossary_ProjectKB_Class10439]
-		[DFC_ProductGlossary_ProjectKB_Class10441]
-		[DFC_ProductGlossary_ProjectKB_Class10443]))
-
-([DFC_ProductGlossary_ProjectKB_Class10426] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10427])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10427] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10428]))
-
-([DFC_ProductGlossary_ProjectKB_Class10428] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10429] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10430]
-		[DFC_ProductGlossary_ProjectKB_Class10431]))
-
-([DFC_ProductGlossary_ProjectKB_Class10430] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10431] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10432] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10433])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10433] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10434]))
-
-([DFC_ProductGlossary_ProjectKB_Class10434] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10435] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10436]))
-
-([DFC_ProductGlossary_ProjectKB_Class10436] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10437] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10438]))
-
-([DFC_ProductGlossary_ProjectKB_Class10438] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10439] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10440]))
-
-([DFC_ProductGlossary_ProjectKB_Class10440] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10441] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10442]))
-
-([DFC_ProductGlossary_ProjectKB_Class10442] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10443] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10444])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10444] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10445]))
-
-([DFC_ProductGlossary_ProjectKB_Class10445] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10446] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10447]
-		[DFC_ProductGlossary_ProjectKB_Class10450]
-		[DFC_ProductGlossary_ProjectKB_Class10453]
-		[DFC_ProductGlossary_ProjectKB_Class10456]
-		[DFC_ProductGlossary_ProjectKB_Class10458]
-		[DFC_ProductGlossary_ProjectKB_Class10460]
-		[DFC_ProductGlossary_ProjectKB_Class10462]
-		[DFC_ProductGlossary_ProjectKB_Class10464]
-		[DFC_ProductGlossary_ProjectKB_Class10467]))
-
-([DFC_ProductGlossary_ProjectKB_Class10447] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10448])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10448] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10449]))
-
-([DFC_ProductGlossary_ProjectKB_Class10449] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10450] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10451]
-		[DFC_ProductGlossary_ProjectKB_Class10452]))
-
-([DFC_ProductGlossary_ProjectKB_Class10451] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10452] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10453] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10454])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10454] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10455]))
-
-([DFC_ProductGlossary_ProjectKB_Class10455] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10456] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10457]))
-
-([DFC_ProductGlossary_ProjectKB_Class10457] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10458] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10459]))
-
-([DFC_ProductGlossary_ProjectKB_Class10459] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10460] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10461]))
-
-([DFC_ProductGlossary_ProjectKB_Class10461] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10462] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10463]))
-
-([DFC_ProductGlossary_ProjectKB_Class10463] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10464] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10465])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10465] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10466]))
-
-([DFC_ProductGlossary_ProjectKB_Class10466] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10467] of  Widget
-
-	(height 240)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#measuredBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10468])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 490)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class10468] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10469] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Unit")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10472])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
-
-([DFC_ProductGlossary_ProjectKB_Class10472] of  Property_List
-
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10473]
-		[DFC_ProductGlossary_ProjectKB_Class10476]
-		[DFC_ProductGlossary_ProjectKB_Class10479]
-		[DFC_ProductGlossary_ProjectKB_Class10482]
-		[DFC_ProductGlossary_ProjectKB_Class10484]
-		[DFC_ProductGlossary_ProjectKB_Class10486]
-		[DFC_ProductGlossary_ProjectKB_Class10488]
-		[DFC_ProductGlossary_ProjectKB_Class10490]
-		[DFC_ProductGlossary_ProjectKB_Class10493]))
-
-([DFC_ProductGlossary_ProjectKB_Class10473] of  Widget
-
-	(height 0)
-	(is_hidden FALSE)
-	(label "Name")
-	(name ":NAME")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10474])
-	(width 0)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10474] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10475]))
-
-([DFC_ProductGlossary_ProjectKB_Class10475] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10476] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class10477]
-		[DFC_ProductGlossary_ProjectKB_Class10478]))
-
-([DFC_ProductGlossary_ProjectKB_Class10477] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10478] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class10479] of  Widget
-
-	(height -40)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10480])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 0)
-	(y 220))
-
-([DFC_ProductGlossary_ProjectKB_Class10480] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10481]))
-
-([DFC_ProductGlossary_ProjectKB_Class10481] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10482] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10483]))
-
-([DFC_ProductGlossary_ProjectKB_Class10483] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10484] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10485]))
-
-([DFC_ProductGlossary_ProjectKB_Class10485] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10486] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10487]))
-
-([DFC_ProductGlossary_ProjectKB_Class10487] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10488] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10489]))
-
-([DFC_ProductGlossary_ProjectKB_Class10489] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class10490] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10491])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 490)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class10491] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class10492]))
-
-([DFC_ProductGlossary_ProjectKB_Class10492] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class10493] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#measures")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class10494])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 490)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class10494] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class105] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class106]))
-
-([DFC_ProductGlossary_ProjectKB_Class106] of  Boolean
-
-	(boolean_value TRUE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class107] of  Property_List
-
-	(name "layout properties")
-	(properties
-		[DFC_ProductGlossary_ProjectKB_Class108]
-		[DFC_ProductGlossary_ProjectKB_Class109]))
-
-([DFC_ProductGlossary_ProjectKB_Class108] of  String
-
-	(name "horizontal_stretcher")
-	(string_value "<<all>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class109] of  String
-
-	(name "vertical_stretcher")
-	(string_value "<<none>>"))
-
-([DFC_ProductGlossary_ProjectKB_Class110] of  Widget
-
-	(height -300)
-	(is_hidden FALSE)
-	(name "http://protege.stanford.edu/plugins/owl/protege#inferredType")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class111])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.HeaderWidget")
-	(width 550)
-	(x 250)
-	(y 530))
-
-([DFC_ProductGlossary_ProjectKB_Class111] of  Property_List
-
-	(properties [DFC_ProductGlossary_ProjectKB_Class112]))
-
-([DFC_ProductGlossary_ProjectKB_Class112] of  Boolean
-
-	(boolean_value FALSE)
-	(name "DisabledByUser"))
-
-([DFC_ProductGlossary_ProjectKB_Class113] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2002/07/owl#versionInfo")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class114]))
-
-([DFC_ProductGlossary_ProjectKB_Class114] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class115] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#isDefinedBy")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class116]))
-
-([DFC_ProductGlossary_ProjectKB_Class116] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class117] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#comment")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class118]))
-
-([DFC_ProductGlossary_ProjectKB_Class118] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class119] of  Widget
-
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#seeAlso")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class120]))
-
-([DFC_ProductGlossary_ProjectKB_Class120] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class121] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.w3.org/2000/01/rdf-schema#label")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class122])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleLiteralWidget")
-	(width 400)
-	(x 0)
-	(y 0))
-
-([DFC_ProductGlossary_ProjectKB_Class122] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class123] of  Widget
-
-	(height 240)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#generalizes")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class124])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.MultiResourceWidget")
-	(width 400)
-	(x 0)
-	(y 120))
-
-([DFC_ProductGlossary_ProjectKB_Class124] of  Property_List
-)
-
-([DFC_ProductGlossary_ProjectKB_Class125] of  Widget
-
-	(height 60)
-	(is_hidden FALSE)
-	(name "http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#specializes")
-	(property_list [DFC_ProductGlossary_ProjectKB_Class126])
-	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.SingleResourceWidget")
-	(width 400)
-	(x 0)
-	(y 60))
-
-([DFC_ProductGlossary_ProjectKB_Class126] of  Property_List
-)
+	(property_list [DFC_FullModel_ProjectKB_Class10])
+	(widget_class_name "ezpal.EZPalTab"))
 
 ([empty.owl_ProjectKB_Class5] of  String
 
@@ -3311,7 +434,6 @@
 	(display_multi_parent_class_icon FALSE)
 	(is_readonly FALSE)
 	(tabbed_instance_form_layout TRUE)
-	(undo_enabled TRUE)
 	(update_modification_slots FALSE))
 
 ([Instance_581] of  Widget
@@ -3414,9 +536,6 @@
 	(y 0))
 
 ([KB_024013_Instance_5] of  Property_List
-)
-
-([KB_047208_Class3] of  Map
 )
 
 ([KB_100699_Instance_0] of  Widget
@@ -3897,11 +1016,7 @@
 	(widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget"))
 
 ([KB_325529_Class0] of  Map
-
-	(entries
-		[DFC_FullModel_ProjectKB_Class30014]
-		[DFC_FullModel_ProjectKB_Class30015]
-		[DFC_FullModel_ProjectKB_Class30016]))
+)
 
 ([KB_325529_Class4] of  String
 
@@ -3911,7 +1026,7 @@
 ([KB_444675_Instance_0] of  String
 
 	(name "SwitchableClassDefinitionType")
-	(string_value "edu.stanford.smi.protegex.owl.ui.cls.PropertiesClassDefinitionWidget"))
+	(string_value "edu.stanford.smi.protegex.owl.ui.cls.LogicClassDefinitionWidgetType"))
 
 ([KB_465546_Instance_567] of  Widget
 
@@ -8499,46 +5614,33 @@
 
 	(browser_slot_names [BROWSER_SLOT_NAMES])
 	(customized_instance_widgets
-		[DFC_BusinessOntology_ProjectKB_Class20357]
-		[DFC_BusinessOntology_ProjectKB_Class20097]
 		[KB_713803_Instance_477]
-		[DFC_BusinessOntology_ProjectKB_Class20387]
-		[PAL_FORM_WIDGET]
-		[KB_691299_Instance_398]
 		[KB_313796_Instance_852]
+		[KB_691299_Instance_398]
+		[PAL_FORM_WIDGET]
 		[Instance_581]
 		[KB_713803_Instance_693]
-		[DFC_FullModel_ProjectKB_Class30261]
 		[INSTANCE_ANNOTATION_FORM_WIDGET]
 		[KB_938545_Instance_166]
 		[STANDARD_SLOT_FORM_WIDGET]
 		[KB_313796_Instance_943]
-		[DFC_BusinessOntology_ProjectKB_Class20004]
 		[KB_938545_Instance_661]
-		[DFC_ProductGlossary_ProjectKB_Class100]
 		[KB_713803_Instance_648]
-		[DFC_ProductGlossary_ProjectKB_Class10289]
 		[KB_301165_Instance_856]
-		[DFC_FullModel_ProjectKB_Class10006]
 		[KB_691299_Instance_537]
 		[KB_303942_Instance_68]
 		[KB_465546_Instance_567]
-		[DFC_ProductGlossary_ProjectKB_Class10422]
-		[DFC_ProductGlossary_ProjectKB_Class10469]
 		[STANDARD_FACET_FORM_WIDGET]
 		[KB_713803_Instance_780]
 		[KB_868747_Instance_76]
 		[STANDARD_CLASS_FORM_WIDGET]
-		[DFC_BusinessOntology_ProjectKB_Class20223]
 		[KB_713803_Instance_303]
 		[Instance_1005]
 		[KB_938545_Instance_329]
 		[KB_764103_Instance_545]
 		[KB_301165_Instance_1013]
-		[DFC_Ontology_ProjectKB_Class66]
-		[DFC_FullModel_ProjectKB_Class20006]
-		[Instance_443]
-		[KB_713803_Instance_390])
+		[KB_713803_Instance_390]
+		[Instance_443])
 	(default_cls_metaclass "http://www.w3.org/2002/07/owl#Class")
 	(default_facet_metaclass ":STANDARD-FACET")
 	(default_instance_widget_class_name "edu.stanford.smi.protegex.owl.ui.widget.OWLFormWidget")
@@ -8564,8 +5666,8 @@
 		"http://www.w3.org/2002/07/owl#InverseFunctionalProperty"
 		":ANNOTATED-INSTANCE"
 		"http://www.w3.org/2003/11/swrl#BuiltinAtom"
-		":OWL-ONTOLOGY-POINTER-CLASS"
 		"http://www.w3.org/2002/07/owl#Ontology"
+		":OWL-ONTOLOGY-POINTER-CLASS"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
 		":VALUE-TYPE"
@@ -8622,8 +5724,8 @@
 		"http://www.w3.org/2001/XMLSchema#normalizedString"
 		"http://protege.stanford.edu/plugins/owl/protege#FROM"
 		"http://www.w3.org/2001/XMLSchema#nonPositiveInteger"
-		"http://www.w3.org/2002/07/owl#someValuesFrom"
 		"http://protege.stanford.edu/plugins/owl/protege#classificationStatus"
+		"http://www.w3.org/2002/07/owl#someValuesFrom"
 		"http://protege.stanford.edu/plugins/owl/protege#inferredSuperclassOf"
 		"http://www.w3.org/2000/01/rdf-schema#subPropertyOf"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
@@ -8691,8 +5793,8 @@
 		":VALUES"
 		":ASSOCIATED-SLOT"
 		"http://www.w3.org/2001/XMLSchema#language"
-		"http://www.w3.org/2002/07/owl#versionInfo"
 		"http://www.w3.org/1999/02/22-rdf-syntax-ns#first"
+		"http://www.w3.org/2002/07/owl#versionInfo"
 		"http://www.w3.org/2001/XMLSchema#base64Binary"
 		"http://www.w3.org/2001/XMLSchema#short"
 		"http://www.w3.org/2002/07/owl#maxCardinality"
@@ -8749,48 +5851,18 @@
 		[Instance_2534]
 		[Instance_86]
 		[Instance_2600]
+		[FORMS_TAB]
 		[Instance_3234]
-		[KB_865583_Instance_8]
-		[DFC_Ontology_ProjectKB_Class39]
-		[DFC_Ontology_ProjectKB_Class25]
-		[DFC_Ontology_ProjectKB_Class45]
 		[Instance_43]
 		[CLSES_TAB]
-		[DFC_Ontology_ProjectKB_Class53]
 		[KB_865583_Instance_6]
-		[DFC_Ontology_ProjectKB_Class47]
-		[FORMS_TAB]
 		[INSTANCES_TAB]
-		[DFC_Ontology_ProjectKB_Class11]
-		[DFC_Ontology_ProjectKB_Class9]
-		[DFC_Ontology_ProjectKB_Class1]
 		[Instance_45]
-		[DFC_Ontology_ProjectKB_Class51]
-		[DFC_Ontology_ProjectKB_Class21]
-		[DFC_Ontology_ProjectKB_Class23]
-		[DFC_Ontology_ProjectKB_Class17]
-		[DFC_Ontology_ProjectKB_Class55]
 		[KB_865583_Instance_12]
-		[DFC_Ontology_ProjectKB_Class19]
-		[DFC_Ontology_ProjectKB_Class13]
-		[DFC_Ontology_ProjectKB_Class59]
-		[DFC_Ontology_ProjectKB_Class3]
-		[DFC_Ontology_ProjectKB_Class43]
+		[KB_865583_Instance_8]
 		[KB_865583_Instance_4]
-		[DFC_Ontology_ProjectKB_Class49]
-		[DFC_Ontology_ProjectKB_Class15]
-		[DFC_Ontology_ProjectKB_Class37]
 		[SLOTS_TAB]
-		[DFC_Ontology_ProjectKB_Class41]
-		[KB_865583_Instance_10]
-		[DFC_Ontology_ProjectKB_Class27]
-		[DFC_Ontology_ProjectKB_Class31]
-		[DFC_Ontology_ProjectKB_Class29]
-		[DFC_Ontology_ProjectKB_Class57]
-		[DFC_Ontology_ProjectKB_Class35]
-		[DFC_Ontology_ProjectKB_Class5]
-		[DFC_Ontology_ProjectKB_Class33]
-		[DFC_Ontology_ProjectKB_Class7]))
+		[KB_865583_Instance_10]))
 
 ([SLOTS_TAB] of  Widget
 
@@ -9198,6 +6270,19 @@
 
 	(name "vertical_stretcher")
 	(string_value "http://www.w3.org/2002/07/owl#imports"))
+
+([XY_Instance_217] of  Widget
+
+	(height 0)
+	(is_hidden FALSE)
+	(name ":OWL-ONTOLOGY-PREFIXES")
+	(property_list [XY_Instance_218])
+	(width 0)
+	(x 0)
+	(y 0))
+
+([XY_Instance_218] of  Property_List
+)
 
 ([XY_Instance_235] of  Widget
 
