@@ -11,17 +11,24 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xml:base="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology">
   <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="DFC_Where_Subject">
+    <rdfs:label xml:lang="fr">Sujet de l'ontologie DFC répondant à la question "Où?"</rdfs:label>
+    <rdfs:label xml:lang="en">Subject of Data Food Consortium ontology answering question "Where?"</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="DFC_BusinessOntology_Subject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Class rdf:ID="Person">
     <rdfs:label xml:lang="en">Person</rdfs:label>
     <rdfs:label xml:lang="fr">Personne</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="affiliates"/>
+        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="Enterprise"/>
         </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="manages"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -29,20 +36,13 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="mainContactOf"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:about="#Enterprise"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="mainContactOf"/>
+        </owl:onProperty>
       </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:ID="DFC_Where_Subject">
-    <rdfs:label xml:lang="fr">Sujet de l'ontologie DFC répondant à la question "Où?"</rdfs:label>
-    <rdfs:label xml:lang="en">Subject of Data Food Consortium ontology answering question "Where?"</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="DFC_BusinessOntology_Subject"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="ProductionFlow">
@@ -53,20 +53,20 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="outcomeOf"/>
+        </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="outputOf"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="produces"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -82,21 +82,21 @@
     <rdfs:label xml:lang="fr">Ligne de commande</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="DefinedProduct"/>
-        </owl:allValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="concerns"/>
         </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="DefinedProduct"/>
+        </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#concerns"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -112,28 +112,37 @@
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#partOf"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="AsPlannedTransformation">
     <rdfs:label xml:lang="fr">Transformation planifiée (théorique)</rdfs:label>
     <rdfs:label xml:lang="en">As planned transformation</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasInput"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="AsPlannedConsumptionFlow"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasIncome"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasOutcome"/>
+        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="AsPlannedProductionFlow"/>
         </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasOutput"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -152,18 +161,18 @@
           <owl:Class rdf:ID="AsRealizedConsumptionFlow"/>
         </owl:allValuesFrom>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasInput"/>
+          <owl:ObjectProperty rdf:about="#hasIncome"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasOutcome"/>
+        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="AsRealizedProductionFlow"/>
         </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasOutput"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -172,6 +181,70 @@
     <rdfs:label xml:lang="en">Subject of Data Food Consortium ontology answering question "Who?"</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="#DFC_BusinessOntology_Subject"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="RealStock">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="identifiedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="ProductBatch"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="PhysicalProduct"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="constitutes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Stock réel</rdfs:label>
+    <rdfs:label xml:lang="en">Real stock</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#identifiedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#constitutes"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Stock"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="storedIn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#storedIn"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="PhysicalPlace"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="CustomerCategory">
@@ -186,10 +259,19 @@
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#definedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Customer category</rdfs:label>
     <rdfs:label xml:lang="fr">Catégorie client</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="PhysicalPlace">
+  <owl:Class rdf:about="#PhysicalPlace">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -212,34 +294,36 @@
         >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="TheoriticalStock"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="localizes"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="stores"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#RealStock"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Physical place</rdfs:label>
     <rdfs:label xml:lang="fr">Lieu physique</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="VirtualPlace">
-    <rdfs:label xml:lang="en">Virtual place</rdfs:label>
-    <rdfs:label xml:lang="fr">Lieu virtuel</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#Place"/>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="LocalizedProduct">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="localizedBy"/>
+          <owl:ObjectProperty rdf:ID="hasReference"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="SuppliedProduct"/>
         </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasReference"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -247,22 +331,12 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#Place"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#localizedBy"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="AsPlannedLocalConsumptionFlow"/>
-        </owl:allValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="consumedBy"/>
         </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="AsPlannedLocalConsumptionFlow"/>
+        </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -275,18 +349,35 @@
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="fr">Produit localisé</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
-          <owl:Class rdf:ID="PhysicalProduct"/>
+          <owl:Class rdf:about="#PhysicalProduct"/>
         </owl:allValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="representedBy"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#TheoriticalStock"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="constituedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Produit localisé</rdfs:label>
     <rdfs:label xml:lang="en">Localized product</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="VirtualPlace">
+    <rdfs:label xml:lang="en">Virtual place</rdfs:label>
+    <rdfs:label xml:lang="fr">Lieu virtuel</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Place"/>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#DefinedProduct">
     <rdfs:label xml:lang="en">Defined product</rdfs:label>
@@ -302,16 +393,6 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Offer"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="offeredThrough"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
       <owl:Class rdf:about="#DFC_What_Subject"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -322,8 +403,46 @@
         <owl:allValuesFrom rdf:resource="#OrderLine"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="lifetime"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="CatalogItem"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="referencedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#SuppliedProduct">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="suppliedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="referenceOf"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Supplied product</rdfs:label>
+    <rdfs:label xml:lang="fr">Produit fourni</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
@@ -334,13 +453,14 @@
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#DefinedProduct"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="totalTheoriticalStock"/>
+        </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="suppliedBy"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -355,30 +475,14 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="TechnicalProduct"/>
-        </owl:allValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="industrializes"/>
         </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="TechnicalProduct"/>
+        </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="referenceOf"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DefinedProduct"/>
-    <rdfs:label xml:lang="en">Supplied product</rdfs:label>
-    <rdfs:label xml:lang="fr">Produit fourni</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="#Transformation">
-    <rdfs:label xml:lang="en">Transformation</rdfs:label>
-    <rdfs:label xml:lang="fr">Transformation</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#DFC_How_Subject"/>
   </owl:Class>
   <owl:Class rdf:ID="Coordination">
     <rdfs:subClassOf>
@@ -386,21 +490,21 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasObject"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="SaleSession"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasObject"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#hasObject"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -425,6 +529,11 @@
     <rdfs:label xml:lang="en">Coordination</rdfs:label>
     <rdfs:label xml:lang="fr">Coordination</rdfs:label>
   </owl:Class>
+  <owl:Class rdf:about="#Transformation">
+    <rdfs:label xml:lang="en">Transformation</rdfs:label>
+    <rdfs:label xml:lang="fr">Transformation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#DFC_How_Subject"/>
+  </owl:Class>
   <owl:Class rdf:about="#AsRealizedProductionFlow">
     <rdfs:subClassOf rdf:resource="#ProductionFlow"/>
     <rdfs:subClassOf>
@@ -440,7 +549,7 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#outputOf"/>
+          <owl:ObjectProperty rdf:about="#outcomeOf"/>
         </owl:onProperty>
         <owl:allValuesFrom rdf:resource="#AsRealizedTransformation"/>
       </owl:Restriction>
@@ -479,7 +588,7 @@
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="#AsRealizedTransformation"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="inputOf"/>
+          <owl:ObjectProperty rdf:ID="incomeOf"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -509,17 +618,17 @@
     <rdfs:subClassOf rdf:resource="#ProductionFlow"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#produces"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom rdf:resource="#AsPlannedTransformation"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#outputOf"/>
+          <owl:ObjectProperty rdf:about="#outcomeOf"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -558,12 +667,12 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="orders"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:about="#Order"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="orders"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -577,6 +686,38 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+  <owl:Class rdf:about="#FunctionalProduct">
+    <rdfs:label xml:lang="en">Functional product</rdfs:label>
+    <rdfs:label xml:lang="fr">Produit fonctionnel</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#TechnicalProduct"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="satisfiedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#DefinedProduct"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="requestedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Agent"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#requestedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
   <owl:Class rdf:about="#ConsumptionFlow">
     <rdfs:label xml:lang="en">Consumption flow</rdfs:label>
     <rdfs:label xml:lang="fr">Flux de consommation</rdfs:label>
@@ -585,53 +726,28 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#consumes"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#inputOf"/>
-        </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#incomeOf"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="#FunctionalProduct">
-    <rdfs:label xml:lang="en">Functional product</rdfs:label>
-    <rdfs:label xml:lang="fr">Produit fonctionnel</rdfs:label>
+  <owl:Class rdf:about="#Stock">
+    <rdfs:label xml:lang="fr">Stock</rdfs:label>
+    <rdfs:label xml:lang="en">Stock</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="satisfiedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#TechnicalProduct"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DefinedProduct"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Agent"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="requestedBy"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#requestedBy"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
+      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="Transaction">
@@ -648,28 +764,28 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Agent"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="to"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Agent"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#from"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#to"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -695,12 +811,12 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#outcomeOf"/>
+        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:ID="AsPlannedLocalTransformation"/>
         </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#outputOf"/>
-        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="fr">Flux de production planifié (localisé)</rdfs:label>
@@ -714,9 +830,49 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PhysicalPlace"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="uses"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#PhysicalPlace"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#uses"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#CatalogItem">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="managedBy"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#Enterprise"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#managedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="Offer"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="offeredThrough"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -725,7 +881,48 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#uses"/>
+          <owl:DatatypeProperty rdf:ID="stockLimitation"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Catalog item</rdfs:label>
+    <rdfs:label xml:lang="fr">Référence catalogue</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="listedIn"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="Repository"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#listedIn"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="references"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#DefinedProduct"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#references"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -744,11 +941,19 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#refersTo"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#uses"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Address"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Delivery option</rdfs:label>
@@ -759,18 +964,18 @@
     <rdfs:label xml:lang="en">Technical product</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="industrializedBy"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#FunctionalProduct"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="satisfies"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#FunctionalProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#DefinedProduct"/>
@@ -786,16 +991,33 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#proposedBy"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Order">
-    <rdfs:label xml:lang="fr">Commande</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#belongsTo"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="orderedBy"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -806,15 +1028,27 @@
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Commande</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="PaymentMethod"/>
-        </owl:allValuesFrom>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#uses"/>
+          <owl:ObjectProperty rdf:about="#belongsTo"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#SaleSession"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Agent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#orderedBy"/>
         </owl:onProperty>
       </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Order</rdfs:label>
     <rdfs:subClassOf>
@@ -829,26 +1063,9 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#belongsTo"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#OrderLine"/>
-        <owl:onProperty>
           <owl:ObjectProperty rdf:ID="hasPart"/>
         </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="orderedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Agent"/>
+        <owl:allValuesFrom rdf:resource="#OrderLine"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -856,42 +1073,8 @@
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#uses"/>
         </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#orderedBy"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#belongsTo"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
-          <owl:Class rdf:about="#SaleSession"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_How_Subject"/>
-  </owl:Class>
-  <owl:Class rdf:about="#AsPlannedLocalTransformation">
-    <rdfs:label xml:lang="en">As planned local transformation</rdfs:label>
-    <rdfs:label xml:lang="fr">Transformation planifiée (localisée)</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#Transformation"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="transformedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#Enterprise"/>
+          <owl:Class rdf:ID="PaymentMethod"/>
         </owl:allValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -900,55 +1083,18 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#transformedBy"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#AsPlannedLocalConsumptionFlow"/>
-        </owl:allValuesFrom>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasInput"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#AsPlannedLocalProductionFlow"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasOutput"/>
+          <owl:ObjectProperty rdf:about="#uses"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#Enterprise">
-    <rdfs:label xml:lang="fr">Entreprise</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="defines"/>
+          <owl:ObjectProperty rdf:ID="supplies"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#CustomerCategory"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#Agent"/>
-    <rdfs:label xml:lang="en">Enterprise</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="managedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Person"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Person"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hasMainContact"/>
-        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -961,10 +1107,11 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#SuppliedProduct"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="supplies"/>
+          <owl:ObjectProperty rdf:ID="hasMainContact"/>
         </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -977,19 +1124,97 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#hasMainContact"/>
+          <owl:ObjectProperty rdf:ID="transforms"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#AsPlannedLocalTransformation"/>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#CatalogItem"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="manages"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Entreprise</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Agent"/>
+    <rdfs:label xml:lang="en">Enterprise</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#Repository"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="maintains"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#AsPlannedLocalTransformation"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="transforms"/>
+          <owl:ObjectProperty rdf:about="#hasMainContact"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Person"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#CustomerCategory"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="defines"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="affiliatedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Person"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#AsPlannedLocalTransformation">
+    <rdfs:label xml:lang="en">As planned local transformation</rdfs:label>
+    <rdfs:label xml:lang="fr">Transformation planifiée (localisée)</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Transformation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Enterprise"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="transformedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#transformedBy"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#AsPlannedLocalConsumptionFlow"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasIncome"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasOutcome"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#AsPlannedLocalProductionFlow"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -998,31 +1223,22 @@
     <rdfs:label xml:lang="en">Payment method</rdfs:label>
     <rdfs:label xml:lang="fr">Méthode de payment</rdfs:label>
   </owl:Class>
-  <owl:Class rdf:ID="ProductBatch">
-    <rdfs:subClassOf rdf:resource="#DFC_What_Subject"/>
+  <owl:Class rdf:about="#Repository">
+    <rdfs:subClassOf rdf:resource="#DFC_Where_Subject"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="contains"/>
+          <owl:ObjectProperty rdf:ID="lists"/>
         </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#PhysicalProduct"/>
-        </owl:allValuesFrom>
+        <owl:allValuesFrom rdf:resource="#CatalogItem"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:label xml:lang="fr">Lot du produit</rdfs:label>
-    <rdfs:label xml:lang="en">Product batch</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="#Offer">
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
-    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#DefinedProduct"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="offers"/>
+          <owl:ObjectProperty rdf:ID="maintainedBy"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Enterprise"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
@@ -1030,22 +1246,90 @@
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#offers"/>
+          <owl:ObjectProperty rdf:about="#maintainedBy"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#CustomerCategory"/>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="offeredTo"/>
+          <owl:ObjectProperty rdf:about="#maintainedBy"/>
         </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Référentiel</rdfs:label>
+    <rdfs:label xml:lang="en">Repository</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#TheoriticalStock">
+    <rdfs:label xml:lang="fr">Stock théorique</rdfs:label>
+    <rdfs:label xml:lang="en">Theoretical stock</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Stock"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#constitutes"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="listedIn"/>
+          <owl:ObjectProperty rdf:about="#constitutes"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="localizedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#PhysicalPlace"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#localizedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#ProductBatch">
+    <rdfs:subClassOf rdf:resource="#DFC_What_Subject"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#PhysicalProduct"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="traces"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#RealStock"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="identifies"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="fr">Lot du produit</rdfs:label>
+    <rdfs:label xml:lang="en">Product batch</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Offer">
+    <rdfs:label xml:lang="fr">Offre</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#listedIn"/>
         </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:about="#SaleSession"/>
@@ -1055,27 +1339,62 @@
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#offeredTo"/>
+          <owl:ObjectProperty rdf:ID="offers"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="offersTo"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#stockLimitation"/>
         </owl:onProperty>
         <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
         >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Offer</rdfs:label>
-    <rdfs:label xml:lang="fr">Offre</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#offersTo"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#CustomerCategory"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#CatalogItem"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#offers"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#SaleSession">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="hostedAt"/>
-        </owl:onProperty>
         <owl:allValuesFrom>
           <owl:Class rdf:about="#Place"/>
         </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hostedAt"/>
+        </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_How_Subject"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:allValuesFrom>
@@ -1088,25 +1407,44 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Coordination"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="objectOf"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Coordination"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Offer"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="lists"/>
+          <owl:ObjectProperty rdf:about="#lists"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Offer"/>
       </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#DFC_BusinessOntology_Relation"/>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="en">Sales session</rdfs:label>
     <rdfs:label xml:lang="fr">Session de vente</rdfs:label>
   </owl:Class>
   <owl:Class rdf:about="#PhysicalProduct">
     <rdfs:label xml:lang="en">Physical product</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#AsRealizedProductionFlow"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#producedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#constituedBy"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#RealStock"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
@@ -1117,73 +1455,46 @@
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#ProductBatch"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="storedIn"/>
+          <owl:ObjectProperty rdf:ID="tracedBy"/>
         </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:about="#Place"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#storedIn"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="fr">Produit physique</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#consumedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#AsRealizedProductionFlow"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="containedIn"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#ProductBatch"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#producedBy"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#AsRealizedProductionFlow"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_What_Subject"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#Agent"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="ownedBy"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Agent"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Transaction"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#concernedBy"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#Transaction"/>
       </owl:Restriction>
     </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#AsRealizedProductionFlow"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#consumedBy"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#DFC_What_Subject"/>
   </owl:Class>
   <owl:Class rdf:about="#ShippingOption">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#SaleSession"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="optionOf"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#SaleSession"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#DFC_How_Subject"/>
@@ -1202,39 +1513,23 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="#DFC_Where_Subject"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PhysicalProduct"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="stores"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="localizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#AsPlannedConsumptionFlow">
     <rdfs:subClassOf rdf:resource="#ConsumptionFlow"/>
     <rdfs:subClassOf>
       <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#DefinedProduct"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#consumes"/>
         </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DefinedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#AsPlannedTransformation"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#inputOf"/>
+          <owl:ObjectProperty rdf:about="#incomeOf"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#AsPlannedTransformation"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label xml:lang="fr">Flux de consommation planifié (théorique)</rdfs:label>
@@ -1244,16 +1539,16 @@
     <rdfs:subClassOf rdf:resource="#ConsumptionFlow"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#consumes"/>
         </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="#LocalizedProduct"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#inputOf"/>
+          <owl:ObjectProperty rdf:about="#incomeOf"/>
         </owl:onProperty>
         <owl:allValuesFrom rdf:resource="#AsPlannedLocalTransformation"/>
       </owl:Restriction>
@@ -1276,24 +1571,6 @@
     <rdfs:label xml:lang="fr">a pour objet</rdfs:label>
     <rdfs:label xml:lang="en">has object</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#inputOf">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasInput"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#ConsumptionFlow"/>
-    <rdfs:label xml:lang="en">Input of</rdfs:label>
-    <rdfs:label xml:lang="fr">Source de</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#contains">
-    <rdfs:domain rdf:resource="#ProductBatch"/>
-    <rdfs:label xml:lang="fr">contient</rdfs:label>
-    <rdfs:label xml:lang="en">contains</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#containedIn"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#refersTo">
     <rdfs:domain rdf:resource="#DeliveryOption"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1309,6 +1586,15 @@
     <rdfs:label xml:lang="en">has part</rdfs:label>
     <rdfs:label xml:lang="fr">a pour partie</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#traces">
+    <rdfs:label xml:lang="fr">contient</rdfs:label>
+    <rdfs:label xml:lang="en">contains</rdfs:label>
+    <rdfs:domain rdf:resource="#ProductBatch"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#tracedBy"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#ownedBy">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
     <rdfs:domain rdf:resource="#PhysicalProduct"/>
@@ -1317,6 +1603,12 @@
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#owns"/>
     </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#references">
+    <rdfs:label xml:lang="fr">référence</rdfs:label>
+    <rdfs:label xml:lang="en">references</rdfs:label>
+    <rdfs:domain rdf:resource="#CatalogItem"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#transforms">
     <rdfs:domain rdf:resource="#Enterprise"/>
@@ -1327,12 +1619,6 @@
       <owl:ObjectProperty rdf:about="#transformedBy"/>
     </owl:inverseOf>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#offeredTo">
-    <rdfs:label xml:lang="en">offered to</rdfs:label>
-    <rdfs:label xml:lang="fr">offert à</rdfs:label>
-    <rdfs:domain rdf:resource="#Offer"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hosts">
     <rdfs:domain rdf:resource="#Place"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1342,8 +1628,33 @@
     <rdfs:label xml:lang="en">hosts</rdfs:label>
     <rdfs:label xml:lang="fr">héberge</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#affiliatedBy">
+    <rdfs:domain rdf:resource="#Enterprise"/>
+    <rdfs:label xml:lang="en">managed by</rdfs:label>
+    <rdfs:label xml:lang="fr">géré par</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#affiliates"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#mainContactOf">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasMainContact"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="#affiliatedBy"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:label xml:lang="en">main contact of</rdfs:label>
+    <rdfs:label xml:lang="fr">contact principal pour</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#listedIn">
-    <rdfs:domain rdf:resource="#Offer"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Offer"/>
+          <owl:Class rdf:about="#CatalogItem"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#lists"/>
     </owl:inverseOf>
@@ -1351,16 +1662,20 @@
     <rdfs:label xml:lang="en">listed in</rdfs:label>
     <rdfs:label xml:lang="fr">listé dans</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#mainContactOf">
+  <owl:ObjectProperty rdf:about="#maintainedBy">
+    <rdfs:label xml:lang="fr">maintenu par</rdfs:label>
+    <rdfs:label xml:lang="en">maintained by</rdfs:label>
+    <rdfs:domain rdf:resource="#Repository"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
     <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasMainContact"/>
+      <owl:ObjectProperty rdf:about="#maintains"/>
     </owl:inverseOf>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="#managedBy"/>
-    </rdfs:subPropertyOf>
-    <rdfs:domain rdf:resource="#Person"/>
-    <rdfs:label xml:lang="en">main contact of</rdfs:label>
-    <rdfs:label xml:lang="fr">contact principal pour</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#offersTo">
+    <rdfs:domain rdf:resource="#Offer"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="fr">offert à</rdfs:label>
+    <rdfs:label xml:lang="en">offers to</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#concernedBy">
     <rdfs:domain>
@@ -1394,15 +1709,6 @@
     <rdfs:domain rdf:resource="#Order"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#produces">
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#producedBy"/>
-    </owl:inverseOf>
-    <rdfs:domain rdf:resource="#ProductionFlow"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:label xml:lang="en">produces</rdfs:label>
-    <rdfs:label xml:lang="fr">produit</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#offers">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#offeredThrough"/>
@@ -1412,37 +1718,37 @@
     <rdfs:domain rdf:resource="#Offer"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#produces">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#producedBy"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#ProductionFlow"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="en">produces</rdfs:label>
+    <rdfs:label xml:lang="fr">produit</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#localizes">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#Place"/>
+    <rdfs:domain rdf:resource="#PhysicalPlace"/>
     <rdfs:label xml:lang="en">localizes</rdfs:label>
     <rdfs:label xml:lang="fr">localise</rdfs:label>
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#localizedBy"/>
     </owl:inverseOf>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#containedIn">
-    <owl:inverseOf rdf:resource="#contains"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#PhysicalProduct"/>
-    <rdfs:label xml:lang="en">contained in</rdfs:label>
-    <rdfs:label xml:lang="fr">contenu dans</rdfs:label>
-  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#lists">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#SaleSession"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SaleSession"/>
+          <owl:Class rdf:about="#Repository"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
     <rdfs:label xml:lang="fr">iste</rdfs:label>
     <rdfs:label xml:lang="en">lists</rdfs:label>
     <owl:inverseOf rdf:resource="#listedIn"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#addressOf">
-    <rdfs:label xml:lang="en">address of</rdfs:label>
-    <rdfs:label xml:lang="fr">adresse de</rdfs:label>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasAddress"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#Address"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#belongsTo">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1457,21 +1763,21 @@
       </owl:Class>
     </rdfs:domain>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#outputOf">
-    <rdfs:label xml:lang="en">output of</rdfs:label>
-    <rdfs:label xml:lang="fr">Résultat de</rdfs:label>
+  <owl:ObjectProperty rdf:about="#addressOf">
+    <rdfs:label xml:lang="en">address of</rdfs:label>
+    <rdfs:label xml:lang="fr">adresse de</rdfs:label>
     <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasOutput"/>
+      <owl:ObjectProperty rdf:about="#hasAddress"/>
     </owl:inverseOf>
-    <rdfs:domain rdf:resource="#ProductionFlow"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Address"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hasMainContact">
     <owl:inverseOf rdf:resource="#mainContactOf"/>
     <rdfs:label xml:lang="en">has for main contact</rdfs:label>
     <rdfs:label xml:lang="fr">a pour contact principal</rdfs:label>
     <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:about="#manages"/>
+      <owl:ObjectProperty rdf:about="#affiliates"/>
     </rdfs:subPropertyOf>
     <rdfs:domain rdf:resource="#Enterprise"/>
   </owl:ObjectProperty>
@@ -1480,9 +1786,9 @@
       <owl:ObjectProperty rdf:about="#managedBy"/>
     </owl:inverseOf>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:label xml:lang="en">manages</rdfs:label>
     <rdfs:label xml:lang="fr">gère</rdfs:label>
-    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:label xml:lang="en">manages</rdfs:label>
+    <rdfs:domain rdf:resource="#Enterprise"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#selects">
     <rdfs:domain rdf:resource="#Order"/>
@@ -1496,6 +1802,31 @@
     <rdfs:domain rdf:resource="#AsPlannedLocalTransformation"/>
     <rdfs:label xml:lang="en">transformed by</rdfs:label>
     <rdfs:label xml:lang="fr">transformé par</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#identifiedBy">
+    <rdfs:domain rdf:resource="#RealStock"/>
+    <rdfs:label xml:lang="fr">identifié par</rdfs:label>
+    <rdfs:label xml:lang="en">identified by</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#identifies"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#constituedBy">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#LocalizedProduct"/>
+          <owl:Class rdf:about="#PhysicalProduct"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="fr">constitué par</rdfs:label>
+    <rdfs:label xml:lang="en">constituted by</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#constitutes"/>
+    </owl:inverseOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#suppliedBy">
     <rdfs:label xml:lang="en">supplied by</rdfs:label>
@@ -1545,10 +1876,17 @@
     <owl:inverseOf rdf:resource="#suppliedBy"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#maintains">
+    <rdfs:label xml:lang="fr">maintient</rdfs:label>
+    <rdfs:label xml:lang="en">maintains</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Enterprise"/>
+    <owl:inverseOf rdf:resource="#maintainedBy"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#localizedBy">
     <owl:inverseOf rdf:resource="#localizes"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#LocalizedProduct"/>
+    <rdfs:domain rdf:resource="#TheoriticalStock"/>
     <rdfs:label xml:lang="en">localized by</rdfs:label>
     <rdfs:label xml:lang="fr">localisé par</rdfs:label>
   </owl:ObjectProperty>
@@ -1560,6 +1898,20 @@
       <owl:ObjectProperty rdf:about="#satisfies"/>
     </owl:inverseOf>
     <rdfs:domain rdf:resource="#FunctionalProduct"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#constitutes">
+    <owl:inverseOf rdf:resource="#constituedBy"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#TheoriticalStock"/>
+          <owl:Class rdf:about="#RealStock"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="fr">constitue</rdfs:label>
+    <rdfs:label xml:lang="en">constitutes</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#consumes">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1629,6 +1981,32 @@
     <rdfs:label xml:lang="fr">demandé par</rdfs:label>
     <rdfs:label xml:lang="en">requested by</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasIncome">
+    <rdfs:label xml:lang="en">has input</rdfs:label>
+    <rdfs:label xml:lang="fr">a en entrée</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#incomeOf"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#AsPlannedLocalTransformation"/>
+          <owl:Class rdf:about="#AsRealizedTransformation"/>
+          <owl:Class rdf:about="#AsPlannedTransformation"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#outcomeOf">
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasOutcome"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#ProductionFlow"/>
+    <rdfs:label xml:lang="en">output of</rdfs:label>
+    <rdfs:label xml:lang="fr">Résultat de</rdfs:label>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#industrializedBy">
     <rdfs:label xml:lang="en">Industrialized by</rdfs:label>
     <rdfs:label xml:lang="fr">Indutrialisé par</rdfs:label>
@@ -1644,6 +2022,7 @@
         <owl:unionOf rdf:parseType="Collection">
           <owl:Class rdf:about="#Order"/>
           <owl:Class rdf:about="#PickupOption"/>
+          <owl:Class rdf:about="#DeliveryOption"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
@@ -1686,7 +2065,7 @@
       <owl:ObjectProperty rdf:about="#stores"/>
     </owl:inverseOf>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#PhysicalProduct"/>
+    <rdfs:domain rdf:resource="#RealStock"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#optionOf">
     <owl:inverseOf>
@@ -1697,6 +2076,14 @@
     <rdfs:label xml:lang="en">option of</rdfs:label>
     <rdfs:label xml:lang="fr">option de</rdfs:label>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#referencedBy">
+    <owl:inverseOf rdf:resource="#referencedBy"/>
+    <rdfs:domain rdf:resource="#DefinedProduct"/>
+    <rdfs:label xml:lang="fr">référencé par</rdfs:label>
+    <rdfs:label xml:lang="en">referenced by</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hasOption">
     <rdfs:domain rdf:resource="#SaleSession"/>
     <owl:inverseOf rdf:resource="#optionOf"/>
@@ -1704,26 +2091,9 @@
     <rdfs:label xml:lang="en">has option</rdfs:label>
     <rdfs:label xml:lang="fr">a pour option</rdfs:label>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasOutput">
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#AsPlannedLocalTransformation"/>
-          <owl:Class rdf:about="#AsRealizedTransformation"/>
-          <owl:Class rdf:about="#AsPlannedTransformation"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
+  <owl:ObjectProperty rdf:about="#hasOutcome">
     <rdfs:label xml:lang="en">has output</rdfs:label>
     <rdfs:label xml:lang="fr">a en sortie</rdfs:label>
-    <owl:inverseOf rdf:resource="#outputOf"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasInput">
-    <rdfs:label xml:lang="en">has input</rdfs:label>
-    <rdfs:label xml:lang="fr">a en entrée</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <owl:inverseOf rdf:resource="#inputOf"/>
     <rdfs:domain>
       <owl:Class>
         <owl:unionOf rdf:parseType="Collection">
@@ -1733,13 +2103,15 @@
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#offeredThrough">
+    <owl:inverseOf rdf:resource="#outcomeOf"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:label xml:lang="fr">offert via</rdfs:label>
-    <rdfs:label xml:lang="en">offered through</rdfs:label>
-    <owl:inverseOf rdf:resource="#offers"/>
-    <rdfs:domain rdf:resource="#DefinedProduct"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#affiliates">
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:label xml:lang="en">manages</rdfs:label>
+    <rdfs:label xml:lang="fr">gère</rdfs:label>
+    <owl:inverseOf rdf:resource="#affiliatedBy"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#proposedBy">
     <rdfs:label xml:lang="en">proposed by</rdfs:label>
@@ -1749,6 +2121,13 @@
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#proposes"/>
     </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#offeredThrough">
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="fr">offert via</rdfs:label>
+    <rdfs:label xml:lang="en">offered through</rdfs:label>
+    <owl:inverseOf rdf:resource="#offers"/>
+    <rdfs:domain rdf:resource="#CatalogItem"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#represents">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1767,10 +2146,10 @@
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#managedBy">
     <owl:inverseOf rdf:resource="#manages"/>
-    <rdfs:label xml:lang="en">managed by</rdfs:label>
     <rdfs:label xml:lang="fr">géré par</rdfs:label>
+    <rdfs:label xml:lang="en">managed by</rdfs:label>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:domain rdf:resource="#Enterprise"/>
+    <rdfs:domain rdf:resource="#CatalogItem"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#representedBy">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1779,12 +2158,12 @@
     <owl:inverseOf rdf:resource="#represents"/>
     <rdfs:domain rdf:resource="#LocalizedProduct"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#stores">
-    <owl:inverseOf rdf:resource="#storedIn"/>
+  <owl:ObjectProperty rdf:about="#incomeOf">
+    <rdfs:domain rdf:resource="#ConsumptionFlow"/>
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
-    <rdfs:label xml:lang="en">stores</rdfs:label>
-    <rdfs:label xml:lang="fr">stocke</rdfs:label>
-    <rdfs:domain rdf:resource="#Place"/>
+    <owl:inverseOf rdf:resource="#hasIncome"/>
+    <rdfs:label xml:lang="en">Input of</rdfs:label>
+    <rdfs:label xml:lang="fr">Source de</rdfs:label>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#hasReference">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1792,6 +2171,13 @@
     <rdfs:domain rdf:resource="#LocalizedProduct"/>
     <rdfs:label xml:lang="en">has reference</rdfs:label>
     <rdfs:label xml:lang="fr">a pour référence</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#stores">
+    <owl:inverseOf rdf:resource="#storedIn"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="en">stores</rdfs:label>
+    <rdfs:label xml:lang="fr">stocke</rdfs:label>
+    <rdfs:domain rdf:resource="#PhysicalPlace"/>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#definedBy">
     <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1828,6 +2214,20 @@
     <rdfs:label xml:lang="fr">satisfait</rdfs:label>
     <rdfs:domain rdf:resource="#TechnicalProduct"/>
   </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#identifies">
+    <rdfs:label xml:lang="fr">identifie</rdfs:label>
+    <rdfs:label xml:lang="en">identifies</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <owl:inverseOf rdf:resource="#identifiedBy"/>
+    <rdfs:domain rdf:resource="#ProductBatch"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#tracedBy">
+    <rdfs:domain rdf:resource="#PhysicalProduct"/>
+    <rdfs:subPropertyOf rdf:resource="#DFC_BusinessOntology_ObjectProperty"/>
+    <rdfs:label xml:lang="en">contained in</rdfs:label>
+    <rdfs:label xml:lang="fr">contenu dans</rdfs:label>
+    <owl:inverseOf rdf:resource="#traces"/>
+  </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#proposes">
     <rdfs:label xml:lang="en">proposes</rdfs:label>
     <rdfs:label xml:lang="fr">propose</rdfs:label>
@@ -1849,18 +2249,11 @@
     <rdfs:label xml:lang="en">has address</rdfs:label>
     <rdfs:label xml:lang="fr">a pour adresse</rdfs:label>
   </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="lifetime">
+  <owl:DatatypeProperty rdf:about="#lifetime">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <rdfs:label xml:lang="en">lifetime (in number of days)</rdfs:label>
     <rdfs:label xml:lang="fr">durée de vie  (en nombre de jours)</rdfs:label>
     <rdfs:domain rdf:resource="#DefinedProduct"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="marginPercent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdfs:label xml:lang="fr">Marge</rdfs:label>
-    <rdfs:label xml:lang="en">Markup</rdfs:label>
-    <rdfs:domain rdf:resource="#Coordination"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="startDate">
     <rdfs:subPropertyOf>
@@ -1879,6 +2272,71 @@
     </rdfs:domain>
     <rdfs:label xml:lang="en">Start date</rdfs:label>
     <rdfs:label xml:lang="fr">Date de début</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#totalTheoriticalStock">
+    <rdfs:label xml:lang="fr">stock theorique total</rdfs:label>
+    <rdfs:label xml:lang="en">total theoretical stock</rdfs:label>
+    <rdfs:domain rdf:resource="#SuppliedProduct"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="phoneNumber">
+    <rdfs:label xml:lang="fr">numéro de téléphone</rdfs:label>
+    <rdfs:label xml:lang="en">phone number</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Agent"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#date">
+    <rdfs:label xml:lang="en">date</rdfs:label>
+    <rdfs:label xml:lang="fr">date</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="#Stock"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#stockLimitation">
+    <rdfs:label xml:lang="fr">limitation de stock</rdfs:label>
+    <rdfs:label xml:lang="en">stock limitation</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#CatalogItem"/>
+          <owl:Class rdf:about="#Offer"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="InstagramPage">
+    <rdfs:label xml:lang="fr">page Instagram</rdfs:label>
+    <rdfs:label xml:lang="en">Instagram page</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Enterprise"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="endDate">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SaleSession"/>
+          <owl:Class rdf:about="#ShippingOption"/>
+          <owl:Class rdf:about="#AsPlannedLocalTransformation"/>
+          <owl:Class rdf:about="#AsRealizedTransformation"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:label xml:lang="en">End date</rdfs:label>
+    <rdfs:label xml:lang="fr">Date de fin</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="facebookPage">
+    <rdfs:label xml:lang="fr">Page Facebook</rdfs:label>
+    <rdfs:label xml:lang="en">Facebook page</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="#Enterprise"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="marginPercent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label xml:lang="fr">Marge</rdfs:label>
+    <rdfs:label xml:lang="en">Markup</rdfs:label>
+    <rdfs:domain rdf:resource="#Coordination"/>
   </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="price">
     <rdfs:label xml:lang="en">price</rdfs:label>
@@ -1916,65 +2374,25 @@
     <rdfs:label xml:lang="fr">Compte Twitter</rdfs:label>
     <rdfs:label xml:lang="en">Twitter page</rdfs:label>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="phoneNumber">
-    <rdfs:label xml:lang="fr">numéro de téléphone</rdfs:label>
-    <rdfs:label xml:lang="en">phone number</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#Agent"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:about="#date">
-    <rdfs:label xml:lang="en">date</rdfs:label>
-    <rdfs:label xml:lang="fr">date</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="InstagramPage">
-    <rdfs:label xml:lang="fr">page Instagram</rdfs:label>
-    <rdfs:label xml:lang="en">Instagram page</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#Enterprise"/>
-  </owl:DatatypeProperty>
   <owl:DatatypeProperty rdf:ID="LinkedinPage">
     <rdfs:domain rdf:resource="#Enterprise"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label xml:lang="fr">page LinkedIn</rdfs:label>
     <rdfs:label xml:lang="en">LinkedIn page</rdfs:label>
   </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="facebookPage">
-    <rdfs:label xml:lang="fr">Page Facebook</rdfs:label>
-    <rdfs:label xml:lang="en">Facebook page</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#Enterprise"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="endDate">
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <owl:Class rdf:about="#SaleSession"/>
-          <owl:Class rdf:about="#ShippingOption"/>
-          <owl:Class rdf:about="#AsPlannedLocalTransformation"/>
-          <owl:Class rdf:about="#AsRealizedTransformation"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    <rdfs:label xml:lang="en">End date</rdfs:label>
-    <rdfs:label xml:lang="fr">Date de fin</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#date"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:ID="familyName">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="#Person"/>
-    <rdfs:label xml:lang="fr">nom de famille</rdfs:label>
-    <rdfs:label xml:lang="en">family name</rdfs:label>
-  </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:ID="invoiceNumber">
     <rdfs:label xml:lang="fr">numéro de facture</rdfs:label>
     <rdfs:label xml:lang="en">invoice number</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="#Transaction"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="familyName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#Person"/>
+    <rdfs:label xml:lang="fr">nom de famille</rdfs:label>
+    <rdfs:label xml:lang="en">family name</rdfs:label>
   </owl:FunctionalProperty>
   <owl:FunctionalProperty rdf:ID="country">
     <rdfs:label xml:lang="fr">pays</rdfs:label>
@@ -1987,7 +2405,7 @@
     <rdfs:comment xml:lang="en">Only a general "SKU" id is proposed for now. Agents using GTIN could use GTIN as SKU but other IDs than GTIN can be used.</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:domain rdf:resource="#DefinedProduct"/>
+    <rdfs:domain rdf:resource="#CatalogItem"/>
     <rdfs:label xml:lang="fr">Référence produit</rdfs:label>
     <rdfs:label xml:lang="en">SKU</rdfs:label>
   </owl:FunctionalProperty>
@@ -2039,6 +2457,7 @@
           <owl:Class rdf:about="#OrderLine"/>
           <owl:Class rdf:about="#SaleSession"/>
           <owl:Class rdf:about="#ShippingOption"/>
+          <owl:Class rdf:about="#Stock"/>
         </owl:unionOf>
       </owl:Class>
     </rdfs:domain>
@@ -2149,6 +2568,30 @@
     <rdfs:label xml:lang="en">batch number</rdfs:label>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </owl:FunctionalProperty>
+  <Repository rdf:ID="Repository_5">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Open Food Facts</rdfs:label>
+  </Repository>
+  <Repository rdf:ID="Repository_6">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Elzeard</rdfs:label>
+  </Repository>
+  <Repository rdf:ID="Repository_3">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cagette</rdfs:label>
+  </Repository>
+  <Repository rdf:ID="Repository_4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Open Food France</rdfs:label>
+  </Repository>
+  <Repository rdf:ID="Repository_2">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Panier Local</rdfs:label>
+  </Repository>
+  <Repository rdf:ID="Repository_1">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >La Ruche Qui Dit Oui</rdfs:label>
+  </Repository>
 </rdf:RDF>
 
 <!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
