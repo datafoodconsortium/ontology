@@ -1,312 +1,457 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:pg="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:bo="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#"
-    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://www.virtual-assembly.org/DataFoodConsortium/FullModel">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary"/>
-    <owl:imports rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology"/>
-  </owl:Ontology>
-  <owl:Class>
-    <owl:unionOf rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#ConsumptionFlow"/>
-      <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#ProductionFlow"/>
-    </owl:unionOf>
-  </owl:Class>
-  <owl:ObjectProperty rdf:ID="hasType">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:ID="DFC_Interface_Property"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="typeOf"/>
-    </owl:inverseOf>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct">
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasUnit"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Unit"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasUnit"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:ID="hasGeographicalOrigin"/>
-            </owl:onProperty>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasNatureOrigin"/>
-            </owl:onProperty>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#NatureOrigin"/>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#ProductType"/>
-            <owl:onProperty rdf:resource="#hasType"/>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:about="#hasGeographicalOrigin"/>
-            </owl:onProperty>
-            <owl:allValuesFrom>
-              <owl:Class>
+<rdf:RDF xmlns="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#"
+     xml:base="http://www.virtual-assembly.org/DataFoodConsortium/FullModel"
+     xmlns:bo="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#"
+     xmlns:pg="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel">
+        <owl:imports rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology"/>
+        <owl:imports rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#representedBy -->
+
+    <rdfs:Datatype rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#representedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#certificateOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#certificateOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasCertification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">certificat/label de</rdfs:label>
+        <rdfs:label xml:lang="en">certificate of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">facet of</rdfs:label>
+        <rdfs:label xml:lang="fr">facette de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#geographicalOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">geographical origin of</rdfs:label>
+        <rdfs:label xml:lang="fr">origine géographique de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasCertification -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasCertification">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour certification/label</rdfs:label>
+        <rdfs:label xml:lang="en">has certification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">a pour facette descriptive</rdfs:label>
+        <rdfs:label xml:lang="en">has facet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label xml:lang="fr">a pour origine géographique</rdfs:label>
+        <rdfs:label xml:lang="en">has geographical origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#natureOriginOf"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour source / origine naturelle ou vivante</rdfs:label>
+        <rdfs:label xml:lang="en">has for nature origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#partOriginOf"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour partie d&apos;origine au sein de la source</rdfs:label>
+        <rdfs:label xml:lang="en">has for part origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a subi comme procédé</rdfs:label>
+        <rdfs:label xml:lang="en">has process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+        <owl:inverseOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#typeOf"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour type</rdfs:label>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#has_context -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#has_context">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Representation"/>
+        <rdfs:range rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#natureOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#natureOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf"/>
+        <rdfs:label xml:lang="en">nature origin of</rdfs:label>
+        <rdfs:label xml:lang="fr">origine naturelle (source) de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#partOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#partOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf"/>
+        <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
+        <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#processOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#facetOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:label xml:lang="en">process of</rdfs:label>
+        <rdfs:label xml:lang="fr">procédé utilisé pour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#represents -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#represents">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#DFC_ProductGlossary_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Representation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#typeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#typeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#DFC_Interface_Property"/>
+        <rdfs:label xml:lang="en">type of</rdfs:label>
+        <rdfs:label xml:lang="fr">type pour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Image -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Image">
+        <rdfs:domain>
+            <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                  <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#TerritorialOrigin"/>
-                  <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#GlobalGenericOrigin"/>
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#LocalizedProduct"/>
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#PhysicalProduct"/>
                 </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">image</rdfs:label>
+        <rdfs:label xml:lang="fr">image</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#brand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#brand">
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">brand</rdfs:label>
+        <rdfs:label xml:lang="fr">marque</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#claim -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#claim">
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
+        <rdfs:label xml:lang="en">product claim</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="fr">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#physicalCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#physicalCharacteristics">
+        <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">charactéristique physique</rdfs:label>
+        <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#quantity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#LocalizedProduct"/>
+                    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#PhysicalProduct"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">quantity</rdfs:label>
+        <rdfs:label xml:lang="fr">quantité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct -->
+
+    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#GlobalGenericOrigin"/>
+                            <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#TerritorialOrigin"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:ID="hasProcess"/>
-            </owl:onProperty>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#TerritorialOrigin"/>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasNatureOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#NatureOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#PartOrigin"/>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:about="#hasProcess"/>
-            </owl:onProperty>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasPartOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#PartOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="#hasType"/>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#PartOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#PartOrigin"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasPartOrigin"/>
-            </owl:onProperty>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasProcess"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#TerritorialOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
-      </rdf:Description>
-    </rdfs:domain>
-    <rdfs:label xml:lang="en">has type</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour type</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#typeOf">
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <owl:inverseOf rdf:resource="#hasType"/>
-    <rdfs:label xml:lang="en">type of</rdfs:label>
-    <rdfs:label xml:lang="fr">type pour</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasNatureOrigin">
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:ID="hasFacet"/>
-    </rdfs:subPropertyOf>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdfs:label xml:lang="en">has for nature origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour source / origine naturelle ou vivante</rdfs:label>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="natureOriginOf"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="partOriginOf">
-    <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
-    <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:ID="facetOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasPartOrigin"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasPartOrigin">
-    <rdfs:label xml:lang="en">has for part origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour partie d'origine au sein de la source</rdfs:label>
-    <owl:inverseOf rdf:resource="#partOriginOf"/>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#natureOriginOf">
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf rdf:resource="#hasNatureOrigin"/>
-    <rdfs:label xml:lang="en">nature origin of</rdfs:label>
-    <rdfs:label xml:lang="fr">origine naturelle (source) de</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasUnit">
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdfs:label xml:lang="en">has unit</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="fr">description</rdfs:label>
-    <rdfs:label xml:lang="en">description</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="brand">
-    <rdfs:label xml:lang="fr">marque</rdfs:label>
-    <rdfs:label xml:lang="en">brand</rdfs:label>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="Image">
-    <rdfs:label xml:lang="fr">image</rdfs:label>
-    <rdfs:label xml:lang="en">image</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#LocalizedProduct"/>
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#PhysicalProduct"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="claim">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
-    <rdfs:label xml:lang="en">product claim</rdfs:label>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="physicalCharacteristics">
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdfs:label xml:lang="fr">charactéristique physique</rdfs:label>
-    <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:about="#hasGeographicalOrigin">
-    <rdfs:label xml:lang="en">has geographical origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour origine géographique</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    ></rdfs:comment>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="geographicalOriginOf"/>
-    </owl:inverseOf>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:ID="hasCertification">
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="certificateOf"/>
-    </owl:inverseOf>
-    <rdfs:label xml:lang="en">has certification</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour certification/label</rdfs:label>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="#hasFacet">
-    <rdfs:label xml:lang="en">has facet</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour facette descriptive</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </owl:inverseOf>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:ID="quantity">
-    <rdfs:label xml:lang="fr">quantité</rdfs:label>
-    <rdfs:label xml:lang="en">quantity</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#LocalizedProduct"/>
-          <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#PhysicalProduct"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="#hasProcess">
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="processOf"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="#hasFacet"/>
-    <rdfs:label xml:lang="en">has process</rdfs:label>
-    <rdfs:label xml:lang="fr">a subi comme procédé</rdfs:label>
-  </owl:FunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#processOf">
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label xml:lang="en">process of</rdfs:label>
-    <rdfs:label xml:lang="fr">procédé utilisé pour</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasProcess"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#geographicalOriginOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label xml:lang="en">geographical origin of</rdfs:label>
-    <rdfs:label xml:lang="fr">origine géographique de</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasGeographicalOrigin"/>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#facetOf">
-    <owl:inverseOf rdf:resource="#hasFacet"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">facet of</rdfs:label>
-    <rdfs:label xml:lang="fr">facette de</rdfs:label>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#certificateOf">
-    <rdfs:subPropertyOf rdf:resource="#facetOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#DefinedProduct"/>
-    <owl:inverseOf rdf:resource="#hasCertification"/>
-    <rdfs:label xml:lang="en">certificate of</rdfs:label>
-    <rdfs:label xml:lang="fr">certificat/label de</rdfs:label>
-  </owl:InverseFunctionalProperty>
-  <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#FunctionalProduct">
-    <rdfs:comment xml:lang="fr"></rdfs:comment>
-  </rdf:Description>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#ProductType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/ProductGlossary#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasGeographicalOrigin"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#hasUnit"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Platform -->
+
+    <owl:Class rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Platform"/>
+    
+
+
+    <!-- http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Representation -->
+
+    <owl:Class rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/FullModel#Representation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.virtual-assembly.org/DataFoodConsortium/BusinessOntology#FunctionalProduct">
+        <rdfs:comment xml:lang="fr"></rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
-<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
