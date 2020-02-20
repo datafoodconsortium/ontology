@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"
+     xml:base="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hasPivot -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hasPivot">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hostedBy -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hostedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#represent -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#represent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#Platform -->
+
+    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#Platform">
+        <rdfs:label xml:lang="fr">Organisation qui heberge la donnée</rdfs:label>
+        <rdfs:label xml:lang="fr">Plateforme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentationPivot -->
+
+    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentationPivot">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#represent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="fr">Permet de designer tous les RepresentatedThing qui sont équivalents et d&apos;etre désigné par un RepresentedThing pour connaitre ses équivalence par transitivité</rdfs:comment>
+        <rdfs:label xml:lang="fr">Pivot de représentation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing -->
+
+    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hasPivot"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentationPivot"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hostedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#Platform"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="fr">Chose représentée sur une platefome posadant des equivalences sur d&apos;autres plateformes</rdfs:comment>
+        <rdfs:label xml:lang="fr">Chose représentée</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#Platform"/>
+            <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentationPivot"/>
+            <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
