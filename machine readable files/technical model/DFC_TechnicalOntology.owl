@@ -31,11 +31,51 @@
         <ObjectProperty IRI="#represent"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="#Platform"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Platform"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hostedBy"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentationPivot"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentationPivot"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#represent"/>
+            <Class IRI="#RepresentedThing"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RepresentationPivot"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="#represent"/>
             <Class IRI="#RepresentedThing"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentedThing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentedThing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPivot"/>
+            <Class IRI="#RepresentationPivot"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RepresentedThing"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hostedBy"/>
+            <Class IRI="#Platform"/>
+        </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepresentedThing"/>
@@ -64,8 +104,12 @@
         <ObjectProperty IRI="#hostedBy"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#represent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Platform</IRI>
         <Literal xml:lang="fr">Organisation qui heberge la donnée</Literal>
     </AnnotationAssertion>
@@ -93,6 +137,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#RepresentedThing</IRI>
         <Literal xml:lang="fr">Chose représentée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPivot</IRI>
+        <Literal xml:lang="fr">possède un point pivot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hostedBy</IRI>
+        <Literal xml:lang="fr">hébergé par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#represent</IRI>
+        <Literal xml:lang="fr">représente</Literal>
     </AnnotationAssertion>
 </Ontology>
 

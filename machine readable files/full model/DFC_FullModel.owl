@@ -1,313 +1,434 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:pg="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:bo="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"
-    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl">
-  <owl:Ontology rdf:about="">
-    <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
-    <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
-    <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
-  </owl:Ontology>
-  <owl:Class>
-    <owl:unionOf rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#ConsumptionFlow"/>
-      <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#ProductionFlow"/>
-    </owl:unionOf>
-  </owl:Class>
-  <owl:ObjectProperty rdf:ID="hasType">
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:ID="DFC_Interface_Property"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="typeOf"/>
-    </owl:inverseOf>
-    <rdfs:domain>
-      <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct">
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasUnit"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:about="#hasUnit"/>
-            </owl:onProperty>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:ID="hasGeographicalOrigin"/>
-            </owl:onProperty>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasNatureOrigin"/>
-            </owl:onProperty>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-            <owl:onProperty rdf:resource="#hasType"/>
-          </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:about="#hasGeographicalOrigin"/>
-            </owl:onProperty>
-            <owl:allValuesFrom>
-              <owl:Class>
+<rdf:RDF xmlns="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
+     xml:base="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl"
+     xmlns:bo="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"
+     xmlns:pg="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl">
+        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
+        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
+        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#certificateOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#certificateOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasCertification"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">certificat/label de</rdfs:label>
+        <rdfs:label xml:lang="en">certificate of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">facet of</rdfs:label>
+        <rdfs:label xml:lang="fr">facette de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#geographicalOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#geographicalOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en">geographical origin of</rdfs:label>
+        <rdfs:label xml:lang="fr">origine géographique de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasCertification -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasCertification">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour certification/label</rdfs:label>
+        <rdfs:label xml:lang="en">has certification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">a pour facette descriptive</rdfs:label>
+        <rdfs:label xml:lang="en">has facet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label xml:lang="fr">a pour origine géographique</rdfs:label>
+        <rdfs:label xml:lang="en">has geographical origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasNatureOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasNatureOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#natureOriginOf"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour source / origine naturelle ou vivante</rdfs:label>
+        <rdfs:label xml:lang="en">has for nature origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasPartOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasPartOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#partOriginOf"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour partie d&apos;origine au sein de la source</rdfs:label>
+        <rdfs:label xml:lang="en">has for part origin</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasProcess -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasProcess">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#processOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a subi comme procédé</rdfs:label>
+        <rdfs:label xml:lang="en">has process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasType">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#typeOf"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour type</rdfs:label>
+        <rdfs:label xml:lang="en">has type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasUnit">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
+        <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#natureOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#natureOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf"/>
+        <rdfs:label xml:lang="en">nature origin of</rdfs:label>
+        <rdfs:label xml:lang="fr">origine naturelle (source) de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#partOriginOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#partOriginOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf"/>
+        <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
+        <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#processOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#processOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="en">process of</rdfs:label>
+        <rdfs:label xml:lang="fr">procédé utilisé pour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#typeOf -->
+
+    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#typeOf">
+        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
+        <rdfs:label xml:lang="en">type of</rdfs:label>
+        <rdfs:label xml:lang="fr">type pour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#Image -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#Image">
+        <rdfs:domain>
+            <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                  <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-                  <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct"/>
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhysicalProduct"/>
                 </owl:unionOf>
-              </owl:Class>
-            </owl:allValuesFrom>
-          </owl:Restriction>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">image</rdfs:label>
+        <rdfs:label xml:lang="fr">image</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#brand -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#brand">
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">brand</rdfs:label>
+        <rdfs:label xml:lang="fr">marque</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#claim -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#claim">
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
+        <rdfs:label xml:lang="en">product claim</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#description">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <rdfs:label xml:lang="fr">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#physicalCharacteristics -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#physicalCharacteristics">
+        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">charactéristique physique</rdfs:label>
+        <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#quantity -->
+
+    <owl:DatatypeProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#quantity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct"/>
+                    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhysicalProduct"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="en">quantity</rdfs:label>
+        <rdfs:label xml:lang="fr">quantité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation -->
+
+    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation">
+        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject -->
+
+    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject">
+        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct -->
+
+    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
+                            <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:ID="hasProcess"/>
-            </owl:onProperty>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasNatureOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-            <owl:onProperty>
-              <owl:FunctionalProperty rdf:about="#hasProcess"/>
-            </owl:onProperty>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasPartOrigin"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:onProperty rdf:resource="#hasType"/>
-            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-            >1</owl:cardinality>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasProcess"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
-          <owl:Restriction>
-            <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-            <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasPartOrigin"/>
-            </owl:onProperty>
-          </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasProcess"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
-      </rdf:Description>
-    </rdfs:domain>
-    <rdfs:label xml:lang="en">has type</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour type</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#typeOf">
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <owl:inverseOf rdf:resource="#hasType"/>
-    <rdfs:label xml:lang="en">type of</rdfs:label>
-    <rdfs:label xml:lang="fr">type pour</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasNatureOrigin">
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:ID="hasFacet"/>
-    </rdfs:subPropertyOf>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdfs:label xml:lang="en">has for nature origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour source / origine naturelle ou vivante</rdfs:label>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:ID="natureOriginOf"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:ID="partOriginOf">
-    <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
-    <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:ID="facetOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#hasPartOrigin"/>
-    </owl:inverseOf>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasPartOrigin">
-    <rdfs:label xml:lang="en">has for part origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour partie d'origine au sein de la source</rdfs:label>
-    <owl:inverseOf rdf:resource="#partOriginOf"/>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#natureOriginOf">
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf rdf:resource="#hasNatureOrigin"/>
-    <rdfs:label xml:lang="en">nature origin of</rdfs:label>
-    <rdfs:label xml:lang="fr">origine naturelle (source) de</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#hasUnit">
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdfs:label xml:lang="en">has unit</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:label xml:lang="fr">description</rdfs:label>
-    <rdfs:label xml:lang="en">description</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="brand">
-    <rdfs:label xml:lang="fr">marque</rdfs:label>
-    <rdfs:label xml:lang="en">brand</rdfs:label>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="Image">
-    <rdfs:label xml:lang="fr">image</rdfs:label>
-    <rdfs:label xml:lang="en">image</rdfs:label>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct"/>
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhysicalProduct"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="claim">
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
-    <rdfs:label xml:lang="en">product claim</rdfs:label>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-  </owl:DatatypeProperty>
-  <owl:DatatypeProperty rdf:ID="physicalCharacteristics">
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdfs:label xml:lang="fr">charactéristique physique</rdfs:label>
-    <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:about="#hasGeographicalOrigin">
-    <rdfs:label xml:lang="en">has geographical origin</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour origine géographique</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    ></rdfs:comment>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="geographicalOriginOf"/>
-    </owl:inverseOf>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:ID="hasCertification">
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="certificateOf"/>
-    </owl:inverseOf>
-    <rdfs:label xml:lang="en">has certification</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour certification/label</rdfs:label>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf>
-      <owl:FunctionalProperty rdf:about="#hasFacet"/>
-    </rdfs:subPropertyOf>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="#hasFacet">
-    <rdfs:label xml:lang="en">has facet</rdfs:label>
-    <rdfs:label xml:lang="fr">a pour facette descriptive</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </owl:inverseOf>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:ID="quantity">
-    <rdfs:label xml:lang="fr">quantité</rdfs:label>
-    <rdfs:label xml:lang="en">quantity</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdfs:domain>
-      <owl:Class>
-        <owl:unionOf rdf:parseType="Collection">
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct"/>
-          <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhysicalProduct"/>
-        </owl:unionOf>
-      </owl:Class>
-    </rdfs:domain>
-  </owl:FunctionalProperty>
-  <owl:FunctionalProperty rdf:about="#hasProcess">
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <owl:inverseOf>
-      <owl:InverseFunctionalProperty rdf:ID="processOf"/>
-    </owl:inverseOf>
-    <rdfs:subPropertyOf rdf:resource="#hasFacet"/>
-    <rdfs:label xml:lang="en">has process</rdfs:label>
-    <rdfs:label xml:lang="fr">a subi comme procédé</rdfs:label>
-  </owl:FunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#processOf">
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label xml:lang="en">process of</rdfs:label>
-    <rdfs:label xml:lang="fr">procédé utilisé pour</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasProcess"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#geographicalOriginOf">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf>
-      <owl:InverseFunctionalProperty rdf:about="#facetOf"/>
-    </rdfs:subPropertyOf>
-    <rdfs:label xml:lang="en">geographical origin of</rdfs:label>
-    <rdfs:label xml:lang="fr">origine géographique de</rdfs:label>
-    <owl:inverseOf rdf:resource="#hasGeographicalOrigin"/>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#facetOf">
-    <owl:inverseOf rdf:resource="#hasFacet"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_Interface_Property"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label xml:lang="en">facet of</rdfs:label>
-    <rdfs:label xml:lang="fr">facette de</rdfs:label>
-  </owl:InverseFunctionalProperty>
-  <owl:InverseFunctionalProperty rdf:about="#certificateOf">
-    <rdfs:subPropertyOf rdf:resource="#facetOf"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-    <owl:inverseOf rdf:resource="#hasCertification"/>
-    <rdfs:label xml:lang="en">certificate of</rdfs:label>
-    <rdfs:label xml:lang="fr">certificat/label de</rdfs:label>
-  </owl:InverseFunctionalProperty>
-  <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#FunctionalProduct">
-    <rdfs:comment xml:lang="fr"></rdfs:comment>
-  </rdf:Description>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasType"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasUnit"/>
+                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasType"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasUnit"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure -->
+
+    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure">
+        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#FunctionalProduct">
+        <rdfs:comment xml:lang="fr"></rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
-<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

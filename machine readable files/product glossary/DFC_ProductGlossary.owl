@@ -1,524 +1,1168 @@
 <?xml version="1.0"?>
-<rdf:RDF
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
-    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-    xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xml:base="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
-  <owl:Ontology rdf:about=""/>
-  <owl:Class rdf:ID="Certification">
-    <rdfs:label xml:lang="fr">certification</rdfs:label>
-    <rdfs:label xml:lang="en">certification</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="DFC_ProductGlossary_Facet"/>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Certification"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Certification"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:about="#DFC_ProductGlossary_Facet">
-    <rdfs:label xml:lang="fr">Sujet du Thésaurus à Facettes</rdfs:label>
-    <rdfs:label xml:lang="en">Subject of the facets thesaurus</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Facet"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </owl:Class>
-  <owl:Class rdf:ID="PartOrigin">
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PartOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#PartOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">part of natural "living" origin concerned</rdfs:label>
-    <rdfs:label xml:lang="fr">partie de la source "vivante" d'origine concernée</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="TerritorialOrigin">
-    <rdfs:label xml:lang="en">territorial origin</rdfs:label>
-    <rdfs:label xml:lang="fr">origine territoriale</rdfs:label>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#TerritorialOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#TerritorialOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:ID="GlobalGenericOrigin">
-    <rdfs:label xml:lang="en">Global generic origin</rdfs:label>
-    <rdfs:label xml:lang="fr">Origines génériques globales</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="#GlobalGenericOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#GlobalGenericOrigin"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-  </owl:Class>
-  <owl:Class rdf:ID="DFC_ProductGlossary_Type">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#DFC_ProductGlossary_Type"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-  </owl:Class>
-  <owl:Class rdf:ID="Unit">
-    <rdfs:label xml:lang="en">unit</rdfs:label>
-    <rdfs:label xml:lang="fr">unité</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="measures"/>
-        </owl:onProperty>
-        <owl:allValuesFrom>
-          <owl:Class rdf:ID="Dimension"/>
-        </owl:allValuesFrom>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#measures"/>
-        </owl:onProperty>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
-        >1</owl:cardinality>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="DFC_ProductGlossary_Measure"/>
-    </rdfs:subClassOf>
-  </owl:Class>
-  <owl:Class rdf:ID="NatureOrigin">
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#NatureOrigin"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">natural "living" origin</rdfs:label>
-    <rdfs:label xml:lang="fr">source "vivante" d'origine</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:about="#Dimension">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Unit"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:ID="measuredBy"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Class rdf:about="#DFC_ProductGlossary_Measure"/>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">dimension</rdfs:label>
-    <rdfs:label xml:lang="fr">dimension</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="ProductType">
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Type"/>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#ProductType"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#ProductType"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:label xml:lang="en">product type (general taxonomy)</rdfs:label>
-    <rdfs:label xml:lang="fr">type de produit (classification générale)</rdfs:label>
-  </owl:Class>
-  <owl:Class rdf:ID="Process">
-    <rdfs:label xml:lang="en">process applied</rdfs:label>
-    <rdfs:label xml:lang="fr">procédé appliqué</rdfs:label>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#specializes"/>
-        </owl:onProperty>
-        <owl:allValuesFrom rdf:resource="#Process"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:allValuesFrom rdf:resource="#Process"/>
-        <owl:onProperty>
-          <owl:ObjectProperty rdf:about="#generalizes"/>
-        </owl:onProperty>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="#DFC_ProductGlossary_Facet"/>
-  </owl:Class>
-  <owl:Class rdf:about="#DFC_ProductGlossary_Measure">
-    <rdfs:label xml:lang="fr">thesaurus des unités de mesure</rdfs:label>
-    <rdfs:label xml:lang="en">unit of measures thesaurus</rdfs:label>
-  </owl:Class>
-  <owl:ObjectProperty rdf:about="#measures">
-    <rdfs:label xml:lang="fr">mesure</rdfs:label>
-    <rdfs:label xml:lang="en">measures</rdfs:label>
-    <rdfs:subPropertyOf>
-      <owl:ObjectProperty rdf:ID="DFC_ProductGlossary_ObjectProperty"/>
-    </rdfs:subPropertyOf>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#measuredBy"/>
-    </owl:inverseOf>
-    <rdfs:domain rdf:resource="#Unit"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#generalizes">
-    <rdfs:label xml:lang="fr">généralise</rdfs:label>
-    <rdfs:label xml:lang="en">generalizes</rdfs:label>
-    <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="#specializes"/>
-    </owl:inverseOf>
-    <rdfs:domain rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_ProductGlossary_ObjectProperty"/>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#specializes">
-    <rdfs:domain rdf:resource="#DFC_ProductGlossary_Facet"/>
-    <rdfs:subPropertyOf rdf:resource="#DFC_ProductGlossary_ObjectProperty"/>
-    <owl:inverseOf rdf:resource="#generalizes"/>
-    <rdfs:label xml:lang="fr">spécialise</rdfs:label>
-    <rdfs:label xml:lang="en">specializes</rdfs:label>
-  </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="#measuredBy">
-    <rdfs:domain rdf:resource="#Dimension"/>
-    <rdfs:label xml:lang="fr">mesuré en</rdfs:label>
-    <rdfs:label xml:lang="en">measured by</rdfs:label>
-    <rdfs:subPropertyOf rdf:resource="#DFC_ProductGlossary_ObjectProperty"/>
-    <owl:inverseOf rdf:resource="#measures"/>
-  </owl:ObjectProperty>
-  <owl:DatatypeProperty rdf:ID="quantity">
-    <rdfs:label xml:lang="fr">quantité</rdfs:label>
-    <rdfs:label xml:lang="en">quantity</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-  </owl:DatatypeProperty>
-  <owl:FunctionalProperty rdf:ID="description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:label xml:lang="fr">description</rdfs:label>
-    <rdfs:label xml:lang="en">description</rdfs:label>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-  </owl:FunctionalProperty>
-  <ProductType rdf:ID="DFC_ProductType_2">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A</rdfs:label>
-  </ProductType>
-  <Process rdf:ID="Process_2">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Unknow)</rdfs:label>
-  </Process>
-  <GlobalGenericOrigin rdf:ID="MerNoire"/>
-  <NatureOrigin rdf:ID="NatureOrigin_8">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Unknow)</rdfs:label>
-  </NatureOrigin>
-  <PartOrigin rdf:ID="PartOrigin_1">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Multi-origin)</rdfs:label>
-  </PartOrigin>
-  <Process rdf:ID="Process_1">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Unprocessed)</rdfs:label>
-  </Process>
-  <NatureOrigin rdf:ID="NatureOrigin_7">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Multi-origin)</rdfs:label>
-  </NatureOrigin>
-  <GlobalGenericOrigin rdf:ID="AtlanticNordEst"/>
-  <PartOrigin rdf:ID="PartOrigin_2">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >N/A (Unknow)</rdfs:label>
-  </PartOrigin>
-  <ProductType rdf:ID="DFC_ProductType_3">
-    <specializes>
-      <ProductType rdf:ID="DFC_ProductType_1">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Processed product</rdfs:label>
-        <generalizes rdf:resource="#DFC_ProductType_3"/>
-      </ProductType>
-    </specializes>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Products pack</rdfs:label>
-    <generalizes>
-      <ProductType rdf:ID="DFC_Specie_6">
-        <specializes rdf:resource="#DFC_ProductType_3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Mixed salad</rdfs:label>
-      </ProductType>
-    </generalizes>
-    <generalizes>
-      <ProductType rdf:ID="DFC_Specie_7">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Soup</rdfs:label>
-        <specializes rdf:resource="#DFC_ProductType_3"/>
-      </ProductType>
-    </generalizes>
-  </ProductType>
-  <Process rdf:ID="Process_3">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Assemble</rdfs:label>
-    <generalizes>
-      <Process rdf:ID="Process_4">
-        <specializes rdf:resource="#Process_3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Aggregate</rdfs:label>
-      </Process>
-    </generalizes>
-    <generalizes>
-      <Process rdf:ID="Process_5">
-        <specializes rdf:resource="#Process_3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Mix</rdfs:label>
-      </Process>
-    </generalizes>
-  </Process>
-  <Dimension rdf:ID="Dimension_7">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >number</rdfs:label>
-    <measuredBy>
-      <Unit rdf:ID="Unit_12">
-        <measures rdf:resource="#Dimension_7"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >unit</rdfs:label>
-      </Unit>
-    </measuredBy>
-    <measuredBy>
-      <Unit rdf:ID="Unit_8">
-        <measures rdf:resource="#Dimension_7"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >dozen</rdfs:label>
-      </Unit>
-    </measuredBy>
-  </Dimension>
-  <Dimension rdf:ID="Dimension_5">
-    <measuredBy>
-      <Unit rdf:ID="Unit_13">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >milliliter</rdfs:label>
-        <measures rdf:resource="#Dimension_5"/>
-      </Unit>
-    </measuredBy>
-    <measuredBy>
-      <Unit rdf:ID="Unit_10">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >liter</rdfs:label>
-        <measures rdf:resource="#Dimension_5"/>
-      </Unit>
-    </measuredBy>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >volume</rdfs:label>
-  </Dimension>
-  <TerritorialOrigin rdf:ID="Europe">
-    <generalizes>
-      <TerritorialOrigin rdf:ID="France">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Italy</rdfs:label>
-        <specializes rdf:resource="#Europe"/>
-      </TerritorialOrigin>
-    </generalizes>
-    <generalizes>
-      <TerritorialOrigin rdf:ID="Germany">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >France</rdfs:label>
-        <specializes rdf:resource="#Europe"/>
-      </TerritorialOrigin>
-    </generalizes>
-    <generalizes>
-      <TerritorialOrigin rdf:ID="Italy">
-        <specializes rdf:resource="#Europe"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Greece</rdfs:label>
-      </TerritorialOrigin>
-    </generalizes>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Europe</rdfs:label>
-  </TerritorialOrigin>
-  <NatureOrigin rdf:ID="NatureOrigin_10">
-    <specializes>
-      <NatureOrigin rdf:ID="NatureOrigin_9">
-        <generalizes rdf:resource="#NatureOrigin_10"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Plants</rdfs:label>
-      </NatureOrigin>
-    </specializes>
-    <generalizes>
-      <NatureOrigin rdf:ID="NatureOrigin_11">
-        <specializes rdf:resource="#NatureOrigin_10"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Carotte</rdfs:label>
-      </NatureOrigin>
-    </generalizes>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Apiaciée</rdfs:label>
-  </NatureOrigin>
-  <Process rdf:ID="Process_6">
-    <generalizes>
-      <Process rdf:ID="Process_7">
-        <specializes rdf:resource="#Process_6"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Picked</rdfs:label>
-      </Process>
-    </generalizes>
-    <generalizes>
-      <Process rdf:ID="Process_8">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Cut</rdfs:label>
-        <specializes rdf:resource="#Process_6"/>
-      </Process>
-    </generalizes>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Desasemble</rdfs:label>
-  </Process>
-  <Dimension rdf:ID="Dimension_6">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >weight</rdfs:label>
-    <measuredBy>
-      <Unit rdf:ID="Unit_11">
-        <measures rdf:resource="#Dimension_6"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >gram</rdfs:label>
-      </Unit>
-    </measuredBy>
-    <measuredBy>
-      <Unit rdf:ID="Unit_9">
-        <measures rdf:resource="#Dimension_6"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >kilogram</rdfs:label>
-      </Unit>
-    </measuredBy>
-  </Dimension>
-  <PartOrigin rdf:ID="PartOrigin_4">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Part or product of animal</rdfs:label>
-    <generalizes>
-      <PartOrigin rdf:ID="PartOrigin_6">
-        <specializes rdf:resource="#PartOrigin_4"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Bull</rdfs:label>
-      </PartOrigin>
-    </generalizes>
-  </PartOrigin>
-  <PartOrigin rdf:ID="PartOrigin_3">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >Part or product of plant</rdfs:label>
-    <generalizes>
-      <PartOrigin rdf:ID="PartOrigin_5">
-        <specializes rdf:resource="#PartOrigin_3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >Seed</rdfs:label>
-      </PartOrigin>
-    </generalizes>
-  </PartOrigin>
-</rdf:RDF>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
+    <Prefix name="" IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Declaration>
+        <Class IRI="#Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalGenericOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerritorialOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generalizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specializes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DFC_Specie_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DFC_Specie_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PartOrigin_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MerNoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DFC_ProductType_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureOrigin_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DFC_ProductType_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureOrigin_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureOrigin_9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AtlanticNordEst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NatureOrigin_11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dimension_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dimension_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dimension_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Process_8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#Certification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#Certification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#DFC_ProductGlossary_Facet"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#DFC_ProductGlossary_Facet"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#specializes"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#DFC_ProductGlossary_Type"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#DFC_ProductGlossary_Type"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#specializes"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimension"/>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimension"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#measuredBy"/>
+            <Class IRI="#Unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#GlobalGenericOrigin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#GlobalGenericOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#NatureOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#NatureOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#PartOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#PartOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#ProductType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#ProductType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#TerritorialOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#TerritorialOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#measures"/>
+            <Class IRI="#Dimension"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#measures"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <NamedIndividual IRI="#AtlanticNordEst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductType"/>
+        <NamedIndividual IRI="#DFC_ProductType_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductType"/>
+        <NamedIndividual IRI="#DFC_ProductType_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductType"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductType"/>
+        <NamedIndividual IRI="#DFC_Specie_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductType"/>
+        <NamedIndividual IRI="#DFC_Specie_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dimension"/>
+        <NamedIndividual IRI="#Dimension_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dimension"/>
+        <NamedIndividual IRI="#Dimension_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dimension"/>
+        <NamedIndividual IRI="#Dimension_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TerritorialOrigin"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TerritorialOrigin"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TerritorialOrigin"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TerritorialOrigin"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <NamedIndividual IRI="#MerNoire"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NatureOrigin"/>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NatureOrigin"/>
+        <NamedIndividual IRI="#NatureOrigin_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NatureOrigin"/>
+        <NamedIndividual IRI="#NatureOrigin_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NatureOrigin"/>
+        <NamedIndividual IRI="#NatureOrigin_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NatureOrigin"/>
+        <NamedIndividual IRI="#NatureOrigin_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PartOrigin"/>
+        <NamedIndividual IRI="#PartOrigin_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Process"/>
+        <NamedIndividual IRI="#Process_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Unit"/>
+        <NamedIndividual IRI="#Unit_9"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#DFC_ProductType_1"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+        <NamedIndividual IRI="#DFC_Specie_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+        <NamedIndividual IRI="#DFC_Specie_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+        <NamedIndividual IRI="#DFC_ProductType_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#DFC_Specie_6"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#DFC_Specie_7"/>
+        <NamedIndividual IRI="#DFC_ProductType_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_5"/>
+        <NamedIndividual IRI="#Unit_10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_5"/>
+        <NamedIndividual IRI="#Unit_13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_6"/>
+        <NamedIndividual IRI="#Unit_11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_6"/>
+        <NamedIndividual IRI="#Unit_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_7"/>
+        <NamedIndividual IRI="#Unit_12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measuredBy"/>
+        <NamedIndividual IRI="#Dimension_7"/>
+        <NamedIndividual IRI="#Unit_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Europe"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Europe"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Europe"/>
+        <NamedIndividual IRI="#Italy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Italy"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+        <NamedIndividual IRI="#NatureOrigin_11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+        <NamedIndividual IRI="#NatureOrigin_9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#NatureOrigin_11"/>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#NatureOrigin_9"/>
+        <NamedIndividual IRI="#NatureOrigin_10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#PartOrigin_3"/>
+        <NamedIndividual IRI="#PartOrigin_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#PartOrigin_4"/>
+        <NamedIndividual IRI="#PartOrigin_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#PartOrigin_5"/>
+        <NamedIndividual IRI="#PartOrigin_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#PartOrigin_6"/>
+        <NamedIndividual IRI="#PartOrigin_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Process_3"/>
+        <NamedIndividual IRI="#Process_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Process_3"/>
+        <NamedIndividual IRI="#Process_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Process_4"/>
+        <NamedIndividual IRI="#Process_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Process_5"/>
+        <NamedIndividual IRI="#Process_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Process_6"/>
+        <NamedIndividual IRI="#Process_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#generalizes"/>
+        <NamedIndividual IRI="#Process_6"/>
+        <NamedIndividual IRI="#Process_8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Process_7"/>
+        <NamedIndividual IRI="#Process_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#specializes"/>
+        <NamedIndividual IRI="#Process_8"/>
+        <NamedIndividual IRI="#Process_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_10"/>
+        <NamedIndividual IRI="#Dimension_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_11"/>
+        <NamedIndividual IRI="#Dimension_6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_12"/>
+        <NamedIndividual IRI="#Dimension_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_13"/>
+        <NamedIndividual IRI="#Dimension_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_8"/>
+        <NamedIndividual IRI="#Dimension_7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Unit_9"/>
+        <NamedIndividual IRI="#Dimension_6"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generalizes"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measuredBy"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measures"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#specializes"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generalizes"/>
+        <ObjectProperty IRI="#specializes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#measuredBy"/>
+        <ObjectProperty IRI="#measures"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generalizes"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Dimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specializes"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </ObjectPropertyDomain>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#description"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#quantity"/>
+    </FunctionalDataProperty>
+    <DataPropertyRange>
+        <DataProperty IRI="#description"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Certification</IRI>
+        <Literal xml:lang="en">certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Certification</IRI>
+        <Literal xml:lang="fr">certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Facet</IRI>
+        <Literal xml:lang="en">Subject of the facets thesaurus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Facet</IRI>
+        <Literal xml:lang="fr">Sujet du Thésaurus à Facettes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Measure</IRI>
+        <Literal xml:lang="fr">thesaurus des unités de mesure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Measure</IRI>
+        <Literal xml:lang="en">unit of measures thesaurus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductType_1</IRI>
+        <Literal>Processed product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductType_2</IRI>
+        <Literal>N/A</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductType_3</IRI>
+        <Literal>Products pack</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_Specie_6</IRI>
+        <Literal>Mixed salad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_Specie_7</IRI>
+        <Literal>Soup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension</IRI>
+        <Literal xml:lang="en">dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension</IRI>
+        <Literal xml:lang="fr">dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension_5</IRI>
+        <Literal>volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension_6</IRI>
+        <Literal>weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension_7</IRI>
+        <Literal>number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Europe</IRI>
+        <Literal>Europe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#France</IRI>
+        <Literal>Italy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Germany</IRI>
+        <Literal>France</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlobalGenericOrigin</IRI>
+        <Literal xml:lang="en">Global generic origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlobalGenericOrigin</IRI>
+        <Literal xml:lang="fr">Origines génériques globales</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Italy</IRI>
+        <Literal>Greece</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin</IRI>
+        <Literal xml:lang="en">natural &quot;living&quot; origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin</IRI>
+        <Literal xml:lang="fr">source &quot;vivante&quot; d&apos;origine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin_10</IRI>
+        <Literal>Apiaciée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin_11</IRI>
+        <Literal>Carotte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin_7</IRI>
+        <Literal>N/A (Multi-origin)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin_8</IRI>
+        <Literal>N/A (Unknow)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin_9</IRI>
+        <Literal>Plants</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin</IRI>
+        <Literal xml:lang="en">part of natural &quot;living&quot; origin concerned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin</IRI>
+        <Literal xml:lang="fr">partie de la source &quot;vivante&quot; d&apos;origine concernée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_1</IRI>
+        <Literal>N/A (Multi-origin)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_2</IRI>
+        <Literal>N/A (Unknow)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_3</IRI>
+        <Literal>Part or product of plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_4</IRI>
+        <Literal>Part or product of animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_5</IRI>
+        <Literal>Seed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin_6</IRI>
+        <Literal>Bull</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process</IRI>
+        <Literal xml:lang="en">process applied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process</IRI>
+        <Literal xml:lang="fr">procédé appliqué</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_1</IRI>
+        <Literal>N/A (Unprocessed)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_2</IRI>
+        <Literal>N/A (Unknow)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_3</IRI>
+        <Literal>Assemble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_4</IRI>
+        <Literal>Aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_5</IRI>
+        <Literal>Mix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_6</IRI>
+        <Literal>Desasemble</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_7</IRI>
+        <Literal>Picked</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process_8</IRI>
+        <Literal>Cut</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductType</IRI>
+        <Literal xml:lang="en">product type (general taxonomy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductType</IRI>
+        <Literal xml:lang="fr">type de produit (classification générale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TerritorialOrigin</IRI>
+        <Literal xml:lang="fr">origine territoriale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TerritorialOrigin</IRI>
+        <Literal xml:lang="en">territorial origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal xml:lang="en">unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal xml:lang="fr">unité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_10</IRI>
+        <Literal>liter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_11</IRI>
+        <Literal>gram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_12</IRI>
+        <Literal>unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_13</IRI>
+        <Literal>milliliter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_8</IRI>
+        <Literal>dozen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit_9</IRI>
+        <Literal>kilogram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#description</IRI>
+        <Literal xml:lang="en">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#description</IRI>
+        <Literal xml:lang="fr">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generalizes</IRI>
+        <Literal xml:lang="en">generalizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generalizes</IRI>
+        <Literal xml:lang="fr">généralise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuredBy</IRI>
+        <Literal xml:lang="en">measured by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuredBy</IRI>
+        <Literal xml:lang="fr">mesuré en</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="en">measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="fr">mesure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="en">quantity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="fr">quantité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specializes</IRI>
+        <Literal xml:lang="en">specializes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specializes</IRI>
+        <Literal xml:lang="fr">spécialise</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
-<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
