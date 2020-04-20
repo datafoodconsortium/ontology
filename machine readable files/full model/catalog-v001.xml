@@ -2,6 +2,6 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl" uri="file:/home/simon/GIT/ontology/machine%20readable%20files/technical%20model/DFC_TechnicalOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1587160969100" name="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl" uri="DFC_FullModel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1587378044531" name="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl" uri="DFC_FullModel.owl"/>
     </group>
 </catalog>

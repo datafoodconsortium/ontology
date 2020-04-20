@@ -20,32 +20,44 @@
         <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
         <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
         <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
-	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/> 
+	<rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
 	<vann:preferredNamespacePrefix>dfc</vann:preferredNamespacePrefix>
 	<dc:title xml:lang="en">Data Food Consortium</dc:title>
-	<dc:description xml:lang="en">A common vocabulary for digital food platforms</dc:description> 
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued> 
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</dc:modified> 
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</owl:versionInfo> 
+	<dc:description xml:lang="en">A common vocabulary for digital food platforms</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</dc:modified>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</owl:versionInfo>
         <rdfs:comment xml:lang="en">comment</rdfs:comment>
-        <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/> 
-        <dc:contributor> 
-           <foaf:Person rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q91111696.rdf"/> 
-        </dc:contributor> 
-        <dc:contributor> 
-           <foaf:Person rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q90913835.rdf"/> 
-        </dc:contributor> 
-        <dc:creator> 
-           <foaf:Person rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q91112171.rdf"/> 
-        </dc:creator> 
-        <dc:publisher> 
-           <foaf:Organization rdf:about="https://www.wikidata.org/wiki/Special:EntityData/Q91112571.rdf"/> 
-        </dc:publisher> 
+        <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
+        <dc:creator>
+          <foaf:Person>
+            <foaf:firstName>Bernard</foaf:firstName>
+            <foaf:lastName>Chabot</foaf:lastName>
+          </foaf:Person>
+        </dc:creator>
+        <dc:publisher>
+           <foaf:Organization>
+             <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
+             <foaf:name>Data Food Consortium</foaf:name>
+           </foaf:Organization>
+        </dc:publisher>
+        <dc:contributor>
+           <foaf:Person>
+             <foaf:firstName>Simon</foaf:firstName>
+             <foaf:lastName>Louvet</foaf:lastName>
+           </foaf:Person>
+        </dc:contributor>
+        <dc:contributor>
+          <foaf:Person>
+            <foaf:firstName>Rachel</foaf:firstName>
+            <foaf:lastName>Arnould</foaf:lastName>
+          </foaf:Person>
+        </dc:contributor>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -53,13 +65,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property -->
 
     <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#DFC_Interface_Property"/>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#certificateOf -->
@@ -72,7 +84,7 @@
         <rdfs:label xml:lang="fr">certificat/label de</rdfs:label>
         <rdfs:label xml:lang="en">certificate of</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#facetOf -->
@@ -84,7 +96,7 @@
         <rdfs:label xml:lang="en">facet of</rdfs:label>
         <rdfs:label xml:lang="fr">facette de</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#geographicalOriginOf -->
@@ -96,7 +108,7 @@
         <rdfs:label xml:lang="en">geographical origin of</rdfs:label>
         <rdfs:label xml:lang="fr">origine géographique de</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasCertification -->
@@ -108,7 +120,7 @@
         <rdfs:label xml:lang="fr">a pour certification/label</rdfs:label>
         <rdfs:label xml:lang="en">has certification</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasFacet -->
@@ -119,7 +131,7 @@
         <rdfs:label xml:lang="fr">a pour facette descriptive</rdfs:label>
         <rdfs:label xml:lang="en">has facet</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasGeographicalOrigin -->
@@ -132,7 +144,7 @@
         <rdfs:label xml:lang="fr">a pour origine géographique</rdfs:label>
         <rdfs:label xml:lang="en">has geographical origin</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasNatureOrigin -->
@@ -144,7 +156,7 @@
         <rdfs:label xml:lang="fr">a pour source / origine naturelle ou vivante</rdfs:label>
         <rdfs:label xml:lang="en">has for nature origin</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasPartOrigin -->
@@ -156,7 +168,7 @@
         <rdfs:label xml:lang="fr">a pour partie d&apos;origine au sein de la source</rdfs:label>
         <rdfs:label xml:lang="en">has for part origin</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasProcess -->
@@ -169,7 +181,7 @@
         <rdfs:label xml:lang="fr">a subi comme procédé</rdfs:label>
         <rdfs:label xml:lang="en">has process</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasType -->
@@ -181,7 +193,7 @@
         <rdfs:label xml:lang="fr">a pour type</rdfs:label>
         <rdfs:label xml:lang="en">has type</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#hasUnit -->
@@ -192,7 +204,7 @@
         <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
         <rdfs:label xml:lang="en">has unit</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#natureOriginOf -->
@@ -202,7 +214,7 @@
         <rdfs:label xml:lang="en">nature origin of</rdfs:label>
         <rdfs:label xml:lang="fr">origine naturelle (source) de</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#partOriginOf -->
@@ -212,7 +224,7 @@
         <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
         <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#processOf -->
@@ -224,7 +236,7 @@
         <rdfs:label xml:lang="en">process of</rdfs:label>
         <rdfs:label xml:lang="fr">procédé utilisé pour</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#typeOf -->
@@ -234,10 +246,10 @@
         <rdfs:label xml:lang="en">type of</rdfs:label>
         <rdfs:label xml:lang="fr">type pour</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -245,7 +257,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#Image -->
@@ -264,7 +276,7 @@
         <rdfs:label xml:lang="en">image</rdfs:label>
         <rdfs:label xml:lang="fr">image</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#brand -->
@@ -275,7 +287,7 @@
         <rdfs:label xml:lang="en">brand</rdfs:label>
         <rdfs:label xml:lang="fr">marque</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#claim -->
@@ -286,7 +298,7 @@
         <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
         <rdfs:label xml:lang="en">product claim</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#description -->
@@ -297,7 +309,7 @@
         <rdfs:label xml:lang="en">description</rdfs:label>
         <rdfs:label xml:lang="fr">description</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#physicalCharacteristics -->
@@ -308,7 +320,7 @@
         <rdfs:label xml:lang="fr">charactéristique physique</rdfs:label>
         <rdfs:label xml:lang="en">physical characteristics</rdfs:label>
     </owl:DatatypeProperty>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#quantity -->
@@ -328,10 +340,10 @@
         <rdfs:label xml:lang="en">quantity</rdfs:label>
         <rdfs:label xml:lang="fr">quantité</rdfs:label>
     </owl:DatatypeProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -339,7 +351,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation -->
@@ -347,7 +359,7 @@
     <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation">
         <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject -->
@@ -355,7 +367,7 @@
     <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject">
         <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </rdf:Description>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct -->
@@ -429,7 +441,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
+
 
 
     <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure -->
@@ -437,10 +449,10 @@
     <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure">
         <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </rdf:Description>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotations
@@ -456,4 +468,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
