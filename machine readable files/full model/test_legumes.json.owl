@@ -1,0 +1,855 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AtlanticNordEst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin" ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "certification"
+  }, {
+    "@language" : "fr",
+    "@value" : "certification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subject of the facets thesaurus"
+  }, {
+    "@language" : "fr",
+    "@value" : "Sujet du Thésaurus à Facettes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "thesaurus des unités de mesure"
+  }, {
+    "@language" : "en",
+    "@value" : "unit of measures thesaurus"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Processed product"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_6"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_7"
+  } ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Products pack"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mixed salad"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soup"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dimension"
+  }, {
+    "@language" : "fr",
+    "@value" : "dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_10"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "volume"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_11"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "weight"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_12"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "number"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#France"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Germany"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Italy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Europe"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#France",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Italy"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Germany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "France"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Global generic origin"
+  }, {
+    "@language" : "fr",
+    "@value" : "Origines génériques globales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Italy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Greece"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#MerNoire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin" ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "natural \"living\" origin"
+  }, {
+    "@language" : "fr",
+    "@value" : "source \"vivante\" d'origine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_11"
+  } ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Apiaciée"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Carotte"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Multi-origin)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Unknow)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Plants"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of natural \"living\" origin concerned"
+  }, {
+    "@language" : "fr",
+    "@value" : "partie de la source \"vivante\" d'origine concernée"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid14"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Multi-origin)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Unknow)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Part or product of plant"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Part or product of animal"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Seed"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bull"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "process applied"
+  }, {
+    "@language" : "fr",
+    "@value" : "procédé appliqué"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Unprocessed)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "N/A (Unknow)"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_4"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Assemble"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aggregate"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Mix"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_7"
+  }, {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Desasemble"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Picked"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cut"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "product type (general taxonomy)"
+  }, {
+    "@language" : "fr",
+    "@value" : "type de produit (classification générale)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "origine territoriale"
+  }, {
+    "@language" : "en",
+    "@value" : "territorial origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  }, {
+    "@id" : "_:genid20"
+  }, {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "unit"
+  }, {
+    "@language" : "fr",
+    "@value" : "unité"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure"
+  }, {
+    "@id" : "_:genid22"
+  }, {
+    "@id" : "_:genid23"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "liter"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "gram"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unit"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "milliliter"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "dozen"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit" ],
+  "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "kilogram"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "description"
+  }, {
+    "@language" : "fr",
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "generalizes"
+  }, {
+    "@language" : "fr",
+    "@value" : "généralise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#legumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fr",
+    "@value" : "Légumes"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measured by"
+  }, {
+    "@language" : "fr",
+    "@value" : "mesuré en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "measures"
+  }, {
+    "@language" : "fr",
+    "@value" : "mesure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#quantity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "quantity"
+  }, {
+    "@language" : "fr",
+    "@value" : "quantité"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "specializes"
+  }, {
+    "@language" : "fr",
+    "@value" : "spécialise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"
+  } ]
+}, {
+  "@id" : "http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dfc="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
+	xmlns:dfc:specialize="[object Object]">
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#ail">
+		<rdfs:label>Ail</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#aillet">
+		<rdfs:label>Aillet</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#artichaut">
+		<rdfs:label>Artichaut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#asperge">
+		<rdfs:label>Asperge</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#aubergine">
+		<rdfs:label>Aubergine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#blettes">
+		<rdfs:label>Blettes</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#betterave_rouge">
+		<rdfs:label>Betterave rouge</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#carotte">
+		<rdfs:label>Carotte</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#celeri-branche">
+		<rdfs:label>Céleri-branche</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#celeri-rave">
+		<rdfs:label>Céleri-rave</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#choux">
+		<rdfs:label>Choux</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#concombre">
+		<rdfs:label>Concombre</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#courges">
+		<rdfs:label>Courges</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#courgette">
+		<rdfs:label>Courgette</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#echalote">
+		<rdfs:label>Échalote</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fenouil">
+		<rdfs:label>Fenouil</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#haricot">
+		<rdfs:label>Haricot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#melon">
+		<rdfs:label>Melon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#navet">
+		<rdfs:label>Navet</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#oignon">
+		<rdfs:label>Oignon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#panais">
+		<rdfs:label>Panais</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#patate_douce">
+		<rdfs:label>Patate douce</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#poireau">
+		<rdfs:label>Poireau</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#poivron">
+		<rdfs:label>Poivron</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#pomme_de_terre">
+		<rdfs:label>Pomme de terre</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#radis">
+		<rdfs:label>Radis</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#rhubarbe">
+		<rdfs:label>Rhubarbe</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#rutabaga">
+		<rdfs:label>Rutabaga</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#salsifis">
+		<rdfs:label>Salsifis</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#tomates">
+		<rdfs:label>Tomates</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#topinambour">
+		<rdfs:label>Topinambour</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#salade">
+		<rdfs:label>Salade</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#aromates">
+		<rdfs:label>Aromates</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#champignons">
+		<rdfs:label>Champignons</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes_secs">
+		<rdfs:label>Légumes secs</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#megumes_quatrieme_gamme">
+		<rdfs:label>Mégumes quatrième gamme</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes_cinquieme_gamme">
+		<rdfs:label>Légumes cinquième gamme</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes_non_locaux">
+		<rdfs:label>Légumes non locaux</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#abricot">
+		<rdfs:label>Abricot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#cerise">
+		<rdfs:label>Cerise</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#citron">
+		<rdfs:label>Citron</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#clementine">
+		<rdfs:label>Clémentine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#coing">
+		<rdfs:label>Coing</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#figue">
+		<rdfs:label>Figue</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fraise">
+		<rdfs:label>Fraise</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#kiwi">
+		<rdfs:label>Kiwi</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#mandarine">
+		<rdfs:label>Mandarine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#nectarine">
+		<rdfs:label>Nectarine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#orange">
+		<rdfs:label>Orange</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#peche">
+		<rdfs:label>Pêche</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#poire">
+		<rdfs:label>Poire</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#pomme">
+		<rdfs:label>Pomme</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#prune">
+		<rdfs:label>Prune</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#pruneau">
+		<rdfs:label>Pruneau</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#raisin">
+		<rdfs:label>Raisin</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#petits_fruits">
+		<rdfs:label>Petits fruits</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits_a_coque">
+		<rdfs:label>Fruits à coque</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits_non_locaux">
+		<rdfs:label>Fruits non locaux</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers_de_vache">
+		<rdfs:label>Produits laitiers de vache</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers_de_chevre">
+		<rdfs:label>Produits laitiers de chèvre</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers_de_brebis">
+		<rdfs:label>Produits laitiers de brebis</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers_autres">
+		<rdfs:label>Produits laitiers autres</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#viande_bovine">
+		<rdfs:label>Viande bovine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#veau">
+		<rdfs:label>Veau</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#agneau">
+		<rdfs:label>Agneau</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#porc">
+		<rdfs:label>Porc</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#volailles">
+		<rdfs:label>Volailles</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#lapin">
+		<rdfs:label>Lapin</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#escargots">
+		<rdfs:label>Escargots</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_de_la_peche">
+		<rdfs:label>Produits de la pêche</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#oeufs">
+		<rdfs:label>Oeufs</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#pain">
+		<rdfs:label>Pain</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#boulangerie"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#viennoiserie">
+		<rdfs:label>Viennoiserie</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#boulangerie"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#boissons_non_alcoolisees">
+		<rdfs:label>Boissons non alcoolisées</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#boissons"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#boissons_alcoolisees">
+		<rdfs:label>Boissons alcoolisées</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#boissons"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes_transformes">
+		<rdfs:label>Légumes transformés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits_transformes">
+		<rdfs:label>Fruits transformés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_salee">
+		<rdfs:label>Epicerie salée</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_sucree">
+		<rdfs:label>Epicerie sucrée</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#plats_cuisines">
+		<rdfs:label>Plats cuisinés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes_surgeles">
+		<rdfs:label>Légumes surgelés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#surgeles"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits_surgeles">
+		<rdfs:label>Fruits surgelés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#surgeles"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#viandes_surgeles">
+		<rdfs:label>Viandes surgelés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#surgeles"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#plats_surgeles">
+		<rdfs:label>Plats surgelés</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#surgeles"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#cosmetique">
+		<rdfs:label>Cosmétique</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#non_alimentaire"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fleurs">
+		<rdfs:label>Fleurs</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#non_alimentaire"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#plants">
+		<rdfs:label>Plants</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/dfc-taxonomy.xml#non_alimentaire"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#legumes">
+		<rdfs:label>Légumes</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#fruits">
+		<rdfs:label>Fruits</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_laitiers">
+		<rdfs:label>Produits laitiers</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#produits_carnes">
+		<rdfs:label>Produits carnés</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#boulangerie">
+		<rdfs:label>Boulangerie</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#boissons">
+		<rdfs:label>Boissons</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#epicerie_locale">
+		<rdfs:label>Epicerie locale</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#surgeles">
+		<rdfs:label>Surgelés</rdfs:label>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/dfc-taxonomy.xml#non_alimentaire">
+		<rdfs:label>Non alimentaire</rdfs:label>
+	</rdf:Description>
+</rdf:RDF>
