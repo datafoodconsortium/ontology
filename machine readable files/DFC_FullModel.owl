@@ -1,10 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
      xml:base="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl"
-     xmlns:bo="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/terms/"
-     xmlns:pg="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -21,12 +19,22 @@
         <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
         <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
-        <dc:contributor>
+        <dc:description xml:lang="en">A common vocabulary for digital food platforms</dc:description>
+        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
+        <dc:title xml:lang="en">Data Food Consortium</dc:title>
+        <vann:preferredNamespacePrefix>dfc</vann:preferredNamespacePrefix>
+        <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms</rdfs:comment>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:versionInfo>
+        <dc:publisher>
             <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Simon</foaf:firstName>
-                <foaf:lastName>Louvet</foaf:lastName>
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+                <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
+                <foaf:name>Data Food Consortium</foaf:name>
             </rdf:Description>
+        </dc:publisher>
+        <dc:contributor>
+            <foaf:Person rdf:about="https://orcid.org/0000-0002-3528-6577"/>
         </dc:contributor>
         <dc:contributor>
             <rdf:Description>
@@ -42,20 +50,6 @@
                 <foaf:lastName>Chabot</foaf:lastName>
             </rdf:Description>
         </dc:creator>
-        <dc:description xml:lang="en">A common vocabulary for digital food platforms</dc:description>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-02-20</dc:modified>
-        <dc:publisher>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-                <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
-                <foaf:name>Data Food Consortium</foaf:name>
-            </rdf:Description>
-        </dc:publisher>
-        <dc:title xml:lang="en">Data Food Consortium</dc:title>
-        <vann:preferredNamespacePrefix>dfc</vann:preferredNamespacePrefix>
-        <rdfs:comment xml:lang="en">comment</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</owl:versionInfo>
     </owl:Ontology>
 
 
