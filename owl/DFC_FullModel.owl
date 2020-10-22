@@ -1,239 +1,95 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl"
-     xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl">
-        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
-        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
-        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
-        <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
-        <dc:description xml:lang="en">A common vocabulary for digital food platforms</dc:description>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
-        <dc:title xml:lang="en">Data Food Consortium</dc:title>
-        <vann:preferredNamespacePrefix>dfc</vann:preferredNamespacePrefix>
-        <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:versionInfo>
-        <dc:publisher>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-                <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
-                <foaf:name>Data Food Consortium</foaf:name>
-            </rdf:Description>
-        </dc:publisher>
-        <dc:contributor>
-            <foaf:Person rdf:about="https://orcid.org/0000-0002-3528-6577"/>
-        </dc:contributor>
-        <dc:contributor>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Rachel</foaf:firstName>
-                <foaf:lastName>Arnould</foaf:lastName>
-            </rdf:Description>
-        </dc:contributor>
-        <dc:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Bernard</foaf:firstName>
-                <foaf:lastName>Chabot</foaf:lastName>
-            </rdf:Description>
-        </dc:creator>
-    </owl:Ontology>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://creativecommons.org/ns#license -->
-
-    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-
-
-
-    <!-- http://purl.org/dc/terms/contributor -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
-
-
-
-    <!-- http://purl.org/dc/terms/creator -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-
-
-
-    <!-- http://purl.org/dc/terms/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-
-
-
-    <!-- http://purl.org/dc/terms/issued -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-
-
-
-    <!-- http://purl.org/dc/terms/modified -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-
-
-
-    <!-- http://purl.org/dc/terms/publisher -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-
-
-
-    <!-- http://purl.org/dc/terms/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-
-
-
-    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/firstName -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/firstName"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/homepage -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/homepage"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/lastName -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/lastName"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/name -->
-
-    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
-
-
-
-
-    <!-- http://purl.org/vocommons/voaf#Vocabulary -->
-
-    <owl:Class rdf:about="http://purl.org/vocommons/voaf#Vocabulary"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/Organization -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-
-
-
-    <!-- http://xmlns.com/foaf/0.1/Person -->
-
-    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_FullModel.owl -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl">
-        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-    </owl:NamedIndividual>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Simon</foaf:firstName>
-        <foaf:lastName>Louvet</foaf:lastName>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Rachel</foaf:firstName>
-        <foaf:lastName>Arnould</foaf:lastName>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Bernard</foaf:firstName>
-        <foaf:lastName>Chabot</foaf:lastName>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
-        <foaf:name>Data Food Consortium</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Bernard</foaf:firstName>
-        <foaf:lastName>Chabot</foaf:lastName>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-        <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
-        <foaf:name>Data Food Consortium</foaf:name>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Simon</foaf:firstName>
-        <foaf:lastName>Louvet</foaf:lastName>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-        <foaf:firstName>Rachel</foaf:firstName>
-        <foaf:lastName>Arnould</foaf:lastName>
-    </rdf:Description>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#FunctionalProduct">
-        <rdfs:comment xml:lang="fr"></rdfs:comment>
-    </rdf:Description>
-</rdf:RDF>
+     ontologyIRI="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl">
+    <Prefix name="" IRI="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"/>
+    <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Import>http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl</Import>
+    <Import>http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl</Import>
+    <Import>http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+        <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#rachelA</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#simonL</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#bernardC</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">A common vocabulary for digital food platforms</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-05-28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-10-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">Data Food Consortium</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>dfc</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">A common vocabulary for digital food platforms</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+    </Annotation>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#bernardC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#rachelA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#simonL"/>
+    </ClassAssertion>
+</Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

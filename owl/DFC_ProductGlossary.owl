@@ -1,794 +1,549 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"
-     xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/terms/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
-        <owl:imports rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
-        <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
-        <dc:title xml:lang="en">Data Food Consortium Product</dc:title>
-        <vann:preferredNamespacePrefix>dfc-p</vann:preferredNamespacePrefix>
-        <dc:description xml:lang="en">A common vocabulary for digital food platforms (Product Glossary Part)</dc:description>
-        <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Product Glossary Part)</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:versionInfo>
-        <dc:publisher>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-                <foaf:homepage rdf:resource="http://datafoodconsortium.org/"/>
-                <foaf:name>Data Food Consortium</foaf:name>
-            </rdf:Description>
-        </dc:publisher>
-        <dc:contributor>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Simon</foaf:firstName>
-                <foaf:lastName>Louvet</foaf:lastName>
-            </rdf:Description>
-        </dc:contributor>
-        <dc:contributor>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Rachel</foaf:firstName>
-                <foaf:lastName>Arnould</foaf:lastName>
-            </rdf:Description>
-        </dc:contributor>
-        <dc:creator>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-                <foaf:firstName>Bernard</foaf:firstName>
-                <foaf:lastName>Chabot</foaf:lastName>
-            </rdf:Description>
-        </dc:creator>
-    </owl:Ontology>
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty -->
-
-    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"/>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes -->
-
-    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes">
-        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:label xml:lang="en">generalizes</rdfs:label>
-        <rdfs:label xml:lang="fr">généralise</rdfs:label>
-    </owl:ObjectProperty>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy -->
-
-    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy">
-        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"/>
-        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <rdfs:label xml:lang="en">measured by</rdfs:label>
-        <rdfs:label xml:lang="fr">mesuré en</rdfs:label>
-    </owl:ObjectProperty>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures -->
-
-    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures">
-        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <rdfs:label xml:lang="en">measures</rdfs:label>
-        <rdfs:label xml:lang="fr">mesure</rdfs:label>
-    </owl:ObjectProperty>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes -->
-
-    <owl:ObjectProperty rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes">
-        <rdfs:subPropertyOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:label xml:lang="en">specializes</rdfs:label>
-        <rdfs:label xml:lang="fr">spécialise</rdfs:label>
-    </owl:ObjectProperty>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">certification</rdfs:label>
-        <rdfs:label xml:lang="fr">certification</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Subject of the facets thesaurus</rdfs:label>
-        <rdfs:label xml:lang="fr">Sujet du Thésaurus à Facettes</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure -->
-
-    <owl:Class   rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
-        <rdfs:label xml:lang="fr">thesaurus des unités de mesure</rdfs:label>
-        <rdfs:label xml:lang="en">unit of measures thesaurus</rdfs:label>
-    </owl:Class >
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measuredBy"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">dimension</rdfs:label>
-        <rdfs:label xml:lang="fr">dimension</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:someValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Global generic origin</rdfs:label>
-        <rdfs:label xml:lang="fr">Origines génériques globales</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">natural &quot;living&quot; origin</rdfs:label>
-        <rdfs:label xml:lang="fr">source &quot;vivante&quot; d&apos;origine</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">part of natural &quot;living&quot; origin concerned</rdfs:label>
-        <rdfs:label xml:lang="fr">partie de la source &quot;vivante&quot; d&apos;origine concernée</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">process applied</rdfs:label>
-        <rdfs:label xml:lang="fr">procédé appliqué</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Type"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">product type (general taxonomy)</rdfs:label>
-        <rdfs:label xml:lang="fr">type de produit (classification générale)</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="fr">origine territoriale</rdfs:label>
-        <rdfs:label xml:lang="en">territorial origin</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit">
-        <rdfs:subClassOf rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"/>
-                <owl:allValuesFrom rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#measures"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">unit</rdfs:label>
-        <rdfs:label xml:lang="fr">unité</rdfs:label>
-    </owl:Class>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing -->
-
-    <owl:Class rdf:about="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
-
-
-
-    <!--
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AtlanticNordEst -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AtlanticNordEst">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_1 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_1">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"/>
-        <rdfs:label>Processed product</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_2 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_2">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-        <rdfs:label>N/A</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_6"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_7"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_1"/>
-        <rdfs:label>Products pack</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_6 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_6">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"/>
-        <rdfs:label>Mixed salad</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_7 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_Specie_7">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductType_3"/>
-        <rdfs:label>Soup</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_10"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_13"/>
-        <rdfs:label>volume</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_11"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_9"/>
-        <rdfs:label>weight</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_12"/>
-        <DFC_ProductGlossary:measuredBy rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_8"/>
-        <rdfs:label>number</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#France"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Germany"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Italy"/>
-        <rdfs:label>Europe</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#France -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#France">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"/>
-        <rdfs:label>Italy</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Germany -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Germany">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"/>
-        <rdfs:label>France</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Italy -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Italy">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Europe"/>
-        <rdfs:label>Greece</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#MerNoire -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#MerNoire">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_11"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_9"/>
-        <rdfs:label>Apiaciée</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_11 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_11">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10"/>
-        <rdfs:label>Carotte</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_7 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_7">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <rdfs:label>N/A (Multi-origin)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_8 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_8">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <rdfs:label>N/A (Unknow)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_9 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_9">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin_10"/>
-        <rdfs:label>Plants</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_1 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_1">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <rdfs:label>N/A (Multi-origin)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_2 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_2">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <rdfs:label>N/A (Unknow)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_3 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_3">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_5"/>
-        <rdfs:label>Part or product of plant</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_4 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_4">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_6"/>
-        <rdfs:label>Part or product of animal</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_5 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_5">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_3"/>
-        <rdfs:label>Seed</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_6 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_6">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin_4"/>
-        <rdfs:label>Bull</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_1 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_1">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <rdfs:label>N/A (Unprocessed)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_2 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_2">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <rdfs:label>N/A (Unknow)</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_4"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_5"/>
-        <rdfs:label>Assemble</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_4 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_4">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3"/>
-        <rdfs:label>Aggregate</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_5 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_5">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_3"/>
-        <rdfs:label>Mix</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_7"/>
-        <DFC_ProductGlossary:generalizes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_8"/>
-        <rdfs:label>Desasemble</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_7 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_7">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6"/>
-        <rdfs:label>Picked</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_8 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_8">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <DFC_ProductGlossary:specializes rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process_6"/>
-        <rdfs:label>Cut</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_10 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_10">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5"/>
-        <rdfs:label>liter</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_11 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_11">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6"/>
-        <rdfs:label>gram</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_12 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_12">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7"/>
-        <rdfs:label>unit</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_13 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_13">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_5"/>
-        <rdfs:label>milliliter</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_8 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_8">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_7"/>
-        <rdfs:label>dozen</rdfs:label>
-    </owl:NamedIndividual>
-
-
-
-    <!-- http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_9 -->
-
-    <owl:NamedIndividual rdf:about="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit_9">
-        <rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
-        <DFC_ProductGlossary:measures rdf:resource="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension_6"/>
-        <rdfs:label>kilogram</rdfs:label>
-    </owl:NamedIndividual>
-</rdf:RDF>
+     ontologyIRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
+    <Prefix name="" IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
+    <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
+    <Import>http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+        <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#rachelA</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#simonL</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#bernardC</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal xml:lang="en">A common vocabulary for digital food platforms (Product Glossary Part)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2018-05-28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-10-21</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:publisher"/>
+        <IRI>http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal xml:lang="en">Data Food Consortium Product</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal>dfc-p</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">A common vocabulary for digital food platforms (Product Glossary Part)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Certification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalGenericOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TerritorialOrigin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generalizes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measuredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#specializes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#bernardC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#rachelA"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#Certification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certification"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#Certification"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#DFC_ProductGlossary_Facet"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#DFC_ProductGlossary_Facet"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#specializes"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#DFC_ProductGlossary_Type"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#DFC_ProductGlossary_Type"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#specializes"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimension"/>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimension"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#measuredBy"/>
+            <Class IRI="#Unit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#GlobalGenericOrigin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalGenericOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#GlobalGenericOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#NatureOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NatureOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#NatureOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#PartOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PartOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#PartOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Process"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#Process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <Class IRI="#DFC_ProductGlossary_Type"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#ProductType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#ProductType"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#generalizes"/>
+            <Class IRI="#TerritorialOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TerritorialOrigin"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#specializes"/>
+            <Class IRI="#TerritorialOrigin"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#DFC_ProductGlossary_Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#measures"/>
+            <Class IRI="#Dimension"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#measures"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#bernardC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Organization"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#rachelA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="foaf:Person"/>
+        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#simonL"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#generalizes"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measuredBy"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measures"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#specializes"/>
+        <ObjectProperty IRI="#DFC_ProductGlossary_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#generalizes"/>
+        <ObjectProperty IRI="#specializes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#measuredBy"/>
+        <ObjectProperty IRI="#measures"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generalizes"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measuredBy"/>
+        <Class IRI="#Dimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Unit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#specializes"/>
+        <Class IRI="#DFC_ProductGlossary_Facet"/>
+    </ObjectPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Certification</IRI>
+        <Literal xml:lang="en">certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Certification</IRI>
+        <Literal xml:lang="fr">certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Facet</IRI>
+        <Literal xml:lang="en">Subject of the facets thesaurus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Facet</IRI>
+        <Literal xml:lang="fr">Sujet du Thésaurus à Facettes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Measure</IRI>
+        <Literal xml:lang="fr">thesaurus des unités de mesure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_ProductGlossary_Measure</IRI>
+        <Literal xml:lang="en">unit of measures thesaurus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension</IRI>
+        <Literal xml:lang="en">dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Dimension</IRI>
+        <Literal xml:lang="fr">dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlobalGenericOrigin</IRI>
+        <Literal xml:lang="en">Global generic origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlobalGenericOrigin</IRI>
+        <Literal xml:lang="fr">Origines génériques globales</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin</IRI>
+        <Literal xml:lang="en">natural &quot;living&quot; origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NatureOrigin</IRI>
+        <Literal xml:lang="fr">source &quot;vivante&quot; d&apos;origine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin</IRI>
+        <Literal xml:lang="en">part of natural &quot;living&quot; origin concerned</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PartOrigin</IRI>
+        <Literal xml:lang="fr">partie de la source &quot;vivante&quot; d&apos;origine concernée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process</IRI>
+        <Literal xml:lang="en">process applied</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Process</IRI>
+        <Literal xml:lang="fr">procédé appliqué</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductType</IRI>
+        <Literal xml:lang="en">product type (general taxonomy)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductType</IRI>
+        <Literal xml:lang="fr">type de produit (classification générale)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TerritorialOrigin</IRI>
+        <Literal xml:lang="fr">origine territoriale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TerritorialOrigin</IRI>
+        <Literal xml:lang="en">territorial origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal xml:lang="en">unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unit</IRI>
+        <Literal xml:lang="fr">unité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generalizes</IRI>
+        <Literal xml:lang="en">generalizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#generalizes</IRI>
+        <Literal xml:lang="fr">généralise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuredBy</IRI>
+        <Literal xml:lang="en">measured by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measuredBy</IRI>
+        <Literal xml:lang="fr">mesuré en</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="en">measures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#measures</IRI>
+        <Literal xml:lang="fr">mesure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specializes</IRI>
+        <Literal xml:lang="en">specializes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specializes</IRI>
+        <Literal xml:lang="fr">spécialise</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
