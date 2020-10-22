@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dfc="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
+	xmlns:dfc:specialize="[object Object]">
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#soft-drink">
+		<rdfs:label xml:lang="fr">Boisson non alcoolisée</rdfs:label>
+		<rdfs:label xml:lang="en">Soft drink</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#drink"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#salad">
+		<rdfs:label xml:lang="fr">Salade</rdfs:label>
+		<rdfs:label xml:lang="en">Salad</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#egg">
+		<rdfs:label xml:lang="fr">Oeuf</rdfs:label>
+		<rdfs:label xml:lang="en">Egg</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#old-variety-squash">
+		<rdfs:label xml:lang="fr">Variété ancienne</rdfs:label>
+		<rdfs:label xml:lang="en">Old variety squash</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#squash"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fig">
+		<rdfs:label xml:lang="fr">Figue</rdfs:label>
+		<rdfs:label xml:lang="en">Fig</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rocket">
+		<rdfs:label xml:lang="fr">Roquette</rdfs:label>
+		<rdfs:label xml:lang="en">Rocket</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#beef">
+		<rdfs:label xml:lang="fr">Viande bovine</rdfs:label>
+		<rdfs:label xml:lang="en">Beef</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-mature-cheese">
+		<rdfs:label xml:lang="fr">Fromage affinés</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep Mature cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-milk">
+		<rdfs:label xml:lang="fr">Lait</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep Milk</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chanterelle-mushroom">
+		<rdfs:label xml:lang="fr">Chanterelle</rdfs:label>
+		<rdfs:label xml:lang="en">Chanterelle mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-sweet-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt sucré</rdfs:label>
+		<rdfs:label xml:lang="en">Goat sweet yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rabbit">
+		<rdfs:label xml:lang="fr">Lapin</rdfs:label>
+		<rdfs:label xml:lang="en">Rabbit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pie-pastry">
+		<rdfs:label xml:lang="fr">Pâte à tarte</rdfs:label>
+		<rdfs:label xml:lang="en">Pie Pastry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#jam">
+		<rdfs:label xml:lang="fr">Confiture</rdfs:label>
+		<rdfs:label xml:lang="en">Jam</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sweet-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fourth-range-vegetable">
+		<rdfs:label xml:lang="fr">Légume quatrième gamme</rdfs:label>
+		<rdfs:label xml:lang="en">Fourth range vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mushroom">
+		<rdfs:label xml:lang="fr">Champignon</rdfs:label>
+		<rdfs:label xml:lang="en">Mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#beer">
+		<rdfs:label xml:lang="fr">Bière</rdfs:label>
+		<rdfs:label xml:lang="en">Beer</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#alcoholic-beverage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chilli-pepper">
+		<rdfs:label xml:lang="fr">Piment</rdfs:label>
+		<rdfs:label xml:lang="en">Chilli pepper</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#non-local-vegetable">
+		<rdfs:label xml:lang="fr">Légume non local</rdfs:label>
+		<rdfs:label xml:lang="en">Non local vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chicory">
+		<rdfs:label xml:lang="fr">Chicorée</rdfs:label>
+		<rdfs:label xml:lang="en">Chicory</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#other-cheese">
+		<rdfs:label xml:lang="fr">Fromage</rdfs:label>
+		<rdfs:label xml:lang="en">Other Cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#other-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cream-cheese">
+		<rdfs:label xml:lang="fr">Fromage blanc</rdfs:label>
+		<rdfs:label xml:lang="en">Cream cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#peach">
+		<rdfs:label xml:lang="fr">Pêche</rdfs:label>
+		<rdfs:label xml:lang="en">Peach</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#almond">
+		<rdfs:label xml:lang="fr">Amande</rdfs:label>
+		<rdfs:label xml:lang="en">Almond</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#nut"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#milk">
+		<rdfs:label xml:lang="fr">Lait</rdfs:label>
+		<rdfs:label xml:lang="en">Milk</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#romanesco-cabbage">
+		<rdfs:label xml:lang="fr">Chou romanesco</rdfs:label>
+		<rdfs:label xml:lang="en">Romanesco cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#frozen">
+		<rdfs:label xml:lang="fr">Surgelé</rdfs:label>
+		<rdfs:label xml:lang="en">Frozen</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fresh-meat">
+		<rdfs:label xml:lang="fr">Viande fraîche</rdfs:label>
+		<rdfs:label xml:lang="en">Fresh meat</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#pork"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#semolina">
+		<rdfs:label xml:lang="fr">Semoule</rdfs:label>
+		<rdfs:label xml:lang="en">Semolina</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#turkey">
+		<rdfs:label xml:lang="fr">Dinde</rdfs:label>
+		<rdfs:label xml:lang="en">Turkey</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#plant">
+		<rdfs:label xml:lang="fr">Plant</rdfs:label>
+		<rdfs:label xml:lang="en">Plant</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#inedible"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#kale-cabbage">
+		<rdfs:label xml:lang="fr">Chou kale</rdfs:label>
+		<rdfs:label xml:lang="en">Kale cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#asparagus">
+		<rdfs:label xml:lang="fr">Asperge</rdfs:label>
+		<rdfs:label xml:lang="en">Asparagus</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-yogurt-with-fruits">
+		<rdfs:label xml:lang="fr">Yaourt aux fruits</rdfs:label>
+		<rdfs:label xml:lang="en">Goat yogurt with fruits</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#wine">
+		<rdfs:label xml:lang="fr">Vin</rdfs:label>
+		<rdfs:label xml:lang="en">Wine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#alcoholic-beverage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-yogurt-on-a-bed-of-fruit">
+		<rdfs:label xml:lang="fr">Yaourt sur lit de fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep yogurt on a bed of fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#crepe-and-galette">
+		<rdfs:label xml:lang="fr">Crêpe et galette</rdfs:label>
+		<rdfs:label xml:lang="en">Crepe and galette</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-dairy-product">
+		<rdfs:label xml:lang="fr">Produits laitiers de chèvre</rdfs:label>
+		<rdfs:label xml:lang="en">Goat dairy product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#oyster-mushroom">
+		<rdfs:label xml:lang="fr">Pleurote</rdfs:label>
+		<rdfs:label xml:lang="en">Oyster mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#seashell">
+		<rdfs:label xml:lang="fr">Coquillage</rdfs:label>
+		<rdfs:label xml:lang="en">Seashell</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fishery-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#radish">
+		<rdfs:label xml:lang="fr">Radis</rdfs:label>
+		<rdfs:label xml:lang="en">Radish</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#tomato">
+		<rdfs:label xml:lang="fr">Tomate</rdfs:label>
+		<rdfs:label xml:lang="en">Tomato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pork">
+		<rdfs:label xml:lang="fr">Porc</rdfs:label>
+		<rdfs:label xml:lang="en">Pork</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#thyme">
+		<rdfs:label xml:lang="fr">Thym</rdfs:label>
+		<rdfs:label xml:lang="en">Thyme</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cider">
+		<rdfs:label xml:lang="fr">Cidre</rdfs:label>
+		<rdfs:label xml:lang="en">Cider</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#alcoholic-beverage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mint">
+		<rdfs:label xml:lang="fr">Menthe</rdfs:label>
+		<rdfs:label xml:lang="en">Mint</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#parsley">
+		<rdfs:label xml:lang="fr">Persil</rdfs:label>
+		<rdfs:label xml:lang="en">Parsley</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-fresh-cheese">
+		<rdfs:label xml:lang="fr">Fromage frais</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep Fresh cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cow-dairy-product">
+		<rdfs:label xml:lang="fr">Produit laitier de vache</rdfs:label>
+		<rdfs:label xml:lang="en">Cow dairy product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#jerusalem-artichoke">
+		<rdfs:label xml:lang="fr">Topinambour</rdfs:label>
+		<rdfs:label xml:lang="en">Jerusalem artichoke</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#ripe">
+		<rdfs:label xml:lang="fr">Mûre</rdfs:label>
+		<rdfs:label xml:lang="en">Ripe</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#salad-mix">
+		<rdfs:label xml:lang="fr">Mélange salades</rdfs:label>
+		<rdfs:label xml:lang="en">Salad mix</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#parsnip">
+		<rdfs:label xml:lang="fr">Panais</rdfs:label>
+		<rdfs:label xml:lang="en">Parsnip</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#broccoli-cabbage">
+		<rdfs:label xml:lang="fr">Chou brocoli</rdfs:label>
+		<rdfs:label xml:lang="en">Broccoli cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#salt">
+		<rdfs:label xml:lang="fr">Sel</rdfs:label>
+		<rdfs:label xml:lang="en">Salt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#yam">
+		<rdfs:label xml:lang="fr">Patate douce</rdfs:label>
+		<rdfs:label xml:lang="en">Yam</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-yogurt-with-fruits">
+		<rdfs:label xml:lang="fr">Yaourt aux fruits</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep yogurt with fruits</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#green-garlic">
+		<rdfs:label xml:lang="fr">Aillet</rdfs:label>
+		<rdfs:label xml:lang="en">Green Garlic</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chestnut">
+		<rdfs:label xml:lang="fr">Marron</rdfs:label>
+		<rdfs:label xml:lang="en">Chestnut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#nut"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chard">
+		<rdfs:label xml:lang="fr">Blette</rdfs:label>
+		<rdfs:label xml:lang="en">Chard</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#flower">
+		<rdfs:label xml:lang="fr">Fleur</rdfs:label>
+		<rdfs:label xml:lang="en">Flower</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#inedible"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fennel">
+		<rdfs:label xml:lang="fr">Fenouil</rdfs:label>
+		<rdfs:label xml:lang="en">Fennel</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fish">
+		<rdfs:label xml:lang="fr">Poisson</rdfs:label>
+		<rdfs:label xml:lang="en">Fish</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fishery-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#shallot">
+		<rdfs:label xml:lang="fr">Échalote</rdfs:label>
+		<rdfs:label xml:lang="en">Shallot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dried-fruit">
+		<rdfs:label xml:lang="fr">Fruit séché</rdfs:label>
+		<rdfs:label xml:lang="en">Dried fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#kiwi">
+		<rdfs:label xml:lang="fr">Kiwi</rdfs:label>
+		<rdfs:label xml:lang="en">Kiwi</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#berry">
+		<rdfs:label xml:lang="fr">Petit fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Berry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#inedible">
+		<rdfs:label xml:lang="fr">Non alimentaire</rdfs:label>
+		<rdfs:label xml:lang="en">Inedible</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chewed-up">
+		<rdfs:label xml:lang="fr">Mâche</rdfs:label>
+		<rdfs:label xml:lang="en">Chewed up</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#endive">
+		<rdfs:label xml:lang="fr">Endive</rdfs:label>
+		<rdfs:label xml:lang="en">Endive</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#celeriac">
+		<rdfs:label xml:lang="fr">Céleri-rave</rdfs:label>
+		<rdfs:label xml:lang="en">Celeriac</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#kohlrabi">
+		<rdfs:label xml:lang="fr">Chou rave</rdfs:label>
+		<rdfs:label xml:lang="en">Kohlrabi</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dandelion">
+		<rdfs:label xml:lang="fr">Pissenlit</rdfs:label>
+		<rdfs:label xml:lang="en">Dandelion</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#guinea-fowl">
+		<rdfs:label xml:lang="fr">Pintade</rdfs:label>
+		<rdfs:label xml:lang="en">Guinea fowl</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cassis">
+		<rdfs:label xml:lang="fr">Cassis</rdfs:label>
+		<rdfs:label xml:lang="en">Cassis</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#duck">
+		<rdfs:label xml:lang="fr">Canard</rdfs:label>
+		<rdfs:label xml:lang="en">Duck</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#deaths-trumpet">
+		<rdfs:label xml:lang="fr">Trompette de la mort</rdfs:label>
+		<rdfs:label xml:lang="en">Death&apos;s trumpet</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cosmetic">
+		<rdfs:label xml:lang="fr">Cosmétique</rdfs:label>
+		<rdfs:label xml:lang="en">Cosmetic</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#inedible"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#festive-poultry">
+		<rdfs:label xml:lang="fr">Volaille festive</rdfs:label>
+		<rdfs:label xml:lang="en">Festive poultry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#melon">
+		<rdfs:label xml:lang="fr">Melon</rdfs:label>
+		<rdfs:label xml:lang="en">Melon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sweet-groceries">
+		<rdfs:label xml:lang="fr">Epicerie sucrée</rdfs:label>
+		<rdfs:label xml:lang="en">Sweet groceries</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#local-grocery-store"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#smoothie">
+		<rdfs:label xml:lang="fr">Smoothie</rdfs:label>
+		<rdfs:label xml:lang="en">Smoothie</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#soft-drink"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#blueberry">
+		<rdfs:label xml:lang="fr">Myrtille</rdfs:label>
+		<rdfs:label xml:lang="en">Blueberry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#gooseberry">
+		<rdfs:label xml:lang="fr">Groseille à maquereau</rdfs:label>
+		<rdfs:label xml:lang="en">Gooseberry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#girolle-mushroom">
+		<rdfs:label xml:lang="fr">Girolle</rdfs:label>
+		<rdfs:label xml:lang="en">Girolle mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#grape">
+		<rdfs:label xml:lang="fr">Raisin</rdfs:label>
+		<rdfs:label xml:lang="en">Grape</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#aromatic">
+		<rdfs:label xml:lang="fr">Aromate</rdfs:label>
+		<rdfs:label xml:lang="en">Aromatic</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-fresh-cheese">
+		<rdfs:label xml:lang="fr">Fromage frais</rdfs:label>
+		<rdfs:label xml:lang="en">Goat Fresh cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-flavored-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt aromatisé</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep flavored yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#quinoa">
+		<rdfs:label xml:lang="fr">Quinoa</rdfs:label>
+		<rdfs:label xml:lang="en">Quinoa</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dried-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#ready-meal">
+		<rdfs:label xml:lang="fr">Plat cuisiné</rdfs:label>
+		<rdfs:label xml:lang="en">Ready meal</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#local-grocery-store"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rhubarb">
+		<rdfs:label xml:lang="fr">Rhubarbe</rdfs:label>
+		<rdfs:label xml:lang="en">Rhubarb</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rosemary">
+		<rdfs:label xml:lang="fr">Romarin</rdfs:label>
+		<rdfs:label xml:lang="en">Rosemary</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chinese-cabbage">
+		<rdfs:label xml:lang="fr">Chou chinois</rdfs:label>
+		<rdfs:label xml:lang="en">Chinese cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#brussels-sprouts">
+		<rdfs:label xml:lang="fr">Chou de Bruxelles</rdfs:label>
+		<rdfs:label xml:lang="en">Brussels sprouts</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage">
+		<rdfs:label xml:lang="fr">Boisson alcoolisée</rdfs:label>
+		<rdfs:label xml:lang="en">Alcoholic beverage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#drink"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#paris-mushroom">
+		<rdfs:label xml:lang="fr">Champignon de Paris</rdfs:label>
+		<rdfs:label xml:lang="en">Paris mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bottled-fruit">
+		<rdfs:label xml:lang="fr">Fruit en bocal</rdfs:label>
+		<rdfs:label xml:lang="en">Bottled fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pepper">
+		<rdfs:label xml:lang="fr">Poivron</rdfs:label>
+		<rdfs:label xml:lang="en">Pepper</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#round-tomato">
+		<rdfs:label xml:lang="fr">Tomate ronde</rdfs:label>
+		<rdfs:label xml:lang="en">Round tomato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#tomato"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goose">
+		<rdfs:label xml:lang="fr">Oie</rdfs:label>
+		<rdfs:label xml:lang="en">Goose</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bottled-vegetable">
+		<rdfs:label xml:lang="fr">Légume en bocal</rdfs:label>
+		<rdfs:label xml:lang="en">Bottled vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cooked-meat">
+		<rdfs:label xml:lang="fr">Viande cuite</rdfs:label>
+		<rdfs:label xml:lang="en">Cooked meat</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#pork"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#vegetable">
+		<rdfs:label xml:lang="fr">Légume</rdfs:label>
+		<rdfs:label xml:lang="en">Vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#quail">
+		<rdfs:label xml:lang="fr">Caille</rdfs:label>
+		<rdfs:label xml:lang="en">Quail</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mature-cheese">
+		<rdfs:label xml:lang="fr">Fromage affiné</rdfs:label>
+		<rdfs:label xml:lang="en">Mature cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#lemon">
+		<rdfs:label xml:lang="fr">Citron</rdfs:label>
+		<rdfs:label xml:lang="en">Lemon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pear">
+		<rdfs:label xml:lang="fr">Poire</rdfs:label>
+		<rdfs:label xml:lang="en">Pear</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#frozen-fruit">
+		<rdfs:label xml:lang="fr">Fruit surgelé</rdfs:label>
+		<rdfs:label xml:lang="en">Frozen fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#frozen"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#peas">
+		<rdfs:label xml:lang="fr">Pois</rdfs:label>
+		<rdfs:label xml:lang="en">Peas</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dried-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#salting">
+		<rdfs:label xml:lang="fr">Salaison</rdfs:label>
+		<rdfs:label xml:lang="en">Salting</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#pork"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#honey">
+		<rdfs:label xml:lang="fr">Miel</rdfs:label>
+		<rdfs:label xml:lang="en">Honey</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sweet-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#frozen-meal">
+		<rdfs:label xml:lang="fr">Plat surgelé</rdfs:label>
+		<rdfs:label xml:lang="en">Frozen meal</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#frozen"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pasta">
+		<rdfs:label xml:lang="fr">Pâte</rdfs:label>
+		<rdfs:label xml:lang="en">Pasta</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cherry-tomato">
+		<rdfs:label xml:lang="fr">Tomate cerise</rdfs:label>
+		<rdfs:label xml:lang="en">Cherry tomato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#tomato"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#frozen-meat">
+		<rdfs:label xml:lang="fr">Viande surgelée</rdfs:label>
+		<rdfs:label xml:lang="en">Frozen meat</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#frozen"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#non-local-fruit">
+		<rdfs:label xml:lang="fr">Fruit non local</rdfs:label>
+		<rdfs:label xml:lang="en">Non-local fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#clementine">
+		<rdfs:label xml:lang="fr">Clémentine</rdfs:label>
+		<rdfs:label xml:lang="en">Clementine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#other-milk">
+		<rdfs:label xml:lang="fr">Lait</rdfs:label>
+		<rdfs:label xml:lang="en">Other Milk</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#other-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dill">
+		<rdfs:label xml:lang="fr">Aneth</rdfs:label>
+		<rdfs:label xml:lang="en">Dill</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#lemonade">
+		<rdfs:label xml:lang="fr">Limonade</rdfs:label>
+		<rdfs:label xml:lang="en">Lemonade</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#soft-drink"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rice">
+		<rdfs:label xml:lang="fr">Riz</rdfs:label>
+		<rdfs:label xml:lang="en">Rice</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#snails">
+		<rdfs:label xml:lang="fr">Escargots</rdfs:label>
+		<rdfs:label xml:lang="en">Snails</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fifth-range-vegetable">
+		<rdfs:label xml:lang="fr">Légume cinquième gamme</rdfs:label>
+		<rdfs:label xml:lang="en">Fifth range vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#turnip">
+		<rdfs:label xml:lang="fr">Navet</rdfs:label>
+		<rdfs:label xml:lang="en">Turnip</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cluster-tomato">
+		<rdfs:label xml:lang="fr">Tomate grappe</rdfs:label>
+		<rdfs:label xml:lang="en">Cluster tomato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#tomato"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cabbage">
+		<rdfs:label xml:lang="fr">Chou</rdfs:label>
+		<rdfs:label xml:lang="en">Cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fruit-in-compote">
+		<rdfs:label xml:lang="fr">Fruit en compote</rdfs:label>
+		<rdfs:label xml:lang="en">Fruit in compote</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#digestive">
+		<rdfs:label xml:lang="fr">Digestif</rdfs:label>
+		<rdfs:label xml:lang="en">Digestive</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#alcoholic-beverage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#truffle">
+		<rdfs:label xml:lang="fr">Truffe</rdfs:label>
+		<rdfs:label xml:lang="en">Truffle</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-yogurt-on-a-bed-of-fruit">
+		<rdfs:label xml:lang="fr">Yaourt sur lit de fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Goat yogurt on a bed of fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#flour">
+		<rdfs:label xml:lang="fr">Farine</rdfs:label>
+		<rdfs:label xml:lang="en">Flour</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#eggplant">
+		<rdfs:label xml:lang="fr">Aubergine</rdfs:label>
+		<rdfs:label xml:lang="en">Eggplant</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cress">
+		<rdfs:label xml:lang="fr">Cresson</rdfs:label>
+		<rdfs:label xml:lang="en">Cress</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#quince">
+		<rdfs:label xml:lang="fr">Coing</rdfs:label>
+		<rdfs:label xml:lang="en">Quince</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sweet-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt sucré</rdfs:label>
+		<rdfs:label xml:lang="en">Sweet yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#laurel">
+		<rdfs:label xml:lang="fr">Laurier</rdfs:label>
+		<rdfs:label xml:lang="en">Laurel</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-dairy-dessert">
+		<rdfs:label xml:lang="fr">Desserts lactés</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep Dairy dessert</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#raspberry">
+		<rdfs:label xml:lang="fr">Framboise</rdfs:label>
+		<rdfs:label xml:lang="en">Raspberry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#hazelnut">
+		<rdfs:label xml:lang="fr">Noisette</rdfs:label>
+		<rdfs:label xml:lang="en">Hazelnut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#nut"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#delicatessen">
+		<rdfs:label xml:lang="fr">Charcuterie</rdfs:label>
+		<rdfs:label xml:lang="en">Delicatessen</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#pork"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-natural-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt nature</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep natural yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bakery">
+		<rdfs:label xml:lang="fr">Boulangerie</rdfs:label>
+		<rdfs:label xml:lang="en">Bakery</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#lettuce">
+		<rdfs:label xml:lang="fr">Laitue</rdfs:label>
+		<rdfs:label xml:lang="en">Lettuce</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#veal">
+		<rdfs:label xml:lang="fr">Veau</rdfs:label>
+		<rdfs:label xml:lang="en">Veal</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#drink">
+		<rdfs:label xml:lang="fr">Boisson</rdfs:label>
+		<rdfs:label xml:lang="en">Drink</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#tarragon">
+		<rdfs:label xml:lang="fr">Estragon</rdfs:label>
+		<rdfs:label xml:lang="en">Tarragon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#meat-product">
+		<rdfs:label xml:lang="fr">Produit carné</rdfs:label>
+		<rdfs:label xml:lang="en">Meat product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#natural-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt nature</rdfs:label>
+		<rdfs:label xml:lang="en">Natural yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-dairy-dessert">
+		<rdfs:label xml:lang="fr">Dessert lacté</rdfs:label>
+		<rdfs:label xml:lang="en">Goat Dairy dessert</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#milky-mushroom">
+		<rdfs:label xml:lang="fr">Lactaire</rdfs:label>
+		<rdfs:label xml:lang="en">Milky mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cherry">
+		<rdfs:label xml:lang="fr">Cerise</rdfs:label>
+		<rdfs:label xml:lang="en">Cherry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#flavored-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt aromatisé</rdfs:label>
+		<rdfs:label xml:lang="en">Flavored yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#squash-melon">
+		<rdfs:label xml:lang="fr">Pâtisson</rdfs:label>
+		<rdfs:label xml:lang="en">Squash melon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#squash"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chervil">
+		<rdfs:label xml:lang="fr">Cerfeuil</rdfs:label>
+		<rdfs:label xml:lang="en">Chervil</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#savory-groceries">
+		<rdfs:label xml:lang="fr">Epicerie salée</rdfs:label>
+		<rdfs:label xml:lang="en">Savory groceries</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#local-grocery-store"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#local-grocery-store">
+		<rdfs:label xml:lang="fr">Epicerie locale</rdfs:label>
+		<rdfs:label xml:lang="en">Local grocery store</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#processed-fruit">
+		<rdfs:label xml:lang="fr">Fruit transformé</rdfs:label>
+		<rdfs:label xml:lang="en">Processed fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#local-grocery-store"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#other-dairy-product">
+		<rdfs:label xml:lang="fr">Produit laitier autre</rdfs:label>
+		<rdfs:label xml:lang="en">Other Dairy product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#potato">
+		<rdfs:label xml:lang="fr">Pomme de terre</rdfs:label>
+		<rdfs:label xml:lang="en">Potato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#coriander">
+		<rdfs:label xml:lang="fr">Coriandre</rdfs:label>
+		<rdfs:label xml:lang="en">Coriander</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#beans">
+		<rdfs:label xml:lang="fr">Fèves</rdfs:label>
+		<rdfs:label xml:lang="en">Beans</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dried-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#viennoiserie-">
+		<rdfs:label xml:lang="fr">Viennoiserie</rdfs:label>
+		<rdfs:label xml:lang="en">Viennoiserie </rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#bakery"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-flavored-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt aromatisé</rdfs:label>
+		<rdfs:label xml:lang="en">Goat flavored yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#currant">
+		<rdfs:label xml:lang="fr">Groseille</rdfs:label>
+		<rdfs:label xml:lang="en">Currant</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#berry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#nectarine">
+		<rdfs:label xml:lang="fr">Nectarine</rdfs:label>
+		<rdfs:label xml:lang="en">Nectarine</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bread">
+		<rdfs:label xml:lang="fr">Pain</rdfs:label>
+		<rdfs:label xml:lang="en">Bread</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#bakery"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-sweet-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt sucré</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep sweet yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sheep-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#smooth-cabbage">
+		<rdfs:label xml:lang="fr">Chou lisse</rdfs:label>
+		<rdfs:label xml:lang="en">Smooth cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#courgette">
+		<rdfs:label xml:lang="fr">Courgette</rdfs:label>
+		<rdfs:label xml:lang="en">Courgette</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#strawberry">
+		<rdfs:label xml:lang="fr">Fraise</rdfs:label>
+		<rdfs:label xml:lang="en">Strawberry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-natural-yogurt">
+		<rdfs:label xml:lang="fr">Yaourt nature</rdfs:label>
+		<rdfs:label xml:lang="en">Goat natural yogurt</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pastry">
+		<rdfs:label xml:lang="fr">Pâtisserie</rdfs:label>
+		<rdfs:label xml:lang="en">Pastry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sweet-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fresh-cheese">
+		<rdfs:label xml:lang="fr">Fromage frais</rdfs:label>
+		<rdfs:label xml:lang="en">Fresh cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#canned-vegetable">
+		<rdfs:label xml:lang="fr">Légume en conserve</rdfs:label>
+		<rdfs:label xml:lang="en">Canned vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#yogurt-on-a-bed-of-fruit">
+		<rdfs:label xml:lang="fr">Yaourt sur lit de fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Yogurt on a bed of fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#aperitif">
+		<rdfs:label xml:lang="fr">Apéritif</rdfs:label>
+		<rdfs:label xml:lang="en">Aperitif</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#alcoholic-beverage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#kale">
+		<rdfs:label xml:lang="fr">Chou frisé</rdfs:label>
+		<rdfs:label xml:lang="en">Kale</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#grilling-meat">
+		<rdfs:label xml:lang="fr">Viande à griller</rdfs:label>
+		<rdfs:label xml:lang="en">Grilling meat</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#beef"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#processed-vegetable">
+		<rdfs:label xml:lang="fr">Légume transformé</rdfs:label>
+		<rdfs:label xml:lang="en">Processed vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#local-grocery-store"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#spinach">
+		<rdfs:label xml:lang="fr">Épinard</rdfs:label>
+		<rdfs:label xml:lang="en">Spinach</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#morel">
+		<rdfs:label xml:lang="fr">Morille</rdfs:label>
+		<rdfs:label xml:lang="en">Morel</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cucumber">
+		<rdfs:label xml:lang="fr">Concombre</rdfs:label>
+		<rdfs:label xml:lang="en">Cucumber</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#onion">
+		<rdfs:label xml:lang="fr">Oignon</rdfs:label>
+		<rdfs:label xml:lang="en">Onion</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#artichoke">
+		<rdfs:label xml:lang="fr">Artichaut</rdfs:label>
+		<rdfs:label xml:lang="en">Artichoke</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-milk">
+		<rdfs:label xml:lang="fr">Lait</rdfs:label>
+		<rdfs:label xml:lang="en">Goat Milk</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#nut">
+		<rdfs:label xml:lang="fr">Fruit à coque</rdfs:label>
+		<rdfs:label xml:lang="en">Nut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dairy-product">
+		<rdfs:label xml:lang="fr">Produit laitier</rdfs:label>
+		<rdfs:label xml:lang="en">Dairy product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#red-kuri-squash">
+		<rdfs:label xml:lang="fr">Potimarron</rdfs:label>
+		<rdfs:label xml:lang="en">Red kuri squash</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#squash"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#squash">
+		<rdfs:label xml:lang="fr">Courge</rdfs:label>
+		<rdfs:label xml:lang="en">Squash</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#frozen-vegetable">
+		<rdfs:label xml:lang="fr">Légume surgelé</rdfs:label>
+		<rdfs:label xml:lang="en">Frozen vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#frozen"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sage">
+		<rdfs:label xml:lang="fr">Sauge</rdfs:label>
+		<rdfs:label xml:lang="en">Sage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#salsify">
+		<rdfs:label xml:lang="fr">Salsifis</rdfs:label>
+		<rdfs:label xml:lang="en">Salsify</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bean">
+		<rdfs:label xml:lang="fr">Haricot</rdfs:label>
+		<rdfs:label xml:lang="en">Bean</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#plum">
+		<rdfs:label xml:lang="fr">Prune</rdfs:label>
+		<rdfs:label xml:lang="en">Plum</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pigeon">
+		<rdfs:label xml:lang="fr">Pigeon</rdfs:label>
+		<rdfs:label xml:lang="en">Pigeon</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#basil">
+		<rdfs:label xml:lang="fr">Basilic</rdfs:label>
+		<rdfs:label xml:lang="en">Basil</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#red-cabbage">
+		<rdfs:label xml:lang="fr">Chou rouge</rdfs:label>
+		<rdfs:label xml:lang="en">Red cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#butternut">
+		<rdfs:label xml:lang="fr">Butternut</rdfs:label>
+		<rdfs:label xml:lang="en">Butternut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#squash"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#celery-branch">
+		<rdfs:label xml:lang="fr">Céleri-branche</rdfs:label>
+		<rdfs:label xml:lang="en">Celery branch</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#coulemelle-mushroom">
+		<rdfs:label xml:lang="fr">Coulemelle</rdfs:label>
+		<rdfs:label xml:lang="en">Coulemelle mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#apple-cabbage">
+		<rdfs:label xml:lang="fr">Chou pomme</rdfs:label>
+		<rdfs:label xml:lang="en">Apple cabbage</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cereal">
+		<rdfs:label xml:lang="fr">Céréale</rdfs:label>
+		<rdfs:label xml:lang="en">Cereal</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#canned-fruit">
+		<rdfs:label xml:lang="fr">Fruit en conserve</rdfs:label>
+		<rdfs:label xml:lang="en">Canned fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#apples">
+		<rdfs:label xml:lang="fr">Pomme</rdfs:label>
+		<rdfs:label xml:lang="en">Apples</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#rutabaga">
+		<rdfs:label xml:lang="fr">Rutabaga</rdfs:label>
+		<rdfs:label xml:lang="en">Rutabaga</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mousseron">
+		<rdfs:label xml:lang="fr">Mousseron</rdfs:label>
+		<rdfs:label xml:lang="en">Mousseron</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#cauliflower">
+		<rdfs:label xml:lang="fr">Chou-fleur</rdfs:label>
+		<rdfs:label xml:lang="en">Cauliflower</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cabbage"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chicken">
+		<rdfs:label xml:lang="fr">Poulet</rdfs:label>
+		<rdfs:label xml:lang="en">Chicken</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#poultry"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#soup">
+		<rdfs:label xml:lang="fr">Soupe</rdfs:label>
+		<rdfs:label xml:lang="en">Soup</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#processed-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fruit">
+		<rdfs:label xml:lang="fr">Fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Fruit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#confectionery">
+		<rdfs:label xml:lang="fr">Confiserie</rdfs:label>
+		<rdfs:label xml:lang="en">Confectionery</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sweet-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#oil">
+		<rdfs:label xml:lang="fr">Huile</rdfs:label>
+		<rdfs:label xml:lang="en">Oil</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#savory-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fresh-cream">
+		<rdfs:label xml:lang="fr">Crème Fraîche</rdfs:label>
+		<rdfs:label xml:lang="en">Fresh cream</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product">
+		<rdfs:label xml:lang="fr">Produits laitiers de brebis</rdfs:label>
+		<rdfs:label xml:lang="en">Sheep dairy product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mandarin">
+		<rdfs:label xml:lang="fr">Mandarine</rdfs:label>
+		<rdfs:label xml:lang="en">Mandarin</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#garlic">
+		<rdfs:label xml:lang="fr">Ail</rdfs:label>
+		<rdfs:label xml:lang="en">Garlic</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#yogurt-with-fruits">
+		<rdfs:label xml:lang="fr">Yaourt aux fruits</rdfs:label>
+		<rdfs:label xml:lang="en">Yogurt with fruits</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#butter">
+		<rdfs:label xml:lang="fr">Beurre</rdfs:label>
+		<rdfs:label xml:lang="en">Butter</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#poultry">
+		<rdfs:label xml:lang="fr">Volaille</rdfs:label>
+		<rdfs:label xml:lang="en">Poultry</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fishery-product">
+		<rdfs:label xml:lang="fr">Produit de la pêche</rdfs:label>
+		<rdfs:label xml:lang="en">Fishery product</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#porcini">
+		<rdfs:label xml:lang="fr">Cèpe</rdfs:label>
+		<rdfs:label xml:lang="en">Porcini</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#bluefoot-mushroom">
+		<rdfs:label xml:lang="fr">Pied-bleu</rdfs:label>
+		<rdfs:label xml:lang="en">Bluefoot mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dairy-dessert">
+		<rdfs:label xml:lang="fr">Dessert lacté</rdfs:label>
+		<rdfs:label xml:lang="en">Dairy dessert</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#cow-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#leek">
+		<rdfs:label xml:lang="fr">Poireau</rdfs:label>
+		<rdfs:label xml:lang="en">Leek</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#beetroot">
+		<rdfs:label xml:lang="fr">Betterave rouge</rdfs:label>
+		<rdfs:label xml:lang="en">Beetroot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#lentils">
+		<rdfs:label xml:lang="fr">Lentilles</rdfs:label>
+		<rdfs:label xml:lang="en">Lentils</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#dried-vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#medlar">
+		<rdfs:label xml:lang="fr">Nèfle</rdfs:label>
+		<rdfs:label xml:lang="en">Medlar</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#nut"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#chive">
+		<rdfs:label xml:lang="fr">Ciboulette</rdfs:label>
+		<rdfs:label xml:lang="en">Chive</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#aromatic"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#apricot">
+		<rdfs:label xml:lang="fr">Abricot</rdfs:label>
+		<rdfs:label xml:lang="en">Apricot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#orange">
+		<rdfs:label xml:lang="fr">Orange</rdfs:label>
+		<rdfs:label xml:lang="en">Orange</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#old-variety-tomato">
+		<rdfs:label xml:lang="fr">Tomate ancienne</rdfs:label>
+		<rdfs:label xml:lang="en">Old variety tomato</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#tomato"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#walnut">
+		<rdfs:label xml:lang="fr">Noix</rdfs:label>
+		<rdfs:label xml:lang="en">Walnut</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#nut"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#shellfish">
+		<rdfs:label xml:lang="fr">Crustacé</rdfs:label>
+		<rdfs:label xml:lang="en">Shellfish</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fishery-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#sheepfoot-mushroom">
+		<rdfs:label xml:lang="fr">Pied de mouton</rdfs:label>
+		<rdfs:label xml:lang="en">Sheepfoot mushroom</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#mushroom"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#prune">
+		<rdfs:label xml:lang="fr">Pruneau</rdfs:label>
+		<rdfs:label xml:lang="en">Prune</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#fruit"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#simmering-meat">
+		<rdfs:label xml:lang="fr">Viande à mijoter</rdfs:label>
+		<rdfs:label xml:lang="en">Simmering meat</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#beef"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#dried-vegetable">
+		<rdfs:label xml:lang="fr">Légume sec</rdfs:label>
+		<rdfs:label xml:lang="en">Dried vegetable</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#lamb">
+		<rdfs:label xml:lang="fr">Agneau</rdfs:label>
+		<rdfs:label xml:lang="en">Lamb</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#meat-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#fruit-juice">
+		<rdfs:label xml:lang="fr">Jus de fruit</rdfs:label>
+		<rdfs:label xml:lang="en">Fruit juice</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#soft-drink"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#goat-mature-cheese">
+		<rdfs:label xml:lang="fr">Fromage affinés</rdfs:label>
+		<rdfs:label xml:lang="en">Goat Mature cheese</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#goat-dairy-product"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#biscuit">
+		<rdfs:label xml:lang="fr">Biscuit</rdfs:label>
+		<rdfs:label xml:lang="en">Biscuit</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#sweet-groceries"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#pumpkin">
+		<rdfs:label xml:lang="fr">Potiron</rdfs:label>
+		<rdfs:label xml:lang="en">Pumpkin</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#squash"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#mesclun">
+		<rdfs:label xml:lang="fr">Mesclun</rdfs:label>
+		<rdfs:label xml:lang="en">Mesclun</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#salad"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#carrot">
+		<rdfs:label xml:lang="fr">Carotte</rdfs:label>
+		<rdfs:label xml:lang="en">Carrot</rdfs:label>
+		<dfc:specialize rdf:resource="http://datafoodconsortium.org/data/types.rdf.xml#vegetable"/>
+		<rdf:type rdf:resource="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#taxon"/>
+	</rdf:Description>
+</rdf:RDF>
