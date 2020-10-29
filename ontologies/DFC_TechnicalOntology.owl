@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"
+     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl">
-    <Prefix name="" IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+     ontologyIRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl">
+    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -26,7 +26,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#simonL</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#simonL</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -42,7 +42,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -79,7 +79,7 @@
         <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
+        <ObjectProperty IRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPivot"/>
@@ -91,10 +91,10 @@
         <ObjectProperty IRI="#represent"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#simonL"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
@@ -188,11 +188,11 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Organization"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#simonL"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPivot"/>

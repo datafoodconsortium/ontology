@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
+     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
-    <Prefix name="" IRI="http://datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"/>
+     ontologyIRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
+    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -20,23 +20,23 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
-    <Import>http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl</Import>
-    <Import>http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl</Import>
+    <Import>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl</Import>
+    <Import>http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
         <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#rachelA</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#rachelA</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#simonL</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#simonL</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#bernardC</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#bernardC</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -52,7 +52,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
-        <IRI>http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
+        <IRI>http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:title"/>
@@ -993,11 +993,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
-        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Subject"/>
-        <Class IRI="http://datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_How_Subject"/>
@@ -1037,21 +1037,21 @@
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasNatureOrigin"/>
-            <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasPartOrigin"/>
-            <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasProcess"/>
-            <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1066,8 +1066,8 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasGeographicalOrigin"/>
             <ObjectUnionOf>
-                <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-                <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+                <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
+                <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
             </ObjectUnionOf>
         </ObjectExactCardinality>
     </SubClassOf>
@@ -1075,14 +1075,14 @@
         <Class IRI="#DefinedProduct"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasType"/>
-            <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasUnit"/>
-            <Class IRI="http://datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1827,19 +1827,19 @@
     </SubClassOf>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#bernardC"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#bernardC"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Organization"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#rachelA"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#rachelA"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
-        <NamedIndividual IRI="http://datafoodconsortium.org/data/publication.rdf#simonL"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Repository"/>
@@ -5125,4 +5125,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

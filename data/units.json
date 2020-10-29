@@ -1,7 +1,7 @@
 {
   "@context":{
-    "dfc-p": "http://datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#",
-    "dfc-u":"http://datafoodconsortium.org/data/units.rdf#"
+    "dfc-p": "http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#",
+    "dfc-u":"http://static.datafoodconsortium.org/data/units.rdf#"
   },
   "@graph":[
     {
