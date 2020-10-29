@@ -2,8 +2,7 @@
 <rdf:RDF
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:dfc="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
-	xmlns:dfc:specialize="[object Object]">
+	xmlns:dfc-b="http://datafoodconsortium.org/ontologies/DFC_FullModel.owl#">
 
 	<rdf:Description rdf:about="http://datafoodconsortium.org/data/types.rdf#soft-drink">
 		<rdfs:label xml:lang="fr">Boisson non alcoolisée</rdfs:label>
