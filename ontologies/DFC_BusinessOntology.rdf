@@ -16,7 +16,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
         <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
-        <vann:preferredNamespacePrefix>dfcb</vann:preferredNamespacePrefix>
+        <vann:preferredNamespacePrefix>dfcbdfc</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#</vann:preferredNamespaceUri>
         <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
         <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
