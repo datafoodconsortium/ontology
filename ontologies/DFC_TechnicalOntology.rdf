@@ -15,6 +15,9 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl">
+        <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
+        <vann:preferredNamespacePrefix>dfc-t</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#</vann:preferredNamespaceUri>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
         <dc:creator rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Technical Part)</dc:description>
@@ -22,14 +25,13 @@
         <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
         <dc:publisher rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Technical</dc:title>
-        <vann:preferredNamespacePrefix>dfc-t</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Technical Part)</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</owl:versionInfo>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -37,58 +39,58 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://creativecommons.org/ns#license -->
 
     <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/modified -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/publisher -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
-    
+
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
-    
+
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -96,13 +98,13 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hasPivot -->
@@ -111,7 +113,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment xml:lang="fr">possède un point pivot</rdfs:comment>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#hostedBy -->
@@ -120,7 +122,7 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="fr">hébergé par</rdfs:label>
     </owl:ObjectProperty>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#represent -->
@@ -129,10 +131,10 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:label xml:lang="fr">représente</rdfs:label>
     </owl:ObjectProperty>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -140,7 +142,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#DFC_DitributedRepresentation -->
@@ -149,7 +151,7 @@
         <rdfs:label xml:lang="fr">Concepts de réconciliation de représentation distribuée</rdfs:label>
         <rdfs:label xml:lang="en">ditributed représentation reconcialition concepts</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#Platform -->
@@ -165,7 +167,7 @@
         <rdfs:comment xml:lang="fr">Organisation qui heberge la donnée</rdfs:comment>
         <rdfs:label xml:lang="fr">Plateforme</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentationPivot -->
@@ -188,7 +190,7 @@
         <rdfs:comment xml:lang="fr">Permet de designer tous les RepresentatedThing qui sont équivalents et d&apos;etre désigné par un RepresentedThing pour connaitre ses équivalence par transitivité</rdfs:comment>
         <rdfs:label xml:lang="fr">Pivot de représentation</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing -->
@@ -224,22 +226,22 @@
         <rdfs:comment xml:lang="fr">Chose représentée sur une platefome posadant des equivalences sur d&apos;autres plateformes</rdfs:comment>
         <rdfs:label xml:lang="fr">Chose représentée</rdfs:label>
     </owl:Class>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
-    
+
 
 
     <!-- http://xmlns.com/foaf/0.1/Person -->
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -247,7 +249,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium -->
@@ -255,7 +257,7 @@
     <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#simonL -->
@@ -263,10 +265,10 @@
     <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#simonL">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </owl:NamedIndividual>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -287,4 +289,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-
