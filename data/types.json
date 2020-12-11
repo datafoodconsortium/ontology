@@ -1,14 +1,17 @@
 {
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "dfc-b": "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#",
     "dfc-p": "http://static.datafoodconsortium.org/ontologies/DFC_ProductOntology.owl#",
+    "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
+    "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
     "dfc-p:specialize": {
       "@type": "@id"
     }
   },
   "@graph": [
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#soft-drink",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#soft-drink",
       "rdfs:label": [
         {
           "@value": "Boisson non alcoolisée",
@@ -19,11 +22,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#drink",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#drink",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "rdfs:label": [
         {
           "@value": "Salade",
@@ -34,11 +37,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#egg",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#egg",
       "rdfs:label": [
         {
           "@value": "Oeuf",
@@ -49,11 +52,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#old-variety-squash",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#old-variety-squash",
       "rdfs:label": [
         {
           "@value": "Variété ancienne",
@@ -64,11 +67,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fig",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fig",
       "rdfs:label": [
         {
           "@value": "Figue",
@@ -79,11 +82,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rocket",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rocket",
       "rdfs:label": [
         {
           "@value": "Roquette",
@@ -94,11 +97,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#beef",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#beef",
       "rdfs:label": [
         {
           "@value": "Viande bovine",
@@ -109,11 +112,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-mature-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-mature-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage affinés",
@@ -124,11 +127,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-milk",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-milk",
       "rdfs:label": [
         {
           "@value": "Lait",
@@ -139,11 +142,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chanterelle-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chanterelle-mushroom",
       "rdfs:label": [
         {
           "@value": "Chanterelle",
@@ -154,11 +157,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-sweet-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-sweet-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt sucré",
@@ -169,11 +172,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rabbit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rabbit",
       "rdfs:label": [
         {
           "@value": "Lapin",
@@ -184,11 +187,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pie-pastry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pie-pastry",
       "rdfs:label": [
         {
           "@value": "Pâte à tarte",
@@ -199,11 +202,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#jam",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#jam",
       "rdfs:label": [
         {
           "@value": "Confiture",
@@ -214,11 +217,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fourth-range-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fourth-range-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume quatrième gamme",
@@ -229,11 +232,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "rdfs:label": [
         {
           "@value": "Champignon",
@@ -244,11 +247,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#beer",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#beer",
       "rdfs:label": [
         {
           "@value": "Bière",
@@ -259,11 +262,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chilli-pepper",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chilli-pepper",
       "rdfs:label": [
         {
           "@value": "Piment",
@@ -274,11 +277,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#non-local-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#non-local-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume non local",
@@ -289,11 +292,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chicory",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chicory",
       "rdfs:label": [
         {
           "@value": "Chicorée",
@@ -304,11 +307,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#other-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#other-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage",
@@ -319,11 +322,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#other-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#other-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cream-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cream-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage blanc",
@@ -334,11 +337,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#peach",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#peach",
       "rdfs:label": [
         {
           "@value": "Pêche",
@@ -349,11 +352,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#almond",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#almond",
       "rdfs:label": [
         {
           "@value": "Amande",
@@ -364,11 +367,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#milk",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#milk",
       "rdfs:label": [
         {
           "@value": "Lait",
@@ -379,11 +382,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#romanesco-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#romanesco-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou romanesco",
@@ -394,11 +397,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#frozen",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#frozen",
       "rdfs:label": [
         {
           "@value": "Surgelé",
@@ -413,7 +416,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fresh-meat",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fresh-meat",
       "rdfs:label": [
         {
           "@value": "Viande fraîche",
@@ -424,11 +427,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#pork",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#pork",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#semolina",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#semolina",
       "rdfs:label": [
         {
           "@value": "Semoule",
@@ -439,11 +442,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#turkey",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#turkey",
       "rdfs:label": [
         {
           "@value": "Dinde",
@@ -454,11 +457,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#plant",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#plant",
       "rdfs:label": [
         {
           "@value": "Plant",
@@ -469,11 +472,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#inedible",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#inedible",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#kale-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#kale-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou kale",
@@ -484,11 +487,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#asparagus",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#asparagus",
       "rdfs:label": [
         {
           "@value": "Asperge",
@@ -499,11 +502,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-yogurt-with-fruits",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-yogurt-with-fruits",
       "rdfs:label": [
         {
           "@value": "Yaourt aux fruits",
@@ -514,11 +517,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#wine",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#wine",
       "rdfs:label": [
         {
           "@value": "Vin",
@@ -529,11 +532,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-yogurt-on-a-bed-of-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-yogurt-on-a-bed-of-fruit",
       "rdfs:label": [
         {
           "@value": "Yaourt sur lit de fruit",
@@ -544,11 +547,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#crepe-and-galette",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#crepe-and-galette",
       "rdfs:label": [
         {
           "@value": "Crêpe et galette",
@@ -559,11 +562,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "rdfs:label": [
         {
           "@value": "Produits laitiers de chèvre",
@@ -574,11 +577,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#oyster-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#oyster-mushroom",
       "rdfs:label": [
         {
           "@value": "Pleurote",
@@ -589,11 +592,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#seashell",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#seashell",
       "rdfs:label": [
         {
           "@value": "Coquillage",
@@ -604,11 +607,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fishery-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fishery-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#radish",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#radish",
       "rdfs:label": [
         {
           "@value": "Radis",
@@ -619,11 +622,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#tomato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#tomato",
       "rdfs:label": [
         {
           "@value": "Tomate",
@@ -634,11 +637,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pork",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pork",
       "rdfs:label": [
         {
           "@value": "Porc",
@@ -649,11 +652,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#thyme",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#thyme",
       "rdfs:label": [
         {
           "@value": "Thym",
@@ -664,11 +667,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cider",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cider",
       "rdfs:label": [
         {
           "@value": "Cidre",
@@ -679,11 +682,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mint",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mint",
       "rdfs:label": [
         {
           "@value": "Menthe",
@@ -694,11 +697,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#parsley",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#parsley",
       "rdfs:label": [
         {
           "@value": "Persil",
@@ -709,11 +712,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-fresh-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-fresh-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage frais",
@@ -724,11 +727,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "rdfs:label": [
         {
           "@value": "Produit laitier de vache",
@@ -739,11 +742,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#jerusalem-artichoke",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#jerusalem-artichoke",
       "rdfs:label": [
         {
           "@value": "Topinambour",
@@ -754,11 +757,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#ripe",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#ripe",
       "rdfs:label": [
         {
           "@value": "Mûre",
@@ -769,11 +772,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#salad-mix",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#salad-mix",
       "rdfs:label": [
         {
           "@value": "Mélange salades",
@@ -784,11 +787,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#parsnip",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#parsnip",
       "rdfs:label": [
         {
           "@value": "Panais",
@@ -799,11 +802,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#broccoli-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#broccoli-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou brocoli",
@@ -814,11 +817,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#salt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#salt",
       "rdfs:label": [
         {
           "@value": "Sel",
@@ -829,11 +832,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#yam",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#yam",
       "rdfs:label": [
         {
           "@value": "Patate douce",
@@ -844,11 +847,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-yogurt-with-fruits",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-yogurt-with-fruits",
       "rdfs:label": [
         {
           "@value": "Yaourt aux fruits",
@@ -859,11 +862,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#green-garlic",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#green-garlic",
       "rdfs:label": [
         {
           "@value": "Aillet",
@@ -874,11 +877,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chestnut",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chestnut",
       "rdfs:label": [
         {
           "@value": "Marron",
@@ -889,11 +892,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chard",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chard",
       "rdfs:label": [
         {
           "@value": "Blette",
@@ -904,11 +907,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#flower",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#flower",
       "rdfs:label": [
         {
           "@value": "Fleur",
@@ -919,11 +922,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#inedible",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#inedible",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fennel",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fennel",
       "rdfs:label": [
         {
           "@value": "Fenouil",
@@ -934,11 +937,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fish",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fish",
       "rdfs:label": [
         {
           "@value": "Poisson",
@@ -949,11 +952,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fishery-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fishery-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#shallot",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#shallot",
       "rdfs:label": [
         {
           "@value": "Échalote",
@@ -964,11 +967,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dried-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dried-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit séché",
@@ -979,11 +982,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#kiwi",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#kiwi",
       "rdfs:label": [
         {
           "@value": "Kiwi",
@@ -994,11 +997,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "rdfs:label": [
         {
           "@value": "Petit fruit",
@@ -1009,11 +1012,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#inedible",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#inedible",
       "rdfs:label": [
         {
           "@value": "Non alimentaire",
@@ -1028,7 +1031,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chewed-up",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chewed-up",
       "rdfs:label": [
         {
           "@value": "Mâche",
@@ -1039,11 +1042,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#endive",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#endive",
       "rdfs:label": [
         {
           "@value": "Endive",
@@ -1054,11 +1057,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#celeriac",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#celeriac",
       "rdfs:label": [
         {
           "@value": "Céleri-rave",
@@ -1069,11 +1072,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#kohlrabi",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#kohlrabi",
       "rdfs:label": [
         {
           "@value": "Chou rave",
@@ -1084,11 +1087,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dandelion",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dandelion",
       "rdfs:label": [
         {
           "@value": "Pissenlit",
@@ -1099,11 +1102,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#guinea-fowl",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#guinea-fowl",
       "rdfs:label": [
         {
           "@value": "Pintade",
@@ -1114,11 +1117,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cassis",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cassis",
       "rdfs:label": [
         {
           "@value": "Cassis",
@@ -1129,11 +1132,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#duck",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#duck",
       "rdfs:label": [
         {
           "@value": "Canard",
@@ -1144,11 +1147,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#deaths-trumpet",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#deaths-trumpet",
       "rdfs:label": [
         {
           "@value": "Trompette de la mort",
@@ -1159,11 +1162,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cosmetic",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cosmetic",
       "rdfs:label": [
         {
           "@value": "Cosmétique",
@@ -1174,11 +1177,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#inedible",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#inedible",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#festive-poultry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#festive-poultry",
       "rdfs:label": [
         {
           "@value": "Volaille festive",
@@ -1189,11 +1192,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#melon",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#melon",
       "rdfs:label": [
         {
           "@value": "Melon",
@@ -1204,11 +1207,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "rdfs:label": [
         {
           "@value": "Epicerie sucrée",
@@ -1219,11 +1222,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#smoothie",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#smoothie",
       "rdfs:label": [
         {
           "@value": "Smoothie",
@@ -1234,11 +1237,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#soft-drink",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#soft-drink",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#blueberry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#blueberry",
       "rdfs:label": [
         {
           "@value": "Myrtille",
@@ -1249,11 +1252,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#gooseberry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#gooseberry",
       "rdfs:label": [
         {
           "@value": "Groseille à maquereau",
@@ -1264,11 +1267,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#girolle-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#girolle-mushroom",
       "rdfs:label": [
         {
           "@value": "Girolle",
@@ -1279,11 +1282,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#grape",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#grape",
       "rdfs:label": [
         {
           "@value": "Raisin",
@@ -1294,11 +1297,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "rdfs:label": [
         {
           "@value": "Aromate",
@@ -1309,11 +1312,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-fresh-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-fresh-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage frais",
@@ -1324,11 +1327,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-flavored-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-flavored-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt aromatisé",
@@ -1339,11 +1342,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#quinoa",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#quinoa",
       "rdfs:label": [
         {
           "@value": "Quinoa",
@@ -1354,11 +1357,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dried-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dried-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#ready-meal",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#ready-meal",
       "rdfs:label": [
         {
           "@value": "Plat cuisiné",
@@ -1369,11 +1372,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rhubarb",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rhubarb",
       "rdfs:label": [
         {
           "@value": "Rhubarbe",
@@ -1384,11 +1387,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rosemary",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rosemary",
       "rdfs:label": [
         {
           "@value": "Romarin",
@@ -1399,11 +1402,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chinese-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chinese-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou chinois",
@@ -1414,11 +1417,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#brussels-sprouts",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#brussels-sprouts",
       "rdfs:label": [
         {
           "@value": "Chou de Bruxelles",
@@ -1429,11 +1432,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "rdfs:label": [
         {
           "@value": "Boisson alcoolisée",
@@ -1444,11 +1447,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#drink",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#drink",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#paris-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#paris-mushroom",
       "rdfs:label": [
         {
           "@value": "Champignon de Paris",
@@ -1459,11 +1462,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bottled-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bottled-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit en bocal",
@@ -1474,11 +1477,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pepper",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pepper",
       "rdfs:label": [
         {
           "@value": "Poivron",
@@ -1489,11 +1492,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#round-tomato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#round-tomato",
       "rdfs:label": [
         {
           "@value": "Tomate ronde",
@@ -1504,11 +1507,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#tomato",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#tomato",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goose",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goose",
       "rdfs:label": [
         {
           "@value": "Oie",
@@ -1519,11 +1522,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bottled-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bottled-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume en bocal",
@@ -1534,11 +1537,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cooked-meat",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cooked-meat",
       "rdfs:label": [
         {
           "@value": "Viande cuite",
@@ -1549,11 +1552,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#pork",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#pork",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "rdfs:label": [
         {
           "@value": "Légume",
@@ -1568,7 +1571,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#quail",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#quail",
       "rdfs:label": [
         {
           "@value": "Caille",
@@ -1579,11 +1582,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mature-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mature-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage affiné",
@@ -1594,11 +1597,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#lemon",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#lemon",
       "rdfs:label": [
         {
           "@value": "Citron",
@@ -1609,11 +1612,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pear",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pear",
       "rdfs:label": [
         {
           "@value": "Poire",
@@ -1624,11 +1627,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#frozen-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#frozen-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit surgelé",
@@ -1639,11 +1642,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#frozen",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#frozen",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#peas",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#peas",
       "rdfs:label": [
         {
           "@value": "Pois",
@@ -1654,11 +1657,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dried-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dried-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#salting",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#salting",
       "rdfs:label": [
         {
           "@value": "Salaison",
@@ -1669,11 +1672,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#pork",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#pork",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#honey",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#honey",
       "rdfs:label": [
         {
           "@value": "Miel",
@@ -1684,11 +1687,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#frozen-meal",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#frozen-meal",
       "rdfs:label": [
         {
           "@value": "Plat surgelé",
@@ -1699,11 +1702,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#frozen",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#frozen",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pasta",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pasta",
       "rdfs:label": [
         {
           "@value": "Pâte",
@@ -1714,11 +1717,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cherry-tomato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cherry-tomato",
       "rdfs:label": [
         {
           "@value": "Tomate cerise",
@@ -1729,11 +1732,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#tomato",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#tomato",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#frozen-meat",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#frozen-meat",
       "rdfs:label": [
         {
           "@value": "Viande surgelée",
@@ -1744,11 +1747,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#frozen",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#frozen",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#non-local-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#non-local-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit non local",
@@ -1759,11 +1762,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#clementine",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#clementine",
       "rdfs:label": [
         {
           "@value": "Clémentine",
@@ -1774,11 +1777,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#other-milk",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#other-milk",
       "rdfs:label": [
         {
           "@value": "Lait",
@@ -1789,11 +1792,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#other-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#other-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dill",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dill",
       "rdfs:label": [
         {
           "@value": "Aneth",
@@ -1804,11 +1807,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#lemonade",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#lemonade",
       "rdfs:label": [
         {
           "@value": "Limonade",
@@ -1819,11 +1822,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#soft-drink",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#soft-drink",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rice",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rice",
       "rdfs:label": [
         {
           "@value": "Riz",
@@ -1834,11 +1837,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#snails",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#snails",
       "rdfs:label": [
         {
           "@value": "Escargots",
@@ -1849,11 +1852,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fifth-range-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fifth-range-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume cinquième gamme",
@@ -1864,11 +1867,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#turnip",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#turnip",
       "rdfs:label": [
         {
           "@value": "Navet",
@@ -1879,11 +1882,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cluster-tomato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cluster-tomato",
       "rdfs:label": [
         {
           "@value": "Tomate grappe",
@@ -1894,11 +1897,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#tomato",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#tomato",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "rdfs:label": [
         {
           "@value": "Chou",
@@ -1909,11 +1912,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fruit-in-compote",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fruit-in-compote",
       "rdfs:label": [
         {
           "@value": "Fruit en compote",
@@ -1924,11 +1927,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#digestive",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#digestive",
       "rdfs:label": [
         {
           "@value": "Digestif",
@@ -1939,11 +1942,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#truffle",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#truffle",
       "rdfs:label": [
         {
           "@value": "Truffe",
@@ -1954,11 +1957,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-yogurt-on-a-bed-of-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-yogurt-on-a-bed-of-fruit",
       "rdfs:label": [
         {
           "@value": "Yaourt sur lit de fruit",
@@ -1969,11 +1972,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#flour",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#flour",
       "rdfs:label": [
         {
           "@value": "Farine",
@@ -1984,11 +1987,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#eggplant",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#eggplant",
       "rdfs:label": [
         {
           "@value": "Aubergine",
@@ -1999,11 +2002,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cress",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cress",
       "rdfs:label": [
         {
           "@value": "Cresson",
@@ -2014,11 +2017,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#quince",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#quince",
       "rdfs:label": [
         {
           "@value": "Coing",
@@ -2029,11 +2032,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sweet-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sweet-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt sucré",
@@ -2044,11 +2047,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#laurel",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#laurel",
       "rdfs:label": [
         {
           "@value": "Laurier",
@@ -2059,11 +2062,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-dessert",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-dessert",
       "rdfs:label": [
         {
           "@value": "Desserts lactés",
@@ -2074,11 +2077,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#raspberry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#raspberry",
       "rdfs:label": [
         {
           "@value": "Framboise",
@@ -2089,11 +2092,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#hazelnut",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#hazelnut",
       "rdfs:label": [
         {
           "@value": "Noisette",
@@ -2104,11 +2107,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#delicatessen",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#delicatessen",
       "rdfs:label": [
         {
           "@value": "Charcuterie",
@@ -2119,11 +2122,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#pork",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#pork",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-natural-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-natural-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt nature",
@@ -2134,11 +2137,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bakery",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bakery",
       "rdfs:label": [
         {
           "@value": "Boulangerie",
@@ -2153,7 +2156,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#lettuce",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#lettuce",
       "rdfs:label": [
         {
           "@value": "Laitue",
@@ -2164,11 +2167,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#veal",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#veal",
       "rdfs:label": [
         {
           "@value": "Veau",
@@ -2179,11 +2182,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#drink",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#drink",
       "rdfs:label": [
         {
           "@value": "Boisson",
@@ -2198,7 +2201,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#tarragon",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#tarragon",
       "rdfs:label": [
         {
           "@value": "Estragon",
@@ -2209,11 +2212,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "rdfs:label": [
         {
           "@value": "Produit carné",
@@ -2228,7 +2231,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#natural-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#natural-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt nature",
@@ -2239,11 +2242,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-dessert",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-dessert",
       "rdfs:label": [
         {
           "@value": "Dessert lacté",
@@ -2254,11 +2257,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#milky-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#milky-mushroom",
       "rdfs:label": [
         {
           "@value": "Lactaire",
@@ -2269,11 +2272,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cherry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cherry",
       "rdfs:label": [
         {
           "@value": "Cerise",
@@ -2284,11 +2287,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#flavored-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#flavored-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt aromatisé",
@@ -2299,11 +2302,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#squash-melon",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#squash-melon",
       "rdfs:label": [
         {
           "@value": "Pâtisson",
@@ -2314,11 +2317,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chervil",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chervil",
       "rdfs:label": [
         {
           "@value": "Cerfeuil",
@@ -2329,11 +2332,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "rdfs:label": [
         {
           "@value": "Epicerie salée",
@@ -2344,11 +2347,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "rdfs:label": [
         {
           "@value": "Epicerie locale",
@@ -2363,7 +2366,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#processed-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#processed-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit transformé",
@@ -2374,11 +2377,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#other-dairy-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#other-dairy-product",
       "rdfs:label": [
         {
           "@value": "Produit laitier autre",
@@ -2389,11 +2392,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#potato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#potato",
       "rdfs:label": [
         {
           "@value": "Pomme de terre",
@@ -2404,11 +2407,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#coriander",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#coriander",
       "rdfs:label": [
         {
           "@value": "Coriandre",
@@ -2419,11 +2422,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#beans",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#beans",
       "rdfs:label": [
         {
           "@value": "Fèves",
@@ -2434,11 +2437,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dried-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dried-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#viennoiserie-",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#viennoiserie-",
       "rdfs:label": [
         {
           "@value": "Viennoiserie",
@@ -2449,11 +2452,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#bakery",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#bakery",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-flavored-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-flavored-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt aromatisé",
@@ -2464,11 +2467,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#currant",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#currant",
       "rdfs:label": [
         {
           "@value": "Groseille",
@@ -2479,11 +2482,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#berry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#berry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#nectarine",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#nectarine",
       "rdfs:label": [
         {
           "@value": "Nectarine",
@@ -2494,11 +2497,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bread",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bread",
       "rdfs:label": [
         {
           "@value": "Pain",
@@ -2509,11 +2512,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#bakery",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#bakery",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-sweet-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-sweet-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt sucré",
@@ -2524,11 +2527,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#smooth-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#smooth-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou lisse",
@@ -2539,11 +2542,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#courgette",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#courgette",
       "rdfs:label": [
         {
           "@value": "Courgette",
@@ -2554,11 +2557,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#strawberry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#strawberry",
       "rdfs:label": [
         {
           "@value": "Fraise",
@@ -2569,11 +2572,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-natural-yogurt",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-natural-yogurt",
       "rdfs:label": [
         {
           "@value": "Yaourt nature",
@@ -2584,11 +2587,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pastry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pastry",
       "rdfs:label": [
         {
           "@value": "Pâtisserie",
@@ -2599,11 +2602,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fresh-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fresh-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage frais",
@@ -2614,11 +2617,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#canned-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#canned-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume en conserve",
@@ -2629,11 +2632,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#yogurt-on-a-bed-of-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#yogurt-on-a-bed-of-fruit",
       "rdfs:label": [
         {
           "@value": "Yaourt sur lit de fruit",
@@ -2644,11 +2647,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#aperitif",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#aperitif",
       "rdfs:label": [
         {
           "@value": "Apéritif",
@@ -2659,11 +2662,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#alcoholic-beverage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#kale",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#kale",
       "rdfs:label": [
         {
           "@value": "Chou frisé",
@@ -2674,11 +2677,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#grilling-meat",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#grilling-meat",
       "rdfs:label": [
         {
           "@value": "Viande à griller",
@@ -2689,11 +2692,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#beef",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#beef",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#processed-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#processed-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume transformé",
@@ -2704,11 +2707,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#local-grocery-store",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#local-grocery-store",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#spinach",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#spinach",
       "rdfs:label": [
         {
           "@value": "Épinard",
@@ -2719,11 +2722,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#morel",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#morel",
       "rdfs:label": [
         {
           "@value": "Morille",
@@ -2734,11 +2737,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cucumber",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cucumber",
       "rdfs:label": [
         {
           "@value": "Concombre",
@@ -2749,11 +2752,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#onion",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#onion",
       "rdfs:label": [
         {
           "@value": "Oignon",
@@ -2764,11 +2767,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#artichoke",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#artichoke",
       "rdfs:label": [
         {
           "@value": "Artichaut",
@@ -2779,11 +2782,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-milk",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-milk",
       "rdfs:label": [
         {
           "@value": "Lait",
@@ -2794,11 +2797,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "rdfs:label": [
         {
           "@value": "Fruit à coque",
@@ -2809,11 +2812,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dairy-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dairy-product",
       "rdfs:label": [
         {
           "@value": "Produit laitier",
@@ -2828,7 +2831,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#red-kuri-squash",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#red-kuri-squash",
       "rdfs:label": [
         {
           "@value": "Potimarron",
@@ -2839,11 +2842,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "rdfs:label": [
         {
           "@value": "Courge",
@@ -2854,11 +2857,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#frozen-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#frozen-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume surgelé",
@@ -2869,11 +2872,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#frozen",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#frozen",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sage",
       "rdfs:label": [
         {
           "@value": "Sauge",
@@ -2884,11 +2887,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#salsify",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#salsify",
       "rdfs:label": [
         {
           "@value": "Salsifis",
@@ -2899,11 +2902,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bean",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bean",
       "rdfs:label": [
         {
           "@value": "Haricot",
@@ -2914,11 +2917,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#plum",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#plum",
       "rdfs:label": [
         {
           "@value": "Prune",
@@ -2929,11 +2932,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pigeon",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pigeon",
       "rdfs:label": [
         {
           "@value": "Pigeon",
@@ -2944,11 +2947,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#basil",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#basil",
       "rdfs:label": [
         {
           "@value": "Basilic",
@@ -2959,11 +2962,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#red-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#red-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou rouge",
@@ -2974,11 +2977,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#butternut",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#butternut",
       "rdfs:label": [
         {
           "@value": "Butternut",
@@ -2989,11 +2992,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#celery-branch",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#celery-branch",
       "rdfs:label": [
         {
           "@value": "Céleri-branche",
@@ -3004,11 +3007,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#coulemelle-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#coulemelle-mushroom",
       "rdfs:label": [
         {
           "@value": "Coulemelle",
@@ -3019,11 +3022,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#apple-cabbage",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#apple-cabbage",
       "rdfs:label": [
         {
           "@value": "Chou pomme",
@@ -3034,11 +3037,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cereal",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cereal",
       "rdfs:label": [
         {
           "@value": "Céréale",
@@ -3049,11 +3052,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#canned-fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#canned-fruit",
       "rdfs:label": [
         {
           "@value": "Fruit en conserve",
@@ -3064,11 +3067,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#apples",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#apples",
       "rdfs:label": [
         {
           "@value": "Pomme",
@@ -3079,11 +3082,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#rutabaga",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#rutabaga",
       "rdfs:label": [
         {
           "@value": "Rutabaga",
@@ -3094,11 +3097,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mousseron",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mousseron",
       "rdfs:label": [
         {
           "@value": "Mousseron",
@@ -3109,11 +3112,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#cauliflower",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#cauliflower",
       "rdfs:label": [
         {
           "@value": "Chou-fleur",
@@ -3124,11 +3127,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cabbage",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cabbage",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chicken",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chicken",
       "rdfs:label": [
         {
           "@value": "Poulet",
@@ -3139,11 +3142,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#soup",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#soup",
       "rdfs:label": [
         {
           "@value": "Soupe",
@@ -3154,11 +3157,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#processed-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#processed-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "rdfs:label": [
         {
           "@value": "Fruit",
@@ -3173,7 +3176,7 @@
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#confectionery",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#confectionery",
       "rdfs:label": [
         {
           "@value": "Confiserie",
@@ -3184,11 +3187,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#oil",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#oil",
       "rdfs:label": [
         {
           "@value": "Huile",
@@ -3199,11 +3202,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#savory-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#savory-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fresh-cream",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fresh-cream",
       "rdfs:label": [
         {
           "@value": "Crème Fraîche",
@@ -3214,11 +3217,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheep-dairy-product",
       "rdfs:label": [
         {
           "@value": "Produits laitiers de brebis",
@@ -3229,11 +3232,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mandarin",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mandarin",
       "rdfs:label": [
         {
           "@value": "Mandarine",
@@ -3244,11 +3247,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#garlic",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#garlic",
       "rdfs:label": [
         {
           "@value": "Ail",
@@ -3259,11 +3262,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#yogurt-with-fruits",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#yogurt-with-fruits",
       "rdfs:label": [
         {
           "@value": "Yaourt aux fruits",
@@ -3274,11 +3277,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#butter",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#butter",
       "rdfs:label": [
         {
           "@value": "Beurre",
@@ -3289,11 +3292,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#poultry",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#poultry",
       "rdfs:label": [
         {
           "@value": "Volaille",
@@ -3304,11 +3307,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fishery-product",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fishery-product",
       "rdfs:label": [
         {
           "@value": "Produit de la pêche",
@@ -3319,11 +3322,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#porcini",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#porcini",
       "rdfs:label": [
         {
           "@value": "Cèpe",
@@ -3334,11 +3337,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#bluefoot-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#bluefoot-mushroom",
       "rdfs:label": [
         {
           "@value": "Pied-bleu",
@@ -3349,11 +3352,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dairy-dessert",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dairy-dessert",
       "rdfs:label": [
         {
           "@value": "Dessert lacté",
@@ -3364,11 +3367,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#cow-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#cow-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#leek",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#leek",
       "rdfs:label": [
         {
           "@value": "Poireau",
@@ -3379,11 +3382,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#beetroot",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#beetroot",
       "rdfs:label": [
         {
           "@value": "Betterave rouge",
@@ -3394,11 +3397,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#lentils",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#lentils",
       "rdfs:label": [
         {
           "@value": "Lentilles",
@@ -3409,11 +3412,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#dried-vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#dried-vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#medlar",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#medlar",
       "rdfs:label": [
         {
           "@value": "Nèfle",
@@ -3424,11 +3427,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#chive",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#chive",
       "rdfs:label": [
         {
           "@value": "Ciboulette",
@@ -3439,11 +3442,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#aromatic",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#aromatic",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#apricot",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#apricot",
       "rdfs:label": [
         {
           "@value": "Abricot",
@@ -3454,11 +3457,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#orange",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#orange",
       "rdfs:label": [
         {
           "@value": "Orange",
@@ -3469,11 +3472,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#old-variety-tomato",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#old-variety-tomato",
       "rdfs:label": [
         {
           "@value": "Tomate ancienne",
@@ -3484,11 +3487,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#tomato",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#tomato",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#walnut",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#walnut",
       "rdfs:label": [
         {
           "@value": "Noix",
@@ -3499,11 +3502,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#nut",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#nut",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#shellfish",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#shellfish",
       "rdfs:label": [
         {
           "@value": "Crustacé",
@@ -3514,11 +3517,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fishery-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fishery-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#sheepfoot-mushroom",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#sheepfoot-mushroom",
       "rdfs:label": [
         {
           "@value": "Pied de mouton",
@@ -3529,11 +3532,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#mushroom",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#mushroom",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#prune",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#prune",
       "rdfs:label": [
         {
           "@value": "Pruneau",
@@ -3544,11 +3547,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#fruit",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#fruit",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#simmering-meat",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#simmering-meat",
       "rdfs:label": [
         {
           "@value": "Viande à mijoter",
@@ -3559,11 +3562,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#beef",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#beef",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#dried-vegetable",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#dried-vegetable",
       "rdfs:label": [
         {
           "@value": "Légume sec",
@@ -3574,11 +3577,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#lamb",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#lamb",
       "rdfs:label": [
         {
           "@value": "Agneau",
@@ -3589,11 +3592,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#meat-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#meat-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#fruit-juice",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#fruit-juice",
       "rdfs:label": [
         {
           "@value": "Jus de fruit",
@@ -3604,11 +3607,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#soft-drink",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#soft-drink",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#goat-mature-cheese",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#goat-mature-cheese",
       "rdfs:label": [
         {
           "@value": "Fromage affinés",
@@ -3619,11 +3622,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#goat-dairy-product",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#goat-dairy-product",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#biscuit",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#biscuit",
       "rdfs:label": [
         {
           "@value": "Biscuit",
@@ -3634,11 +3637,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#sweet-groceries",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#sweet-groceries",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#pumpkin",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#pumpkin",
       "rdfs:label": [
         {
           "@value": "Potiron",
@@ -3649,11 +3652,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#squash",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#squash",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#mesclun",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#mesclun",
       "rdfs:label": [
         {
           "@value": "Mesclun",
@@ -3664,11 +3667,11 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#salad",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#salad",
       "@type": "dfc-p:ProductType"
     },
     {
-      "@id": "http://datafoodconsortium.org/data/types.rdf#carrot",
+      "@id": "http://static.datafoodconsortium.org/data/types.rdf#carrot",
       "rdfs:label": [
         {
           "@value": "Carotte",
@@ -3679,7 +3682,7 @@
           "@language": "en"
         }
       ],
-      "dfc-p:specialize": "http://datafoodconsortium.org/data/types.rdf#vegetable",
+      "dfc-p:specialize": "http://static.datafoodconsortium.org/data/types.rdf#vegetable",
       "@type": "dfc-p:ProductType"
     }
   ]
