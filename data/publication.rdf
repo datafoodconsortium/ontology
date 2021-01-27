@@ -11,12 +11,10 @@
   <foaf:Person rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#rachelA">
     <foaf:familyName xml:lang="fr">Arnould</foaf:familyName>
     <foaf:firstName xml:lang="fr">Rachel</foaf:firstName>
-    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-3528-6577"/>
   </foaf:Person>
   <foaf:Person rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#bernardC">
     <foaf:familyName xml:lang="fr">Chabot</foaf:familyName>
     <foaf:firstName xml:lang="fr">Bernard</foaf:firstName>
-    <owl:sameAs rdf:resource="https://orcid.org/0000-0002-3528-6577"/>
   </foaf:Person>
   <foaf:Organization rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium">
     <foaf:homepage rdf:resource="http://static.datafoodconsortium.org/"/>
