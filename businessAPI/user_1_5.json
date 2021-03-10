@@ -3,10 +3,10 @@
     "dfc-b": "http://static.datafoodconsortium.org/ontologies/dfc_FullModel.owl#",
     "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
     "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
-    "dfc-b:hasUnit": {
+    "dfc-p:hasUnit": {
       "@type": "@id"
     },
-    "dfc-b:hasType": {
+    "dfc-p:hasType": {
       "@type": "@id"
     },
     "dfc-b:references": {
@@ -50,7 +50,7 @@
           "@id": "/suppliedProduct/item3",
           "@type" : "dfc-b:SuppliedProduct",
           "dfc-p:hasType": "dfc-pt:carrot",
-          "dfc-b:hasUnit": "dfc-u:u",
+          "dfc-p:hasUnit": "dfc-u:u",
           "dfc-b:quantity": "99.99",
           "dfc-b:description": "supply description 1",
           "dfc-b:totalTheoriticalStock": "999",
