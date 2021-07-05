@@ -15,9 +15,9 @@
     "dfc-b:offeresTo": {
       "@type": "@id"
     },
-    "@base": "http://maPlateformeNationale"
+    "@base": "http://maPlateformeNationale/"
   },
-  "@id": "/personId",
+  "@id": "personId",
   "@type": "dfc-b:Person",
   "dfc-b:familyName": "Doe",
   "dfc-b:firtsName": "Jhon",
@@ -30,24 +30,24 @@
   },
   "dfc-b:affiliates": [
     {
-      "@id": "/entrepriseId",
+      "@id": "entreprise/entrepriseId",
       "@type": "dfc-b:Entreprise",
       "dfc-b:VATnumber": "",
       "dfc-b:defines": [
         {
-          "@id": "/customerCategoryId1",
+          "@id": "customerCategory/customerCategoryId1",
           "@type": "dfc-b:CustomerCategory",
           "dfc-b:description": "member"
         },
         {
-          "@id": "/customerCategoryId2",
+          "@id": "customerCategory/customerCategoryId2",
           "@type": "dfc-b:CustomerCategory",
           "dfc-b:description": "non member"
         }
       ],
       "dfc-b:supplies": [
         {
-          "@id": "/suppliedProduct/item3",
+          "@id": "suppliedProduct/item3",
           "@type" : "dfc-b:SuppliedProduct",
           "dfc-p:hasType": "dfc-pt:carrot",
           "dfc-p:hasUnit": "dfc-u:u",
@@ -61,7 +61,7 @@
           "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
         },
         {
-          "@id": "/suppliedProduct/item4",
+          "@id": "suppliedProduct/item4",
           "@type" : "dfc-b:SuppliedProduct",
           "dfc-p:hasType": "dfc-pt:prune",
           "dfc-p:hasUnit": "dfc-u:u",
@@ -77,21 +77,21 @@
       ],
       "dfc-b:manages": [
         {
-          "@id": "/catalogItemId1",
+          "@id": "catalogItem/catalogItemId1",
           "@type": "dfc-b:CatalogItem",
           "dfc-b:references": "/suppliedProduct/item3",
           "dfc-b:sku": "catalog item gtin or sku",
           "dfc-b:stockLimitation": "999",
           "dfc-b:offeredThrough": [
             {
-              "@id": "offerId1",
+              "@id": "offer/offerId1",
               "@type": "dfc-b:Offer",
               "dfc-b:offeresTo": "/customerCategoryId1",
               "dfc-b:price": "0",
               "dfc-b:stockLimitation": "999"
             },
             {
-              "@id": "offerId2",
+              "@id": "offer/offerId2",
               "@type": "dfc-b:Offer",
               "dfc-b:offeresTo": "/customerCategoryId2",
               "dfc-b:price": "999",
@@ -100,21 +100,21 @@
           ]
         },
         {
-          "@id": "/catalogItemId2",
+          "@id": "catalogItem/catalogItemId2",
           "@type": "dfc-b:CatalogItem",
           "dfc-b:sku": "catalog item gtin or sku",
           "dfc-b:stockLimitation": "999",
           "dfc-b:references": "/suppliedProduct/item4",
           "dfc-b:offeredThrough": [
             {
-              "@id": "offerId3",
+              "@id": "offer/offerId3",
               "@type": "dfc-b:Offer",
               "dfc-b:offeresTo": "/customerCategoryId1",
               "dfc-b:price": "000",
               "dfc-b:stockLimitation": "999"
             },
             {
-              "@id": "offerId4",
+              "@id": "offer/offerId4",
               "@type": "dfc-b:Offer",
               "dfc-b:offeresTo": "/customerCategoryId2",
               "dfc-b:price": "999",
