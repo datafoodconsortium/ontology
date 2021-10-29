@@ -1,9 +1,11 @@
 {
   "@context": {
-    "dfc-b": "http://static.datafoodconsortium.org/ontologies/dfc_FullModel.owl#",
+    "dfc": "http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl#",
+    "dfc-b": "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#",
     "dfc-p": "http://static.datafoodconsortium.org/ontologies/DFC_ProductOntology.owl#",
+    "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
     "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
-    "dfc-pt": "http://static.datafoodconsortium.org/data/types.rdf#",
+    "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
     "dfc-p:hasUnit":{
       "@type":"@id"
     },
