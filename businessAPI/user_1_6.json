@@ -30,6 +30,9 @@
     "dfc-b:affiliates":{
       "@type":"@id"
     },
+    "dfc-b:manages":{
+      "@type":"@id"
+    },
     "@base": "http://maPlateformeNationale/"
   },
   "@graph" : [
