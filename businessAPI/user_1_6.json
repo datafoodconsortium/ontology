@@ -33,6 +33,9 @@
     "dfc-b:manages":{
       "@type":"@id"
     },
+    "dfc-b:offeredThrough":{
+      "@type":"@id"
+    },
     "@base": "http://maPlateformeNationale/"
   },
   "@graph" : [
