@@ -36,6 +36,12 @@
     "dfc-b:offeredThrough":{
       "@type":"@id"
     },
+    "dfc:owner":{
+      "@type":"@id"
+    },
+    "dfc-t:hostedBy":{
+      "@type":"@id"
+    },
     "@base": "http://maPlateformeNationale/"
   },
   "@graph" : [
