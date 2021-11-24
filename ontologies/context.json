@@ -41,6 +41,12 @@
     },
     "dfc-t:hostedBy":{
       "@type":"@id"
+    },
+    "dfc-t:hasPivot":{
+      "@type":"@id"
+    },
+    "dfc-t:represent":{
+      "@type":"@id"
     }
   }
 }
