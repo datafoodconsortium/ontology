@@ -1,5 +1,6 @@
 {
-   "@context": {
+   "@context": {               
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dfc": "http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl#",
     "dfc-b": "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#",
     "dfc-p": "http://static.datafoodconsortium.org/ontologies/DFC_ProductOntology.owl#",
