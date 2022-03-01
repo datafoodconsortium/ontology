@@ -94,7 +94,7 @@
       "dfc-p:hasUnit": "dfc-u:u",
       "dfc-b:quantity": "99.99",
       "dfc-p:hasType": "dfc-pt:egg",
-      "dfc-b:description": "supply description 1234",
+      "dfc-b:description": "supply description 12345",
       "dfc-b:totalTheoriticalStock": "999",
       "dfc-b:brand": "supply brand",
       "dfc-b:claim": "supply claim",
