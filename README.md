@@ -1,3 +1,5 @@
+Next
+
 # Welcome to the ontology repo of the DFC project
 
 This is a work in progress. We started on Jan 2017 with a group of local food platforms in France to work together on how we could interoperate our platforms. We have first worked on the "semantic" part of the standard: what are the common business concepts that we all manipulate ? What is the meta model for our business? Is there a way to describe it that encompasses all our specificities ?

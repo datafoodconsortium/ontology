@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
-    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"/>
+    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -68,13 +68,16 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Address"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AllergenCharacteristic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AsPlannedConsumptionFlow"/>
@@ -116,22 +119,13 @@
         <Class IRI="#CustomerCategory"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DFC_BusinessOntology_Subject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DFC_How_Subject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DFC_What_Subject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DFC_Where_Subject"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DFC_Who_Subject"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DefinedProduct"/>
@@ -146,7 +140,13 @@
         <Class IRI="#FunctionalProduct"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#How_Subject"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LocalizedProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NutrientCharacteristic"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Offer"/>
@@ -162,6 +162,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalDimension"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PhysicalPlace"/>
@@ -180,6 +186,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ProductionFlow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#QuantitativeValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RealStock"/>
@@ -215,6 +224,39 @@
         <Class IRI="#VirtualPlace"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#What_Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Where_Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Who_Subject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </Declaration>
     <Declaration>
@@ -230,10 +272,25 @@
         <ObjectProperty IRI="#affiliates"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#allergenCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allergenDimensionOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#brandOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#certificateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#characteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#claimOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#concernedBy"/>
@@ -266,6 +323,9 @@
         <ObjectProperty IRI="#defines"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#dimensionOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#facetOf"/>
     </Declaration>
     <Declaration>
@@ -278,7 +338,25 @@
         <ObjectProperty IRI="#hasAddress"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAllergenDimension"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBrand"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCertification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClaim"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDimension"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFacet"/>
@@ -296,6 +374,12 @@
         <ObjectProperty IRI="#hasNatureOrigin"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasNutrientCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNutrientDimension"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasObject"/>
     </Declaration>
     <Declaration>
@@ -311,7 +395,16 @@
         <ObjectProperty IRI="#hasPartOrigin"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPhysicalDimension"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasProcess"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasQuantity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasReference"/>
@@ -374,6 +467,12 @@
         <ObjectProperty IRI="#natureOriginOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#nutrientCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nutrientDimensionOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#objectOf"/>
     </Declaration>
     <Declaration>
@@ -408,6 +507,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#partOriginOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#physicalCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#physicalDimensionOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#processOf"/>
@@ -470,6 +575,9 @@
         <ObjectProperty IRI="#supplies"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#suppliesTo"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#to"/>
     </Declaration>
     <Declaration>
@@ -489,6 +597,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#uses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#narrower"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Image"/>
@@ -560,6 +674,9 @@
         <DataProperty IRI="#firstName"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#invoiceNumber"/>
     </Declaration>
     <Declaration>
@@ -608,6 +725,9 @@
         <DataProperty IRI="#sku"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#specificCondition"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#startDate"/>
     </Declaration>
     <Declaration>
@@ -618,6 +738,18 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#totalTheoriticalStock"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Height"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Repository_1"/>
@@ -638,11 +770,35 @@
         <NamedIndividual IRI="#Repository_6"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width"/>
+    </Declaration>
+    <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
-        <Class IRI="#DFC_Where_Subject"/>
+        <Class IRI="#Where_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -660,7 +816,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Agent"/>
-        <Class IRI="#DFC_Who_Subject"/>
+        <Class IRI="#Who_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Agent"/>
@@ -696,6 +852,10 @@
             <ObjectProperty IRI="#requests"/>
             <Class IRI="#FunctionalProduct"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AllergenCharacteristic"/>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AsPlannedConsumptionFlow"/>
@@ -976,7 +1136,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CustomerCategory"/>
-        <Class IRI="#DFC_Who_Subject"/>
+        <Class IRI="#Who_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CustomerCategory"/>
@@ -992,6 +1152,10 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
         <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
@@ -1000,24 +1164,8 @@
         <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DFC_How_Subject"/>
-        <Class IRI="#DFC_BusinessOntology_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DFC_What_Subject"/>
-        <Class IRI="#DFC_BusinessOntology_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DFC_Where_Subject"/>
-        <Class IRI="#DFC_BusinessOntology_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DFC_Who_Subject"/>
-        <Class IRI="#DFC_BusinessOntology_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#DefinedProduct"/>
-        <Class IRI="#DFC_What_Subject"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
@@ -1213,8 +1361,12 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#How_Subject"/>
+        <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalizedProduct"/>
-        <Class IRI="#DFC_What_Subject"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#LocalizedProduct"/>
@@ -1250,6 +1402,10 @@
             <ObjectProperty IRI="#representedBy"/>
             <Class IRI="#PhysicalProduct"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NutrientCharacteristic"/>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Offer"/>
@@ -1389,7 +1545,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PaymentMethod"/>
-        <Class IRI="#DFC_How_Subject"/>
+        <Class IRI="#How_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Person"/>
@@ -1408,6 +1564,10 @@
             <ObjectProperty IRI="#mainContactOf"/>
             <Class IRI="#Enterprise"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalCharacteristic"/>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalPlace"/>
@@ -1442,7 +1602,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalProduct"/>
-        <Class IRI="#DFC_What_Subject"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalProduct"/>
@@ -1512,7 +1672,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Place"/>
-        <Class IRI="#DFC_Where_Subject"/>
+        <Class IRI="#Where_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Place"/>
@@ -1523,7 +1683,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProductBatch"/>
-        <Class IRI="#DFC_What_Subject"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ProductBatch"/>
@@ -1554,6 +1714,10 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#produces"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#QuantitativeValue"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RealStock"/>
@@ -1600,7 +1764,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Repository"/>
-        <Class IRI="#DFC_Where_Subject"/>
+        <Class IRI="#Where_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Repository"/>
@@ -1662,7 +1826,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ShippingOption"/>
-        <Class IRI="#DFC_How_Subject"/>
+        <Class IRI="#How_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ShippingOption"/>
@@ -1782,7 +1946,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transaction"/>
-        <Class IRI="#DFC_How_Subject"/>
+        <Class IRI="#How_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transaction"/>
@@ -1819,12 +1983,65 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Transformation"/>
-        <Class IRI="#DFC_How_Subject"/>
+        <Class IRI="#How_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
         <Class IRI="#Place"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#What_Subject"/>
+        <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Where_Subject"/>
+        <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Who_Subject"/>
+        <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AllergenCharacteristic"/>
+        <Class IRI="#PhysicalCharacteristic"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
         <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#bernardC"/>
@@ -1865,6 +2082,26 @@
         <Class IRI="#Repository"/>
         <NamedIndividual IRI="#Repository_6"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width"/>
+    </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#addressOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
@@ -1878,11 +2115,31 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#allergenCharacteristicOf"/>
+        <ObjectProperty IRI="#characteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#allergenDimensionOf"/>
+        <ObjectProperty IRI="#dimensionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#belongsTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#brandOf"/>
+        <ObjectProperty IRI="#facetOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#certificateOf"/>
+        <ObjectProperty IRI="#facetOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#characteristicOf"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#claimOf"/>
         <ObjectProperty IRI="#facetOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1926,6 +2183,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#dimensionOf"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#facetOf"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
@@ -1942,8 +2203,32 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAllergenDimension"/>
+        <ObjectProperty IRI="#hasDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBrand"/>
+        <ObjectProperty IRI="#hasFacet"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCertification"/>
         <ObjectProperty IRI="#hasFacet"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClaim"/>
+        <ObjectProperty IRI="#hasFacet"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDimension"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasFacet"/>
@@ -1966,6 +2251,14 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNutrientCharacteristic"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasNutrientDimension"/>
+        <ObjectProperty IRI="#hasDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasObject"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -1986,8 +2279,20 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhysicalDimension"/>
+        <ObjectProperty IRI="#hasDimension"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasProcess"/>
         <ObjectProperty IRI="#hasFacet"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasReference"/>
@@ -2074,6 +2379,14 @@
         <ObjectProperty IRI="#facetOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#nutrientCharacteristicOf"/>
+        <ObjectProperty IRI="#characteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#nutrientDimensionOf"/>
+        <ObjectProperty IRI="#dimensionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#objectOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2120,6 +2433,14 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#partOriginOf"/>
         <ObjectProperty IRI="#facetOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#physicalCharacteristicOf"/>
+        <ObjectProperty IRI="#characteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#physicalDimensionOf"/>
+        <ObjectProperty IRI="#dimensionOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#processOf"/>
@@ -2202,7 +2523,7 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#to"/>
+        <ObjectProperty IRI="#suppliesTo"/>
         <ObjectProperty IRI="#supplies"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2238,8 +2559,28 @@
         <ObjectProperty IRI="#affiliates"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#allergenCharacteristicOf"/>
+        <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#allergenDimensionOf"/>
+        <ObjectProperty IRI="#hasAllergenDimension"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#brandOf"/>
+        <ObjectProperty IRI="#hasBrand"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#certificateOf"/>
         <ObjectProperty IRI="#hasCertification"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#characteristicOf"/>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#claimOf"/>
+        <ObjectProperty IRI="#hasClaim"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#concernedBy"/>
@@ -2262,6 +2603,10 @@
         <ObjectProperty IRI="#defines"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#dimensionOf"/>
+        <ObjectProperty IRI="#hasDimension"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#facetOf"/>
         <ObjectProperty IRI="#hasFacet"/>
     </InverseObjectProperties>
@@ -2282,6 +2627,14 @@
         <ObjectProperty IRI="#natureOriginOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNutrientCharacteristic"/>
+        <ObjectProperty IRI="#nutrientCharacteristicOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNutrientDimension"/>
+        <ObjectProperty IRI="#nutrientDimensionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasObject"/>
         <ObjectProperty IRI="#objectOf"/>
     </InverseObjectProperties>
@@ -2300,6 +2653,14 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPartOrigin"/>
         <ObjectProperty IRI="#partOriginOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
+        <ObjectProperty IRI="#physicalCharacteristicOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhysicalDimension"/>
+        <ObjectProperty IRI="#physicalDimensionOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasProcess"/>
@@ -2421,6 +2782,10 @@
         <ObjectProperty IRI="#referencedBy"/>
     </SymmetricObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#addressOf"/>
         <Class IRI="#Address"/>
     </ObjectPropertyDomain>
@@ -2433,6 +2798,14 @@
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allergenCharacteristicOf"/>
+        <Class IRI="#AllergenCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allergenDimensionOf"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
         <ObjectUnionOf>
             <Class IRI="#Agent"/>
@@ -2440,8 +2813,20 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#brandOf"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#certificateOf"/>
-        <Class IRI="#DefinedProduct"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#characteristicOf"/>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#claimOf"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#concernedBy"/>
@@ -2500,6 +2885,10 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#dimensionOf"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#from"/>
         <Class IRI="#Transaction"/>
     </ObjectPropertyDomain>
@@ -2511,8 +2900,32 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAllergenDimension"/>
+        <Class IRI="#AllergenCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBrand"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCertification"/>
         <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacteristic"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClaim"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDimension"/>
+        <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
@@ -2533,6 +2946,14 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNatureOrigin"/>
         <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNutrientCharacteristic"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNutrientDimension"/>
+        <Class IRI="#NutrientCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasObject"/>
@@ -2559,7 +2980,19 @@
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhysicalDimension"/>
+        <Class IRI="#PhysicalCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcess"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasQuantity"/>
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -2572,7 +3005,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasUnit"/>
-        <Class IRI="#DefinedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#DFC_BusinessOntology_Characteristic"/>
+            <Class IRI="#DefinedProduct"/>
+            <Class IRI="#QuantitativeValue"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hostedAt"/>
@@ -2645,6 +3082,14 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nutrientCharacteristicOf"/>
+        <Class IRI="#NutrientCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nutrientDimensionOf"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#objectOf"/>
         <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
@@ -2678,7 +3123,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ownedBy"/>
-        <Class IRI="#PhysicalProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#PhysicalProduct"/>
+            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#owns"/>
@@ -2687,6 +3135,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#OrderLine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#physicalDimensionOf"/>
+        <Class IRI="#PhysicalDimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#processOf"/>
@@ -2793,6 +3245,16 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#typeOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#uses"/>
         <ObjectUnionOf>
             <Class IRI="#DeliveryOption"/>
@@ -2800,6 +3262,14 @@
             <Class IRI="#PickupOption"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasQuantity"/>
+        <Class IRI="#QuantitativeValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUnit"/>
+        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
+    </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#endDate"/>
         <DataProperty IRI="#date"/>
@@ -3004,6 +3474,10 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
+        <Class IRI="#DefinedProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#invoiceNumber"/>
         <Class IRI="#Transaction"/>
     </DataPropertyDomain>
@@ -3083,6 +3557,10 @@
         <Class IRI="#CatalogItem"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#specificCondition"/>
+        <Class IRI="#DefinedProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#startDate"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
@@ -3106,25 +3584,32 @@
         <DataProperty IRI="#totalTheoriticalStock"/>
         <Class IRI="#SuppliedProduct"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <ObjectUnionOf>
+            <Class IRI="#DFC_BusinessOntology_Characteristic"/>
+            <Class IRI="#QuantitativeValue"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Image"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#InstagramPage"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#LinkedinPage"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#TwitterPage"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#URL"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#VATnumber"/>
@@ -3184,7 +3669,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#facebookPage"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#familyName"/>
@@ -3197,6 +3682,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#firstName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#invoiceNumber"/>
@@ -3212,7 +3701,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#logo"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#longitude"/>
@@ -3263,12 +3752,20 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#specificCondition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#startDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#street"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#value"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3289,6 +3786,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Agent</IRI>
         <Literal xml:lang="fr">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AllergenCharacteristic</IRI>
+        <Literal xml:lang="en">Allergen characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AllergenCharacteristic</IRI>
+        <Literal xml:lang="fr">Caractéristique allergène</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3422,63 +3929,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_BusinessOntology_Characteristic</IRI>
+        <Literal xml:lang="fr">Caractéristique DFC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_BusinessOntology_Characteristic</IRI>
+        <Literal xml:lang="en">DFC characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DFC_BusinessOntology_Relation</IRI>
         <Literal xml:lang="fr">Relation de l&apos;ontologie Data Food Consortium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DFC_BusinessOntology_Relation</IRI>
         <Literal xml:lang="en">Relation of Data Food Consortium ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_BusinessOntology_Relation</IRI>
+        <Literal xml:lang="en">DFC relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DFC_BusinessOntology_Relation</IRI>
+        <Literal xml:lang="fr">Relation DFC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DFC_BusinessOntology_Subject</IRI>
         <Literal xml:lang="en">Subject of Data Food Consortium ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#DFC_BusinessOntology_Subject</IRI>
         <Literal xml:lang="fr">Sujet de l&apos;ontologie Data Food Consortium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_How_Subject</IRI>
-        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;How?&quot;</Literal>
+        <IRI>#DFC_BusinessOntology_Subject</IRI>
+        <Literal xml:lang="en">DFC subject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_How_Subject</IRI>
-        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Comment?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_What_Subject</IRI>
-        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;What?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_What_Subject</IRI>
-        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Quoi?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_Where_Subject</IRI>
-        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;Where?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_Where_Subject</IRI>
-        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Où?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_Who_Subject</IRI>
-        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;Who?&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_Who_Subject</IRI>
-        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Qui ?&quot;</Literal>
+        <IRI>#DFC_BusinessOntology_Subject</IRI>
+        <Literal xml:lang="fr">Sujet DFC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3521,6 +4018,26 @@
         <Literal xml:lang="fr">Produit fonctionnel</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#How_Subject</IRI>
+        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;How?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#How_Subject</IRI>
+        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Comment?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#How_Subject</IRI>
+        <Literal xml:lang="en">How subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#How_Subject</IRI>
+        <Literal xml:lang="fr">Sujet Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Image</IRI>
         <Literal xml:lang="en">image</Literal>
@@ -3559,6 +4076,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LocalizedProduct</IRI>
         <Literal xml:lang="fr">Produit localisé</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NutrientCharacteristic</IRI>
+        <Literal xml:lang="fr">Caractéristique nutritionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NutrientCharacteristic</IRI>
+        <Literal xml:lang="en">Nutrient characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3609,6 +4136,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Person</IRI>
         <Literal xml:lang="fr">Personne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalCharacteristic</IRI>
+        <Literal xml:lang="en">Examples : taste/shape/color/texture...</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalCharacteristic</IRI>
+        <Literal xml:lang="fr">Caractéristique physique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhysicalCharacteristic</IRI>
+        <Literal xml:lang="en">Physical characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3669,6 +4211,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ProductionFlow</IRI>
         <Literal xml:lang="en">Production flow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QuantitativeValue</IRI>
+        <Literal xml:lang="en">Quantitative value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#QuantitativeValue</IRI>
+        <Literal xml:lang="fr">Valeur quantitative</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#QuantitativeValue</IRI>
+        <Literal>https://gs1.org/voc/QuantitativeValue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3803,12 +4360,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TwitterPage</IRI>
-        <Literal xml:lang="fr">Compte Twitter</Literal>
+        <Literal xml:lang="en">Twitter page</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TwitterPage</IRI>
-        <Literal xml:lang="en">Twitter page</Literal>
+        <Literal xml:lang="fr">compte Twitter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3833,12 +4390,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
-        <Literal xml:lang="en">Charges VAT?</Literal>
+        <Literal xml:lang="en">charges VAT</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
-        <Literal xml:lang="fr">Soumis à la TVA?</Literal>
+        <Literal xml:lang="fr">soumis à TVA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3849,6 +4406,66 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VirtualPlace</IRI>
         <Literal xml:lang="en">Virtual place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#What_Subject</IRI>
+        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;What?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#What_Subject</IRI>
+        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Quoi?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#What_Subject</IRI>
+        <Literal xml:lang="fr">Sujet Quoi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#What_Subject</IRI>
+        <Literal xml:lang="en">What subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Where_Subject</IRI>
+        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;Where?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Where_Subject</IRI>
+        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Où?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Where_Subject</IRI>
+        <Literal xml:lang="fr">Sujet Où</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Where_Subject</IRI>
+        <Literal xml:lang="en">Where subject</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Who_Subject</IRI>
+        <Literal xml:lang="en">Subject of Data Food Consortium ontology answering question &quot;Who?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Who_Subject</IRI>
+        <Literal xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Qui ?&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Who_Subject</IRI>
+        <Literal xml:lang="fr">Sujet Qui</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Who_Subject</IRI>
+        <Literal xml:lang="en">Who subject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3882,6 +4499,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#allergenCharacteristicOf</IRI>
+        <Literal xml:lang="en">allergen characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#allergenCharacteristicOf</IRI>
+        <Literal xml:lang="fr">caractéristique allergène de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#allergenDimensionOf</IRI>
+        <Literal xml:lang="en">allergen dimension of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#allergenDimensionOf</IRI>
+        <Literal xml:lang="fr">dimension allergène de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#batchNumber</IRI>
         <Literal xml:lang="en">batch number</Literal>
     </AnnotationAssertion>
@@ -3901,6 +4538,11 @@
         <Literal xml:lang="en">belongs to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#brand</IRI>
+        <Literal xml:lang="en">Deprecated onto v5.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#brand</IRI>
         <Literal xml:lang="en">brand</Literal>
@@ -3909,6 +4551,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#brand</IRI>
         <Literal xml:lang="fr">marque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#brandOf</IRI>
+        <Literal xml:lang="en">brand of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#brandOf</IRI>
+        <Literal xml:lang="fr">marque de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3922,6 +4574,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#characteristicOf</IRI>
+        <Literal xml:lang="fr">caractéristique de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#characteristicOf</IRI>
+        <Literal xml:lang="en">characterisif of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#city</IRI>
         <Literal xml:lang="en">city</Literal>
     </AnnotationAssertion>
@@ -3929,6 +4591,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#city</IRI>
         <Literal xml:lang="fr">ville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#claim</IRI>
+        <Literal xml:lang="en">deprecated onto v5.0</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3939,6 +4606,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#claim</IRI>
         <Literal xml:lang="en">product claim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#claimOf</IRI>
+        <Literal xml:lang="fr">affirmation de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#claimOf</IRI>
+        <Literal xml:lang="en">claim of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4073,12 +4750,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#description</IRI>
-        <Literal xml:lang="en">Description</Literal>
+        <Literal xml:lang="en">description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#description</IRI>
-        <Literal xml:lang="fr">Description</Literal>
+        <Literal xml:lang="fr">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dimensionOf</IRI>
+        <Literal xml:lang="fr">dimension de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#dimensionOf</IRI>
+        <Literal xml:lang="en">dimension of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4093,12 +4780,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#endDate</IRI>
-        <Literal xml:lang="fr">Date de fin</Literal>
+        <Literal xml:lang="fr">date de fin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#endDate</IRI>
-        <Literal xml:lang="en">End date</Literal>
+        <Literal xml:lang="en">end date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4128,7 +4815,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#facebookPage</IRI>
-        <Literal xml:lang="fr">Page Facebook</Literal>
+        <Literal xml:lang="fr">page Facebook</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4153,12 +4840,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fee</IRI>
-        <Literal xml:lang="en">Fee</Literal>
+        <Literal xml:lang="en">fee</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fee</IRI>
-        <Literal xml:lang="fr">Frais</Literal>
+        <Literal xml:lang="fr">frais</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4202,6 +4889,36 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAllergenCharacteristic</IRI>
+        <Literal xml:lang="fr">a pour caractéristique allergène</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAllergenCharacteristic</IRI>
+        <Literal xml:lang="en">has allergen characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAllergenDimension</IRI>
+        <Literal xml:lang="fr">a pour dimension allergène</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAllergenDimension</IRI>
+        <Literal xml:lang="en">has allergen dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasBrand</IRI>
+        <Literal xml:lang="fr">a pour marque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasBrand</IRI>
+        <Literal xml:lang="en">has brand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasCertification</IRI>
         <Literal xml:lang="fr">a pour certification/label</Literal>
     </AnnotationAssertion>
@@ -4209,6 +4926,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasCertification</IRI>
         <Literal xml:lang="en">has certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal xml:lang="fr">a pour caractéristique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal xml:lang="en">has characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasClaim</IRI>
+        <Literal xml:lang="fr">a pour affirmation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasClaim</IRI>
+        <Literal xml:lang="en">has claim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDimension</IRI>
+        <Literal xml:lang="fr">a pour dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasDimension</IRI>
+        <Literal xml:lang="en">has dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4267,6 +5014,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNutrientCharacteristic</IRI>
+        <Literal xml:lang="fr">a pour caractéristique nutritionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNutrientCharacteristic</IRI>
+        <Literal xml:lang="en">has nutrient characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNutrientDimension</IRI>
+        <Literal xml:lang="fr">a pour dimension nutritionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNutrientDimension</IRI>
+        <Literal xml:lang="en">has nutrient dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasObject</IRI>
         <Literal xml:lang="fr">a pour objet</Literal>
     </AnnotationAssertion>
@@ -4317,6 +5084,41 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPercentageOfAlcoholByVolume</IRI>
+        <Literal xml:lang="en">has percentage of alcohol by volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPercentageOfAlcoholByVolume</IRI>
+        <Literal xml:lang="fr">pourcentage d&apos;alcool en volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#hasPercentageOfAlcoholByVolume</IRI>
+        <Literal>gs1:percentageOfAlcoholByVolume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhysicalCharacteristic</IRI>
+        <Literal xml:lang="fr">a pour caractéristique physique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhysicalCharacteristic</IRI>
+        <Literal xml:lang="en">has physical characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhysicalDimension</IRI>
+        <Literal xml:lang="fr">a pour dimension physique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhysicalDimension</IRI>
+        <Literal xml:lang="en">has physical dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasProcess</IRI>
         <Literal xml:lang="fr">a subi comme procédé</Literal>
     </AnnotationAssertion>
@@ -4324,6 +5126,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasProcess</IRI>
         <Literal xml:lang="en">has process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal xml:lang="fr">a pour quantité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal xml:lang="en">has quantity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4468,7 +5280,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#lists</IRI>
-        <Literal xml:lang="fr">iste</Literal>
+        <Literal xml:lang="fr">liste</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4568,12 +5380,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#marginPercent</IRI>
-        <Literal xml:lang="fr">Marge</Literal>
+        <Literal xml:lang="fr">marge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#marginPercent</IRI>
-        <Literal xml:lang="en">Markup</Literal>
+        <Literal xml:lang="en">markup</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4584,6 +5396,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#natureOriginOf</IRI>
         <Literal xml:lang="fr">origine naturelle (source) de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nutrientCharacteristicOf</IRI>
+        <Literal xml:lang="fr">caractéristique nutritionnelle de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nutrientCharacteristicOf</IRI>
+        <Literal xml:lang="en">nutrient characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nutrientDimensionOf</IRI>
+        <Literal xml:lang="fr">dimension nutritionnelle de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nutrientDimensionOf</IRI>
+        <Literal xml:lang="en">nutrient dimension of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4747,13 +5579,38 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physicalCharacteristicOf</IRI>
+        <Literal xml:lang="fr">caractéristique physique de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physicalCharacteristicOf</IRI>
+        <Literal xml:lang="en">physical characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#physicalCharacteristics</IRI>
-        <Literal xml:lang="fr">charactéristique physique</Literal>
+        <Literal xml:lang="en">deprecated onto v5.0</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#physicalCharacteristics</IRI>
-        <Literal xml:lang="en">physical characteristics</Literal>
+        <Literal xml:lang="fr">caractéristique physique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physicalCharacteristics</IRI>
+        <Literal xml:lang="en">physical characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physicalDimensionOf</IRI>
+        <Literal xml:lang="fr">dimension physique de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#physicalDimensionOf</IRI>
+        <Literal xml:lang="en">physical dimension of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4972,13 +5829,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#startDate</IRI>
-        <Literal xml:lang="fr">Date de début</Literal>
+        <IRI>#specificCondition</IRI>
+        <Literal xml:lang="fr">conditon particulière d&apos;usage ou de conservation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#specificCondition</IRI>
+        <Literal xml:lang="en">usage or storage specific condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#startDate</IRI>
-        <Literal xml:lang="en">Start date</Literal>
+        <Literal xml:lang="en">begin date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startDate</IRI>
+        <Literal xml:lang="fr">date de début</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5042,13 +5909,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#to</IRI>
-        <Literal xml:lang="en">to</Literal>
+        <IRI>#suppliesTo</IRI>
+        <Literal xml:lang="fr">fournit à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#to</IRI>
-        <Literal xml:lang="fr">à</Literal>
+        <IRI>#suppliesTo</IRI>
+        <Literal xml:lang="en">supplies to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5119,6 +5986,106 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#uses</IRI>
         <Literal xml:lang="fr">utilise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal xml:lang="fr">valeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal xml:lang="en">value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension</IRI>
+        <Literal xml:lang="en">Allergen dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension</IRI>
+        <Literal xml:lang="fr">Dimension allergène</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth</IRI>
+        <Literal xml:lang="en">Depth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth</IRI>
+        <Literal xml:lang="fr">Profondeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height</IRI>
+        <Literal xml:lang="fr">Hauteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height</IRI>
+        <Literal xml:lang="en">Height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension</IRI>
+        <Literal xml:lang="fr">Dimension nutritionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension</IRI>
+        <Literal xml:lang="en">Nutrient dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension</IRI>
+        <Literal xml:lang="fr">Dimension physique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension</IRI>
+        <Literal xml:lang="en">Physical dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension</IRI>
+        <Literal xml:lang="fr">Dimension temporelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension</IRI>
+        <Literal xml:lang="en">Temporal dimension</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume</IRI>
+        <Literal xml:lang="en">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume</IRI>
+        <Literal xml:lang="fr">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight</IRI>
+        <Literal xml:lang="fr">Poids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight</IRI>
+        <Literal xml:lang="en">Weight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width</IRI>
+        <Literal xml:lang="fr">Largeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width</IRI>
+        <Literal xml:lang="en">Width</Literal>
     </AnnotationAssertion>
 </Ontology>
 

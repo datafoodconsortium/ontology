@@ -1,0 +1,2228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:schema="http://schema.org/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skosthes="http://purl.org/iso25964/skos-thes#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dfc-pt="http://static.datafoodconsortium.org/data/productTypes.rdf"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dct:title xml:lang="en">Product Types</dct:title>
+	<dct:title xml:lang="fr">Types de produits</dct:title>
+	<dct:description xml:lang="en">The categories of the products, ordered as a tree</dct:description>
+	<dct:description xml:lang="fr">Les différentes catégories de produit, classifiées en arborescence</dct:description>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#inedible"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bakery"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#drink"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#soft-drink">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">soft drink</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">boisson non alcoolisée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#drink"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#smoothie"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#lemonade"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit-juice"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#salad">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">salad</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">salade</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rocket"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chicory"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad-mix"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chewed-up"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#endive"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dandelion"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cress"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#lettuce"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#spinach"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mesclun"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#egg">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">egg</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">œuf</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-squash">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">old variety squash</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">variété ancienne de courge</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fig">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fig</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">figue</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rocket">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rocket</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">roquette</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#beef">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">beef</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande bovine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#grilling-meat"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#simmering-meat"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-mature-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep mature cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage affiné de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-milk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep milk</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lait de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chanterelle-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chanterelle mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chanterelle</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-sweet-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat sweet yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt sucré de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rabbit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rabbit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lapin</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pie-pastry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pie pastry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pâte à tarte</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#jam">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">jam</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">confiture</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fourth-range-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fourth range vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume de quatrième gamme</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">champignon</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chanterelle-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#oyster-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#deaths-trumpet"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#girolle-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#paris-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#truffle"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#milky-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#morel"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#coulemelle-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mousseron"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#porcini"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bluefoot-mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheepfoot-mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#beer">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">beer</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">bière</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chilli-pepper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chilli pepper</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">piment</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#non-local-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">non local vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume non local</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chicory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chicory</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chicorée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#other-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">other cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">autre fromage</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#other-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cream-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cream cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage blanc</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#peach">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">peach</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pêche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#almond">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">almond</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">amande</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#milk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milk</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lait</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">romanesco cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou romanesco</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">frozen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">surgelé</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-meal"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-meat"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-meat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fresh meat</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande fraîche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pork"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#semolina">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">semolina</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">semoule</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#turkey">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">turkey</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">dinde</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#plant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">plant</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">plante</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#inedible"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#kale-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kale cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou kale</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#asparagus">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">asparagus</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">asperges</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-yogurt-with-fruits">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat yogurt with fruits</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de chèvre aux fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#wine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">wine</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">vin</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-yogurt-on-a-bed-of-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep yogurt on a bed of fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de brebis sur lit de fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#crepe-and-galette">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">crepe and galette</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">crêpe et galette</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat dairy product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit laitier de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-sweet-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-yogurt-with-fruits"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-fresh-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-yogurt-on-a-bed-of-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-dessert"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-flavored-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-natural-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-milk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-mature-cheese"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#oyster-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">oyster mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pleurote</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#seashell">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">seashell</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">coquillage</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fishery-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#radish">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">radish</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">radis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">tomato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">tomate</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#round-tomato"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cherry-tomato"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cluster-tomato"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-tomato"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pork">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pork</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">porc</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-meat"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cooked-meat"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salting"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#delicatessen"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#thyme">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">thyme</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">thym</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cider">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cider</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cidre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mint">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mint</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">menthe</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#parsley">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parsley</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">persil</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-fresh-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep fresh cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Fromage frais de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cow dairy product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit laitier de vache</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cream-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#milk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mature-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#natural-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#flavored-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#yogurt-on-a-bed-of-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-cream"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#yogurt-with-fruits"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#butter"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-dessert"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#jerusalem-artichoke">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">jerusalem artichoke</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">topinambour</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#ripe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ripe</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mûre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#salad-mix">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">salad mix</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mélange de salades</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#parsnip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">parsnip</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">panais</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#broccoli-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">broccoli cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou brocoli</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#salt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">salt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">sel</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#yam">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">yam</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Patate douce</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-yogurt-with-fruits">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep yogurt with fruits</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de brebis aux fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#green-garlic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">green garlic</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">aillet</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chestnut">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chestnut</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">marron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chard">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chard</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">blettes</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#flower">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">flower</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fleur</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#inedible"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fennel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fennel</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fenouil</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fish">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fish</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">poisson</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fishery-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#shallot">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">shallot</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">échalote</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dried fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit sec</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#kiwi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kiwi</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">kiwi</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#berry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">berry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">petit fruit</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#ripe"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cassis"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#gooseberry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#raspberry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#currant"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#inedible">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">inedible</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">non alimentaire</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#plant"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#flower"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cosmetic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chewed-up">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chewed up</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mâche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#endive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">endive</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">endive</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#celeriac">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">celeriac</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">céleri-rave</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#kohlrabi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kohlrabi</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou-rave</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dandelion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dandelion</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pissenlit</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#guinea-fowl">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">guinea fowl</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pintade</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cassis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cassis</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cassis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#duck">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">duck</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">canard</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#deaths-trumpet">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">deaths trumpet</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">trompette de la mort</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cosmetic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cosmetic</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cosmétique</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#inedible"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#festive-poultry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">festive poultry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">volaille festive</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#melon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">melon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">melon</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sweet groceries</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">épicerie sucrée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#jam"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#honey"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pastry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#confectionery"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#biscuit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#smoothie">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">smoothie</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">smoothie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#soft-drink"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">blueberry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">myrtille</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#gooseberry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">gooseberry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">groseille à maquereau</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#girolle-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">girolle mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">girolle</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#grape">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">grape</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">raisin</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">aromatic</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">aromate</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chilli-pepper"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#thyme"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mint"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#parsley"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rosemary"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dill"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#laurel"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tarragon"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chervil"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#coriander"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#basil"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chive"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-fresh-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat fresh cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage frais de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-flavored-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep flavored yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de brebis aromatisé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#quinoa">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">quinoa</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">quinoa</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#ready-meal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">ready meal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">plat cuisiné</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rhubarb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rhubarb</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">rhubarbe</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rosemary">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rosemary</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">romarin</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chinese-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chinese cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou chinois</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#brussels-sprouts">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">brussels sprouts</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">choux de bruxelles</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">alcoholic beverage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">boisson alcoolisée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#drink"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beer"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#wine"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cider"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#digestive"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aperitif"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#paris-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">paris mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">champignon de Paris</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bottled-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bottled fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit en bocal</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pepper">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pepper</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">poivron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#round-tomato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">round tomato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">tomate ronde</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goose">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goose</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">oie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bottled-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bottled vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume en bocal</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cooked-meat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cooked meat</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande cuite</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pork"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fourth-range-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#non-local-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#asparagus"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#radish"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#jerusalem-artichoke"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#parsnip"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#yam"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#green-garlic"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chard"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fennel"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#shallot"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#celeriac"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#melon"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rhubarb"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pepper"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fifth-range-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#turnip"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#eggplant"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#potato"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#courgette"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cucumber"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#onion"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#artichoke"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salsify"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bean"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#celery-branch"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rutabaga"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#garlic"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#leek"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beetroot"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#carrot"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#quail">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">quail</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">caille</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mature-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mature cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage affiné</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#lemon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lemon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">citron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pear">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pear</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">poire</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">frozen fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit surgelé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#peas">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">peas</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pois</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#salting">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">salting</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">salaison</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pork"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#honey">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">honey</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">miel</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-meal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">frozen meal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">plat surgelé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pasta">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pasta</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pâtes</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cherry-tomato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cherry tomato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">tomate cerise</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-meat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">frozen meat</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande surgelée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#non-local-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">non local fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit non local</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#clementine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">clementine</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">clémentine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#other-milk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">other milk</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">autre lait</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#other-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dill">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dill</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">aneth</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#lemonade">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lemonade</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">limonade</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#soft-drink"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rice</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">riz</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#snails">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">snails</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">escargots</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fifth-range-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fifth range vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume de cinquième gamme</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#turnip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">turnip</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">navet</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cluster-tomato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cluster tomato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">tomate en grappe</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#kale-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#broccoli-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#kohlrabi"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chinese-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#brussels-sprouts"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#smooth-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#kale"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#red-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#apple-cabbage"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cauliflower"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit-in-compote">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fruit in compote</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit en compote</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#digestive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">digestive</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">digestif</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#truffle">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">truffle</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">truffe</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-yogurt-on-a-bed-of-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat yogurt on a bed of fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de chèvre sur lit de fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#flour">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">flour</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">farine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#eggplant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">eggplant</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">aubergine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cress">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cress</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cresson</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#quince">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">quince</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">coing</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sweet yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt sucré</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#laurel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">laurel</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">laurier</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-dessert">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep dairy dessert</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">dessert lacté de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#raspberry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">raspberry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">framboise</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#hazelnut">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">hazelnut</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">noisette</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#delicatessen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">delicatessen</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">charcuterie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pork"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-natural-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep natural yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de brebis nature</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bakery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bakery</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">boulangerie</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#viennoiserie-"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bread"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#lettuce">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lettuce</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">laitue</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#veal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">veal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">veau</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#drink">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">drink</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">boisson</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#soft-drink"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#tarragon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">tarragon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">estragon</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">meat product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit carné</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#egg"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beef"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rabbit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pork"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#snails"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#veal"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fishery-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#lamb"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#natural-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">natural yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt nature</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-dessert">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat dairy dessert</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">dessert lacté de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#milky-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">milky mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lactaire</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cherry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cherry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cerise</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#flavored-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">flavored yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt aromatisé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#squash-melon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">squash melon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pâtisson</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chervil">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chervil</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cerfeuil</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">savory groceries</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">épicerie salée</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pie-pastry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#semolina"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#crepe-and-galette"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pasta"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#rice"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#flour"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cereal"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#oil"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">local grocery store</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">épicerie locale</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#ready-meal"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">processed fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit transformé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bottled-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit-in-compote"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#canned-fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#other-dairy-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">other dairy product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">autre produit laitier</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#other-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#other-milk"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#potato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">potato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pomme de terre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#coriander">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">coriander</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">coriandre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#beans">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">beans</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">haricots</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#viennoiserie-">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">viennoiserie</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viennoiserie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bakery"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-flavored-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat flavored yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt de chèvre aromatisé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#currant">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">currant</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">groseille</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#nectarine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">nectarine</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">nectarine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bread">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bread</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pain</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bakery"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-sweet-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep sweet yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt sucré de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#smooth-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">smooth cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou lisse</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#courgette">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">courgette</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">courgette</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#strawberry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">strawberry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fraise</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-natural-yogurt">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat natural yogurt</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt nature de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pastry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pastry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pâtisserie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fresh cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage frais</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#canned-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">canned vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume en conserve</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#yogurt-on-a-bed-of-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">yogurt on a bed of fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt sur lit de fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#aperitif">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">aperitif</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">apéritif</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#alcoholic-beverage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#kale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">kale</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou frisé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#grilling-meat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">grilling meat</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande à griller</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beef"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">processed vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume transformé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#local-grocery-store"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bottled-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#canned-vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#soup"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#spinach">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">spinach</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">épinards</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#morel">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">morel</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">morille</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cucumber">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cucumber</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">concombre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#onion">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">onion</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">oignon</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#artichoke">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">artichoke</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">artichaut</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-milk">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat milk</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lait de chèvre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#nut">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">nut</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit à coque</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#almond"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chestnut"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#hazelnut"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#medlar"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#walnut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dairy product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit laitier</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#other-dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#red-kuri-squash">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">red kuri squash</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">potimarron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#squash">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">squash</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">courge</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-squash"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash-melon"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#red-kuri-squash"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#butternut"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pumpkin"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">frozen vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume surgelé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#frozen"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">sauge</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#salsify">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">salsify</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">salsifis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bean">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bean</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">haricot</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#plum">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">plum</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">prune</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pigeon">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pigeon</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pigeon</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#basil">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">basil</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">basilic</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#red-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">red cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou rouge</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#butternut">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">butternut</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">butternut</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#celery-branch">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">celery branch</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">céleri branche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#coulemelle-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">coulemelle mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">coulemelle</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#apple-cabbage">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">apple cabbage</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou pommé</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cereal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cereal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">céréale</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#canned-fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">canned fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruit en conserve</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#apples">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">apples</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pomme</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rutabaga">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">rutabaga</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">rutabaga</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mousseron">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mousseron</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mousseron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#cauliflower">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">cauliflower</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">chou-fleur</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chicken">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chicken</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">poulet</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#soup">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">soup</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">soupe</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#processed-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fruit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fruits</skos:prefLabel>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fig"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#peach"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#kiwi"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#grape"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#lemon"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pear"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#non-local-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#clementine"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#quince"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cherry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nectarine"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#strawberry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#plum"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#apples"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mandarin"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#apricot"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#orange"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#prune"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#confectionery">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">confectionery</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">confiserie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#oil">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">oil</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">huile</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savory-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fresh-cream">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fresh cream</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">crème fraîche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheep dairy product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit laitier de brebis</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-mature-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-milk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-yogurt-on-a-bed-of-fruit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-fresh-cheese"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-yogurt-with-fruits"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-flavored-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-dairy-dessert"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-natural-yogurt"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sheep-sweet-yogurt"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mandarin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mandarin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mandarine</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#garlic">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">garlic</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">ail</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#yogurt-with-fruits">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">yogurt with fruits</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">yaourt aux fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#butter">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">butter</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">beurre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#poultry">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">poultry</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">volaille</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#turkey"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#guinea-fowl"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#duck"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#festive-poultry"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goose"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#quail"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#pigeon"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#chicken"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fishery-product">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fishery product</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">produit de la pêche</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#seashell"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fish"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#shellfish"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#porcini">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">porcini</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">cèpes</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bluefoot-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">bluefoot mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pied-bleu</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-dessert">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dairy dessert</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">dessert lacté</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cow-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#leek">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">leek</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">poireau</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#beetroot">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">beetroot</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">betterave rouge</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#lentils">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lentils</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">lentilles</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#medlar">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">medlar</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">nèfle</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chive">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">chive</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">ciboulette</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#apricot">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">apricot</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">abricot</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#orange">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">orange</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">orange</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-tomato">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">old variety tomato</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">tomate ancienne</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#walnut">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">walnut</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">noix</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#shellfish">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">shellfish</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">crustacés</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fishery-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#sheepfoot-mushroom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">sheepfoot mushroom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pied-de-mouton</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#mushroom"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#prune">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">prune</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">pruneau</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#simmering-meat">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">simmering meat</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">viande à mijoter</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beef"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#dried-vegetable">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">dried vegetable</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">légume sec</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#quinoa"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#peas"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#beans"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#lentils"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#lamb">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">lamb</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">agneau</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#meat-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit-juice">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">fruit juice</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">jus de fruits</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#soft-drink"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-mature-cheese">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">goat mature cheese</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">fromage de chèvre affiné</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#goat-dairy-product"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#biscuit">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">biscuit</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">biscuit</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#sweet-groceries"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#pumpkin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">pumpkin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">potiron</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#mesclun">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">mesclun</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">mesclun</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#carrot">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">carrot</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">carotte</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+</rdf:Description>
+
+</rdf:RDF>
