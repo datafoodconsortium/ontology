@@ -17,6 +17,9 @@
     "dfc-b:references":{
       "@type":"@id"
     },
+    "dfc-b:referencedBy":{
+      "@type":"@id"
+    },
     "dfc-b:offeredThroug":{
       "@type":"@id"
     },
@@ -30,6 +33,9 @@
       "@type":"@id"
     },
     "dfc-b:affiliates":{
+      "@type":"@id"
+    },
+    "dfc-b:hasQuantity":{
       "@type":"@id"
     },
     "dfc-b:manages":{
