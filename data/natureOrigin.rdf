@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:schema="http://schema.org/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skosthes="http://purl.org/iso25964/skos-thes#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:qb="http://purl.org/linked-data/cube#"
+	xmlns:dfc-n="http://static.datafoodconsortium.org/data/natureOrigin.rdf"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#">
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dct:title xml:lang="en">Natural origin</dct:title>
+	<dct:title xml:lang="fr">Source naturelle d'origine</dct:title>
+	<dct:description xml:lang="en">Natural "living" origin concerned</dct:description>
+	<dct:description xml:lang="fr">Source "vivante" d'origine concernée</dct:description>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#UnknownNatureOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#MultiNatureOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#PlantOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#AnimalOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Mineral"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Funghi"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Algae"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Bacteria"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Water"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#UnknownNatureOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Unknown nature origin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Source d'origine inconnue</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#MultiNatureOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Multiorigin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Origine multiple</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#PlantOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Plant</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Plante</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#AnimalOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Animal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Animal</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Mineral">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Mineral</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Minéral</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Funghi">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Funghi</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Champignon</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Algae">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Algae</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Algue</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Bacteria">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bacteria</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bactérie</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/natureOrigin.rdf#Water">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Water</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Eau</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+</rdf:Description>
+
+</rdf:RDF>
