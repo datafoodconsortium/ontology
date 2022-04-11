@@ -18,6 +18,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="dfc-p" IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
     <Import>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl</Import>
@@ -105,6 +106,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#AsRealizedTransformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brand"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CatalogItem"/>
@@ -233,22 +237,19 @@
         <Class IRI="#Who_Subject"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <Class abbreviatedIRI="dfc-p:AllergenDimension"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+        <Class abbreviatedIRI="dfc-p:NutrientDimension"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension"/>
+        <Class abbreviatedIRI="dfc-p:TemporalDimension"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -743,9 +744,6 @@
         <DataProperty IRI="#value"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Depth"/>
     </Declaration>
     <Declaration>
@@ -779,19 +777,37 @@
         <NamedIndividual IRI="#Width"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Depth"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Height"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:NutritionalClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:Volume"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:Weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-p:Width"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
@@ -1033,6 +1049,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Brand"/>
+        <Class IRI="#What_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CatalogItem"/>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
     </SubClassOf>
@@ -1185,21 +1205,21 @@
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasNatureOrigin"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
+            <Class abbreviatedIRI="dfc-p:NatureOrigin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasPartOrigin"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+            <Class abbreviatedIRI="dfc-p:PartOrigin"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasProcess"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
+            <Class abbreviatedIRI="dfc-p:Process"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1214,8 +1234,8 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasGeographicalOrigin"/>
             <ObjectUnionOf>
-                <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-                <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+                <Class abbreviatedIRI="dfc-p:GlobalGenericOrigin"/>
+                <Class abbreviatedIRI="dfc-p:TerritorialOrigin"/>
             </ObjectUnionOf>
         </ObjectExactCardinality>
     </SubClassOf>
@@ -1223,14 +1243,14 @@
         <Class IRI="#DefinedProduct"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasType"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductType"/>
+            <Class abbreviatedIRI="dfc-p:ProductType"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#hasUnit"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
+            <Class abbreviatedIRI="dfc-p:Unit"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2002,46 +2022,38 @@
         <Class IRI="#DFC_BusinessOntology_Subject"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <Class abbreviatedIRI="dfc-p:AllergenDimension"/>
+        <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
+        <Class abbreviatedIRI="dfc-p:NutrientDimension"/>
+        <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
+        <Class abbreviatedIRI="dfc-p:DFC_ProductGlossary_Facet"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <Class abbreviatedIRI="dfc-p:TemporalDimension"/>
+        <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AllergenCharacteristic"/>
         <Class IRI="#PhysicalCharacteristic"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+        <Class abbreviatedIRI="dfc-p:Certification"/>
+        <Class abbreviatedIRI="dfc-p:GlobalGenericOrigin"/>
+        <Class abbreviatedIRI="dfc-p:NatureOrigin"/>
+        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
+        <Class abbreviatedIRI="dfc-p:PartOrigin"/>
+        <Class abbreviatedIRI="dfc-p:Process"/>
+        <Class abbreviatedIRI="dfc-p:TerritorialOrigin"/>
     </DisjointClasses>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-    </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
         <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#bernardC"/>
@@ -2083,24 +2095,48 @@
         <NamedIndividual IRI="#Repository_6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height"/>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Depth"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume"/>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Height"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
-        <NamedIndividual IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:NutritionalClaim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Volume"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Weight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
+        <NamedIndividual abbreviatedIRI="dfc-p:Width"/>
     </ClassAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#addressOf"/>
@@ -2128,7 +2164,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#brandOf"/>
-        <ObjectProperty IRI="#facetOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#certificateOf"/>
@@ -2212,7 +2248,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBrand"/>
-        <ObjectProperty IRI="#hasFacet"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCertification"/>
@@ -2724,7 +2760,7 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#referencedBy"/>
-        <ObjectProperty IRI="#referencedBy"/>
+        <ObjectProperty IRI="#references"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#representedBy"/>
@@ -2783,7 +2819,7 @@
     </SymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <Class abbreviatedIRI="dfc-p:NutrientDimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#addressOf"/>
@@ -2803,7 +2839,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#allergenDimensionOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <Class abbreviatedIRI="dfc-p:AllergenDimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
@@ -2814,11 +2850,17 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#brandOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
+        <Class IRI="#Brand"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#certificateOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#characteristicOf"/>
@@ -2826,7 +2868,13 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#claimOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:NutritionalClaim"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#concernedBy"/>
@@ -2886,11 +2934,21 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#dimensionOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <Class abbreviatedIRI="dfc-p:Dimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#from"/>
         <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#geographicalOriginOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasAddress"/>
@@ -3082,12 +3140,22 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#natureOriginOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#nutrientCharacteristicOf"/>
         <Class IRI="#NutrientCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#nutrientDimensionOf"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <Class abbreviatedIRI="dfc-p:NutrientDimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#objectOf"/>
@@ -3124,8 +3192,8 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ownedBy"/>
         <ObjectUnionOf>
+            <Class IRI="#Brand"/>
             <Class IRI="#PhysicalProduct"/>
-            <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Brand"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3135,6 +3203,16 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#OrderLine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOriginOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#physicalDimensionOf"/>
@@ -3250,7 +3328,7 @@
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
                 <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                <NamedIndividual IRI="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+                <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyDomain>
@@ -3268,7 +3346,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasUnit"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit"/>
+        <Class abbreviatedIRI="dfc-p:Unit"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#endDate"/>
@@ -3886,6 +3964,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AsRealizedTransformation</IRI>
         <Literal xml:lang="fr">Transformation réalisée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Brand</IRI>
+        <Literal xml:lang="en">A product can be from an entreprise but an entreprise can manage different brands.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Brand</IRI>
+        <Literal xml:lang="en">Brand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Brand</IRI>
+        <Literal xml:lang="fr">Marque</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5999,92 +6092,102 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension</IRI>
+        <AbbreviatedIRI>dfc-p:AllergenDimension</AbbreviatedIRI>
         <Literal xml:lang="en">Allergen dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension</IRI>
+        <AbbreviatedIRI>dfc-p:AllergenDimension</AbbreviatedIRI>
         <Literal xml:lang="fr">Dimension allergène</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth</IRI>
+        <AbbreviatedIRI>dfc-p:Depth</AbbreviatedIRI>
         <Literal xml:lang="en">Depth</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth</IRI>
+        <AbbreviatedIRI>dfc-p:Depth</AbbreviatedIRI>
         <Literal xml:lang="fr">Profondeur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height</IRI>
+        <AbbreviatedIRI>dfc-p:Height</AbbreviatedIRI>
         <Literal xml:lang="fr">Hauteur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height</IRI>
+        <AbbreviatedIRI>dfc-p:Height</AbbreviatedIRI>
         <Literal xml:lang="en">Height</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension</IRI>
+        <AbbreviatedIRI>dfc-p:NutrientDimension</AbbreviatedIRI>
         <Literal xml:lang="fr">Dimension nutritionnelle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension</IRI>
+        <AbbreviatedIRI>dfc-p:NutrientDimension</AbbreviatedIRI>
         <Literal xml:lang="en">Nutrient dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension</IRI>
+        <AbbreviatedIRI>dfc-p:NutritionalClaim</AbbreviatedIRI>
+        <Literal xml:lang="fr">Affirmation nutritionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dfc-p:NutritionalClaim</AbbreviatedIRI>
+        <Literal xml:lang="en">Nutritional claim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dfc-p:PhysicalDimension</AbbreviatedIRI>
         <Literal xml:lang="fr">Dimension physique</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension</IRI>
+        <AbbreviatedIRI>dfc-p:PhysicalDimension</AbbreviatedIRI>
         <Literal xml:lang="en">Physical dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension</IRI>
+        <AbbreviatedIRI>dfc-p:TemporalDimension</AbbreviatedIRI>
         <Literal xml:lang="fr">Dimension temporelle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension</IRI>
+        <AbbreviatedIRI>dfc-p:TemporalDimension</AbbreviatedIRI>
         <Literal xml:lang="en">Temporal dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume</IRI>
+        <AbbreviatedIRI>dfc-p:Volume</AbbreviatedIRI>
         <Literal xml:lang="en">Volume</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume</IRI>
+        <AbbreviatedIRI>dfc-p:Volume</AbbreviatedIRI>
         <Literal xml:lang="fr">Volume</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight</IRI>
+        <AbbreviatedIRI>dfc-p:Weight</AbbreviatedIRI>
         <Literal xml:lang="fr">Poids</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight</IRI>
+        <AbbreviatedIRI>dfc-p:Weight</AbbreviatedIRI>
         <Literal xml:lang="en">Weight</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width</IRI>
+        <AbbreviatedIRI>dfc-p:Width</AbbreviatedIRI>
         <Literal xml:lang="fr">Largeur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width</IRI>
+        <AbbreviatedIRI>dfc-p:Width</AbbreviatedIRI>
         <Literal xml:lang="en">Width</Literal>
     </AnnotationAssertion>
 </Ontology>
@@ -6092,3 +6195,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
