@@ -20,9 +20,6 @@
     "dfc-b:referencedBy":{
       "@type":"@id"
     },
-    "dfc-b:offeredThroug":{
-      "@type":"@id"
-    },
     "dfc-b:offeres":{
       "@type":"@id"
     },
