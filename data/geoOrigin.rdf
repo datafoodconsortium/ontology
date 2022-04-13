@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:schema="http://schema.org/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:skosthes="http://purl.org/iso25964/skos-thes#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dfc-g="http://static.datafoodconsortium.org/data/geoOrigin.rdf"
+	xmlns:qb="http://purl.org/linked-data/cube#"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:sh="http://www.w3.org/ns/shacl#"
+	xmlns:dcat="http://www.w3.org/ns/dcat#"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+	xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#">
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<dct:title xml:lang="en">Territorial origin</dct:title>
+	<dct:title xml:lang="fr">Origine géographique</dct:title>
+	<dct:description xml:lang="en">Territorial origin of the concerned product</dct:description>
+	<dct:description xml:lang="fr">Origine géographique du produit concerné</dct:description>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnknownGeoOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#MultiGeoOrigin"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Africa"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Asia"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Oceania"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NorthAmerica"/>
+	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#SouthAmerica"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnknownGeoOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Unknown territorial origin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Origine territoriale inconnue</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#MultiGeoOrigin">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Multi-territorial origin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Origine territorial multiple</skos:prefLabel>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Europe</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Europe</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q46"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Ireland"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Belgium"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Germany"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Spain"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Portugal"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Italy"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Switzerland"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Netherlands"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Africa">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Africa</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Afrique</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q15"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Asia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Asia</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Asie</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q48"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Oceania">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Oceania</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Océanie</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q55643"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Australia"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NewZealand"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NorthAmerica">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">North America</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Amérique du Nord</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q49"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#SouthAmerica">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">South America</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Amérique du Sud</skos:prefLabel>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">France</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">France</skos:prefLabel>
+	<skos:altLabel xml:lang="en">FR</skos:altLabel>
+	<skos:altLabel xml:lang="fr">FR</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q142"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#AuvergneRhoneAlpes"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#BourgogneFrancheComte"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Brittany"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#CentreValLoire"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Corsica"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#GrandEst"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#HautsDeFrance"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#IleDeFrance"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Normandy"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NouvelleAquitaine"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Occitania"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#PaysDeLoire"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#ProvenceAlpesCotesAzur"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#AuvergneRhoneAlpes">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Auvergne-Rhône-Alpes</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Auvergne-Rhône-Alpes</skos:prefLabel>
+	<skos:altLabel xml:lang="fr">ARA</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18338206"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#BourgogneFrancheComte">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Bourgogne-Franche-Comté</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bourgogne-Franche-Comté</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Burgundy-Franche-Comté</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18578267"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Brittany">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Brittany</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Bretagne</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q12130"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#CentreValLoire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Centre-Val de Loire</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Centre-Val de Loire</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Centre Loire Valley</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q13947"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Corsica">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Corsica</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Corse</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q14112"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#GrandEst">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Grand Est</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Grand Est</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18677983"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#HautsDeFrance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Hauts-de-France</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Hauts-de-France</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18677767"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#IleDeFrance">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Ile-de-France</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Île-de-France</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Parisian region</skos:altLabel>
+	<skos:altLabel xml:lang="fr">IDF</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q13917"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Normandy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Normandy</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Normandie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18677875"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NouvelleAquitaine">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Nouvelle-Aquitaine</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Nouvelle-Aquitaine</skos:prefLabel>
+	<skos:altLabel xml:lang="fr">NA</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18678082"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Occitania">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Occitania</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Occitanie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q18678265"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#PaysDeLoire">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Pays de la Loire</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pays de la Loire</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Loire lands</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q16994"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#ProvenceAlpesCotesAzur">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Provence-Alpes-Côte d’Azur</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Provence-Alpes-Côte d’Azur</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Provence-Alps-French Riviera</skos:altLabel>
+	<skos:altLabel xml:lang="fr">PACA</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#France"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q15104"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">United Kingdom</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Royaume Uni</skos:prefLabel>
+	<skos:altLabel xml:lang="en">UK</skos:altLabel>
+	<skos:altLabel xml:lang="fr">UK</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q145"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#England"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Wales"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Scotland"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NorthernIreland"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#England">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">England</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Angleterre</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q21"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Wales">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Wales</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pays de Galles</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q25"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Scotland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Scotland</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ecosse</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q22"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NorthernIreland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Northern Ireland</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Irlande du Nord</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#UnitedKingdom"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q26"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Ireland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Republic of Ireland</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">République d'Irlande</skos:prefLabel>
+	<skos:altLabel xml:lang="en">Ireland</skos:altLabel>
+	<skos:altLabel xml:lang="fr">Irlande</skos:altLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q27"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Belgium">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Belgium</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Belgique</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q31"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Germany">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Germany</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Allemagne</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q183"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Spain">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Espagne</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q29"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Portugal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Portugal</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Portugal</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q45"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Italy">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Italie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q38"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Switzerland">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Switzerland</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Suisse</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q39"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Netherlands">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Netherlands</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Pays bas</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Europe"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q55"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Australia">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">Australia</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Australie</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Oceania"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q3960"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/geoOrigin.rdf#NewZealand">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<skos:prefLabel xml:lang="en">New Zealand</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Nouvelle Zélande</skos:prefLabel>
+	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/geoOrigin.rdf#Oceania"/>
+	<skos:exactMatch rdf:resource="https://www.wikidata.org/wiki/Q664"/>
+	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>
+</rdf:Description>
+
+</rdf:RDF>
