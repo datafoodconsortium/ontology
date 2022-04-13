@@ -8,10 +8,19 @@
     "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
     "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
     "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
+    dfc-a : claim
+    dfc-d : dimension
+    dfc-d : certification
     "dfc-p:hasUnit":{
       "@type":"@id"
     },
+    "dfc-b:hasUnit":{
+      "@type":"@id"
+    },
     "dfc-p:hasType":{
+      "@type":"@id"
+    },
+    "dfc-b:hasType":{
       "@type":"@id"
     },
     "dfc-b:references":{
@@ -44,6 +53,9 @@
     "dfc-b:offeredThrough":{
       "@type":"@id"
     },
+    "dfc-b:hasCertification":{
+      "@type":"@id"
+    },
     "dfc:owner":{
       "@type":"@id"
     },
@@ -56,5 +68,6 @@
     "dfc-t:represent":{
       "@type":"@id"
     }
+    hasBrand
   }
 }
