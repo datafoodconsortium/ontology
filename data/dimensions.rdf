@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dfc-d="http://static.datafoodconsortium.org/data/dimensions.rdf#"
+         xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#">
+
+
+<!-- allergenDimension -->   
+
+ 
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#CerealsWithGluten">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Cereals containing gluten</rdfs:label>
+        <rdfs:label xml:lang="fr">Céréales contenant du gluten</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Crustaceans">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Crustaceans</rdfs:label>
+        <rdfs:label xml:lang="fr">Crustacés</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Eggs">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Eggs</rdfs:label>
+        <rdfs:label xml:lang="fr">Oeufs</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Fishs">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">fishs</rdfs:label>
+        <rdfs:label xml:lang="fr">Poissons</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Peanuts">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Peanuts</rdfs:label>
+        <rdfs:label xml:lang="fr">Arachides</rdfs:label>
+    </owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Soy">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Soy</rdfs:label>
+        <rdfs:label xml:lang="fr">Soja</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#LactoseMilks">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Milk and lactose-based products</rdfs:label>
+        <rdfs:label xml:lang="fr">Lait et produits à base de lactose</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Nuts">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Nuts</rdfs:label>
+        <rdfs:label xml:lang="fr">Fruits à coque</rdfs:label>
+    </owl:NamedIndividual>   
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Celeriac">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Celeriac</rdfs:label>
+        <rdfs:label xml:lang="fr">Celeriac</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Mustard">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Mustard</rdfs:label>
+        <rdfs:label xml:lang="fr">Moutarde</rdfs:label>
+    </owl:NamedIndividual>	
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#SesameSeeds">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Sesame seeds</rdfs:label>
+        <rdfs:label xml:lang="fr">Graines de sésame</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Sulphites">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Sulfur dioxide and sulphites in a concentration of more than 10mg/kg or 10mg/l (expressed as SO2)</rdfs:label>
+        <rdfs:label xml:lang="fr">Anhydride sulfureux et sulfites en concentration de plus de 10mg/kg ou 10 mg/l (exprimés en SO2)</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Lupine">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Lupine</rdfs:label>
+        <rdfs:label xml:lang="fr">Lupin</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Molluscs">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension"/>
+        <rdfs:label xml:lang="en">Molluscs</rdfs:label>
+        <rdfs:label xml:lang="fr">Mollusques</rdfs:label>
+    </owl:NamedIndividual>
+	
+	
+	
+<!-- nutrientDimension -->   
+
+ 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Calcium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Calcium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Calcium</rdfs:label>
+        <rdfs:label xml:lang="fr">Calcium</rdfs:label>
+    </owl:NamedIndividual>
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Carbohydrates -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Carbohydrates">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Carbohydrates</rdfs:label>
+        <rdfs:label xml:lang="fr">Carbohydrates</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Chloride -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Chloride">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Chloride</rdfs:label>
+        <rdfs:label xml:lang="fr">Chloride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Cholesterol -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Cholesterol">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Cholesterol</rdfs:label>
+        <rdfs:label xml:lang="fr">Cholestérol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Chromium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Chromium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Chrome</rdfs:label>
+        <rdfs:label xml:lang="en">Chromium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Copper -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Copper">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Copper</rdfs:label>
+        <rdfs:label xml:lang="fr">Copper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Fat -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Fat">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Fat</rdfs:label>
+        <rdfs:label xml:lang="fr">Graisse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Fibre -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Fibre">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Fibre</rdfs:label>
+        <rdfs:label xml:lang="fr">Fibre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Fluoride -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Fluoride">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Fluoride</rdfs:label>
+        <rdfs:label xml:lang="fr">Fluoride</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#FolicAcid -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#FolicAcid">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Acide folique</rdfs:label>
+        <rdfs:label xml:lang="en">Folic acid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Iodine -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Iodine">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Iodine</rdfs:label>
+        <rdfs:label xml:lang="fr">Iodine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Iron -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Iron">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Fer</rdfs:label>
+        <rdfs:label xml:lang="en">Iron</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Magnesium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Magnesium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Magnesium</rdfs:label>
+        <rdfs:label xml:lang="fr">Magnésium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Manganese -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Manganese">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Manganese</rdfs:label>
+        <rdfs:label xml:lang="fr">Manganèse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#MonosaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#MonosaturatedFat">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Graisse monosaturée</rdfs:label>
+        <rdfs:label xml:lang="en">Monosaturated fat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Phosphorus -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Phosphorus">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Phosphore</rdfs:label>
+        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PolyunsaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#PolyunsaturatedFat">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Graisse poly-insaturée</rdfs:label>
+        <rdfs:label xml:lang="en">Poly-unsaturated fat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Potassium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Potassium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Potassium</rdfs:label>
+        <rdfs:label xml:lang="fr">Potassium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Protein -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Protein">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Protein</rdfs:label>
+        <rdfs:label xml:lang="fr">Protéine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Salt -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Salt">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+        <rdfs:label xml:lang="fr">Sel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#SaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#SaturatedFat">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Graisse saturée</rdfs:label>
+        <rdfs:label xml:lang="en">Saturated fat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Selenium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Selenium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Selenium</rdfs:label>
+        <rdfs:label xml:lang="fr">Sélénium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Sodium -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Sodium">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Sodium</rdfs:label>
+        <rdfs:label xml:lang="fr">Sodium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Starch -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Starch">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Amidon</rdfs:label>
+        <rdfs:label xml:lang="en">Starch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Sugars -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Sugars">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Sucres</rdfs:label>
+        <rdfs:label xml:lang="en">Sugars</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Transfat -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Transfat">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="fr">Graisse trans</rdfs:label>
+        <rdfs:label xml:lang="en">Transfat</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminA -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminA">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin A</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminB12 -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminB12">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin B12</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine B12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminB6 -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminB6">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine B6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminC -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminC">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine C</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminD -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminD">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin D</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine D</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminE -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminE">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin E</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine E</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#VitaminK -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#VitaminK">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Vitamin K</rdfs:label>
+        <rdfs:label xml:lang="fr">Vitamine K</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Zinc -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Zinc">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension"/>
+        <rdfs:label xml:lang="en">Zinc</rdfs:label>
+        <rdfs:label xml:lang="fr">Zinc</rdfs:label>
+    </owl:NamedIndividual>
+
+
+<!-- physicalDimension -->   
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Depth">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <rdfs:label xml:lang="en">Depth</rdfs:label>
+        <rdfs:label xml:lang="fr">Profondeur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Height -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Height">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <rdfs:label xml:lang="fr">Hauteur</rdfs:label>
+        <rdfs:label xml:lang="en">Height</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Volume -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Volume">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <rdfs:label xml:lang="en">Volume</rdfs:label>
+        <rdfs:label xml:lang="fr">Volume</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Weight -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Weight">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <rdfs:label xml:lang="fr">Poids</rdfs:label>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Width -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#Width">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension"/>
+        <rdfs:label xml:lang="fr">Largeur</rdfs:label>
+        <rdfs:label xml:lang="en">Width</rdfs:label>
+    </owl:NamedIndividual>
+    
+</rdf:RDF>

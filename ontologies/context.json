@@ -8,9 +8,10 @@
     "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
     "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
     "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
-    dfc-a : claim
-    dfc-d : dimension
-    dfc-d : certification
+    "dfc-a": "http://static.datafoodconsortium.org/data/claims.rdf#",
+    "dfc-d": "http://static.datafoodconsortium.org/data/dimensions.rdf#",
+    "dfc-c": "http://static.datafoodconsortium.org/data/certifications.rdf#",
+    "dfc-g": "http://static.datafoodconsortium.org/data/geoOrigin.rdf#",
     "dfc-p:hasUnit":{
       "@type":"@id"
     },
@@ -50,7 +51,22 @@
     "dfc-b:offeredThrough":{
       "@type":"@id"
     },
-    "dfc-b:hasCertification":{
+    "dfc-b:hasBrand":{
+      "@type":"@id"
+    },
+    "dfc-b:hasGeographicalOrigin":{
+      "@type":"@id"
+    },
+    "dfc-b:hasClaim":{
+      "@type":"@id"
+    },
+    "dfc-b:hasAllergenDimension":{
+      "@type":"@id"
+    },
+    "dfc-b:hasNutrimentDimension":{
+      "@type":"@id"
+    },
+    "dfc-b:hasPhysicalDimension":{
       "@type":"@id"
     },
     "dfc:owner":{
@@ -65,6 +81,5 @@
     "dfc-t:represent":{
       "@type":"@id"
     }
-    hasBrand
   }
 }
