@@ -1,399 +1,667 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF
-	xmlns:schema="http://schema.org/"
-	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:org="http://www.w3.org/ns/org#"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-	xmlns:skosthes="http://purl.org/iso25964/skos-thes#"
-	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	xmlns:qb="http://purl.org/linked-data/cube#"
-	xmlns:dfc-o="http://static.datafoodconsortium.org/data/partOrigin.rdf"
-	xmlns:dct="http://purl.org/dc/terms/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:sh="http://www.w3.org/ns/shacl#"
-	xmlns:dcat="http://www.w3.org/ns/dcat#"
-	xmlns:prov="http://www.w3.org/ns/prov#"
-	xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-	xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
-	xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#">
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:qb="http://purl.org/linked-data/cube#"
+     xmlns:sh="http://www.w3.org/ns/shacl#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dfc-o="http://static.datafoodconsortium.org/data/partOrigin.rdf"
+     xmlns:euvoc="http://publications.europa.eu/ontology/euvoc#"
+     xmlns:schema="http://schema.org/"
+     xmlns:skosxl="http://www.w3.org/2008/05/skos-xl#"
+     xmlns:skosthes="http://purl.org/iso25964/skos-thes#">
+    <Ontology/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<dct:title xml:lang="en">Part of origin</dct:title>
-	<dct:title xml:lang="fr">Partie d'origine</dct:title>
-	<dct:description xml:lang="en">Part of natural "living" origin concerned</dct:description>
-	<dct:description xml:lang="fr">Partie de la source "vivante" d'origine concernée</dct:description>
-	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin"/>
-	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin"/>
-	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Unknown part origin</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie d'origine inconnue</skos:prefLabel>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Multiorigin</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Origine multiple</skos:prefLabel>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Part or product of plant</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie ou produit d'une plante</skos:prefLabel>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Seed"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Root"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bulb"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Tuber"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Stem"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Leave"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Flower"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Fruit"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#WholePlant"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Part or product of animal</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie ou produit d'un animal</skos:prefLabel>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-	<skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://purl.org/dc/terms/description -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Seed">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Seed</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Graine</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Root">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Root</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Racine</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bulb">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Bulb</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Bulbe</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://purl.org/dc/terms/title -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Tuber">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Tuber</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Tubercule</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Stem">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Stem</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Tige</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Leave">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Leave</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Feuille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Flower">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Flower</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Fleur</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Fruit">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Fruit</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Fruit</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#WholePlant">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Whole plant</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Plante entière</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Bull</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Bœuf</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BullBody"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BullBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Bull's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie du boeuf</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Cow</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Vache</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowBody"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowMilk"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Cow's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de vache</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowMilk">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Cow milk</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Lait de vache</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Sheep</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Mouton</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#SheepBody"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#SheepBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Sheep's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de mouton</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Ewe</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Brebis</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweBody"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweMilk"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Ewe's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de brebis</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweMilk">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Sheep milk</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Goat</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Chèvre</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatBody"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatMilk"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Goat's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de chèvre</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatMilk">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Goat milk</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Pig</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Cochon</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PigBody"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#PigBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Pig's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie du cochon</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Hen</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Poule</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenBody"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenEgg"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Hen's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de poule</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenEgg">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Hen's egg</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Œuf de poule</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Roster</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Coq</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Roster's body</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Partie de coq</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Quail</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Caille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#QuailEgg"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#QuailEgg">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Quail's egg</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Œuf de caille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Bee</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Abeille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeHoney"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePropolis"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePollen"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeWax"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeVenom"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeHoney">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Honey</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Miel</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePropolis">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Propolis</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Propolis</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePollen">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Pollen</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Pollen</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeWax">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Wax</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Cire d'abeille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin -->
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeVenom">
-	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-	<skos:prefLabel xml:lang="en">Venom</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Venim d'abeille</skos:prefLabel>
-	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
-	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
-</rdf:Description>
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep"/>
+        <skos:prefLabel xml:lang="en">Part or product of animal</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie ou produit d&apos;un animal</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+    </NamedIndividual>
+    
 
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeHoney"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePollen"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePropolis"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeVenom"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeWax"/>
+        <skos:prefLabel xml:lang="fr">Abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bee</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeHoney -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeHoney">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Honey</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Miel</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePollen -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePollen">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Pollen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pollen</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePropolis -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeePropolis">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Propolis</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Propolis</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeVenom -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeVenom">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Venim d&apos;abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Venom</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeWax -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BeeWax">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bee"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Cire d&apos;abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wax</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Bulb -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bulb">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Bulb</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bulbe</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#BullBody"/>
+        <skos:prefLabel xml:lang="en">Bull</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bœuf</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#BullBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#BullBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bull"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Bull&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie du boeuf</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowBody"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowMilk"/>
+        <skos:prefLabel xml:lang="en">Cow</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vache</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#CowBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Cow&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de vache</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#CowMilk -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#CowMilk">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Cow"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Cow milk</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Lait de vache</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweBody"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweMilk"/>
+        <skos:prefLabel xml:lang="fr">Brebis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ewe</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#EweBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Ewe&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de brebis</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#EweMilk -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#EweMilk">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Ewe"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep milk</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Flower -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Flower">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Fleur</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Flower</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Fruit -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Fruit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Fruit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Fruit</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatBody"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatMilk"/>
+        <skos:prefLabel xml:lang="fr">Chèvre</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Goat</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Goat&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de chèvre</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatMilk -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#GoatMilk">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Goat"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Goat milk</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenBody"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenEgg"/>
+        <skos:prefLabel xml:lang="en">Hen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Poule</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#HenBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Hen&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de poule</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#HenEgg -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#HenEgg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Hen"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Hen&apos;s egg</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Œuf de poule</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Leaf -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Leaf">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Feuille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Leaf</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Multiorigin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Origine multiple</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PigBody"/>
+        <skos:prefLabel xml:lang="fr">Cochon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pig</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#PigBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#PigBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Pig"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Partie du cochon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pig&apos;s body</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Bulb"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Flower"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Fruit"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Leaf"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Root"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Seed"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Stem"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Tuber"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#WholePlant"/>
+        <skos:prefLabel xml:lang="en">Part or product of plant</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie ou produit d&apos;une plante</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#QuailEgg"/>
+        <skos:prefLabel xml:lang="fr">Caille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quail</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#QuailEgg -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#QuailEgg">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Quail"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Quail&apos;s egg</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Œuf de caille</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Root -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Root">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Racine</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Root</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody"/>
+        <skos:prefLabel xml:lang="fr">Coq</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Roster</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Partie de coq</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Roster&apos;s body</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Seed -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Seed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Graine</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Seed</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#SheepBody"/>
+        <skos:prefLabel xml:lang="fr">Mouton</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#SheepBody -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#SheepBody">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Sheep"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Partie de mouton</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep&apos;s body</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Stem -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Stem">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Stem</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Tige</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#Tuber -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#Tuber">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="en">Tuber</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Tubercule</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Partie d&apos;origine inconnue</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unknown part origin</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/partOrigin.rdf#WholePlant -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#WholePlant">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
+        <skos:prefLabel xml:lang="fr">Plante entière</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Whole plant</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <dct:description xml:lang="en">Part of natural &quot;living&quot; origin concerned</dct:description>
+        <dct:description xml:lang="fr">Partie de la source &quot;vivante&quot; d&apos;origine concernée</dct:description>
+        <dct:title xml:lang="en">Part of origin</dct:title>
+        <dct:title xml:lang="fr">Partie d&apos;origine</dct:title>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin"/>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin"/>
+    </NamedIndividual>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
