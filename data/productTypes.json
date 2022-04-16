@@ -135,49 +135,6 @@
     "@value" : "apricot"
   } ]
 }, {
-  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#basil"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chervil"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chilli-pepper"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chive"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#coriander"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#dill"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#laurel"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#mint"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#parsley"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#rosemary"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#sage"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#tarragon"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#thyme"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fr",
-    "@value" : "aromate"
-  }, {
-    "@language" : "en",
-    "@value" : "aromatic"
-  } ]
-}, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#artichoke",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
@@ -341,17 +298,17 @@
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blackberry"
   }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#cassis"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blackcurrant"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#currant"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#gooseberry"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#raspberry"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#ripe"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -391,6 +348,22 @@
   }, {
     "@language" : "fr",
     "@value" : "mûre"
+  } ]
+}, {
+  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blackcurrant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#berry"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "blackcurrant"
+  }, {
+    "@language" : "fr",
+    "@value" : "cassis"
   } ]
 }, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry",
@@ -562,7 +535,7 @@
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#red-cabbage"
   }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#savoy-cabbage"
   }, {
@@ -622,22 +595,6 @@
   }, {
     "@language" : "en",
     "@value" : "carrot"
-  } ]
-}, {
-  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#cassis",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#berry"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "blackcurrant"
-  }, {
-    "@language" : "fr",
-    "@value" : "cassis"
   } ]
 }, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#cauliflower",
@@ -2124,6 +2081,49 @@
     "@value" : "noisette"
   } ]
 }, {
+  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#herb",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#narrower" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#basil"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chervil"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chilli-pepper"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#chive"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#coriander"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#dill"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#laurel"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#mint"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#parsley"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#rosemary"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#sage"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#tarragon"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#thyme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fr",
+    "@value" : "aromate"
+  }, {
+    "@language" : "en",
+    "@value" : "herb"
+  } ]
+}, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-squash",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
@@ -2500,7 +2500,7 @@
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#medlar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#nut"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"
   } ],
   "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
@@ -2954,6 +2954,22 @@
   }, {
     "@language" : "fr",
     "@value" : "pâtisserie"
+  } ]
+}, {
+  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#pattypan-squash",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
+  "http://www.w3.org/2004/02/skos/core#broader" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#squash"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "pattypan squash"
+  }, {
+    "@language" : "fr",
+    "@value" : "pâtisson"
   } ]
 }, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#peach",
@@ -3430,7 +3446,7 @@
     "@value" : "roquette"
   } ]
 }, {
-  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cauliflower",
+  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
   "http://www.w3.org/2004/02/skos/core#broader" : [ {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"
@@ -4051,13 +4067,13 @@
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#butternut"
   }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-squash"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-squash"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#pattypan-squash"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#pumpkin"
   }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#red-kuri-squash"
-  }, {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#squash-melon"
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#uchiki-kuri-squash"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fr",
@@ -4065,22 +4081,6 @@
   }, {
     "@language" : "en",
     "@value" : "squash"
-  } ]
-}, {
-  "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#squash-melon",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#Concept" ],
-  "http://www.w3.org/2004/02/skos/core#broader" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#squash"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#inScheme" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fr",
-    "@value" : "pâtisson"
-  }, {
-    "@language" : "en",
-    "@value" : "squash melon"
   } ]
 }, {
   "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#strawberry",
@@ -4285,8 +4285,6 @@
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf"
   } ],
   "http://www.w3.org/2004/02/skos/core#narrower" : [ {
-    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"
-  }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#artichoke"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#asparagus"
@@ -4322,6 +4320,8 @@
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#garlic"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#green-garlic"
+  }, {
+    "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#herb"
   }, {
     "@id" : "http://static.datafoodconsortium.org/data/productTypes.rdf#jerusalem-artichoke"
   }, {
