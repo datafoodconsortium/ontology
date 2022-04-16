@@ -5,7 +5,7 @@
          xmlns:dfc-u="http://static.datafoodconsortium.org/data/units.rdf#"
          xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#">
 
-<<<<<<< HEAD
+
   <dfc-b:Unit rdf:about="http://static.datafoodconsortium.org/data/units.rdf#kg">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kilogramme</rdfs:label>
   </dfc-b:Unit>
@@ -21,7 +21,7 @@
   <dfc-b:Unit rdf:about="http://static.datafoodconsortium.org/data/units.rdf#l">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">litre</rdfs:label>
   </dfc-b:Unit>
-=======
+
 
 <!-- quantityUnit -->   
 

@@ -172,18 +172,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#apple-cabbage -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#apple-cabbage">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="en">apple cabbage</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">chou pommé</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#apples -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#apples">
@@ -375,6 +363,18 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#blackberry -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#blackberry">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="en">blackberry</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">mûre</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#blueberry">
@@ -489,7 +489,6 @@
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#vegetable"/>
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#apple-cabbage"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#broccoli-cabbage"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#brussels-sprouts"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cauliflower"/>
@@ -499,6 +498,7 @@
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#kohlrabi"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#red-cabbage"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#savoy-cabbage"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#smooth-cabbage"/>
         <skos:prefLabel xml:lang="en">cabbage</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">chou</skos:prefLabel>
@@ -674,18 +674,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#chewed-up -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chewed-up">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="en">corn salad/lambs lettuce</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">mâche</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#chicken -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#chicken">
@@ -814,6 +802,18 @@
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
         <skos:prefLabel xml:lang="en">coriander</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">coriandre</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#corn-salad -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#corn-salad">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#salad"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="en">corn salad/lambs lettuce</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">mâche</skos:prefLabel>
     </NamedIndividual>
     
 
@@ -1632,6 +1632,30 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-squash -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-squash">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="en">hierloom squash</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">variété ancienne de courge</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-tomato -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#hierloom-tomato">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="en">hierloom tomato</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">tomate ancienne</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#honey -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#honey">
@@ -2071,30 +2095,6 @@
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
         <skos:prefLabel xml:lang="fr">huile</skos:prefLabel>
         <skos:prefLabel xml:lang="en">oil</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-squash -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-squash">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="en">hierloom squash</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">variété ancienne de courge</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-tomato -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#old-variety-tomato">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#tomato"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="en">hierloom tomato</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">tomate ancienne</skos:prefLabel>
     </NamedIndividual>
     
 
@@ -2540,18 +2540,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#red-kuri-squash -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#red-kuri-squash">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="fr">potimarron</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">red kuri squash</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#rhubarb -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rhubarb">
@@ -2576,18 +2564,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#ripe -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#ripe">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#berry"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="fr">mûre</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">ripe</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#rocket -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#rocket">
@@ -2600,14 +2576,14 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage -->
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cauliflower -->
 
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cabbage">
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#romanesco-cauliflower">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
         <skos:prefLabel xml:lang="fr">chou romanesco</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">romanesco cabbage</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">romanesco cauliflower</skos:prefLabel>
     </NamedIndividual>
     
 
@@ -2747,6 +2723,18 @@
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#semolina"/>
         <skos:prefLabel xml:lang="en">savory groceries</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">épicerie salée</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#savoy-cabbage -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#savoy-cabbage">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#cabbage"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="fr">chou pommé</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">savoy cabbage</skos:prefLabel>
     </NamedIndividual>
     
 
@@ -3169,6 +3157,18 @@
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
         <skos:prefLabel xml:lang="fr">navet</skos:prefLabel>
         <skos:prefLabel xml:lang="en">turnip</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#uchiki-kuri-squash -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#uchiki-kuri-squash">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#squash"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="fr">potimarron</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">uchiki kuri squash</skos:prefLabel>
     </NamedIndividual>
     
 
