@@ -544,7 +544,7 @@
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
         <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#RosterBody"/>
         <skos:prefLabel xml:lang="fr">Coq</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">Roster</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rooster</skos:prefLabel>
     </NamedIndividual>
     
 
@@ -556,7 +556,7 @@
         <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#Roster"/>
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
         <skos:prefLabel xml:lang="fr">Partie de coq</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">Roster&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rooster&apos;s body</skos:prefLabel>
     </NamedIndividual>
     
 
