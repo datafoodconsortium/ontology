@@ -246,6 +246,18 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#bay-laurel -->
+
+    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bay-laurel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
+        <skos:prefLabel xml:lang="en">bay laurel</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">laurier</skos:prefLabel>
+    </NamedIndividual>
+    
+
+
     <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#bean -->
 
     <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#bean">
@@ -1763,18 +1775,6 @@
         <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
         <skos:prefLabel xml:lang="fr">agneau</skos:prefLabel>
         <skos:prefLabel xml:lang="en">lamb</skos:prefLabel>
-    </NamedIndividual>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/data/productTypes.rdf#laurel -->
-
-    <NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#laurel">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#aromatic"/>
-        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf"/>
-        <skos:prefLabel xml:lang="en">bay laurel</skos:prefLabel>
-        <skos:prefLabel xml:lang="fr">laurier</skos:prefLabel>
     </NamedIndividual>
     
 
