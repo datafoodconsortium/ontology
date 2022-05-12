@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-		 xmlns:unit="http://qudt.org/vocab/unit#"
+	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns:unit="http://qudt.org/vocab/unit#"
          xmlns:dfc-u="http://static.datafoodconsortium.org/data/units.rdf#"
          xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#">
 
