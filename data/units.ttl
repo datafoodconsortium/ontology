@@ -1,0 +1,327 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit#> .
+@prefix dfc-b: <http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#> .
+@prefix dfc-u: <http://static.datafoodconsortium.org/data/units.rdf#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#notation
+dfc-b:notation rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit
+<http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#AustralianDollar
+<http://static.datafoodconsortium.org/data/unit.rdf#AustralianDollar> rdf:type owl:NamedIndividual ,
+                                                                               <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                      owl:sameAs <unit:AUD> ;
+                                                                      dfc-b:notation "$AU" ;
+                                                                      rdfs:label "australian dollar"@en ,
+                                                                                 "dollar australien"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#CanadianDollar
+<http://static.datafoodconsortium.org/data/unit.rdf#CanadianDollar> rdf:type owl:NamedIndividual ,
+                                                                             <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                    owl:sameAs <unit:CAD> ;
+                                                                    dfc-b:notation "$CA" ;
+                                                                    rdfs:label "canadian dollar"@en ,
+                                                                               "dollar canadien"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Centilitre
+<http://static.datafoodconsortium.org/data/unit.rdf#Centilitre> rdf:type owl:NamedIndividual ,
+                                                                         <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                owl:sameAs <unit:CentiL> ;
+                                                                dfc-b:notation "cl" ;
+                                                                rdfs:label "centiliter"@en ,
+                                                                           "centilitre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Centimetre
+<http://static.datafoodconsortium.org/data/unit.rdf#Centimetre> rdf:type owl:NamedIndividual ,
+                                                                         <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                owl:sameAs <unit:CentiM> ;
+                                                                dfc-b:notation "cm" ;
+                                                                rdfs:label "centimetre"@en ,
+                                                                           "centimètre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Crate
+<http://static.datafoodconsortium.org/data/unit.rdf#Crate> rdf:type owl:NamedIndividual ,
+                                                                    <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                           dfc-b:notation "crate" ;
+                                                           rdfs:label "cagette"@fr ,
+                                                                      "crate"@en .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Decilitre
+<http://static.datafoodconsortium.org/data/unit.rdf#Decilitre> rdf:type owl:NamedIndividual ,
+                                                                        <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                               owl:sameAs <unit:DeciL> ;
+                                                               dfc-b:notation "dl" ;
+                                                               rdfs:label "decilitre"@en ,
+                                                                          "decilitre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Decimètre
+<http://static.datafoodconsortium.org/data/unit.rdf#Decimètre> rdf:type owl:NamedIndividual ,
+                                                                        <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                               owl:sameAs <unit:DeciM> ;
+                                                               dfc-b:notation "dm" ;
+                                                               rdfs:label "decimeter"@en ,
+                                                                          "decimètre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Euro
+<http://static.datafoodconsortium.org/data/unit.rdf#Euro> rdf:type owl:NamedIndividual ,
+                                                                   <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                          owl:sameAs <unit:Euro> ;
+                                                          dfc-b:notation "€" ;
+                                                          rdfs:label "euro"@en ,
+                                                                     "euro"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Gallon
+<http://static.datafoodconsortium.org/data/unit.rdf#Gallon> rdf:type owl:NamedIndividual ,
+                                                                     <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                            owl:sameAs <unit:GAL_UK> ;
+                                                            dfc-b:notation "gal" ;
+                                                            rdfs:label "gallon (GB)"@fr ,
+                                                                       "gallon (UK)"@en .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Gram
+<http://static.datafoodconsortium.org/data/unit.rdf#Gram> rdf:type owl:NamedIndividual ,
+                                                                   <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                          owl:sameAs <unit:GM> ;
+                                                          dfc-b:notation "g" ;
+                                                          rdfs:label "gram"@en ,
+                                                                     "gramme"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Inch
+<http://static.datafoodconsortium.org/data/unit.rdf#Inch> rdf:type owl:NamedIndividual ,
+                                                                   <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                          owl:sameAs <unit:IN> ;
+                                                          dfc-b:notation "in" ;
+                                                          rdfs:label "inch"@en ,
+                                                                     "pouce"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Kilogram
+<http://static.datafoodconsortium.org/data/unit.rdf#Kilogram> rdf:type owl:NamedIndividual ,
+                                                                       <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                              owl:sameAs <unit:KiloGM> ;
+                                                              dfc-b:notation "kg" ;
+                                                              rdfs:label "kilogram"@en ,
+                                                                         "kilogramme"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Kilometre
+<http://static.datafoodconsortium.org/data/unit.rdf#Kilometre> rdf:type owl:NamedIndividual ,
+                                                                        <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                               owl:sameAs <unit:KiloM> ;
+                                                               dfc-b:notation "km" ;
+                                                               rdfs:label "kilometer"@en ,
+                                                                          "kilomètre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Litre
+<http://static.datafoodconsortium.org/data/unit.rdf#Litre> rdf:type owl:NamedIndividual ,
+                                                                    <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                           owl:sameAs <unit:L> ;
+                                                           dfc-b:notation "l" ;
+                                                           rdfs:label "litre"@en ,
+                                                                      "litre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Metre
+<http://static.datafoodconsortium.org/data/unit.rdf#Metre> rdf:type owl:NamedIndividual ,
+                                                                    <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                           owl:sameAs <unit:M> ;
+                                                           dfc-b:notation "m" ;
+                                                           rdfs:label "metre"@en ,
+                                                                      "mètre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Milligram
+<http://static.datafoodconsortium.org/data/unit.rdf#Milligram> rdf:type owl:NamedIndividual ,
+                                                                        <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                               owl:sameAs <unit:MilliGM> ;
+                                                               dfc-b:notation "g" ;
+                                                               rdfs:label "milligram"@en ,
+                                                                          "milligramme"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Millilitre
+<http://static.datafoodconsortium.org/data/unit.rdf#Millilitre> rdf:type owl:NamedIndividual ,
+                                                                         <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                owl:sameAs <unit:MilliL> ;
+                                                                dfc-b:notation "ml" ;
+                                                                rdfs:label "milliliter"@en ,
+                                                                           "millilitre"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Package
+<http://static.datafoodconsortium.org/data/unit.rdf#Package> rdf:type owl:NamedIndividual ,
+                                                                      <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                             dfc-b:notation "pack" ;
+                                                             rdfs:label "colis"@fr ,
+                                                                        "package"@en .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Percent
+<http://static.datafoodconsortium.org/data/unit.rdf#Percent> rdf:type owl:NamedIndividual ,
+                                                                      <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                             dfc-b:notation "%" ;
+                                                             rdfs:label "percent"@en ,
+                                                                        "pourcent"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Piece
+<http://static.datafoodconsortium.org/data/unit.rdf#Piece> rdf:type owl:NamedIndividual ,
+                                                                    <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                           dfc-b:notation "u" ;
+                                                           rdfs:label "piece"@en ,
+                                                                      "pièce"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#PoundMass
+<http://static.datafoodconsortium.org/data/unit.rdf#PoundMass> rdf:type owl:NamedIndividual ,
+                                                                        <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                               owl:sameAs <unit:LB> ;
+                                                               dfc-b:notation "lb" ;
+                                                               rdfs:label "pound"@en ,
+                                                                          "pound"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#PoundSterling
+<http://static.datafoodconsortium.org/data/unit.rdf#PoundSterling> rdf:type owl:NamedIndividual ,
+                                                                            <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                                   owl:sameAs <unit:PoundSterling> ;
+                                                                   dfc-b:notation "£" ;
+                                                                   rdfs:label "livre sterling"@fr ,
+                                                                              "pound sterling"@en .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#Tonne
+<http://static.datafoodconsortium.org/data/unit.rdf#Tonne> rdf:type owl:NamedIndividual ,
+                                                                    <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                           owl:sameAs <unit:TONNE> ;
+                                                           dfc-b:notation "T" ;
+                                                           rdfs:label "tonne"@en ,
+                                                                      "tonne"@fr .
+
+
+###  http://static.datafoodconsortium.org/data/unit.rdf#USDollar
+<http://static.datafoodconsortium.org/data/unit.rdf#USDollar> rdf:type owl:NamedIndividual ,
+                                                                       <http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit> ;
+                                                              owl:sameAs <unit:USDollar> ;
+                                                              dfc-b:notation "$US" ;
+                                                              rdfs:label "Dollar US"@fr ,
+                                                                         "US Dollar"@en .
+
+
+###  unit:AUD
+<unit:AUD> rdf:type owl:NamedIndividual .
+
+
+###  unit:CAD
+<unit:CAD> rdf:type owl:NamedIndividual .
+
+
+###  unit:CentiL
+<unit:CentiL> rdf:type owl:NamedIndividual .
+
+
+###  unit:CentiM
+<unit:CentiM> rdf:type owl:NamedIndividual .
+
+
+###  unit:DeciL
+<unit:DeciL> rdf:type owl:NamedIndividual .
+
+
+###  unit:DeciM
+<unit:DeciM> rdf:type owl:NamedIndividual .
+
+
+###  unit:Euro
+<unit:Euro> rdf:type owl:NamedIndividual .
+
+
+###  unit:GAL_UK
+<unit:GAL_UK> rdf:type owl:NamedIndividual .
+
+
+###  unit:GM
+<unit:GM> rdf:type owl:NamedIndividual .
+
+
+###  unit:IN
+<unit:IN> rdf:type owl:NamedIndividual .
+
+
+###  unit:KiloGM
+<unit:KiloGM> rdf:type owl:NamedIndividual .
+
+
+###  unit:KiloM
+<unit:KiloM> rdf:type owl:NamedIndividual .
+
+
+###  unit:L
+<unit:L> rdf:type owl:NamedIndividual .
+
+
+###  unit:LB
+<unit:LB> rdf:type owl:NamedIndividual .
+
+
+###  unit:M
+<unit:M> rdf:type owl:NamedIndividual .
+
+
+###  unit:MilliGM
+<unit:MilliGM> rdf:type owl:NamedIndividual .
+
+
+###  unit:MilliL
+<unit:MilliL> rdf:type owl:NamedIndividual .
+
+
+###  unit:PoundSterling
+<unit:PoundSterling> rdf:type owl:NamedIndividual .
+
+
+###  unit:TONNE
+<unit:TONNE> rdf:type owl:NamedIndividual .
+
+
+###  unit:USDollar
+<unit:USDollar> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
