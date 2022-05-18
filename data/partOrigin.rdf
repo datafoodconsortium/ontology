@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-         xmlns:dc="http://purl.org/dc/terms/">
+<rdf:RDF
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dc="http://purl.org/dc/terms/">
 
-   <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin">
      <rdf:type rdf:resource="skos:ConceptScheme"/>
-     <dc:description xml:lang="en">Part of natural &quot;living&quot; origin concerned</dc:description>
-     <dc:description xml:lang="fr">Partie de la source &quot;vivante&quot; d'origine concernée</dc:description>
+
      <dc:title xml:lang="en">Part of origin</dc:title>
      <dc:title xml:lang="fr">Partie d'origine</dc:title>
+     <dc:description xml:lang="en">Part of natural &quot;living&quot; origin concerned</dc:description>
+     <dc:description xml:lang="fr">Partie de la source &quot;vivante&quot; d'origine concernée</dc:description>
      <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin"/>
      <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#MultiOrigin"/>
      <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#PlantPartOrigin"/>
      <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/partOrigin.rdf#UnknownPartOrigin"/>
-   </rdf:Description>
+</rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/partOrigin.rdf#AnimalPartOrigin">
     <rdf:type rdf:resource="skos:Concept"/>
