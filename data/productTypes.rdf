@@ -4,17 +4,11 @@
          xmlns:skos="http://www.w3.org/2004/02/skos/core#"
          xmlns:dc="http://purl.org/dc/terms/">
 
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title">
-  </owl:AnnotationProperty>
-
   <skos:ConceptScheme rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf">
-    <dc:description xml:lang="fr">Les différentes catégories de produit, classifiées en arborescence</dc:description>
-    <dc:description xml:lang="en">The categories of the products, ordered as a tree</dc:description>
     <dc:title xml:lang="en">Product Types</dc:title>
     <dc:title xml:lang="fr">Types de produits</dc:title>
+    <dc:description xml:lang="fr">Les différentes catégories de produit, classifiées en arborescence</dc:description>
+    <dc:description xml:lang="en">The categories of the products, ordered as a tree</dc:description>
     <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#bakery"/>
     <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#dairy-product"/>
     <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#drink"/>
@@ -217,6 +211,7 @@
     </skos:narrower>
 
     <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#nut"/>
+
     <skos:narrower>
       <skos:Concept rdf:about="http://static.datafoodconsortium.org/data/productTypes.rdf#orange">
         <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/productTypes.rdf#fruit"/>
@@ -2179,26 +2174,5 @@
 
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
   </owl:Class>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel">
-  </owl:AnnotationProperty>
-
-  <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf">
-  </owl:AnnotationProperty>
-
-  <owl:Ontology rdf:nodeID="genid1">
-  </owl:Ontology>
-
+  
 </rdf:RDF>
