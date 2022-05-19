@@ -5,14 +5,10 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
 
-  <rdf:Description rdf:about="dfc-p:Unit">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/Class"/>
-  </rdf:Description>
-
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#AustralianDollar">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:AUD">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#AUD">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -25,7 +21,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#CanadianDollar">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:CAD">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#CAD">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -38,7 +34,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Centilitre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:CentiL">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#CentiL">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -51,7 +47,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Centimetre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:CentiM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#CentiM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -71,7 +67,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Decilitre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:DeciL">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#DeciL">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -84,7 +80,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Decimètre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:DeciM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#DeciM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -97,7 +93,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Euro">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:Euro">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Euro">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -110,7 +106,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Gallon">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:GAL_UK">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#GAL_UK">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -123,7 +119,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Gram">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:GM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#GM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -136,7 +132,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Inch">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:IN">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#IN">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -149,7 +145,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Kilogram">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:KiloGM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#KiloGM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -162,7 +158,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Kilometre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:KiloM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#KiloM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -175,7 +171,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Litre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:L">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#L">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -188,7 +184,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Metre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:M">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#M">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -201,7 +197,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Milligram">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:MilliGM">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#MilliGM">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -214,7 +210,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Millilitre">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:MilliL">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#MilliL">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -248,7 +244,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#PoundMass">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:LB">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#LB">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -261,7 +257,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#PoundSterling">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:PoundSterling">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#PoundSterling">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -274,7 +270,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Tonne">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:TONNE">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#TONNE">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
@@ -287,7 +283,7 @@
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#USDollar">
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <owl:sameAs>
-      <rdf:Description rdf:about="unit:USDollar">
+      <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#USDollar">
         <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
     </owl:sameAs>
