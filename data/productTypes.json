@@ -1,25 +1,14 @@
 {
   "@context": {
-    "@import":  "https://static.datafoodconsortium.org/ontologies/context.json"
-    owl:        "http://www.w3.org/2002/07/owl#"
+      "@import":  "https://static.datafoodconsortium.org/ontologies/context.json"
+  ,   "owl":      "http://www.w3.org/2002/07/owl#"
+  ,   "dc":       "http://purl.org/dc/terms/"
   },
   "@graph": [
     {
-      "@id": "_:genid1",
-      "@type": "owl:Ontology"
-    },
-    {
-      "@id": "http://purl.org/dc/terms/description",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "http://purl.org/dc/terms/title",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
       "@id": "http://static.datafoodconsortium.org/data/productTypes.rdf",
       "@type": "skos:ConceptScheme",
-      "http://purl.org/dc/terms/description": [
+      "dc:description": [
         {
           "@language": "fr",
           "@value": "Les différentes catégories de produit, classifiées en arborescence"
@@ -29,7 +18,7 @@
           "@value": "The categories of the products, ordered as a tree"
         }
       ],
-      "http://purl.org/dc/terms/title": [
+      "dc:title": [
         {
           "@language": "en",
           "@value": "Product Types"
@@ -5748,30 +5737,7 @@
     {
       "@id": "skos:ConceptScheme",
       "@type": "owl:Class"
-    },
-    {
-      "@id": "skos:broader",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:hasTopConcept",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:inScheme",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:narrower",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:prefLabel",
-      "@type": "owl:AnnotationProperty"
-    },
-    {
-      "@id": "skos:topConceptOf",
-      "@type": "owl:AnnotationProperty"
     }
+
   ]
 }
