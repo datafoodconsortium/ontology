@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:ns0="s"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
          xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <rdf:Description rdf:about="dfc-p:notation">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/AnnotationProperty"/>
-  </rdf:Description>
 
   <rdf:Description rdf:about="dfc-p:Unit">
     <rdf:type rdf:resource="https://static.datafoodconsortium.org/Class"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#AustralianDollar">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:AUD">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>$AU</dfc-p:notation>
     <rdfs:label xml:lang="en">australian dollar</rdfs:label>
@@ -27,13 +23,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#CanadianDollar">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:CAD">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>$CA</dfc-p:notation>
     <rdfs:label xml:lang="en">canadian dollar</rdfs:label>
@@ -41,13 +36,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Centilitre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:CentiL">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>cl</dfc-p:notation>
     <rdfs:label xml:lang="en">centiliter</rdfs:label>
@@ -55,13 +49,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Centimetre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:CentiM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>cm</dfc-p:notation>
     <rdfs:label xml:lang="en">centimetre</rdfs:label>
@@ -69,7 +62,6 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Crate">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <dfc-p:notation>crate</dfc-p:notation>
     <rdfs:label xml:lang="fr">cagette</rdfs:label>
@@ -77,13 +69,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Decilitre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:DeciL">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>dl</dfc-p:notation>
     <rdfs:label xml:lang="en">decilitre</rdfs:label>
@@ -91,13 +82,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Decimètre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:DeciM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>dm</dfc-p:notation>
     <rdfs:label xml:lang="en">decimeter</rdfs:label>
@@ -105,13 +95,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Euro">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:Euro">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>€</dfc-p:notation>
     <rdfs:label xml:lang="en">euro</rdfs:label>
@@ -119,13 +108,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Gallon">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:GAL_UK">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>gal</dfc-p:notation>
     <rdfs:label xml:lang="fr">gallon (GB)</rdfs:label>
@@ -133,13 +121,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Gram">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:GM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>g</dfc-p:notation>
     <rdfs:label xml:lang="en">gram</rdfs:label>
@@ -147,13 +134,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Inch">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:IN">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>in</dfc-p:notation>
     <rdfs:label xml:lang="en">inch</rdfs:label>
@@ -161,13 +147,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Kilogram">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:KiloGM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>kg</dfc-p:notation>
     <rdfs:label xml:lang="en">kilogram</rdfs:label>
@@ -175,13 +160,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Kilometre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:KiloM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>km</dfc-p:notation>
     <rdfs:label xml:lang="en">kilometer</rdfs:label>
@@ -189,13 +173,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Litre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:L">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>l</dfc-p:notation>
     <rdfs:label xml:lang="en">litre</rdfs:label>
@@ -203,13 +186,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Metre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:M">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>m</dfc-p:notation>
     <rdfs:label xml:lang="en">metre</rdfs:label>
@@ -217,13 +199,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Milligram">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:MilliGM">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>g</dfc-p:notation>
     <rdfs:label xml:lang="en">milligram</rdfs:label>
@@ -231,13 +212,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Millilitre">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:MilliL">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>ml</dfc-p:notation>
     <rdfs:label xml:lang="en">milliliter</rdfs:label>
@@ -245,7 +225,6 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Package">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <dfc-p:notation>pack</dfc-p:notation>
     <rdfs:label xml:lang="fr">colis</rdfs:label>
@@ -253,7 +232,6 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Percent">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <dfc-p:notation>%</dfc-p:notation>
     <rdfs:label xml:lang="en">percent</rdfs:label>
@@ -261,7 +239,6 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Piece">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
     <dfc-p:notation>u</dfc-p:notation>
     <rdfs:label xml:lang="en">piece</rdfs:label>
@@ -269,13 +246,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#PoundMass">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:LB">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>lb</dfc-p:notation>
     <rdfs:label xml:lang="en">pound</rdfs:label>
@@ -283,13 +259,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#PoundSterling">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:PoundSterling">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>£</dfc-p:notation>
     <rdfs:label xml:lang="fr">livre sterling</rdfs:label>
@@ -297,13 +272,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#Tonne">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:TONNE">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>T</dfc-p:notation>
     <rdfs:label xml:lang="en">tonne</rdfs:label>
@@ -311,13 +285,12 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/unit.rdf#USDollar">
-    <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
     <rdf:type rdf:resource="dfc-p:Unit"/>
-    <ns0:ameAs>
+    <owl:sameAs>
       <rdf:Description rdf:about="unit:USDollar">
-        <rdf:type rdf:resource="https://static.datafoodconsortium.org/NamedIndividual"/>
+        <rdf:type rdf:resource="dfc-p:Unit"/>
       </rdf:Description>
-    </ns0:ameAs>
+    </owl:sameAs>
 
     <dfc-p:notation>$US</dfc-p:notation>
     <rdfs:label xml:lang="fr">Dollar US</rdfs:label>
