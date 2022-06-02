@@ -228,6 +228,31 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composedOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+        <rdfs:comment xml:lang="fr">Cette propriété représente la composition d&apos;un produit défini par un ensemble d&apos;ingrédients.</rdfs:comment>
+        <rdfs:comment xml:lang="en">That property represents the composition of a food product by a set of ingredients.</rdfs:comment>
+        <rdfs:label xml:lang="en">composed of</rdfs:label>
+        <rdfs:label xml:lang="fr">composé de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">compose</rdfs:label>
+        <rdfs:label xml:lang="en">composes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#concernedBy -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#concernedBy">
@@ -577,6 +602,18 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour ingrédient</rdfs:label>
+        <rdfs:label xml:lang="en">has ingredient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasMainContact -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasMainContact">
@@ -754,7 +791,14 @@
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasQuantity">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#QuantitativeValue"/>
         <rdfs:label xml:lang="fr">a pour quantité</rdfs:label>
         <rdfs:label xml:lang="en">has quantity</rdfs:label>
@@ -883,6 +927,17 @@
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#SuppliedProduct"/>
         <rdfs:label xml:lang="en">Industrializes</rdfs:label>
         <rdfs:label xml:lang="fr">Indutrialise</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+        <rdfs:label xml:lang="fr">est ingredient de</rdfs:label>
+        <rdfs:label xml:lang="en">is ingredient of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2952,6 +3007,16 @@
         <rdfs:comment xml:lang="fr">Sujet de l&apos;ontologie DFC répondant à la question &quot;Comment?&quot;</rdfs:comment>
         <rdfs:label xml:lang="en">How subject</rdfs:label>
         <rdfs:label xml:lang="fr">Sujet Comment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#What_Subject"/>
+        <rdfs:label xml:lang="en">Ingredient</rdfs:label>
+        <rdfs:label xml:lang="fr">Ingrédient</rdfs:label>
     </owl:Class>
     
 
