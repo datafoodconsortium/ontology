@@ -45,9 +45,57 @@
     
 
 
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
@@ -197,6 +245,30 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductGlossary_Facet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
+                <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
+                <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">&quot;A nutrition claim states or suggests that a food has beneficial nutritional properties, such as “low fat”, “no added sugar” and “high in fibre”. A health claim is any statement on labels, advertising or other marketing products that health benefits can result from consuming a given food, for instance that a food can help reinforce the body’s natural defences or enhance learning ability.&quot; (source : European Food Safety Authority, https://www.efsa.europa.eu/fr/topics/topic/health-claims)</rdfs:comment>
+        <rdfs:comment xml:lang="fr">&quot;Les allégations nutritionnelles et de santé sont des mentions, images ou symboles valorisant les denrées alimentaires sur le plan nutritionnel ou de la santé. Ce sont par exemple les phrases du type « jus de fruit riche en vitamine C », « riche en calcium », « allégé en sucres », « bon pour le cœur », « le calcium est nécessaire à une ossature normale », etc.&quot; (source: Direction générale de la concurrence, de la consommation et de la répression des fraudes, https://www.economie.gouv.fr/dgccrf/Consommation/Etiquetage-des-produits/Allegations-nutrionnelles-et-de-sante)</rdfs:comment>
+        <rdfs:label xml:lang="fr">Allégations nutritionnelles et de santé</rdfs:label>
+        <rdfs:label xml:lang="en">Nutrition and health claims</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure -->
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Measure">
@@ -245,6 +317,16 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <rdfs:label xml:lang="fr">Dimension labellisée</rdfs:label>
+        <rdfs:label xml:lang="en">Labelling dimension</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin -->
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin">
@@ -274,29 +356,6 @@
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
         <rdfs:label xml:lang="fr">Dimension nutritionnelle</rdfs:label>
         <rdfs:label xml:lang="en">Nutrient dimension</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim -->
-
-    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#ProductGlossary_Facet"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#generalizes"/>
-                <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#specializes"/>
-                <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Examples : Gluten free, Vegetarian, Vegan, Zero salt</rdfs:comment>
-        <rdfs:label xml:lang="fr">Affirmation nutritionnelle</rdfs:label>
-        <rdfs:label xml:lang="en">Nutritional claim</rdfs:label>
     </owl:Class>
     
 
@@ -490,6 +549,12 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -499,6 +564,18 @@
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
     
 
 
@@ -523,9 +600,9 @@
 
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium -->
 
-    <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
@@ -539,9 +616,9 @@
 
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#simonL -->
 
-    <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#simonL">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#simonL">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

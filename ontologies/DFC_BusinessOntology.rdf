@@ -217,13 +217,38 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:label xml:lang="fr">affirmation de</rdfs:label>
+        <rdfs:label xml:lang="fr">allégation de</rdfs:label>
         <rdfs:label xml:lang="en">claim of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composedOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+        <rdfs:comment xml:lang="fr">Cette propriété représente la composition d&apos;un produit défini par un ensemble d&apos;ingrédients.</rdfs:comment>
+        <rdfs:comment xml:lang="en">That property represents the composition of a food product by a set of ingredients.</rdfs:comment>
+        <rdfs:label xml:lang="en">composed of</rdfs:label>
+        <rdfs:label xml:lang="fr">composé de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#composes">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">compose</rdfs:label>
+        <rdfs:label xml:lang="en">composes</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -516,7 +541,7 @@
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasClaim">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasFacet"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
-        <rdfs:label xml:lang="fr">a pour affirmation</rdfs:label>
+        <rdfs:label xml:lang="fr">a pour allégation</rdfs:label>
         <rdfs:label xml:lang="en">has claim</rdfs:label>
     </owl:ObjectProperty>
     
@@ -573,6 +598,40 @@
         </rdfs:domain>
         <rdfs:label xml:lang="fr">a en entrée</rdfs:label>
         <rdfs:label xml:lang="en">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour ingrédient</rdfs:label>
+        <rdfs:label xml:lang="en">has ingredient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasLabellingCharacteristic -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasLabellingCharacteristic">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasCharacteristic"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour caractéristique labellisée</rdfs:label>
+        <rdfs:label xml:lang="en">has labelling characteristic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasLabellingDimension -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasLabellingDimension">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasDimension"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LabellingCharacteristic"/>
+        <rdfs:label xml:lang="fr">a pour dimension labellisée</rdfs:label>
+        <rdfs:label xml:lang="en">has labelling dimension</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -754,7 +813,14 @@
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasQuantity">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#QuantitativeValue"/>
         <rdfs:label xml:lang="fr">a pour quantité</rdfs:label>
         <rdfs:label xml:lang="en">has quantity</rdfs:label>
@@ -887,6 +953,17 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient"/>
+        <rdfs:label xml:lang="fr">est ingredient de</rdfs:label>
+        <rdfs:label xml:lang="en">is ingredient of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isPriceOf -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#isPriceOf">
@@ -894,6 +971,28 @@
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Price"/>
         <rdfs:label xml:lang="fr">est le prix de</rdfs:label>
         <rdfs:label xml:lang="en">is price of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#labellingCharacteristicOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#labellingCharacteristicOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#characteristicOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LabellingCharacteristic"/>
+        <rdfs:label xml:lang="fr">caractéristique labellisée de</rdfs:label>
+        <rdfs:label xml:lang="en">labelling characteristic of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#labellingDimensionOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#labellingDimensionOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#dimensionOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
+        <rdfs:label xml:lang="fr">dimension labelisée de</rdfs:label>
+        <rdfs:label xml:lang="en">labelling dimension of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1703,6 +1802,18 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#availabilityDate -->
+
+    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#availabilityDate">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Stock"/>
+        <rdfs:comment xml:lang="en">&quot;The date from which the product is available from the information provider, including seasonal or temporary product and services.&quot; (source : GS1 model)</rdfs:comment>
+        <rdfs:label xml:lang="en">availability date</rdfs:label>
+        <rdfs:label xml:lang="fr">date disponibilité</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#availabilityTime -->
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#availabilityTime">
@@ -1722,6 +1833,20 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="en">batch number</rdfs:label>
         <rdfs:label xml:lang="fr">numéro de lot</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#bestBeforeDate -->
+
+    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#bestBeforeDate">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#ProductBatch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="fr">&quot; à consommer de préférence avant le… &quot; : après cette date, le produit peut perdre une partie ou la totalité de ses qualités sans présenter un danger pour la santé : par exemple le café peut perdre son arôme.</rdfs:comment>
+        <rdfs:comment xml:lang="en">&quot;Best before date on the label or package signifies the end of the period under which the product will retain specific quality attributes or claims even though the product may continue to retain positive quality attributes after this date. Best before date is primarily used for consumer information and may be a regulatory requirement.&quot; (source: GS1 model)</rdfs:comment>
+        <rdfs:label xml:lang="en">best before date</rdfs:label>
+        <rdfs:label xml:lang="fr">date de durabilité minimale (DDM)</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1799,7 +1924,14 @@
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Stock"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="en">date</rdfs:label>
         <rdfs:label xml:lang="fr">date</rdfs:label>
@@ -1878,11 +2010,12 @@
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#expiryDate -->
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#expiryDate">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#ProductBatch"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
-        <rdfs:label xml:lang="fr">date de péremption</rdfs:label>
-        <rdfs:label xml:lang="en">expiry date</rdfs:label>
+        <rdfs:label xml:lang="fr">date limite de consommation (DLC)</rdfs:label>
+        <rdfs:label xml:lang="en">expiration date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2125,6 +2258,7 @@
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#productionDate -->
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#productionDate">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#ProductBatch"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
@@ -2956,6 +3090,27 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#What_Subject"/>
+        <rdfs:label xml:lang="en">Ingredient</rdfs:label>
+        <rdfs:label xml:lang="fr">Ingrédient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LabellingCharacteristic -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LabellingCharacteristic">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_Characteristic"/>
+        <rdfs:comment xml:lang="en">&quot;To reach a level of transparency for consumers to make informed and responsible choices, there are several European projects that are pushing for the standardization of food labels. The Farm to Fork  strategy itself includes the development of a standardized labelling system, as well as SAFE (Safe Food Advocacy Europe) has started a campaign to ask for more clarity and transparency in labels in favor of consumers. In Europe we can see a first attempt of a simpler and more immediate label to be easily accessible for the consumer, the Nutri-score, developed in France and now spread in other European countries. Then, other labelling solutions were developed, which not only focus on the nutritional value of the product, but also on the degree of environmental sustainability. These are the Eco-score, and the recently suggested Planet-score.&quot; (source : protilla blog)</rdfs:comment>
+        <rdfs:label xml:lang="fr">Caractéristique labelisée</rdfs:label>
+        <rdfs:label xml:lang="en">Labelling characteristic</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct -->
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct">
@@ -3743,8 +3898,22 @@
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#AllergenDimension">
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <rdfs:label xml:lang="en">Allergen dimension</rdfs:label>
-        <rdfs:label xml:lang="fr">Dimension allergène</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
     </owl:Class>
     
 
@@ -3753,16 +3922,6 @@
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutrientDimension">
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <rdfs:label xml:lang="fr">Dimension nutritionnelle</rdfs:label>
-        <rdfs:label xml:lang="en">Nutrient dimension</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim -->
-
-    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#DFC_ProductGlossary_Facet"/>
     </owl:Class>
     
 
@@ -3771,8 +3930,6 @@
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PhysicalDimension">
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <rdfs:label xml:lang="fr">Dimension physique</rdfs:label>
-        <rdfs:label xml:lang="en">Physical dimension</rdfs:label>
     </owl:Class>
     
 
@@ -3781,8 +3938,6 @@
 
     <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TemporalDimension">
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Dimension"/>
-        <rdfs:label xml:lang="fr">Dimension temporelle</rdfs:label>
-        <rdfs:label xml:lang="en">Temporal dimension</rdfs:label>
     </owl:Class>
     
 
@@ -3934,6 +4089,14 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim -->
+
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth -->
 
     <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Depth">
@@ -3957,14 +4120,6 @@
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin -->
 
     <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim -->
-
-    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
     
@@ -4027,21 +4182,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim">
-        <rdfs:label xml:lang="en">Nutritional claim</rdfs:label>
-        <rdfs:label xml:lang="fr">Affirmation nutritionnelle</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -4051,9 +4191,9 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Certification"/>
+            <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Claim"/>
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#GlobalGenericOrigin"/>
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NatureOrigin"/>
-            <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#NutritionalClaim"/>
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#PartOrigin"/>
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Process"/>
             <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#TerritorialOrigin"/>

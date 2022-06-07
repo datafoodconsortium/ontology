@@ -2,7 +2,7 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:dfc-d="http://static.datafoodconsortium.org/data/dimensions.rdf#"
-         xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#">
+         xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#">
 
 
 <!-- allergenDimension -->   
@@ -432,6 +432,32 @@
         <rdfs:label xml:lang="en">Zinc</rdfs:label>
         <rdfs:label xml:lang="fr">Zinc</rdfs:label>
     </owl:NamedIndividual>
+
+
+
+
+<!-- labellingDimension -->   
+
+ 
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#NutriScore">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension"/>
+        <rdfs:label xml:lang="en">Nutri-score</rdfs:label>
+        <rdfs:label xml:lang="fr">Nutri-score</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#EcoScore">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension"/>
+        <rdfs:label xml:lang="en">Eco-score</rdfs:label>
+        <rdfs:label xml:lang="fr">Eco-score</rdfs:label>
+    </owl:NamedIndividual>
+    
+	<owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/dimensions.rdf#PlanetScore">
+        <rdf:type rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#LabellingDimension"/>
+        <rdfs:label xml:lang="en">Planet-score</rdfs:label>
+        <rdfs:label xml:lang="fr">Planet-score</rdfs:label>
+    </owl:NamedIndividual>
+
+
 
 
 <!-- physicalDimension -->   
