@@ -1,46 +1,5 @@
 {
-  "@context": {
-    "dfc": "http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl#",
-    "dfc-b": "http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#",
-    "dfc-p": "http://static.datafoodconsortium.org/ontologies/DFC_ProductOntology.owl#",
-    "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
-    "dfc-u": "http://static.datafoodconsortium.org/data/units.rdf#",
-    "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
-    "dfc-p:hasUnit":{
-      "@type":"@id"
-    },
-    "dfc-p:hasType":{
-      "@type":"@id"
-    },
-    "dfc-b:references":{
-      "@type":"@id"
-    },
-    "dfc-b:offeredThrough":{
-      "@type":"@id"
-    },
-    "dfc-b:offeres":{
-      "@type":"@id"
-    },
-    "dfc-b:supplies":{
-      "@type":"@id"
-    },
-    "dfc-b:defines":{
-      "@type":"@id"
-    },
-    "dfc-b:affiliates":{
-      "@type":"@id"
-    },
-    "dfc-b:manages":{
-      "@type":"@id"
-    },
-    "dfc:owner":{
-      "@type":"@id"
-    },
-    "dfc-t:hostedBy":{
-      "@type":"@id"
-    },
-    "@base": "http://maPlateformeNationale/"
-  },
+  "@context": "http://static.datafoodconsortium.org/ontologies/context.json",
   "@graph" : [
     {
      "@id": "person/personId",
