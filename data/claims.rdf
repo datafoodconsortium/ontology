@@ -2,7 +2,7 @@
 <rdf:RDF
 	xmlns:schema="http://schema.org/"
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
-	xmlns:dfc-p="dfc-p:"
+	xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
 	xmlns:dfc-c="http://static.datafoodconsortium.org/data/claims.rdf#"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -11,10 +11,12 @@
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
 
+	
+	
 <rdf:Description rdf:about="dfc-p:Claim">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<dct:title xml:lang="en">Nutrition and health claims</dct:title>
-	<dct:title xml:lang="fr">Allégations nutritionnelles et de santé</dct:title>
+	<skos:prefLabel xml:lang="en">Nutrition and health claims</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Allégations nutritionnelles et de santé</skos:prefLabel>
 	<dct:description xml:lang="en">"A nutrition claim states or suggests that a food has beneficial nutritional properties, such as “low fat”, “no added sugar” and “high in fibre”. A health claim is any statement on labels, advertising or other marketing products that health benefits can result from consuming a given food, for instance that a food can help reinforce the body’s natural defences or enhance learning ability." (source : European Food Safety Authority, https://www.efsa.europa.eu/fr/topics/topic/health-claims)</dct:description>
 	<dct:description xml:lang="fr">"Les allégations nutritionnelles et de santé sont des mentions, images ou symboles valorisant les denrées alimentaires sur le plan nutritionnel ou de la santé. Ce sont par exemple les phrases du type « jus de fruit riche en vitamine C », « riche en calcium », « allégé en sucres », « bon pour le cœur », « le calcium est nécessaire à une ossature normale », etc." (source: Direction générale de la concurrence, de la consommation et de la répression des fraudes, https://www.economie.gouv.fr/dgccrf/Consommation/Etiquetage-des-produits/Allegations-nutrionnelles-et-de-sante)</dct:description>
 	<skos:hasTopConcept rdf:resource="dfc-nc:NutritionalClaim"/>
@@ -25,7 +27,6 @@
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:prefLabel xml:lang="en">Nutritional claim</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Allégation nutritionnelle</skos:prefLabel>
-	<dct:description xml:lang="en">Any claim which states, suggests or implies that a food has particular beneficial nutritional properties.</dct:description>
 	<skos:inScheme rdf:resource="dfc-p:Claim"/>
 	<skos:topConceptOf rdf:resource="dfc-p:Claim"/>
 </rdf:Description>

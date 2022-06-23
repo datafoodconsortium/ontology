@@ -4,7 +4,7 @@
 	xmlns:owl="http://www.w3.org/2002/07/owl#"
 	xmlns:org="http://www.w3.org/ns/org#"
 	xmlns:dfc-c="http://static.datafoodconsortium.org/data/certifications.rdf#"
-	xmlns:dfc-p="dfc-p:"
+	xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
 	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:dct="http://purl.org/dc/terms/"
@@ -14,8 +14,8 @@
 
 <rdf:Description rdf:about="dfc-p:Certification">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<dct:title xml:lang="en">Certification</dct:title>
-	<dct:title xml:lang="fr">Certification</dct:title>
+	<skos:prefLabel xml:lang="en">Certification</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Certification</skos:prefLabel>
 	<dct:description xml:lang="en">The certifications or labels obtained by the products</dct:description>
 	<dct:description xml:lang="fr">Les certifications ou labels obtenus par les produits</dct:description>
 	<skos:hasTopConcept rdf:resource="dfc-c:UnknownLabel"/>

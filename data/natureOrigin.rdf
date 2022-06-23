@@ -16,8 +16,8 @@
 
 <rdf:Description rdf:about="dfc-p:NatureOrigin">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	<dct:title xml:lang="en">Natural origin</dct:title>
-	<dct:title xml:lang="fr">Source naturelle d'origine</dct:title>
+	<skos:prefLabel xml:lang="en">Natural origin</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Source naturelle d'origine</skos:prefLabel>
 	<dct:description xml:lang="en">Natural "living" origin concerned</dct:description>
 	<dct:description xml:lang="fr">Source "vivante" d'origine concernée</dct:description>
 	<skos:hasTopConcept rdf:resource="dfc-n:UnknownNatureOrigin"/>
