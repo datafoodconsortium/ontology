@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datafoodconsortium_connector="http://static.datafoodconsortium.org/uml/connector/connector.profile.uml" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://static.datafoodconsortium.org/uml/connector/connector.profile.uml connector.profile.uml#_TqQvceiqEey9aasgGgoaNw">
+  <uml:Package xmi:id="_tbxIoODpEey8JZcrriCc9A" name="org.datafoodconsortium.connector.common">
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ORnSwNxUEeyr_asPBQgiSQ" name="Exhibitable">
+      <ownedOperation xmi:id="_ReL8cNxUEeyr_asPBQgiSQ" name="getImage">
+        <ownedParameter xmi:id="_VqryENxUEeyr_asPBQgiSQ" name="image" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_dM0RUNxVEeyr_asPBQgiSQ" name="Nameable">
+      <ownedOperation xmi:id="_sUqPoNxUEeyr_asPBQgiSQ" name="getName">
+        <ownedParameter xmi:id="_aelO0NxoEeyr_asPBQgiSQ" name="name" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_furxINxVEeyr_asPBQgiSQ" name="Describable">
+      <ownedOperation xmi:id="_tMdaUNxUEeyr_asPBQgiSQ" name="getDescription">
+        <ownedParameter xmi:id="_egGjgNxoEeyr_asPBQgiSQ" name="description" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_S8hGMNxVEeyr_asPBQgiSQ" name="Quantifiable">
+      <ownedOperation xmi:id="_lpNj8NxXEeyr_asPBQgiSQ" name="getQuantityUnit">
+        <ownedParameter xmi:id="_NmVxENxoEeyr_asPBQgiSQ" name="quantityUnit" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_mwYnYNxXEeyr_asPBQgiSQ" name="getQuantityValue">
+        <ownedParameter xmi:id="_ORBFwNxoEeyr_asPBQgiSQ" name="quantityValue" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_V8bdIOmsEeyc2oibQ8qwAA" name="setQuantityUnit">
+        <ownedParameter xmi:id="_Z0n2sOmsEeyc2oibQ8qwAA" name="quantityUnit">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_XVOcEOmsEeyc2oibQ8qwAA" name="setQuantityValue">
+        <ownedParameter xmi:id="_ZSwfwOmsEeyc2oibQ8qwAA" name="quantityValue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_t4oGUNxgEeyr_asPBQgiSQ" name="Measurable">
+      <elementImport xmi:id="_FaplMNxsEeyr_asPBQgiSQ" importedElement="_S8hGMNxVEeyr_asPBQgiSQ"/>
+      <generalization xmi:id="_4djdoNxgEeyr_asPBQgiSQ" general="_S8hGMNxVEeyr_asPBQgiSQ"/>
+      <ownedOperation xmi:id="_7Bv4sNxgEeyr_asPBQgiSQ" name="getQuantityDimension">
+        <ownedParameter xmi:id="_1UK7wNxpEeyr_asPBQgiSQ" name="quantityDimension" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_9L_M4OmsEeyc2oibQ8qwAA" name="setQuantityDimension">
+        <ownedParameter xmi:id="__RF4MOmsEeyc2oibQ8qwAA" name="quantityDimension">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_dGR8wNxbEeyr_asPBQgiSQ" name="Classable">
+      <ownedOperation xmi:id="_EhuQkNxVEeyr_asPBQgiSQ" name="getType">
+        <ownedParameter xmi:id="_8D_fMNxoEeyr_asPBQgiSQ" name="type" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_JqlP4OZdEeybgd1DwlK4YQ" name="Ellapsable">
+      <ownedOperation xmi:id="_MCm3MOZdEeybgd1DwlK4YQ" name="getStartDate"/>
+      <ownedOperation xmi:id="_OvKkEOZdEeybgd1DwlK4YQ" name="getEndDate"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_osxSANxLEeyr_asPBQgiSQ" name="Localizable">
+      <ownedOperation xmi:id="_Pv2SsNxREeyr_asPBQgiSQ" name="getStreet">
+        <ownedParameter xmi:id="_nLalQNxREeyr_asPBQgiSQ" name="street" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RbgjQNxREeyr_asPBQgiSQ" name="getPostalCode">
+        <ownedParameter xmi:id="_nra7ANxREeyr_asPBQgiSQ" name="postalCode" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_VCXVMNxREeyr_asPBQgiSQ" name="getCity">
+        <ownedParameter xmi:id="_oHi2UNxREeyr_asPBQgiSQ" name="city" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_WkCjUNxREeyr_asPBQgiSQ" name="getCountry">
+        <ownedParameter xmi:id="_opa0UNxREeyr_asPBQgiSQ" name="country" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_85VDMNxREeyr_asPBQgiSQ" name="setStreet">
+        <ownedParameter xmi:id="_HOKwENxSEeyr_asPBQgiSQ" name="street">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_-qdpoNxREeyr_asPBQgiSQ" name="setPostalCode">
+        <ownedParameter xmi:id="_HmKZUNxSEeyr_asPBQgiSQ" name="postalCode">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="___0TANxREeyr_asPBQgiSQ" name="setCity">
+        <ownedParameter xmi:id="_IfFlYNxSEeyr_asPBQgiSQ" name="city">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_BFyckNxSEeyr_asPBQgiSQ" name="setCountry">
+        <ownedParameter xmi:id="_I61tQNxSEeyr_asPBQgiSQ" name="country">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_yhpLwNxTEeyr_asPBQgiSQ" name="Geolocalizable">
+      <ownedOperation xmi:id="_eah-cNxREeyr_asPBQgiSQ" name="getLatitude">
+        <ownedParameter xmi:id="_pHtS0NxREeyr_asPBQgiSQ" name="latitude" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_f-AjYNxREeyr_asPBQgiSQ" name="getLongitude">
+        <ownedParameter xmi:id="_plHnkNxREeyr_asPBQgiSQ" name="longitude" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_CKjsQNxSEeyr_asPBQgiSQ" name="setLatitude">
+        <ownedParameter xmi:id="_JfiVwNxSEeyr_asPBQgiSQ" name="latitude">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_DPHgkNxSEeyr_asPBQgiSQ" name="setLongitude">
+        <ownedParameter xmi:id="_J_-JUNxSEeyr_asPBQgiSQ" name="longitude">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i5ussNuYEeyR38y4P6cy-Q" name="Address">
+      <elementImport xmi:id="_CZFSsNudEeyR38y4P6cy-Q" importedElement="_osxSANxLEeyr_asPBQgiSQ"/>
+      <ownedAttribute xmi:id="_R1_FkNudEeyR38y4P6cy-Q" name="street">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_mzqckNuhEeyR38y4P6cy-Q" name="postalCode">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_rJEWkNuhEeyR38y4P6cy-Q" name="city">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_tgfg8NuhEeyR38y4P6cy-Q" name="country">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_JhSEcNudEeyR38y4P6cy-Q" client="_i5ussNuYEeyR38y4P6cy-Q" contract="_osxSANxLEeyr_asPBQgiSQ">
+        <supplier xmi:type="uml:Interface" href="contract.uml#_osxSANxLEeyr_asPBQgiSQ"/>
+        <supplier xmi:type="uml:Interface" href="#_osxSANxLEeyr_asPBQgiSQ"/>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_3W-kANxIEeyr_asPBQgiSQ" name="Address">
+        <ownedParameter xmi:id="_6_pT0NxIEeyr_asPBQgiSQ" name="street">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_D1focNxwEeyr_asPBQgiSQ" name="postalCode">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_EgTgANxwEeyr_asPBQgiSQ" name="city">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_FLXPMNxwEeyr_asPBQgiSQ" name="country">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EkvOAOmrEeyc2oibQ8qwAA" name="QuantitativeValue">
+      <elementImport xmi:id="_uGIdgOmrEeyc2oibQ8qwAA" importedElement="_S8hGMNxVEeyr_asPBQgiSQ"/>
+      <ownedAttribute xmi:id="_yh-9wOmrEeyc2oibQ8qwAA" name="quantityUnit">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_z5QSsOmrEeyc2oibQ8qwAA" name="quantityValue">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_wm3U4OmrEeyc2oibQ8qwAA" client="_EkvOAOmrEeyc2oibQ8qwAA" supplier="_S8hGMNxVEeyr_asPBQgiSQ" contract="_S8hGMNxVEeyr_asPBQgiSQ"/>
+      <ownedOperation xmi:id="_zU6koOmtEeyc2oibQ8qwAA" name="QuantitativeValue">
+        <ownedParameter xmi:id="_2VZ6IOmtEeyc2oibQ8qwAA" name="quantityUnit">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_2hZHsOmtEeyc2oibQ8qwAA" name="quantityValue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_vc4_oOmsEeyc2oibQ8qwAA" name="Characteristic" isAbstract="true">
+      <elementImport xmi:id="_xd2x0OmsEeyc2oibQ8qwAA" importedElement="_EkvOAOmrEeyc2oibQ8qwAA"/>
+      <elementImport xmi:id="_0NJCkOmsEeyc2oibQ8qwAA" importedElement="_t4oGUNxgEeyr_asPBQgiSQ"/>
+      <generalization xmi:id="_1jdVQOmsEeyc2oibQ8qwAA" general="_EkvOAOmrEeyc2oibQ8qwAA"/>
+      <ownedAttribute xmi:id="_FvTRwOmtEeyc2oibQ8qwAA" name="quantityDimension">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_22RA8OmsEeyc2oibQ8qwAA" client="_vc4_oOmsEeyc2oibQ8qwAA" supplier="_t4oGUNxgEeyr_asPBQgiSQ" contract="_t4oGUNxgEeyr_asPBQgiSQ"/>
+      <ownedOperation xmi:id="_Nfe0EOmuEeyc2oibQ8qwAA" name="Characteristic">
+        <ownedParameter xmi:id="_PkmtgOmuEeyc2oibQ8qwAA" name="quantityUnit">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_QIHqQOmuEeyc2oibQ8qwAA" name="quantityValue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_QSGFoOmuEeyc2oibQ8qwAA" name="quantityDimension">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_vcEZ8OjgEey9aasgGgoaNw">
+      <eAnnotations xmi:id="_vcIEUOjgEey9aasgGgoaNw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="connector.profile.uml#_TqQvceiqEey9aasgGgoaNw"/>
+      </eAnnotations>
+      <appliedProfile href="connector.profile.uml#_xSn38NtjEeyHhf8rtkVHoQ"/>
+    </profileApplication>
+  </uml:Package>
+  <datafoodconsortium_connector:getter xmi:id="_EgEBsNxrEeyr_asPBQgiSQ" base_Operation="_ReL8cNxUEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_a1nucNxrEeyr_asPBQgiSQ" base_Operation="_sUqPoNxUEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_cBg50NxrEeyr_asPBQgiSQ" base_Operation="_tMdaUNxUEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_Y7Y2YNxrEeyr_asPBQgiSQ" base_Operation="_lpNj8NxXEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_ZtGAINxrEeyr_asPBQgiSQ" base_Operation="_mwYnYNxXEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_mMybANxrEeyr_asPBQgiSQ" base_Operation="_7Bv4sNxgEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_gw72UNxrEeyr_asPBQgiSQ" base_Operation="_EhuQkNxVEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_qWYjENxqEeyr_asPBQgiSQ" base_Operation="_Pv2SsNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_rMQbINxqEeyr_asPBQgiSQ" base_Operation="_RbgjQNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_r956gNxqEeyr_asPBQgiSQ" base_Operation="_VCXVMNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_sy96QNxqEeyr_asPBQgiSQ" base_Operation="_WkCjUNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_tntJ4NxqEeyr_asPBQgiSQ" base_Operation="_85VDMNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_upeI4NxqEeyr_asPBQgiSQ" base_Operation="_-qdpoNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_vkBFkNxqEeyr_asPBQgiSQ" base_Operation="___0TANxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_wZvzsNxqEeyr_asPBQgiSQ" base_Operation="_BFyckNxSEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_AZYgMNxrEeyr_asPBQgiSQ" base_Operation="_eah-cNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_BOjNoNxrEeyr_asPBQgiSQ" base_Operation="_f-AjYNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_CGxPENxrEeyr_asPBQgiSQ" base_Operation="_CKjsQNxSEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:setter xmi:id="_DAyAQNxrEeyr_asPBQgiSQ" base_Operation="_DPHgkNxSEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:property xmi:id="_M-AYENufEeyR38y4P6cy-Q" base_Property="_R1_FkNudEeyR38y4P6cy-Q" getter="_Pv2SsNxREeyr_asPBQgiSQ" setter="_85VDMNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:property xmi:id="_N86wANuiEeyR38y4P6cy" base_Property="_mzqckNuhEeyR38y4P6cy-Q" getter="_RbgjQNxREeyr_asPBQgiSQ" setter="_-qdpoNxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:property xmi:id="_O0fRMNuiEeyR38y4P6cy-Q" base_Property="_rJEWkNuhEeyR38y4P6cy-Q" getter="_VCXVMNxREeyr_asPBQgiSQ" setter="___0TANxREeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:property xmi:id="_PvpR4NuiEeyR38y4P6cy-Q" base_Property="_tgfg8NuhEeyR38y4P6cy-Q" getter="_WkCjUNxREeyr_asPBQgiSQ" setter="_BFyckNxSEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:semantic xmi:id="_ZmXKQNugEeyR38y4P6cy-Q" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasStreet" base_Element="_R1_FkNudEeyR38y4P6cy-Q" base_Property="_R1_FkNudEeyR38y4P6cy-Q"/>
+  <datafoodconsortium_connector:semantic xmi:id="_RC968NuiEeyR38y4P6cy-Q" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasPostalCode" base_Element="_mzqckNuhEeyR38y4P6cy-Q" base_Property="_mzqckNuhEeyR38y4P6cy-Q"/>
+  <datafoodconsortium_connector:semantic xmi:id="_T1z2ANuiEeyR38y4P6cy-Q" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasCity" base_Element="_rJEWkNuhEeyR38y4P6cy-Q" base_Property="_rJEWkNuhEeyR38y4P6cy-Q"/>
+  <datafoodconsortium_connector:semantic xmi:id="_UyBmoNuiEeyR38y4P6cy-Q" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasCountry" base_Element="_tgfg8NuhEeyR38y4P6cy-Q" base_Property="_tgfg8NuhEeyR38y4P6cy-Q"/>
+  <datafoodconsortium_connector:constructor xmi:id="_ERw_cNxJEeyr_asPBQgiSQ" base_Operation="_3W-kANxIEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:initializerParent xmi:id="_imWTIN4IEeyb_uewi4tbXw" position="1">
+    <property href="../semantizer/semantizer.uml#_z4MyQN4EEeyb_uewi4tbXw"/>
+  </datafoodconsortium_connector:initializerParent>
+  <datafoodconsortium_connector:initializer xmi:id="_5FSDoNxuEeyr_asPBQgiSQ" property="_R1_FkNudEeyR38y4P6cy-Q" base_Parameter="_6_pT0NxIEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:initializer xmi:id="_NocwQNxwEeyr_asPBQgiSQ" property="_mzqckNuhEeyR38y4P6cy-Q" base_Parameter="_D1focNxwEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:initializer xmi:id="_OjFMgNxwEeyr_asPBQgiSQ" property="_rJEWkNuhEeyR38y4P6cy-Q" base_Parameter="_EgTgANxwEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:initializer xmi:id="_PWuP8NxwEeyr_asPBQgiSQ" property="_tgfg8NuhEeyR38y4P6cy-Q" base_Parameter="_FLXPMNxwEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:external xmi:id="_Mxm6MODWEey8JZcrriCc9A"/>
+  <datafoodconsortium_connector:external xmi:id="_NqJrwODWEey8JZcrriCc9A"/>
+  <datafoodconsortium_connector:semantic xmi:id="_XM-osODdEey8JZcrriCc9A" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Address" base_Element="_i5ussNuYEeyR38y4P6cy-Q" base_Class="_i5ussNuYEeyR38y4P6cy-Q"/>
+  <datafoodconsortium_connector:getter xmi:id="_L4N1AOjiEey9aasgGgoaNw" base_Operation="_ReL8cNxUEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:external xmi:id="_qpYp0OmrEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:semantic xmi:id="_rf1wsOmrEeyc2oibQ8qwAA" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#QuantitativeValue" base_Element="_EkvOAOmrEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:property xmi:id="_CKdugOmsEeyc2oibQ8qwAA" base_Property="_z5QSsOmrEeyc2oibQ8qwAA" getter="_mwYnYNxXEeyr_asPBQgiSQ" setter="_XVOcEOmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:property xmi:id="_Gqe9EOmsEeyc2oibQ8qwAA" base_Property="_yh-9wOmrEeyc2oibQ8qwAA" getter="_lpNj8NxXEeyr_asPBQgiSQ" setter="_V8bdIOmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:semantic xmi:id="_HSSj8OmsEeyc2oibQ8qwAA" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasUnit" base_Element="_yh-9wOmrEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:semantic xmi:id="_I-dK0OmsEeyc2oibQ8qwAA" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#value" base_Element="_z5QSsOmrEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:setter xmi:id="_fyp7YOmsEeyc2oibQ8qwAA" base_Operation="_V8bdIOmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:setter xmi:id="_gZG3YOmsEeyc2oibQ8qwAA" base_Operation="_XVOcEOmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:setter xmi:id="_D3BhgOmtEeyc2oibQ8qwAA" base_Operation="_9L_M4OmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:property xmi:id="_JoctkOmtEeyc2oibQ8qwAA" base_Property="_FvTRwOmtEeyc2oibQ8qwAA" getter="_7Bv4sNxgEeyr_asPBQgiSQ" setter="_9L_M4OmsEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:semantic xmi:id="_JoctkemtEeyc2oibQ8qwAA" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasQuantityDimension" base_Element="_FvTRwOmtEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:constructor xmi:id="_7due0OmtEeyc2oibQ8qwAA" base_Operation="_zU6koOmtEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:initializer xmi:id="_9kFHUOmtEeyc2oibQ8qwAA" property="_yh-9wOmrEeyc2oibQ8qwAA" base_Parameter="_2VZ6IOmtEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:initializer xmi:id="_-RQWYOmtEeyc2oibQ8qwAA" property="_z5QSsOmrEeyc2oibQ8qwAA" base_Parameter="_2hZHsOmtEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:constructor xmi:id="_XY5JMOmuEeyc2oibQ8qwAA" base_Operation="_Nfe0EOmuEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:initializerParent xmi:id="_YEK60OmuEeyc2oibQ8qwAA" property="_yh-9wOmrEeyc2oibQ8qwAA" base_Parameter="_PkmtgOmuEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:initializerParent xmi:id="_Y2RGIOmuEeyc2oibQ8qwAA" property="_z5QSsOmrEeyc2oibQ8qwAA" base_Parameter="_QIHqQOmuEeyc2oibQ8qwAA"/>
+  <datafoodconsortium_connector:initializer xmi:id="_ZgMz8OmuEeyc2oibQ8qwAA" property="_FvTRwOmtEeyc2oibQ8qwAA" base_Parameter="_QSGFoOmuEeyc2oibQ8qwAA"/>
+</xmi:XMI>
