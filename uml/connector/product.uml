@@ -2,10 +2,10 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:datafoodconsortium_connector="http://static.datafoodconsortium.org/uml/connector/connector.profile.uml" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://static.datafoodconsortium.org/uml/connector/connector.profile.uml connector.profile.uml#_TqQvceiqEey9aasgGgoaNw">
   <uml:Package xmi:id="_XGqrsNwDEeyr_asPBQgiSQ" name="org.datafoodconsortium.connector.product" URI="https://datafoodconsortium.org/uml/package/product">
     <packagedElement xmi:type="uml:Interface" xmi:id="_pR_I0NxUEeyr_asPBQgiSQ" name="Manufacturable">
-      <elementImport xmi:id="_IxsOMOp9EeyCo6a7S9M9vA" importedElement="_kl6_kOp8EeyCo6a7S9M9vA"/>
-      <elementImport xmi:id="_qHWLUOp9EeyCo6a7S9M9vA" importedElement="_k-mI0Op9EeyCo6a7S9M9vA"/>
-      <elementImport xmi:id="_xSaD0Op9EeyCo6a7S9M9vA" importedElement="_ntmswOp9EeyCo6a7S9M9vA"/>
       <elementImport xmi:id="_SQ0AwOqNEeyCo6a7S9M9vA" importedElement="_JiDg4OqNEeyCo6a7S9M9vA"/>
+      <elementImport xmi:id="_h2zy0AaoEe26esJmMoAMaw" importedElement="_uXk00OmVEeyc2oibQ8qwAA"/>
+      <elementImport xmi:id="_iEWfkAaoEe26esJmMoAMaw" importedElement="_wJl08OmpEeyc2oibQ8qwAA"/>
+      <elementImport xmi:id="_iSKSEAaoEe26esJmMoAMaw" importedElement="_6Epv4OmpEeyc2oibQ8qwAA"/>
       <ownedOperation xmi:id="_EKMr8NxWEeyr_asPBQgiSQ" name="getAlcoholPercentage">
         <ownedParameter xmi:id="_9VvmgNxeEeyr_asPBQgiSQ" name="alcoholPercentage" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -28,19 +28,19 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_aq-xQNxWEeyr_asPBQgiSQ" name="getAllergenCharacteristics">
-        <ownedParameter xmi:id="__EdyINxeEeyr_asPBQgiSQ" name="allergenCharacteristics" type="_kl6_kOp8EeyCo6a7S9M9vA" direction="return">
+        <ownedParameter xmi:id="__EdyINxeEeyr_asPBQgiSQ" name="allergenCharacteristics" type="_uXk00OmVEeyc2oibQ8qwAA" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NiwVwNxhEeyr_asPBQgiSQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N2gYMNxhEeyr_asPBQgiSQ" value="*"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_dp9q4NxWEeyr_asPBQgiSQ" name="getNutrientCharacteristics">
-        <ownedParameter xmi:id="__r6MoNxeEeyr_asPBQgiSQ" name="nutrientCharacteristics" type="_k-mI0Op9EeyCo6a7S9M9vA" direction="return">
+        <ownedParameter xmi:id="__r6MoNxeEeyr_asPBQgiSQ" name="nutrientCharacteristics" type="_wJl08OmpEeyc2oibQ8qwAA" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K6bBkNxhEeyr_asPBQgiSQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LTmWkNxhEeyr_asPBQgiSQ" value="*"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_iNHF8NxWEeyr_asPBQgiSQ" name="getPhysicalCharacteristics">
-        <ownedParameter xmi:id="_PruNYNxhEeyr_asPBQgiSQ" name="physicalCharacteristics" type="_ntmswOp9EeyCo6a7S9M9vA" direction="return">
+        <ownedParameter xmi:id="_PruNYNxhEeyr_asPBQgiSQ" name="physicalCharacteristics" type="_6Epv4OmpEeyc2oibQ8qwAA" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QdqnsNxhEeyr_asPBQgiSQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q3kVcNxhEeyr_asPBQgiSQ" value="*"/>
         </ownedParameter>
@@ -56,14 +56,32 @@
         <ownedParameter xmi:id="_P4E_oNxnEeyr_asPBQgiSQ" name="claim" type="_JiDg4OqNEeyCo6a7S9M9vA"/>
       </ownedOperation>
       <ownedOperation xmi:id="_xPiiUNxhEeyr_asPBQgiSQ" name="addAllergenCharacteristic">
-        <ownedParameter xmi:id="_A-cr0ODvEey8JZcrriCc9A" name="allergenCharacteristic" type="_kl6_kOp8EeyCo6a7S9M9vA"/>
+        <ownedParameter xmi:id="_A-cr0ODvEey8JZcrriCc9A" name="allergenCharacteristic" type="_uXk00OmVEeyc2oibQ8qwAA"/>
       </ownedOperation>
       <ownedOperation xmi:id="_2SKusNxhEeyr_asPBQgiSQ" name="addNutrientCharacteristic">
-        <ownedParameter xmi:id="_BhH7EODvEey8JZcrriCc9A" name="nutrientCharacteristic" type="_k-mI0Op9EeyCo6a7S9M9vA"/>
+        <ownedParameter xmi:id="_BhH7EODvEey8JZcrriCc9A" name="nutrientCharacteristic" type="_wJl08OmpEeyc2oibQ8qwAA"/>
       </ownedOperation>
       <ownedOperation xmi:id="_9erYsNxhEeyr_asPBQgiSQ" name="addPhysicalCharacteristic">
-        <ownedParameter xmi:id="_B-nvYODvEey8JZcrriCc9A" name="physicalCharacteristic" type="_ntmswOp9EeyCo6a7S9M9vA"/>
+        <ownedParameter xmi:id="_B-nvYODvEey8JZcrriCc9A" name="physicalCharacteristic" type="_6Epv4OmpEeyc2oibQ8qwAA"/>
       </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_OtRegAaaEe26esJmMoAMaw" name="IDefinedProduct">
+      <elementImport xmi:id="_E7pVoOD5Eey8JZcrriCc9A" importedElement="_pR_I0NxUEeyr_asPBQgiSQ"/>
+      <elementImport xmi:id="_j2s4kOD5Eey8JZcrriCc9A">
+        <importedElement xmi:type="uml:Interface" href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
+      </elementImport>
+      <elementImport xmi:id="_lPLucOD5Eey8JZcrriCc9A">
+        <importedElement xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
+      </elementImport>
+      <elementImport xmi:id="_uuha8PYnEeyhHaYS44zQ9Q" importedElement="_QZMbQPYnEeyhHaYS44zQ9Q"/>
+      <generalization xmi:id="_irv_IAaaEe26esJmMoAMaw" general="_pR_I0NxUEeyr_asPBQgiSQ"/>
+      <generalization xmi:id="_i7r4kAaaEe26esJmMoAMaw">
+        <general xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
+      </generalization>
+      <generalization xmi:id="_jY6AEAaaEe26esJmMoAMaw">
+        <general xmi:type="uml:Interface" href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
+      </generalization>
+      <generalization xmi:id="_jkgMEAaaEe26esJmMoAMaw" general="_QZMbQPYnEeyhHaYS44zQ9Q"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_6u8dANxWEeyr_asPBQgiSQ" name="Certifiable">
       <ownedOperation xmi:id="_N1j-ANxWEeyr_asPBQgiSQ" name="getCertifications">
@@ -75,21 +93,14 @@
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_ZAMZINwDEeyr_asPBQgiSQ" name="DefinedProduct" isAbstract="true">
-      <elementImport xmi:id="_E7pVoOD5Eey8JZcrriCc9A" importedElement="_pR_I0NxUEeyr_asPBQgiSQ"/>
-      <elementImport xmi:id="_j2s4kOD5Eey8JZcrriCc9A">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <elementImport xmi:id="_lPLucOD5Eey8JZcrriCc9A">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <elementImport xmi:id="_CFZ2YOD7Eey8JZcrriCc9A" importedElement="_kl6_kOp8EeyCo6a7S9M9vA"/>
-      <elementImport xmi:id="_4GUnoOp9EeyCo6a7S9M9vA" importedElement="_k-mI0Op9EeyCo6a7S9M9vA"/>
-      <elementImport xmi:id="_6ezh8Op9EeyCo6a7S9M9vA" importedElement="_ntmswOp9EeyCo6a7S9M9vA"/>
+      <elementImport xmi:id="_CFZ2YOD7Eey8JZcrriCc9A" importedElement="_uXk00OmVEeyc2oibQ8qwAA"/>
+      <elementImport xmi:id="_4GUnoOp9EeyCo6a7S9M9vA" importedElement="_wJl08OmpEeyc2oibQ8qwAA"/>
+      <elementImport xmi:id="_6ezh8Op9EeyCo6a7S9M9vA" importedElement="_6Epv4OmpEeyc2oibQ8qwAA"/>
       <elementImport xmi:id="_Uuj1kOqNEeyCo6a7S9M9vA" importedElement="_JiDg4OqNEeyCo6a7S9M9vA"/>
       <elementImport xmi:id="_lscy8PYmEeyhHaYS44zQ9Q">
-        <importedElement xmi:type="uml:Interface" href="sale.uml#_dqLEcOZVEeybgd1DwlK4YQ"/>
+        <importedElement xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
       </elementImport>
-      <elementImport xmi:id="_uuha8PYnEeyhHaYS44zQ9Q" importedElement="_QZMbQPYnEeyhHaYS44zQ9Q"/>
+      <elementImport xmi:id="_tq2xAAaaEe26esJmMoAMaw" importedElement="_OtRegAaaEe26esJmMoAMaw"/>
       <ownedAttribute xmi:id="_T97pEOD5Eey8JZcrriCc9A" name="name">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
@@ -109,15 +120,15 @@
       <ownedAttribute xmi:id="_TKn80OD5Eey8JZcrriCc9A" name="usageOrStorageConditions">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_TPvGUOD5Eey8JZcrriCc9A" name="allergenCharacteristics" type="_kl6_kOp8EeyCo6a7S9M9vA">
+      <ownedAttribute xmi:id="_TPvGUOD5Eey8JZcrriCc9A" name="allergenCharacteristics" type="_uXk00OmVEeyc2oibQ8qwAA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_--K1IOD5Eey8JZcrriCc9A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__fq_sOD5Eey8JZcrriCc9A" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_TURoEOD5Eey8JZcrriCc9A" name="nutrientCharacteristics" type="_k-mI0Op9EeyCo6a7S9M9vA">
+      <ownedAttribute xmi:id="_TURoEOD5Eey8JZcrriCc9A" name="nutrientCharacteristics" type="_wJl08OmpEeyc2oibQ8qwAA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-hm08OD5Eey8JZcrriCc9A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__3zy4OD5Eey8JZcrriCc9A" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_Twx94OD5Eey8JZcrriCc9A" name="physicalCharacteristics" type="_ntmswOp9EeyCo6a7S9M9vA">
+      <ownedAttribute xmi:id="_Twx94OD5Eey8JZcrriCc9A" name="physicalCharacteristics" type="_6Epv4OmpEeyc2oibQ8qwAA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-HLiwOD5Eey8JZcrriCc9A"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AWbBgOD6Eey8JZcrriCc9A" value="*"/>
       </ownedAttribute>
@@ -125,20 +136,11 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Yh3A8PYmEeyhHaYS44zQ9Q" name="catalogItems">
-        <type xmi:type="uml:Interface" href="sale.uml#_dqLEcOZVEeybgd1DwlK4YQ"/>
+        <type xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jQtwUPYmEeyhHaYS44zQ9Q"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i6S0YPYmEeyhHaYS44zQ9Q" value="*"/>
       </ownedAttribute>
-      <interfaceRealization xmi:id="_Jz6sIOD5Eey8JZcrriCc9A" client="_ZAMZINwDEeyr_asPBQgiSQ" supplier="_pR_I0NxUEeyr_asPBQgiSQ" contract="_pR_I0NxUEeyr_asPBQgiSQ"/>
-      <interfaceRealization xmi:id="_nX018OD5Eey8JZcrriCc9A" client="_ZAMZINwDEeyr_asPBQgiSQ">
-        <supplier xmi:type="uml:Interface" href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
-        <contract href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
-      </interfaceRealization>
-      <interfaceRealization xmi:id="_otu48OD5Eey8JZcrriCc9A" client="_ZAMZINwDEeyr_asPBQgiSQ">
-        <supplier xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
-        <contract href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
-      </interfaceRealization>
-      <interfaceRealization xmi:id="_w2raQPYnEeyhHaYS44zQ9Q" client="_ZAMZINwDEeyr_asPBQgiSQ" supplier="_QZMbQPYnEeyhHaYS44zQ9Q" contract="_QZMbQPYnEeyhHaYS44zQ9Q"/>
+      <interfaceRealization xmi:id="_xh5UAAaaEe26esJmMoAMaw" client="_ZAMZINwDEeyr_asPBQgiSQ" supplier="_OtRegAaaEe26esJmMoAMaw" contract="_OtRegAaaEe26esJmMoAMaw"/>
       <ownedOperation xmi:id="_EjUDQOD7Eey8JZcrriCc9A" name="DefinedProduct">
         <ownedParameter xmi:id="_B9TuQOtXEey6f7rgFRym3Q" name="name">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -164,71 +166,41 @@
       <elementImport xmi:id="_bgj-oOmtEeyc2oibQ8qwAA">
         <importedElement xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
       </elementImport>
-      <elementImport xmi:id="_s8C9AOp8EeyCo6a7S9M9vA" importedElement="_kl6_kOp8EeyCo6a7S9M9vA"/>
       <generalization xmi:id="_fBWk0OmtEeyc2oibQ8qwAA">
         <general xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
       </generalization>
-      <interfaceRealization xmi:id="_vrV00Op8EeyCo6a7S9M9vA" client="_uXk00OmVEeyc2oibQ8qwAA" supplier="_kl6_kOp8EeyCo6a7S9M9vA" contract="_kl6_kOp8EeyCo6a7S9M9vA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_wJl08OmpEeyc2oibQ8qwAA" name="NutrientCharacteristic">
       <elementImport xmi:id="_gPOtMOmtEeyc2oibQ8qwAA">
         <importedElement xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
       </elementImport>
-      <elementImport xmi:id="_wBnqAOqAEeyCo6a7S9M9vA" importedElement="_k-mI0Op9EeyCo6a7S9M9vA"/>
       <generalization xmi:id="_gPOtMemtEeyc2oibQ8qwAA">
         <general xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
       </generalization>
-      <interfaceRealization xmi:id="_yZk_4OqAEeyCo6a7S9M9vA" client="_wJl08OmpEeyc2oibQ8qwAA" supplier="_k-mI0Op9EeyCo6a7S9M9vA" contract="_k-mI0Op9EeyCo6a7S9M9vA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_6Epv4OmpEeyc2oibQ8qwAA" name="PhysicalCharacteristic">
       <elementImport xmi:id="_glQAgOmtEeyc2oibQ8qwAA">
         <importedElement xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
       </elementImport>
-      <elementImport xmi:id="_1nTgIOqAEeyCo6a7S9M9vA" importedElement="_ntmswOp9EeyCo6a7S9M9vA"/>
       <generalization xmi:id="_glQnkOmtEeyc2oibQ8qwAA">
         <general xmi:type="uml:Class" href="common.uml#_vc4_oOmsEeyc2oibQ8qwAA"/>
-      </generalization>
-      <interfaceRealization xmi:id="_3wZ6oOqAEeyCo6a7S9M9vA" client="_6Epv4OmpEeyc2oibQ8qwAA" supplier="_ntmswOp9EeyCo6a7S9M9vA" contract="_ntmswOp9EeyCo6a7S9M9vA"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_kl6_kOp8EeyCo6a7S9M9vA" name="MeasurableAllergen">
-      <elementImport xmi:id="_nxBpoOp8EeyCo6a7S9M9vA">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <generalization xmi:id="_qh4AoOp8EeyCo6a7S9M9vA">
-        <general xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
-      </generalization>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_k-mI0Op9EeyCo6a7S9M9vA" name="MeasurableNutrient">
-      <elementImport xmi:id="_k-mI0ep9EeyCo6a7S9M9vA">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <generalization xmi:id="_k-mI0up9EeyCo6a7S9M9vA">
-        <general xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
-      </generalization>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Interface" xmi:id="_ntmswOp9EeyCo6a7S9M9vA" name="MeasurablePhysical">
-      <elementImport xmi:id="_ntmswep9EeyCo6a7S9M9vA">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <generalization xmi:id="_ntmswup9EeyCo6a7S9M9vA">
-        <general xmi:type="uml:Interface" href="common.uml#_t4oGUNxgEeyr_asPBQgiSQ"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_JiDg4OqNEeyCo6a7S9M9vA" name="Claimable"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_QZMbQPYnEeyhHaYS44zQ9Q" name="Proposable">
       <elementImport xmi:id="_i3zEkPYnEeyhHaYS44zQ9Q">
-        <importedElement xmi:type="uml:Interface" href="sale.uml#_dqLEcOZVEeybgd1DwlK4YQ"/>
+        <importedElement xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
       </elementImport>
       <ownedOperation xmi:id="_ScTigPYnEeyhHaYS44zQ9Q" name="getCatalogItems">
         <ownedParameter xmi:id="_UEJDAPYnEeyhHaYS44zQ9Q" name="catalogItems" direction="return">
-          <type xmi:type="uml:Interface" href="sale.uml#_dqLEcOZVEeybgd1DwlK4YQ"/>
+          <type xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xy_TUPYnEeyhHaYS44zQ9Q"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XaqS4PYnEeyhHaYS44zQ9Q" value="*"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_aCB9wPYnEeyhHaYS44zQ9Q" name="addCatalogItem">
         <ownedParameter xmi:id="_aCB9wfYnEeyhHaYS44zQ9Q" name="catalogItem">
-          <type xmi:type="uml:Interface" href="sale.uml#_dqLEcOZVEeybgd1DwlK4YQ"/>
+          <type xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aCB9wvYnEeyhHaYS44zQ9Q" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aCB9w_YnEeyhHaYS44zQ9Q" value="1"/>
         </ownedParameter>

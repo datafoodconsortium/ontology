@@ -46,7 +46,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_t4oGUNxgEeyr_asPBQgiSQ" name="Measurable">
       <elementImport xmi:id="_FaplMNxsEeyr_asPBQgiSQ" importedElement="_S8hGMNxVEeyr_asPBQgiSQ"/>
-      <generalization xmi:id="_4djdoNxgEeyr_asPBQgiSQ" general="_S8hGMNxVEeyr_asPBQgiSQ"/>
       <ownedOperation xmi:id="_7Bv4sNxgEeyr_asPBQgiSQ" name="getQuantityDimension">
         <ownedParameter xmi:id="_1UK7wNxpEeyr_asPBQgiSQ" name="quantityDimension" direction="return">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>

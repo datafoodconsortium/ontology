@@ -5,23 +5,23 @@
       <ownedComment xmi:id="_uwdBUOdEEeyey8O34-FiDg">
         <body>This interface should be implemented by a marketable entity (CatalogItem).</body>
       </ownedComment>
-      <elementImport xmi:id="_8_p0sPOqEey60OpxS9_JRQ" importedElement="_xohz0OZWEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_8_p0sPOqEey60OpxS9_JRQ" importedElement="_G94CgAadEe26esJmMoAMaw"/>
       <elementImport xmi:id="_w1m3oPSEEeyWTI9HNBbtRg">
-        <importedElement xmi:type="uml:Interface" href="product.uml#_pR_I0NxUEeyr_asPBQgiSQ"/>
+        <importedElement xmi:type="uml:Interface" href="product.uml#_OtRegAaaEe26esJmMoAMaw"/>
       </elementImport>
       <ownedOperation xmi:id="_3fBikOZVEeybgd1DwlK4YQ" name="getOfferers">
-        <ownedParameter xmi:id="_5V9PAOZVEeybgd1DwlK4YQ" name="offerers" type="_xohz0OZWEeybgd1DwlK4YQ" direction="return">
+        <ownedParameter xmi:id="_5V9PAOZVEeybgd1DwlK4YQ" name="offerers" type="_G94CgAadEe26esJmMoAMaw" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ckRwOZVEeybgd1DwlK4YQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7Ih_4OZVEeybgd1DwlK4YQ" value="*"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_DSF2gPSEEeyWTI9HNBbtRg" name="getOfferedProduct">
         <ownedParameter xmi:id="_Ia4VQPSEEeyWTI9HNBbtRg" direction="return">
-          <type xmi:type="uml:Interface" href="product.uml#_pR_I0NxUEeyr_asPBQgiSQ"/>
+          <type xmi:type="uml:Interface" href="product.uml#_OtRegAaaEe26esJmMoAMaw"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_Gr2-sPU0EeykiLqdyI8FQA" name="addOffer">
-        <ownedParameter xmi:id="_KyqcAPU0EeykiLqdyI8FQA" name="offer" type="_xohz0OZWEeybgd1DwlK4YQ"/>
+        <ownedParameter xmi:id="_KyqcAPU0EeykiLqdyI8FQA" name="offer" type="_G94CgAadEe26esJmMoAMaw"/>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_rPH3MOZVEeybgd1DwlK4YQ" name="Catalogable">
@@ -40,17 +40,17 @@
         <body>This interface should be implemented by an entity that can be offered on a market (Offer). </body>
       </ownedComment>
       <elementImport xmi:id="_3HYZwPOqEey60OpxS9_JRQ">
-        <importedElement xmi:type="uml:Interface" href="agent.uml#__TWjEOtOEey6f7rgFRym3Q"/>
+        <importedElement xmi:type="uml:Interface" href="agent.uml#_USLgQAaUEe26esJmMoAMaw"/>
       </elementImport>
-      <elementImport xmi:id="_5rYnkPOqEey60OpxS9_JRQ" importedElement="_dqLEcOZVEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_5rYnkPOqEey60OpxS9_JRQ" importedElement="_pcawwAaREe26esJmMoAMaw"/>
       <ownedOperation xmi:id="_Oz-PwOZWEeybgd1DwlK4YQ" name="getOfferedItem">
-        <ownedParameter xmi:id="_NK6KwOZXEeybgd1DwlK4YQ" name="offeredItem" type="_dqLEcOZVEeybgd1DwlK4YQ" direction="return">
+        <ownedParameter xmi:id="_NK6KwOZXEeybgd1DwlK4YQ" name="offeredItem" type="_pcawwAaREe26esJmMoAMaw" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OS9_AOZXEeybgd1DwlK4YQ"/>
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_ZoKDsOZZEeybgd1DwlK4YQ" name="getCustomerCategory">
         <ownedParameter xmi:id="_zVQL8POqEey60OpxS9_JRQ" name="customerCategory" direction="return">
-          <type xmi:type="uml:Interface" href="agent.uml#__TWjEOtOEey6f7rgFRym3Q"/>
+          <type xmi:type="uml:Interface" href="agent.uml#_USLgQAaUEe26esJmMoAMaw"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
@@ -113,46 +113,26 @@
         <ownedParameter xmi:id="_SIdMYOZjEeybgd1DwlK4YQ" name="buyableOffer" type="_xohz0OZWEeybgd1DwlK4YQ" direction="return"/>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_yoOnMOZfEeybgd1DwlK4YQ" name="CatalogItem">
-      <elementImport xmi:id="_VAr2sPOpEey60OpxS9_JRQ" importedElement="_dqLEcOZVEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_VhEm8POpEey60OpxS9_JRQ" importedElement="_NLMMsOZZEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_ZDKi8PPQEey60OpxS9_JRQ" importedElement="_xohz0OZWEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_jOceYPSEEeyWTI9HNBbtRg">
-        <importedElement xmi:type="uml:Interface" href="product.uml#_pR_I0NxUEeyr_asPBQgiSQ"/>
-      </elementImport>
-      <ownedAttribute xmi:id="_i4M-EPSDEeyWTI9HNBbtRg" name="product">
-        <type xmi:type="uml:Interface" href="product.uml#_pR_I0NxUEeyr_asPBQgiSQ"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_luYhAPSDEeyWTI9HNBbtRg" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mIdN4PSDEeyWTI9HNBbtRg" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_FcvwEPObEey60OpxS9_JRQ" name="sku">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_ElYqQPObEey60OpxS9_JRQ" name="stockLimitation">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_RqFjwPOoEey60OpxS9_JRQ" name="offers" type="_xohz0OZWEeybgd1DwlK4YQ">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XZ1U0POoEey60OpxS9_JRQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XLDR8POoEey60OpxS9_JRQ" value="*"/>
-      </ownedAttribute>
-      <interfaceRealization xmi:id="_XKrQcOZgEeybgd1DwlK4YQ" client="_yoOnMOZfEeybgd1DwlK4YQ" supplier="_dqLEcOZVEeybgd1DwlK4YQ" contract="_dqLEcOZVEeybgd1DwlK4YQ"/>
-      <interfaceRealization xmi:id="_mh6gMOZgEeybgd1DwlK4YQ" client="_yoOnMOZfEeybgd1DwlK4YQ" supplier="_NLMMsOZZEeybgd1DwlK4YQ" contract="_NLMMsOZZEeybgd1DwlK4YQ"/>
-      <ownedOperation xmi:id="_gARUcPPPEey60OpxS9_JRQ" name="CatalogItem">
-        <ownedParameter xmi:id="_id2H4PSEEeyWTI9HNBbtRg" name="product">
-          <type xmi:type="uml:Interface" href="product.uml#_pR_I0NxUEeyr_asPBQgiSQ"/>
-        </ownedParameter>
-      </ownedOperation>
-      <ownedOperation xmi:id="_KIcTQPPUEey60OpxS9_JRQ" name="getSku">
-        <ownedParameter xmi:id="_L8YWEPPUEey60OpxS9_JRQ" name="sku" direction="return">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        </ownedParameter>
-      </ownedOperation>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_pcawwAaREe26esJmMoAMaw" name="ICatalogItem">
+      <elementImport xmi:id="__rKD0AaREe26esJmMoAMaw" importedElement="_dqLEcOZVEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_AEDE8AaSEe26esJmMoAMaw" importedElement="_NLMMsOZZEeybgd1DwlK4YQ"/>
+      <generalization xmi:id="_wiYt4AaREe26esJmMoAMaw" general="_dqLEcOZVEeybgd1DwlK4YQ"/>
+      <generalization xmi:id="_13S9EAaREe26esJmMoAMaw" general="_NLMMsOZZEeybgd1DwlK4YQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_G94CgAadEe26esJmMoAMaw" name="IOffer">
+      <elementImport xmi:id="_oBp7gPPQEey60OpxS9_JRQ" importedElement="_AucwcOZfEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_t46p0PPQEey60OpxS9_JRQ" importedElement="_xohz0OZWEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_va6oEPPQEey60OpxS9_JRQ" importedElement="_NLMMsOZZEeybgd1DwlK4YQ"/>
+      <generalization xmi:id="_SPW90AadEe26esJmMoAMaw" general="_AucwcOZfEeybgd1DwlK4YQ"/>
+      <generalization xmi:id="_ScEkIAadEe26esJmMoAMaw" general="_xohz0OZWEeybgd1DwlK4YQ"/>
+      <generalization xmi:id="_SnDsIAadEe26esJmMoAMaw" general="_NLMMsOZZEeybgd1DwlK4YQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Kg2aAAadEe26esJmMoAMaw" name="ISaleSession"/>
     <packagedElement xmi:type="uml:Interface" xmi:id="_jh_30OtVEey6f7rgFRym3Q" name="Supplier">
       <elementImport xmi:id="_ajsA4PPYEey60OpxS9_JRQ">
         <importedElement xmi:type="uml:Class" href="product.uml#_tuO3AOD8Eey8JZcrriCc9A"/>
       </elementImport>
-      <elementImport xmi:id="_YIllgPPaEey60OpxS9_JRQ" importedElement="_dqLEcOZVEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_1TqPEAaSEe26esJmMoAMaw" importedElement="_pcawwAaREe26esJmMoAMaw"/>
       <ownedOperation xmi:id="_lGGu4OtVEey6f7rgFRym3Q" name="getSuppliedProducts">
         <ownedParameter xmi:id="_eGjqsPPYEey60OpxS9_JRQ" name="suppliedProducts" direction="return">
           <type xmi:type="uml:Class" href="product.uml#_tuO3AOD8Eey8JZcrriCc9A"/>
@@ -161,7 +141,7 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="__mBEEPPYEey60OpxS9_JRQ" name="getCatalogItems">
-        <ownedParameter xmi:id="_GhKRQPPZEey60OpxS9_JRQ" name="catalogItems" type="_dqLEcOZVEeybgd1DwlK4YQ" direction="return">
+        <ownedParameter xmi:id="_GhKRQPPZEey60OpxS9_JRQ" name="catalogItems" type="_pcawwAaREe26esJmMoAMaw" direction="return">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KZlUUPPZEey60OpxS9_JRQ"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J9OvgPPZEey60OpxS9_JRQ" value="*"/>
         </ownedParameter>
@@ -172,50 +152,67 @@
         </ownedParameter>
       </ownedOperation>
       <ownedOperation xmi:id="_Lx3V4PPZEey60OpxS9_JRQ" name="addCatalogItem">
-        <ownedParameter xmi:id="_M9mJMPPZEey60OpxS9_JRQ" name="catalogItem" type="_dqLEcOZVEeybgd1DwlK4YQ"/>
+        <ownedParameter xmi:id="_M9mJMPPZEey60OpxS9_JRQ" name="catalogItem" type="_pcawwAaREe26esJmMoAMaw"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yoOnMOZfEeybgd1DwlK4YQ" name="CatalogItem">
+      <elementImport xmi:id="_VAr2sPOpEey60OpxS9_JRQ" importedElement="_G94CgAadEe26esJmMoAMaw"/>
+      <elementImport xmi:id="_ZDKi8PPQEey60OpxS9_JRQ">
+        <importedElement xmi:type="uml:Interface" href="product.uml#_OtRegAaaEe26esJmMoAMaw"/>
+      </elementImport>
+      <elementImport xmi:id="_MGMoMAaSEe26esJmMoAMaw" importedElement="_pcawwAaREe26esJmMoAMaw"/>
+      <ownedAttribute xmi:id="_i4M-EPSDEeyWTI9HNBbtRg" name="product">
+        <type xmi:type="uml:Interface" href="product.uml#_OtRegAaaEe26esJmMoAMaw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_luYhAPSDEeyWTI9HNBbtRg" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mIdN4PSDEeyWTI9HNBbtRg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_FcvwEPObEey60OpxS9_JRQ" name="sku">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ElYqQPObEey60OpxS9_JRQ" name="stockLimitation">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RqFjwPOoEey60OpxS9_JRQ" name="offers" type="_G94CgAadEe26esJmMoAMaw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XZ1U0POoEey60OpxS9_JRQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XLDR8POoEey60OpxS9_JRQ" value="*"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_XKrQcOZgEeybgd1DwlK4YQ" client="_yoOnMOZfEeybgd1DwlK4YQ" supplier="_dqLEcOZVEeybgd1DwlK4YQ _pcawwAaREe26esJmMoAMaw" contract="_pcawwAaREe26esJmMoAMaw"/>
+      <ownedOperation xmi:id="_gARUcPPPEey60OpxS9_JRQ" name="CatalogItem">
+        <ownedParameter xmi:id="_id2H4PSEEeyWTI9HNBbtRg" name="product">
+          <type xmi:type="uml:Interface" href="product.uml#_OtRegAaaEe26esJmMoAMaw"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_KIcTQPPUEey60OpxS9_JRQ" name="getSku">
+        <ownedParameter xmi:id="_L8YWEPPUEey60OpxS9_JRQ" name="sku" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
       </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zEqEgOZfEeybgd1DwlK4YQ" name="Offer">
-      <elementImport xmi:id="_oBp7gPPQEey60OpxS9_JRQ" importedElement="_AucwcOZfEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_t46p0PPQEey60OpxS9_JRQ" importedElement="_xohz0OZWEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_va6oEPPQEey60OpxS9_JRQ" importedElement="_NLMMsOZZEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_xVrroPPQEey60OpxS9_JRQ" importedElement="_dqLEcOZVEeybgd1DwlK4YQ"/>
+      <elementImport xmi:id="_xVrroPPQEey60OpxS9_JRQ" importedElement="_pcawwAaREe26esJmMoAMaw"/>
       <elementImport xmi:id="_u28i4PPREey60OpxS9_JRQ">
-        <importedElement xmi:type="uml:Interface" href="agent.uml#__TWjEOtOEey6f7rgFRym3Q"/>
+        <importedElement xmi:type="uml:Interface" href="agent.uml#_USLgQAaUEe26esJmMoAMaw"/>
       </elementImport>
+      <elementImport xmi:id="_a-79EAadEe26esJmMoAMaw" importedElement="_G94CgAadEe26esJmMoAMaw"/>
       <ownedAttribute xmi:id="_j0j4gPOaEey60OpxS9_JRQ" name="price">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_o8eNgPOaEey60OpxS9_JRQ" name="stockLimitation">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_6WOw0POpEey60OpxS9_JRQ" name="offeredItem" type="_dqLEcOZVEeybgd1DwlK4YQ">
+      <ownedAttribute xmi:id="_6WOw0POpEey60OpxS9_JRQ" name="offeredItem" type="_pcawwAaREe26esJmMoAMaw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BENEsPOqEey60OpxS9_JRQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_gLieYPPREey60OpxS9_JRQ" name="offeredTo">
-        <type xmi:type="uml:Interface" href="agent.uml#__TWjEOtOEey6f7rgFRym3Q"/>
+        <type xmi:type="uml:Interface" href="agent.uml#_USLgQAaUEe26esJmMoAMaw"/>
       </ownedAttribute>
-      <interfaceRealization xmi:id="_dE4lEOZgEeybgd1DwlK4YQ" client="_zEqEgOZfEeybgd1DwlK4YQ" supplier="_dqLEcOZVEeybgd1DwlK4YQ _xohz0OZWEeybgd1DwlK4YQ" contract="_xohz0OZWEeybgd1DwlK4YQ"/>
-      <interfaceRealization xmi:id="_jgVlkOZgEeybgd1DwlK4YQ" client="_zEqEgOZfEeybgd1DwlK4YQ" supplier="_AucwcOZfEeybgd1DwlK4YQ" contract="_AucwcOZfEeybgd1DwlK4YQ"/>
-      <interfaceRealization xmi:id="_n-AqwOZgEeybgd1DwlK4YQ" client="_zEqEgOZfEeybgd1DwlK4YQ" supplier="_NLMMsOZZEeybgd1DwlK4YQ" contract="_NLMMsOZZEeybgd1DwlK4YQ"/>
+      <interfaceRealization xmi:id="_dE4lEOZgEeybgd1DwlK4YQ" client="_zEqEgOZfEeybgd1DwlK4YQ" supplier="_dqLEcOZVEeybgd1DwlK4YQ _xohz0OZWEeybgd1DwlK4YQ _G94CgAadEe26esJmMoAMaw" contract="_G94CgAadEe26esJmMoAMaw"/>
       <ownedOperation xmi:id="_BEmRAPPQEey60OpxS9_JRQ" name="Offer">
-        <ownedParameter xmi:id="_CUUMcPPQEey60OpxS9_JRQ" name="offeredItem" type="_dqLEcOZVEeybgd1DwlK4YQ"/>
+        <ownedParameter xmi:id="_CUUMcPPQEey60OpxS9_JRQ" name="offeredItem" type="_pcawwAaREe26esJmMoAMaw"/>
         <ownedParameter xmi:id="_mo8fUPPUEey60OpxS9_JRQ" name="offeredTo">
-          <type xmi:type="uml:Interface" href="agent.uml#__TWjEOtOEey6f7rgFRym3Q"/>
+          <type xmi:type="uml:Interface" href="agent.uml#_USLgQAaUEe26esJmMoAMaw"/>
         </ownedParameter>
       </ownedOperation>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_zT1wAOZfEeybgd1DwlK4YQ" name="SaleSession">
-      <elementImport xmi:id="_R1AuoPPaEey60OpxS9_JRQ" importedElement="_G0x4sOZjEeybgd1DwlK4YQ"/>
-      <elementImport xmi:id="_TgSksPPaEey60OpxS9_JRQ">
-        <importedElement xmi:type="uml:Interface" href="common.uml#_JqlP4OZdEeybgd1DwlK4YQ"/>
-      </elementImport>
-      <elementImport xmi:id="_kE938PPaEey60OpxS9_JRQ" importedElement="_xohz0OZWEeybgd1DwlK4YQ"/>
-      <interfaceRealization xmi:id="_snIyAOZgEeybgd1DwlK4YQ" client="_zT1wAOZfEeybgd1DwlK4YQ">
-        <supplier xmi:type="uml:Interface" href="common.uml#_JqlP4OZdEeybgd1DwlK4YQ"/>
-        <contract href="common.uml#_JqlP4OZdEeybgd1DwlK4YQ"/>
-      </interfaceRealization>
-      <interfaceRealization xmi:id="_KOltIOZjEeybgd1DwlK4YQ" client="_zT1wAOZfEeybgd1DwlK4YQ" supplier="_G0x4sOZjEeybgd1DwlK4YQ" contract="_G0x4sOZjEeybgd1DwlK4YQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_zp5fkOZfEeybgd1DwlK4YQ" name="Order"/>
     <packagedElement xmi:type="uml:Class" xmi:id="_0kv-QOZfEeybgd1DwlK4YQ" name="OrderLine"/>
