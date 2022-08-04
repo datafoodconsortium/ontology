@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0"?>
 <rdf:RDF xmlns="http://static.datafoodconsortium.org/data/units.rdf#"
-		 xml:base="http://static.datafoodconsortium.org/data/units.rdf#"
-	     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:owl="http://www.w3.org/2002/07/owl#"
-         xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-		 xmlns:unit="http://qudt.org/vocab/unit#"
-		 xmlns:dfc-u="http://static.datafoodconsortium.org/data/units.rdf#">
-
+     xml:base="http://static.datafoodconsortium.org/data/units.rdf"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:unit="http://qudt.org/vocab/unit#"
+     xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
+     xmlns:dfc-u="http://static.datafoodconsortium.org/data/units.rdf#"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology/>
+    
 
 
     <!-- 
@@ -18,10 +26,30 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
 
-    <!-- http://static.datafoodconsortium.org/ontologies/dfc_ProductGlossary.owl#notation -->
 
-    <AnnotationProperty rdf:about="dfc-p:notation"/>
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#narrower"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -36,9 +64,15 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#Unit -->
+    <!-- skos:Concept -->
 
-    <Class rdf:about="dfc-p:Unit"/>
+    <owl:Class rdf:about="skos:Concept"/>
+    
+
+
+    <!-- skos:ConceptScheme -->
+
+    <owl:Class rdf:about="skos:ConceptScheme"/>
     
 
 
@@ -52,192 +86,367 @@
 
     
 
-  <rdf:Description rdf:about="dfc-u:AustralianDollar">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:AUD"/>
-    <dfc-p:notation>$AU</dfc-p:notation>
-    <rdfs:label xml:lang="en">australian dollar</rdfs:label>
-    <rdfs:label xml:lang="fr">dollar australien</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:CanadianDollar">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:CAD"/>
-    <dfc-p:notation>$CA</dfc-p:notation>
-    <rdfs:label xml:lang="en">canadian dollar</rdfs:label>
-    <rdfs:label xml:lang="fr">dollar canadien</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-p:Unit -->
 
-  <rdf:Description rdf:about="dfc-u:Centilitre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:CentiL"/>
-    <dfc-p:notation>cl</dfc-p:notation>
-    <rdfs:label xml:lang="en">centiliter</rdfs:label>
-    <rdfs:label xml:lang="fr">centilitre</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-p:Unit">
+        <rdf:type rdf:resource="skos:ConceptScheme"/>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Centimetre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:CentiM"/>
-    <dfc-p:notation>cm</dfc-p:notation>
-    <rdfs:label xml:lang="en">centimetre</rdfs:label>
-    <rdfs:label xml:lang="fr">centimètre</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Crate">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <dfc-p:notation>crate</dfc-p:notation>
-    <rdfs:label xml:lang="fr">cagette</rdfs:label>
-    <rdfs:label xml:lang="en">crate</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:AustralianDollar -->
 
-  <rdf:Description rdf:about="dfc-u:Decilitre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:DeciL"/>
-    <dfc-p:notation>dl</dfc-p:notation>
-    <rdfs:label xml:lang="en">decilitre</rdfs:label>
-    <rdfs:label xml:lang="fr">decilitre</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:AustralianDollar">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:AUD"/>
+        <skos:broader rdf:resource="dfc-u:CurrencyUnit"/>
+        <skos:notation>$AU</skos:notation>
+        <skos:prefLabel xml:lang="en">australian dollar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">dollar australien</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Decimètre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:DeciM"/>
-    <dfc-p:notation>dm</dfc-p:notation>
-    <rdfs:label xml:lang="en">decimeter</rdfs:label>
-    <rdfs:label xml:lang="fr">decimètre</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Euro">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:Euro"/>
-    <dfc-p:notation>€</dfc-p:notation>
-    <rdfs:label xml:lang="en">euro</rdfs:label>
-    <rdfs:label xml:lang="fr">euro</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:CanadianDollar -->
 
-  <rdf:Description rdf:about="dfc-u:Gallon">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:GAL_UK"/>
-    <dfc-p:notation>gal</dfc-p:notation>
-    <rdfs:label xml:lang="fr">gallon (GB)</rdfs:label>
-    <rdfs:label xml:lang="en">gallon (UK)</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:CanadianDollar">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:CAD"/>
+        <skos:broader rdf:resource="dfc-u:CurrencyUnit"/>
+        <skos:notation>$CA</skos:notation>
+        <skos:prefLabel xml:lang="en">canadian dollar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">dollar canadien</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Gram">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:GM"/>
-    <dfc-p:notation>g</dfc-p:notation>
-    <rdfs:label xml:lang="en">gram</rdfs:label>
-    <rdfs:label xml:lang="fr">gramme</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Inch">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:IN"/>
-    <dfc-p:notation>in</dfc-p:notation>
-    <rdfs:label xml:lang="en">inch</rdfs:label>
-    <rdfs:label xml:lang="fr">pouce</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:Centilitre -->
 
-  <rdf:Description rdf:about="dfc-u:Kilogram">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:KiloGM"/>
-    <dfc-p:notation>kg</dfc-p:notation>
-    <rdfs:label xml:lang="en">kilogram</rdfs:label>
-    <rdfs:label xml:lang="fr">kilogramme</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:Centilitre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:CentiL"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>cl</skos:notation>
+        <skos:prefLabel xml:lang="en">centilitre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">centilitre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Kilometre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:KiloM"/>
-    <dfc-p:notation>km</dfc-p:notation>
-    <rdfs:label xml:lang="en">kilometer</rdfs:label>
-    <rdfs:label xml:lang="fr">kilomètre</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Litre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:L"/>
-    <dfc-p:notation>l</dfc-p:notation>
-    <rdfs:label xml:lang="en">litre</rdfs:label>
-    <rdfs:label xml:lang="fr">litre</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:Centimetre -->
 
-  <rdf:Description rdf:about="dfc-u:Metre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:M"/>
-    <dfc-p:notation>m</dfc-p:notation>
-    <rdfs:label xml:lang="en">metre</rdfs:label>
-    <rdfs:label xml:lang="fr">mètre</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:Centimetre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:CentiM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>cm</skos:notation>
+        <skos:prefLabel xml:lang="en">centimetre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">centimètre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Milligram">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:MilliGM"/>
-    <dfc-p:notation>g</dfc-p:notation>
-    <rdfs:label xml:lang="en">milligram</rdfs:label>
-    <rdfs:label xml:lang="fr">milligramme</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Millilitre">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:MilliL"/>
-    <dfc-p:notation>ml</dfc-p:notation>
-    <rdfs:label xml:lang="en">milliliter</rdfs:label>
-    <rdfs:label xml:lang="fr">millilitre</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:Crate -->
 
-  <rdf:Description rdf:about="dfc-u:Package">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <dfc-p:notation>pack</dfc-p:notation>
-    <rdfs:label xml:lang="fr">colis</rdfs:label>
-    <rdfs:label xml:lang="en">package</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:Crate">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>crate</skos:notation>
+        <skos:prefLabel xml:lang="fr">cagette</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">crate</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:Percent">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <dfc-p:notation>%</dfc-p:notation>
-    <rdfs:label xml:lang="en">percent</rdfs:label>
-    <rdfs:label xml:lang="fr">pourcent</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Piece">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <dfc-p:notation>u</dfc-p:notation>
-    <rdfs:label xml:lang="en">piece</rdfs:label>
-    <rdfs:label xml:lang="fr">pièce</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:CurrencyUnit -->
 
-  <rdf:Description rdf:about="dfc-u:PoundMass">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:LB"/>
-    <dfc-p:notation>lb</dfc-p:notation>
-    <rdfs:label xml:lang="en">pound</rdfs:label>
-    <rdfs:label xml:lang="fr">pound</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:CurrencyUnit">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:narrower rdf:resource="dfc-u:AustralianDollar"/>
+        <skos:narrower rdf:resource="dfc-u:CanadianDollar"/>
+        <skos:narrower rdf:resource="dfc-u:Euro"/>
+        <skos:narrower rdf:resource="dfc-u:PoundSterling"/>
+        <skos:narrower rdf:resource="dfc-u:USDollar"/>
+        <skos:prefLabel xml:lang="en">Currency unit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Unité de devise monétaire</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
-  <rdf:Description rdf:about="dfc-u:PoundSterling">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:PoundSterling"/>
-    <dfc-p:notation>£</dfc-p:notation>
-    <rdfs:label xml:lang="fr">livre sterling</rdfs:label>
-    <rdfs:label xml:lang="en">pound sterling</rdfs:label>
-  </rdf:Description>
 
-  <rdf:Description rdf:about="dfc-u:Tonne">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:TONNE"/>
-    <dfc-p:notation>T</dfc-p:notation>
-    <rdfs:label xml:lang="en">tonne</rdfs:label>
-    <rdfs:label xml:lang="fr">tonne</rdfs:label>
-  </rdf:Description>
+    <!-- dfc-u:Decilitre -->
 
-  <rdf:Description rdf:about="dfc-u:USDollar">
-    <rdf:type rdf:resource="dfc-p:Unit"/>
-    <owl:sameAs rdf:resource="unit:USDollar"/>
-    <dfc-p:notation>$US</dfc-p:notation>
-    <rdfs:label xml:lang="fr">Dollar US</rdfs:label>
-    <rdfs:label xml:lang="en">US Dollar</rdfs:label>
-  </rdf:Description>
+    <owl:NamedIndividual rdf:about="dfc-u:Decilitre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:DeciL"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>dl</skos:notation>
+        <skos:prefLabel xml:lang="en">decilitre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">decilitre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
 
+
+    <!-- dfc-u:Decimetre -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Decimetre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:DeciM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>dm</skos:notation>
+        <skos:prefLabel xml:lang="en">decimetre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">decimètre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Euro -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Euro">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:Euro"/>
+        <skos:broader rdf:resource="dfc-u:CurrencyUnit"/>
+        <skos:notation>€</skos:notation>
+        <skos:prefLabel xml:lang="en">euro</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">euro</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Gallon -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Gallon">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:GAL_UK"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>gal</skos:notation>
+        <skos:prefLabel xml:lang="fr">gallon (GB)</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">gallon (UK)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Gram -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Gram">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:GM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>g</skos:notation>
+        <skos:prefLabel xml:lang="en">gram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">gramme</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Inch -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Inch">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:IN"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>in</skos:notation>
+        <skos:prefLabel xml:lang="en">inch</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pouce</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Kilogram -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Kilogram">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:KiloGM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>kg</skos:notation>
+        <skos:prefLabel xml:lang="en">kilogram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">kilogramme</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Kilometre -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Kilometre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:KiloM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>km</skos:notation>
+        <skos:prefLabel xml:lang="en">kilometre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">kilomètre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Litre -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Litre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:L"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>l</skos:notation>
+        <skos:prefLabel xml:lang="en">litre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">litre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Metre -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Metre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:M"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>m</skos:notation>
+        <skos:prefLabel xml:lang="en">metre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">mètre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Milligram -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Milligram">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:MilliGM"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>g</skos:notation>
+        <skos:prefLabel xml:lang="en">milligram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">milligramme</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Millilitre -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Millilitre">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:MilliL"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>ml</skos:notation>
+        <skos:prefLabel xml:lang="en">milliliter</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">millilitre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Package -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Package">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>pack</skos:notation>
+        <skos:prefLabel xml:lang="fr">colis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">package</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Percent -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Percent">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>%</skos:notation>
+        <skos:prefLabel xml:lang="en">percent</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pourcent</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Piece -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Piece">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>u</skos:notation>
+        <skos:prefLabel xml:lang="en">piece</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pièce</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:PoundMass -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:PoundMass">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:LB"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>lb</skos:notation>
+        <skos:prefLabel xml:lang="en">pound</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pound</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:PoundSterling -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:PoundSterling">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:PoundSterling"/>
+        <skos:broader rdf:resource="dfc-u:CurrencyUnit"/>
+        <skos:notation>£</skos:notation>
+        <skos:prefLabel xml:lang="fr">livre sterling</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">pound sterling</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:QuantityUnit -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:QuantityUnit">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:narrower rdf:resource="dfc-u:Centilitre"/>
+        <skos:narrower rdf:resource="dfc-u:Centimetre"/>
+        <skos:narrower rdf:resource="dfc-u:Crate"/>
+        <skos:narrower rdf:resource="dfc-u:Decilitre"/>
+        <skos:narrower rdf:resource="dfc-u:Decimetre"/>
+        <skos:narrower rdf:resource="dfc-u:Gallon"/>
+        <skos:narrower rdf:resource="dfc-u:Gram"/>
+        <skos:narrower rdf:resource="dfc-u:Inch"/>
+        <skos:narrower rdf:resource="dfc-u:Kilogram"/>
+        <skos:narrower rdf:resource="dfc-u:Kilometre"/>
+        <skos:narrower rdf:resource="dfc-u:Litre"/>
+        <skos:narrower rdf:resource="dfc-u:Metre"/>
+        <skos:narrower rdf:resource="dfc-u:Milligram"/>
+        <skos:narrower rdf:resource="dfc-u:Millilitre"/>
+        <skos:narrower rdf:resource="dfc-u:Package"/>
+        <skos:narrower rdf:resource="dfc-u:Percent"/>
+        <skos:narrower rdf:resource="dfc-u:Piece"/>
+        <skos:narrower rdf:resource="dfc-u:PoundMass"/>
+        <skos:narrower rdf:resource="dfc-u:Tonne"/>
+        <skos:prefLabel xml:lang="en">Quantity unit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Unité de quantité</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:Tonne -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:Tonne">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:TONNE"/>
+        <skos:broader rdf:resource="dfc-u:QuantityUnit"/>
+        <skos:notation>T</skos:notation>
+        <skos:prefLabel xml:lang="en">tonne</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">tonne</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-u:USDollar -->
+
+    <owl:NamedIndividual rdf:about="dfc-u:USDollar">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <rdfs:isDefinedBy rdf:resource="unit:USDollar"/>
+        <skos:broader rdf:resource="dfc-u:CurrencyUnit"/>
+        <skos:notation>$US</skos:notation>
+        <skos:prefLabel xml:lang="fr">Dollar US</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">US Dollar</skos:prefLabel>
+    </owl:NamedIndividual>
 </rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
