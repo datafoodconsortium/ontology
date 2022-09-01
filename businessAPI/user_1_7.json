@@ -98,7 +98,7 @@
         "suppliedProduct/item4"
       ],
       "dfc-b:image": "supply image url",
-      "dfc-b:lifeTime": "supply lifeTime",
+      "dfc-b:lifeTime": "supply lifeTime"
     },
    {
       "@id": "suppliedProduct/item4",
@@ -112,7 +112,7 @@
       "dfc-b:description": "supply description 2",
       "dfc-b:totalTheoriticalStock": "999",
       "dfc-b:image": "supply image url",
-      "dfc-b:lifeTime": "supply lifeTime",
+      "dfc-b:lifeTime": "supply lifeTime"
     },
     {
       "@id": "catalogItem/catalogItemId1",
