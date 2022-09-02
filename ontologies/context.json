@@ -18,6 +18,9 @@
     "dfc-b:hasUnit":{
       "@type":"@id"
     },
+    "dfc-b:hasQuantity":{
+      "@type":"@id"
+    },
     "dfc-p:hasType":{
       "@type":"@id"
     },
