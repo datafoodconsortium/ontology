@@ -15,16 +15,16 @@
   <!-- dfc-f:DFC_ProductGlossary_Facet -->
 
     <rdf:Description rdf:about="dfc-f:DFC_ProductGlossary_Facet">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-	    <skos:prefLabel xml:lang="fr">Glossaire des facettes de produit</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">Product glossary facets</skos:prefLabel>		
-		<skos:hasTopConcept rdf:resource="dfc-f:Certification"/>
-		<skos:hasTopConcept rdf:resource="dfc-f:Claim"/>
-		<skos:hasTopConcept rdf:resource="dfc-f:TerritorialOrigin"/>
-		<skos:hasTopConcept rdf:resource="dfc-f:NatureOrigin"/>
-		<skos:hasTopConcept rdf:resource="dfc-f:PartOrigin"/>
+	    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+		  <skos:prefLabel xml:lang="fr">Glossaire des facettes de produit</skos:prefLabel>
+	    <skos:prefLabel xml:lang="en">Product glossary facets</skos:prefLabel>
+			<skos:hasTopConcept rdf:resource="dfc-f:Certification"/>
+			<skos:hasTopConcept rdf:resource="dfc-f:Claim"/>
+			<skos:hasTopConcept rdf:resource="dfc-f:TerritorialOrigin"/>
+			<skos:hasTopConcept rdf:resource="dfc-f:NatureOrigin"/>
+			<skos:hasTopConcept rdf:resource="dfc-f:PartOrigin"/>
     </rdf:Description>
-    
+
 
 
 <!-- dfc-f:Certification Facets -->
@@ -310,9 +310,9 @@
 </rdf:Description>
 
 
- <!-- dfc-f:Claim facets --> 
+ <!-- dfc-f:Claim facets -->
 
-	
+
 <rdf:Description rdf:about="dfc-f:Claim">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:prefLabel xml:lang="en">Nutrition and health claims</skos:prefLabel>
@@ -691,7 +691,7 @@
 	<dct:description xml:lang="en">Any other claim which states, suggests or implies that a food has particular properties.</dct:description>
 	<dct:description xml:lang="fr">Toute autre allégation qui déclare, suggère ou implique qu'un aliment a des propriétés particulières.</dct:description>
     <skos:prefLabel xml:lang="en">Other claim</skos:prefLabel>
-	<skos:prefLabel xml:lang="fr">Autre allégation</skos:prefLabel>	
+	<skos:prefLabel xml:lang="fr">Autre allégation</skos:prefLabel>
 	<skos:broader rdf:resource="dfc-f:Claim"/>
 	<skos:narrower rdf:resource="dfc-f:Vegan"/>
 	<skos:narrower rdf:resource="dfc-f:Vegetarian"/>
@@ -725,7 +725,7 @@
 
 
 
- <!-- dfc-f:NatureOrigin facets --> 
+ <!-- dfc-f:NatureOrigin facets -->
 
 
 <rdf:Description rdf:about="dfc-f:NatureOrigin">
@@ -822,7 +822,7 @@
 
 
 
- <!-- dfc-f:PartOrigin facets --> 
+ <!-- dfc-f:PartOrigin facets -->
 
 
 <rdf:Description rdf:about="dfc-f:PartOrigin">
@@ -839,7 +839,7 @@
      <skos:narrower rdf:resource="dfc-f:PlantPartOrigin"/>
      <skos:narrower rdf:resource="dfc-f:UnknownPartOrigin"/>
 </rdf:Description>
-	
+
 
   <rdf:Description rdf:about="dfc-f:AnimalPartOrigin">
     <rdf:type rdf:resource="skos:Concept"/>
@@ -863,7 +863,7 @@
     <rdf:type rdf:resource="skos:Concept"/>
     <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
     <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-	
+
     <skos:narrower>
       <rdf:Description rdf:about="dfc-f:BeeHoney">
         <rdf:type rdf:resource="skos:Concept"/>
@@ -1239,7 +1239,7 @@
   </rdf:Description>
 
 
- <!-- dfc-f:TerritorialOrigin facets --> 
+ <!-- dfc-f:TerritorialOrigin facets -->
 
 
 <rdf:Description rdf:about="dfc-f:TerritorialOrigin">
