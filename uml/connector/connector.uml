@@ -12,6 +12,4 @@
   <packageImport xmi:id="_-5yGcPOnEey60OpxS9_JRQ">
     <importedPackage href="sale.uml#_WUScAOZVEeybgd1DwlK4YQ"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_YNDJAOdIEeyey8O34-FiDg" name="Connector"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_bbA50OdIEeyey8O34-FiDg" name="Configuration"/>
 </uml:Model>
