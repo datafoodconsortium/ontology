@@ -132,6 +132,14 @@
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_hyQD8E1qEe2Pq5gmFYw1MQ" name="IUnit">
+      <elementImport xmi:id="_lNSAYE1qEe2Pq5gmFYw1MQ">
+        <importedElement xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_raMOkE1qEe2Pq5gmFYw1MQ">
+        <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </generalization>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_i5ussNuYEeyR38y4P6cy-Q" name="Address">
       <elementImport xmi:id="_CZFSsNudEeyR38y4P6cy-Q" importedElement="_osxSANxLEeyr_asPBQgiSQ"/>
       <ownedAttribute xmi:id="_R1_FkNudEeyR38y4P6cy-Q" name="street">
@@ -202,6 +210,16 @@
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         </ownedParameter>
       </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EO_QAE2OEe2Pq5gmFYw1MQ" name="Unit">
+      <elementImport xmi:id="_GV55ME2OEe2Pq5gmFYw1MQ" importedElement="_hyQD8E1qEe2Pq5gmFYw1MQ"/>
+      <elementImport xmi:id="_KnGBkE2OEe2Pq5gmFYw1MQ">
+        <importedElement xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_kl3QsE2OEe2Pq5gmFYw1MQ">
+        <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </generalization>
+      <interfaceRealization xmi:id="_r2PuEE2OEe2Pq5gmFYw1MQ" client="_EO_QAE2OEe2Pq5gmFYw1MQ" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ" contract="_hyQD8E1qEe2Pq5gmFYw1MQ"/>
     </packagedElement>
     <profileApplication xmi:id="_vcEZ8OjgEey9aasgGgoaNw">
       <eAnnotations xmi:id="_vcIEUOjgEey9aasgGgoaNw" source="http://www.eclipse.org/uml2/2.0.0/UML">
