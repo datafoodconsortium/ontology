@@ -14,8 +14,8 @@
 
 <rdf:Description rdf:about="dfc-p:PartOrigin">
      <rdf:type rdf:resource="skos:ConceptScheme"/>
-     <dc:title xml:lang="en">Part of origin</dc:title>
-     <dc:title xml:lang="fr">Partie d'origine</dc:title>
+     <skos:prefLabel xml:lang="en">Part of origin</skos:prefLabel>
+     <skos:prefLabel xml:lang="fr">Partie d'origine</skos:prefLabel>
      <dc:description xml:lang="en">Part of natural &quot;living&quot; origin concerned</dc:description>
      <dc:description xml:lang="fr">Partie de la source &quot;vivante&quot; d'origine concernée</dc:description>
      <skos:hasTopConcept rdf:resource="dfc-o:AnimalPartOrigin"/>

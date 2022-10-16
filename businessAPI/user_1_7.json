@@ -1,11 +1,16 @@
 {
-  "@context": "http://static.datafoodconsortium.org/ontologies/context.json",
+  "@context": [
+      "http://static.datafoodconsortium.org/ontologies/context.json",
+      {
+        "@base":"http://maPlateformeNationale/"
+      }
+    ],
   "@graph" : [
     {
      "@id": "person/personId",
       "@type": "dfc-b:Person",
       "dfc-b:familyName": "Doe",
-      "dfc-b:firtsName": "Jhon",
+      "dfc-b:firstName": "Jhon",
       "dfc-b:hasAdress": {
         "@type": "dfc-b:Address",
         "dfc-b:city": "",
@@ -35,6 +40,12 @@
       ]
     },
     {
+      "@id": "brand/brandId1",
+      "@type": "dfc-b:Brand",
+      "dfc-b:description": "brand description 1",
+      "rdfs:label":"label brand 1"
+    },
+    {
       "@id": "customerCategory/customerCategoryId1",
       "@type": "dfc-b:CustomerCategory",
       "dfc-b:description": "member"
@@ -47,30 +58,61 @@
     {
       "@id": "suppliedProduct/item3",
       "@type": "dfc-b:SuppliedProduct",
-      "dfc-p:hasUnit": "dfc-u:u",
-      "dfc-b:quantity": "99.99",
+      "dfc-b:hasQuantity":{
+          "@type":"dfc-b:QuantitiveValue",
+          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:value":"1000"
+      },
       "dfc-p:hasType": "dfc-pt:egg",
       "dfc-b:description": "supply description 1",
       "dfc-b:totalTheoriticalStock": "999",
-      "dfc-b:brand": "supply brand",
-      "dfc-b:claim": "supply claim",
+      "dfc-b:hasBrand": "brand/brandId1",
+      "dfc-b:hasCertification": "dfc-f:Organic-AB",
+      "dfc-b:hasClaim": [
+          "dfc-f:NoAddedSugars",
+          "dfc-f:LowSodiumSalt",
+          "dfc-f:IncreasedNutrient"
+        ],
+      "dfc-b:hasNutrientCharacteristic": {
+          "@type":"dfc-b:NutrientCharacteristic",
+          "dfc-b:hasNutrientDimension":"dfc-m:Magnesium",
+          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:value":"10"
+      },
+      "dfc-b:hasPhysicalCharacteristic": {
+          "@type":"dfc-b:PhysicalCharacteristic",
+          "dfc-b:hasPhysicalDimension":"dfc-m:Weight",
+          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:value":"100"
+      },
+      "dfc-b:hasAllergenCharacteristic": {
+          "@type":"dfc-b:AllergenCharacteristic",
+          "dfc-b:hasAllergenDimension":"dfc-m:allergenCharacteristic1",
+          "dfc-b:hasUnit":"dfc-m:Allenit1",
+          "dfc-b:value":"1"
+      },
+      "dfc-b:hasGeographicalOrigin": "dfc-f:CentreValLoire",
+      "dfc-b:hasNatureOrigin": "dfc-f:PlantOrigin",
+      "dfc-b:hasPartOrigin": "dfc-f:PlantPartOrigin",
+      "dfc-b:hasProcess": [
+        "suppliedProduct/item4"
+      ],
       "dfc-b:image": "supply image url",
-      "dfc-b:lifeTime": "supply lifeTime",
-      "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
+      "dfc-b:lifeTime": "supply lifeTime"
     },
    {
       "@id": "suppliedProduct/item4",
       "@type": "dfc-b:SuppliedProduct",
-      "dfc-p:hasUnit": "dfc-u:u",
-      "dfc-b:quantity": "1",
+      "dfc-b:hasQuantity":{
+          "@type":"dfc-b:QuantitiveValue",
+          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:value":"1000"
+      },
       "dfc-p:hasType": "dfc-pt:strawberry",
       "dfc-b:description": "supply description 2",
       "dfc-b:totalTheoriticalStock": "999",
-      "dfc-b:brand": "supply brand",
-      "dfc-b:claim": "supply claim",
       "dfc-b:image": "supply image url",
-      "dfc-b:lifeTime": "supply lifeTime",
-      "dfc-b:physicalCharacterisctics": "supply physical characterisctics"
+      "dfc-b:lifeTime": "supply lifeTime"
     },
     {
       "@id": "catalogItem/catalogItemId1",
