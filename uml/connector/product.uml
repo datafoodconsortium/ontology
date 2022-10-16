@@ -74,6 +74,9 @@
         <importedElement xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
       </elementImport>
       <elementImport xmi:id="_uuha8PYnEeyhHaYS44zQ9Q" importedElement="_QZMbQPYnEeyhHaYS44zQ9Q"/>
+      <elementImport xmi:id="_SbxTAEvGEe2LdZJdl4TCHA">
+        <importedElement xmi:type="uml:Interface" href="common.uml#_S8hGMNxVEeyr_asPBQgiSQ"/>
+      </elementImport>
       <generalization xmi:id="_irv_IAaaEe26esJmMoAMaw" general="_pR_I0NxUEeyr_asPBQgiSQ"/>
       <generalization xmi:id="_i7r4kAaaEe26esJmMoAMaw">
         <general xmi:type="uml:Interface" href="common.uml#_furxINxVEeyr_asPBQgiSQ"/>
@@ -82,6 +85,17 @@
         <general xmi:type="uml:Interface" href="common.uml#_dM0RUNxVEeyr_asPBQgiSQ"/>
       </generalization>
       <generalization xmi:id="_jkgMEAaaEe26esJmMoAMaw" general="_QZMbQPYnEeyhHaYS44zQ9Q"/>
+      <ownedOperation xmi:id="_bZAlsEvEEe2LdZJdl4TCHA" name="getQuantity">
+        <ownedParameter xmi:id="_eANRcEvEEe2LdZJdl4TCHA" name="quantity" direction="return">
+          <type xmi:type="uml:Interface" href="common.uml#_S8hGMNxVEeyr_asPBQgiSQ"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y-MHQEvEEe2LdZJdl4TCHA"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_iTeoAEvFEe2LdZJdl4TCHA" name="setQuantity">
+        <ownedParameter xmi:id="_jxlkwEvFEe2LdZJdl4TCHA" name="quantity">
+          <type xmi:type="uml:Interface" href="common.uml#_S8hGMNxVEeyr_asPBQgiSQ"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Interface" xmi:id="_6u8dANxWEeyr_asPBQgiSQ" name="Certifiable">
       <ownedOperation xmi:id="_N1j-ANxWEeyr_asPBQgiSQ" name="getCertifications">
@@ -101,11 +115,18 @@
         <importedElement xmi:type="uml:Interface" href="sale.uml#_pcawwAaREe26esJmMoAMaw"/>
       </elementImport>
       <elementImport xmi:id="_tq2xAAaaEe26esJmMoAMaw" importedElement="_OtRegAaaEe26esJmMoAMaw"/>
+      <elementImport xmi:id="_-5XDUEvFEe2LdZJdl4TCHA">
+        <importedElement xmi:type="uml:Interface" href="common.uml#_S8hGMNxVEeyr_asPBQgiSQ"/>
+      </elementImport>
       <ownedAttribute xmi:id="_T97pEOD5Eey8JZcrriCc9A" name="name">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_ULIXkOD5Eey8JZcrriCc9A" name="description">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_9yCEUEvEEe2LdZJdl4TCHA" name="quantity">
+        <type xmi:type="uml:Interface" href="common.uml#_S8hGMNxVEeyr_asPBQgiSQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pe2-sEvHEe2LdZJdl4TCHA"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_Rc4BkOD5Eey8JZcrriCc9A" name="alcoholPercentage">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
@@ -272,4 +293,9 @@
   <datafoodconsortium_connector:adder xmi:id="_g_jwkPYnEeyhHaYS44zQ9Q" base_Operation="_aCB9wPYnEeyhHaYS44zQ9Q"/>
   <datafoodconsortium_connector:propertyMultiple xmi:id="_1Xdd0PYnEeyhHaYS44zQ9Q" base_Property="_Yh3A8PYmEeyhHaYS44zQ9Q" getter="_ScTigPYnEeyhHaYS44zQ9Q" adder="_aCB9wPYnEeyhHaYS44zQ9Q"/>
   <datafoodconsortium_connector:semantic xmi:id="_1Xdd0fYnEeyhHaYS44zQ9Q" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#referencedBy" base_Element="_Yh3A8PYmEeyhHaYS44zQ9Q"/>
+  <datafoodconsortium_connector:semantic xmi:id="__BTHUEsVEe22e8Z5wgMBmQ" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct" base_Element="_ZAMZINwDEeyr_asPBQgiSQ"/>
+  <datafoodconsortium_connector:getter xmi:id="_4opIoEvEEe2LdZJdl4TCHA" base_Operation="_bZAlsEvEEe2LdZJdl4TCHA"/>
+  <datafoodconsortium_connector:property xmi:id="_XYlnwEvFEe2LdZJdl4TCHA" base_Property="_9yCEUEvEEe2LdZJdl4TCHA" getter="_bZAlsEvEEe2LdZJdl4TCHA" setter="_iTeoAEvFEe2LdZJdl4TCHA"/>
+  <datafoodconsortium_connector:semantic xmi:id="_XYmO0EvFEe2LdZJdl4TCHA" map="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasQuantity" base_Element="_9yCEUEvEEe2LdZJdl4TCHA"/>
+  <datafoodconsortium_connector:setter xmi:id="_nNcAkEvFEe2LdZJdl4TCHA" base_Operation="_iTeoAEvFEe2LdZJdl4TCHA"/>
 </xmi:XMI>
