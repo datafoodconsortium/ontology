@@ -140,6 +140,38 @@
         <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
       </generalization>
     </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Z-rAgE73Ee2TpoYuSsmzTA" name="IGeographicalOrigin">
+      <elementImport xmi:id="_Z-rAgU73Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_Z-rAgk73Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_yovGgE73Ee2TpoYuSsmzTA" name="ICertification">
+      <elementImport xmi:id="_yovGgU73Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_yovGgk73Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_9gHfwE73Ee2TpoYuSsmzTA" name="INatureOrigin">
+      <elementImport xmi:id="_9gHfwU73Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_9gHfwk73Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_Ac72ME74Ee2TpoYuSsmzTA" name="IPartOrigin">
+      <elementImport xmi:id="_Ac72MU74Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_Ac72Mk74Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Interface" href="skos.uml#_r06YgE1mEe2Pq5gmFYw1MQ"/>
+      </generalization>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_i5ussNuYEeyR38y4P6cy-Q" name="Address">
       <elementImport xmi:id="_CZFSsNudEeyR38y4P6cy-Q" importedElement="_osxSANxLEeyr_asPBQgiSQ"/>
       <ownedAttribute xmi:id="_R1_FkNudEeyR38y4P6cy-Q" name="street">
@@ -220,6 +252,46 @@
         <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
       </generalization>
       <interfaceRealization xmi:id="_r2PuEE2OEe2Pq5gmFYw1MQ" client="_EO_QAE2OEe2Pq5gmFYw1MQ" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ" contract="_hyQD8E1qEe2Pq5gmFYw1MQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kBiMkE73Ee2TpoYuSsmzTA" name="GeographicalOrigin">
+      <elementImport xmi:id="_kBiMkU73Ee2TpoYuSsmzTA" importedElement="_Z-rAgE73Ee2TpoYuSsmzTA"/>
+      <elementImport xmi:id="_kBiMkk73Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_kBiMk073Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </generalization>
+      <interfaceRealization xmi:id="_kBiMlE73Ee2TpoYuSsmzTA" client="_kBiMkE73Ee2TpoYuSsmzTA" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ _Z-rAgE73Ee2TpoYuSsmzTA" contract="_Z-rAgE73Ee2TpoYuSsmzTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_EnWBIE74Ee2TpoYuSsmzTA" name="Certification">
+      <elementImport xmi:id="_EnWBIU74Ee2TpoYuSsmzTA" importedElement="_yovGgE73Ee2TpoYuSsmzTA"/>
+      <elementImport xmi:id="_EnWBIk74Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_EnWBI074Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </generalization>
+      <interfaceRealization xmi:id="_EnWBJE74Ee2TpoYuSsmzTA" client="_EnWBIE74Ee2TpoYuSsmzTA" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ _Z-rAgE73Ee2TpoYuSsmzTA _yovGgE73Ee2TpoYuSsmzTA" contract="_yovGgE73Ee2TpoYuSsmzTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FOEC4E74Ee2TpoYuSsmzTA" name="NatureOrigin">
+      <elementImport xmi:id="_FOEC4U74Ee2TpoYuSsmzTA" importedElement="_9gHfwE73Ee2TpoYuSsmzTA"/>
+      <elementImport xmi:id="_FOEC4k74Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_FOEC4074Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </generalization>
+      <interfaceRealization xmi:id="_FOEC5E74Ee2TpoYuSsmzTA" client="_FOEC4E74Ee2TpoYuSsmzTA" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ _Z-rAgE73Ee2TpoYuSsmzTA _9gHfwE73Ee2TpoYuSsmzTA" contract="_9gHfwE73Ee2TpoYuSsmzTA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GBgSAE74Ee2TpoYuSsmzTA" name="PartOrigin">
+      <elementImport xmi:id="_GBgSAU74Ee2TpoYuSsmzTA" importedElement="_Ac72ME74Ee2TpoYuSsmzTA"/>
+      <elementImport xmi:id="_GBgSAk74Ee2TpoYuSsmzTA">
+        <importedElement xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </elementImport>
+      <generalization xmi:id="_GBgSA074Ee2TpoYuSsmzTA">
+        <general xmi:type="uml:Class" href="skos.uml#_XhC24E2LEe2Pq5gmFYw1MQ"/>
+      </generalization>
+      <interfaceRealization xmi:id="_GBgSBE74Ee2TpoYuSsmzTA" client="_GBgSAE74Ee2TpoYuSsmzTA" supplier="_hyQD8E1qEe2Pq5gmFYw1MQ _Z-rAgE73Ee2TpoYuSsmzTA _Ac72ME74Ee2TpoYuSsmzTA" contract="_Ac72ME74Ee2TpoYuSsmzTA"/>
     </packagedElement>
     <profileApplication xmi:id="_vcEZ8OjgEey9aasgGgoaNw">
       <eAnnotations xmi:id="_vcIEUOjgEey9aasgGgoaNw" source="http://www.eclipse.org/uml2/2.0.0/UML">
