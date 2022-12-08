@@ -43,7 +43,7 @@
       "@id": "brand/brandId1",
       "@type": "dfc-b:Brand",
       "dfc-b:description": "brand description 1",
-      "rdfs:label":"label brand 1"
+      "dfc-b:description":"label brand 1"
     },
     {
       "@id": "customerCategory/customerCategoryId1",
@@ -60,7 +60,7 @@
       "@type": "dfc-b:SuppliedProduct",
       "dfc-b:hasQuantity":{
           "@type":"dfc-b:QuantitiveValue",
-          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:hasUnit":"dfc-m:Gram",
           "dfc-b:value":"1000"
       },
       "dfc-p:hasType": "dfc-pt:egg",
@@ -82,7 +82,7 @@
       "dfc-b:hasPhysicalCharacteristic": {
           "@type":"dfc-b:PhysicalCharacteristic",
           "dfc-b:hasPhysicalDimension":"dfc-m:Weight",
-          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:hasUnit":"dfc-m:Gram",
           "dfc-b:value":"100"
       },
       "dfc-b:hasAllergenCharacteristic": {
@@ -105,7 +105,7 @@
       "@type": "dfc-b:SuppliedProduct",
       "dfc-b:hasQuantity":{
           "@type":"dfc-b:QuantitiveValue",
-          "dfc-b:hasUnit":"dfc-u:Gram",
+          "dfc-b:hasUnit":"dfc-m:Gram",
           "dfc-b:value":"1000"
       },
       "dfc-p:hasType": "dfc-pt:strawberry",
