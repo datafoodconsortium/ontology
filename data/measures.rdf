@@ -88,43 +88,43 @@
 	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Piece"/>
 	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#PoundMass"/>
 	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tonne"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#4Pack"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#6Pack"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bundle"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bag"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bunch"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bucket"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Basket"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bottle"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Box"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#BeerCrate"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cask"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Carton"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cup"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Can"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Drum"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dozen"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#HalfDozen"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Jar"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Keg"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kit"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Net"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Packet"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Punnet"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pouch"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pair"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pot"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tray"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pallet"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Roll"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tablet"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tub"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tube"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tin"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LiquidBulk"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NoduleBulk"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#GrainBulk"/>
-	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PowderBulk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#4Pack"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#6Pack"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Bundle"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Bag"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Bunch"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Bucket"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Basket"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Bottle"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Box"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#BeerCrate"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Cask"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Carton"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Cup"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Can"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Drum"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Dozen"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#HalfDozen"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Jar"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Keg"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Kit"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Net"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Packet"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Punnet"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Pouch"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Pair"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Pot"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tray"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Pallet"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Roll"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tablet"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tub"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tube"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#Tin"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#LiquidBulk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#NoduleBulk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#GrainBulk"/>
+	<skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#PowderBulk"/>
 </rdf:Description>
 
 <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#AustralianDollar">
@@ -899,7 +899,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#PhysicalDimension"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#4Pack">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#4Pack">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">4 pack</skos:prefLabel>
@@ -908,7 +908,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#6Pack">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#6Pack">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">6 pack</skos:prefLabel>
@@ -917,7 +917,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bundle">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Bundle">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">bundle</skos:prefLabel>
@@ -925,7 +925,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bag">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Bag">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="fr">sac d'avoine</skos:example>
 	<skos:example xml:lang="en">bag of oat</skos:example>
@@ -936,7 +936,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bunch">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Bunch">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">bunch of parsley, bunch of carrots....</skos:example>
 	<skos:example xml:lang="fr">botte de persil, botte de carottes...</skos:example>
@@ -947,7 +947,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bucket">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Bucket">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">bucket</skos:prefLabel>
@@ -956,7 +956,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Basket">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Basket">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">basket</skos:prefLabel>
@@ -965,7 +965,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Bottle">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Bottle">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">bottle</skos:prefLabel>
@@ -974,7 +974,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Box">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Box">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">box</skos:prefLabel>
@@ -983,7 +983,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#BeerCrate">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#BeerCrate">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">beer crate</skos:prefLabel>
@@ -992,7 +992,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cask">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Cask">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">cask</skos:prefLabel>
@@ -1001,7 +1001,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Carton">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Carton">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">carton</skos:prefLabel>
@@ -1010,7 +1010,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cup">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Cup">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">1 handful = 0.5 cup</skos:example>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
@@ -1020,7 +1020,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Can">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Can">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">can</skos:prefLabel>
@@ -1029,7 +1029,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Drum">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Drum">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">drum</skos:prefLabel>
@@ -1038,7 +1038,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dozen">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Dozen">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">2 dozens of eggs</skos:example>
 	<skos:example xml:lang="fr">deux douzaines d'oeufs</skos:example>
@@ -1049,7 +1049,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#HalfDozen">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#HalfDozen">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">half dozen</skos:prefLabel>
@@ -1058,7 +1058,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Jar">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Jar">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">jar of jam</skos:example>
 	<skos:example xml:lang="fr">bocal de confiture</skos:example>
@@ -1069,7 +1069,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Keg">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Keg">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">keg</skos:prefLabel>
@@ -1078,7 +1078,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kit">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Kit">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">kit</skos:prefLabel>
@@ -1087,7 +1087,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Net">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Net">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">net</skos:prefLabel>
@@ -1096,7 +1096,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Packet">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Packet">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">packet</skos:prefLabel>
@@ -1105,7 +1105,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Punnet">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Punnet">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">punnet</skos:prefLabel>
@@ -1114,7 +1114,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pouch">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Pouch">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">pouch</skos:prefLabel>
@@ -1123,7 +1123,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pair">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Pair">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">pair</skos:prefLabel>
@@ -1132,7 +1132,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pot">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Pot">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">a flower pot</skos:example>
 	<skos:example xml:lang="fr">un pot de fleur</skos:example>
@@ -1143,7 +1143,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tray">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Tray">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">tray</skos:prefLabel>
@@ -1152,7 +1152,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Pallet">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Pallet">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">pallet</skos:prefLabel>
@@ -1161,7 +1161,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Roll">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Roll">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">roll</skos:prefLabel>
@@ -1170,7 +1170,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tablet">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Tablet">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">tablet</skos:prefLabel>
@@ -1179,7 +1179,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tub">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Tub">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">tub of ice cream</skos:example>
 	<skos:example xml:lang="fr">bac de crème glacée</skos:example>
@@ -1190,7 +1190,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tube">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Tube">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:example xml:lang="en">tube of toothpaste</skos:example>
 	<skos:example xml:lang="fr">un tube de dentifrice</skos:example>
@@ -1201,7 +1201,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tin">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#Tin">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">tin</skos:prefLabel>
@@ -1210,7 +1210,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LiquidBulk">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#LiquidBulk">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">liquid bulk</skos:prefLabel>
@@ -1219,7 +1219,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NoduleBulk">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#NoduleBulk">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">nodule bulk</skos:prefLabel>
@@ -1228,7 +1228,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#GrainBulk">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#GrainBulk">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">grain bulk</skos:prefLabel>
@@ -1237,7 +1237,7 @@
 	<skos:broader rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#QuantityUnit"/>
 </rdf:Description>
 
-<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PowderBulk">
+<rdf:Description rdf:about="http://static.datafoodconsortium.org/data/measures.rdf#PowderBulk">
 	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
 	<skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/measures.rdf#DFC_ProductGlossary_Measure"/>
 	<skos:prefLabel xml:lang="en">powder bulk</skos:prefLabel>
