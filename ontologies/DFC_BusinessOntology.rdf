@@ -2,33 +2,31 @@
 <rdf:RDF xmlns="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
      xml:base="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
      xmlns:cc="http://creativecommons.org/ns#"
-     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"
+     xmlns:dfc-f="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf#"
+     xmlns:dfc-m="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#"
      xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
-	 xmlns:dfc-m="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#"
-	 xmlns:dfc-f="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
     <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
         <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
-		<owl:imports rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf"/>
-		<owl:imports rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf"/>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#rachelA"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
         <dc:creator rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#bernardC"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Business Part)</dc:description>
-        <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
         <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
         <dc:publisher rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
@@ -36,6 +34,77 @@
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.1</owl:versionInfo>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
     
 
 
@@ -173,12 +242,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-f:Certification"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -211,12 +280,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-f:Claim"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -437,12 +506,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-f:TerritorialOrigin"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -492,12 +561,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:AllergenDimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -563,12 +632,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:Dimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -577,7 +646,7 @@
         <rdfs:label xml:lang="en">has dimension</rdfs:label>
     </owl:ObjectProperty>
     
-                   
+
 
     <!-- dfc-b:hasFacet -->
 
@@ -655,13 +724,13 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-					<owl:Restriction>
-                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:LabellingDimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -717,13 +786,13 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-					<owl:Restriction>
-                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:NutrientDimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -823,13 +892,13 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
-					<owl:Restriction>
-                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:PhysicalDimension"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -935,12 +1004,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-m:Unit"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1190,12 +1259,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-f:NatureOrigin"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1357,12 +1426,12 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
                         <owl:hasValue rdf:resource="dfc-f:PartOrigin"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1921,6 +1990,7 @@
         <rdfs:comment xml:lang="en">Deprecated onto v5.0</rdfs:comment>
         <rdfs:label xml:lang="en">brand</rdfs:label>
         <rdfs:label xml:lang="fr">marque</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -1946,6 +2016,7 @@
         <rdfs:comment xml:lang="en">deprecated onto v5.0</rdfs:comment>
         <rdfs:label xml:lang="fr">affirmation produit</rdfs:label>
         <rdfs:label xml:lang="en">product claim</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -2301,6 +2372,7 @@
         <rdfs:comment xml:lang="en">deprecated onto v5.0</rdfs:comment>
         <rdfs:label xml:lang="fr">caractéristique physique</rdfs:label>
         <rdfs:label xml:lang="en">physical characteristic</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -2456,6 +2528,18 @@
         <rdfs:label xml:lang="fr">valeur</rdfs:label>
         <rdfs:label xml:lang="en">value</rdfs:label>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
     
 
 
@@ -4060,6 +4144,12 @@
     
 
 
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -4069,6 +4159,12 @@
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- skos:Concept -->
+
+    <owl:Class rdf:about="skos:Concept"/>
     
 
 
@@ -4137,27 +4233,3389 @@
     
 
 
+    <!-- dfc-f:AOC_FR -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:AOC_FR">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:LocalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">AOC</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Appellation d’origine contrôlée</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Appellation d’origine contrôlée</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-APPELLATION_ORIGINE_CONTROLEE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:AOP_EU -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:AOP_EU">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:LocalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">AOP</skos:altLabel>
+        <skos:altLabel xml:lang="fr">AOP</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Appellation d’origine protégée</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Appellation d’origine protégée</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-PROTECTED_DESIGNATION_OF_ORIGIN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Africa -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Africa">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Africa</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Afrique</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Algae -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Algae">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Algae</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Algue</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:AnimalOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:AnimalOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Animal</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Animal</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:AnimalPartOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:AnimalPartOrigin">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Bee"/>
+        <skos:narrower rdf:resource="dfc-f:Bull"/>
+        <skos:narrower rdf:resource="dfc-f:Cow"/>
+        <skos:narrower rdf:resource="dfc-f:Ewe"/>
+        <skos:narrower rdf:resource="dfc-f:Goat"/>
+        <skos:narrower rdf:resource="dfc-f:Hen"/>
+        <skos:narrower rdf:resource="dfc-f:Pig"/>
+        <skos:narrower rdf:resource="dfc-f:Quail"/>
+        <skos:narrower rdf:resource="dfc-f:Roster"/>
+        <skos:narrower rdf:resource="dfc-f:Sheep"/>
+        <skos:prefLabel xml:lang="en">Part or product of animal</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie ou produit d&apos;un animal</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Asia -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Asia">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Asia</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Asie</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q48"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Australia -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Australia">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Oceania"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Australia</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Australie</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q3960"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:AuvergneRhoneAlpes -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:AuvergneRhoneAlpes">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">ARA</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Auvergne-Rhône-Alpes</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Auvergne-Rhône-Alpes</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18338206"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Bacteria -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Bacteria">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Bacteria</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bactérie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Bee -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Bee">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:BeeHoney"/>
+        <skos:narrower rdf:resource="dfc-f:BeePollen"/>
+        <skos:narrower rdf:resource="dfc-f:BeePropolis"/>
+        <skos:narrower rdf:resource="dfc-f:BeeVenom"/>
+        <skos:narrower rdf:resource="dfc-f:BeeWax"/>
+        <skos:prefLabel xml:lang="fr">Abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bee</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BeeHoney -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BeeHoney">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bee"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Honey</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Miel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BeePollen -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BeePollen">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bee"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Pollen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pollen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BeePropolis -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BeePropolis">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bee"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Propolis</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Propolis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BeeVenom -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BeeVenom">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bee"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Venim d&apos;abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Venom</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BeeWax -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BeeWax">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bee"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Cire d&apos;abeille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wax</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Belgium -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Belgium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Belgique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Belgium</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q31"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BiodynamicLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BiodynamicLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Demeter"/>
+        <skos:prefLabel xml:lang="en">Biodynamic label</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Label biodynamie</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BleuBlancCoeur_FR -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BleuBlancCoeur_FR">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Bleu-Blanc-Coeur</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bleu-Blanc-Coeur</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-BLEU_BLANC_COEUR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BourgogneFrancheComte -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BourgogneFrancheComte">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Burgundy-Franche-Comté</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Bourgogne-Franche-Comté</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bourgogne-Franche-Comté</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18578267"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Brittany -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Brittany">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Bretagne</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Brittany</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q12130"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Bulb -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Bulb">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Bulb</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bulbe</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Bull -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Bull">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:BullBody"/>
+        <skos:prefLabel xml:lang="en">Bull</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bœuf</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:BullBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:BullBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Bull"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Bull&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie du boeuf</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:CentreValLoire -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:CentreValLoire">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Centre Loire Valley</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Centre-Val de Loire</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Centre-Val de Loire</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q13947"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Certification -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Certification">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:BiodynamicLabel"/>
+        <skos:narrower rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:narrower rdf:resource="dfc-f:LocalLabel"/>
+        <skos:narrower rdf:resource="dfc-f:MarketingLabel"/>
+        <skos:narrower rdf:resource="dfc-f:OrganicLabel"/>
+        <skos:prefLabel xml:lang="en">Certification</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Certification</skos:prefLabel>
+        <dc:description xml:lang="fr">Les certifications ou labels obtenus par les produits. Exemple : AB, EU bio, DEMETER, Label Rouge...</dc:description>
+        <dc:description xml:lang="en">The certifications or labels obtained by the products. Example : AB, EU bio, DEMETER, Label Rouge...</dc:description>
+        <skos:topConceptOf rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Claim -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Claim">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:narrower rdf:resource="dfc-f:HealthClaim"/>
+        <skos:narrower rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:prefLabel xml:lang="fr">Allégations nutritionnelles et de santé</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nutrition and health claims</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A nutrition claim states or suggests that a food has beneficial nutritional properties, such as “low fat”, “no added sugar” and “high in fibre”. A health claim is any statement on labels, advertising or other marketing products that health benefits can result from consuming a given food, for instance that a food can help reinforce the body’s natural defences or enhance learning ability.&quot; (source : European Food Safety Authority, https://www.efsa.europa.eu/fr/topics/topic/health-claims)</dc:description>
+        <dc:description xml:lang="fr">&quot;Les allégations nutritionnelles et de santé sont des mentions, images ou symboles valorisant les denrées alimentaires sur le plan nutritionnel ou de la santé. Ce sont par exemple les phrases du type « jus de fruit riche en vitamine C », « riche en calcium », « allégé en sucres », « bon pour le cœur », « le calcium est nécessaire à une ossature normale », etc.&quot; (source: Direction générale de la concurrence, de la consommation et de la répression des fraudes, https://www.economie.gouv.fr/dgccrf/Consommation/Etiquetage-des-produits/Allegations-nutrionnelles-et-de-sante)</dc:description>
+        <skos:topConceptOf rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:ContainsNutrientOrSubstance -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:ContainsNutrientOrSubstance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Contains nutrient or other substance</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Contient nutriment ou autre substance</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food contains a nutrient or another substance, for which specific conditions are not laid down in this Regulation, or any claim likely to have the same meaning for the consumer, may only be made where the product complies with all the applicable provisions of this Regulation, and in particular Article 5. For vitamins and minerals the conditions of the claim &apos;source of&apos; shall apply.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire contient un nutriment ou une autre substance pour lequel ou laquelle le présent règlement ne fixe pas de conditions particulières, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit respecte toutes les dispositions applicables du présent règlement, et notamment l&apos;article 5. Pour les vitamines et les minéraux, les conditions prévues pour l&apos;allégation «source de» s&apos;appliquent.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Corsica -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Corsica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Corse</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Corsica</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q14112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Cow -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Cow">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:CowBody"/>
+        <skos:narrower rdf:resource="dfc-f:CowMilk"/>
+        <skos:prefLabel xml:lang="en">Cow</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vache</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:CowBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:CowBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Cow"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Cow&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de vache</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:CowMilk -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:CowMilk">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Cow"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Cow milk</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Lait de vache</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:DFC_ProductGlossary_Facet -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:DFC_ProductGlossary_Facet">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:prefLabel xml:lang="fr">Glossaire des facettes de produit</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Product glossary facets</skos:prefLabel>
+        <skos:hasTopConcept rdf:resource="dfc-f:Certification"/>
+        <skos:hasTopConcept rdf:resource="dfc-f:Claim"/>
+        <skos:hasTopConcept rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:hasTopConcept rdf:resource="dfc-f:PartOrigin"/>
+        <skos:hasTopConcept rdf:resource="dfc-f:TerritorialOrigin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Demeter -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Demeter">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:BiodynamicLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Demeter</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Demeter</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-DEMETER_LABEL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:EnergyFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:EnergyFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Energy free</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sans apport énergétique</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is energy-free, and any claim likely to have the same meaning for the consumer, may only be made where the product does not contain more than 4 kcal (17 kJ)/100 ml. For table-top sweeteners the limit of 0,4 kcal (1,7 kJ)/portion, with equivalent sweetening properties to 6 g of sucrose (approximately 1 teaspoon of sucrose), applies.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire n&apos;a pas d&apos;apport énergétique, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au maximum 4 kcal (17 kJ)/100 ml. Dans le cas des édulcorants de table, la limite de 0,4 kcal (1,7 kJ)/portion, ayant des propriétés édulcorantes équivalentes à 6 g de saccharose (approximativement 1 petite cuillérée de saccharose), s&apos;applique.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:EnergyReduced -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:EnergyReduced">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Energy reduced</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Valeur énergétique réduite</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is energy-reduced, and any claim likely to have the same meaning for the consumer, may only be made where the energy value is reduced by at least 30%, with an indication of the characteristic(s) which make(s) the food reduced in its total energy value.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire a une valeur énergétique réduite, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si la valeur énergétique est réduite d&apos;au moins 30 %, en indiquant la ou les caractéristiques entraînant la réduction de la valeur énergétique totale de la denrée alimentaire.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:England -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:England">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:UnitedKingdom"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Angleterre</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">England</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:EthicalLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:EthicalLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:BleuBlancCoeur_FR"/>
+        <skos:narrower rdf:resource="dfc-f:FSC"/>
+        <skos:narrower rdf:resource="dfc-f:FairTradeMaxHaavelar"/>
+        <skos:narrower rdf:resource="dfc-f:HEV"/>
+        <skos:narrower rdf:resource="dfc-f:MSC"/>
+        <skos:narrower rdf:resource="dfc-f:Milk-fed"/>
+        <skos:narrower rdf:resource="dfc-f:RainforestAlliance"/>
+        <skos:narrower rdf:resource="dfc-f:RedLabel_FR"/>
+        <skos:prefLabel xml:lang="en">Ethical label</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Label éthique</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Europe -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Europe">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Belgium"/>
+        <skos:narrower rdf:resource="dfc-f:France"/>
+        <skos:narrower rdf:resource="dfc-f:Germany"/>
+        <skos:narrower rdf:resource="dfc-f:Ireland"/>
+        <skos:narrower rdf:resource="dfc-f:Italy"/>
+        <skos:narrower rdf:resource="dfc-f:Netherlands"/>
+        <skos:narrower rdf:resource="dfc-f:Portugal"/>
+        <skos:narrower rdf:resource="dfc-f:Spain"/>
+        <skos:narrower rdf:resource="dfc-f:Switzerland"/>
+        <skos:narrower rdf:resource="dfc-f:UnitedKingdom"/>
+        <skos:prefLabel xml:lang="en">Europe</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Europe</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q46"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Ewe -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Ewe">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:EweBody"/>
+        <skos:narrower rdf:resource="dfc-f:EweMilk"/>
+        <skos:prefLabel xml:lang="fr">Brebis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ewe</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:EweBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:EweBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Ewe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Ewe&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de brebis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:EweMilk -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:EweMilk">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Ewe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep milk</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:FSC -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:FSC">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">FSC</skos:altLabel>
+        <skos:altLabel xml:lang="fr">FSC</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Forest Stewardship Council</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Forêt durable FSC</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-FOREST_STEWARDSHIP_COUNCIL_LABEL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:FairTradeMaxHaavelar -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:FairTradeMaxHaavelar">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Max Haavelar</skos:altLabel>
+        <skos:altLabel xml:lang="fr">Max Haavelar</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Fairtrade Max Haavelar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Fairtrade Max Haavelar</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-MAX_HAVELAAR"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:FatFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:FatFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Fat-free</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sans matières grasses</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is fat-free, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,5 g of fat per 100 g or 100 ml. However, claims expressed as &apos;X % fat-free&apos; shall be prohibited.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire ne contient pas de matières grasses, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 0,5 g de matières grasses par 100 g ou par 100 ml. Cependant, les allégations du type «à X % sans matières grasses» sont interdites.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Flower -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Flower">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Fleur</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Flower</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:France -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:France">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:AuvergneRhoneAlpes"/>
+        <skos:narrower rdf:resource="dfc-f:BourgogneFrancheComte"/>
+        <skos:narrower rdf:resource="dfc-f:Brittany"/>
+        <skos:narrower rdf:resource="dfc-f:CentreValLoire"/>
+        <skos:narrower rdf:resource="dfc-f:Corsica"/>
+        <skos:narrower rdf:resource="dfc-f:GrandEst"/>
+        <skos:narrower rdf:resource="dfc-f:HautsDeFrance"/>
+        <skos:narrower rdf:resource="dfc-f:IleDeFrance"/>
+        <skos:narrower rdf:resource="dfc-f:Normandy"/>
+        <skos:narrower rdf:resource="dfc-f:NouvelleAquitaine"/>
+        <skos:narrower rdf:resource="dfc-f:Occitania"/>
+        <skos:narrower rdf:resource="dfc-f:PaysDeLoire"/>
+        <skos:narrower rdf:resource="dfc-f:ProvenceAlpesCotesAzur"/>
+        <skos:altLabel xml:lang="en">FR</skos:altLabel>
+        <skos:altLabel xml:lang="fr">FR</skos:altLabel>
+        <skos:prefLabel xml:lang="en">France</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">France</skos:prefLabel>
+        <skos:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q142"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Fruit -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Fruit">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Fruit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Fruit</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Funghi -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Funghi">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Champignon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Funghi</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Germany -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Germany">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Allemagne</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Germany</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q183"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:GlutenFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:GlutenFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OtherClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Gluten free</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sans gluten</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Goat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Goat">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:GoatBody"/>
+        <skos:narrower rdf:resource="dfc-f:GoatMilk"/>
+        <skos:prefLabel xml:lang="fr">Chèvre</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Goat</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:GoatBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:GoatBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Goat"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Goat&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de chèvre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:GoatMilk -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:GoatMilk">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Goat"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Goat milk</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Lait de brebis</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:GrandEst -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:GrandEst">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Grand Est</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Grand Est</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18677983"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HEV -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HEV">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">HEV</skos:altLabel>
+        <skos:altLabel xml:lang="fr">HVE</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Haute Valeur Environnementale</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">High Environnemental Value</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-HAUTE_VALEUR_ENVIRONNEMENTALE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HautsDeFrance -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HautsDeFrance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Hauts-de-France</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Hauts-de-France</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18677767"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HealthClaim -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HealthClaim">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Claim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Allégation santé</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Health claim</skos:prefLabel>
+        <dc:description xml:lang="en">A health claim is any statement about a relationship between food and health.</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Hen -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Hen">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:HenBody"/>
+        <skos:narrower rdf:resource="dfc-f:HenEgg"/>
+        <skos:prefLabel xml:lang="en">Hen</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Poule</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HenBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HenBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Hen"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Hen&apos;s body</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie de poule</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HenEgg -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HenEgg">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Hen"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Hen&apos;s egg</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Œuf de poule</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighFibre -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighFibre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High fibre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en fibres</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in fibre, and any claim likely to have the same meaning for the consumer, may only be made where the product contains at least 6 g of fibre per 100 g or at least 3 g of fibre per 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en fibres, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 6 g de fibres par 100 g ou au moins 3 g de fibres par 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighMonounsaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighMonounsaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High monounsaturated fat</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en graisses monoinsaturées</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in monounsaturated fat, and any claim likely to have the same meaning for the consumer, may only be made where at least 45% of the fatty acids present in the product derive from monounsaturated fat under the condition that monounsaturated fat provides more than 20% of energy of the product.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en graisses monoinsaturées, ou toute allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 45 % d’acides gras dérivés de graisses monoinsaturées et si l’énergie fournie par les graisses monoinsaturées représente plus de 20 % de l’apport énergétique du produit.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighOmega3FattyAcids -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighOmega3FattyAcids">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High omega-3 fatty acids</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en acide gras Oméga-3</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in omega-3 fatty acids, and any claim likely to have the same meaning for the consumer, may only be made where the product contains at least 0,6 g alpha-linolenic acid per 100 g and per 100 kcal, or at least 80 mg of the sum of eicosapentaenoic acid and docosahexaenoic acid per 100 g and per 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en acide gras oméga-3, ou toute allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 0,6 g d’acide alphalinolénique pour 100 g et 100 kcal, ou au moins 80 mg d’acide eicosapentaénoïque et d’acide docosahexénoïque combinés pour 100 g et 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighPolyunsaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighPolyunsaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High polyunsaturated fat</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en graisses polyinsaturées</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in polyunsaturated fat, and any claim likely to have the same meaning for the consumer, may only be made where at least 45% of the fatty acids present in the product derive from polyunsaturated fat under the condition that polyunsaturated fat provides more than 20% of energy of the product.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en graisses polyinsaturées, ou toute allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 45 % d’acides gras dérivés de graisses polyinsaturées et si l’énergie fournie par les graisses polyinsaturées représente plus de 20 % de l’apport énergétique du produit.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighProtein -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighProtein">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High protein</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en protéines</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in protein, and any claim likely to have the same meaning for the consumer, may only be made where at least 20% of the energy value of the food is provided by protein.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en protéines, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si 20 % au moins de la valeur énergétique de la denrée alimentaire sont produits par des protéines.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighUnsaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighUnsaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High unsaturated fat</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en graisses insaturées</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in unsaturated fat, and any claim likely to have the same meaning for the consumer may only be made where at least 70% of the fatty acids present in the product derive from unsaturated fat under the condition that unsaturated fat provides more than 20% of energy of the product.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en graisses insaturées, ou toute allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 70 % d’acides gras dérivés de graisses insaturées et si l’énergie fournie par les graisses insaturées représente plus de 20 % de l’apport énergétique du produit.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:HighVitaminsMinerals -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:HighVitaminsMinerals">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">High vitamins and/or minerals</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Riche en vitamines et/ou de minéraux</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is high in vitamins and/or minerals, and any claim likely to have the same meaning for the consumer, may only be made where the product contains at least twice the value of ‘source of [NAME OF VITAMIN/S] and/or [NAME OF MINERAL/S]’.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est riche en vitamines et/ou en minéraux, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins deux fois la teneur requise pour l&apos;allégation «source de [NOM DES VITAMINES] et/ou [NOM DES MINÉRAUX]».&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:IGP_EU -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:IGP_EU">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:LocalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">IGP</skos:altLabel>
+        <skos:altLabel xml:lang="fr">IGP</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Indication géographique de provenance</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Indication géographique de provenance</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-IGP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:IleDeFrance -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:IleDeFrance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">IDF</skos:altLabel>
+        <skos:altLabel xml:lang="en">Parisian region</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Ile-de-France</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Île-de-France</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q13917"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:IncreasedNutrient -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:IncreasedNutrient">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Enrichi en nutriment</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Increased nutrient</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that the content in one or more nutrients, other than vitamins and minerals, has been increased, and any claim likely to have the same meaning for the consumer, may only be made where the product meets the conditions for the claim ‘source of’ and the increase in content is at least 30% compared to a similar product.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation affirmant que la teneur en un ou plusieurs nutriments, autres que des vitamines ou des minéraux, a été augmentée, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit remplit les conditions applicables à l&apos;allégation «source de» et si l&apos;augmentation de cette teneur est d&apos;au moins 30 % par rapport à un produit similaire.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Ireland -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Ireland">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Ireland</skos:altLabel>
+        <skos:altLabel xml:lang="fr">Irlande</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Republic of Ireland</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">République d&apos;Irlande</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q27"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Italy -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Italy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Italie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Italy</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q38"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Leaf -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Leaf">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Feuille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Leaf</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Light -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Light">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Allégé/Light</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Light/Lite</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that a product is ‘light’ or ‘lite’, and any claim likely to have the same meaning for the consumer, shall follow the same conditions as those set for the term ‘reduced’; the claim shall also be accompanied by an indication of the characteristic(s) which make(s) the food &apos;light&apos; or &apos;lite&apos;.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle un produit est «allégé» ou «light», ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, doit remplir les mêmes conditions que celles applicables aux termes «réduit en»; elle doit aussi être accompagnée d&apos;une indication de la ou les caractéristiques entraînant l&apos;allégement de la denrée alimentaire.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LightLite -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LightLite">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Allégé/Light</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Low/Light</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that a product is ‘light’ or ‘lite’, and any claim likely to have the same meaning for the consumer, shall follow the same conditions as those set for the term ‘reduced’; the claim shall also be accompanied by an indication of the characteristic(s) which make(s) the food &apos;light&apos; or &apos;lite&apos;.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle un produit est «allégé» ou «light», ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, doit remplir les mêmes conditions que celles applicables aux termes «réduit en»; elle doit aussi être accompagnée d&apos;une indication de la ou les caractéristiques entraînant l&apos;allégement de la denrée alimentaire.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LocalLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LocalLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:AOC_FR"/>
+        <skos:narrower rdf:resource="dfc-f:AOP_EU"/>
+        <skos:narrower rdf:resource="dfc-f:IGP_EU"/>
+        <skos:narrower rdf:resource="dfc-f:PGS"/>
+        <skos:narrower rdf:resource="dfc-f:PaysansDeNature_FR"/>
+        <skos:prefLabel xml:lang="fr">Label local</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Local label</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LowEnergy -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LowEnergy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Faible valeur énergétique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Low energy</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is low in energy, and any claim likely to have the same meaning for the consumer, may only be made where the product does not contain more than 40 kcal (170 kJ)/100 g for solids or more than 20 kcal (80 kJ)/100 ml for liquids. For table-top sweeteners the limit of 4 kcal (17 kJ)/portion, with equivalent sweetening properties to 6 g of sucrose (approximately 1 teaspoon of sucrose), applies.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire a une faible valeur énergétique, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que pour un produit contenant au maximum 40 kcal (170 kJ)/100 g dans le cas des solides ou au maximum 20 kcal (80 kJ)/100 ml dans le cas des liquides. Dans le cas des édulcorants de table, la limite de 4 kcal (17 kJ)/portion, avec des propriétés édulcorantes équivalentes à 6 g de saccharose (approximativement 1 petite cuillérée de saccharose), s&apos;applique.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LowFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LowFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Faible teneur en matière grasse</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Low fat</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is low in fat, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 3 g of fat per 100 g for solids or 1,5 g of fat per 100 ml for liquids (1,8 g of fat per 100 ml for semi-skimmed milk).&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire a une faible teneur en matières grasses, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 3 g de matières grasses par 100 g dans le cas des solides ou 1,5 g de matières grasses par 100 ml dans le cas des liquides (1,8 g de matières grasses par 100 ml pour le lait demi-écrémé).&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LowSaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LowSaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Faible teneur en graisses saturées</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Low saturated fat</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is low in saturated fat, and any claim likely to have the same meaning for the consumer, may only be made if the sum of saturated fatty acids and trans-fatty acids in the product does not exceed 1,5 g per 100 g for solids or 0,75 g/100 ml for liquids and in either case the sum of saturated fatty acids and trans-fatty acids must not provide more than 10% of energy.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire a une faible teneur en graisses saturées, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si la somme des acides gras saturés et des acides gras trans contenus dans le produit n&apos;est pas supérieure à 1,5 g par 100 g de solide ou à 0,75 g par 100 ml de liquide, la somme des acides gras saturés et des acides gras trans ne pouvant pas produire, dans les deux cas, plus de 10 % de l&apos;énergie.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LowSodiumSalt -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LowSodiumSalt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Low sodium/salt</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pauvre en sodium/sel</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is low in sodium/salt, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,12 g of sodium, or the equivalent value for salt, per 100 g or per 100 ml. For waters, other than natural mineral waters falling within the scope of Directive 80/777/EEC, this value should not exceed 2 mg of sodium per 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est pauvre en sodium ou en sel, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 0,12 g de sodium ou de l&apos;équivalent en sel par 100 g ou par 100 ml. En ce qui concerne les eaux, autres que les eaux minérales naturelles relevant du champ d&apos;application de la directive 80/777/CEE, cette valeur ne devrait pas être supérieure à 2 mg de sodium par 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:LowSugars -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:LowSugars">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Faible teneur en sucres</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Low sugars</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is low in sugars, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 5 g of sugars per 100 g for solids or 2,5 g of sugars per 100 ml for liquids.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire a une faible teneur en sucres, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 5 g de sucres par 100 g dans le cas des solides ou 2,5 g de sucres par 100 ml dans le cas des liquides.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:MSC -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:MSC">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">MSC</skos:altLabel>
+        <skos:altLabel xml:lang="fr">MSC</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Marine Stewardship Council</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pêche durable MSC</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-MARINE_STEWARDSHIP_COUNCIL_LABEL"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:MarketingLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:MarketingLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:ProductOfTheYear"/>
+        <skos:narrower rdf:resource="dfc-f:TasteOfTheYear"/>
+        <skos:prefLabel xml:lang="fr">Label marketing</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Marketing label</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Milk-fed -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Milk-fed">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Milk-fed</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nourri au lait</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Mineral -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Mineral">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Mineral</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Minéral</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:MultiGeoOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:MultiGeoOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Multi-territorial origin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Origine territorial multiple</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:MultiNatureOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:MultiNatureOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Multiorigin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Origine multiple</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:MultiOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:MultiOrigin">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Multiorigin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Origine multiple</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Natural -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Natural">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Allégé/Light</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Naturally/Natural</skos:prefLabel>
+        <dc:description xml:lang="fr">&quot;Lorsqu&apos;une denrée alimentaire remplit naturellement la ou les conditions fixées dans la présente annexe pour l&apos;utilisation d&apos;une allégation nutritionnelle, le terme «naturellement/naturel» peut accompagner cette allégation.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="en">&quot;Where a food naturally meets the condition(s) laid down in this Annex for the use of a nutritional claim, the term &apos;naturally/natural&apos; may be used as a prefix to the claim.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NatureEtProgres -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NatureEtProgres">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OrganicLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Nature and Progress</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Nature et progrès</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nature et progrès</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-NATURE_ET_PROGRES"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NatureOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NatureOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Algae"/>
+        <skos:narrower rdf:resource="dfc-f:AnimalOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:Bacteria"/>
+        <skos:narrower rdf:resource="dfc-f:Funghi"/>
+        <skos:narrower rdf:resource="dfc-f:Mineral"/>
+        <skos:narrower rdf:resource="dfc-f:MultiNatureOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:PlantOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:UnknownNatureOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:Water"/>
+        <skos:prefLabel xml:lang="en">Natural origin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Source naturelle d&apos;origine</skos:prefLabel>
+        <dc:description xml:lang="en">Natural &quot;living&quot; origin concerned</dc:description>
+        <dc:description xml:lang="fr">Source &quot;vivante&quot; d&apos;origine concernée</dc:description>
+        <rdfs:comment xml:lang="en">We made the list for the prototype with open nomenclature to start with for plants and animals but might be better to connected directly from relevant source ontologies for variaties, races, etc. (http://open-nomenclature.org/fra/nomenclatures/varieties/tree).</rdfs:comment>
+        <skos:topConceptOf rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Netherlands -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Netherlands">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Netherlands</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pays bas</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q55"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NewZealand -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NewZealand">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Oceania"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">New Zealand</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nouvelle Zélande</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q664"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NoAddedSodiumSalt -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NoAddedSodiumSalt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">No added sodium/salt</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sans sodium/sel ajouté</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that sodium/salt has not been added to a food and any claim likely to have the same meaning for the consumer may only be made where the product does not contain any added sodium/salt or any other ingredient containing added sodium/salt and the product contains no more than 0,12 g sodium, or the equivalent value for salt, per 100 g or 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle il n’a pas été ajouté de sodium ou de sel à une denrée alimentaire, ou toute autre allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas de sodium ou de sel ajouté ou tout autre ingrédient contenant du sodium ou du sel ajouté et si le produit ne contient pas plus de 0,12 g de sodium ou de l’équivalent en sel par 100 g ou par 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NoAddedSugars -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NoAddedSugars">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Sans sucres ajoutés</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">With no added sugars</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that sugars have not been added to a food, and any claim likely to have the same meaning for the consumer, may only be made where the product does not contain any added mono- or disaccharides or any other food used for its sweetening properties. If sugars are naturally present in the food, the following indication should also appear on the label: &apos;CONTAINS NATURALLY OCCURRING SUGARS&apos;.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle il n&apos;a pas été ajouté de sucres à une denrée alimentaire, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas de monosaccharides ou disaccharides ajoutés ou toute autre denrée alimentaire utilisée pour ses propriétés édulcorantes. Si les sucres sont naturellement présents dans la denrée alimentaire, l&apos;indication suivante devrait également figurer sur l&apos;étiquette: «CONTIENT DES SUCRES NATURELLEMENT PRÉSENTS».&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Normandy -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Normandy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Normandie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Normandy</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18677875"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NorthAmerica -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NorthAmerica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Amérique du Nord</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">North America</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q49"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NorthernIreland -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NorthernIreland">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:UnitedKingdom"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Irlande du Nord</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Northern Ireland</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q26"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NouvelleAquitaine -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NouvelleAquitaine">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">NA</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Nouvelle-Aquitaine</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nouvelle-Aquitaine</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18678082"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:NutritionalClaim -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:NutritionalClaim">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Claim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:ContainsNutrientOrSubstance"/>
+        <skos:narrower rdf:resource="dfc-f:EnergyFree"/>
+        <skos:narrower rdf:resource="dfc-f:EnergyReduced"/>
+        <skos:narrower rdf:resource="dfc-f:FatFree"/>
+        <skos:narrower rdf:resource="dfc-f:HighFibre"/>
+        <skos:narrower rdf:resource="dfc-f:HighMonounsaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-f:HighOmega3FattyAcids"/>
+        <skos:narrower rdf:resource="dfc-f:HighPolyunsaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-f:HighProtein"/>
+        <skos:narrower rdf:resource="dfc-f:HighUnsaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-f:HighVitaminsMinerals"/>
+        <skos:narrower rdf:resource="dfc-f:IncreasedNutrient"/>
+        <skos:narrower rdf:resource="dfc-f:Light"/>
+        <skos:narrower rdf:resource="dfc-f:LowEnergy"/>
+        <skos:narrower rdf:resource="dfc-f:LowFat"/>
+        <skos:narrower rdf:resource="dfc-f:LowSaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-f:LowSodiumSalt"/>
+        <skos:narrower rdf:resource="dfc-f:LowSugars"/>
+        <skos:narrower rdf:resource="dfc-f:Natural"/>
+        <skos:narrower rdf:resource="dfc-f:NoAddedSodiumSalt"/>
+        <skos:narrower rdf:resource="dfc-f:NoAddedSugars"/>
+        <skos:narrower rdf:resource="dfc-f:ReducedNutrient"/>
+        <skos:narrower rdf:resource="dfc-f:SaturatedFatFree"/>
+        <skos:narrower rdf:resource="dfc-f:SodiumOrSaltFree"/>
+        <skos:narrower rdf:resource="dfc-f:SourceOfFibre"/>
+        <skos:narrower rdf:resource="dfc-f:SourceOfOmega3FattyAcids"/>
+        <skos:narrower rdf:resource="dfc-f:SourceOfProtein"/>
+        <skos:narrower rdf:resource="dfc-f:SourceOfVitaminsMinerals"/>
+        <skos:narrower rdf:resource="dfc-f:SugarsFree"/>
+        <skos:narrower rdf:resource="dfc-f:VeryLowSodiumSalt"/>
+        <skos:prefLabel xml:lang="fr">Allégation nutritionnelle</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nutritional claim</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Occitania -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Occitania">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Occitania</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Occitanie</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18678265"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Oceania -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Oceania">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Australia"/>
+        <skos:narrower rdf:resource="dfc-f:NewZealand"/>
+        <skos:prefLabel xml:lang="en">Oceania</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Océanie</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q55643"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Organic-AB -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Organic-AB">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OrganicLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Agriculture Biologique</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Agriculture Biologique</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-AGRICULTURE_BIOLOGIQUE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Organic-BioCoherence -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Organic-BioCoherence">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OrganicLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Bio Coherence</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Bio Coherence</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Organic-EU -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Organic-EU">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OrganicLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">Eurofeuille</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Agriculture Biologique EU</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">EU Organic Farming</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-EU_ORGANIC_FARMING"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:OrganicLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:OrganicLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:NatureEtProgres"/>
+        <skos:narrower rdf:resource="dfc-f:Organic-AB"/>
+        <skos:narrower rdf:resource="dfc-f:Organic-BioCoherence"/>
+        <skos:narrower rdf:resource="dfc-f:Organic-EU"/>
+        <skos:prefLabel xml:lang="fr">Label biologique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Organic label</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:OtherClaim -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:OtherClaim">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Claim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:GlutenFree"/>
+        <skos:narrower rdf:resource="dfc-f:Vegan"/>
+        <skos:narrower rdf:resource="dfc-f:Vegetarian"/>
+        <skos:prefLabel xml:lang="fr">Autre allégation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Other claim</skos:prefLabel>
+        <dc:description xml:lang="en">Any other claim which states, suggests or implies that a food has particular properties.</dc:description>
+        <dc:description xml:lang="fr">Toute autre allégation qui déclare, suggère ou implique qu&apos;un aliment a des propriétés particulières.</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PGS -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PGS">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:LocalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">PGS</skos:altLabel>
+        <skos:altLabel xml:lang="fr">PGS</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Protected Geographical Status</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Statut géographique protégé</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-PROTECTED_GEOGRAPHICAL_INDICATION"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PartOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PartOrigin">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:MultiOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:UnknownPartOrigin"/>
+        <skos:prefLabel xml:lang="en">Part of origin</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie d&apos;origine</skos:prefLabel>
+        <dc:description xml:lang="en">Part of natural &quot;living&quot; origin concerned</dc:description>
+        <dc:description xml:lang="fr">Partie de la source &quot;vivante&quot; d&apos;origine concernée</dc:description>
+        <rdfs:comment xml:lang="en">If I sell carrots, I can sell only the roots, the whole pants with the leaves, or only the leaves. Examples : root, leaves, seeds...</rdfs:comment>
+        <skos:topConceptOf rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PaysDeLoire -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PaysDeLoire">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Loire lands</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Pays de la Loire</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Pays de la Loire</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q16994"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PaysansDeNature_FR -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PaysansDeNature_FR">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:LocalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Farmers of Nature</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Paysans de Nature</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Paysans de Nature</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Pig -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Pig">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:PigBody"/>
+        <skos:prefLabel xml:lang="fr">Cochon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pig</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PigBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PigBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Pig"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Partie du cochon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pig&apos;s body</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PlantOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PlantOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Plant</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Plante</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:PlantPartOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:PlantPartOrigin">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Bulb"/>
+        <skos:narrower rdf:resource="dfc-f:Flower"/>
+        <skos:narrower rdf:resource="dfc-f:Fruit"/>
+        <skos:narrower rdf:resource="dfc-f:Leaf"/>
+        <skos:narrower rdf:resource="dfc-f:Root"/>
+        <skos:narrower rdf:resource="dfc-f:Seed"/>
+        <skos:narrower rdf:resource="dfc-f:Stem"/>
+        <skos:narrower rdf:resource="dfc-f:Tuber"/>
+        <skos:narrower rdf:resource="dfc-f:WholePlant"/>
+        <skos:prefLabel xml:lang="en">Part or product of plant</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Partie ou produit d&apos;une plante</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Portugal -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Portugal">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Portugal</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Portugal</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q45"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:ProductOfTheYear -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:ProductOfTheYear">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:MarketingLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Elu produit de l&apos;année</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Product of the year</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-PRODUCT_OF_THE_YEAR_CONSUMER_SURVEY"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:ProvenceAlpesCotesAzur -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:ProvenceAlpesCotesAzur">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:France"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="fr">PACA</skos:altLabel>
+        <skos:altLabel xml:lang="en">Provence-Alps-French Riviera</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Provence-Alpes-Côte d’Azur</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Provence-Alpes-Côte d’Azur</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q15104"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Quail -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Quail">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:QuailEgg"/>
+        <skos:prefLabel xml:lang="fr">Caille</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quail</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:QuailEgg -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:QuailEgg">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Quail"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Quail&apos;s egg</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Œuf de caille</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:RainforestAlliance -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:RainforestAlliance">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Rainforest Alliance</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Rainforest Alliance</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-RAINFOREST_ALLIANCE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:RedLabel_FR -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:RedLabel_FR">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:EthicalLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:altLabel xml:lang="en">Red Label</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Label Rouge</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Label Rouge</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="gs1:PackagingMarkedLabelAccreditationCode-LABEL_ROUGE"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:ReducedNutrient -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:ReducedNutrient">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Reduced nutrient</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Réduit en nutriment</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim stating that the content in one or more nutrients has been reduced, and any claim likely to have the same meaning for the consumer, may only be made where the reduction in content is at least 30% compared to a similar product, except for micronutrients, where a 10 % difference in the reference values as set in Directive 90/496/EEC shall be acceptable, and for sodium, or the equivalent value for salt, where a 25% difference shall be acceptable. The claim &quot;reduced saturated fat&quot;, and any claim likely to have the same meaning for the consumer, may only be made: (a) if the sum of saturated fatty acids and of trans-fatty acids in the product bearing the claim is at least 30% less than the sum of saturated fatty acids and of trans-fatty acids in a similar product; and (b) if the content in trans-fatty acids in the product bearing the claim is equal to or less than in a similar product. The claim &quot;reduced sugars&quot;, and any claim likely to have the same meaning for the consumer, may only be made if the amount of energy of the product bearing the claim is equal to or less than the amount of energy in a similar product.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation affirmant que la teneur en un ou plusieurs nutriments a été réduite, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si la réduction de cette teneur est d&apos;au moins 30 % par rapport à un produit similaire, sauf s&apos;il s&apos;agit de micronutriments, pour lesquels une différence de 10 % par rapport aux valeurs de référence fixées par la directive 90/496/CEE est admissible, ou s&apos;il s&apos;agit de sodium ou d&apos;équivalent en sel, pour lesquels une différence de 25 % est admissible. L’allégation «réduit en graisses saturées», ou toute autre allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que: a) si la somme des acides gras saturés et des acides gras trans contenus dans le produit auquel s’applique l’allégation est au moins de 30 % inférieure à la somme des acides gras saturés et des acides gras trans contenus dans un produit similaire; et b) si la teneur en acides gras trans dans le produit auquel s’applique l’allégation est inférieure ou égale à celle d’un produit similaire. L’allégation «réduit en sucres», ou toute autre allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si la valeur énergétique du produit auquel s’applique l’allégation est inférieure ou égale à celle d’un produit similaire.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Root -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Root">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Racine</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Root</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Roster -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Roster">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:RosterBody"/>
+        <skos:prefLabel xml:lang="fr">Coq</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rooster</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:RosterBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:RosterBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Roster"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Partie de coq</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Rooster&apos;s body</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SaturatedFatFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SaturatedFatFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Sans graisses saturées</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Saturated fat-free</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food does not contain saturated fat, and any claim likely to have the same meaning for the consumer, may only be made where the sum of saturated fat and trans-fatty acids does not exceed 0,1 g of saturated fat per 100 g or 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire ne contient pas de graisses saturées, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si la somme des acides gras saturés et des acides gras trans n&apos;excède pas 0,1 g de graisses saturées par 100 g ou par 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Scotland -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Scotland">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:UnitedKingdom"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Ecosse</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Scotland</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Seed -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Seed">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Graine</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Seed</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Sheep -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Sheep">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:AnimalPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:SheepBody"/>
+        <skos:prefLabel xml:lang="fr">Mouton</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SheepBody -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SheepBody">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:Sheep"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Partie de mouton</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sheep&apos;s body</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SodiumOrSaltFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SodiumOrSaltFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Sans sodium ou sans sel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sodium-free or salt-free</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is sodium-free or salt-free, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,005 g of sodium, or the equivalent value for salt, per 100 g.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire ne contient pas de sodium ou de sel, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 0,005 g de sodium ou de l&apos;équivalent en sel par 100 g.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SourceOfFibre -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SourceOfFibre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Source de fibres</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Source of fibre</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is a source of fibre, and any claim likely to have the same meaning for the consumer, may only be made where the product contains at least 3 g of fibre per 100 g or at least 1,5 g of fibre per 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est une source de fibres, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 3 g de fibres par 100 g ou au moins 1,5 g de fibres par 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SourceOfOmega3FattyAcids -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SourceOfOmega3FattyAcids">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Source d&apos;acide gras Oméga-3</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Source of omega-3 fatty acids</skos:prefLabel>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est une source d’acide gras oméga-3, ou toute allégation susceptible d’avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins 0,3 g d’acide alphalinolénique pour 100 g et 100 kcal, ou au moins 40 mg d’acide eicosapentaénoïque et d’acide docosahexénoïque combinés pour 100 g et 100 kcal.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="en">&quot;Where a food naturally meets the condition(s) laid down in this Annex for the use of a nutritional claim, the term &apos;naturally/natural&apos; may be used as a prefix to the claim.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SourceOfProtein -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SourceOfProtein">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Source de protéine</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Source of protein</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is a source of protein, and any claim likely to have the same meaning for the consumer, may only be made where at least 12% of the energy value of the food is provided by protein.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est une source de protéines, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si 12 % au moins de la valeur énergétique de la denrée alimentaire sont produits par des protéines.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SourceOfVitaminsMinerals -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SourceOfVitaminsMinerals">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Source de vitamines et/ou de minéraux</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Source of vitamins and/or minerals</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is a source of vitamins and/or minerals, and any claim likely to have the same meaning for the consumer, may only be made where the product contains at least a significant amount as defined in the Annex to Directive 90/496/EEC or an amount provided for by derogations granted according to Article 6 of Regulation (EC) No 1925/2006 of the European Parliament and of the Council of 20 December 2006 on the addition of vitamins and minerals and of certain other substances to foods[1].&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est une source de vitamines et/ou de minéraux, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit contient au moins la quantité significative définie à l&apos;annexe de la directive 90/496/CEE ou une quantité prévue au titre de dérogations accordées conformément à l&apos;article 6 du règlement (CE) no 1925/2006 du Parlement européen et du Conseil du 20 décembre 2006 concernant l&apos;adjonction de vitamines, de minéraux et de certaines autres substances aux denrées alimentaires.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SouthAmerica -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SouthAmerica">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Amérique du Sud</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">South America</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q18"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Spain -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Spain">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Espagne</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Spain</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q29"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Stem -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Stem">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Stem</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Tige</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:SugarsFree -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:SugarsFree">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Faible teneur en sucres</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sugars-free</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is sugars-free, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,5 g of sugars per 100 g or 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire ne contient pas de sucres, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 0,5 g de sucres par 100 g ou par 100 ml.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Switzerland -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Switzerland">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Suisse</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Switzerland</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q39"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:TasteOfTheYear -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:TasteOfTheYear">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:MarketingLabel"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Reconnu Saveur de l’année</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Taste of the year</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:TerritorialOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:TerritorialOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:Africa"/>
+        <skos:narrower rdf:resource="dfc-f:Asia"/>
+        <skos:narrower rdf:resource="dfc-f:Europe"/>
+        <skos:narrower rdf:resource="dfc-f:MultiGeoOrigin"/>
+        <skos:narrower rdf:resource="dfc-f:NorthAmerica"/>
+        <skos:narrower rdf:resource="dfc-f:Oceania"/>
+        <skos:narrower rdf:resource="dfc-f:SouthAmerica"/>
+        <skos:narrower rdf:resource="dfc-f:UnknownGeoOrigin"/>
+        <skos:prefLabel xml:lang="fr">Origine géographique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Territorial origin</skos:prefLabel>
+        <dc:description xml:lang="fr">Origine géographique du produit concerné</dc:description>
+        <dc:description xml:lang="en">Territorial origin of the concerned product</dc:description>
+        <skos:topConceptOf rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Tuber -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Tuber">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Tuber</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Tubercule</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:UnitedKingdom -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:UnitedKingdom">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Europe"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:narrower rdf:resource="dfc-f:England"/>
+        <skos:narrower rdf:resource="dfc-f:NorthernIreland"/>
+        <skos:narrower rdf:resource="dfc-f:Scotland"/>
+        <skos:narrower rdf:resource="dfc-f:Wales"/>
+        <skos:altLabel xml:lang="en">UK</skos:altLabel>
+        <skos:altLabel xml:lang="fr">UK</skos:altLabel>
+        <skos:prefLabel xml:lang="fr">Royaume Uni</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">United Kingdom</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q145"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:UnknownGeoOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:UnknownGeoOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:TerritorialOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Origine territoriale inconnue</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unknown territorial origin</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:UnknownLabel -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:UnknownLabel">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:Certification"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Label inconnu</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unknown label</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:UnknownNatureOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:UnknownNatureOrigin">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Source d&apos;origine inconnue</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unknown nature origin</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:UnknownPartOrigin -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:UnknownPartOrigin">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Partie d&apos;origine inconnue</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Unknown part origin</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Vegan -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Vegan">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OtherClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Vegan</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vegan</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Vegetarian -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Vegetarian">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:OtherClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="en">Vegetarian</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Végétarien</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:VeryLowSodiumSalt -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:VeryLowSodiumSalt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NutritionalClaim"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Très pauvre en sodium/sel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Very low sodium/salt</skos:prefLabel>
+        <dc:description xml:lang="en">&quot;A claim that a food is very low in sodium/salt, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,04 g of sodium, or the equivalent value for salt, per 100 g or per 100 ml. This claim shall not be used for natural mineral waters and other waters.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+        <dc:description xml:lang="fr">&quot;Une allégation selon laquelle une denrée alimentaire est très pauvre en sodium ou en sel, ou toute autre allégation susceptible d&apos;avoir le même sens pour le consommateur, ne peut être faite que si le produit ne contient pas plus de 0,04 g de sodium ou de l&apos;équivalent en sel par 100 g ou 100 ml. Il est interdit d&apos;utiliser cette allégation pour les eaux minérales naturelles et les autres eaux.&quot; (source: Annex of Regulation (EC) No 1924/2006)</dc:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Wales -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Wales">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:UnitedKingdom"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Pays de Galles</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Wales</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="https://www.wikidata.org/wiki/Q25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:Water -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:Water">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-f:NatureOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Eau</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Water</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-f:WholePlant -->
+
+    <owl:NamedIndividual rdf:about="dfc-f:WholePlant">
+        <rdf:type rdf:resource="skos:Concept"/>
+        <skos:broader rdf:resource="dfc-f:PlantPartOrigin"/>
+        <skos:inScheme rdf:resource="dfc-f:DFC_ProductGlossary_Facet"/>
+        <skos:prefLabel xml:lang="fr">Plante entière</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Whole plant</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
     <!-- dfc-m:AllergenDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:AllergenDimension"/>
+    <owl:NamedIndividual rdf:about="dfc-m:AllergenDimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skos:broader rdf:resource="dfc-m:Dimension"/>
+        <skos:narrower rdf:resource="dfc-m:Celeriac"/>
+        <skos:narrower rdf:resource="dfc-m:CerealsWithGluten"/>
+        <skos:narrower rdf:resource="dfc-m:Crustaceans"/>
+        <skos:narrower rdf:resource="dfc-m:Eggs"/>
+        <skos:narrower rdf:resource="dfc-m:Fishs"/>
+        <skos:narrower rdf:resource="dfc-m:LactoseMilks"/>
+        <skos:narrower rdf:resource="dfc-m:Lupine"/>
+        <skos:narrower rdf:resource="dfc-m:Molluscs"/>
+        <skos:narrower rdf:resource="dfc-m:Mustard"/>
+        <skos:narrower rdf:resource="dfc-m:Nuts"/>
+        <skos:narrower rdf:resource="dfc-m:Peanuts"/>
+        <skos:narrower rdf:resource="dfc-m:SesameSeeds"/>
+        <skos:narrower rdf:resource="dfc-m:Soy"/>
+        <skos:narrower rdf:resource="dfc-m:Sulphites"/>
+        <skos:prefLabel xml:lang="en">Allergen dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Dimension allergène</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:AustralianDollar -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:AustralianDollar">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">australian dollar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">dollar australien</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:AUD"/>
+        <skos:notation>$AU</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Calcium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Calcium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Calcium</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Calcium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:CanadianDollar -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:CanadianDollar">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">canadian dollar</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">dollar canadien</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:CAD"/>
+        <skos:notation>$CA</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Carbohydrates -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Carbohydrates">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Carbohydrates</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Carbohydrates</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Celeriac -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Celeriac">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Celeriac</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Celeriac</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Centilitre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Centilitre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">centilitre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">centilitre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:CentiL"/>
+        <skos:notation>cl</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Centimetre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Centimetre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">centimetre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">centimètre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:CentiM"/>
+        <skos:notation>cm</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:CerealsWithGluten -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:CerealsWithGluten">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Cereals containing gluten</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Céréales contenant du gluten</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Chloride -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Chloride">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Chloride</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Chloride</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Cholesterol -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Cholesterol">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Cholesterol</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Cholestérol</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Chromium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Chromium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Chrome</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Chromium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Copper -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Copper">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Copper</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Copper</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Crate -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Crate">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">cagette</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">crate</skos:prefLabel>
+        <skos:notation>crate</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Crustaceans -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Crustaceans">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Crustaceans</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Crustacés</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:CurrencyUnit -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:CurrencyUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:Unit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:AustralianDollar"/>
+        <skos:narrower rdf:resource="dfc-m:CanadianDollar"/>
+        <skos:narrower rdf:resource="dfc-m:Euro"/>
+        <skos:narrower rdf:resource="dfc-m:PoundSterling"/>
+        <skos:narrower rdf:resource="dfc-m:USDollar"/>
+        <skos:prefLabel xml:lang="en">Currency unit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Unité de devise monétaire</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:DFC_ProductGlossary_Measure -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:DFC_ProductGlossary_Measure">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:prefLabel xml:lang="fr">Glossaire mesure produit</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Product measure glossary </skos:prefLabel>
+        <dc:description xml:lang="fr">Glossaire des dimensions et unités de mesures de produit</dc:description>
+        <dc:description xml:lang="en">glossary measuring dimensions and units for measuring product</dc:description>
+        <skos:hasTopConcept rdf:resource="dfc-m:Dimension"/>
+        <skos:hasTopConcept rdf:resource="dfc-m:Unit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Decilitre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Decilitre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">decilitre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">decilitre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:DeciL"/>
+        <skos:notation>dl</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Decimetre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Decimetre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">decimetre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">decimètre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:DeciM"/>
+        <skos:notation>dm</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Depth -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Depth">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Depth</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Profondeur</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Dimension -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Dimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:narrower rdf:resource="dfc-m:LabellingDimension"/>
+        <skos:narrower rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:narrower rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:prefLabel xml:lang="en">Dimension</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Dimension</skos:prefLabel>
+        <dc:description xml:lang="en">Dimensions used to describe DFC&apos;s product characteristics</dc:description>
+        <dc:description xml:lang="fr">Dimensions utilisées pour décrire les charactéristiques produit dans DFC</dc:description>
+        <skos:topConceptOf rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:EcoScore -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:EcoScore">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Eco-score</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Eco-score</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Eggs -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Eggs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Eggs</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Oeufs</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Euro -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Euro">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">euro</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">euro</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:Euro"/>
+        <skos:notation>€</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Fat -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Fat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Fat</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Graisse</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Fibre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Fibre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Fibre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Fibre</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Fishs -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Fishs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Poissons</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">fishs</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Fluoride -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Fluoride">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Fluoride</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Fluoride</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:FolicAcid -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:FolicAcid">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Acide folique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Folic acid</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Gallon -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Gallon">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">gallon (GB)</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">gallon (UK)</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:GAL_UK"/>
+        <skos:notation>gal</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Gram -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Gram">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">gram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">gramme</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:GM"/>
+        <skos:notation>g</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Height -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Height">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Hauteur</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Height</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Inch -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Inch">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">inch</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pouce</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:IN"/>
+        <skos:notation>in</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Iodine -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Iodine">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Iodine</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Iodine</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Iron -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Iron">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Fer</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Iron</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Kilogram -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Kilogram">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">kilogram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">kilogramme</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:KiloGM"/>
+        <skos:notation>kg</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Kilometre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Kilometre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">kilometre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">kilomètre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:KiloM"/>
+        <skos:notation>km</skos:notation>
+    </owl:NamedIndividual>
     
 
 
     <!-- dfc-m:LabellingDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:LabellingDimension"/>
+    <owl:NamedIndividual rdf:about="dfc-m:LabellingDimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:Dimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:EcoScore"/>
+        <skos:narrower rdf:resource="dfc-m:NutriScore"/>
+        <skos:narrower rdf:resource="dfc-m:PlanetScore"/>
+        <skos:prefLabel xml:lang="fr">Dimension score de labellisation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Labelling dimension</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:LactoseMilks -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:LactoseMilks">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Lait et produits à base de lactose</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Milk and lactose-based products</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Litre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Litre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">litre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">litre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:L"/>
+        <skos:notation>l</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Lupine -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Lupine">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Lupin</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Lupine</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Magnesium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Magnesium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Magnesium</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Magnésium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Manganese -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Manganese">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Manganese</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Manganèse</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Metre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Metre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">metre</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">mètre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:M"/>
+        <skos:notation>m</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Milligram -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Milligram">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">milligram</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">milligramme</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:MilliGM"/>
+        <skos:notation>g</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Millilitre -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Millilitre">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">milliliter</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">millilitre</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:MilliL"/>
+        <skos:notation>ml</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Molluscs -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Molluscs">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Molluscs</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Mollusques</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:MonosaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:MonosaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Graisse monosaturée</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Monosaturated fat</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Mustard -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Mustard">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Moutarde</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mustard</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:NutriScore -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:NutriScore">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Nutri-score</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Nutri-score</skos:prefLabel>
+    </owl:NamedIndividual>
     
 
 
     <!-- dfc-m:NutrientDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:NutrientDimension"/>
+    <owl:NamedIndividual rdf:about="dfc-m:NutrientDimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:Dimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:Calcium"/>
+        <skos:narrower rdf:resource="dfc-m:Carbohydrates"/>
+        <skos:narrower rdf:resource="dfc-m:Chloride"/>
+        <skos:narrower rdf:resource="dfc-m:Cholesterol"/>
+        <skos:narrower rdf:resource="dfc-m:Chromium"/>
+        <skos:narrower rdf:resource="dfc-m:Copper"/>
+        <skos:narrower rdf:resource="dfc-m:Fat"/>
+        <skos:narrower rdf:resource="dfc-m:Fibre"/>
+        <skos:narrower rdf:resource="dfc-m:Fluoride"/>
+        <skos:narrower rdf:resource="dfc-m:FolicAcid"/>
+        <skos:narrower rdf:resource="dfc-m:Iodine"/>
+        <skos:narrower rdf:resource="dfc-m:Iron"/>
+        <skos:narrower rdf:resource="dfc-m:Magnesium"/>
+        <skos:narrower rdf:resource="dfc-m:Manganese"/>
+        <skos:narrower rdf:resource="dfc-m:MonosaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-m:Phosphorus"/>
+        <skos:narrower rdf:resource="dfc-m:PolyunsaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-m:Potassium"/>
+        <skos:narrower rdf:resource="dfc-m:Protein"/>
+        <skos:narrower rdf:resource="dfc-m:Salt"/>
+        <skos:narrower rdf:resource="dfc-m:SaturatedFat"/>
+        <skos:narrower rdf:resource="dfc-m:Selenium"/>
+        <skos:narrower rdf:resource="dfc-m:Sodium"/>
+        <skos:narrower rdf:resource="dfc-m:Starch"/>
+        <skos:narrower rdf:resource="dfc-m:Sugars"/>
+        <skos:narrower rdf:resource="dfc-m:Transfat"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminA"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminB12"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminB6"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminC"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminD"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminE"/>
+        <skos:narrower rdf:resource="dfc-m:VitaminK"/>
+        <skos:narrower rdf:resource="dfc-m:Zinc"/>
+        <skos:prefLabel xml:lang="fr">Dimension nutritionnelle</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nutrient dimension</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Nuts -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Nuts">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Fruits à coque</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nuts</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Package -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Package">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">colis</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">package</skos:prefLabel>
+        <skos:notation>pack</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Peanuts -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Peanuts">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Arachides</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Peanuts</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Percent -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Percent">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">percent</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pourcent</skos:prefLabel>
+        <skos:notation>%</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Phosphorus -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Phosphorus">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Phosphore</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Phosphorus</skos:prefLabel>
+    </owl:NamedIndividual>
     
 
 
     <!-- dfc-m:PhysicalDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PhysicalDimension"/>
+    <owl:NamedIndividual rdf:about="dfc-m:PhysicalDimension">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:Dimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:Depth"/>
+        <skos:narrower rdf:resource="dfc-m:Height"/>
+        <skos:narrower rdf:resource="dfc-m:Volume"/>
+        <skos:narrower rdf:resource="dfc-m:Weight"/>
+        <skos:narrower rdf:resource="dfc-m:Width"/>
+        <skos:prefLabel xml:lang="fr">Dimension physique</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Physical dimension</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Piece -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Piece">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">piece</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pièce</skos:prefLabel>
+        <skos:notation>u</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:PlanetScore -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:PlanetScore">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Planet-score</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Planet-score</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:PolyunsaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:PolyunsaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Graisse poly-insaturée</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Poly-unsaturated fat</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Potassium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Potassium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Potassium</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Potassium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:PoundMass -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:PoundMass">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">pound</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">pound</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:LB"/>
+        <skos:notation>lb</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:PoundSterling -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:PoundSterling">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">livre sterling</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">pound sterling</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:PoundSterling"/>
+        <skos:notation>£</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Protein -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Protein">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Protein</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Protéine</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:QuantityUnit -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:QuantityUnit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:Unit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:Centilitre"/>
+        <skos:narrower rdf:resource="dfc-m:Centimetre"/>
+        <skos:narrower rdf:resource="dfc-m:Crate"/>
+        <skos:narrower rdf:resource="dfc-m:Decilitre"/>
+        <skos:narrower rdf:resource="dfc-m:Decimetre"/>
+        <skos:narrower rdf:resource="dfc-m:Gallon"/>
+        <skos:narrower rdf:resource="dfc-m:Gram"/>
+        <skos:narrower rdf:resource="dfc-m:Inch"/>
+        <skos:narrower rdf:resource="dfc-m:Kilogram"/>
+        <skos:narrower rdf:resource="dfc-m:Kilometre"/>
+        <skos:narrower rdf:resource="dfc-m:Litre"/>
+        <skos:narrower rdf:resource="dfc-m:Metre"/>
+        <skos:narrower rdf:resource="dfc-m:Milligram"/>
+        <skos:narrower rdf:resource="dfc-m:Millilitre"/>
+        <skos:narrower rdf:resource="dfc-m:Package"/>
+        <skos:narrower rdf:resource="dfc-m:Percent"/>
+        <skos:narrower rdf:resource="dfc-m:Piece"/>
+        <skos:narrower rdf:resource="dfc-m:PoundMass"/>
+        <skos:narrower rdf:resource="dfc-m:Tonne"/>
+        <skos:prefLabel xml:lang="en">Quantity unit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Unité de quantité</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Salt -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Salt">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Salt</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sel</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:SaturatedFat -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:SaturatedFat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Graisse saturée</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Saturated fat</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Selenium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Selenium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Selenium</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sélénium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:SesameSeeds -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:SesameSeeds">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Graines de sésame</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sesame seeds</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Sodium -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Sodium">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Sodium</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Sodium</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Soy -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Soy">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Soja</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Soy</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Starch -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Starch">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Amidon</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Starch</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Sugars -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Sugars">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Sucres</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sugars</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Sulphites -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Sulphites">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Anhydride sulfureux et sulfites en concentration de plus de 10mg/kg ou 10 mg/l (exprimés en SO2)</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sulfur dioxide and sulphites in a concentration of more than 10mg/kg or 10mg/l (expressed as SO2)</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Tonne -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Tonne">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">tonne</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">tonne</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:TONNE"/>
+        <skos:notation>T</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Transfat -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Transfat">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Graisse trans</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Transfat</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:USDollar -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:USDollar">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Dollar US</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">US Dollar</skos:prefLabel>
+        <rdfs:isDefinedBy rdf:resource="unit:USDollar"/>
+        <skos:notation>$US</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Unit -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Unit">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="dfc-m:CurrencyUnit"/>
+        <skos:narrower rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:prefLabel xml:lang="en">Unit</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Unités</skos:prefLabel>
+        <dc:description xml:lang="en">Units used to measure DFC&apos;s quantitative values</dc:description>
+        <dc:description xml:lang="fr">Unités utilisées pour mesurer les valeurs quantitatives dans DFC</dc:description>
+        <skos:topConceptOf rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminA -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminA">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin A</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine A</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminB12 -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminB12">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin B12</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine B12</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminB6 -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminB6">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin B6</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine B6</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminC -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminC">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin C</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine C</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminD -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminD">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin D</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine D</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminE -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminE">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin E</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine E</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:VitaminK -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:VitaminK">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Vitamin K</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Vitamine K</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Volume -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Volume">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Volume</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Volume</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Weight -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Weight">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Poids</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Weight</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Width -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Width">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="fr">Largeur</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Width</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- dfc-m:Zinc -->
+
+    <owl:NamedIndividual rdf:about="dfc-m:Zinc">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
+        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:prefLabel xml:lang="en">Zinc</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Zinc</skos:prefLabel>
+    </owl:NamedIndividual>
     
 
 
@@ -4209,17 +7667,11 @@
     
 
 
-    <!-- dfc-m:Unit -->
-
-    <owl:NamedIndividual rdf:about="dfc-m:Unit"/>
-    
-
-
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#bernardC -->
 
-    <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#bernardC">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#bernardC">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
@@ -4233,9 +7685,9 @@
 
     <!-- http://static.datafoodconsortium.org/data/publication.rdf#rachelA -->
 
-    <rdf:Description rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#rachelA">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/publication.rdf#rachelA">
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    </rdf:Description>
+    </owl:NamedIndividual>
     
 
 
