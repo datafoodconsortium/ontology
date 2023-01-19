@@ -171,9 +171,6 @@
         <Class IRI="#PhysicalCharacteristic"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PhysicalDimension"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#PhysicalPlace"/>
     </Declaration>
     <Declaration>
@@ -184,6 +181,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProductBatch"/>
@@ -402,6 +402,9 @@
         <ObjectProperty IRI="#hasPhysicalDimension"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPrice"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasProcess"/>
     </Declaration>
     <Declaration>
@@ -436,6 +439,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#industrializes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPriceOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#listedIn"/>
@@ -624,7 +630,13 @@
         <DataProperty IRI="#VATnumber"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#VATrate"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#VATstatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#availabilityTime"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#batchNumber"/>
@@ -648,6 +660,9 @@
         <DataProperty IRI="#date"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#deliveryCondition"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#description"/>
     </Declaration>
     <Declaration>
@@ -661,6 +676,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#expiryDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#extraAvailabilityTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#extraDeliveryCondition"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#facebookPage"/>
@@ -696,6 +717,9 @@
         <DataProperty IRI="#marginPercent"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#orderNumber"/>
     </Declaration>
     <Declaration>
@@ -712,9 +736,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#postcode"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#price"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#productionDate"/>
@@ -811,6 +832,9 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:duration"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -1702,6 +1726,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Price"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ProductBatch"/>
         <Class IRI="#What_Subject"/>
     </SubClassOf>
@@ -2323,6 +2351,10 @@
         <ObjectProperty IRI="#hasDimension"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrice"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasProcess"/>
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
@@ -2372,6 +2404,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#industrializes"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPriceOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2697,6 +2733,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPhysicalDimension"/>
         <ObjectProperty IRI="#physicalDimensionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPrice"/>
+        <ObjectProperty IRI="#isPriceOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasProcess"/>
@@ -3046,6 +3086,14 @@
         <Class IRI="#PhysicalCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrice"/>
+        <ObjectUnionOf>
+            <Class IRI="#Offer"/>
+            <Class IRI="#PaymentMethod"/>
+            <Class IRI="#Transaction"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasProcess"/>
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
@@ -3096,6 +3144,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#industrializes"/>
         <Class IRI="#SuppliedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPriceOf"/>
+        <Class IRI="#Price"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#listedIn"/>
@@ -3213,10 +3265,6 @@
                 <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#physicalDimensionOf"/>
-        <Class IRI="#PhysicalDimension"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#processOf"/>
@@ -3363,6 +3411,9 @@
         <DataProperty IRI="#VATnumber"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
+        <DataProperty IRI="#VATrate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#VATstatus"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -3420,6 +3471,9 @@
         <DataProperty IRI="#marginPercent"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
+        <DataProperty IRI="#name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#orderNumber"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -3430,9 +3484,6 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#postcode"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
-        <DataProperty IRI="#price"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#productionDate"/>
@@ -3468,15 +3519,26 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#URL"/>
-        <Class IRI="#VirtualPlace"/>
+        <ObjectUnionOf>
+            <Class IRI="#DefinedProduct"/>
+            <Class IRI="#VirtualPlace"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#VATnumber"/>
         <Class IRI="#Enterprise"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#VATrate"/>
+        <Class IRI="#Price"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#VATstatus"/>
         <Class IRI="#Enterprise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#availabilityTime"/>
+        <Class IRI="#SuppliedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#batchNumber"/>
@@ -3511,6 +3573,10 @@
         <Class IRI="#Stock"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#deliveryCondition"/>
+        <Class IRI="#SuppliedProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#description"/>
         <Class IRI="#DFC_BusinessOntology_Subject"/>
     </DataPropertyDomain>
@@ -3534,6 +3600,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#expiryDate"/>
         <Class IRI="#ProductBatch"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#extraAvailabilityTime"/>
+        <Class IRI="#CatalogItem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#extraDeliveryCondition"/>
+        <Class IRI="#CatalogItem"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#facebookPage"/>
@@ -3580,6 +3654,10 @@
         <Class IRI="#Coordination"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#orderNumber"/>
         <Class IRI="#Order"/>
     </DataPropertyDomain>
@@ -3602,14 +3680,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#postcode"/>
         <Class IRI="#Address"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#price"/>
-        <ObjectUnionOf>
-            <Class IRI="#Offer"/>
-            <Class IRI="#PaymentMethod"/>
-            <Class IRI="#Transaction"/>
-        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#productionDate"/>
@@ -3694,8 +3764,16 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#VATrate"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#VATstatus"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#availabilityTime"/>
+        <Datatype abbreviatedIRI="xsd:duration"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#batchNumber"/>
@@ -3726,6 +3804,10 @@
         <Datatype abbreviatedIRI="xsd:date"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#deliveryCondition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -3744,6 +3826,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#expiryDate"/>
         <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#extraAvailabilityTime"/>
+        <Datatype abbreviatedIRI="xsd:duration"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#extraDeliveryCondition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#facebookPage"/>
@@ -3790,6 +3880,10 @@
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:Name"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#orderNumber"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -3812,10 +3906,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#postcode"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#price"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#productionDate"/>
@@ -4287,6 +4377,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="en">Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="fr">Prix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Price</IRI>
+        <IRI>https://www.gs1.org/voc/PriceSpecification</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ProductBatch</IRI>
         <Literal xml:lang="fr">Lot du produit</Literal>
     </AnnotationAssertion>
@@ -4318,7 +4423,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#QuantitativeValue</IRI>
-        <Literal>https://gs1.org/voc/QuantitativeValue</Literal>
+        <IRI>https://www.gs1.org/voc/QuantitativeValue</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4482,6 +4587,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VATrate</IRI>
+        <Literal xml:lang="en">VAT rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VATrate</IRI>
+        <Literal xml:lang="fr">taux de TVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
         <Literal xml:lang="en">charges VAT</Literal>
     </AnnotationAssertion>
@@ -4612,6 +4727,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#availabilityTime</IRI>
+        <Literal xml:lang="en">availabilityTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#availabilityTime</IRI>
+        <Literal xml:lang="fr">délai de disponibilité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#batchNumber</IRI>
         <Literal xml:lang="en">batch number</Literal>
     </AnnotationAssertion>
@@ -4644,6 +4769,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#brand</IRI>
         <Literal xml:lang="fr">marque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#brand</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4699,6 +4829,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#claim</IRI>
         <Literal xml:lang="en">product claim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#claim</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4842,6 +4977,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveryCondition</IRI>
+        <Literal xml:lang="fr">condition de transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveryCondition</IRI>
+        <Literal xml:lang="en">delivery condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#description</IRI>
         <Literal xml:lang="en">description</Literal>
     </AnnotationAssertion>
@@ -4899,6 +5044,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#expiryDate</IRI>
         <Literal xml:lang="en">expiry date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extraAvailabilityTime</IRI>
+        <Literal xml:lang="fr">délai de disponibilité additionnel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extraAvailabilityTime</IRI>
+        <Literal xml:lang="en">extra availability time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extraDeliveryCondition</IRI>
+        <Literal xml:lang="fr">condition de transport additionnelle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#extraDeliveryCondition</IRI>
+        <Literal xml:lang="en">extra delivery condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5212,6 +5377,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrice</IRI>
+        <Literal xml:lang="fr">a pour prix</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrice</IRI>
+        <Literal xml:lang="en">has price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasProcess</IRI>
         <Literal xml:lang="fr">a subi comme procédé</Literal>
     </AnnotationAssertion>
@@ -5339,6 +5514,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#invoiceNumber</IRI>
         <Literal xml:lang="fr">numéro de facture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPriceOf</IRI>
+        <Literal xml:lang="fr">est le prix de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPriceOf</IRI>
+        <Literal xml:lang="en">is price of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5479,6 +5664,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#marginPercent</IRI>
         <Literal xml:lang="en">markup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="fr">nom</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5696,6 +5891,11 @@
         <Literal xml:lang="en">physical characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#physicalCharacteristics</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#physicalDimensionOf</IRI>
         <Literal xml:lang="fr">dimension physique de</Literal>
@@ -5714,16 +5914,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#postcode</IRI>
         <Literal xml:lang="en">post code</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#price</IRI>
-        <Literal xml:lang="en">price</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#price</IRI>
-        <Literal xml:lang="fr">prix</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
