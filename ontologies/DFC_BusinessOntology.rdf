@@ -98,7 +98,7 @@
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliatedBy">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliates"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#manages"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
         <rdfs:label xml:lang="fr">géré par</rdfs:label>
         <rdfs:label xml:lang="en">managed by</rdfs:label>
@@ -110,9 +110,21 @@
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliates">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliatesBy"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
+        <rdfs:label xml:lang="en">affiliates</rdfs:label>
+        <rdfs:label xml:lang="fr">affiliés</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliatesBy -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliatesBy">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Person"/>
-        <rdfs:label xml:lang="fr">gère</rdfs:label>
-        <rdfs:label xml:lang="en">manages</rdfs:label>
+        <rdfs:label xml:lang="en">affiliates by</rdfs:label>
+        <rdfs:label xml:lang="fr">affiliés par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -580,7 +592,7 @@
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasMainContact -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasMainContact">
-        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliates"/>
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#manages"/>
         <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#mainContactOf"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
         <rdfs:label xml:lang="fr">a pour contact principal</rdfs:label>
@@ -693,6 +705,18 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasPhoneNumber -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasPhoneNumber">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#phoneNumberOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="fr">a pour numéro de téléphone</rdfs:label>
+        <rdfs:label xml:lang="en">has phone number</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasPhysicalCharacteristic -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasPhysicalCharacteristic">
@@ -726,6 +750,8 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Offer"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Order"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#OrderLine"/>
                     <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PaymentMethod"/>
                     <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Transaction"/>
                 </owl:unionOf>
@@ -754,7 +780,14 @@
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasQuantity">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DefinedProduct"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#OrderLine"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#QuantitativeValue"/>
         <rdfs:label xml:lang="fr">a pour quantité</rdfs:label>
         <rdfs:label xml:lang="en">has quantity</rdfs:label>
@@ -770,6 +803,18 @@
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LocalizedProduct"/>
         <rdfs:label xml:lang="fr">a pour référence</rdfs:label>
         <rdfs:label xml:lang="en">has reference</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasSocialMedia -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#hasSocialMedia">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#socialMediaOf"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="fr">a pour réseau social</rdfs:label>
+        <rdfs:label xml:lang="en">has social media</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1009,6 +1054,7 @@
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#manages">
         <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Person"/>
         <rdfs:label xml:lang="fr">gère</rdfs:label>
         <rdfs:label xml:lang="en">manages</rdfs:label>
     </owl:ObjectProperty>
@@ -1077,6 +1123,17 @@
         <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#CatalogItem"/>
         <rdfs:label xml:lang="en">offered through</rdfs:label>
         <rdfs:label xml:lang="fr">offert via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offeredTo -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offeredTo">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Offer"/>
+        <rdfs:label xml:lang="en">offered to</rdfs:label>
+        <rdfs:label xml:lang="fr">offert à</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1206,6 +1263,17 @@
         </rdfs:domain>
         <rdfs:label xml:lang="en">part of origin (source) utilisée</rdfs:label>
         <rdfs:label xml:lang="fr">partie de la source utilisée</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#phoneNumberOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#phoneNumberOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhoneNumber"/>
+        <rdfs:label xml:lang="en">numéro de téléphone de</rdfs:label>
+        <rdfs:label xml:lang="en">phone number of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1422,6 +1490,17 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#socialMediaOf -->
+
+    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#socialMediaOf">
+        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#SocialMedia"/>
+        <rdfs:label xml:lang="fr">réseau social de</rdfs:label>
+        <rdfs:label xml:lang="en">social medial of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#storedIn -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#storedIn">
@@ -1614,39 +1693,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#InstagramPage -->
-
-    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#InstagramPage">
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">Instagram page</rdfs:label>
-        <rdfs:label xml:lang="fr">page Instagram</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LinkedinPage -->
-
-    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#LinkedinPage">
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">LinkedIn page</rdfs:label>
-        <rdfs:label xml:lang="fr">page LinkedIn</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#TwitterPage -->
-
-    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#TwitterPage">
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">Twitter page</rdfs:label>
-        <rdfs:label xml:lang="fr">compte Twitter</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#URL -->
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#URL">
@@ -1831,6 +1877,23 @@
     
 
 
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#discount -->
+
+    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#discount">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Offer"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Order"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#OrderLine"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#email -->
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#email">
@@ -1906,17 +1969,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label xml:lang="fr">condition de transport additionnelle</rdfs:label>
         <rdfs:label xml:lang="en">extra delivery condition</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#facebookPage -->
-
-    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#facebookPage">
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:label xml:lang="en">Facebook page</rdfs:label>
-        <rdfs:label xml:lang="fr">page Facebook</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2008,7 +2060,7 @@
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#logo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
+        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:label xml:lang="en">logo</rdfs:label>
         <rdfs:label xml:lang="fr">logo</rdfs:label>
@@ -2261,6 +2313,24 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="fr">valeur</rdfs:label>
         <rdfs:label xml:lang="en">value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#websitePage -->
+
+    <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#websitePage">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#VirtualPlace"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label xml:lang="fr">page internet</rdfs:label>
+        <rdfs:label xml:lang="en">website page</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -3042,12 +3112,6 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#stockLimitation"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Offer</rdfs:label>
         <rdfs:label xml:lang="fr">Offre</rdfs:label>
     </owl:Class>
@@ -3168,18 +3232,28 @@
         <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#affiliates"/>
+                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#mainContactOf"/>
                 <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#mainContactOf"/>
+                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#manages"/>
                 <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Enterprise"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Person</rdfs:label>
         <rdfs:label xml:lang="fr">Personne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhoneNumber -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#PhoneNumber">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#What_Subject"/>
+        <rdfs:label xml:lang="fr">Numero de téléphone</rdfs:label>
+        <rdfs:label xml:lang="en">Phone number</rdfs:label>
     </owl:Class>
     
 
@@ -3459,8 +3533,8 @@
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">Repository</rdfs:label>
-        <rdfs:label xml:lang="fr">Référentiel</rdfs:label>
+        <rdfs:label xml:lang="en">Catalog</rdfs:label>
+        <rdfs:label xml:lang="fr">Catalogue</rdfs:label>
     </owl:Class>
     
 
@@ -3511,6 +3585,16 @@
         </rdfs:subClassOf>
         <rdfs:label xml:lang="fr">Option d&apos;expédition</rdfs:label>
         <rdfs:label xml:lang="en">Shipping option</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#SocialMedia -->
+
+    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#SocialMedia">
+        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#What_Subject"/>
+        <rdfs:label xml:lang="fr">Réseau social</rdfs:label>
+        <rdfs:label xml:lang="en">Social media</rdfs:label>
     </owl:Class>
     
 
