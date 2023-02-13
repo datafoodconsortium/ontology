@@ -3871,7 +3871,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#date"/>
-        <Datatype abbreviatedIRI="xsd:date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#deliveryCondition"/>

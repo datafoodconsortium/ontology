@@ -1853,7 +1853,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:label xml:lang="en">date</rdfs:label>
         <rdfs:label xml:lang="fr">date</rdfs:label>
     </owl:DatatypeProperty>
