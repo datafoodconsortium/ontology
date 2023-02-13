@@ -669,6 +669,9 @@
         <DataProperty IRI="#country"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#countryCode"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#date"/>
     </Declaration>
     <Declaration>
@@ -3462,6 +3465,10 @@
         <Class abbreviatedIRI="dfc-p:Unit"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="#countryCode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#endDate"/>
         <DataProperty IRI="#date"/>
     </SubDataPropertyOf>
@@ -3622,6 +3629,10 @@
         <Class IRI="#Address"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#countryCode"/>
+        <Class IRI="#PhoneNumber"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#date"/>
         <ObjectIntersectionOf>
             <Class IRI="#Order"/>
@@ -3731,7 +3742,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#phoneNumber"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#PhoneNumber"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#physicalCharacteristics"/>
@@ -3853,6 +3864,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#country"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#countryCode"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#date"/>
