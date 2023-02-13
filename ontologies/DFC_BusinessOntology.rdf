@@ -24,12 +24,12 @@
         <dc:creator rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#bernardC"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Business Part)</dc:description>
         <dc:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-05-28</dc:issued>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-09</dc:modified>
         <dc:publisher rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
         <vann:preferredNamespacePrefix>dfc-b</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.8</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1149,17 +1149,6 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offersTo -->
-
-    <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offersTo">
-        <rdfs:subPropertyOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Offer"/>
-        <rdfs:label xml:lang="en">offers to</rdfs:label>
-        <rdfs:label xml:lang="fr">offert à</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#optionOf -->
 
     <owl:ObjectProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#optionOf">
@@ -1846,7 +1835,14 @@
 
     <owl:DatatypeProperty rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#date">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Stock"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Order"/>
+                    <rdf:Description rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#Stock"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:label xml:lang="en">date</rdfs:label>
         <rdfs:label xml:lang="fr">date</rdfs:label>
@@ -3096,19 +3092,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offersTo"/>
-                <owl:allValuesFrom rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#CustomerCategory"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offers"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#offersTo"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>

@@ -49,7 +49,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-10-21</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-02-09</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -69,7 +69,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.8</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Address"/>
@@ -168,6 +168,9 @@
         <Class IRI="#Person"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PhoneNumber"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PhysicalCharacteristic"/>
     </Declaration>
     <Declaration>
@@ -205,6 +208,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ShippingOption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialMedia"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stock"/>
@@ -271,6 +277,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#affiliates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affiliatesBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
@@ -396,6 +405,9 @@
         <ObjectProperty IRI="#hasPartOrigin"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPhoneNumber"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
     </Declaration>
     <Declaration>
@@ -412,6 +424,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasReference"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSocialMedia"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasType"/>
@@ -486,10 +501,10 @@
         <ObjectProperty IRI="#offeredThrough"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#offers"/>
+        <ObjectProperty IRI="#offeredTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#offersTo"/>
+        <ObjectProperty IRI="#offers"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#optionOf"/>
@@ -514,6 +529,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#partOriginOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#phoneNumberOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#physicalCharacteristicOf"/>
@@ -570,6 +588,9 @@
         <ObjectProperty IRI="#selects"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#socialMediaOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#storedIn"/>
     </Declaration>
     <Declaration>
@@ -615,15 +636,6 @@
         <DataProperty IRI="#Image"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#InstagramPage"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#LinkedinPage"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#TwitterPage"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#URL"/>
     </Declaration>
     <Declaration>
@@ -666,6 +678,9 @@
         <DataProperty IRI="#description"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#discount"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#email"/>
     </Declaration>
     <Declaration>
@@ -682,9 +697,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#extraDeliveryCondition"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#facebookPage"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#familyName"/>
@@ -763,6 +775,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#websitePage"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Depth"/>
@@ -1471,28 +1486,9 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Offer"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#offersTo"/>
-            <Class IRI="#CustomerCategory"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Offer"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#offers"/>
         </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Offer"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#offersTo"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Offer"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#stockLimitation"/>
-        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Order"/>
@@ -1598,16 +1594,20 @@
     <SubClassOf>
         <Class IRI="#Person"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#affiliates"/>
+            <ObjectProperty IRI="#mainContactOf"/>
             <Class IRI="#Enterprise"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Person"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#mainContactOf"/>
+            <ObjectProperty IRI="#manages"/>
             <Class IRI="#Enterprise"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhoneNumber"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PhysicalCharacteristic"/>
@@ -1882,6 +1882,10 @@
             <ObjectProperty IRI="#optionOf"/>
             <Class IRI="#SaleSession"/>
         </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialMedia"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stock"/>
@@ -2179,6 +2183,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#affiliatesBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
         <ObjectProperty IRI="#characteristicOf"/>
     </SubObjectPropertyOf>
@@ -2308,7 +2316,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMainContact"/>
-        <ObjectProperty IRI="#affiliates"/>
+        <ObjectProperty IRI="#manages"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasNatureOrigin"/>
@@ -2343,6 +2351,10 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPhoneNumber"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
         <ObjectProperty IRI="#hasCharacteristic"/>
     </SubObjectPropertyOf>
@@ -2364,6 +2376,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasReference"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSocialMedia"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2467,11 +2483,11 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#offers"/>
+        <ObjectProperty IRI="#offeredTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#offersTo"/>
+        <ObjectProperty IRI="#offers"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2505,6 +2521,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#partOriginOf"/>
         <ObjectProperty IRI="#facetOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#phoneNumberOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#physicalCharacteristicOf"/>
@@ -2579,6 +2599,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#storedIn"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2628,7 +2652,11 @@
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#affiliatedBy"/>
+        <ObjectProperty IRI="#manages"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#affiliates"/>
+        <ObjectProperty IRI="#affiliatesBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
@@ -2727,6 +2755,10 @@
         <ObjectProperty IRI="#partOriginOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPhoneNumber"/>
+        <ObjectProperty IRI="#phoneNumberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
         <ObjectProperty IRI="#physicalCharacteristicOf"/>
     </InverseObjectProperties>
@@ -2745,6 +2777,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasReference"/>
         <ObjectProperty IRI="#referenceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSocialMedia"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasType"/>
@@ -2871,6 +2907,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#affiliates"/>
+        <Class IRI="#Enterprise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affiliatesBy"/>
         <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3078,6 +3118,10 @@
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPhoneNumber"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
@@ -3089,6 +3133,8 @@
         <ObjectProperty IRI="#hasPrice"/>
         <ObjectUnionOf>
             <Class IRI="#Offer"/>
+            <Class IRI="#Order"/>
+            <Class IRI="#OrderLine"/>
             <Class IRI="#PaymentMethod"/>
             <Class IRI="#Transaction"/>
         </ObjectUnionOf>
@@ -3099,11 +3145,18 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasQuantity"/>
-        <Class IRI="#DefinedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#DefinedProduct"/>
+            <Class IRI="#OrderLine"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasReference"/>
         <Class IRI="#LocalizedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSocialMedia"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasType"/>
@@ -3192,6 +3245,10 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#natureOriginOf"/>
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3218,11 +3275,11 @@
         <Class IRI="#CatalogItem"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#offers"/>
+        <ObjectProperty IRI="#offeredTo"/>
         <Class IRI="#Offer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#offersTo"/>
+        <ObjectProperty IRI="#offers"/>
         <Class IRI="#Offer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3265,6 +3322,10 @@
                 <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#phoneNumberOf"/>
+        <Class IRI="#PhoneNumber"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#processOf"/>
@@ -3333,6 +3394,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#selects"/>
         <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#socialMediaOf"/>
+        <Class IRI="#SocialMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#storedIn"/>
@@ -3506,18 +3571,6 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#InstagramPage"/>
-        <Class IRI="#Enterprise"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#LinkedinPage"/>
-        <Class IRI="#Enterprise"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#TwitterPage"/>
-        <Class IRI="#Enterprise"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#URL"/>
         <ObjectUnionOf>
             <Class IRI="#DefinedProduct"/>
@@ -3570,7 +3623,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#date"/>
-        <Class IRI="#Stock"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Order"/>
+            <Class IRI="#Stock"/>
+        </ObjectIntersectionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#deliveryCondition"/>
@@ -3579,6 +3635,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#description"/>
         <Class IRI="#DFC_BusinessOntology_Subject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#discount"/>
+        <ObjectUnionOf>
+            <Class IRI="#Offer"/>
+            <Class IRI="#Order"/>
+            <Class IRI="#OrderLine"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#email"/>
@@ -3610,10 +3674,6 @@
         <Class IRI="#CatalogItem"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#facebookPage"/>
-        <Class IRI="#Enterprise"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#familyName"/>
         <Class IRI="#Person"/>
     </DataPropertyDomain>
@@ -3643,7 +3703,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#logo"/>
-        <Class IRI="#Enterprise"/>
+        <Class IRI="#Agent"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#longitude"/>
@@ -3739,20 +3799,15 @@
             <Class IRI="#QuantitativeValue"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#websitePage"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#VirtualPlace"/>
+        </ObjectIntersectionOf>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Image"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#InstagramPage"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#LinkedinPage"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#TwitterPage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3812,6 +3867,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#discount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#email"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -3834,10 +3893,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#extraDeliveryCondition"/>
         <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#facebookPage"/>
-        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#familyName"/>
@@ -3934,6 +3989,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#value"/>
         <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#websitePage"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4232,26 +4291,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#InstagramPage</IRI>
-        <Literal xml:lang="en">Instagram page</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#InstagramPage</IRI>
-        <Literal xml:lang="fr">page Instagram</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LinkedinPage</IRI>
-        <Literal xml:lang="en">LinkedIn page</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#LinkedinPage</IRI>
-        <Literal xml:lang="fr">page LinkedIn</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LocalizedProduct</IRI>
         <Literal xml:lang="en">Localized product</Literal>
     </AnnotationAssertion>
@@ -4319,6 +4358,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Person</IRI>
         <Literal xml:lang="fr">Personne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhoneNumber</IRI>
+        <Literal xml:lang="fr">Numero de téléphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhoneNumber</IRI>
+        <Literal xml:lang="en">Phone number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4438,12 +4487,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Repository</IRI>
-        <Literal xml:lang="en">Repository</Literal>
+        <Literal xml:lang="en">Catalog</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Repository</IRI>
-        <Literal xml:lang="fr">Référentiel</Literal>
+        <Literal xml:lang="fr">Catalogue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4494,6 +4543,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ShippingOption</IRI>
         <Literal xml:lang="en">Shipping option</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialMedia</IRI>
+        <Literal xml:lang="fr">Réseau social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialMedia</IRI>
+        <Literal xml:lang="en">Social media</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4554,16 +4613,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Transformation</IRI>
         <Literal xml:lang="fr">Transformation</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwitterPage</IRI>
-        <Literal xml:lang="en">Twitter page</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#TwitterPage</IRI>
-        <Literal xml:lang="fr">compte Twitter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4698,12 +4747,22 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#affiliates</IRI>
-        <Literal xml:lang="fr">gère</Literal>
+        <Literal xml:lang="en">affiliates</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#affiliates</IRI>
-        <Literal xml:lang="en">manages</Literal>
+        <Literal xml:lang="fr">affiliés</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#affiliatesBy</IRI>
+        <Literal xml:lang="en">affiliates by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#affiliatesBy</IRI>
+        <Literal xml:lang="fr">affiliés par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5067,16 +5126,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#facebookPage</IRI>
-        <Literal xml:lang="en">Facebook page</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#facebookPage</IRI>
-        <Literal xml:lang="fr">page Facebook</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#facetOf</IRI>
         <Literal xml:lang="en">facet of</Literal>
     </AnnotationAssertion>
@@ -5357,6 +5406,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="fr">a pour numéro de téléphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="en">has phone number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPhysicalCharacteristic</IRI>
         <Literal xml:lang="fr">a pour caractéristique physique</Literal>
     </AnnotationAssertion>
@@ -5414,6 +5473,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasReference</IRI>
         <Literal xml:lang="en">has reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSocialMedia</IRI>
+        <Literal xml:lang="fr">a pour réseau social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSocialMedia</IRI>
+        <Literal xml:lang="en">has social media</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5727,6 +5796,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#offeredTo</IRI>
+        <Literal xml:lang="en">offered to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#offeredTo</IRI>
+        <Literal xml:lang="fr">offert à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#offers</IRI>
         <Literal xml:lang="en">offers</Literal>
     </AnnotationAssertion>
@@ -5734,16 +5813,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#offers</IRI>
         <Literal xml:lang="fr">offre</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#offersTo</IRI>
-        <Literal xml:lang="en">offers to</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#offersTo</IRI>
-        <Literal xml:lang="fr">offert à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5864,6 +5933,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#phoneNumber</IRI>
         <Literal xml:lang="en">phone number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phoneNumberOf</IRI>
+        <Literal xml:lang="en">numéro de téléphone de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phoneNumberOf</IRI>
+        <Literal xml:lang="en">phone number of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6112,6 +6191,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#socialMediaOf</IRI>
+        <Literal xml:lang="fr">réseau social de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#socialMediaOf</IRI>
+        <Literal xml:lang="en">social medial of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#specificCondition</IRI>
         <Literal xml:lang="fr">conditon particulière d&apos;usage ou de conservation</Literal>
     </AnnotationAssertion>
@@ -6279,6 +6368,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#value</IRI>
         <Literal xml:lang="en">value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#websitePage</IRI>
+        <Literal xml:lang="fr">page internet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#websitePage</IRI>
+        <Literal xml:lang="en">website page</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
