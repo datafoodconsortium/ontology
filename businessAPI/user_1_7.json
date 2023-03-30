@@ -118,7 +118,7 @@
       "@id": "catalogItem/catalogItemId1",
       "@type": "dfc-b:CatalogItem",
       "dfc-b:references": "/suppliedProduct/item3",
-      "dfc-b:sku": "catalog item gtin or sku",
+      "dfc-b:sku": "4225-776-3234",
       "dfc-b:stockLimitation": "999",
       "dfc-b:offeredThrough": [
           "offer/offerId1",
@@ -128,7 +128,7 @@
     {
       "@id": "catalogItem/catalogItemId2",
       "@type": "dfc-b:CatalogItem",
-      "dfc-b:sku": "catalog item gtin or sku",
+      "dfc-b:sku": "4225-776-3235",
       "dfc-b:stockLimitation": "999",
       "dfc-b:references": "/suppliedProduct/item4",
       "dfc-b:offeredThrough": [
