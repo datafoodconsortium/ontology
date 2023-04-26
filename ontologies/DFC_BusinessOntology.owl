@@ -36,8 +36,20 @@
         <IRI>http://static.datafoodconsortium.org/data/publication.rdf#simonL</IRI>
     </Annotation>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <IRI>#maximeL</IRI>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <IRI>http://static.datafoodconsortium.org/data/publication.rdf#bernardC</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#baptisteD</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:creator"/>
+        <IRI>#florenceA</IRI>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
@@ -69,7 +81,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.8</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.9</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Address"/>
@@ -198,6 +210,9 @@
         <Class IRI="#QuantitativeValue"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RangeValue"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RealStock"/>
     </Declaration>
     <Declaration>
@@ -220,6 +235,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TechnicalProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
     </Declaration>
     <Declaration>
         <Class IRI="#TheoriticalStock"/>
@@ -247,9 +265,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dfc-p:NutrientDimension"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
@@ -321,6 +336,9 @@
         <ObjectProperty IRI="#consumes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#containerInformationOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#coordinatedBy"/>
     </Declaration>
     <Declaration>
@@ -331,6 +349,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#defines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#deliveredAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#dimensionOf"/>
@@ -405,6 +426,9 @@
         <ObjectProperty IRI="#hasPartOrigin"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasPaymentMethod"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasPhoneNumber"/>
     </Declaration>
     <Declaration>
@@ -427,6 +451,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTemperature"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasType"/>
@@ -457,6 +484,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPriceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTemperatureOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#listedIn"/>
@@ -525,6 +555,9 @@
         <ObjectProperty IRI="#owns"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#paidWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#partOf"/>
     </Declaration>
     <Declaration>
@@ -538,6 +571,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#physicalDimensionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pickedUpAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#processOf"/>
@@ -562,9 +598,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#references"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#refersTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#representedBy"/>
@@ -624,7 +657,7 @@
         <ObjectProperty IRI="#typeOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#uses"/>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
@@ -646,6 +679,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#VATstatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#accessibilityInfo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#availabilityTime"/>
@@ -676,6 +712,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#deliveryCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deliveryConstraint"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#description"/>
@@ -711,6 +750,9 @@
         <DataProperty IRI="#firstName"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#frozen"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
     </Declaration>
     <Declaration>
@@ -730,6 +772,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#marginPercent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#maxValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#minValue"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#name"/>
@@ -759,6 +807,9 @@
         <DataProperty IRI="#quantity"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#refrigerated"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#sku"/>
     </Declaration>
     <Declaration>
@@ -781,6 +832,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#websitePage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ContainerInformation"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Depth"/>
@@ -807,13 +861,13 @@
         <NamedIndividual IRI="#Repository_6"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Volume"/>
+        <NamedIndividual IRI="#baptisteD"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Weight"/>
+        <NamedIndividual IRI="#florenceA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Width"/>
+        <NamedIndividual IRI="#maximeL"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
@@ -1246,40 +1300,9 @@
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasNatureOrigin"/>
-            <Class abbreviatedIRI="dfc-p:NatureOrigin"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DefinedProduct"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasPartOrigin"/>
-            <Class abbreviatedIRI="dfc-p:PartOrigin"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DefinedProduct"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasProcess"/>
-            <Class abbreviatedIRI="dfc-p:Process"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DefinedProduct"/>
-        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#referencedBy"/>
             <Class IRI="#CatalogItem"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DefinedProduct"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#hasGeographicalOrigin"/>
-            <ObjectUnionOf>
-                <Class abbreviatedIRI="dfc-p:GlobalGenericOrigin"/>
-                <Class abbreviatedIRI="dfc-p:TerritorialOrigin"/>
-            </ObjectUnionOf>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
@@ -1308,22 +1331,9 @@
     <SubClassOf>
         <Class IRI="#DeliveryOption"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#refersTo"/>
-            <Class IRI="#Address"/>
+            <ObjectProperty IRI="#deliveredAt"/>
+            <Class IRI="#PhysicalPlace"/>
         </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DeliveryOption"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#uses"/>
-            <Class IRI="#Address"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#DeliveryOption"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#refersTo"/>
-        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Enterprise"/>
@@ -1514,6 +1524,13 @@
     <SubClassOf>
         <Class IRI="#Order"/>
         <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPaymentMethod"/>
+            <Class IRI="#PaymentMethod"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Order"/>
+        <ObjectAllValuesFrom>
             <ObjectProperty IRI="#orderedBy"/>
             <Class IRI="#Agent"/>
         </ObjectAllValuesFrom>
@@ -1527,15 +1544,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Order"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#uses"/>
-            <Class IRI="#PaymentMethod"/>
-        </ObjectAllValuesFrom>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#belongsTo"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Order"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#belongsTo"/>
+            <ObjectProperty IRI="#hasPaymentMethod"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1548,12 +1564,6 @@
         <Class IRI="#Order"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#selects"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Order"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#uses"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1707,14 +1717,14 @@
     <SubClassOf>
         <Class IRI="#PickupOption"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#uses"/>
+            <ObjectProperty IRI="#pickedUpAt"/>
             <Class IRI="#PhysicalPlace"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PickupOption"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#uses"/>
+            <ObjectProperty IRI="#pickedUpAt"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1769,6 +1779,10 @@
     <SubClassOf>
         <Class IRI="#QuantitativeValue"/>
         <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RangeValue"/>
+        <Class IRI="#QuantitativeValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RealStock"/>
@@ -1970,6 +1984,10 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class IRI="#RangeValue"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#TheoriticalStock"/>
         <Class IRI="#Stock"/>
     </SubClassOf>
@@ -2065,10 +2083,6 @@
         <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
-        <Class abbreviatedIRI="dfc-p:DFC_ProductGlossary_Facet"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="dfc-p:PhysicalDimension"/>
         <Class abbreviatedIRI="dfc-p:Dimension"/>
     </SubClassOf>
@@ -2079,15 +2093,6 @@
     <DisjointClasses>
         <Class IRI="#AllergenCharacteristic"/>
         <Class IRI="#PhysicalCharacteristic"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class abbreviatedIRI="dfc-p:Certification"/>
-        <Class abbreviatedIRI="dfc-p:GlobalGenericOrigin"/>
-        <Class abbreviatedIRI="dfc-p:NatureOrigin"/>
-        <Class abbreviatedIRI="dfc-p:NutritionalClaim"/>
-        <Class abbreviatedIRI="dfc-p:PartOrigin"/>
-        <Class abbreviatedIRI="dfc-p:Process"/>
-        <Class abbreviatedIRI="dfc-p:TerritorialOrigin"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
@@ -2104,6 +2109,10 @@
     <ClassAssertion>
         <Class abbreviatedIRI="foaf:Person"/>
         <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <NamedIndividual IRI="#ContainerInformation"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Repository"/>
@@ -2130,7 +2139,7 @@
         <NamedIndividual IRI="#Repository_6"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2142,15 +2151,15 @@
         <NamedIndividual abbreviatedIRI="dfc-p:Height"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual abbreviatedIRI="dfc-p:NutritionalClaim"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2158,7 +2167,7 @@
         <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
         <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -2242,6 +2251,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#containerInformationOf"/>
+        <ObjectProperty IRI="#facetOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#coordinatedBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2255,6 +2268,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#defines"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#deliveredAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2354,6 +2371,10 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPaymentMethod"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhoneNumber"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2383,6 +2404,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSocialMedia"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTemperature"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2427,6 +2452,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isPriceOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTemperatureOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2518,6 +2547,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#paidWith"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#partOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -2536,6 +2569,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#physicalDimensionOf"/>
         <ObjectProperty IRI="#dimensionOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#pickedUpAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#processOf"/>
@@ -2567,10 +2604,6 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#references"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#refersTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -2646,8 +2679,8 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#uses"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+        <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#addressOf"/>
@@ -2758,6 +2791,10 @@
         <ObjectProperty IRI="#partOriginOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPaymentMethod"/>
+        <ObjectProperty IRI="#paidWith"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasPhoneNumber"/>
         <ObjectProperty IRI="#phoneNumberOf"/>
     </InverseObjectProperties>
@@ -2784,6 +2821,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasSocialMedia"/>
         <ObjectProperty IRI="#socialMediaOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTemperature"/>
+        <ObjectProperty IRI="#isTemperatureOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasType"/>
@@ -2940,7 +2981,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
-                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
                 <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
@@ -2954,7 +2995,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
-                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
                 <NamedIndividual abbreviatedIRI="dfc-p:NutritionalClaim"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
@@ -3000,6 +3041,16 @@
         <Class IRI="#ConsumptionFlow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containerInformationOf"/>
+        <ObjectIntersectionOf>
+            <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
+                <NamedIndividual IRI="#ContainerInformation"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#coordinatedBy"/>
         <Class IRI="#Coordination"/>
     </ObjectPropertyDomain>
@@ -3016,6 +3067,10 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#deliveredAt"/>
+        <Class IRI="#DeliveryOption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#dimensionOf"/>
         <Class abbreviatedIRI="dfc-p:Dimension"/>
     </ObjectPropertyDomain>
@@ -3028,7 +3083,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
-                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
                 <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
@@ -3082,7 +3137,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasMainContact"/>
-        <Class IRI="#Enterprise"/>
+        <ObjectUnionOf>
+            <Class IRI="#Enterprise"/>
+            <Class IRI="#PhysicalPlace"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasNatureOrigin"/>
@@ -3121,8 +3179,15 @@
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaymentMethod"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPhoneNumber"/>
-        <Class IRI="#Agent"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#PhysicalPlace"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPhysicalCharacteristic"/>
@@ -3160,6 +3225,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSocialMedia"/>
         <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTemperature"/>
+        <Class IRI="#SuppliedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasType"/>
@@ -3204,6 +3273,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPriceOf"/>
         <Class IRI="#Price"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTemperatureOf"/>
+        <Class IRI="#Temperature"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#listedIn"/>
@@ -3256,7 +3329,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
-                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
                 <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
@@ -3313,6 +3386,10 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#paidWith"/>
+        <Class IRI="#PaymentMethod"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#partOf"/>
         <Class IRI="#OrderLine"/>
     </ObjectPropertyDomain>
@@ -3321,7 +3398,7 @@
         <ObjectIntersectionOf>
             <Class IRI="http://www.w3.org/2004/02/skos/core#Concept"/>
             <ObjectHasValue>
-                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                <ObjectProperty IRI="http://www.w3.org/2004/02/skos/core#broader"/>
                 <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
@@ -3329,6 +3406,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#phoneNumberOf"/>
         <Class IRI="#PhoneNumber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pickedUpAt"/>
+        <Class IRI="#PickupOption"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#processOf"/>
@@ -3365,10 +3446,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#references"/>
         <Class IRI="#CatalogItem"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#refersTo"/>
-        <Class IRI="#DeliveryOption"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#representedBy"/>
@@ -3447,14 +3524,6 @@
                 <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#uses"/>
-        <ObjectUnionOf>
-            <Class IRI="#DeliveryOption"/>
-            <Class IRI="#Order"/>
-            <Class IRI="#PickupOption"/>
-        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasQuantity"/>
@@ -3597,6 +3666,10 @@
         <Class IRI="#Enterprise"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#accessibilityInfo"/>
+        <Class IRI="#DeliveryOption"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#availabilityTime"/>
         <Class IRI="#SuppliedProduct"/>
     </DataPropertyDomain>
@@ -3642,6 +3715,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#deliveryCondition"/>
         <Class IRI="#SuppliedProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deliveryConstraint"/>
+        <Class IRI="#DeliveryOption"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#description"/>
@@ -3697,6 +3774,10 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#frozen"/>
+        <Class IRI="#SuppliedProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
         <Class IRI="#DefinedProduct"/>
     </DataPropertyDomain>
@@ -3723,6 +3804,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#marginPercent"/>
         <Class IRI="#Coordination"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#maxValue"/>
+        <Class IRI="#RangeValue"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#minValue"/>
+        <Class IRI="#RangeValue"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#name"/>
@@ -3770,6 +3859,10 @@
             <Class IRI="#Stock"/>
             <Class IRI="#Transaction"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#refrigerated"/>
+        <Class IRI="#SuppliedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#sku"/>
@@ -3838,6 +3931,10 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#accessibilityInfo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#availabilityTime"/>
         <Datatype abbreviatedIRI="xsd:duration"/>
     </DataPropertyRange>
@@ -3875,6 +3972,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#deliveryCondition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#deliveryConstraint"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3922,6 +4023,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#frozen"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
@@ -3947,6 +4052,14 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#marginPercent"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#maxValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#minValue"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -3984,6 +4097,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#quantity"/>
         <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#refrigerated"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#sku"/>
@@ -4741,6 +4858,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#accessibilityInfo</IRI>
+        <Literal xml:lang="en">accessibility information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#accessibilityInfo</IRI>
+        <Literal xml:lang="fr">information d&apos;accessibilité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#addressOf</IRI>
         <Literal xml:lang="en">address of</Literal>
     </AnnotationAssertion>
@@ -4802,7 +4929,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#availabilityTime</IRI>
-        <Literal xml:lang="en">availabilityTime</Literal>
+        <Literal xml:lang="en">availability time</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5051,6 +5178,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveredAt</IRI>
+        <Literal xml:lang="en">delivers at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveredAt</IRI>
+        <Literal xml:lang="fr">délivré à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveryCondition</IRI>
         <Literal xml:lang="fr">condition de transport</Literal>
     </AnnotationAssertion>
@@ -5058,6 +5195,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveryCondition</IRI>
         <Literal xml:lang="en">delivery condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveryConstraint</IRI>
+        <Literal xml:lang="fr">contrainte de livraison</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deliveryConstraint</IRI>
+        <Literal xml:lang="en">delivery constraint</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5406,6 +5553,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentMethod</IRI>
+        <Literal xml:lang="fr">a pour moyen de paiement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentMethod</IRI>
+        <Literal xml:lang="en">has for payment method</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPercentageOfAlcoholByVolume</IRI>
         <Literal xml:lang="en">has percentage of alcohol by volume</Literal>
     </AnnotationAssertion>
@@ -5498,6 +5655,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasSocialMedia</IRI>
         <Literal xml:lang="en">has social media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTemperature</IRI>
+        <Literal xml:lang="fr">a pour temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTemperature</IRI>
+        <Literal xml:lang="en">has temperature</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -5608,6 +5775,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPriceOf</IRI>
         <Literal xml:lang="en">is price of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTemperatureOf</IRI>
+        <Literal xml:lang="fr">est la température de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTemperatureOf</IRI>
+        <Literal xml:lang="en">is temperature of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6001,6 +6178,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pickedUpAt</IRI>
+        <Literal xml:lang="en">picked up at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pickedUpAt</IRI>
+        <Literal xml:lang="fr">ramasser à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#postcode</IRI>
         <Literal xml:lang="fr">code postal</Literal>
     </AnnotationAssertion>
@@ -6108,16 +6295,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#references</IRI>
         <Literal xml:lang="fr">référence</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#refersTo</IRI>
-        <Literal xml:lang="fr">fait référence à</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#refersTo</IRI>
-        <Literal xml:lang="en">refers to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6366,16 +6543,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#uses</IRI>
-        <Literal xml:lang="en">uses</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#uses</IRI>
-        <Literal xml:lang="fr">utilise</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#value</IRI>
         <Literal xml:lang="fr">valeur</Literal>
     </AnnotationAssertion>
@@ -6433,16 +6600,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>dfc-p:NutrientDimension</AbbreviatedIRI>
         <Literal xml:lang="en">Nutrient dimension</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dfc-p:NutritionalClaim</AbbreviatedIRI>
-        <Literal xml:lang="fr">Affirmation nutritionnelle</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dfc-p:NutritionalClaim</AbbreviatedIRI>
-        <Literal xml:lang="en">Nutritional claim</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
