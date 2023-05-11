@@ -67,7 +67,7 @@
     "dfc-b:hasAllergenDimension":{
       "@type":"@id"
     },
-    "dfc-b:hasNutrimentDimension":{
+    "dfc-b:hasNutrientDimension":{
       "@type":"@id"
     },
     "dfc-b:hasPhysicalDimension":{
