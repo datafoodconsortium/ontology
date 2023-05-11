@@ -8,8 +8,8 @@
     "dfc-p": "http://static.datafoodconsortium.org/ontologies/DFC_ProductOntology.owl#",
     "dfc-t": "http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#",
     "dfc-m": "http://static.datafoodconsortium.org/data/measures.rdf#",
-		"dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
-		"dfc-f": "http://static.datafoodconsortium.org/data/facets.rdf#",
+    "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
+    "dfc-f": "http://static.datafoodconsortium.org/data/facets.rdf#",
     "dfc-p:hasUnit":{
       "@type":"@id"
     },
@@ -44,6 +44,9 @@
       "@type":"@id"
     },
     "dfc-b:hasQuantity":{
+      "@type":"@id"
+    },
+    "dfc-b:hasCertification":{
       "@type":"@id"
     },
     "dfc-b:manages":{
