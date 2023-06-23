@@ -10,6 +10,7 @@
     "dfc-m": "http://static.datafoodconsortium.org/data/measures.rdf#",
     "dfc-pt": "http://static.datafoodconsortium.org/data/productTypes.rdf#",
     "dfc-f": "http://static.datafoodconsortium.org/data/facets.rdf#",
+   "ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#",
     "dfc-p:hasUnit":{
       "@type":"@id"
     },
@@ -41,9 +42,6 @@
       "@type":"@id"
     },
     "dfc-b:affiliates":{
-      "@type":"@id"
-    },
-    "dfc-b:hasQuantity":{
       "@type":"@id"
     },
     "dfc-b:hasCertification":{
