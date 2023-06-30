@@ -7,9 +7,9 @@
     "dfc-b": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
     "dfc-p": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#",
     "dfc-t": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
-    "dfc-m": "https://github.com/datafoodconsortium/ontology/releases/latest/download/measures.rdf#",
-    "dfc-pt": "https://github.com/datafoodconsortium/ontology/releases/latest/download/productTypes.rdf#",
-    "dfc-f": "https://github.com/datafoodconsortium/ontology/releases/latest/download/facets.rdf#",
+    "dfc-m": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/measures.rdf#",
+    "dfc-pt": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/productTypes.rdf#",
+    "dfc-f": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/facets.rdf#",
    "ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#",
     "dfc-p:hasUnit":{
       "@type":"@id"
