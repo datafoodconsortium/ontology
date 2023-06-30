@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl#"
-     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl"
+<rdf:RDF xmlns="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl#"
+     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -15,13 +15,13 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
 
-    <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl">
+    <owl:Ontology rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl">
         <rdf:type rdf:resource="http://purl.org/vocommons/voaf#Vocabulary"/>
         <vann:preferredNamespacePrefix>dfc</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://static.datafoodconsortium.org/ontologies/DFC_FullModel.owl#</vann:preferredNamespaceUri>
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"/>
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+        <vann:preferredNamespaceUri>https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl#</vann:preferredNamespaceUri>
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl"/>
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl"/>
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"/>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#rachelA"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>

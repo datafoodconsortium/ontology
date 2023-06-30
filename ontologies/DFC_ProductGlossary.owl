@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"
+     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
-    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
+     ontologyIRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl">
+    <Prefix name="" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -20,7 +20,7 @@
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
-    <Import>http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl</Import>
+    <Import>https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
         <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
@@ -149,7 +149,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_ProductGlossary_Facet"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_ProductGlossary_Facet"/>
@@ -173,11 +173,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_ProductGlossary_Measure"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_ProductGlossary_Type"/>
-        <Class IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_ProductGlossary_Type"/>

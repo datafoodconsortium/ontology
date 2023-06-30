@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
-     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl"
+<rdf:RDF xmlns="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl"
+     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,15 +12,15 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dfc-b="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#"
-     xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
+     xmlns:dfc-b="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#"
+     xmlns:dfc-p="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#"
 	 xmlns:dfc-m="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#"
 	 xmlns:dfc-f="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
-    <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl">
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"/>
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+    <owl:Ontology rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl">
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl"/>
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"/>
 		<owl:imports rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf"/>
 		<owl:imports rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf"/>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
@@ -2912,7 +2912,7 @@
     <!-- dfc-b:DFC_BusinessOntology_Characteristic -->
 
     <owl:Class rdf:about="dfc-b:DFC_BusinessOntology_Characteristic">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:label xml:lang="fr">Caractéristique DFC</rdfs:label>
         <rdfs:label xml:lang="en">DFC characteristic</rdfs:label>
     </owl:Class>
@@ -2922,7 +2922,7 @@
     <!-- dfc-b:DFC_BusinessOntology_Relation -->
 
     <owl:Class rdf:about="dfc-b:DFC_BusinessOntology_Relation">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:comment xml:lang="fr">Relation de l&apos;ontologie Data Food Consortium</rdfs:comment>
         <rdfs:comment xml:lang="en">Relation of Data Food Consortium ontology</rdfs:comment>
         <rdfs:label xml:lang="en">DFC relation</rdfs:label>
@@ -2934,7 +2934,7 @@
     <!-- dfc-b:DFC_BusinessOntology_Subject -->
 
     <owl:Class rdf:about="dfc-b:DFC_BusinessOntology_Subject">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:comment xml:lang="en">Subject of Data Food Consortium ontology</rdfs:comment>
         <rdfs:comment xml:lang="fr">Sujet de l&apos;ontologie Data Food Consortium</rdfs:comment>
         <rdfs:label xml:lang="en">DFC subject</rdfs:label>
@@ -3648,7 +3648,7 @@
     <!-- dfc-b:QuantitativeValue -->
 
     <owl:Class rdf:about="dfc-b:QuantitativeValue">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="dfc-b:value"/>

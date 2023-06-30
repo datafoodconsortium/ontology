@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
-     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl"
+<rdf:RDF xmlns="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#"
+     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dc="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -13,13 +13,13 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:dfc-p="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl#"
+     xmlns:dfc-p="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#"
 	 xmlns:dfc-m="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#"
 	 xmlns:dfc-f="http://static.datafoodconsortium.org/data/ProductGlossary_Facet.rdf#">
 	 
 	 
-    <owl:Ontology rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_ProductGlossary.owl">
-        <owl:imports rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+    <owl:Ontology rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl">
+        <owl:imports rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"/>
         <cc:license rdf:resource="https://www.gnu.org/licenses/agpl-3.0.en.html"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#rachelA"/>
         <dc:contributor rdf:resource="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
@@ -179,7 +179,7 @@
     <!-- dfc-p:DFC_ProductGlossary_Measure -->
 
     <owl:Class rdf:about="dfc-m:DFC_ProductGlossary_Measure">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:label xml:lang="fr">Glossaire des mesures de produit</rdfs:label>
         <rdfs:label xml:lang="en">Product glossary measures</rdfs:label>
     </owl:Class>
@@ -210,7 +210,7 @@
     <!-- dfc-p:ProductGlossary_Facet -->
 
     <owl:Class rdf:about="dfc-f:ProductGlossary_Facet">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:label xml:lang="fr">Glossaire des facettes de produit</rdfs:label>
         <rdfs:label xml:lang="en">Product glossary facets</rdfs:label>
     </owl:Class>
@@ -220,7 +220,7 @@
     <!-- dfc-p:ProductGlossary_Type -->
 
     <owl:Class rdf:about="dfc-p:ProductGlossary_Type">
-        <rdfs:subClassOf rdf:resource="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="dfc-p:generalizes"/>
@@ -269,9 +269,9 @@
     
 
 
-    <!-- http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing -->
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing -->
 
-    <owl:Class rdf:about="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     
 
 

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"
+     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl">
-    <Prefix name="" IRI="http://static.datafoodconsortium.org/ontologies/DFC_TechnicalOntology.owl"/>
+     ontologyIRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl">
+    <Prefix name="" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -79,7 +79,7 @@
         <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://static.datafoodconsortium.org/ontologies/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
+        <ObjectProperty IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPivot"/>
