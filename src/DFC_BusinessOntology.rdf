@@ -582,11 +582,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:AllergenDimension"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -653,11 +653,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:Dimension"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -746,11 +746,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:LabellingDimension"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -808,11 +808,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:NutrientDimension"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -924,11 +924,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:PhysicalDimension"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1046,11 +1046,11 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="dfc-m:Unit"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3743,7 +3743,7 @@
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                                        <owl:hasValue rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+                                        <owl:hasValue rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -4241,37 +4241,37 @@
     
 
 
-    <!-- dfc-m:AllergenDimension -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:AllergenDimension">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
-        <skos:broader rdf:resource="dfc-m:Dimension"/>
-        <skos:narrower rdf:resource="dfc-m:Celeriac"/>
-        <skos:narrower rdf:resource="dfc-m:CerealsWithGluten"/>
-        <skos:narrower rdf:resource="dfc-m:Crustaceans"/>
-        <skos:narrower rdf:resource="dfc-m:Eggs"/>
-        <skos:narrower rdf:resource="dfc-m:Fishs"/>
-        <skos:narrower rdf:resource="dfc-m:LactoseMilks"/>
-        <skos:narrower rdf:resource="dfc-m:Lupine"/>
-        <skos:narrower rdf:resource="dfc-m:Molluscs"/>
-        <skos:narrower rdf:resource="dfc-m:Mustard"/>
-        <skos:narrower rdf:resource="dfc-m:Nuts"/>
-        <skos:narrower rdf:resource="dfc-m:Peanuts"/>
-        <skos:narrower rdf:resource="dfc-m:SesameSeeds"/>
-        <skos:narrower rdf:resource="dfc-m:Soy"/>
-        <skos:narrower rdf:resource="dfc-m:Sulphites"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Celeriac"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CerealsWithGluten"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crustaceans"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Eggs"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fishs"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LactoseMilks"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Lupine"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Molluscs"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Mustard"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Nuts"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Peanuts"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SesameSeeds"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Soy"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sulphites"/>
         <skos:prefLabel xml:lang="en">Allergen dimension</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Dimension allergène</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:AustralianDollar -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AustralianDollar -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:AustralianDollar">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AustralianDollar">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:AUD"/>
         <skos:notation>$AU</skos:notation>
         <skos:prefLabel xml:lang="en">australian dollar</skos:prefLabel>
@@ -4280,24 +4280,24 @@
     
 
 
-    <!-- dfc-m:Calcium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Calcium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Calcium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Calcium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Calcium</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Calcium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:CanadianDollar -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CanadianDollar -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:CanadianDollar">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CanadianDollar">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:CAD"/>
         <skos:notation>$CA</skos:notation>
         <skos:prefLabel xml:lang="en">canadian dollar</skos:prefLabel>
@@ -4306,36 +4306,36 @@
     
 
 
-    <!-- dfc-m:Carbohydrates -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Carbohydrates -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Carbohydrates">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Carbohydrates">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Carbohydrates</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Carbohydrates</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Celeriac -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Celeriac -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Celeriac">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Celeriac">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Celeriac</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Celeriac</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Centilitre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centilitre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Centilitre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centilitre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:CentiL"/>
         <skos:notation>cl</skos:notation>
         <skos:prefLabel xml:lang="en">centilitre</skos:prefLabel>
@@ -4344,12 +4344,12 @@
     
 
 
-    <!-- dfc-m:Centimetre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centimetre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Centimetre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centimetre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:CentiM"/>
         <skos:notation>cm</skos:notation>
         <skos:prefLabel xml:lang="en">centimetre</skos:prefLabel>
@@ -4358,72 +4358,72 @@
     
 
 
-    <!-- dfc-m:CerealsWithGluten -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CerealsWithGluten -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:CerealsWithGluten">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CerealsWithGluten">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Cereals containing gluten</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Céréales contenant du gluten</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Chloride -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chloride -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Chloride">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chloride">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Chloride</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Chloride</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Cholesterol -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cholesterol -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Cholesterol">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cholesterol">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Cholesterol</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Cholestérol</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Chromium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chromium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Chromium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chromium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Chrome</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Chromium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Copper -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Copper -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Copper">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Copper">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Copper</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Copper</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Crate -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crate -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Crate">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crate">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:notation>crate</skos:notation>
         <skos:prefLabel xml:lang="fr">cagette</skos:prefLabel>
         <skos:prefLabel xml:lang="en">crate</skos:prefLabel>
@@ -4431,55 +4431,55 @@
     
 
 
-    <!-- dfc-m:Crustaceans -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crustaceans -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Crustaceans">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crustaceans">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Crustaceans</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Crustacés</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:CurrencyUnit -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:CurrencyUnit">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:Unit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:AustralianDollar"/>
-        <skos:narrower rdf:resource="dfc-m:CanadianDollar"/>
-        <skos:narrower rdf:resource="dfc-m:Euro"/>
-        <skos:narrower rdf:resource="dfc-m:PoundSterling"/>
-        <skos:narrower rdf:resource="dfc-m:USDollar"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AustralianDollar"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CanadianDollar"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Euro"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundSterling"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#USDollar"/>
         <skos:prefLabel xml:lang="en">Currency unit</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Unité de devise monétaire</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:DFC_ProductGlossary_Measure -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:DFC_ProductGlossary_Measure">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <dc:description xml:lang="fr">Glossaire des dimensions et unités de mesures de produit</dc:description>
         <dc:description xml:lang="en">glossary measuring dimensions and units for measuring product</dc:description>
-        <skos:hasTopConcept rdf:resource="dfc-m:Dimension"/>
-        <skos:hasTopConcept rdf:resource="dfc-m:Unit"/>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
+        <skos:hasTopConcept rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit"/>
         <skos:prefLabel xml:lang="fr">Glossaire mesure produit</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Product measure glossary </skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Decilitre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decilitre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Decilitre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decilitre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:DeciL"/>
         <skos:notation>dl</skos:notation>
         <skos:prefLabel xml:lang="en">decilitre</skos:prefLabel>
@@ -4488,12 +4488,12 @@
     
 
 
-    <!-- dfc-m:Decimetre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decimetre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Decimetre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decimetre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:DeciM"/>
         <skos:notation>dm</skos:notation>
         <skos:prefLabel xml:lang="en">decimetre</skos:prefLabel>
@@ -4502,66 +4502,66 @@
     
 
 
-    <!-- dfc-m:Depth -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Depth -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Depth">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Depth">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Depth</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Profondeur</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Dimension -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Dimension">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:narrower rdf:resource="dfc-m:LabellingDimension"/>
-        <skos:narrower rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:narrower rdf:resource="dfc-m:PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
         <dc:description xml:lang="en">Dimensions used to describe DFC&apos;s product characteristics</dc:description>
         <dc:description xml:lang="fr">Dimensions utilisées pour décrire les charactéristiques produit dans DFC</dc:description>
         <skos:prefLabel xml:lang="en">Dimension</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Dimension</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:EcoScore -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#EcoScore -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:EcoScore">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#EcoScore">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Eco-score</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Eco-score</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Eggs -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Eggs -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Eggs">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Eggs">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Eggs</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Oeufs</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Euro -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Euro -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Euro">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Euro">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:Euro"/>
         <skos:notation>€</skos:notation>
         <skos:prefLabel xml:lang="en">euro</skos:prefLabel>
@@ -4570,72 +4570,72 @@
     
 
 
-    <!-- dfc-m:Fat -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fat -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Fat">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fat">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Fat</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Graisse</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Fibre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fibre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Fibre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fibre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Fibre</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Fibre</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Fishs -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fishs -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Fishs">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fishs">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Poissons</skos:prefLabel>
         <skos:prefLabel xml:lang="en">fishs</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Fluoride -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fluoride -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Fluoride">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fluoride">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Fluoride</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Fluoride</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:FolicAcid -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#FolicAcid -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:FolicAcid">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#FolicAcid">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Acide folique</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Folic acid</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Gallon -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gallon -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Gallon">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gallon">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:GAL_UK"/>
         <skos:notation>gal</skos:notation>
         <skos:prefLabel xml:lang="fr">gallon (GB)</skos:prefLabel>
@@ -4644,12 +4644,12 @@
     
 
 
-    <!-- dfc-m:Gram -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gram -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Gram">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gram">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:GM"/>
         <skos:notation>g</skos:notation>
         <skos:prefLabel xml:lang="en">gram</skos:prefLabel>
@@ -4658,24 +4658,24 @@
     
 
 
-    <!-- dfc-m:Height -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Height -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Height">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Height">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Hauteur</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Height</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Inch -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Inch -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Inch">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Inch">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:IN"/>
         <skos:notation>in</skos:notation>
         <skos:prefLabel xml:lang="en">inch</skos:prefLabel>
@@ -4684,36 +4684,36 @@
     
 
 
-    <!-- dfc-m:Iodine -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iodine -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Iodine">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iodine">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Iodine</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Iodine</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Iron -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iron -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Iron">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iron">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Fer</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Iron</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Kilogram -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilogram -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Kilogram">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilogram">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:KiloGM"/>
         <skos:notation>kg</skos:notation>
         <skos:prefLabel xml:lang="en">kilogram</skos:prefLabel>
@@ -4722,12 +4722,12 @@
     
 
 
-    <!-- dfc-m:Kilometre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilometre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Kilometre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilometre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:KiloM"/>
         <skos:notation>km</skos:notation>
         <skos:prefLabel xml:lang="en">kilometre</skos:prefLabel>
@@ -4736,39 +4736,39 @@
     
 
 
-    <!-- dfc-m:LabellingDimension -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:LabellingDimension">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:Dimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:EcoScore"/>
-        <skos:narrower rdf:resource="dfc-m:NutriScore"/>
-        <skos:narrower rdf:resource="dfc-m:PlanetScore"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#EcoScore"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutriScore"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PlanetScore"/>
         <skos:prefLabel xml:lang="fr">Dimension score de labellisation</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Labelling dimension</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:LactoseMilks -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LactoseMilks -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:LactoseMilks">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LactoseMilks">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Lait et produits à base de lactose</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Milk and lactose-based products</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Litre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Litre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Litre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Litre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:L"/>
         <skos:notation>l</skos:notation>
         <skos:prefLabel xml:lang="en">litre</skos:prefLabel>
@@ -4777,48 +4777,48 @@
     
 
 
-    <!-- dfc-m:Lupine -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Lupine -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Lupine">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Lupine">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Lupin</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Lupine</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Magnesium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Magnesium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Magnesium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Magnesium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Magnesium</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Magnésium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Manganese -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Manganese -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Manganese">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Manganese">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Manganese</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Manganèse</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Metre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Metre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Metre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Metre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:M"/>
         <skos:notation>m</skos:notation>
         <skos:prefLabel xml:lang="en">metre</skos:prefLabel>
@@ -4827,12 +4827,12 @@
     
 
 
-    <!-- dfc-m:Milligram -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Milligram -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Milligram">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Milligram">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:MilliGM"/>
         <skos:notation>g</skos:notation>
         <skos:prefLabel xml:lang="en">milligram</skos:prefLabel>
@@ -4841,12 +4841,12 @@
     
 
 
-    <!-- dfc-m:Millilitre -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Millilitre -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Millilitre">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Millilitre">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:MilliL"/>
         <skos:notation>ml</skos:notation>
         <skos:prefLabel xml:lang="en">milliliter</skos:prefLabel>
@@ -4855,118 +4855,118 @@
     
 
 
-    <!-- dfc-m:Molluscs -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Molluscs -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Molluscs">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Molluscs">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Molluscs</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Mollusques</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:MonosaturatedFat -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#MonosaturatedFat -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:MonosaturatedFat">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#MonosaturatedFat">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Graisse monosaturée</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Monosaturated fat</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Mustard -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Mustard -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Mustard">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Mustard">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Moutarde</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Mustard</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:NutriScore -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutriScore -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:NutriScore">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutriScore">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Nutri-score</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Nutri-score</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:NutrientDimension -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:NutrientDimension">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:Dimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:Calcium"/>
-        <skos:narrower rdf:resource="dfc-m:Carbohydrates"/>
-        <skos:narrower rdf:resource="dfc-m:Chloride"/>
-        <skos:narrower rdf:resource="dfc-m:Cholesterol"/>
-        <skos:narrower rdf:resource="dfc-m:Chromium"/>
-        <skos:narrower rdf:resource="dfc-m:Copper"/>
-        <skos:narrower rdf:resource="dfc-m:Fat"/>
-        <skos:narrower rdf:resource="dfc-m:Fibre"/>
-        <skos:narrower rdf:resource="dfc-m:Fluoride"/>
-        <skos:narrower rdf:resource="dfc-m:FolicAcid"/>
-        <skos:narrower rdf:resource="dfc-m:Iodine"/>
-        <skos:narrower rdf:resource="dfc-m:Iron"/>
-        <skos:narrower rdf:resource="dfc-m:Magnesium"/>
-        <skos:narrower rdf:resource="dfc-m:Manganese"/>
-        <skos:narrower rdf:resource="dfc-m:MonosaturatedFat"/>
-        <skos:narrower rdf:resource="dfc-m:Phosphorus"/>
-        <skos:narrower rdf:resource="dfc-m:PolyunsaturatedFat"/>
-        <skos:narrower rdf:resource="dfc-m:Potassium"/>
-        <skos:narrower rdf:resource="dfc-m:Protein"/>
-        <skos:narrower rdf:resource="dfc-m:Salt"/>
-        <skos:narrower rdf:resource="dfc-m:SaturatedFat"/>
-        <skos:narrower rdf:resource="dfc-m:Selenium"/>
-        <skos:narrower rdf:resource="dfc-m:Sodium"/>
-        <skos:narrower rdf:resource="dfc-m:Starch"/>
-        <skos:narrower rdf:resource="dfc-m:Sugars"/>
-        <skos:narrower rdf:resource="dfc-m:Transfat"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminA"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminB12"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminB6"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminC"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminD"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminE"/>
-        <skos:narrower rdf:resource="dfc-m:VitaminK"/>
-        <skos:narrower rdf:resource="dfc-m:Zinc"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Calcium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Carbohydrates"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chloride"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Cholesterol"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Chromium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Copper"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fibre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Fluoride"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#FolicAcid"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iodine"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Iron"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Magnesium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Manganese"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#MonosaturatedFat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Phosphorus"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PolyunsaturatedFat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Potassium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Protein"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Salt"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SaturatedFat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Selenium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sodium"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Starch"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sugars"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Transfat"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminA"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB12"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB6"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminC"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminD"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminE"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminK"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Zinc"/>
         <skos:prefLabel xml:lang="fr">Dimension nutritionnelle</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Nutrient dimension</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Nuts -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Nuts -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Nuts">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Nuts">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Fruits à coque</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Nuts</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Package -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Package -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Package">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Package">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:notation>pack</skos:notation>
         <skos:prefLabel xml:lang="fr">colis</skos:prefLabel>
         <skos:prefLabel xml:lang="en">package</skos:prefLabel>
@@ -4974,24 +4974,24 @@
     
 
 
-    <!-- dfc-m:Peanuts -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Peanuts -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Peanuts">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Peanuts">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Arachides</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Peanuts</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Percent -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Percent -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Percent">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Percent">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:notation>%</skos:notation>
         <skos:prefLabel xml:lang="en">percent</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">pourcent</skos:prefLabel>
@@ -4999,41 +4999,41 @@
     
 
 
-    <!-- dfc-m:Phosphorus -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Phosphorus -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Phosphorus">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Phosphorus">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Phosphore</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Phosphorus</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:PhysicalDimension -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PhysicalDimension">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:Dimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:Depth"/>
-        <skos:narrower rdf:resource="dfc-m:Height"/>
-        <skos:narrower rdf:resource="dfc-m:Volume"/>
-        <skos:narrower rdf:resource="dfc-m:Weight"/>
-        <skos:narrower rdf:resource="dfc-m:Width"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Dimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Depth"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Height"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Volume"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Weight"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Width"/>
         <skos:prefLabel xml:lang="fr">Dimension physique</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Physical dimension</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Piece -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Piece -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Piece">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Piece">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:notation>u</skos:notation>
         <skos:prefLabel xml:lang="en">piece</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">pièce</skos:prefLabel>
@@ -5041,48 +5041,48 @@
     
 
 
-    <!-- dfc-m:PlanetScore -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PlanetScore -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PlanetScore">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PlanetScore">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:LabellingDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#LabellingDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Planet-score</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Planet-score</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:PolyunsaturatedFat -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PolyunsaturatedFat -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PolyunsaturatedFat">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PolyunsaturatedFat">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Graisse poly-insaturée</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Poly-unsaturated fat</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Potassium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Potassium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Potassium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Potassium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Potassium</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Potassium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:PoundMass -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundMass -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PoundMass">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundMass">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:LB"/>
         <skos:notation>lb</skos:notation>
         <skos:prefLabel xml:lang="en">pound</skos:prefLabel>
@@ -5091,12 +5091,12 @@
     
 
 
-    <!-- dfc-m:PoundSterling -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundSterling -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:PoundSterling">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundSterling">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:PoundSterling"/>
         <skos:notation>£</skos:notation>
         <skos:prefLabel xml:lang="fr">livre sterling</skos:prefLabel>
@@ -5105,163 +5105,163 @@
     
 
 
-    <!-- dfc-m:Protein -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Protein -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Protein">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Protein">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Protein</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Protéine</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:QuantityUnit -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:QuantityUnit">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:Unit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:Centilitre"/>
-        <skos:narrower rdf:resource="dfc-m:Centimetre"/>
-        <skos:narrower rdf:resource="dfc-m:Crate"/>
-        <skos:narrower rdf:resource="dfc-m:Decilitre"/>
-        <skos:narrower rdf:resource="dfc-m:Decimetre"/>
-        <skos:narrower rdf:resource="dfc-m:Gallon"/>
-        <skos:narrower rdf:resource="dfc-m:Gram"/>
-        <skos:narrower rdf:resource="dfc-m:Inch"/>
-        <skos:narrower rdf:resource="dfc-m:Kilogram"/>
-        <skos:narrower rdf:resource="dfc-m:Kilometre"/>
-        <skos:narrower rdf:resource="dfc-m:Litre"/>
-        <skos:narrower rdf:resource="dfc-m:Metre"/>
-        <skos:narrower rdf:resource="dfc-m:Milligram"/>
-        <skos:narrower rdf:resource="dfc-m:Millilitre"/>
-        <skos:narrower rdf:resource="dfc-m:Package"/>
-        <skos:narrower rdf:resource="dfc-m:Percent"/>
-        <skos:narrower rdf:resource="dfc-m:Piece"/>
-        <skos:narrower rdf:resource="dfc-m:PoundMass"/>
-        <skos:narrower rdf:resource="dfc-m:Tonne"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centilitre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Centimetre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Crate"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decilitre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Decimetre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gallon"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Gram"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Inch"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilogram"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Kilometre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Litre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Metre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Milligram"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Millilitre"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Package"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Percent"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Piece"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PoundMass"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tonne"/>
         <skos:prefLabel xml:lang="en">Quantity unit</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Unité de quantité</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Salt -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Salt -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Salt">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Salt">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Salt</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Sel</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:SaturatedFat -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SaturatedFat -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:SaturatedFat">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SaturatedFat">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Graisse saturée</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Saturated fat</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Selenium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Selenium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Selenium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Selenium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Selenium</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Sélénium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:SesameSeeds -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SesameSeeds -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:SesameSeeds">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#SesameSeeds">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Graines de sésame</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Sesame seeds</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Sodium -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sodium -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Sodium">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sodium">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Sodium</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Sodium</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Soy -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Soy -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Soy">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Soy">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Soja</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Soy</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Starch -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Starch -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Starch">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Starch">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Amidon</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Starch</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Sugars -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sugars -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Sugars">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sugars">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Sucres</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Sugars</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Sulphites -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sulphites -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Sulphites">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Sulphites">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:AllergenDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#AllergenDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Anhydride sulfureux et sulfites en concentration de plus de 10mg/kg ou 10 mg/l (exprimés en SO2)</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Sulfur dioxide and sulphites in a concentration of more than 10mg/kg or 10mg/l (expressed as SO2)</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Tonne -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tonne -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Tonne">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Tonne">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:QuantityUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:TONNE"/>
         <skos:notation>T</skos:notation>
         <skos:prefLabel xml:lang="en">tonne</skos:prefLabel>
@@ -5270,24 +5270,24 @@
     
 
 
-    <!-- dfc-m:Transfat -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Transfat -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Transfat">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Transfat">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Graisse trans</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Transfat</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:USDollar -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#USDollar -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:USDollar">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#USDollar">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <rdfs:isDefinedBy rdf:resource="unit:USDollar"/>
         <skos:notation>$US</skos:notation>
         <skos:prefLabel xml:lang="fr">Dollar US</skos:prefLabel>
@@ -5296,148 +5296,148 @@
     
 
 
-    <!-- dfc-m:Unit -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Unit">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Unit">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
-        <skos:narrower rdf:resource="dfc-m:CurrencyUnit"/>
-        <skos:narrower rdf:resource="dfc-m:QuantityUnit"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#CurrencyUnit"/>
+        <skos:narrower rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#QuantityUnit"/>
         <dc:description xml:lang="en">Units used to measure DFC&apos;s quantitative values</dc:description>
         <dc:description xml:lang="fr">Unités utilisées pour mesurer les valeurs quantitatives dans DFC</dc:description>
         <skos:prefLabel xml:lang="en">Unit</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Unités</skos:prefLabel>
-        <skos:topConceptOf rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:topConceptOf rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminA -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminA -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminA">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminA">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin A</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine A</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminB12 -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB12 -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminB12">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB12">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin B12</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine B12</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminB6 -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB6 -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminB6">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminB6">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin B6</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine B6</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminC -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminC -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminC">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminC">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin C</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine C</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminD -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminD -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminD">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminD">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin D</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine D</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminE -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminE -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminE">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminE">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin E</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine E</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:VitaminK -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminK -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:VitaminK">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#VitaminK">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Vitamin K</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Vitamine K</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Volume -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Volume -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Volume">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Volume">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Volume</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Volume</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Weight -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Weight -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Weight">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Weight">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Poids</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Weight</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Width -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Width -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Width">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Width">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:PhysicalDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#PhysicalDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="fr">Largeur</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Width</skos:prefLabel>
     </owl:NamedIndividual>
     
 
 
-    <!-- dfc-m:Zinc -->
+    <!-- http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Zinc -->
 
-    <owl:NamedIndividual rdf:about="dfc-m:Zinc">
+    <owl:NamedIndividual rdf:about="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#Zinc">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <skos:broader rdf:resource="dfc-m:NutrientDimension"/>
-        <skos:inScheme rdf:resource="dfc-m:DFC_ProductGlossary_Measure"/>
+        <skos:broader rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#NutrientDimension"/>
+        <skos:inScheme rdf:resource="http://static.datafoodconsortium.org/data/ProductGlossary_Measure.rdf#DFC_ProductGlossary_Measure"/>
         <skos:prefLabel xml:lang="en">Zinc</skos:prefLabel>
         <skos:prefLabel xml:lang="fr">Zinc</skos:prefLabel>
     </owl:NamedIndividual>
