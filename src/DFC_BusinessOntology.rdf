@@ -32,12 +32,12 @@
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#florenceA"/>
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#bernardC"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Business Part)</dc:description>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-10-21</dc:modified>
+        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-13</dc:modified>
         <dc:publisher rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
         <vann:preferredNamespacePrefix>dfc-b</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.1</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.8.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -5453,6 +5453,38 @@
         <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     </rdf:Description>
     
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#florenceA -->
+
+    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#florenceA">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#baptisteD -->
+
+    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#baptisteD">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#maximeL -->
+
+    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#maximeL">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#garetheH -->
+
+    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#garetheH">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </rdf:Description>
+
 
 
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#dataFoodConsortium -->
