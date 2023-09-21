@@ -7,6 +7,49 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.9.0] - 2023-04-26
+
+### Added
+
+#### Class
+
+- Temperature, subClassOf: QuantitativeValue.
+
+#### ObjectProperty
+
+- containerInformationOf, domain: skos:Concept and (skos:broader value ContainerInformation) and (skos:inScheme value DFC_ProductGlossary_Facet),  subPropertyOf: facetOf, inverseOf: hasContainerInformation.
+- hasContainerInformation, domain: DefinedProduct, subPropertyOf: hasFacet, inverseOf: containterInformationOf.
+- deliveredAt, domain: DeliveryOption.
+- pickedUpAt, domain: PickupOption.
+- hasPaymentMethod, domain: Order, inverseOf: paidWith.
+- paidWith, domain: PaymentMethod, inverseOf: hasPaymentMethod.
+- hasTemperature, domain: SuppliedProduct, inverseOf: hasTemperature.
+- isTemperatureOf, domain: Temperature, inverseOf: hasTemperature.
+
+
+#### DataProperty
+
+- minValue, domain: QuantitativeValue, range: float, subPropertyOf: value.
+- maxValue, domain: QuantitativeValue, range: float, subPropertyOf: value.
+- accessibilityInfo, domain: DeliveryOpiton, range: string.
+- deliveryConstraint, domain: DeliveryOption, range: string.
+- frozen, domain: SuppliedProduct, range: boolean.
+- refrigerated, domain: SuppliedProduct, range: boolean.
+
+### Changed
+
+- Domain hasMainContact: Enterprise -> (Enterprise or PhysicalPlace).
+- Domain hasPhoneNumber: Agent -> (Agent or PhysicalPlace).
+
+### Removed
+
+####
+- Facets classes
+
+#### ObjectProperty
+- refersTo.
+- uses.
+
 ## [1.8.0] - 2023-02-13
 
 ### Added
@@ -23,7 +66,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### ObjectProperty
 
 - hasPhoneNumber: domain Agent, inverse: phoneNumberOf.
-- phoneNumberOf: domain PhoneNumber, inverse hasPhoneNumber.
+- phoneNumberOf: domain PhoneNumber, inverse: hasPhoneNumber.
 - hasSocialMedia: domain Agent, inverse: socialMediaOf.
 - socialMediaOf: domain SocialMedia, inverse: hasSocialMedia.
 
