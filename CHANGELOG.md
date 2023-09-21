@@ -11,19 +11,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-#### Class
+- Add creators: florenceA, baptisteD
+- Add contributors: maximeL, garetheH
+
+**Class**
 
 - PhoneNumber subClassOf What Subject
 - SocialMedia subClassOf What Subject
 
-#### ObjectProperty
+**ObjectProperty**
 
 - hasPhoneNumber: domain Agent, inverse: phoneNumberOf
 - phoneNumberOf: domain PhoneNumber, inverse hasPhoneNumber
 - hasSocialMedia: domain Agent, inverse: socialMediaOf
 - socialMediaOf: domain SocialMedia, inverse: hasSocialMedia
 
-#### DataProperty
+**DataProperty**
 
 - discount: domain (Offer | Order | OrderLine), range: float
 - websitePage: domain (Agent | VirtualPlace), range: anyURI
@@ -38,6 +41,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ClassName: Repository -> Catalog
 - Domain phoneNumber: Agent -> PhoneNumber
 - Range date: date -> dateTime
+- Update namespace static.datafoodconsortium.org -> github.com
+- Remove link to contributors file
 
 ### Removed
 
