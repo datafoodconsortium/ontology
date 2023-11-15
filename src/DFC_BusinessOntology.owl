@@ -299,7 +299,7 @@
         <ObjectProperty IRI="#addressOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#affiliatedBy"/>
+        <ObjectProperty IRI="#affiliatedTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#affiliates"/>
@@ -404,6 +404,9 @@
         <ObjectProperty IRI="#hasFacet"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasFulfilmentStatus"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
     </Declaration>
     <Declaration>
@@ -437,6 +440,9 @@
         <ObjectProperty IRI="#hasOption"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasOrderStatus"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasOutcome"/>
     </Declaration>
     <Declaration>
@@ -447,6 +453,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPaymentMethod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPhoneNumber"/>
@@ -471,6 +480,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTemperature"/>
@@ -1205,6 +1217,18 @@
         <NamedIndividual abbreviatedIRI="dfc-m:Zinc"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
@@ -1248,14 +1272,10 @@
         <Class IRI="#Address"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#addressOf"/>
-            <Class IRI="#Person"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Address"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#addressOf"/>
-            <Class IRI="#PhysicalPlace"/>
+            <ObjectUnionOf>
+                <Class IRI="#Person"/>
+                <Class IRI="#PhysicalPlace"/>
+            </ObjectUnionOf>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1287,7 +1307,10 @@
         <Class IRI="#Agent"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#owns"/>
-            <Class IRI="#PhysicalProduct"/>
+            <ObjectUnionOf>
+                <Class IRI="#Brand"/>
+                <Class IRI="#PhysicalProduct"/>
+            </ObjectUnionOf>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -1710,7 +1733,7 @@
     <SubClassOf>
         <Class IRI="#Enterprise"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#affiliatedBy"/>
+            <ObjectProperty IRI="#affiliatedTo"/>
             <Class IRI="#Person"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -2016,7 +2039,10 @@
         <Class IRI="#Person"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#mainContactOf"/>
-            <Class IRI="#Enterprise"/>
+            <ObjectUnionOf>
+                <Class IRI="#Enterprise"/>
+                <Class IRI="#PhysicalPlace"/>
+            </ObjectUnionOf>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2086,7 +2112,7 @@
         <Class IRI="#PhysicalProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#consumedBy"/>
-            <Class IRI="#AsRealizedProductionFlow"/>
+            <Class IRI="#AsRealizedConsumptionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -4211,7 +4237,7 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#affiliatedBy"/>
+        <ObjectProperty IRI="#affiliatedTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4351,6 +4377,10 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFulfilmentStatus"/>
+        <ObjectProperty IRI="#hasStatus"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
@@ -4372,7 +4402,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasMainContact"/>
-        <ObjectProperty IRI="#affiliates"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasNatureOrigin"/>
@@ -4395,6 +4425,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOrderStatus"/>
+        <ObjectProperty IRI="#hasStatus"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasOutcome"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4409,6 +4443,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPaymentMethod"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
+        <ObjectProperty IRI="#hasStatus"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasPhoneNumber"/>
@@ -4440,6 +4478,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasSocialMedia"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStatus"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4520,7 +4562,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#mainContactOf"/>
-        <ObjectProperty IRI="#affiliatedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#maintainedBy"/>
@@ -4731,7 +4773,7 @@
         <ObjectProperty IRI="#hasAddress"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#affiliatedBy"/>
+        <ObjectProperty IRI="#affiliatedTo"/>
         <ObjectProperty IRI="#affiliates"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -4797,6 +4839,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasLabellingCharacteristic"/>
+        <ObjectProperty IRI="#labellingCharacteristicOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasMainContact"/>
@@ -4970,20 +5016,17 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#processOf"/>
     </InverseFunctionalObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="#referencedBy"/>
-    </SymmetricObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#addressOf"/>
         <Class IRI="#Address"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#affiliatedBy"/>
-        <Class IRI="#Enterprise"/>
+        <ObjectProperty IRI="#affiliatedTo"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#affiliates"/>
-        <Class IRI="#Person"/>
+        <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
@@ -5172,6 +5215,10 @@
         <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFulfilmentStatus"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
@@ -5223,6 +5270,10 @@
         <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOrderStatus"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOutcome"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
@@ -5240,6 +5291,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPaymentMethod"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
         <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5385,7 +5440,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#manages"/>
-        <Class IRI="#Agent"/>
+        <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#natureOriginOf"/>
@@ -5473,6 +5528,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#phoneNumberOf"/>
         <Class IRI="#PhoneNumber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#physicalCharacteristicOf"/>
+        <Class IRI="#PhysicalCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#pickedUpAt"/>
@@ -5633,6 +5692,20 @@
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFulfilmentStatus"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:broader"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasLabellingDimension"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="skos:Concept"/>
@@ -5657,6 +5730,34 @@
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
                 <NamedIndividual abbreviatedIRI="dfc-m:DFC_ProductGlossary_Measure"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOrderStatus"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:broader"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPaymentStatus"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:broader"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -6086,6 +6187,7 @@
         <DataProperty IRI="#websitePage"/>
         <ObjectUnionOf>
             <Class IRI="#Agent"/>
+            <Class IRI="#SocialMedia"/>
             <Class IRI="#VirtualPlace"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
@@ -6290,8 +6392,16 @@
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#stockLimitation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#street"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalTheoriticalStock"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#value"/>
@@ -7088,23 +7198,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#affiliatedBy</IRI>
-        <Literal xml:lang="fr">géré par</Literal>
+        <IRI>#affiliatedTo</IRI>
+        <Literal xml:lang="en">affiliated to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#affiliatedBy</IRI>
-        <Literal xml:lang="en">managed by</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#affiliates</IRI>
-        <Literal xml:lang="fr">gère</Literal>
+        <IRI>#affiliatedTo</IRI>
+        <Literal xml:lang="fr">affilié à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#affiliates</IRI>
-        <Literal xml:lang="en">manages</Literal>
+        <Literal xml:lang="en">affiliates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#affiliates</IRI>
+        <Literal xml:lang="fr">affilie</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7702,6 +7812,16 @@
         <Literal xml:lang="en">has facet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFulfilmentStatus</IRI>
+        <Literal xml:lang="fr">a pour statut de réalisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFulfilmentStatus</IRI>
+        <Literal xml:lang="en">has fulfilment status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasGeographicalOrigin</IRI>
         <Literal></Literal>
@@ -7818,6 +7938,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOrderStatus</IRI>
+        <Literal xml:lang="fr">a pour statut de commande</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOrderStatus</IRI>
+        <Literal xml:lang="en">has order status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOutcome</IRI>
         <Literal xml:lang="fr">a en sortie</Literal>
     </AnnotationAssertion>
@@ -7858,6 +7988,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentStatus</IRI>
+        <Literal xml:lang="fr">a pour statut de paiement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPaymentStatus</IRI>
+        <Literal xml:lang="en">has payment status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPercentageOfAlcoholByVolume</IRI>
         <Literal xml:lang="en">has percentage of alcohol by volume</Literal>
     </AnnotationAssertion>
@@ -7870,6 +8010,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>#hasPercentageOfAlcoholByVolume</IRI>
         <Literal>gs1:percentageOfAlcoholByVolume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="fr">a pour numéro de téléphone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="en">has phone number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7930,6 +8080,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasReference</IRI>
         <Literal xml:lang="en">has reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSocialMedia</IRI>
+        <Literal xml:lang="fr">a pour réseau social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSocialMedia</IRI>
+        <Literal xml:lang="en">has social media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStatus</IRI>
+        <Literal xml:lang="fr">has pour status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStatus</IRI>
+        <Literal xml:lang="en">has status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10035,5 +10205,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 

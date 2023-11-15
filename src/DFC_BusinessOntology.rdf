@@ -37,7 +37,7 @@
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
         <vann:preferredNamespacePrefix>dfc-b</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.9.0</owl:versionInfo>
+        <owl:versionInfo>1.9.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -189,14 +189,14 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedBy -->
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedTo -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedBy">
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedTo">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliates"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Enterprise"/>
-        <rdfs:label xml:lang="fr">géré par</rdfs:label>
-        <rdfs:label xml:lang="en">managed by</rdfs:label>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="en">affiliated to</rdfs:label>
+        <rdfs:label xml:lang="fr">affilié à</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -205,9 +205,9 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliates">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Person"/>
-        <rdfs:label xml:lang="fr">gère</rdfs:label>
-        <rdfs:label xml:lang="en">manages</rdfs:label>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Enterprise"/>
+        <rdfs:label xml:lang="en">affiliates</rdfs:label>
+        <rdfs:label xml:lang="fr">affilie</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -730,6 +730,32 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasFulfilmentStatus -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasFulfilmentStatus">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasStatus"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Order"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="fr">a pour statut de réalisation</rdfs:label>
+        <rdfs:label xml:lang="en">has fulfilment status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasGeographicalOrigin -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasGeographicalOrigin">
@@ -779,6 +805,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasLabellingCharacteristic">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasCharacteristic"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#labellingCharacteristicOf"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
         <rdfs:label xml:lang="fr">a pour caractéristique labellisée</rdfs:label>
         <rdfs:label xml:lang="en">has labelling characteristic</rdfs:label>
@@ -815,7 +842,7 @@
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasMainContact -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasMainContact">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliates"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#mainContactOf"/>
         <rdfs:domain>
             <owl:Class>
@@ -905,6 +932,32 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOrderStatus -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOrderStatus">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasStatus"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Order"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="fr">a pour statut de commande</rdfs:label>
+        <rdfs:label xml:lang="en">has order status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome">
@@ -961,6 +1014,32 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasPaymentStatus -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasPaymentStatus">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasStatus"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Order"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="fr">a pour statut de paiement</rdfs:label>
+        <rdfs:label xml:lang="en">has payment status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasPhoneNumber -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasPhoneNumber">
@@ -974,6 +1053,8 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:label xml:lang="fr">a pour numéro de téléphone</rdfs:label>
+        <rdfs:label xml:lang="en">has phone number</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1087,6 +1168,18 @@
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#socialMediaOf"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="fr">a pour réseau social</rdfs:label>
+        <rdfs:label xml:lang="en">has social media</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasStatus">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:label xml:lang="fr">has pour status</rdfs:label>
+        <rdfs:label xml:lang="en">has status</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1337,7 +1430,7 @@
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#mainContactOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#mainContactOf">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedBy"/>
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Person"/>
         <rdfs:label xml:lang="fr">contact principal pour</rdfs:label>
         <rdfs:label xml:lang="en">main contact of</rdfs:label>
@@ -1384,7 +1477,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#manages">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Enterprise"/>
         <rdfs:label xml:lang="fr">gère</rdfs:label>
         <rdfs:label xml:lang="en">manages</rdfs:label>
     </owl:ObjectProperty>
@@ -1607,6 +1700,7 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#physicalCharacteristicOf">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#characteristicOf"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalCharacteristic"/>
         <rdfs:label xml:lang="fr">caractéristique physique de</rdfs:label>
         <rdfs:label xml:lang="en">physical characteristic of</rdfs:label>
     </owl:ObjectProperty>
@@ -1706,7 +1800,6 @@
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#referencedBy">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#references"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
         <rdfs:label xml:lang="en">referenced by</rdfs:label>
         <rdfs:label xml:lang="fr">référencé par</rdfs:label>
@@ -2691,6 +2784,7 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="fr">limitation de stock</rdfs:label>
         <rdfs:label xml:lang="en">stock limitation</rdfs:label>
     </owl:DatatypeProperty>
@@ -2713,6 +2807,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#totalTheoriticalStock">
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:label xml:lang="fr">stock theorique total</rdfs:label>
         <rdfs:label xml:lang="en">total theoretical stock</rdfs:label>
     </owl:DatatypeProperty>
@@ -2744,6 +2839,7 @@
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SocialMedia"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#VirtualPlace"/>
                 </owl:unionOf>
             </owl:Class>
@@ -2789,13 +2885,14 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#addressOf"/>
-                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Person"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#addressOf"/>
-                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Person"/>
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Address</rdfs:label>
@@ -2829,7 +2926,14 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#owns"/>
-                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalProduct"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Brand"/>
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalProduct"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3357,7 +3461,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedBy"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#affiliatedTo"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Person"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3713,7 +3817,14 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#mainContactOf"/>
-                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Enterprise"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Enterprise"/>
+                            <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">Person</rdfs:label>
@@ -3806,7 +3917,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#consumedBy"/>
-                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedProductionFlow"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedConsumptionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5737,6 +5848,30 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -5758,5 +5893,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
