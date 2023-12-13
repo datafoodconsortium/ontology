@@ -89,6 +89,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   refersTo.
 -   uses.
 
+## [1.8.2] - 2023-10-03
+
+### Fixed
+upgrade context.json to match ontology
+- replace dfc-b:offeres by dfc-b:offers
+- add dfc-b:offersTo as uri predicate
+- add dfc-b:affiliatedB as uri predicate
+- add dfc-b:orders as uri predicate
+- add dfc-b:orderedBy as uri predicate
+- add dfc-b:hasPart as uri predicate
+- add dfc-b:partOf as uri predicate
+- add dfc-b:belongsTo as uri predicate
+- add dfc-b:selects as uri predicate
+- add dfc-b:concerns as uri predicate
+- add dfc-b:uses as uri predicate
+- add dfc-b:hasOption as uri predicate
+- add dfc-b:hostedAt as uri predicate
+- add dfc-b:lists as uri predicate
+- add dfc-b:listedIn as uri predicate
+- add dfc-b:objectOf as uri predicate
+- add dfc-b:managedBy as uri predicate
+- add dfc-b:coordinatedBy as uri predicate
+- add dfc-b:hasObject as uri predicate
+- add dfc-b:localizedBy as uri predicate
+- add dfc-b:constitutes as uri predicate
+- add dfc-b:identifiedBy as uri predicate
+- add dfc-b:storedIn as uri predicate
+
 ## [1.8.0] - 2023-10-03
 
 ### Added
