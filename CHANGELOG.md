@@ -117,6 +117,7 @@ upgrade context.json to match ontology
 - add dfc-b:identifiedBy as uri predicate
 - add dfc-b:storedIn as uri predicate
 
+
 ## [1.8.0] - 2023-10-03
 
 ### Added
