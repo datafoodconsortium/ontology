@@ -89,6 +89,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   refersTo.
 -   uses.
 
+## [1.8.2] - 2023-10-03
+
+### Changed
+upgrade context.json to match ontology
+
 ## [1.8.0] - 2023-10-03
 
 ### Added
