@@ -32,7 +32,10 @@
     "dfc-b:referencedBy":{
       "@type":"@id"
     },
-    "dfc-b:offeres":{
+    "dfc-b:offers":{
+      "@type":"@id"
+    },
+    "dfc-b:offersTo":{
       "@type":"@id"
     },
     "dfc-b:supplies":{
@@ -44,13 +47,61 @@
     "dfc-b:affiliates":{
       "@type":"@id"
     },
+    "dfc-b:affiliatedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:orders":{
+      "@type":"@id"
+    },
+    "dfc-b:orderedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:hasPart":{
+      "@type":"@id"
+    },
+    "dfc-b:partOf":{
+      "@type":"@id"
+    },
+    "dfc-b:belongsTo":{
+      "@type":"@id"
+    },
+    "dfc-b:selects":{
+      "@type":"@id"
+    },
+    "dfc-b:concerns":{
+      "@type":"@id"
+    },
+    "dfc-b:uses":{
+      "@type":"@id"
+    },
+    "dfc-b:hasOption":{
+      "@type":"@id"
+    },
+    "dfc-b:hostedAt":{
+      "@type":"@id"
+    },
+    "dfc-b:lists":{
+      "@type":"@id"
+    },
+    "dfc-b:listedIn":{
+      "@type":"@id"
+    },
+    "dfc-b:objectOf":{
+      "@type":"@id"
+    },
     "dfc-b:hasCertification":{
       "@type":"@id"
     },
     "dfc-b:manages":{
       "@type":"@id"
     },
-    "dfc-b:offeredThrough":{
+    "dfc-b:managedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:coordinatedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:hasObject":{
       "@type":"@id"
     },
     "dfc-b:hasBrand":{
@@ -69,6 +120,18 @@
       "@type":"@id"
     },
     "dfc-b:hasPhysicalDimension":{
+      "@type":"@id"
+    },
+    "dfc-b:localizedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:constitutes":{
+      "@type":"@id"
+    },
+    "dfc-b:identifiedBy":{
+      "@type":"@id"
+    },
+    "dfc-b:storedIn":{
       "@type":"@id"
     },
     "dfc:owner":{
