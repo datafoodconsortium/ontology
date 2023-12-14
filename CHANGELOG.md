@@ -266,6 +266,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Brand as a Facet.
 
 [unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...master
+[1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
+[1.9.1]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/datafoodconsortium/ontology/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/datafoodconsortium/ontology/compare/v1.7.3...v1.8.0
 [1.7.3]: https://github.com/datafoodconsortium/ontology/compare/v1.7.2...v1.7.3
