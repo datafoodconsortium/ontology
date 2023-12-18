@@ -35,7 +35,7 @@
    "dfc-b:offers":{
      "@type":"@id"
    },
-   "dfc-b:offersTo":{
+   "dfc-b:offeredTo":{
      "@type":"@id"
    },
    "dfc-b:offeredThrough":{
