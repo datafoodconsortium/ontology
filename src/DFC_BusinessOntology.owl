@@ -410,10 +410,10 @@
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasIncome"/>
+        <ObjectProperty IRI="#hasIngredient"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#hasInput"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasLabellingCharacteristic"/>
@@ -443,7 +443,7 @@
         <ObjectProperty IRI="#hasOrderStatus"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasOutcome"/>
+        <ObjectProperty IRI="#hasOutput"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPart"/>
@@ -506,13 +506,13 @@
         <ObjectProperty IRI="#identifies"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#incomeOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#industrializedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#industrializes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inputOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
@@ -581,7 +581,7 @@
         <ObjectProperty IRI="#orders"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#outcomeOf"/>
+        <ObjectProperty IRI="#outputOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#ownedBy"/>
@@ -1347,7 +1347,7 @@
     <SubClassOf>
         <Class IRI="#AsPlannedConsumptionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#incomeOf"/>
+            <ObjectProperty IRI="#inputOf"/>
             <Class IRI="#AsPlannedTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1365,7 +1365,7 @@
     <SubClassOf>
         <Class IRI="#AsPlannedLocalConsumptionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#incomeOf"/>
+            <ObjectProperty IRI="#inputOf"/>
             <Class IRI="#AsPlannedLocalTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1376,7 +1376,7 @@
     <SubClassOf>
         <Class IRI="#AsPlannedLocalProductionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#outcomeOf"/>
+            <ObjectProperty IRI="#outputOf"/>
             <Class IRI="#AsPlannedLocalTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1394,14 +1394,14 @@
     <SubClassOf>
         <Class IRI="#AsPlannedLocalTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIncome"/>
+            <ObjectProperty IRI="#hasInput"/>
             <Class IRI="#AsPlannedLocalConsumptionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AsPlannedLocalTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasOutcome"/>
+            <ObjectProperty IRI="#hasOutput"/>
             <Class IRI="#AsPlannedLocalProductionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1425,7 +1425,7 @@
     <SubClassOf>
         <Class IRI="#AsPlannedProductionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#outcomeOf"/>
+            <ObjectProperty IRI="#outputOf"/>
             <Class IRI="#AsPlannedTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1443,14 +1443,14 @@
     <SubClassOf>
         <Class IRI="#AsPlannedTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIncome"/>
+            <ObjectProperty IRI="#hasInput"/>
             <Class IRI="#AsPlannedConsumptionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AsPlannedTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasOutcome"/>
+            <ObjectProperty IRI="#hasOutput"/>
             <Class IRI="#AsPlannedProductionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1468,7 +1468,7 @@
     <SubClassOf>
         <Class IRI="#AsRealizedConsumptionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#incomeOf"/>
+            <ObjectProperty IRI="#inputOf"/>
             <Class IRI="#AsRealizedTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1479,7 +1479,7 @@
     <SubClassOf>
         <Class IRI="#AsRealizedProductionFlow"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#outcomeOf"/>
+            <ObjectProperty IRI="#outputOf"/>
             <Class IRI="#AsRealizedTransformation"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1497,14 +1497,14 @@
     <SubClassOf>
         <Class IRI="#AsRealizedTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasIncome"/>
+            <ObjectProperty IRI="#hasInput"/>
             <Class IRI="#AsRealizedConsumptionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AsRealizedTransformation"/>
         <ObjectAllValuesFrom>
-            <ObjectProperty IRI="#hasOutcome"/>
+            <ObjectProperty IRI="#hasOutput"/>
             <Class IRI="#AsRealizedProductionFlow"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
@@ -1605,7 +1605,7 @@
     <SubClassOf>
         <Class IRI="#ConsumptionFlow"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#incomeOf"/>
+            <ObjectProperty IRI="#inputOf"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2219,7 +2219,7 @@
     <SubClassOf>
         <Class IRI="#ProductionFlow"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#outcomeOf"/>
+            <ObjectProperty IRI="#outputOf"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -4388,11 +4388,11 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasIncome"/>
+        <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#hasInput"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4432,7 +4432,7 @@
         <ObjectProperty IRI="#hasStatus"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasOutcome"/>
+        <ObjectProperty IRI="#hasOutput"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4520,15 +4520,15 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#incomeOf"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="#industrializedBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#industrializes"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inputOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4620,7 +4620,7 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#outcomeOf"/>
+        <ObjectProperty IRI="#outputOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4836,12 +4836,12 @@
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasIncome"/>
-        <ObjectProperty IRI="#incomeOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="#hasIngredient"/>
         <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInput"/>
+        <ObjectProperty IRI="#inputOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasLabellingCharacteristic"/>
@@ -4868,8 +4868,8 @@
         <ObjectProperty IRI="#optionOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasOutcome"/>
-        <ObjectProperty IRI="#outcomeOf"/>
+        <ObjectProperty IRI="#hasOutput"/>
+        <ObjectProperty IRI="#outputOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasPart"/>
@@ -5226,16 +5226,16 @@
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasIncome"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <Class IRI="#DefinedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInput"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsPlannedTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
         </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasIngredient"/>
-        <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLabellingCharacteristic"/>
@@ -5277,7 +5277,7 @@
         <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasOutcome"/>
+        <ObjectProperty IRI="#hasOutput"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsPlannedTransformation"/>
@@ -5376,16 +5376,16 @@
         <Class IRI="#ProductBatch"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#incomeOf"/>
-        <Class IRI="#ConsumptionFlow"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#industrializedBy"/>
         <Class IRI="#TechnicalProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#industrializes"/>
         <Class IRI="#SuppliedProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inputOf"/>
+        <Class IRI="#ConsumptionFlow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isIngredientOf"/>
@@ -5492,7 +5492,7 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#outcomeOf"/>
+        <ObjectProperty IRI="#outputOf"/>
         <Class IRI="#ProductionFlow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -7849,16 +7849,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasIncome</IRI>
-        <Literal xml:lang="fr">a en entrée</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasIncome</IRI>
-        <Literal xml:lang="en">has input</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasIngredient</IRI>
         <Literal xml:lang="fr">a pour ingrédient</Literal>
     </AnnotationAssertion>
@@ -7866,6 +7856,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasIngredient</IRI>
         <Literal xml:lang="en">has ingredient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInput</IRI>
+        <Literal xml:lang="fr">a en entrée</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInput</IRI>
+        <Literal xml:lang="en">has input</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7959,12 +7959,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasOutcome</IRI>
+        <IRI>#hasOutput</IRI>
         <Literal xml:lang="fr">a en sortie</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#hasOutcome</IRI>
+        <IRI>#hasOutput</IRI>
         <Literal xml:lang="en">has output</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8184,16 +8184,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#incomeOf</IRI>
-        <Literal xml:lang="en">Input of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#incomeOf</IRI>
-        <Literal xml:lang="fr">Source de</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#industrializedBy</IRI>
         <Literal xml:lang="en">Industrialized by</Literal>
     </AnnotationAssertion>
@@ -8211,6 +8201,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#industrializes</IRI>
         <Literal xml:lang="fr">Indutrialise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inputOf</IRI>
+        <Literal xml:lang="en">Input of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#inputOf</IRI>
+        <Literal xml:lang="fr">Source de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8534,12 +8534,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#outcomeOf</IRI>
+        <IRI>#outputOf</IRI>
         <Literal xml:lang="fr">Résultat de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#outcomeOf</IRI>
+        <IRI>#outputOf</IRI>
         <Literal xml:lang="en">output of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -8621,6 +8621,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#phoneNumber</IRI>
         <Literal xml:lang="en">phone number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phoneNumberOf</IRI>
+        <Literal xml:lang="fr">numéro de téléphone de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#phoneNumberOf</IRI>
+        <Literal xml:lang="en">phone number of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8871,6 +8881,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#sku</IRI>
         <Literal xml:lang="en">SKU</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#socialMediaOf</IRI>
+        <Literal xml:lang="fr">réseau social de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#socialMediaOf</IRI>
+        <Literal xml:lang="en">social media of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
