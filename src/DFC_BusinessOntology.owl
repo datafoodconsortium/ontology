@@ -845,6 +845,9 @@
         <DataProperty IRI="#refrigerated"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#region"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#sku"/>
     </Declaration>
     <Declaration>
@@ -6145,6 +6148,10 @@
         <Class IRI="#SuppliedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#region"/>
+        <Class IRI="#Address"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#sku"/>
         <Class IRI="#CatalogItem"/>
     </DataPropertyDomain>
@@ -6378,6 +6385,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#refrigerated"/>
         <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#region"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#sku"/>
