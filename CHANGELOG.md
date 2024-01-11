@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.11.0] - 2024-01-11
+
+### Added
+
+#### Property
+- region, domain: Address, range: xsd:string
+
+### Changed
+- Rename: hasIncome -> hasInput
+- Rename: hasOutcome -> hasOutput
+- Rename: incomeOf -> inputOf
+- Rename: outcomeOf -> outputOf
+
+
 ## [1.10.0] - 2023-12-22
 
 ### Added
@@ -18,17 +32,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - hasPaymentStatus, domain: Order, range: skos:Concept and (skos:broader value PaymentState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
 
 #### Domain
-- physicalCharacteristicsOf : PhysicalCharacteristic
+- physicalCharacteristicsOf: PhysicalCharacteristic
 
 #### Range
-- stocklimitation : xsd:float
-- totalTheoreticalStock : xsd:float
+- stocklimitation: xsd:float
+- totalTheoreticalStock: xsd:float
 
 #### Properties characteristics
-- inverse property : hasLabellingCharacteristic inverseOf labellingCharacteristicOf
+- inverse property: hasLabellingCharacteristic inverseOf labellingCharacteristicOf
 
 ### Changed
-
 - PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
 - Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
 - Agent: subClassOf owns only PhysicalProduct -> subClassOf owns only (PhysicalProduct or Brand)
@@ -38,7 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Domain: magages, Agent -> Enterprise
 - Domain: affiliatedTo, Enterprise -> Agent
 - Domain: websitePage, (Agent or VirtualPlace) -> (Agent or VirtualPlace or SocialMedia)
-- Rename : affiliatedBy -> affiliatedTo
+- Rename: affiliatedBy -> affiliatedTo
 
 ### Removed
 

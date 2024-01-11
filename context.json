@@ -131,10 +131,10 @@
 		"dfc-b:hasGeographicalOrigin": {
 			"@type": "@id"
 		},
-		"dfc-b:hasIncome": {
+		"dfc-b:hasIngredient": {
 			"@type": "@id"
 		},
-		"dfc-b:hasIngredient": {
+		"dfc-b:hasInput": {
 			"@type": "@id"
 		},
 		"dfc-b:hasLabellingCharacteristic": {
@@ -164,7 +164,7 @@
 		"dfc-b:hasOrderStatus": {
 			"@type": "@id"
 		},
-		"dfc-b:hasOutcome": {
+		"dfc-b:hasOutput": {
 			"@type": "@id"
 		},
 		"dfc-b:hasPart": {
@@ -227,13 +227,13 @@
 		"dfc-b:identifies": {
 			"@type": "@id"
 		},
-		"dfc-b:incomeOf": {
-			"@type": "@id"
-		},
 		"dfc-b:industrializedBy": {
 			"@type": "@id"
 		},
 		"dfc-b:industrializes": {
+			"@type": "@id"
+		},
+		"dfc-b:inputOf": {
 			"@type": "@id"
 		},
 		"dfc-b:isIngredientOf": {
@@ -302,7 +302,7 @@
 		"dfc-b:orders": {
 			"@type": "@id"
 		},
-		"dfc-b:outcomeOf": {
+		"dfc-b:outputOf": {
 			"@type": "@id"
 		},
 		"dfc-b:ownedBy": {
