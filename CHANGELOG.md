@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ## [1.11.1] - 2024-01-12
 ### Added
-- upgrade context.json to add tech ontology object property and owner (requiere to prototype)
+- upgrade context.json to add tech ontology object property and owner (required to prototype)
     - dfc-t:represent
     - dfc-t:hasPivot
     - dfc-t:hostedBy
