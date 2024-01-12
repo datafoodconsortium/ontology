@@ -769,11 +769,23 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIncome -->
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIngredient -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIncome">
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIngredient">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isIngredientOf"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour ingrédient</rdfs:label>
+        <rdfs:label xml:lang="en">has ingredient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasInput -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasInput">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -785,18 +797,6 @@
         </rdfs:domain>
         <rdfs:label xml:lang="fr">a en entrée</rdfs:label>
         <rdfs:label xml:lang="en">has input</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIngredient -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIngredient">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isIngredientOf"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
-        <rdfs:label xml:lang="fr">a pour ingrédient</rdfs:label>
-        <rdfs:label xml:lang="en">has ingredient</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -958,11 +958,11 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome -->
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutput -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome">
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutput">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1289,17 +1289,6 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ConsumptionFlow"/>
-        <rdfs:label xml:lang="en">Input of</rdfs:label>
-        <rdfs:label xml:lang="fr">Source de</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#industrializedBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#industrializedBy">
@@ -1319,6 +1308,17 @@
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
         <rdfs:label xml:lang="en">Industrializes</rdfs:label>
         <rdfs:label xml:lang="fr">Indutrialise</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ConsumptionFlow"/>
+        <rdfs:label xml:lang="en">Input of</rdfs:label>
+        <rdfs:label xml:lang="fr">Source de</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1599,9 +1599,9 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf -->
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf">
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ProductionFlow"/>
         <rdfs:label xml:lang="fr">Résultat de</rdfs:label>
@@ -1692,6 +1692,8 @@
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#phoneNumberOf">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhoneNumber"/>
+        <rdfs:label xml:lang="fr">numéro de téléphone de</rdfs:label>
+        <rdfs:label xml:lang="en">phone number of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1914,6 +1916,8 @@
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#socialMediaOf">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SocialMedia"/>
+        <rdfs:label xml:lang="fr">réseau social de</rdfs:label>
+        <rdfs:label xml:lang="en">social media of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2728,6 +2732,15 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#region -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#region">
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sku -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sku">
@@ -2980,7 +2993,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3002,7 +3015,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedLocalTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3018,7 +3031,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ProductionFlow"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedLocalTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3040,13 +3053,13 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Transformation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIncome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasInput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedLocalConsumptionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedLocalProductionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3074,7 +3087,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ProductionFlow"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3096,13 +3109,13 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Transformation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIncome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasInput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedConsumptionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedProductionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3124,7 +3137,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3140,7 +3153,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ProductionFlow"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedTransformation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3162,13 +3175,13 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Transformation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasIncome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasInput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedConsumptionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutcome"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasOutput"/>
                 <owl:allValuesFrom rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedProductionFlow"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3287,7 +3300,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#incomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#inputOf"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4051,7 +4064,7 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outcomeOf"/>
+                <owl:onProperty rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#outputOf"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>

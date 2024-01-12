@@ -7,12 +7,57 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.10.1] - 2023-12-14
-### Fixed
-replace dfc-b:offersTo by dfc-b:offeredTo
+## [1.11.0] - 2024-01-11
+
+### Added
+
+#### Property
+- region, domain: Address, range: xsd:string
+
+### Changed
+- Rename: hasIncome -> hasInput
+- Rename: hasOutcome -> hasOutput
+- Rename: incomeOf -> inputOf
+- Rename: outcomeOf -> outputOf
 
 
-## [1.10.0] - 2023-12-14
+## [1.10.0] - 2023-12-22
+
+### Added
+
+#### Property
+- hasStatus
+- hasFulfilmentStatus, domain: Order, range: skos:Concept and (skos:broader value FulfilmentState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
+- hasOrderStatus, domain: Order, range: skos:Concept and (skos:broader value OrderState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
+- hasPaymentStatus, domain: Order, range: skos:Concept and (skos:broader value PaymentState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
+
+#### Domain
+- physicalCharacteristicsOf: PhysicalCharacteristic
+
+#### Range
+- stocklimitation: xsd:float
+- totalTheoreticalStock: xsd:float
+
+#### Properties characteristics
+- inverse property: hasLabellingCharacteristic inverseOf labellingCharacteristicOf
+
+### Changed
+
+- PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
+- Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
+- Agent: subClassOf owns only PhysicalProduct -> subClassOf owns only (PhysicalProduct or Brand)
+- mainContactOf: subPropertyOf affiliatedBy -> mainContactOf subPropertyOf DFC_BusinessOntology_ObjectProperty
+- hasMainContact: subPropertyOf affiliates -> hasMainContact subPropertyOf  DFC_BusinessOntology_ObjectProperty
+- Person: mainContactOf only Enterprise -> mainContactOf only (Enterprise or PhysicalPlace)
+- Domain: magages, Agent -> Enterprise
+- Domain: affiliatedTo, Enterprise -> Agent
+- Domain: websitePage, (Agent or VirtualPlace) -> (Agent or VirtualPlace or SocialMedia)
+- Rename: affiliatedBy -> affiliatedTo
+
+### Removed
+
+#### Properties characteristics
+- symmetry: referencedBy
 
 ### Fixed
 - upgrade context.json to match ontology
@@ -39,45 +84,6 @@ replace dfc-b:offersTo by dfc-b:offeredTo
     - add dfc-b:constitutes as uri predicate
     - add dfc-b:identifiedBy as uri predicate
     - add dfc-b:storedIn as uri predicate
-
-
-## [1.9.1] - 2023-11-15
-
-### Added
-
-#### Property
-- hasStatus
-- hasFulfilmentStatus, domain: Order, range: skos:Concept and (skos:broader value FulfilmentState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
-- hasOrderStatus, domain: Order, range: skos:Concept and (skos:broader value OrderState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
-- hasPaymentStatus, domain: Order, range: skos:Concept and (skos:broader value PaymentState) and (skos:inScheme value DFC_Vocabulary), subpropertyOf: hasStatus
-
-#### Domain
-- physicalCharacteristicsOf : PhysicalCharacteristic
-
-#### Range
-- stocklimitation : xsd:float
-- totalTheoreticalStock : xsd:float
-
-#### Properties characteristics
-- inverse property : hasLabellingCharacteristic inverseOf labellingCharacteristicOf
-
-### Changed
-
-- PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
-- Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
-- Agent: subClassOf owns only PhysicalProduct -> subClassOf owns only (PhysicalProduct or Brand)
-- mainContactOf: subPropertyOf affiliatedBy -> mainContactOf subPropertyOf DFC_BusinessOntology_ObjectProperty
-- hasMainContact: subPropertyOf affiliates -> hasMainContact subPropertyOf  DFC_BusinessOntology_ObjectProperty
-- Person: mainContactOf only Enterprise -> mainContactOf only (Enterprise or PhysicalPlace)
-- Domain: magages, Agent -> Enterprise
-- Domain: affiliatedTo, Enterprise -> Agent
-- Domain: websitePage, (Agent or VirtualPlace) -> (Agent or VirtualPlace or SocialMedia)
-- Rename : affiliatedBy -> affiliatedTo
-
-### Removed
-
-#### Properties characteristics
-- symmetry: referencedBy
 
 ## [1.9.0] - 2023-10-05
 
@@ -270,9 +276,8 @@ replace dfc-b:offersTo by dfc-b:offeredTo
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.10.0...master
-[1.10.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.0...v1.10.1
-[1.10.0]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.10.0
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...master
+[1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/datafoodconsortium/ontology/compare/v1.8.0...v1.9.0
 [1.8.0]: https://github.com/datafoodconsortium/ontology/compare/v1.7.3...v1.8.0
