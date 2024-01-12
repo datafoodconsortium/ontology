@@ -426,7 +426,7 @@
 		"dfc-t:hostedBy": {
 			"@type": "@id"
 		},
-		"dfc-b:owner": {
+		"dfc:owner": {
 			"@type": "@id"
 		}
 	}
