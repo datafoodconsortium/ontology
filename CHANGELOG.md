@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.11.1] - 2024-01-12
+### Added
+- upgrade context.json to add tech ontology object property and owner (requiere to prototype)
+    - dfc-t:represent
+    - dfc-t:hasPivot
+    - dfc-t:hostedBy
+    - dfc:owner
 
 ## [1.11.0] - 2024-01-11
 
@@ -276,7 +283,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...master
+[1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
 [1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/datafoodconsortium/ontology/compare/v1.8.0...v1.9.0
