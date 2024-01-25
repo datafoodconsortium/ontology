@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--Created by yFiles for HTML 2.5.0.2-->
+<!--Created by yFiles for HTML 2.6.0.3-->
 <graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle2="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/2.0" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:explorer-style="http://www.yworks.com/data-explorer/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
 	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
@@ -35,83 +35,47 @@
 		<y:SharedData>
 			<yjs:DashStyle x:Key="1" dashes="6 2" offset="0"/>
 			<yjs:Arrow x:Key="2" type="NONE"/>
-			<y:RatioAnchoredLabelModelParameter x:Key="3" LayoutOffset="4.973415798611086,8.891669991070899"/>
-			<yjs:SolidColorFill x:Key="4" color="Black"/>
-			<yjs:Font x:Key="5" fontSize="12" fontFamily="'Arial'"/>
-			<yjs:SolidColorFill x:Key="6" color="#FFFF9900"/>
-			<yjs:Stroke x:Key="7" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="8" Ratio="0.0007673778428293626,0" Offset="0,-0.005670248920523591"/>
-			<y:FreeNodePortLocationModelParameter x:Key="9" Ratio="0.013882194157909922,0.5"/>
-			<y:FreeNodePortLocationModelParameter x:Key="10" Ratio="0.013882194157909922,0.5"/>
-			<y:RatioAnchoredLabelModelParameter x:Key="11" LayoutOffset="8.676540798611086,4.8892746913579685"/>
-			<yjs:SolidColorFill x:Key="12" color="Black"/>
-			<yjs:Font x:Key="13" fontSize="12" fontFamily="'Arial'"/>
-			<yjs:SolidColorFill x:Key="14" color="#FFCC99FF"/>
-			<yjs:Stroke x:Key="15" fill="#FF000000" miterLimit="1.45"/>
-			<y:FreeNodePortLocationModelParameter x:Key="16" Ratio="0.5,1"/>
-			<y:RatioAnchoredLabelModelParameter x:Key="17" LayoutOffset="8.275173611111086,11.873649691357969"/>
-			<yjs:SolidColorFill x:Key="18" color="Black"/>
-			<yjs:Font x:Key="19" fontSize="12" fontFamily="'Arial'"/>
-			<yjs:SolidColorFill x:Key="20" color="#FFFA8484"/>
-			<yjs:Stroke x:Key="21" fill="#FF000000" miterLimit="1.45"/>
-			<yjs:SolidColorFill x:Key="22" color="Black"/>
-			<yjs:SolidColorFill x:Key="23" color="Black"/>
-			<yjs:SolidColorFill x:Key="24" color="Black"/>
-			<yjs:SolidColorFill x:Key="25" color="Black"/>
+			<y:SmartEdgeLabelModel x:Key="3" Angle="1.5707963267948966"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="4" LayoutOffset="17.49042519422119,8.015625"/>
+			<yjs:DefaultLabelStyle x:Key="5" horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000">
+				<yjs:DefaultLabelStyle.font>
+					<yjs:Font fontSize="12" fontFamily="'Arial'"/>
+				</yjs:DefaultLabelStyle.font>
+			</yjs:DefaultLabelStyle>
+			<y:RatioAnchoredLabelModelParameter x:Key="6" LayoutOffset="4.973415798611086,8.891669991070899"/>
+			<yjs:SolidColorFill x:Key="7" color="Black"/>
+			<yjs:Font x:Key="8" fontSize="12" fontFamily="'Arial'"/>
+			<yjs:SolidColorFill x:Key="9" color="#FFFF9900"/>
+			<yjs:Stroke x:Key="10" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="0.0007673778428293626,0" Offset="0,-0.005670248920523591"/>
+			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.013882194157909922,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.013882194157909922,0.5"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="14" LayoutOffset="8.676540798611086,4.8892746913579685"/>
+			<yjs:SolidColorFill x:Key="15" color="Black"/>
+			<yjs:Font x:Key="16" fontSize="12" fontFamily="'Arial'"/>
+			<yjs:SolidColorFill x:Key="17" color="#FFCC99FF"/>
+			<yjs:Stroke x:Key="18" fill="#FF000000" miterLimit="1.45"/>
+			<y:FreeNodePortLocationModelParameter x:Key="19" Ratio="0.5,1"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="20" LayoutOffset="8.275173611111086,11.873649691357969"/>
+			<yjs:SolidColorFill x:Key="21" color="Black"/>
+			<yjs:Font x:Key="22" fontSize="12" fontFamily="'Arial'"/>
+			<yjs:SolidColorFill x:Key="23" color="#FFFA8484"/>
+			<yjs:Stroke x:Key="24" fill="#FF000000" miterLimit="1.45"/>
+			<y:RatioAnchoredLabelModelParameter x:Key="25" LayoutOffset="20.8681640625,8.015625"/>
 			<yjs:SolidColorFill x:Key="26" color="Black"/>
-			<yjs:SolidColorFill x:Key="27" color="Black"/>
-			<yjs:SolidColorFill x:Key="28" color="Black"/>
-			<yjs:SolidColorFill x:Key="29" color="Black"/>
-			<yjs:SolidColorFill x:Key="30" color="Black"/>
-			<yjs:SolidColorFill x:Key="31" color="Black"/>
-			<yjs:SolidColorFill x:Key="32" color="Black"/>
-			<yjs:SolidColorFill x:Key="33" color="Black"/>
+			<yjs:Font x:Key="27" fontSize="12" fontFamily="'Arial'"/>
+			<yjs:SolidColorFill x:Key="28" color="#FF99CCFF"/>
+			<yjs:Stroke x:Key="29" fill="#FF000000" miterLimit="1.45" thickness="2"/>
+			<y:FreeNodePortLocationModelParameter x:Key="30" Ratio="1,0.5"/>
+			<y:FreeNodePortLocationModelParameter x:Key="31" Ratio="0.5,0.03440860215053765"/>
+			<y:SmartEdgeLabelModel x:Key="32" Angle="1.5707963267948966"/>
+			<yjs:Arrow x:Key="33" type="NONE" scale="1.5"/>
 			<yjs:SolidColorFill x:Key="34" color="Black"/>
-			<yjs:SolidColorFill x:Key="35" color="Black"/>
-			<yjs:SolidColorFill x:Key="36" color="Black"/>
-			<yjs:SolidColorFill x:Key="37" color="Black"/>
-			<yjs:SolidColorFill x:Key="38" color="Black"/>
-			<yjs:SolidColorFill x:Key="39" color="Black"/>
-			<yjs:SolidColorFill x:Key="40" color="Black"/>
-			<yjs:SolidColorFill x:Key="41" color="Black"/>
-			<yjs:SolidColorFill x:Key="42" color="Black"/>
-			<yjs:SolidColorFill x:Key="43" color="Black"/>
-			<yjs:SolidColorFill x:Key="44" color="Black"/>
-			<yjs:SolidColorFill x:Key="45" color="Black"/>
-			<yjs:SolidColorFill x:Key="46" color="Black"/>
-			<yjs:SolidColorFill x:Key="47" color="Black"/>
-			<yjs:SolidColorFill x:Key="48" color="Black"/>
-			<yjs:SolidColorFill x:Key="49" color="Black"/>
-			<yjs:SolidColorFill x:Key="50" color="Black"/>
-			<yjs:SolidColorFill x:Key="51" color="Black"/>
-			<yjs:SolidColorFill x:Key="52" color="Black"/>
-			<yjs:SolidColorFill x:Key="53" color="Black"/>
-			<yjs:SolidColorFill x:Key="54" color="Black"/>
-			<yjs:SolidColorFill x:Key="55" color="Black"/>
-			<yjs:SolidColorFill x:Key="56" color="Black"/>
-			<yjs:SolidColorFill x:Key="57" color="Black"/>
-			<y:FreeEdgeLabelModelParameter x:Key="58" Ratio="0.5002255395215266" Distance="0.00002545348194412497"/>
-			<yjs:SolidColorFill x:Key="59" color="White"/>
-			<yjs:SolidColorFill x:Key="60" color="Black"/>
-			<yjs:Stroke x:Key="61" fill="{y:GraphMLReference 26}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="62" stroke="#FF000000" fill="{y:GraphMLReference 26}"/>
-			<yjs:Font x:Key="63" fontFamily="'Arial'"/>
-			<y:FreeEdgeLabelModelParameter x:Key="64" Ratio="0.4812002876484491" Distance="-0.7509227445127635"/>
-			<yjs:SolidColorFill x:Key="65" color="White"/>
-			<yjs:Font x:Key="66" fontFamily="'Arial'"/>
-			<yjs:SolidColorFill x:Key="67" color="Black"/>
-			<yjs:Stroke x:Key="68" fill="{y:GraphMLReference 23}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="69" stroke="#FF000000" fill="{y:GraphMLReference 23}"/>
-			<yjs:SolidColorFill x:Key="70" color="White"/>
-			<yjs:Font x:Key="71" fontFamily="'Arial'"/>
-			<yjs:SolidColorFill x:Key="72" color="Black"/>
-			<yjs:Stroke x:Key="73" fill="{y:GraphMLReference 32}" miterLimit="1.45"/>
-			<yjs:Arrow x:Key="74" stroke="#FF000000" fill="{y:GraphMLReference 32}"/>
 		</y:SharedData>
 	</data>
 	<graph id="G" edgedefault="directed">
 		<data key="d6">
-			<y:Json>{"version":"2.0.0","__mg":"yed-live","theme":{"name":"light","version":"1.0.0"}}</y:Json>
+			<y:Json>{"version":"2.0.0","origin":"yed-live","theme":{"name":"light","version":"1.0.0"},"__mg":"yed-live","bridge-style":"GAP"}</y:Json>
 		</data>
 		<node id="n0">
 			<data key="d0">0</data>
@@ -124,7 +88,7 @@ Session]]></y:Label.Text>
 							<y:RatioAnchoredLabelModelParameter LayoutOffset="22.107421875,26.03125"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000">
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="{y:GraphMLReference 34}">
 								<yjs:DefaultLabelStyle.font>
 									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
 								</yjs:DefaultLabelStyle.font>
@@ -351,7 +315,7 @@ Product]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="157.0433641748828" Y="-17.57755557445512" Width="132.26310402045033" Height="610.921875"/>
+				<y:RectD X="152.7933641748828" Y="-17.57755557445512" Width="136.51310402045033" Height="601.546875"/>
 			</data>
 			<data key="d7">
 				<yjs:CollapsibleNodeStyleDecorator>
@@ -534,10 +498,10 @@ Product]]></y:Label.Text>
 					<data key="d11">
 						<x:List>
 							<y:Label>
-								<y:Label.Text><![CDATA[> satisfies >
-< satified by <]]></y:Label.Text>
+								<y:Label.Text><![CDATA[> satisfies > (N-N)
+< satisfied by < (N-N)]]></y:Label.Text>
 								<y:Label.LayoutParameter>
-									<y:FreeEdgeLabelModelParameter Ratio="0.5515826938771472" Distance="0.000005086262945042108" Angle="-1.5707963267948966"/>
+									<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 3}" SegmentRatio="0.576776649983005"/>
 								</y:Label.LayoutParameter>
 								<y:Label.Style>
 									<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -548,7 +512,7 @@ Product]]></y:Label.Text>
 					<data key="d13">
 						<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 							<yjs:PolylineEdgeStyle.stroke>
-								<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+								<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 							</yjs:PolylineEdgeStyle.stroke>
 						</yjs:PolylineEdgeStyle>
 					</data>
@@ -557,10 +521,10 @@ Product]]></y:Label.Text>
 					<data key="d11">
 						<x:List>
 							<y:Label>
-								<y:Label.Text><![CDATA[> industrializes >
-< industrialized by <]]></y:Label.Text>
+								<y:Label.Text><![CDATA[> industrializes > (N-N)
+< industrialized by < (N-N)]]></y:Label.Text>
 								<y:Label.LayoutParameter>
-									<y:FreeEdgeLabelModelParameter Ratio="0.4462151078147627" Distance="-0.000003182179000305041" Angle="-1.5707963267948966"/>
+									<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 3}" SegmentRatio="0.4997572126191136"/>
 								</y:Label.LayoutParameter>
 								<y:Label.Style>
 									<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -571,7 +535,7 @@ Product]]></y:Label.Text>
 					<data key="d13">
 						<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 							<yjs:PolylineEdgeStyle.stroke>
-								<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+								<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 							</yjs:PolylineEdgeStyle.stroke>
 						</yjs:PolylineEdgeStyle>
 					</data>
@@ -707,11 +671,11 @@ Date]]></y:Label.Text>
 			<data key="d0">7</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 11}">
+					<y:Label LayoutParameter="{y:GraphMLReference 14}">
 						<y:Label.Text><![CDATA[End
 Date]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 13}" autoFlip="false" textFill="{y:GraphMLReference 12}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 16}" autoFlip="false" textFill="{y:GraphMLReference 15}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -720,11 +684,11 @@ Date]]></y:Label.Text>
 				<y:RectD X="1179.747247836112" Y="327.5995024129147" Width="46.03472222222217" Height="37.71604938271594"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 15}" fill="{y:GraphMLReference 14}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 18}" fill="{y:GraphMLReference 17}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 		</node>
@@ -746,7 +710,7 @@ Date]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1049.1281813025064" Y="679.7163897380449" Width="248.40999014225872" Height="127.4609375"/>
+				<y:RectD X="866.0031813025064" Y="679.7163897380449" Width="431.5349901422587" Height="127.4609375"/>
 			</data>
 			<data key="d7">
 				<yjs:CollapsibleNodeStyleDecorator>
@@ -806,7 +770,7 @@ Place]]></y:Label.Text>
 						</x:List>
 					</data>
 					<data key="d5">
-						<y:RectD X="1184.1281813025064" Y="716.1773272380449" Width="90" Height="76"/>
+						<y:RectD X="1138.6906813025064" Y="716.1773272380449" Width="90" Height="76"/>
 					</data>
 					<data key="d7">
 						<yjs:ShapeNodeStyle fill="#FF99CCFF">
@@ -835,6 +799,26 @@ Place]]></y:Label.Text>
 							<y:FreeNodePortLocationModelParameter Ratio="0.00018227240592902187,0.3111746623910392"/>
 						</data>
 					</port>
+					<port name="p4">
+						<data key="d16">
+							<y:FreeNodePortLocationModelParameter Ratio="0.9891304347826086,0.5"/>
+						</data>
+					</port>
+					<port name="p5">
+						<data key="d16">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9871794871794872"/>
+						</data>
+					</port>
+					<port name="p6">
+						<data key="d16">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5,0.9871794871794872"/>
+						</data>
+					</port>
+					<port name="p7">
+						<data key="d16">
+							<y:FreeNodePortLocationModelParameter Ratio="0.5333333333333333,1"/>
+						</data>
+					</port>
 				</node>
 				<node id="n8::n1">
 					<data key="d0">1</data>
@@ -857,7 +841,7 @@ Place]]></y:Label.Text>
 						</x:List>
 					</data>
 					<data key="d5">
-						<y:RectD X="1064.1281813025064" Y="752.5563088868237" Width="90" Height="39.62101835122121"/>
+						<y:RectD X="911.9943819074331" Y="752.5563088868237" Width="90" Height="39.62101835122121"/>
 					</data>
 					<data key="d7">
 						<yjs:ShapeNodeStyle fill="#FF99CCFF">
@@ -972,7 +956,7 @@ Category]]></y:Label.Text>
 					<y:Label>
 						<y:Label.Text>Catalog</y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:RatioAnchoredLabelModelParameter LayoutOffset="12.826171875,31.015625"/>
+							<y:RatioAnchoredLabelModelParameter LayoutOffset="24,31"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000">
@@ -1009,66 +993,62 @@ Category]]></y:Label.Text>
 			<data key="d0">12</data>
 			<data key="d4">
 				<x:List>
-					<y:Label>
+					<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 5}">
 						<y:Label.Text>URL</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:RatioAnchoredLabelModelParameter LayoutOffset="17.49042519422119,8.015625"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
-						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1079.7344357957852" Y="865.5557262897154" Width="58.78749101344238" Height="30"/>
+				<y:RectD X="927.6006364007119" Y="861.6807262897154" Width="58.78749101344238" Height="30"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle fill="#FF99CCFF">
+				<yjs:ShapeNodeStyle fill="#FF80AAF7">
 					<yjs:ShapeNodeStyle.stroke>
 						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
 					</yjs:ShapeNodeStyle.stroke>
 				</yjs:ShapeNodeStyle>
 			</data>
-			<port name="p0"/>
+			<data key="d8">
+				<y:ViewState>
+					<y:FolderNodeState x:Key="c|view" Layout="927.6006364007119,861.6807262897154,58.78749101344238,30">
+						<y:FolderNodeState.Labels>
+							<y:Label LayoutParameter="{y:GraphMLReference 4}" Style="{y:GraphMLReference 5}">
+								<y:Label.Text>URL</y:Label.Text>
+							</y:Label>
+						</y:FolderNodeState.Labels>
+					</y:FolderNodeState>
+				</y:ViewState>
+			</data>
+			<port name="p0">
+				<data key="d18">
+					<y:ViewState>
+						<y:Port x:Key="c|view"/>
+					</y:ViewState>
+				</data>
+			</port>
 		</node>
 		<node id="n13">
 			<data key="d0">13</data>
 			<data key="d4">
 				<x:List>
-					<y:Label>
+					<y:Label LayoutParameter="{y:GraphMLReference 25}">
 						<y:Label.Text>Address</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:RatioAnchoredLabelModelParameter LayoutOffset="20.8681640625,8.015625"/>
-						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" autoFlip="false" textFill="#FF000000">
-								<yjs:DefaultLabelStyle.font>
-									<yjs:Font fontSize="12" fontFamily="'Arial'"/>
-								</yjs:DefaultLabelStyle.font>
-							</yjs:DefaultLabelStyle>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 27}" autoFlip="false" textFill="{y:GraphMLReference 26}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1184.1281813025064" Y="865.5557262897154" Width="90" Height="30"/>
+				<y:RectD X="1017.5394043583299" Y="865.5557262897156" Width="90" Height="30"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle fill="#FF99CCFF">
-					<yjs:ShapeNodeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
-					</yjs:ShapeNodeStyle.stroke>
-				</yjs:ShapeNodeStyle>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 29}" fill="{y:GraphMLReference 28}"/>
 			</data>
 			<port name="p0"/>
 			<port name="p1">
 				<data key="d16">
-					<y:FreeNodePortLocationModelParameter Ratio="1,0.5"/>
+					<y:GraphMLReference ResourceKey="30"/>
 				</data>
 			</port>
 		</node>
@@ -1213,7 +1193,7 @@ Method]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1535.466975768709" Y="618.76536893669" Width="90" Height="37.71604938271594"/>
+				<y:RectD X="1550.7169757687086" Y="628.275435338925" Width="90" Height="37.71604938271594"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFFFCC99">
@@ -1238,19 +1218,19 @@ Method]]></y:Label.Text>
 			<data key="d0">17</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}">
+					<y:Label LayoutParameter="{y:GraphMLReference 20}">
 						<y:Label.Text>Price</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 19}" autoFlip="false" textFill="{y:GraphMLReference 18}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 22}" autoFlip="false" textFill="{y:GraphMLReference 21}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="1672.8635189166232" Y="618.76536893669" Width="46.03472222222217" Height="37.71604938271594"/>
+				<y:RectD X="1679.7385189166237" Y="628.275435338925" Width="46.03472222222217" Height="37.71604938271594"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 21}" fill="{y:GraphMLReference 20}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 24}" fill="{y:GraphMLReference 23}"/>
 			</data>
 			<port name="p0"/>
 		</node>
@@ -1695,7 +1675,7 @@ Option
 					<data key="d13">
 						<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 							<yjs:PolylineEdgeStyle.stroke>
-								<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+								<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 							</yjs:PolylineEdgeStyle.stroke>
 						</yjs:PolylineEdgeStyle>
 					</data>
@@ -1984,7 +1964,7 @@ Batch]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="424.1315393138702" Y="1081.5314445909896" Width="90" Height="76"/>
+				<y:RectD X="428.9440393138703" Y="1081.09394459099" Width="90" Height="76"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFCCFFFF">
@@ -2074,7 +2054,7 @@ Transformation]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-233.25920151350545" Y="384.71467990084545" Width="96" Height="53.865951127493645"/>
+				<y:RectD X="-233.63420151350545" Y="385.08967990084545" Width="96" Height="53.865951127493645"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFFFCC99">
@@ -2114,7 +2094,7 @@ Transformation]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-34.91444547583822" Y="394.5104707553762" Width="54.61305361305381" Height="34.274369418432116"/>
+				<y:RectD X="-48.69569547583822" Y="396.4479707553762" Width="54.61305361305381" Height="34.274369418432116"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFFF9900">
@@ -2144,7 +2124,7 @@ flow]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-48.44125200264469" Y="271.44756320810905" Width="81.66666666666674" Height="55.793512434871616"/>
+				<y:RectD X="-62.25375200264469" Y="270.19756320810905" Width="81.66666666666674" Height="55.793512434871616"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFC0C0C0" shape="ELLIPSE">
@@ -2187,7 +2167,7 @@ flow]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-48.44125200264469" Y="496.05423528620395" Width="81.66666666666674" Height="52.58016827868187"/>
+				<y:RectD X="-62.28500200264469" Y="496.05423528620395" Width="81.66666666666674" Height="52.58016827868187"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFC0C0C0" shape="ELLIPSE">
@@ -2348,7 +2328,7 @@ flow]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-48.44125200264469" Y="627.559584918141" Width="81.66666666666674" Height="55.793512434871616"/>
+				<y:RectD X="-45.44125200264469" Y="628.3095849181408" Width="75.54166666666674" Height="65.54351243487162"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFC0C0C0" shape="ELLIPSE">
@@ -2392,7 +2372,7 @@ flow]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="-48.44125200264469" Y="808.7704355119758" Width="81.66666666666674" Height="52.58016827868187"/>
+				<y:RectD X="-45.86312700264469" Y="796.5673105119758" Width="76.41666666666674" Height="66.08016827868187"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFC0C0C0" shape="ELLIPSE">
@@ -3028,7 +3008,7 @@ Stock]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d5">
-				<y:RectD X="400.1200186187453" Y="558.4450615725211" Width="77.19939323430253" Height="44"/>
+				<y:RectD X="358.1200186187452" Y="495.9693194255449" Width="65.88689323430253" Height="52.75"/>
 			</data>
 			<data key="d7">
 				<yjs:ShapeNodeStyle fill="#FFFF9900">
@@ -3042,16 +3022,21 @@ Stock]]></y:Label.Text>
 					<y:FreeNodePortLocationModelParameter Ratio="0,0.02651391794110354" Offset="-0.025198138702990036,0"/>
 				</data>
 			</port>
+			<port name="p1">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.01473038391296877,0.5"/>
+				</data>
+			</port>
 		</node>
 		<node id="n53">
 			<data key="d0">53</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 6}">
 						<y:Label.Text><![CDATA[Stock 
 Limitation]]></y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 5}" autoFlip="false" textFill="{y:GraphMLReference 4}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 7}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3060,11 +3045,11 @@ Limitation]]></y:Label.Text>
 				<y:RectD X="1011.4780305661407" Y="564.0935214689354" Width="70.03472222222217" Height="45.72083998214191"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 7}" fill="{y:GraphMLReference 6}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 10}" fill="{y:GraphMLReference 9}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="8"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p1">
@@ -3113,10 +3098,10 @@ Limitation]]></y:Label.Text>
 			<data key="d0">55</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 6}">
 						<y:Label.Text>Discount</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 5}" autoFlip="false" textFill="{y:GraphMLReference 4}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 7}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3125,21 +3110,21 @@ Limitation]]></y:Label.Text>
 				<y:RectD X="1011.4780305661409" Y="494.08464158145046" Width="70.03472222222217" Height="45.72083998214191"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 7}" fill="{y:GraphMLReference 6}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 10}" fill="{y:GraphMLReference 9}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="8"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="9"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="10"/>
+					<y:GraphMLReference ResourceKey="13"/>
 				</data>
 			</port>
 		</node>
@@ -3147,10 +3132,10 @@ Limitation]]></y:Label.Text>
 			<data key="d0">56</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 3}">
+					<y:Label LayoutParameter="{y:GraphMLReference 6}">
 						<y:Label.Text>Discount</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 5}" autoFlip="false" textFill="{y:GraphMLReference 4}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 8}" autoFlip="false" textFill="{y:GraphMLReference 7}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3159,21 +3144,21 @@ Limitation]]></y:Label.Text>
 				<y:RectD X="1582.4467805661404" Y="527.9596415814502" Width="70.03472222222217" Height="45.72083998214191"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 7}" fill="{y:GraphMLReference 6}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 10}" fill="{y:GraphMLReference 9}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="8"/>
+					<y:GraphMLReference ResourceKey="11"/>
 				</data>
 			</port>
 			<port name="p1">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="9"/>
+					<y:GraphMLReference ResourceKey="12"/>
 				</data>
 			</port>
 			<port name="p2">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="10"/>
+					<y:GraphMLReference ResourceKey="13"/>
 				</data>
 			</port>
 			<port name="p3">
@@ -3206,10 +3191,10 @@ Limitation]]></y:Label.Text>
 			<data key="d0">57</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 11}">
+					<y:Label LayoutParameter="{y:GraphMLReference 14}">
 						<y:Label.Text>Date</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 13}" autoFlip="false" textFill="{y:GraphMLReference 12}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 16}" autoFlip="false" textFill="{y:GraphMLReference 15}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3218,11 +3203,11 @@ Limitation]]></y:Label.Text>
 				<y:RectD X="1433.872247836112" Y="339.4745024129147" Width="46.03472222222217" Height="37.71604938271594"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 15}" fill="{y:GraphMLReference 14}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 18}" fill="{y:GraphMLReference 17}"/>
 			</data>
 			<port name="p0">
 				<data key="d16">
-					<y:GraphMLReference ResourceKey="16"/>
+					<y:GraphMLReference ResourceKey="19"/>
 				</data>
 			</port>
 		</node>
@@ -3230,10 +3215,10 @@ Limitation]]></y:Label.Text>
 			<data key="d0">58</data>
 			<data key="d4">
 				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 17}">
+					<y:Label LayoutParameter="{y:GraphMLReference 20}">
 						<y:Label.Text>Price</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 19}" autoFlip="false" textFill="{y:GraphMLReference 18}"/>
+							<yjs:DefaultLabelStyle horizontalTextAlignment="CENTER" font="{y:GraphMLReference 22}" autoFlip="false" textFill="{y:GraphMLReference 21}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -3242,58 +3227,112 @@ Limitation]]></y:Label.Text>
 				<y:RectD X="1656.6135189166232" Y="334.70286893669004" Width="46.03472222222217" Height="37.71604938271594"/>
 			</data>
 			<data key="d7">
-				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 21}" fill="{y:GraphMLReference 20}"/>
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 24}" fill="{y:GraphMLReference 23}"/>
 			</data>
 			<port name="p0"/>
 		</node>
-		<edge id="e0" source="n0" target="n6" sourceport="p0" targetport="p0">
-			<data key="d11">
+		<node id="n59">
+			<data key="d0">59</data>
+			<data key="d4">
 				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.655123204063554" Distance="-0.00004845275316256448"/>
-						</y:Label.LayoutParameter>
+					<y:Label LayoutParameter="{y:GraphMLReference 25}">
+						<y:Label.Text>Person</y:Label.Text>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 27}" autoFlip="false" textFill="{y:GraphMLReference 26}"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
+			<data key="d5">
+				<y:RectD X="1142.128181302506" Y="907.9307262897156" Width="83.125" Height="27.0625"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 29}" fill="{y:GraphMLReference 28}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="30"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="31"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5360902255639097,0.14526310561473899"/>
+				</data>
+			</port>
+		</node>
+		<node id="n60">
+			<data key="d0">60</data>
+			<data key="d4">
+				<x:List>
+					<y:Label LayoutParameter="{y:GraphMLReference 25}">
+						<y:Label.Text><![CDATA[Phone number]]></y:Label.Text>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle verticalTextAlignment="CENTER" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 27}" autoFlip="false" textFill="{y:GraphMLReference 26}"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d5">
+				<y:RectD X="1252.5031813025064" Y="868.4932262897154" Width="119.125" Height="27.0625"/>
+			</data>
+			<data key="d7">
+				<yjs:ShapeNodeStyle stroke="{y:GraphMLReference 29}" fill="{y:GraphMLReference 28}"/>
+			</data>
+			<port name="p0"/>
+			<port name="p1">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="30"/>
+				</data>
+			</port>
+			<port name="p2">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="31"/>
+				</data>
+			</port>
+			<port name="p3">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.03440860215053765"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n0" target="n6" sourceport="p0" targetport="p0">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 22}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 22}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e1" source="n0" target="n7" sourceport="p1" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 64}">
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 65}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 66}" textFill="{y:GraphMLReference 67}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 68}" targetArrow="{y:GraphMLReference 69}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e2" source="n4" target="n5" sourceport="p0" targetport="p0">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 24}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 24}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3302,8 +3341,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> has object >
-< object of <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has object > (1-1)
+< object of < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.6673353721059295" Distance="1.1368683772161603e-13" Angle="0.8678291109749022"/>
 						</y:Label.LayoutParameter>
@@ -3316,7 +3355,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3325,8 +3364,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> coordinated by >
-< coordinates <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> coordinated by > (1-1)
+< coordinates < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.6448414181441733" Distance="-0.000006514906147003785" Angle="-3.1320226164618097"/>
 						</y:Label.LayoutParameter>
@@ -3339,7 +3378,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3351,7 +3390,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[< hosted at <
 > hosts >]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.46702761870732373" Distance="-0.000046444834700202204" Angle="1.5802951685401685"/>
+							<y:FreeEdgeLabelModelParameter/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3362,32 +3401,19 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e6" source="n0" target="n9" sourceport="p4" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5092685912084857" Distance="-0.0000401235475514991"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 25}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 25}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3396,7 +3422,7 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< offered for <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has price > (0-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.4999999352815154" Distance="-0.000014207430695023504"/>
 						</y:Label.LayoutParameter>
@@ -3409,7 +3435,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3432,7 +3458,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3454,24 +3480,21 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e10" source="n2" target="n53" sourceport="p2" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 58}">
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 59}" horizontalTextAlignment="CENTER" font="'Arial'" textFill="{y:GraphMLReference 60}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 61}" targetArrow="{y:GraphMLReference 62}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e11" source="n2" target="n0" sourceport="p3" targetport="p5">
@@ -3479,7 +3502,7 @@ Limitation]]></y:Label.Text>
 				<x:List>
 					<y:Label>
 						<y:Label.Text><![CDATA[> listed in > (0-N)
-(1-1) < lists <]]></y:Label.Text>
+(0-N) < lists <]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.46850909197937457" Distance="-0.0000046207663899622275"/>
 						</y:Label.LayoutParameter>
@@ -3492,7 +3515,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3515,7 +3538,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3538,7 +3561,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3550,7 +3573,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[(0-N) < manages <
 > managed by > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.44568697989968564" Distance="0.00001807596220260166" Angle="1.570796326794897"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 32}" SegmentRatio="0.7502751031020317"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3566,32 +3589,19 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e15" source="n1" target="n54" sourceport="p3" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5682726364007504" Distance="-0.000011517955491481351"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 27}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 27}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3600,8 +3610,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< supplies <
-> supplied by>]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< supplies < (N-N)
+> supplied by> (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.20039270183806207" Distance="65.08459186053291"/>
 						</y:Label.LayoutParameter>
@@ -3619,7 +3629,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3628,8 +3638,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< proposes <
-> proposed by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< proposes < (N-N)
+> proposed by > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.32186342360957626" Distance="36.995937511328705"/>
 						</y:Label.LayoutParameter>
@@ -3647,7 +3657,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3656,8 +3666,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< requests <
-> requested by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< requests < (N-N)
+> requested by > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.6708850549180156" Distance="33.46946005452181" Angle="-3.141592653589793"/>
 						</y:Label.LayoutParameter>
@@ -3675,32 +3685,19 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e19" source="n52" target="n3::n2" sourceport="p0" targetport="p1">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.38633852139368957" Distance="0.007691070696646109" Angle="-2.874810704358001"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
+		<edge id="e19" source="n52" target="n3::n2" sourceport="p1" targetport="p1">
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 28}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.sourceArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 28}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.sourceArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3723,7 +3720,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3735,7 +3732,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[(1-1) < maintained by  <
 > maintains > (0-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.33597707002742727" Distance="30.362676323369403" Angle="1.570003770054489"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 32}" SegmentIndex="1" SegmentRatio="0.26543044220115714"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3752,32 +3749,19 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e22" source="n8::n1" target="n12" sourceport="p0" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.41513786206427483" Distance="-0.000007474381391148199"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 29}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 29}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3789,7 +3773,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[> has address > (1-1)
 (0-N) < address of <]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.50415617116072" Distance="-0.000007474381391148199"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.6104129726238078" Distance="16.261058022311808"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3800,7 +3784,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3812,7 +3796,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[(1-1) < selects <
 > selected by > (0-1N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5003662967236694" Distance="0.0000432960966918472" Angle="1.570796326794897"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 32}" SegmentRatio="0.38296258902852587"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3823,7 +3807,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3832,7 +3816,7 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< belongs to <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< belongs to < (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5343491001268206" Distance="0.000005604799753200496" Angle="-3.141592653589793"/>
 						</y:Label.LayoutParameter>
@@ -3845,7 +3829,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3857,7 +3841,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[> has option > (1-N)
 (0-N) < option of <]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.17863729715736681" Distance="-52.661567338584874" Angle="0.004607207308296334"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.16173222187030453" Distance="-47.67800634616938" Angle="0.004607207308296334"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3867,63 +3851,37 @@ Limitation]]></y:Label.Text>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1367.6268808977302,472.6263946673008"/>
+					<y:Bend Location="1350.125,472.6263946673008"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e27" source="n15" target="n20" sourceport="p0" targetport="p2">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.39098058748332754" Distance="-0.000001688001425662941"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 30}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.sourceArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 30}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.sourceArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e28" source="n20" target="n9" sourceport="p3" targetport="p1">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5481282468372031" Distance="0.000010962781836722069" Angle="-2.1301197870158406"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 31}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 31}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -3932,10 +3890,9 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> uses > (1-1)
-(0-N) < used by <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has payment method > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.4999305708119578" Distance="-0.000013791247567760731" Angle="1.010184529677055"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.8345790696100346" Distance="-6.170524783987993"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -3946,75 +3903,43 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e30" source="n16" target="n17" sourceport="p1" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5952344203101638" Distance="-0.000019457889493423863"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 70}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 71}" textFill="{y:GraphMLReference 72}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 73}" targetArrow="{y:GraphMLReference 74}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e31" source="n19" target="n20" sourceport="p0" targetport="p4">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.32978042945017266" Distance="0.024708454995048958" Angle="-3.1217384660660366"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 33}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.sourceArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 33}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.sourceArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e32" source="n18" target="n20" sourceport="p0" targetport="p5">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.3309350021704257" Distance="-0.000016309587400122374" Angle="3.140448352840837"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 34}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.sourceArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 34}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.sourceArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4023,7 +3948,7 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< refers to <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< picked up at < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5000000595070975" Distance="0.000020109138745283417"/>
 						</y:Label.LayoutParameter>
@@ -4040,20 +3965,20 @@ Limitation]]></y:Label.Text>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 33}" sourceArrow="{y:GraphMLReference 33}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="1.5"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
-		<edge id="e34" source="n20::n0" target="n13" sourceport="p0" targetport="p1">
+		<edge id="e34" source="n20::n0" target="n8::n0" sourceport="p0" targetport="p4">
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< uses <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< delivered at < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5844205760510657" Distance="-38.97115223303825"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.36096151241115465" Distance="-59.013029460212216"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -4063,13 +3988,14 @@ Limitation]]></y:Label.Text>
 			</data>
 			<data key="d12">
 				<x:List>
-					<y:Bend Location="1476.9047237785835,880.5557262897154"/>
+					<y:Bend Location="1472.75,837"/>
+					<y:Bend Location="1344.75,837"/>
 				</x:List>
 			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4092,7 +4018,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4120,7 +4046,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4149,7 +4075,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4172,32 +4098,19 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e39" source="n23" target="n24" sourceport="p2" targetport="p1">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.398840524543542" Distance="-5.684341886080802e-14"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 35}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 35}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4206,10 +4119,10 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> represents >
-< represented by <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> represents > (N-N)
+< represented by < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5000000925175656" Distance="-0.0000013036327857207652" Angle="-1.5707963267948966"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 3}" SegmentRatio="0.5000001334686067"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -4220,7 +4133,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4243,7 +4156,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4252,10 +4165,10 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> has reference >
-< reference of <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has reference > (N-N)
+< reference of < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.6049722645903943" Distance="-0.0000013036328141424747" Angle="-1.5707963267948966"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 3}" SegmentRatio="0.4256991600759536"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -4266,19 +4179,25 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e43" source="n30" target="n29" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-21.420418669311317,344.0584244210796"/>
+					<y:Bend Location="-21.389168669311317,344.0584244210796"/>
+				</x:List>
+			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 36}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 36}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4287,8 +4206,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> produces >
-< produced by <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> produces > (1-1)
+< produced by < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5501267280883397" Distance="0.000020109138745283417" Angle="0.014585335382334268"/>
 						</y:Label.LayoutParameter>
@@ -4301,7 +4220,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4310,13 +4229,17 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< consumed by <
-> consumes >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< consumed by < (N-N)
+> consumes > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5000063867458994" Distance="-0.001150245864772191" Angle="0.027028190812143135"/>
+							<y:SmartEdgeLabelModelParameter SegmentRatio="0.48532479147052465">
+								<y:SmartEdgeLabelModelParameter.Model>
+									<y:SmartEdgeLabelModel/>
+								</y:SmartEdgeLabelModelParameter.Model>
+							</y:SmartEdgeLabelModelParameter>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
+							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10" minimumSize="117.12495544935808,27.96706340294699" maximumSize="117.12495544935808,27.96706340294699"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
@@ -4324,7 +4247,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4333,8 +4256,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< income of <
-> has income >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< income of < (1-1)
+> has income > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5199533773027716" Distance="0.6512863299217291" Angle="2.460649186767505"/>
 						</y:Label.LayoutParameter>
@@ -4347,7 +4270,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4356,8 +4279,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> has outcome >
-< outcome of <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has outcome > (N-N)
+< outcome of < (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.48354660612805594" Distance="-0.09530457684113501" Angle="0.8079268461028383"/>
 						</y:Label.LayoutParameter>
@@ -4370,19 +4293,25 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e48" source="n31" target="n29" sourceport="p2" targetport="p1">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-21.451668669311317,462.41953773000614"/>
+					<y:Bend Location="-21.389168669311317,462.41953773000614"/>
+				</x:List>
+			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 37}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 37}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4391,8 +4320,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< transforms <
-> transformed by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< transforms < (N-N)
+> transformed by > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5602689739145003" Distance="-575.8798114103691" Angle="-0.00022104237047695444"/>
 						</y:Label.LayoutParameter>
@@ -4411,7 +4340,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4420,22 +4349,30 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 38}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 38}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e51" source="n35" target="n34" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-7.670418669311317,685.9890486765063"/>
+					<y:Bend Location="-7.375,685.9890486765063"/>
+					<y:Bend Location="-7.375,706.3474750035564"/>
+					<y:Bend Location="-7.607918669311317,706.3474750035564"/>
+				</x:List>
+			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 39}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 39}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4444,8 +4381,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> produces >
-< produced by <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> produces > (N-N)
+< produced by < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.6135408098165053" Distance="0.00002183425937364922" Angle="-0.31939573479928013"/>
 						</y:Label.LayoutParameter>
@@ -4458,7 +4395,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4467,8 +4404,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< consumed by <
-> consumes >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< consumed by < (N-N)
+> consumes > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.49993356100118014" Distance="-0.00001761158552549328" Angle="0.36828562794156944"/>
 						</y:Label.LayoutParameter>
@@ -4481,7 +4418,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4490,8 +4427,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< income of  <
-> has income >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< income of  < (N-N)
+> has income > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.49966849092672677" Distance="0.8406789567709962" Angle="2.7657748343440685"/>
 						</y:Label.LayoutParameter>
@@ -4504,7 +4441,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4513,8 +4450,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> has outcome >
-< outcome of <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has outcome > (N-N)
+< outcome of < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.4287318096900265" Distance="-1.1240880457283176" Angle="0.44310529449024694"/>
 						</y:Label.LayoutParameter>
@@ -4527,19 +4464,25 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e56" source="n36" target="n34" sourceport="p2" targetport="p1">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-7.654793669311317,778.3073774687604"/>
+					<y:Bend Location="-7.607918669311317,778.3073774687604"/>
+				</x:List>
+			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 40}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 40}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4548,60 +4491,34 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 41}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 41}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e58" source="n32" target="n38" sourceport="p4" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.49987064074904586" Distance="-0.000006695346883134334"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 42}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 42}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e59" source="n32" target="n39" sourceport="p5" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.5841673413717615" Distance="0.0000017817581010604044"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 43}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 43}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4610,8 +4527,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> produces >
-< produced by <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> produces > (N-N)
+< produced by < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5481284940817027" Distance="-0.000016368231322988325" Angle="-0.21395159592365945"/>
 						</y:Label.LayoutParameter>
@@ -4624,7 +4541,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4633,8 +4550,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< consumed by <
-> consumes >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< consumed by < (N-N)
+> consumes > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.5000603470750987" Distance="0.000023777325868691494" Angle="0.4425985665819437"/>
 						</y:Label.LayoutParameter>
@@ -4647,7 +4564,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4656,8 +4573,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< income of  <
-> has income >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< income of  < (N-N)
+> has income > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.49972638625568017" Distance="0.8525201571484281" Angle="2.797191020112756"/>
 						</y:Label.LayoutParameter>
@@ -4670,7 +4587,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4679,8 +4596,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[> has outcome >
-< outcome of <]]></y:Label.Text>
+						<y:Label.Text><![CDATA[> has outcome > (N-N)
+< outcome of < (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.418724913009926" Distance="-1.184078494489669" Angle="0.4085943850068081"/>
 						</y:Label.LayoutParameter>
@@ -4693,7 +4610,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4702,10 +4619,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 44}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 44}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4714,60 +4631,34 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 45}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 45}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e66" source="n40" target="n38" sourceport="p2" targetport="p1">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.4995136210915358" Distance="0.00001290227572265712"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 46}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 46}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e67" source="n40" target="n39" sourceport="p3" targetport="p1">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.6162513632254886" Distance="-0.0000017817581010604044"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 47}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 47}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4776,8 +4667,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< localizes <
-> localized by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< localizes < (N-N)
+> localized by > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.1376551667373426" Distance="0.000020109138745283417" Angle="-0.00889229487977452"/>
 						</y:Label.LayoutParameter>
@@ -4790,7 +4681,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4802,7 +4693,7 @@ Limitation]]></y:Label.Text>
 						<y:Label.Text><![CDATA[> identifies > (0-N)
 (1-1) < identified by <]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.499729128935" Distance="-0.000001516272195575929" Angle="-1.5360607570134501"/>
+							<y:SmartEdgeLabelModelParameter Model="{y:GraphMLReference 32}" SegmentRatio="0.5750691800977287"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
 							<yjs:DefaultLabelStyle backgroundFill="#FFFFFFFF" horizontalTextAlignment="CENTER" font="'Arial'" textFill="#FF000000" textSize="10"/>
@@ -4813,7 +4704,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4822,8 +4713,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< stores <
-> is stored in >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< stores < (N-N)
+> is stored in > (1-1)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.19943729745959496" Distance="-54.79974287267955" Angle="-0.6279377422430261"/>
 						</y:Label.LayoutParameter>
@@ -4841,7 +4732,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4864,7 +4755,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4873,10 +4764,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 48}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 48}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4899,7 +4790,7 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="#FF000000" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4908,10 +4799,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 49}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 49}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4920,10 +4811,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 50}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 50}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4932,10 +4823,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 51}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 51}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -4944,8 +4835,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[< owns < 
-> owned by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< owns < (N-N)
+> owned by > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="-0.07766370230139337" Distance="295.5465644886997"/>
 						</y:Label.LayoutParameter>
@@ -4966,12 +4857,12 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 52}" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow fill="{y:GraphMLReference 52}">
+						<yjs:Arrow fill="BLACK">
 							<yjs:Arrow.stroke>
-								<yjs:Stroke fill="{y:GraphMLReference 52}" thickness="2"/>
+								<yjs:Stroke fill="BLACK" thickness="2"/>
 							</yjs:Arrow.stroke>
 						</yjs:Arrow>
 					</yjs:PolylineEdgeStyle.targetArrow>
@@ -4996,12 +4887,12 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 53}" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow fill="{y:GraphMLReference 53}">
+						<yjs:Arrow fill="BLACK">
 							<yjs:Arrow.stroke>
-								<yjs:Stroke fill="{y:GraphMLReference 53}" thickness="2"/>
+								<yjs:Stroke fill="BLACK" thickness="2"/>
 							</yjs:Arrow.stroke>
 						</yjs:Arrow>
 					</yjs:PolylineEdgeStyle.targetArrow>
@@ -5026,12 +4917,12 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 54}" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow fill="{y:GraphMLReference 54}">
+						<yjs:Arrow fill="BLACK">
 							<yjs:Arrow.stroke>
-								<yjs:Stroke fill="{y:GraphMLReference 54}" thickness="2"/>
+								<yjs:Stroke fill="BLACK" thickness="2"/>
 							</yjs:Arrow.stroke>
 						</yjs:Arrow>
 					</yjs:PolylineEdgeStyle.targetArrow>
@@ -5042,10 +4933,10 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 55}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 55}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
@@ -5054,8 +4945,8 @@ Limitation]]></y:Label.Text>
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[ < concerns <
-> concerned by >]]></y:Label.Text>
+						<y:Label.Text><![CDATA[< concerns < (N-N)
+> concerned by > (N-N)]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:FreeEdgeLabelModelParameter Ratio="0.02173094695261765" Distance="97.41463628514384"/>
 						</y:Label.LayoutParameter>
@@ -5075,12 +4966,12 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 56}" miterLimit="1.45" thickness="2"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45" thickness="2"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow fill="{y:GraphMLReference 56}">
+						<yjs:Arrow fill="BLACK">
 							<yjs:Arrow.stroke>
-								<yjs:Stroke fill="{y:GraphMLReference 56}" thickness="2"/>
+								<yjs:Stroke fill="BLACK" thickness="2"/>
 							</yjs:Arrow.stroke>
 						</yjs:Arrow>
 					</yjs:PolylineEdgeStyle.targetArrow>
@@ -5091,111 +4982,133 @@ Limitation]]></y:Label.Text>
 			<data key="d13">
 				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
 					<yjs:PolylineEdgeStyle.stroke>
-						<yjs:Stroke fill="{y:GraphMLReference 57}" miterLimit="1.45"/>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
 					</yjs:PolylineEdgeStyle.stroke>
 					<yjs:PolylineEdgeStyle.targetArrow>
-						<yjs:Arrow stroke="#FF000000" fill="{y:GraphMLReference 57}"/>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
 					</yjs:PolylineEdgeStyle.targetArrow>
 				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e83" source="n2" target="n55" sourceport="p10" targetport="p2">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 58}">
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 59}" horizontalTextAlignment="CENTER" font="'Arial'" textFill="{y:GraphMLReference 60}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="1012.450266177825,516.9450615725214"/>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 61}" targetArrow="{y:GraphMLReference 62}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e84" source="n14" target="n56" sourceport="p8" targetport="p6">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.45664476381432806" Distance="-14.161511986023438"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 59}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 63}" textFill="{y:GraphMLReference 60}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="1612.625,526.875"/>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 61}" targetArrow="{y:GraphMLReference 62}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e85" source="n23" target="n56" sourceport="p5" targetport="p7">
-			<data key="d11">
-				<x:List>
-					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.41557455276284627" Distance="0.05454817148520244"/>
-						</y:Label.LayoutParameter>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 59}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 63}" textFill="{y:GraphMLReference 60}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d12">
 				<x:List>
 					<y:Bend Location="1615.625,529.875"/>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 61}" targetArrow="{y:GraphMLReference 62}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e86" source="n14" target="n57" sourceport="p10" targetport="p0">
-			<data key="d11">
-				<x:List>
-					<y:Label LayoutParameter="{y:GraphMLReference 64}">
-						<y:Label.Text>has</y:Label.Text>
-						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 65}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 66}" textFill="{y:GraphMLReference 67}" textSize="10"/>
-						</y:Label.Style>
-					</y:Label>
-				</x:List>
-			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 68}" targetArrow="{y:GraphMLReference 69}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 		<edge id="e87" source="n23" target="n58" sourceport="p7" targetport="p0">
+			<data key="d13">
+				<yjs:PolylineEdgeStyle sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+					<yjs:PolylineEdgeStyle.targetArrow>
+						<yjs:Arrow stroke="#FF000000" fill="BLACK"/>
+					</yjs:PolylineEdgeStyle.targetArrow>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e88" source="n59" target="n8::n0" sourceport="p2" targetport="p6">
 			<data key="d11">
 				<x:List>
 					<y:Label>
-						<y:Label.Text>has</y:Label.Text>
+						<y:Label.Text><![CDATA[> has for main contact >
+< main contact of <]]></y:Label.Text>
 						<y:Label.LayoutParameter>
-							<y:FreeEdgeLabelModelParameter Ratio="0.31474019114419943" Distance="0.27361327487230247"/>
+							<y:FreeEdgeLabelModelParameter Ratio="0.20465482897171416" Distance="2.2737367544323206e-13"/>
 						</y:Label.LayoutParameter>
 						<y:Label.Style>
-							<yjs:DefaultLabelStyle backgroundFill="{y:GraphMLReference 70}" horizontalTextAlignment="CENTER" font="{y:GraphMLReference 71}" textFill="{y:GraphMLReference 72}" textSize="10"/>
+							<yjs:DefaultLabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" backgroundStroke="WHITE" font="'Arial'" autoFlip="false" textFill="{y:GraphMLReference 34}" textSize="10"/>
 						</y:Label.Style>
 					</y:Label>
 				</x:List>
 			</data>
 			<data key="d13">
-				<yjs:PolylineEdgeStyle stroke="{y:GraphMLReference 73}" targetArrow="{y:GraphMLReference 74}" sourceArrow="{y:GraphMLReference 2}"/>
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
+			</data>
+		</edge>
+		<edge id="e89" source="n60" target="n8::n0" sourceport="p3" targetport="p7">
+			<data key="d11">
+				<x:List>
+					<y:Label>
+						<y:Label.Text><![CDATA[> has phone number >
+< phone number of <]]></y:Label.Text>
+						<y:Label.LayoutParameter>
+							<y:FreeEdgeLabelModelParameter/>
+						</y:Label.LayoutParameter>
+						<y:Label.Style>
+							<yjs:DefaultLabelStyle backgroundFill="WHITE" horizontalTextAlignment="CENTER" backgroundStroke="WHITE" font="'Arial'" autoFlip="false" textFill="{y:GraphMLReference 34}" textSize="10"/>
+						</y:Label.Style>
+					</y:Label>
+				</x:List>
+			</data>
+			<data key="d13">
+				<yjs:PolylineEdgeStyle targetArrow="{y:GraphMLReference 2}" sourceArrow="{y:GraphMLReference 2}">
+					<yjs:PolylineEdgeStyle.stroke>
+						<yjs:Stroke fill="BLACK" miterLimit="1.45"/>
+					</yjs:PolylineEdgeStyle.stroke>
+				</yjs:PolylineEdgeStyle>
 			</data>
 		</edge>
 	</graph>
