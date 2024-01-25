@@ -66,7 +66,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2023-02-13</Literal>
+        <Literal>2024-01-25</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -86,7 +86,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.9.0</Literal>
+        <Literal>1.12.0</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="skos:Collection"/>
@@ -488,6 +488,9 @@
         <ObjectProperty IRI="#hasTemperature"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTransformationType"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasType"/>
     </Declaration>
     <Declaration>
@@ -657,6 +660,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#socialMediaOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sold"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#soldBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#storedIn"/>
@@ -1230,6 +1239,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -4492,6 +4504,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTransformationType"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasType"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4721,6 +4737,14 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#soldBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4978,6 +5002,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#satisfiedBy"/>
         <ObjectProperty IRI="#satisfies"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#soldBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#storedIn"/>
@@ -5348,6 +5376,10 @@
         <Class IRI="#SuppliedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransformationType"/>
+        <Class IRI="#AsPlannedTransformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasType"/>
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
@@ -5613,6 +5645,14 @@
         <Class IRI="#SocialMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sold"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#soldBy"/>
+        <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#storedIn"/>
         <Class IRI="#RealStock"/>
     </ObjectPropertyDomain>
@@ -5781,6 +5821,20 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasQuantity"/>
         <Class IRI="#QuantitativeValue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransformationType"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:broader"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasUnit"/>
@@ -8124,6 +8178,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTransformationType</IRI>
+        <Literal xml:lang="fr">a pour type de transformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTransformationType</IRI>
+        <Literal xml:lang="en">has transformation type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasType</IRI>
         <Literal xml:lang="fr">a pour type</Literal>
     </AnnotationAssertion>
@@ -8891,6 +8955,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#socialMediaOf</IRI>
         <Literal xml:lang="en">social media of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sold</IRI>
+        <Literal xml:lang="fr">a vendu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sold</IRI>
+        <Literal xml:lang="en">sold</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#soldBy</IRI>
+        <Literal xml:lang="en">sold by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#soldBy</IRI>
+        <Literal xml:lang="fr">vendu par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
