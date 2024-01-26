@@ -209,6 +209,9 @@
 		"dfc-b:hasTemperature": {
 			"@type": "@id"
 		},
+		"dfc-b:hasTransformationType": {
+			"@type": "@id"
+		},
 		"dfc-b:hasType": {
 			"@type": "@id"
 		},
@@ -378,6 +381,12 @@
 			"@type": "@id"
 		},
 		"dfc-b:socialMediaOf": {
+			"@type": "@id"
+		},
+		"dfc-b:sold": {
+			"@type": "@id"
+		},
+		"dfc-b:soldBy": {
 			"@type": "@id"
 		},
 		"dfc-b:storedIn": {

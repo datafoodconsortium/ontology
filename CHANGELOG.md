@@ -6,7 +6,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-## [1.11.1] - 2024-01-12
+## [1.12.0] - 2024-02-01
+### Added
+
+#### Property
+- sold, domain: Agent, inverseOf: soldBy
+- soldBy, domain: Order, inverseOf: sold
+- hasTransformationType, domain: AsPlannedTransformation, range: skos:Concept and (skos:broader value TransformationType) and (skos:inScheme value DFC_Vocabulary)
+
+## [1.11.1] - 2024-01-29
+### Added
+- upgrade context.json to add tech ontology object property and owner (required to prototype)
+    - dfc-t:represent
+    - dfc-t:hasPivot
+    - dfc-t:hostedBy
+    - dfc:owner
+
+## [1.12.0] - 2024-02-01
+### Added
+
+#### Property
+- sold, domain: Agent, inverseOf: soldBy
+- soldBy, domain: Order, inverseOf: sold
+- hasTransformationType, domain: AsPlannedTransformation, range: skos:Concept and (skos:broader value TransformationType) and (skos:inScheme value DFC_Vocabulary)
+
+## [1.11.1] - 2024-01-29
 ### Added
 - upgrade context.json to add tech ontology object property and owner (required to prototype)
     - dfc-t:represent
@@ -49,6 +73,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - inverse property: hasLabellingCharacteristic inverseOf labellingCharacteristicOf
 
 ### Changed
+
 
 - PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
 - Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
@@ -283,7 +308,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...master
+[1.12.0]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
 [1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...v1.9.1

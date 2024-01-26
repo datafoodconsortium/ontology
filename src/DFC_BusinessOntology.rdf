@@ -32,12 +32,12 @@
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#bernardC"/>
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#florenceA"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Business Part)</dc:description>
-        <dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2023-02-13</dc:modified>
+        <dc:modified>2024-01-25</dc:modified>
         <dc:publisher rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
         <vann:preferredNamespacePrefix>dfc-b</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
-        <owl:versionInfo>1.9.0</owl:versionInfo>
+        <owl:versionInfo>1.12.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1196,6 +1196,32 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasTransformationType -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasTransformationType">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedTransformation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="fr">a pour type de transformation</rdfs:label>
+        <rdfs:label xml:lang="en">has transformation type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasType -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasType">
@@ -1918,6 +1944,29 @@
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SocialMedia"/>
         <rdfs:label xml:lang="fr">réseau social de</rdfs:label>
         <rdfs:label xml:lang="en">social media of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sold -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sold">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#soldBy"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="fr">a vendu</rdfs:label>
+        <rdfs:label xml:lang="en">sold</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#soldBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#soldBy">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Order"/>
+        <rdfs:label xml:lang="en">sold by</rdfs:label>
+        <rdfs:label xml:lang="fr">vendu par</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -5882,6 +5931,12 @@
     <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState -->
 
     <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
     
 
 
