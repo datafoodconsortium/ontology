@@ -1207,7 +1207,7 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
@@ -5934,9 +5934,9 @@
     
 
 
-    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType -->
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
     
 
 

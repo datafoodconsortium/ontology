@@ -1241,7 +1241,7 @@
         <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -5828,7 +5828,7 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#TranformationType"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
