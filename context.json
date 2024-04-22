@@ -380,10 +380,10 @@
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:socialMediaOf": {
+		"dfc-b:sells": {
 			"@type": "@id"
 		},
-		"dfc-b:sold": {
+		"dfc-b:socialMediaOf": {
 			"@type": "@id"
 		},
 		"dfc-b:soldBy": {
@@ -423,19 +423,6 @@
 			"@type": "@id"
 		},
 		"dfc-b:uses": {
-			"@type": "@id"
-		},
-
-		"dfc-t:represent": {
-			"@type": "@id"
-		},
-		"dfc-t:hasPivot": {
-			"@type": "@id"
-		},
-		"dfc-t:hostedBy": {
-			"@type": "@id"
-		},
-		"dfc:owner": {
 			"@type": "@id"
 		}
 	}
