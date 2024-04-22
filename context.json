@@ -218,6 +218,9 @@
 		"dfc-b:hasUnit": {
 			"@type": "@id"
 		},
+		"dfc-b:holds": {
+			"@type": "@id"
+		},
 		"dfc-b:hostedAt": {
 			"@type": "@id"
 		},
@@ -423,19 +426,6 @@
 			"@type": "@id"
 		},
 		"dfc-b:uses": {
-			"@type": "@id"
-		},
-
-		"dfc-t:represent": {
-			"@type": "@id"
-		},
-		"dfc-t:hasPivot": {
-			"@type": "@id"
-		},
-		"dfc-t:hostedBy": {
-			"@type": "@id"
-		},
-		"dfc:owner": {
 			"@type": "@id"
 		}
 	}
