@@ -424,19 +424,6 @@
 		},
 		"dfc-b:uses": {
 			"@type": "@id"
-		},
-
-		"dfc-t:represent": {
-			"@type": "@id"
-		},
-		"dfc-t:hasPivot": {
-			"@type": "@id"
-		},
-		"dfc-t:hostedBy": {
-			"@type": "@id"
-		},
-		"dfc:owner": {
-			"@type": "@id"
 		}
 	}
 }

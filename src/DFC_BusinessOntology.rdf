@@ -3658,6 +3658,16 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Length -->
+
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Length">
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#QuantitativeValue"/>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+        <rdfs:label xml:lang="fr">Longueur</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#LocalizedProduct -->
 
     <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#LocalizedProduct">
@@ -4442,6 +4452,26 @@
         <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Place"/>
         <rdfs:label xml:lang="fr">Lieu virtuel</rdfs:label>
         <rdfs:label xml:lang="en">Virtual place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Volume -->
+
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Volume">
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#QuantitativeValue"/>
+        <rdfs:label xml:lang="en">Volume</rdfs:label>
+        <rdfs:label xml:lang="fr">Volume</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Weight -->
+
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Weight">
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#QuantitativeValue"/>
+        <rdfs:label xml:lang="fr">Poids</rdfs:label>
+        <rdfs:label xml:lang="en">Weight</rdfs:label>
     </owl:Class>
     
 
