@@ -437,6 +437,9 @@
         <ObjectProperty IRI="#hasObject"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasOffer"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasOption"/>
     </Declaration>
     <Declaration>
@@ -654,6 +657,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#satisfies"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#selectedBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#selects"/>
@@ -4436,6 +4442,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOffer"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasOption"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4497,7 +4507,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasStatus"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTemperature"/>
@@ -4505,7 +4515,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTransformationType"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasType"/>
@@ -4732,6 +4742,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#selectedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#selects"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4888,6 +4902,10 @@
         <ObjectProperty IRI="#objectOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOffer"/>
+        <ObjectProperty IRI="#offersTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasOption"/>
         <ObjectProperty IRI="#optionOf"/>
     </InverseObjectProperties>
@@ -5002,6 +5020,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#satisfiedBy"/>
         <ObjectProperty IRI="#satisfies"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#selectedBy"/>
+        <ObjectProperty IRI="#selects"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#sold"/>
@@ -5295,6 +5317,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasObject"/>
         <Class IRI="#Coordination"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOffer"/>
+        <Class IRI="#CustomerCategory"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOption"/>
@@ -5635,6 +5661,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#satisfies"/>
         <Class IRI="#TechnicalProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#selectedBy"/>
+        <Class IRI="#ShippingOption"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#selects"/>
@@ -7993,6 +8023,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOffer</IRI>
+        <Literal xml:lang="fr">a pour offre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOffer</IRI>
+        <Literal xml:lang="en">has offer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOption</IRI>
         <Literal xml:lang="fr">a pour option</Literal>
     </AnnotationAssertion>
@@ -8852,6 +8892,11 @@
         <Literal xml:lang="en">refers to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#refersTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#refrigerated</IRI>
         <Literal xml:lang="en">refrigerated</Literal>
@@ -8920,6 +8965,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#satisfies</IRI>
         <Literal xml:lang="en">satisfies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selectedBy</IRI>
+        <Literal xml:lang="en">selected by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selectedBy</IRI>
+        <Literal xml:lang="fr">sélectionné par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9067,6 +9122,11 @@
         <Literal xml:lang="en">supplies to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#suppliesTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#to</IRI>
         <Literal xml:lang="fr">pour</Literal>
@@ -9145,6 +9205,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#uses</IRI>
         <Literal xml:lang="fr">utilise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#uses</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
