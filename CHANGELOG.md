@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Volume, subClassOf: QuantitativeValue.
 -   Length, subClassOf: QuantitativeValue.
 
+## [1.12.1] - 2024-02-01
+### Added
+- file context_1.8.2.json
+
 ## [1.12.0] - 2024-02-01
 ### Added
 
@@ -315,7 +319,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...master
+[1.12.1]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...v1.12.1
 [1.12.0]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
 [1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
