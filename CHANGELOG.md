@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Domain : belongsTo, (Order | Agent) -> Order
+- Rename: sold -> sells
 
 ## [1.12.1] - 2024-02-01
 ### Added

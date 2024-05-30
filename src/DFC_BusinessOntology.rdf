@@ -1942,6 +1942,18 @@
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sells -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sells">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#soldBy"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
+        <rdfs:label xml:lang="en">sells</rdfs:label>
+        <rdfs:label xml:lang="fr">vend</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#socialMediaOf -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#socialMediaOf">
@@ -1949,18 +1961,6 @@
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SocialMedia"/>
         <rdfs:label xml:lang="fr">réseau social de</rdfs:label>
         <rdfs:label xml:lang="en">social media of</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sold -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#sold">
-        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#soldBy"/>
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Agent"/>
-        <rdfs:label xml:lang="fr">a vendu</rdfs:label>
-        <rdfs:label xml:lang="en">sold</rdfs:label>
     </owl:ObjectProperty>
     
 
