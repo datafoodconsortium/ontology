@@ -182,6 +182,9 @@
         <Class IRI="#LabellingCharacteristic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Length"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LocalizedProduct"/>
     </Declaration>
     <Declaration>
@@ -267,6 +270,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#VirtualPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
     </Declaration>
     <Declaration>
         <Class IRI="#What_Subject"/>
@@ -1860,6 +1869,10 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Length"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalizedProduct"/>
         <Class IRI="#What_Subject"/>
     </SubClassOf>
@@ -2500,6 +2513,14 @@
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
         <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#QuantitativeValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#What_Subject"/>
@@ -6820,6 +6841,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="en">Length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="fr">Longueur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LocalizedProduct</IRI>
         <Literal xml:lang="en">Localized product</Literal>
     </AnnotationAssertion>
@@ -7192,6 +7223,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VirtualPlace</IRI>
         <Literal xml:lang="en">Virtual place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="en">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="fr">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="fr">Poids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="en">Weight</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

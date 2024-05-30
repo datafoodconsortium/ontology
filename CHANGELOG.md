@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.13.0] - 2024-05-30
 ### Added
 
+#### Class
+-   Weight, subClassOf: QuantitativeValue.
+-   Volume, subClassOf: QuantitativeValue.
+-   Length, subClassOf: QuantitativeValue.
+
 #### Property
 - holds, domain: SaleSession, inverseOf: belongsTo
 
