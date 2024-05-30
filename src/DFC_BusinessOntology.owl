@@ -497,6 +497,9 @@
         <ObjectProperty IRI="#hasUnit"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#holds"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hostedAt"/>
     </Declaration>
     <Declaration>
@@ -4520,6 +4523,10 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#holds"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hostedAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4808,6 +4815,10 @@
         <ObjectProperty IRI="#hasAllergenCharacteristic"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#holds"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#brandOf"/>
         <ObjectProperty IRI="#hasBrand"/>
     </InverseObjectProperties>
@@ -5065,10 +5076,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
-        <ObjectUnionOf>
-            <Class IRI="#Agent"/>
-            <Class IRI="#Order"/>
-        </ObjectUnionOf>
+        <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#brandOf"/>
@@ -5390,6 +5398,10 @@
             <Class IRI="#DefinedProduct"/>
             <Class IRI="#QuantitativeValue"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#holds"/>
+        <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hostedAt"/>
@@ -8205,6 +8217,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasUnit</IRI>
         <Literal xml:lang="en">has unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="fr">détient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="en">holds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
