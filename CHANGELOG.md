@@ -13,6 +13,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   Volume, subClassOf: QuantitativeValue.
 -   Length, subClassOf: QuantitativeValue.
 
+## [1.13.0] - 2024-05-30
+### Added
+
+#### Property
+- holds, domain: SaleSession, inverseOf: belongsTo
+
+### Changed
+- Domain : belongsTo, (Order | Agent) -> Order
+- Rename: sold -> sells
+
 ## [1.12.1] - 2024-02-01
 ### Added
 - file context_1.8.2.json
@@ -84,8 +94,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - inverse property: hasLabellingCharacteristic inverseOf labellingCharacteristicOf
 
 ### Changed
-
-
 - PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
 - Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
 - Agent: subClassOf owns only PhysicalProduct -> subClassOf owns only (PhysicalProduct or Brand)
@@ -319,7 +327,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...master
+[1.13.0]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...1.13.0
 [1.12.1]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...v1.12.1
 [1.12.0]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
