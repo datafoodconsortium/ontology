@@ -6,23 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Added
-
-#### Property
-- hasOffer, domain: CustomerCategory, inverseOf: offersTo
-- selectedBy, domain: ShippingOption, inverseOf: selects
-
-### Deleted
-
-#### Property
-- refersTo
-- suppliesTo
-- uses
-
-### Changed
-
-- subpropertyOf hasStatus : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
-- subpropertyOf hasTransformationType : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
 
 ## [1.13.0] - 2024-05-30
 ### Added
@@ -34,10 +17,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Property
 - holds, domain: SaleSession, inverseOf: belongsTo
+- hasOffer, domain: CustomerCategory, inverseOf: offersTo
+- selectedBy, domain: ShippingOption, inverseOf: selects
 
 ### Changed
 - Domain : belongsTo, (Order | Agent) -> Order
 - Rename: sold -> sells
+- subpropertyOf hasStatus : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
+- subpropertyOf hasTransformationType : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
+
+### Deleted
+
+#### Property (deprecated)
+- refersTo 
+- suppliesTo
+- uses
+
 
 ## [1.12.1] - 2024-02-01
 ### Added
