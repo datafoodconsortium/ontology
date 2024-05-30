@@ -221,6 +221,9 @@
 		"dfc-b:hasUnit": {
 			"@type": "@id"
 		},
+		"dfc-b:holds": {
+			"@type": "@id"
+		},
 		"dfc-b:hostedAt": {
 			"@type": "@id"
 		},
@@ -386,10 +389,10 @@
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:socialMediaOf": {
+		"dfc-b:sells": {
 			"@type": "@id"
 		},
-		"dfc-b:sold": {
+		"dfc-b:socialMediaOf": {
 			"@type": "@id"
 		},
 		"dfc-b:soldBy": {

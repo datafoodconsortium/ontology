@@ -182,6 +182,9 @@
         <Class IRI="#LabellingCharacteristic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Length"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LocalizedProduct"/>
     </Declaration>
     <Declaration>
@@ -267,6 +270,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#VirtualPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
     </Declaration>
     <Declaration>
         <Class IRI="#What_Subject"/>
@@ -500,6 +509,9 @@
         <ObjectProperty IRI="#hasUnit"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#holds"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hostedAt"/>
     </Declaration>
     <Declaration>
@@ -665,10 +677,10 @@
         <ObjectProperty IRI="#selects"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#soldBy"/>
@@ -1863,6 +1875,10 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Length"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalizedProduct"/>
         <Class IRI="#What_Subject"/>
     </SubClassOf>
@@ -2503,6 +2519,14 @@
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
         <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#QuantitativeValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#What_Subject"/>
@@ -4530,6 +4554,10 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#holds"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hostedAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4750,11 +4778,11 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#sells"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4820,6 +4848,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
         <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#holds"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#brandOf"/>
@@ -5025,8 +5057,7 @@
         <ObjectProperty IRI="#selectedBy"/>
         <ObjectProperty IRI="#selects"/>
     </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#sells"/>
         <ObjectProperty IRI="#soldBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -5087,10 +5118,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
-        <ObjectUnionOf>
-            <Class IRI="#Agent"/>
-            <Class IRI="#Order"/>
-        </ObjectUnionOf>
+        <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#brandOf"/>
@@ -5418,6 +5446,10 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#holds"/>
+        <Class IRI="#SaleSession"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hostedAt"/>
         <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
@@ -5671,12 +5703,12 @@
         <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#socialMediaOf"/>
-        <Class IRI="#SocialMedia"/>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#sold"/>
-        <Class IRI="#Agent"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
+        <Class IRI="#SocialMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#soldBy"/>
@@ -6838,6 +6870,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="en">Length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="fr">Longueur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LocalizedProduct</IRI>
         <Literal xml:lang="en">Localized product</Literal>
     </AnnotationAssertion>
@@ -7210,6 +7252,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VirtualPlace</IRI>
         <Literal xml:lang="en">Virtual place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="en">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="fr">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="fr">Poids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="en">Weight</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -8248,6 +8310,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="fr">détient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="en">holds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hostedAt</IRI>
         <Literal xml:lang="fr">a lieu à</Literal>
     </AnnotationAssertion>
@@ -8987,6 +9059,16 @@
         <Literal xml:lang="fr">sélectionne</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sells</IRI>
+        <Literal xml:lang="en">sells</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sells</IRI>
+        <Literal xml:lang="fr">vend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sku</IRI>
         <Literal xml:lang="en">Only a general &quot;SKU&quot; id is proposed for now. Agents using GTIN could use GTIN as SKU but other IDs than GTIN can be used.</Literal>
@@ -9010,16 +9092,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#socialMediaOf</IRI>
         <Literal xml:lang="en">social media of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sold</IRI>
-        <Literal xml:lang="fr">a vendu</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sold</IRI>
-        <Literal xml:lang="en">sold</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
