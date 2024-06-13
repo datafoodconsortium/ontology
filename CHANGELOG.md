@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - hasOffer, domain: CustomerCategory, inverseOf: offersTo
 - selectedBy, domain: ShippingOption, inverseOf: selects
 
+#### Script
+- context-generator : Generate JSON-LD context from an ontology file
+
 ### Changed
 - Domain : belongsTo, (Order | Agent) -> Order
 - Rename: sold -> sells
