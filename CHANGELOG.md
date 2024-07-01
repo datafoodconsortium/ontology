@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - selectedBy, domain: ShippingOption, inverseOf: selects
 
 ### Changed
+- added missing `InverseObjectProperties` opening bracket for `sells`/`soldBy` (owl file now parses/loads in Protege)
 - Domain : belongsTo, (Order | Agent) -> Order
 - Rename: sold -> sells
 - subpropertyOf hasStatus : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
@@ -29,7 +30,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Deleted
 
 #### Property (deprecated)
-- refersTo 
+- refersTo
 - suppliesTo
 - uses
 
