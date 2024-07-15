@@ -182,6 +182,9 @@
         <Class IRI="#LabellingCharacteristic"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Length"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LocalizedProduct"/>
     </Declaration>
     <Declaration>
@@ -267,6 +270,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#VirtualPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Volume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight"/>
     </Declaration>
     <Declaration>
         <Class IRI="#What_Subject"/>
@@ -437,6 +446,9 @@
         <ObjectProperty IRI="#hasObject"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasOffer"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasOption"/>
     </Declaration>
     <Declaration>
@@ -495,6 +507,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasUnit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#holds"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hostedAt"/>
@@ -656,13 +671,16 @@
         <ObjectProperty IRI="#satisfies"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#selectedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#selects"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#soldBy"/>
@@ -1857,6 +1875,10 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Length"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#LocalizedProduct"/>
         <Class IRI="#What_Subject"/>
     </SubClassOf>
@@ -2497,6 +2519,14 @@
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
         <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Volume"/>
+        <Class IRI="#QuantitativeValue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight"/>
+        <Class IRI="#QuantitativeValue"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#What_Subject"/>
@@ -4436,6 +4466,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasOffer"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasOption"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4497,7 +4531,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasStatus"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTemperature"/>
@@ -4505,7 +4539,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTransformationType"/>
-        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+        <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasType"/>
@@ -4518,6 +4552,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasUnit"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#holds"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hostedAt"/>
@@ -4732,15 +4770,19 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#selectedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#selects"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#socialMediaOf"/>
+        <ObjectProperty IRI="#sells"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4806,6 +4848,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
         <ObjectProperty IRI="#hasAllergenCharacteristic"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsTo"/>
+        <ObjectProperty IRI="#holds"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#brandOf"/>
@@ -4886,6 +4932,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasObject"/>
         <ObjectProperty IRI="#objectOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasOffer"/>
+        <ObjectProperty IRI="#offersTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasOption"/>
@@ -5004,7 +5054,11 @@
         <ObjectProperty IRI="#satisfies"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#sold"/>
+        <ObjectProperty IRI="#selectedBy"/>
+        <ObjectProperty IRI="#selects"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#sells"/>
         <ObjectProperty IRI="#soldBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -5065,10 +5119,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
-        <ObjectUnionOf>
-            <Class IRI="#Agent"/>
-            <Class IRI="#Order"/>
-        </ObjectUnionOf>
+        <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#brandOf"/>
@@ -5297,6 +5348,10 @@
         <Class IRI="#Coordination"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOffer"/>
+        <Class IRI="#CustomerCategory"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasOption"/>
         <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
@@ -5390,6 +5445,10 @@
             <Class IRI="#DefinedProduct"/>
             <Class IRI="#QuantitativeValue"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#holds"/>
+        <Class IRI="#SaleSession"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hostedAt"/>
@@ -5637,16 +5696,20 @@
         <Class IRI="#TechnicalProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#selectedBy"/>
+        <Class IRI="#ShippingOption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#selects"/>
         <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#socialMediaOf"/>
-        <Class IRI="#SocialMedia"/>
+        <ObjectProperty IRI="#sells"/>
+        <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#sold"/>
-        <Class IRI="#Agent"/>
+        <ObjectProperty IRI="#socialMediaOf"/>
+        <Class IRI="#SocialMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#soldBy"/>
@@ -6808,6 +6871,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="en">Length</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Length</IRI>
+        <Literal xml:lang="fr">Longueur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#LocalizedProduct</IRI>
         <Literal xml:lang="en">Localized product</Literal>
     </AnnotationAssertion>
@@ -7180,6 +7253,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VirtualPlace</IRI>
         <Literal xml:lang="en">Virtual place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="en">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Volume</IRI>
+        <Literal xml:lang="fr">Volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="fr">Poids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weight</IRI>
+        <Literal xml:lang="en">Weight</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7993,6 +8086,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOffer</IRI>
+        <Literal xml:lang="fr">a pour offre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOffer</IRI>
+        <Literal xml:lang="en">has offer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOption</IRI>
         <Literal xml:lang="fr">a pour option</Literal>
     </AnnotationAssertion>
@@ -8205,6 +8308,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasUnit</IRI>
         <Literal xml:lang="en">has unit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="fr">détient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="en">holds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8852,6 +8965,11 @@
         <Literal xml:lang="en">refers to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#refersTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#refrigerated</IRI>
         <Literal xml:lang="en">refrigerated</Literal>
@@ -8923,6 +9041,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selectedBy</IRI>
+        <Literal xml:lang="en">selected by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#selectedBy</IRI>
+        <Literal xml:lang="fr">sélectionné par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#selects</IRI>
         <Literal xml:lang="en">selects</Literal>
     </AnnotationAssertion>
@@ -8930,6 +9058,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#selects</IRI>
         <Literal xml:lang="fr">sélectionne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sells</IRI>
+        <Literal xml:lang="en">sells</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#sells</IRI>
+        <Literal xml:lang="fr">vend</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -8955,16 +9093,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#socialMediaOf</IRI>
         <Literal xml:lang="en">social media of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sold</IRI>
-        <Literal xml:lang="fr">a vendu</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#sold</IRI>
-        <Literal xml:lang="en">sold</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9067,6 +9195,11 @@
         <Literal xml:lang="en">supplies to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#suppliesTo</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#to</IRI>
         <Literal xml:lang="fr">pour</Literal>
@@ -9145,6 +9278,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#uses</IRI>
         <Literal xml:lang="fr">utilise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#uses</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10321,4 +10459,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
-

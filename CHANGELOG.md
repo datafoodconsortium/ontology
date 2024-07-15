@@ -7,6 +7,54 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.13.0] - 2024-05-30
+### Added
+
+#### Class
+-   Weight, subClassOf: QuantitativeValue.
+-   Volume, subClassOf: QuantitativeValue.
+-   Length, subClassOf: QuantitativeValue.
+
+#### Property
+- holds, domain: SaleSession, inverseOf: belongsTo
+- hasOffer, domain: CustomerCategory, inverseOf: offersTo
+- selectedBy, domain: ShippingOption, inverseOf: selects
+
+### Changed
+- added missing `InverseObjectProperties` opening bracket for `sells`/`soldBy` (owl file now parses/loads in Protege)
+- Domain : belongsTo, (Order | Agent) -> Order
+- Rename: sold -> sells
+- subpropertyOf hasStatus : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
+- subpropertyOf hasTransformationType : DFC_BusinessOntology_ObjectProperty -> subpropertyOf DFC_Interface_Property
+
+### Deleted
+
+#### Property (deprecated)
+- refersTo
+- suppliesTo
+- uses
+
+
+## [1.12.1] - 2024-02-01
+### Added
+- file context_1.8.2.json
+
+## [1.12.0] - 2024-02-01
+### Added
+
+#### Property
+- sold, domain: Agent, inverseOf: soldBy
+- soldBy, domain: Order, inverseOf: sold
+- hasTransformationType, domain: AsPlannedTransformation, range: skos:Concept and (skos:broader value TransformationType) and (skos:inScheme value DFC_Vocabulary)
+
+## [1.11.1] - 2024-01-29
+### Added
+- upgrade context.json to add tech ontology object property and owner (required to prototype)
+    - dfc-t:represent
+    - dfc-t:hasPivot
+    - dfc-t:hostedBy
+    - dfc:owner
+
 ## [1.12.0] - 2024-02-01
 ### Added
 
@@ -58,7 +106,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - inverse property: hasLabellingCharacteristic inverseOf labellingCharacteristicOf
 
 ### Changed
-
 - PhysicalProduct: subClassOf (consumedBy only AsRealisedProductionFlow) -> subClassOf (consumedBy only AsRealisedConsumptionFlow)
 - Address: subClassOf addressOf only Person and subClassOf addressOf only PhysicalPlace -> subClassOf addressOf only (Person or PhysicalPlace)
 - Agent: subClassOf owns only PhysicalProduct -> subClassOf owns only (PhysicalProduct or Brand)
@@ -292,7 +339,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...master
+[1.13.0]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...1.13.0
+[1.12.1]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...v1.12.1
 [1.12.0]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...v1.12.0
 [1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
 [1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2

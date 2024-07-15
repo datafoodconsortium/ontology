@@ -158,9 +158,6 @@
 		"dfc-b:hasObject": {
 			"@type": "@id"
 		},
-		"dfc-b:hasOffer": {
-			"@type": "@id"
-		},
 		"dfc-b:hasOption": {
 			"@type": "@id"
 		},
@@ -219,9 +216,6 @@
 			"@type": "@id"
 		},
 		"dfc-b:hasUnit": {
-			"@type": "@id"
-		},
-		"dfc-b:holds": {
 			"@type": "@id"
 		},
 		"dfc-b:hostedAt": {
@@ -383,16 +377,13 @@
 		"dfc-b:satisfies": {
 			"@type": "@id"
 		},
-		"dfc-b:selectedBy": {
-			"@type": "@id"
-		},
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:sells": {
+		"dfc-b:socialMediaOf": {
 			"@type": "@id"
 		},
-		"dfc-b:socialMediaOf": {
+		"dfc-b:sold": {
 			"@type": "@id"
 		},
 		"dfc-b:soldBy": {
@@ -432,6 +423,19 @@
 			"@type": "@id"
 		},
 		"dfc-b:uses": {
+			"@type": "@id"
+		},
+
+		"dfc-t:represent": {
+			"@type": "@id"
+		},
+		"dfc-t:hasPivot": {
+			"@type": "@id"
+		},
+		"dfc-t:hostedBy": {
+			"@type": "@id"
+		},
+		"dfc-t:owner": {
 			"@type": "@id"
 		}
 	}
