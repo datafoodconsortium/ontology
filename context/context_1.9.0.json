@@ -20,7 +20,7 @@
 		"dfc-b:addressOf": {
 			"@type": "@id"
 		},
-		"dfc-b:affiliatedTo": {
+		"dfc-b:affiliatedBy": {
 			"@type": "@id"
 		},
 		"dfc-b:affiliates": {
@@ -125,16 +125,13 @@
 		"dfc-b:hasFacet": {
 			"@type": "@id"
 		},
-		"dfc-b:hasFulfilmentStatus": {
-			"@type": "@id"
-		},
 		"dfc-b:hasGeographicalOrigin": {
 			"@type": "@id"
 		},
-		"dfc-b:hasIngredient": {
+		"dfc-b:hasIncome": {
 			"@type": "@id"
 		},
-		"dfc-b:hasInput": {
+		"dfc-b:hasIngredient": {
 			"@type": "@id"
 		},
 		"dfc-b:hasLabellingCharacteristic": {
@@ -158,16 +155,10 @@
 		"dfc-b:hasObject": {
 			"@type": "@id"
 		},
-		"dfc-b:hasOffer": {
-			"@type": "@id"
-		},
 		"dfc-b:hasOption": {
 			"@type": "@id"
 		},
-		"dfc-b:hasOrderStatus": {
-			"@type": "@id"
-		},
-		"dfc-b:hasOutput": {
+		"dfc-b:hasOutcome": {
 			"@type": "@id"
 		},
 		"dfc-b:hasPart": {
@@ -177,9 +168,6 @@
 			"@type": "@id"
 		},
 		"dfc-b:hasPaymentMethod": {
-			"@type": "@id"
-		},
-		"dfc-b:hasPaymentStatus": {
 			"@type": "@id"
 		},
 		"dfc-b:hasPhoneNumber": {
@@ -206,22 +194,13 @@
 		"dfc-b:hasSocialMedia": {
 			"@type": "@id"
 		},
-		"dfc-b:hasStatus": {
-			"@type": "@id"
-		},
 		"dfc-b:hasTemperature": {
-			"@type": "@id"
-		},
-		"dfc-b:hasTransformationType": {
 			"@type": "@id"
 		},
 		"dfc-b:hasType": {
 			"@type": "@id"
 		},
 		"dfc-b:hasUnit": {
-			"@type": "@id"
-		},
-		"dfc-b:holds": {
 			"@type": "@id"
 		},
 		"dfc-b:hostedAt": {
@@ -236,13 +215,13 @@
 		"dfc-b:identifies": {
 			"@type": "@id"
 		},
+		"dfc-b:incomeOf": {
+			"@type": "@id"
+		},
 		"dfc-b:industrializedBy": {
 			"@type": "@id"
 		},
 		"dfc-b:industrializes": {
-			"@type": "@id"
-		},
-		"dfc-b:inputOf": {
 			"@type": "@id"
 		},
 		"dfc-b:isIngredientOf": {
@@ -311,7 +290,7 @@
 		"dfc-b:orders": {
 			"@type": "@id"
 		},
-		"dfc-b:outputOf": {
+		"dfc-b:outcomeOf": {
 			"@type": "@id"
 		},
 		"dfc-b:ownedBy": {
@@ -383,19 +362,10 @@
 		"dfc-b:satisfies": {
 			"@type": "@id"
 		},
-		"dfc-b:selectedBy": {
-			"@type": "@id"
-		},
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:sells": {
-			"@type": "@id"
-		},
 		"dfc-b:socialMediaOf": {
-			"@type": "@id"
-		},
-		"dfc-b:soldBy": {
 			"@type": "@id"
 		},
 		"dfc-b:storedIn": {
@@ -432,6 +402,18 @@
 			"@type": "@id"
 		},
 		"dfc-b:uses": {
+			"@type": "@id"
+		},
+		"dfc-t:represent": {
+			"@type": "@id"
+		},
+		"dfc-t:hasPivot": {
+			"@type": "@id"
+		},
+		"dfc-t:hostedBy": {
+			"@type": "@id"
+		},
+		"dfc-t:owner": {
 			"@type": "@id"
 		}
 	}
