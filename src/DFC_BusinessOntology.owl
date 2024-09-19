@@ -5424,6 +5424,7 @@
         <ObjectProperty IRI="#hasPrice"/>
         <ObjectUnionOf>
             <Class IRI="#Offer"/>
+            <Class IRI="#OrderLine"/>
             <Class IRI="#PaymentMethod"/>
             <Class IRI="#Transaction"/>
         </ObjectUnionOf>

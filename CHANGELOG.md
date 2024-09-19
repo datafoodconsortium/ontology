@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 #### Property
 - concerns, domain: Offer, inverseOf: concernedBy
+- Domain : hasPrice, (Offer|PaymentMethod|Transaction) -> (Offer|PaymentMethod|Transaction|OrderLine)
 
 ## [1.13.0] - 2024-07-15
 ### Added
