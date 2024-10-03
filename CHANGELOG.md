@@ -6,10 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+
+#### Property
+- fulfills, domain: PhysicalProduct, inverseOf: fullfilledBy
+- fulfilledBy, domain: OrderLine, inverseOf: fullfills
+
+#### Context
+- 1.9.0, 1.10.0, 1.11.0, 1.11.1, 1.12.0, 1.13.0
+
+#### Scripts
+- context-generator : python script to generate context from rdf ontology file
+- uri_standerdizer  : python script to standardized uris from predefied format and deprecated last uris
 
 ### Changed
 #### Property
 - concerns, domain: Offer, inverseOf: concernedBy
+- Domain : hasPrice, (Offer|PaymentMethod|Transaction) -> (Offer|PaymentMethod|Transaction|OrderLine)
 
 ## [1.13.0] - 2024-07-15
 ### Added
