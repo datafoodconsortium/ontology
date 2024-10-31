@@ -1303,6 +1303,474 @@
     <Declaration>
         <Datatype abbreviatedIRI="xsd:duration"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Leaf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OrganicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PigBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Occitania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SugarsFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HealthClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighPolyunsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Corsica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysansDeNature_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GrandEst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Funghi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Algae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LocalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Fruit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RainforestAlliance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GlutenFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Milk-fed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthernIreland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NutritionalClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SheepBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:TasteOfTheYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ireland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Sheep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NouvelleAquitaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ChickenBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Mineral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BiodynamicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BourgogneFrancheComte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NewZealand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IGP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IncreasedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BullBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeWax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Quail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Root"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IleDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowEnergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OtherClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Brittany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProvenceAlpesCotesAzur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Rooster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:VeryLowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bulb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RoosterBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PGS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProductOfTheYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Pig"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Cow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RedLabel_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-BioCoherence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:WholePlant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Belgium"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ewe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnitedKingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bacteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Flower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Natural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NatureEtProgres"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Wales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-AB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighUnsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Switzerland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainerInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EthicalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysDeLoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BleuBlancCoeur_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ReducedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeVenom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FairTradeMaxHaavelar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:c_99fce7e0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:QuailEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CentreValLoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Normandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOC_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePropolis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainsNutrientOrSubstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SodiumOrSaltFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePollen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AuvergneRhoneAlpes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Scotland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SaturatedFatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Stem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HautsDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Netherlands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Hen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HEV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeHoney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Goat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MarketingLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Package"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyReduced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LightLite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyFree"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighMonounsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Tuber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Demeter"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
         <Class IRI="#Where_Subject"/>
@@ -6567,6 +7035,11 @@
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Address</IRI>
+        <Literal xml:lang="en">An object containing details of a Physical Address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Address</IRI>
         <Literal xml:lang="en">Address</Literal>
@@ -6575,6 +7048,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Address</IRI>
         <Literal xml:lang="fr">Adresse</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal xml:lang="en">An agent (eg. person, group, software or physical artifact). (foaf)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6595,6 +7073,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AllergenCharacteristic</IRI>
         <Literal xml:lang="fr">Caractéristique allergène</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AsPlannedConsumptionFlow</IRI>
+        <Literal xml:lang="en">A planned flow that consumes one or more Products as input to a planned transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6637,6 +7120,11 @@
         <Literal xml:lang="fr">Transformation planifiée (localisée)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AsPlannedProductionFlow</IRI>
+        <Literal xml:lang="en">A planned flow that produces one or more Products as output from a planned transformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AsPlannedProductionFlow</IRI>
         <Literal xml:lang="en">As planned production flow</Literal>
@@ -6645,6 +7133,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#AsPlannedProductionFlow</IRI>
         <Literal xml:lang="fr">Flux de production planifié (théorique)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AsPlannedTransformation</IRI>
+        <Literal xml:lang="en">A planned transformation that consumes products as inputs (via a consumption flow) and produces products as output (via a production flow) </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6689,6 +7182,13 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Brand</IRI>
+        <Literal xml:lang="en"> **Deprecated** 
+The Brand of a Product. 
+**Deprecated**</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Brand</IRI>
         <Literal xml:lang="en">A product can be from an entreprise but an entreprise can manage different brands.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -6700,6 +7200,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Brand</IRI>
         <Literal xml:lang="fr">Marque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Catalog</IRI>
+        <Literal xml:lang="en">A Sales Catalog that lists Products for sale within SaleSession(s), with links to Offers/Prices</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6732,6 +7237,11 @@
         <Literal xml:lang="fr">Flux de consommation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Coordination</IRI>
+        <Literal xml:lang="en">A descriptor giving the coordinator of a Sales Session and the percentage margin taken by the coordinator to manage the sale session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Coordination</IRI>
         <Literal xml:lang="en">Coordination</Literal>
@@ -6740,6 +7250,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Coordination</IRI>
         <Literal xml:lang="fr">Coordination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CustomerCategory</IRI>
+        <Literal xml:lang="en">The Target audience for an offer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6802,6 +7317,11 @@
         <Literal xml:lang="fr">Sujet DFC</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DefinedProduct</IRI>
+        <Literal xml:lang="en">Product : Any offered product or service. For example: a carrot, a box of fruits, or soap.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DefinedProduct</IRI>
         <Literal xml:lang="en">Defined product</Literal>
@@ -6810,6 +7330,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#DefinedProduct</IRI>
         <Literal xml:lang="fr">Produit défini</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DeliveryOption</IRI>
+        <Literal xml:lang="en">A proposition to deliver a physical product to a physical address made or chosen by an agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6822,6 +7347,11 @@
         <Literal xml:lang="fr">Option de livraison</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Enterprise</IRI>
+        <Literal xml:lang="en">Organisation : An organization such as a school, NGO, corporation, club, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Enterprise</IRI>
         <Literal xml:lang="en">Enterprise</Literal>
@@ -6830,6 +7360,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Enterprise</IRI>
         <Literal xml:lang="fr">Entreprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EnterpriseID</IRI>
+        <Literal xml:lang="en">Unique Id of the Enterprise</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6860,6 +7395,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#How_Subject</IRI>
         <Literal xml:lang="fr">Sujet Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Image</IRI>
+        <Literal xml:lang="en">A URL for an image of the Product</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6927,6 +7467,11 @@
         <Literal xml:lang="en">Nutrient characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Offer</IRI>
+        <Literal xml:lang="en">A proposal by an Enterprise to sell a product, to a CustomerCategory, at a specific Price with a potential Discount</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Offer</IRI>
         <Literal xml:lang="en">Offer</Literal>
@@ -6935,6 +7480,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Offer</IRI>
         <Literal xml:lang="fr">Offre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Order</IRI>
+        <Literal xml:lang="en">An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6947,6 +7497,11 @@
         <Literal xml:lang="en">Order</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrderLine</IRI>
+        <Literal xml:lang="en">OrderItem : An order item is a line of an order. It includes the quantity and shipping details of a bought offer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OrderLine</IRI>
         <Literal xml:lang="fr">Ligne de commande</Literal>
@@ -6955,6 +7510,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#OrderLine</IRI>
         <Literal xml:lang="en">Order line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrderedBy</IRI>
+        <Literal xml:lang="en">The Agent (customer) placing the Order</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6967,6 +7527,11 @@
         <Literal xml:lang="en">Payment method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">A person (alive, dead, undead, or fictional).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Person</IRI>
         <Literal xml:lang="en">Person</Literal>
@@ -6975,6 +7540,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Person</IRI>
         <Literal xml:lang="fr">Personne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhoneNumber</IRI>
+        <Literal xml:lang="en">A telephone number described by a country code and a number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7000,6 +7570,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PhysicalCharacteristic</IRI>
         <Literal xml:lang="en">Physical characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PhysicalPlace</IRI>
+        <Literal xml:lang="en">Details of a physical location, including address and contact details for the place</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7040,6 +7615,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Place</IRI>
         <Literal xml:lang="en">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="en">The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal xml:lang="en">Total price of all order line items (e.g. [item price (from Offer) x quantity] - discount)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7132,6 +7717,11 @@
         <Literal>Elzeard</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SaleSession</IRI>
+        <Literal xml:lang="en">Time bounded grouping of Offers for an Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SaleSession</IRI>
         <Literal xml:lang="en">Sales session</Literal>
@@ -7140,6 +7730,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SaleSession</IRI>
         <Literal xml:lang="fr">Session de vente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShippingOption</IRI>
+        <Literal xml:lang="en">An option for shipping orders to customers, associated with a given sales session</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7170,6 +7765,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Stock</IRI>
         <Literal xml:lang="fr">Stock</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SuppliedProduct</IRI>
+        <Literal xml:lang="en">A defined product made by an enterprise, which could be used to fulfils an offer made by an enterprise</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7232,6 +7832,16 @@
         <Literal xml:lang="fr">Transformation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#URL</IRI>
+        <Literal xml:lang="en">The Universal Resource Locator address of the virtual place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#URL</IRI>
+        <Literal xml:lang="en">The reference URL for the ProductListing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#URL</IRI>
         <Literal xml:lang="en">URL</Literal>
@@ -7240,6 +7850,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#URL</IRI>
         <Literal xml:lang="fr">URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VATnumber</IRI>
+        <Literal xml:lang="en">Any Tax Registration Number that is applicable to the Enterprise, in the jurisdiction the Enterprise is operating in.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7252,6 +7867,11 @@
         <Literal xml:lang="fr">n° de TVA intracommunautaire</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VATrate</IRI>
+        <Literal xml:lang="en">The Sales Tax (VAT) rate associated with the Price, given as a percentage value from 0-100</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATrate</IRI>
         <Literal xml:lang="en">VAT rate</Literal>
@@ -7262,6 +7882,11 @@
         <Literal xml:lang="fr">taux de TVA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VATstatus</IRI>
+        <Literal xml:lang="en">Indicates whether the Enterprise charges VAT or not</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
         <Literal xml:lang="en">charges VAT</Literal>
@@ -7270,6 +7895,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
         <Literal xml:lang="fr">soumis à TVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VirtualPlace</IRI>
+        <Literal xml:lang="en">Details of a virtual location.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7372,6 +8002,16 @@
         <Literal xml:lang="fr">information d&apos;accessibilité</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accessiblityInfo</IRI>
+        <Literal xml:lang="en">Any accessibility information required for the delivery e,g, &quot;Flat is on 3rd floor&quot;, or &quot;access is down a narrow track, no articulated vehicles&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#addressOf</IRI>
+        <Literal xml:lang="en">The Agent (Person or Enterprise) or PhysicalPlace that the Address relates to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#addressOf</IRI>
         <Literal xml:lang="en">address of</Literal>
@@ -7382,6 +8022,11 @@
         <Literal xml:lang="fr">adresse de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#affiliatedTo</IRI>
+        <Literal xml:lang="en">URI of a Person associated with the Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#affiliatedTo</IRI>
         <Literal xml:lang="en">affiliated to</Literal>
@@ -7390,6 +8035,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#affiliatedTo</IRI>
         <Literal xml:lang="fr">affilié à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#affiliates</IRI>
+        <Literal xml:lang="en">Enterprises that the Person is affliated to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7427,6 +8077,11 @@
         <Literal xml:lang="fr">date disponibilité</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#availabilityTime</IRI>
+        <Literal xml:lang="en">Lead time for supplying the product.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#availabilityTime</IRI>
         <Literal xml:lang="en">availability Time</Literal>
@@ -7445,6 +8100,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#batchNumber</IRI>
         <Literal xml:lang="fr">numéro de lot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsTo</IRI>
+        <Literal xml:lang="en">A Customer (as an Agent) can belong to a particular CustomerCategory as defined by the owning Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsTo</IRI>
+        <Literal xml:lang="en">A Customer Category that the Person has been assigned by the defining Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#belongsTo</IRI>
+        <Literal xml:lang="en">The SaleSession the Order was placed in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7522,6 +8192,11 @@
         <Literal xml:lang="en">characterisif of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#city</IRI>
+        <Literal xml:lang="en">The postal city (may be a town) that the address is located within</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#city</IRI>
         <Literal xml:lang="en">city</Literal>
@@ -7530,6 +8205,13 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#city</IRI>
         <Literal xml:lang="fr">ville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#claim</IRI>
+        <Literal xml:lang="en"> **Deprecated** 
+Any claims of a Product. 
+**Deprecated**</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7577,6 +8259,11 @@
         <Literal xml:lang="fr">composé de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#composes</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#composes</IRI>
         <Literal xml:lang="fr">compose</Literal>
@@ -7587,6 +8274,11 @@
         <Literal xml:lang="en">composes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#concernedBy</IRI>
+        <Literal xml:lang="en">Any/All Order Lines that relate to this Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#concernedBy</IRI>
         <Literal xml:lang="en">concerned by</Literal>
@@ -7595,6 +8287,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#concernedBy</IRI>
         <Literal xml:lang="fr">concerné par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#concerns</IRI>
+        <Literal xml:lang="en">The Product that has been ordered (1 and only 1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7627,6 +8324,11 @@
         <Literal xml:lang="en">constitutes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consumedBy</IRI>
+        <Literal xml:lang="en">The ConsmuptionFlow by which the Product is transformed into other Products</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#consumedBy</IRI>
         <Literal xml:lang="fr">consommé par</Literal>
@@ -7635,6 +8337,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#consumedBy</IRI>
         <Literal xml:lang="en">consumed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#consumes</IRI>
+        <Literal xml:lang="en">The product consumed by the Transformation </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7655,6 +8362,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#containerInformationOf</IRI>
         <Literal xml:lang="en">container Information Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coordinatedBy</IRI>
+        <Literal xml:lang="en">Confirms the Enterprise Coordinates certain SaleSessions, and defines margin %age that the Enterprise takes for managing the SaleSession</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coordinatedBy</IRI>
+        <Literal xml:lang="en">The Enterprise managing a Sales Session</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7687,6 +8404,11 @@
         <Literal xml:lang="fr">coût</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#country</IRI>
+        <Literal xml:lang="en">The ISO country that the address is located within</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#country</IRI>
         <Literal xml:lang="en">country</Literal>
@@ -7695,6 +8417,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#country</IRI>
         <Literal xml:lang="fr">pays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#countryCode</IRI>
+        <Literal xml:lang="en">The international dialling code for the country where the phone number is registered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7707,6 +8434,11 @@
         <Literal xml:lang="fr">date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#definedBy</IRI>
+        <Literal xml:lang="en">Determines which Enterprise has defined the CustomerCategory</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#definedBy</IRI>
         <Literal xml:lang="en">defined by</Literal>
@@ -7715,6 +8447,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#definedBy</IRI>
         <Literal xml:lang="fr">defini par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#defines</IRI>
+        <Literal xml:lang="en">Defines any/all categories of Customer utilised by the Enterprise for segmentation (primarily for pricing, potentially also for marketing)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7737,6 +8474,11 @@
         <Literal xml:lang="fr">délivré à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deliveryCondition</IRI>
+        <Literal xml:lang="en">Any conditions of carriage/transport required by the product (e.g. Fragile, do not stack)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveryCondition</IRI>
         <Literal xml:lang="fr">condition de transport</Literal>
@@ -7745,6 +8487,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveryCondition</IRI>
         <Literal xml:lang="en">delivery condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deliveryConstraint</IRI>
+        <Literal xml:lang="en">Any constraints (time or physical) that are applied to the delivery (e.g. &quot;9am-5pm Mon - Fri only&quot;, &quot;only deliver after 6pm&quot;, or &quot;Delivery to be left in porch&quot;)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7767,6 +8514,26 @@
         <Literal xml:lang="fr">description</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discount</IRI>
+        <Literal xml:lang="en">Any discount applied to the Price</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discount</IRI>
+        <Literal xml:lang="en">Any discount applied to the line items (as an absolute value)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discount</IRI>
+        <Literal xml:lang="en">The value of any total discount applied to the Order</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#email</IRI>
+        <Literal xml:lang="en">email address of the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#email</IRI>
         <Literal xml:lang="en">email</Literal>
@@ -7775,6 +8542,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#email</IRI>
         <Literal xml:lang="fr">email</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endDate</IRI>
+        <Literal xml:lang="en">The date/time that the Sales Session ends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endDate</IRI>
+        <Literal xml:lang="en">The date/time that the Shipping Option ceases to be available</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7807,6 +8584,11 @@
         <Literal xml:lang="en">expiration date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extraAvailabilityTime</IRI>
+        <Literal xml:lang="en">Additional lead time for catalog item. To be appended to AvailabilityTime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#extraAvailabilityTime</IRI>
         <Literal xml:lang="fr">délai de disponibilité additionnel</Literal>
@@ -7815,6 +8597,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#extraAvailabilityTime</IRI>
         <Literal xml:lang="en">extra availability time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#extraDeliveryCondition</IRI>
+        <Literal xml:lang="en">Additional devilery conditions for this item (append to any Devliery Condition set at Product level)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7837,6 +8624,11 @@
         <Literal xml:lang="fr">facette de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#familyName</IRI>
+        <Literal xml:lang="en">Family name or surname of Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#familyName</IRI>
         <Literal xml:lang="en">family name</Literal>
@@ -7847,6 +8639,11 @@
         <Literal xml:lang="fr">nom de famille</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fee</IRI>
+        <Literal xml:lang="en">The value of any fee associated with the Shipping Option</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fee</IRI>
         <Literal xml:lang="en">fee</Literal>
@@ -7855,6 +8652,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#fee</IRI>
         <Literal xml:lang="fr">frais</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#firstName</IRI>
+        <Literal xml:lang="en">First name of Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7875,6 +8677,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#from</IRI>
         <Literal xml:lang="fr">vient de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#frozen</IRI>
+        <Literal xml:lang="en">Does the Product require keeping frozen</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7907,6 +8714,21 @@
         <Literal xml:lang="fr">origine géographique de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAddress</IRI>
+        <Literal xml:lang="en">Address of Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAddress</IRI>
+        <Literal xml:lang="en">The Address of the person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAddress</IRI>
+        <Literal xml:lang="en">The Address of the physical location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAddress</IRI>
         <Literal xml:lang="fr">a pour adresse</Literal>
@@ -7915,6 +8737,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasAddress</IRI>
         <Literal xml:lang="en">has address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAllergenCharacteristic</IRI>
+        <Literal xml:lang="en">Details of allergens contains in the product</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7937,6 +8764,11 @@
         <Literal xml:lang="en">has allergen dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasBrand</IRI>
+        <Literal xml:lang="en">The brand a Product is sold under (Enterprises can market under different Brands, some Brands can be collaborative across Enterprises)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasBrand</IRI>
         <Literal xml:lang="fr">a pour marque</Literal>
@@ -7945,6 +8777,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasBrand</IRI>
         <Literal xml:lang="en">has brand</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCertification</IRI>
+        <Literal xml:lang="en">SKOS:Concept that details any certification the product holds (e.g. Organic, Biodynamic etc), enumerated in the Facets vocabulary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7957,6 +8794,15 @@
         <Literal xml:lang="en">has certification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCharacteristic</IRI>
+        <Literal xml:lang="en">SuperProperty of:
+AllergenCharacteristic
+LabellingCharacteristic 
+NutrientCharacteristic 
+PhysicalCharacteristic </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasCharacteristic</IRI>
         <Literal xml:lang="fr">a pour caractéristique</Literal>
@@ -7967,6 +8813,11 @@
         <Literal xml:lang="en">has characteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasClaim</IRI>
+        <Literal xml:lang="en">Any unverified/uncertified claim made by the Product (e.g. &quot;Low Fat&quot;, Locally Grow&quot;)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasClaim</IRI>
         <Literal xml:lang="fr">a pour allégation</Literal>
@@ -7975,6 +8826,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasClaim</IRI>
         <Literal xml:lang="en">has claim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasContainerInformation</IRI>
+        <Literal xml:lang="en">SKOS:Concept that details the container the product is supplied in (e.g.box, tin, paper bag etc), enumerated in the Measures vocabulary (#containerUnit)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8007,6 +8863,11 @@
         <Literal xml:lang="en">has facet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFulfilmentStatus</IRI>
+        <Literal xml:lang="en">The Fulfilment State in which the Order is. See expectations around Order flow controls for further details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasFulfilmentStatus</IRI>
         <Literal xml:lang="fr">a pour statut de réalisation</Literal>
@@ -8022,6 +8883,11 @@
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasGeographicalOrigin</IRI>
+        <Literal xml:lang="en">The Geographical Territory that the product originates from (e.g. Normandie, non-EU)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasGeographicalOrigin</IRI>
         <Literal xml:lang="fr">a pour origine géographique</Literal>
@@ -8030,6 +8896,13 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasGeographicalOrigin</IRI>
         <Literal xml:lang="en">has geographical origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasIngredient</IRI>
+        <Literal xml:lang="en">Links DefinedProducts (via composes relationship) to allow recipe construction 
+
+N.B. This is similar (simplified) functionality to the AsPlannedTransformation loop. These two options are not compatible.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8042,6 +8915,11 @@
         <Literal xml:lang="en">has ingredient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasInput</IRI>
+        <Literal xml:lang="en">The PlannedConsumptionFlow that is the input of the PlannedTransformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasInput</IRI>
         <Literal xml:lang="fr">a en entrée</Literal>
@@ -8050,6 +8928,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasInput</IRI>
         <Literal xml:lang="en">has input</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLabellingCharacteristic</IRI>
+        <Literal xml:lang="en">Labelling information about the product (from dfc-m:LabellingDimension)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8072,6 +8955,16 @@
         <Literal xml:lang="en">has labelling dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMainContact</IRI>
+        <Literal xml:lang="en">The Person, if any, who is a principal contact for this physical location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMainContact</IRI>
+        <Literal xml:lang="en">URI of Person who is the Main contact for the Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasMainContact</IRI>
         <Literal xml:lang="fr">a pour contact principal</Literal>
@@ -8082,6 +8975,11 @@
         <Literal xml:lang="en">has for main contact</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNatureOrigin</IRI>
+        <Literal xml:lang="en">The natural origin of the product, e.g. Plant, Animal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasNatureOrigin</IRI>
         <Literal xml:lang="fr">a pour source / origine naturelle ou vivante</Literal>
@@ -8090,6 +8988,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasNatureOrigin</IRI>
         <Literal xml:lang="en">has for nature origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasNutrientCharacteristic</IRI>
+        <Literal xml:lang="en">Nutrient information about the product (from dfc-m:NutrientDimension)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8112,6 +9015,11 @@
         <Literal xml:lang="en">has nutrient dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasObject</IRI>
+        <Literal xml:lang="en">The Sales Session that is subject to the coordination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasObject</IRI>
         <Literal xml:lang="fr">a pour objet</Literal>
@@ -8132,6 +9040,11 @@
         <Literal xml:lang="en">has offer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOption</IRI>
+        <Literal xml:lang="en">Any (and all) ShippingOptions that are available for the session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOption</IRI>
         <Literal xml:lang="fr">a pour option</Literal>
@@ -8140,6 +9053,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOption</IRI>
         <Literal xml:lang="en">has option</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOrderStatus</IRI>
+        <Literal xml:lang="en">The state in which the Order is. See expectations around Order flow controls for further details</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8152,6 +9070,11 @@
         <Literal xml:lang="en">has order status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOutput</IRI>
+        <Literal xml:lang="en">The PlannedProductionFlow that is the output of the PlannedTransformation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOutput</IRI>
         <Literal xml:lang="fr">a en sortie</Literal>
@@ -8160,6 +9083,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasOutput</IRI>
         <Literal xml:lang="en">has output</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">All OrderLines that make up the Order</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8172,6 +9100,11 @@
         <Literal xml:lang="en">has part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPartOrigin</IRI>
+        <Literal xml:lang="en">The part of the plant or animal that the product originated from (e.g. egg, animal body, seed, root )</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPartOrigin</IRI>
         <Literal xml:lang="fr">a pour partie d&apos;origine au sein de la source</Literal>
@@ -8180,6 +9113,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPartOrigin</IRI>
         <Literal xml:lang="en">has for part origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPaymentMethod</IRI>
+        <Literal xml:lang="en">The PaymentMethod associated with the Order (e.g. Cash, Stripe etc)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8192,6 +9130,11 @@
         <Literal xml:lang="en">has for payment method</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPaymentStatus</IRI>
+        <Literal xml:lang="en">The Payment State in which the Order is. See expectations around Order flow controls for further details</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPaymentStatus</IRI>
         <Literal xml:lang="fr">a pour statut de paiement</Literal>
@@ -8200,6 +9143,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPaymentStatus</IRI>
         <Literal xml:lang="en">has payment status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPercentageOfAlcoholByVolume</IRI>
+        <Literal xml:lang="en">Percentage of Alcohol (by volume) in the Product, expressed as a number in the range 0.00 - 100.00</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8217,6 +9165,16 @@
         <Literal>gs1:percentageOfAlcoholByVolume</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="en">Phone Number relating to the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPhoneNumber</IRI>
+        <Literal xml:lang="en">The phone number associated with this physical location (usually a fixed/land line phone), if any</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPhoneNumber</IRI>
         <Literal xml:lang="fr">a pour numéro de téléphone</Literal>
@@ -8225,6 +9183,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPhoneNumber</IRI>
         <Literal xml:lang="en">has phone number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPhysicalCharacteristic</IRI>
+        <Literal xml:lang="en">Physical information about the product (from dfc-m:PhysicalDimension)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8247,6 +9210,11 @@
         <Literal xml:lang="en">has physical dimension</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPrice</IRI>
+        <Literal xml:lang="en">The offered Price for the Product listed in the CatalogItem for this cateogry of Customer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasPrice</IRI>
         <Literal xml:lang="fr">a pour prix</Literal>
@@ -8257,6 +9225,11 @@
         <Literal xml:lang="en">has price</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProcess</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasProcess</IRI>
         <Literal xml:lang="fr">a subi comme procédé</Literal>
@@ -8265,6 +9238,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasProcess</IRI>
         <Literal xml:lang="en">has process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal xml:lang="en">The actual numeric value of the Price, in the currency unit specified with hasUnit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal xml:lang="en">The quantity in which the Product is intended to be sold e.g. 450g, half a dozen, 1 bunch etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasQuantity</IRI>
+        <Literal xml:lang="en">The quantity of the product ordered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8287,6 +9275,11 @@
         <Literal xml:lang="en">has reference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSocialMedia</IRI>
+        <Literal xml:lang="en">Social Media handle of the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasSocialMedia</IRI>
         <Literal xml:lang="fr">a pour réseau social</Literal>
@@ -8307,6 +9300,11 @@
         <Literal xml:lang="en">has status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTemperature</IRI>
+        <Literal xml:lang="en">The maximum storage temperature required by the product (e.g. +5º C )</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasTemperature</IRI>
         <Literal xml:lang="fr">a pour temperature</Literal>
@@ -8315,6 +9313,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasTemperature</IRI>
         <Literal xml:lang="en">has temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTransformationType</IRI>
+        <Literal xml:lang="en">The Type of transformation, from the SKOS vocabulary file</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8327,6 +9330,11 @@
         <Literal xml:lang="en">has transformation type</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasType</IRI>
+        <Literal xml:lang="en">The Product Type grouping for the Product, for more detail see Taxonomies/ProductType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasType</IRI>
         <Literal xml:lang="fr">a pour type</Literal>
@@ -8335,6 +9343,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasType</IRI>
         <Literal xml:lang="en">has type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasUnit</IRI>
+        <Literal xml:lang="en">A Currency Unit. listed within the skos:concept of CurrencyUnit in the measures.rdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasUnit</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8347,6 +9365,11 @@
         <Literal xml:lang="en">has unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#holds</IRI>
+        <Literal xml:lang="en">All Orders that were made during the Sales Session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#holds</IRI>
         <Literal xml:lang="fr">détient</Literal>
@@ -8357,6 +9380,11 @@
         <Literal xml:lang="en">holds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hostedAt</IRI>
+        <Literal xml:lang="en">The location the session is hosted at. This could be a physical (e.g. a shop or market) or virtual place (e.g. online store).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hostedAt</IRI>
         <Literal xml:lang="fr">a lieu à</Literal>
@@ -8365,6 +9393,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hostedAt</IRI>
         <Literal xml:lang="en">hosted at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hosts</IRI>
+        <Literal xml:lang="en">All Sales Sessions that have been, are being or will be hosted at this location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8407,6 +9440,11 @@
         <Literal xml:lang="fr">Indutrialisé par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#industrializes</IRI>
+        <Literal xml:lang="en">The Technical Product that is created to industrialize this Supplied Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#industrializes</IRI>
         <Literal xml:lang="en">Industrializes</Literal>
@@ -8415,6 +9453,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#industrializes</IRI>
         <Literal xml:lang="fr">Indutrialise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inputOf</IRI>
+        <Literal xml:lang="en">The transformation the consumed product is inputed into</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8457,6 +9500,11 @@
         <Literal xml:lang="en">is ingredient of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isPriceOf</IRI>
+        <Literal xml:lang="en">The Object that the Price relates to, can be an Offer, a PaymentMethod or a Transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isPriceOf</IRI>
         <Literal xml:lang="fr">est le prix de</Literal>
@@ -8487,6 +9535,11 @@
         <Literal xml:lang="en">labelling characteristic of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#latitude</IRI>
+        <Literal xml:lang="en">numeric latitude of the Address location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#latitude</IRI>
         <Literal xml:lang="en">latitude</Literal>
@@ -8495,6 +9548,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#latitude</IRI>
         <Literal xml:lang="fr">latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifetime</IRI>
+        <Literal xml:lang="en">Lifetime of the product (in days), expressed as a number</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8507,6 +9565,16 @@
         <Literal xml:lang="en">lifetime (in number of days)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#listedIn</IRI>
+        <Literal xml:lang="en">All Sales Sessions that this Offer is listed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#listedIn</IRI>
+        <Literal xml:lang="en">Inverse relationship to lists</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#listedIn</IRI>
         <Literal xml:lang="en">listed in</Literal>
@@ -8515,6 +9583,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#listedIn</IRI>
         <Literal xml:lang="fr">listé dans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lists</IRI>
+        <Literal xml:lang="en">All Items (which refer to a SuppliedProduct) that are part of the Catalog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lists</IRI>
+        <Literal xml:lang="en">All Offers that are available as part of the Sales Session</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8537,6 +9615,11 @@
         <Literal xml:lang="en">localized by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#localizes</IRI>
+        <Literal xml:lang="en">Any theoretical stock that is associated with this location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#localizes</IRI>
         <Literal xml:lang="fr">localise</Literal>
@@ -8545,6 +9628,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#localizes</IRI>
         <Literal xml:lang="en">localizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#logo</IRI>
+        <Literal xml:lang="en">URI to logo of Agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8557,6 +9645,11 @@
         <Literal xml:lang="fr">logo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#longitude</IRI>
+        <Literal xml:lang="en">numeric longitude of the Address location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#longitude</IRI>
         <Literal xml:lang="en">longitude</Literal>
@@ -8565,6 +9658,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#longitude</IRI>
         <Literal xml:lang="fr">longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mainContactOf</IRI>
+        <Literal xml:lang="en">An Enterprise that the Person is the Main Contact for</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8577,6 +9675,11 @@
         <Literal xml:lang="en">main contact of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maintainedBy</IRI>
+        <Literal xml:lang="en">The Enterprise that maintains the Catalog (may differ from the owner of the Products)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#maintainedBy</IRI>
         <Literal xml:lang="en">maintained by</Literal>
@@ -8585,6 +9688,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#maintainedBy</IRI>
         <Literal xml:lang="fr">maintenu par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maintains</IRI>
+        <Literal xml:lang="en">A set of reference of defined products</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8597,6 +9705,11 @@
         <Literal xml:lang="fr">maintient</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#managedBy</IRI>
+        <Literal xml:lang="en">The Enterprise that manages the CatalogItem (may differ from the owner of the Product)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#managedBy</IRI>
         <Literal xml:lang="fr">géré par</Literal>
@@ -8607,6 +9720,11 @@
         <Literal xml:lang="en">managed by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manages</IRI>
+        <Literal xml:lang="en">A reference of a defined product in a catalog managed by an enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#manages</IRI>
         <Literal xml:lang="fr">gère</Literal>
@@ -8615,6 +9733,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#manages</IRI>
         <Literal xml:lang="en">manages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#marginPercent</IRI>
+        <Literal xml:lang="en">The percentage margin the coordinating Enterprise is charging as comission for managing the Sales Session (from 0-100%)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8647,6 +9770,11 @@
         <Literal xml:lang="fr">valeur minimale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">Name of the Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#name</IRI>
         <Literal xml:lang="en">name</Literal>
@@ -8677,6 +9805,11 @@
         <Literal xml:lang="en">nutrient characteristic of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#objectOf</IRI>
+        <Literal xml:lang="en">The Coordination (that defines which Enterprise coordinates the Sales Sesison)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#objectOf</IRI>
         <Literal xml:lang="en">object of</Literal>
@@ -8685,6 +9818,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#objectOf</IRI>
         <Literal xml:lang="fr">objet de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#offeredThrough</IRI>
+        <Literal xml:lang="en">All Offers that this Catalog Item is offered to categories of customer through</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8697,6 +9835,11 @@
         <Literal xml:lang="fr">offert via</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#offers</IRI>
+        <Literal xml:lang="en">The (1 &amp; only 1) CatalogItem that this Offer relates to </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#offers</IRI>
         <Literal xml:lang="en">offers</Literal>
@@ -8705,6 +9848,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#offers</IRI>
         <Literal xml:lang="fr">offre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#offersTo</IRI>
+        <Literal xml:lang="en">The (1 &amp; only 1) CustomerCategory that is eligible for this Offer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8717,6 +9865,11 @@
         <Literal xml:lang="fr">offert à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#optionOf</IRI>
+        <Literal xml:lang="en">All Sales Sessions the ShippingOption is available for selection during.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#optionOf</IRI>
         <Literal xml:lang="fr">option de</Literal>
@@ -8725,6 +9878,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#optionOf</IRI>
         <Literal xml:lang="en">option of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#orderNumber</IRI>
+        <Literal xml:lang="en">The Order Number on the parent platform</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8747,6 +9905,11 @@
         <Literal xml:lang="en">ordered by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#orders</IRI>
+        <Literal xml:lang="en">Any Orders placed by the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#orders</IRI>
         <Literal xml:lang="fr">commande</Literal>
@@ -8755,6 +9918,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#orders</IRI>
         <Literal xml:lang="en">orders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#outputOf</IRI>
+        <Literal xml:lang="en">The transformation the produced product is outputed from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8777,6 +9945,21 @@
         <Literal xml:lang="fr">possédé par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#owns</IRI>
+        <Literal xml:lang="en">All Brands owned by the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#owns</IRI>
+        <Literal xml:lang="en">Any Brands owned by the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#owns</IRI>
+        <Literal xml:lang="en">Physical Products owned by the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#owns</IRI>
         <Literal xml:lang="en">owns</Literal>
@@ -8795,6 +9978,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#paidWith</IRI>
         <Literal xml:lang="fr">payé avec</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#partOf</IRI>
+        <Literal xml:lang="en">The Order this OrderLine is associated with (1 and only 1)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8837,6 +10025,11 @@
         <Literal xml:lang="fr">type de méthode de paiement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phoneNumber</IRI>
+        <Literal xml:lang="en">The full phone number (not including any country code)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#phoneNumber</IRI>
         <Literal xml:lang="fr">numéro de téléphone</Literal>
@@ -8845,6 +10038,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#phoneNumber</IRI>
         <Literal xml:lang="en">phone number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#phoneNumberOf</IRI>
+        <Literal xml:lang="en">The Enterprise or Person (Agent) or Physical Place that the phone numbers is associated with.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8865,6 +10063,13 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#physicalCharacteristicOf</IRI>
         <Literal xml:lang="en">physical characteristic of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#physicalCharacteristics</IRI>
+        <Literal xml:lang="en"> **Deprecated** 
+Any Physical Characteristics of a Product. 
+**Deprecated**</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -8892,6 +10097,16 @@
         <Literal xml:lang="fr">ramasser à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pickedupAt</IRI>
+        <Literal xml:lang="en">A proposition to pick up a product at a physical place made or chosen by an agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#postcode</IRI>
+        <Literal xml:lang="en">The code defined by the relevant authority that facilitates mail delivery to that address</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#postcode</IRI>
         <Literal xml:lang="fr">code postal</Literal>
@@ -8900,6 +10115,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#postcode</IRI>
         <Literal xml:lang="en">post code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#processOf</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8912,6 +10132,11 @@
         <Literal xml:lang="fr">procédé utilisé pour</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#producedBy</IRI>
+        <Literal xml:lang="en">Link to another SuppleidProduct that is produced by this Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#producedBy</IRI>
         <Literal xml:lang="en">produced by</Literal>
@@ -8920,6 +10145,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#producedBy</IRI>
         <Literal xml:lang="fr">produit par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#produces</IRI>
+        <Literal xml:lang="en">Link to another SuppleidProduct that is produced from this Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#produces</IRI>
+        <Literal xml:lang="en">The product produced by the Transformation </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8952,6 +10187,11 @@
         <Literal xml:lang="fr">proposé par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#proposes</IRI>
+        <Literal xml:lang="en">All TechnicalProducts proposed by the Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#proposes</IRI>
         <Literal xml:lang="fr">propose</Literal>
@@ -8960,6 +10200,28 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#proposes</IRI>
         <Literal xml:lang="en">proposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="en">DEPRECATED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="en">The number of products consumed by the transformation.
+N.B. There is an expectation that either the ProductionFlow or the ConsumptionFlow will have a quantity of 1.0</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#quantity</IRI>
+        <Literal xml:lang="en">The number of products produced by the transformation.
+N.B. There is an expectation that either the ProductionFlow or the ConsumptionFlow of any given Transformation will have a quantity of 1.0</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8972,6 +10234,11 @@
         <Literal xml:lang="fr">quantité</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#referenceOf</IRI>
+        <Literal xml:lang="en">The Localized Product that is created in reference to this Supplied Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#referenceOf</IRI>
         <Literal xml:lang="en">reference of</Literal>
@@ -8980,6 +10247,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#referenceOf</IRI>
         <Literal xml:lang="fr">référence de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#referencedBy</IRI>
+        <Literal xml:lang="en">Any/all CatalogItems that reference the Product for sale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8992,6 +10264,11 @@
         <Literal xml:lang="fr">référencé par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#references</IRI>
+        <Literal xml:lang="en">The Product that the CatalogItem is listing for sale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#references</IRI>
         <Literal xml:lang="en">references</Literal>
@@ -9000,6 +10277,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#references</IRI>
         <Literal xml:lang="fr">référence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refersTo</IRI>
+        <Literal xml:lang="en">The Address the delivery will be/was made to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9017,6 +10299,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#refrigerated</IRI>
+        <Literal xml:lang="en">Does the Product require keeping refrigerated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#refrigerated</IRI>
         <Literal xml:lang="en">refrigerated</Literal>
@@ -9025,6 +10312,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#refrigerated</IRI>
         <Literal xml:lang="fr">refrigéré</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#region</IRI>
+        <Literal xml:lang="en">The Region (adminstrative district below Country) the Address is located within</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9055,6 +10347,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#requestedBy</IRI>
         <Literal xml:lang="en">requested by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requests</IRI>
+        <Literal xml:lang="en">Any &amp; all Functional Products that are requested by the Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requests</IRI>
+        <Literal xml:lang="en">Functional Products owned by the Agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9097,6 +10399,11 @@
         <Literal xml:lang="fr">sélectionné par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#selects</IRI>
+        <Literal xml:lang="en">The method of shipping selected for the ORder (e.g. Overnight courier, same-day delivery, economy delivery )</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#selects</IRI>
         <Literal xml:lang="en">selects</Literal>
@@ -9122,6 +10429,11 @@
         <Literal xml:lang="en">Only a general &quot;SKU&quot; id is proposed for now. Agents using GTIN could use GTIN as SKU but other IDs than GTIN can be used.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sku</IRI>
+        <Literal xml:lang="en">The SKU of the CatalogItem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#sku</IRI>
         <Literal xml:lang="fr">Référence produit</Literal>
@@ -9142,6 +10454,11 @@
         <Literal xml:lang="en">social media of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#soldBy</IRI>
+        <Literal xml:lang="en">The entity responsible for the sale (could be the Enterprise or a Salesperson within that Enterprise, or a third party)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#soldBy</IRI>
         <Literal xml:lang="en">sold by</Literal>
@@ -9150,6 +10467,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#soldBy</IRI>
         <Literal xml:lang="fr">vendu par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#specificCondition</IRI>
+        <Literal xml:lang="en">Any specific conditions requried for storage or carriage of the Product</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9162,6 +10484,16 @@
         <Literal xml:lang="en">usage or storage specific condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startDate</IRI>
+        <Literal xml:lang="en">The date/time that the Sales Session starts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startDate</IRI>
+        <Literal xml:lang="en">The date/time that the Shipping Option becomes available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#startDate</IRI>
         <Literal xml:lang="en">begin date</Literal>
@@ -9170,6 +10502,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#startDate</IRI>
         <Literal xml:lang="fr">date de début</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stockLimitation</IRI>
+        <Literal xml:lang="en">Any limit on the stock of this particular listing. This ay differ from stock limits on the Product (for example if the Product is listed in multiple catalogues)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9192,6 +10529,11 @@
         <Literal xml:lang="en">stored in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#stores</IRI>
+        <Literal xml:lang="en">Any real stock that is associated with this location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#stores</IRI>
         <Literal xml:lang="fr">stocke</Literal>
@@ -9200,6 +10542,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#stores</IRI>
         <Literal xml:lang="en">stores</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#street</IRI>
+        <Literal xml:lang="en">Street part of the address. May also be referred to as &quot;first line of address&quot; in some locales. Generally includes a street name and building name or number (in any order)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9212,6 +10559,11 @@
         <Literal xml:lang="en">street, n°</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#suppliedBy</IRI>
+        <Literal xml:lang="en">The Enterprise that supplies the Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#suppliedBy</IRI>
         <Literal xml:lang="fr">fourni par</Literal>
@@ -9220,6 +10572,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#suppliedBy</IRI>
         <Literal xml:lang="en">supplied by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#supplies</IRI>
+        <Literal xml:lang="en">All Products supplied by the Enterprise</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9255,6 +10612,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#to</IRI>
         <Literal xml:lang="en">to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalTheoreticalStock</IRI>
+        <Literal xml:lang="en">The total stock available of the Product (at this stage theoretical as this is not a PhysicalProduct)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9297,6 +10659,11 @@
         <Literal xml:lang="fr">transformé par</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transforms</IRI>
+        <Literal xml:lang="en">Any PlannedLocalTransformations owned by the Enterprise</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#transforms</IRI>
         <Literal xml:lang="fr">transforme</Literal>
@@ -9315,6 +10682,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#typeOf</IRI>
         <Literal xml:lang="fr">type pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uses</IRI>
+        <Literal xml:lang="en">*** DEPRECATED *** 
+
+Use `refersTo` instead.
+
+The Address the delivery will be/was made to
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uses</IRI>
+        <Literal xml:lang="en">The delivery or pickup option selected for the Order</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9340,6 +10722,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#value</IRI>
         <Literal xml:lang="en">value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#websitePage</IRI>
+        <Literal xml:lang="en">DEPRECATE</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
