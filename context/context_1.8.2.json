@@ -433,9 +433,7 @@
 		},
 		"dfc-b:uses": {
 			"@type": "@id"
-<<<<<<<< HEAD:context/context_1.8.2.json
 		},
-
 		"dfc-t:represent": {
 			"@type": "@id"
 		},
@@ -447,8 +445,6 @@
 		},
 		"dfc-t:owner": {
 			"@type": "@id"
-========
->>>>>>>> master:context.json
 		}
 	}
 }
