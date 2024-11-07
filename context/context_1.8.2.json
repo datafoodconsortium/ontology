@@ -158,6 +158,9 @@
 		"dfc-b:hasObject": {
 			"@type": "@id"
 		},
+		"dfc-b:hasOffer": {
+			"@type": "@id"
+		},
 		"dfc-b:hasOption": {
 			"@type": "@id"
 		},
@@ -216,6 +219,9 @@
 			"@type": "@id"
 		},
 		"dfc-b:hasUnit": {
+			"@type": "@id"
+		},
+		"dfc-b:holds": {
 			"@type": "@id"
 		},
 		"dfc-b:hostedAt": {
@@ -377,13 +383,16 @@
 		"dfc-b:satisfies": {
 			"@type": "@id"
 		},
+		"dfc-b:selectedBy": {
+			"@type": "@id"
+		},
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:socialMediaOf": {
+		"dfc-b:sells": {
 			"@type": "@id"
 		},
-		"dfc-b:sold": {
+		"dfc-b:socialMediaOf": {
 			"@type": "@id"
 		},
 		"dfc-b:soldBy": {
@@ -424,6 +433,7 @@
 		},
 		"dfc-b:uses": {
 			"@type": "@id"
+<<<<<<<< HEAD:context/context_1.8.2.json
 		},
 
 		"dfc-t:represent": {
@@ -437,6 +447,8 @@
 		},
 		"dfc-t:owner": {
 			"@type": "@id"
+========
+>>>>>>>> master:context.json
 		}
 	}
 }
