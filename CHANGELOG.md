@@ -5,7 +5,27 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.14.0] - 2024-11-13
+### Added
+
+#### Definitions
+- A list of definitions has been added to the ontologie to describe Classes
+
+#### Property
+- fulfills, domain: PhysicalProduct, inverseOf: fullfilledBy
+- fulfilledBy, domain: OrderLine, inverseOf: fullfills
+
+#### Context
+- 1.9.0, 1.10.0, 1.11.0, 1.11.1, 1.12.0, 1.13.0
+
+#### Scripts
+- context-generator : python script to generate context from rdf ontology file
+- uri_standerdizer  : python script to standardized uris from predefied format and deprecated last uris
+
+### Changed
+#### Property
+- concerns, domain: Offer, inverseOf: concernedBy
+- Domain : hasPrice, (Offer|PaymentMethod|Transaction) -> (Offer|PaymentMethod|Transaction|OrderLine)
 
 ## [1.13.0] - 2024-05-30
 ### Added
@@ -33,7 +53,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - refersTo
 - suppliesTo
 - uses
-
 
 ## [1.12.1] - 2024-02-01
 ### Added
@@ -339,11 +358,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.14.0...master
+[1.14.0]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...1.14.0
 [1.13.0]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...1.13.0
 [1.12.1]: https://github.com/datafoodconsortium/ontology/compare/v1.12.0...v1.12.1
 [1.12.0]: https://github.com/datafoodconsortium/ontology/compare/v1.11.1...v1.12.0
-[1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.10.1...v1.11.1
+[1.11.1]: https://github.com/datafoodconsortium/ontology/compare/v1.11.0...v1.11.1
+[1.11.0]: https://github.com/datafoodconsortium/ontology/compare/v1.10.0...v1.11.0
+[1.10.0]: https://github.com/datafoodconsortium/ontology/compare/v1.9.2...v1.10.0
 [1.9.2]: https://github.com/datafoodconsortium/ontology/compare/v1.9.1...v1.9.2
 [1.9.1]: https://github.com/datafoodconsortium/ontology/compare/v1.9.0...v1.9.1
 [1.9.0]: https://github.com/datafoodconsortium/ontology/compare/v1.8.0...v1.9.0

@@ -92,6 +92,9 @@
 		"dfc-b:from": {
 			"@type": "@id"
 		},
+		"dfc-b:fulfills": {
+			"@type": "@id"
+		},
 		"dfc-b:geographicalOriginOf": {
 			"@type": "@id"
 		},
@@ -245,6 +248,9 @@
 		"dfc-b:inputOf": {
 			"@type": "@id"
 		},
+		"dfc-b:isFulfilledBy": {
+			"@type": "@id"
+		},
 		"dfc-b:isIngredientOf": {
 			"@type": "@id"
 		},
@@ -389,10 +395,10 @@
 		"dfc-b:selects": {
 			"@type": "@id"
 		},
-		"dfc-b:socialMediaOf": {
+		"dfc-b:sells": {
 			"@type": "@id"
 		},
-		"dfc-b:sold": {
+		"dfc-b:socialMediaOf": {
 			"@type": "@id"
 		},
 		"dfc-b:soldBy": {
@@ -434,7 +440,7 @@
 		"dfc-b:uses": {
 			"@type": "@id"
 		},
-    "dfc-t:represent": {
+		"dfc-t:represent": {
 			"@type": "@id"
 		},
 		"dfc-t:hasPivot": {

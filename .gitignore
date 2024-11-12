@@ -1,3 +1,4 @@
 src/catalog-v001.xml
 *.orig
 *.chk.*
+src/DFC_BusinessOntology.properties
