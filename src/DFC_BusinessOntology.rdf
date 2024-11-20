@@ -1208,9 +1208,17 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ConsumptionFlow"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Ingredient"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#LocalizedProduct"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#OrderLine"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalProduct"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ProductionFlow"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SaleSession"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ShippingOption"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Stock"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Transaction"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -1345,6 +1353,18 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:comment xml:lang="en">DEPRECATE</rdfs:comment>
         <rdfs:label xml:lang="fr">a pour unité</rdfs:label>
         <rdfs:label xml:lang="en">has unit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasVariant -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasVariant">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isVariantOf"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">a pour variant</rdfs:label>
+        <rdfs:label xml:lang="en">has variant</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1486,6 +1506,17 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Temperature"/>
         <rdfs:label xml:lang="fr">est la température de</rdfs:label>
         <rdfs:label xml:lang="en">is temperature of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isVariantOf -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isVariantOf">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DefinedProduct"/>
+        <rdfs:label xml:lang="fr">est la variant de</rdfs:label>
+        <rdfs:label xml:lang="en">is variant of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2981,6 +3012,7 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
 N.B. There is an expectation that either the ProductionFlow or the ConsumptionFlow of any given Transformation will have a quantity of 1.0</rdfs:comment>
         <rdfs:label xml:lang="en">quantity</rdfs:label>
         <rdfs:label xml:lang="fr">quantité</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
