@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+
+#### Property
+- hasVariant, domain: DefinedProduct, inverseOf: isVariantOf
+- isVariantOf, domain: DefinedProduct, inverseOf : hasVariant
+
+### Deleted
+
+#### Property
+- quantity
+
+### Changed
+- Domain : hasQuantity, (DefinedProduct | Ingredient | OrderLine) -> (ConsumptionFlow | DefinedProduct | Ingredient | LocalizedProduct | OrderLine | PhysicalProduct | ProductionFlow | SaleSession | ShippingOption | Stock | Transaction)
+
 ## [1.14.0] - 2024-11-13
 ### Added
 
