@@ -136,6 +136,18 @@
     
 
 
+    <!-- http://www.w3.org/2001/XMLSchema#time -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
+    
+
+
+    <!-- https://schema.org/DayOfWeek -->
+
+    <rdfs:Datatype rdf:about="https://schema.org/DayOfWeek"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -223,6 +235,18 @@
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AllergenCharacteristic"/>
         <rdfs:label xml:lang="en">allergen characteristic of</rdfs:label>
         <rdfs:label xml:lang="fr">caractéristique allergène de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#baseAt -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#baseAt">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle"/>
+        <rdfs:range rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+        <rdfs:label xml:lang="en">base at</rdfs:label>
+        <rdfs:label xml:lang="fr">est basé à</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -537,6 +561,18 @@
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DeliveryOption"/>
         <rdfs:label xml:lang="en">delivered at</rdfs:label>
         <rdfs:label xml:lang="fr">délivré à</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#endsAt -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#endsAt">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment"/>
+        <rdfs:range rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+        <rdfs:label xml:lang="en">ends at</rdfs:label>
+        <rdfs:label xml:lang="fr">termine à</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1219,6 +1255,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ShippingOption"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Stock"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Transaction"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -1465,6 +1502,18 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isAvailableDuring -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isAvailableDuring">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle"/>
+        <rdfs:range rdf:resource="https://schema.org/OpeningHoursSpecification"/>
+        <rdfs:label xml:lang="fr">est disponible pendant</rdfs:label>
+        <rdfs:label xml:lang="en">is available during</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isFulfilledBy -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isFulfilledBy">
@@ -1483,6 +1532,18 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Ingredient"/>
         <rdfs:label xml:lang="fr">est ingredient de</rdfs:label>
         <rdfs:label xml:lang="en">is ingredient of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isOpenDuring -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#isOpenDuring">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+        <rdfs:range rdf:resource="https://schema.org/OpeningHoursSpecification"/>
+        <rdfs:label xml:lang="fr">est ouvert pendant</rdfs:label>
+        <rdfs:label xml:lang="en">is open during</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2158,6 +2219,18 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#startsAt -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#startsAt">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment"/>
+        <rdfs:range rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#PhysicalPlace"/>
+        <rdfs:label xml:lang="fr">commence à</rdfs:label>
+        <rdfs:label>starts at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#storedIn -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#storedIn">
@@ -2272,6 +2345,27 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:comment xml:lang="en">Any PlannedLocalTransformations owned by the Enterprise</rdfs:comment>
         <rdfs:label xml:lang="fr">transforme</rdfs:label>
         <rdfs:label xml:lang="en">transforms</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#transportedBy -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#transportedBy">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#transports"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Stock"/>
+        <rdfs:label xml:lang="fr">est transporté par</rdfs:label>
+        <rdfs:label xml:lang="en">transported by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#transports -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#transports">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment"/>
     </owl:ObjectProperty>
     
 
@@ -2517,6 +2611,15 @@ Any claims of a Product.
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#closes -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#closes">
+        <rdfs:domain rdf:resource="https://schema.org/OpeningHoursSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#cost -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#cost">
@@ -2652,6 +2755,7 @@ Any claims of a Product.
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#endDate">
         <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#date"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2762,7 +2866,14 @@ Any claims of a Product.
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#frozen -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#frozen">
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Does the Product require keeping frozen</rdfs:comment>
         <rdfs:label xml:lang="en">frozen</rdfs:label>
@@ -3020,7 +3131,14 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#refrigerated -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#refrigerated">
-        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SuppliedProduct"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Does the Product require keeping refrigerated</rdfs:comment>
         <rdfs:label xml:lang="en">refrigerated</rdfs:label>
@@ -3075,6 +3193,7 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsPlannedLocalTransformation"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#AsRealizedTransformation"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#SaleSession"/>
+                    <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment"/>
                     <rdf:Description rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ShippingOption"/>
                 </owl:unionOf>
             </owl:Class>
@@ -3163,6 +3282,24 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         </rdfs:domain>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">DEPRECATE</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/dayOfWeek -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/dayOfWeek">
+        <rdfs:domain rdf:resource="https://schema.org/OpeningHoursSpecification"/>
+        <rdfs:range rdf:resource="https://schema.org/DayOfWeek"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/opens -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/opens">
+        <rdfs:domain rdf:resource="https://schema.org/OpeningHoursSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
     </owl:DatatypeProperty>
     
 
@@ -4515,6 +4652,14 @@ The Brand of a Product.
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment -->
+
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Shipment">
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_Relation"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ShippingOption -->
 
     <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#ShippingOption">
@@ -4727,6 +4872,14 @@ The Brand of a Product.
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle -->
+
+    <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Vehicle">
+        <rdfs:subClassOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#What_Subject"/>
+    </owl:Class>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#VirtualPlace -->
 
     <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#VirtualPlace">
@@ -4797,6 +4950,12 @@ The Brand of a Product.
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#Process -->
 
     <owl:Class rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#Process"/>
+    
+
+
+    <!-- https://schema.org/OpeningHoursSpecification -->
+
+    <owl:Class rdf:about="https://schema.org/OpeningHoursSpecification"/>
     
 
 

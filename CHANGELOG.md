@@ -6,11 +6,36 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Import
+
+#### Class 
+- https://schema.org/OpeningHoursSpecification
+
+#### DataProperty
+- https://schema.org/opens
+- https://schema.org/closes
+- https://schema.org/dayOfWeek
+
+#### DataTypes
+- https://schema.org/DayOfWeek
+
 ### Added
+
+#### Class
+- Shipment, subClassOf DFC_BusinessOntology_Relation
+- Vehicle, subClassOf What_Subject
 
 #### Property
 - hasVariant, domain: DefinedProduct, inverseOf: isVariantOf
 - isVariantOf, domain: DefinedProduct, inverseOf : hasVariant
+- isOpenDuring, domain : PhysicalPlace, range : OpeningHoursSpecification
+- isAvailableDuring, domain : Vehicle, range : OpeningHoursSpecification
+- basedAt, domain : Vehicle, range : PhysicalPlace
+- transportedBy, domain : Stock, inverseOf : transports
+- transports, domain : Shipment, inverseOf : transportedBy
+- startsAt, domain : Shipment, range : PhysicalPlace
+- endsAt, domain : Shipment, range : PhysicalPlace
 
 ### Deleted
 
@@ -18,7 +43,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - quantity
 
 ### Changed
-- Domain : hasQuantity, (DefinedProduct | Ingredient | OrderLine) -> (ConsumptionFlow | DefinedProduct | Ingredient | LocalizedProduct | OrderLine | PhysicalProduct | ProductionFlow | SaleSession | ShippingOption | Stock | Transaction)
+- Domain : hasQuantity, (DefinedProduct | Ingredient | OrderLine) -> (ConsumptionFlow | DefinedProduct | Ingredient | LocalizedProduct | OrderLine | PhysicalProduct | ProductionFlow | SaleSession | ShippingOption | Stock | Transaction | Vehicle)
+- Domain : beginDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipping option) ->  (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option)
+- Domain : endDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipping option) ->  (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option)
 
 ## [1.14.0] - 2024-11-13
 ### Added

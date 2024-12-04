@@ -242,6 +242,9 @@
         <Class IRI="#SaleSession"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Shipment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ShippingOption"/>
     </Declaration>
     <Declaration>
@@ -269,6 +272,9 @@
         <Class IRI="#Transformation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VirtualPlace"/>
     </Declaration>
     <Declaration>
@@ -288,6 +294,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dfc-p:Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="skos:broader"/>
@@ -315,6 +324,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#baseAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
@@ -372,6 +384,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#deliveredAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#facetOf"/>
@@ -539,10 +554,16 @@
         <ObjectProperty IRI="#inputOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isFulfilledBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOpenDuring"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPriceOf"/>
@@ -698,6 +719,9 @@
         <ObjectProperty IRI="#soldBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#startsAt"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#storedIn"/>
     </Declaration>
     <Declaration>
@@ -726,6 +750,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#transforms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transportedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transports"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#typeOf"/>
@@ -771,6 +801,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#claim"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#closes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#cost"/>
@@ -909,6 +942,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#websitePage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/opens"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Repository_1"/>
@@ -1308,6 +1347,12 @@
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:duration"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="https://schema.org/DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -2360,6 +2405,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Shipment"/>
+        <Class IRI="#DFC_BusinessOntology_Relation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ShippingOption"/>
         <Class IRI="#How_Subject"/>
     </SubClassOf>
@@ -2527,6 +2576,10 @@
     <SubClassOf>
         <Class IRI="#Transformation"/>
         <Class IRI="#How_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
@@ -4306,6 +4359,10 @@
         <ObjectProperty IRI="#characteristicOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#baseAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#belongsTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4379,6 +4436,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#deliveredAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4606,11 +4667,19 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isIngredientOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOpenDuring"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -4818,6 +4887,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#storedIn"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4855,6 +4928,14 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#transforms"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transportedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transports"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5113,6 +5194,10 @@
         <ObjectProperty IRI="#transformedBy"/>
         <ObjectProperty IRI="#transforms"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#transportedBy"/>
+        <ObjectProperty IRI="#transports"/>
+    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasCertification"/>
     </FunctionalObjectProperty>
@@ -5152,6 +5237,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
         <Class IRI="#AllergenCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#baseAt"/>
+        <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
@@ -5274,6 +5363,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#deliveredAt"/>
         <Class IRI="#DeliveryOption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#Shipment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#from"/>
@@ -5465,6 +5558,7 @@
             <Class IRI="#ShippingOption"/>
             <Class IRI="#Stock"/>
             <Class IRI="#Transaction"/>
+            <Class IRI="#Vehicle"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5532,12 +5626,20 @@
         <Class IRI="#ConsumptionFlow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <Class IRI="#OrderLine"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isIngredientOf"/>
         <Class IRI="#Ingredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOpenDuring"/>
+        <Class IRI="#PhysicalPlace"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPriceOf"/>
@@ -5777,6 +5879,10 @@
         <Class IRI="#Order"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startsAt"/>
+        <Class IRI="#Shipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#storedIn"/>
         <Class IRI="#RealStock"/>
     </ObjectPropertyDomain>
@@ -5813,6 +5919,14 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transportedBy"/>
+        <Class IRI="#Stock"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transports"/>
+        <Class IRI="#Shipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#typeOf"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="skos:Concept"/>
@@ -5830,6 +5944,14 @@
             <Class IRI="#PickupOption"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#baseAt"/>
+        <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAllergenDimension"/>
         <ObjectIntersectionOf>
@@ -5973,6 +6095,18 @@
                 <NamedIndividual abbreviatedIRI="dfc-m:DFC_ProductGlossary_Measure"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOpenDuring"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#startsAt"/>
+        <Class IRI="#PhysicalPlace"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#availabilityDate"/>
@@ -6159,6 +6293,10 @@
         <Class IRI="#DefinedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#closes"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#cost"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
@@ -6207,6 +6345,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#endDate"/>
+        <Class IRI="#Shipment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endDate"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
@@ -6244,7 +6386,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#frozen"/>
-        <Class IRI="#SuppliedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#SuppliedProduct"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
@@ -6323,7 +6468,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#refrigerated"/>
-        <Class IRI="#SuppliedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#SuppliedProduct"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#region"/>
@@ -6343,6 +6491,7 @@
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
             <Class IRI="#SaleSession"/>
+            <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
@@ -6375,6 +6524,14 @@
             <Class IRI="#SocialMedia"/>
             <Class IRI="#VirtualPlace"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/opens"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Image"/>
@@ -6423,6 +6580,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#claim"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#closes"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#cost"/>
@@ -6599,6 +6760,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#websitePage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+        <Datatype IRI="https://schema.org/DayOfWeek"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/opens"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7659,6 +7828,16 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#baseAt</IRI>
+        <Literal xml:lang="en">base at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#baseAt</IRI>
+        <Literal xml:lang="fr">est basé à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#batchNumber</IRI>
         <Literal xml:lang="en">batch number</Literal>
     </AnnotationAssertion>
@@ -8128,6 +8307,16 @@ Any claims of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#endDate</IRI>
         <Literal xml:lang="en">end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="en">ends at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="fr">termine à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9057,6 +9246,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAvailableDuring</IRI>
+        <Literal xml:lang="fr">est disponible pendant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAvailableDuring</IRI>
+        <Literal xml:lang="en">is available during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isFulfilledBy</IRI>
         <Literal xml:lang="fr">est rempli par</Literal>
     </AnnotationAssertion>
@@ -9074,6 +9273,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isIngredientOf</IRI>
         <Literal xml:lang="en">is ingredient of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOpenDuring</IRI>
+        <Literal xml:lang="fr">est ouvert pendant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOpenDuring</IRI>
+        <Literal xml:lang="en">is open during</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10095,6 +10304,16 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <Literal xml:lang="fr">date de début</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startsAt</IRI>
+        <Literal xml:lang="fr">commence à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startsAt</IRI>
+        <Literal>starts at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#stockLimitation</IRI>
         <Literal xml:lang="en">Any limit on the stock of this particular listing. This ay differ from stock limits on the Product (for example if the Product is listed in multiple catalogues)</Literal>
@@ -10263,6 +10482,16 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#transforms</IRI>
         <Literal xml:lang="en">transforms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transportedBy</IRI>
+        <Literal xml:lang="fr">est transporté par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transportedBy</IRI>
+        <Literal xml:lang="en">transported by</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
