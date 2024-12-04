@@ -326,7 +326,7 @@
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#baseAt"/>
+        <ObjectProperty IRI="#basedAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
@@ -1349,10 +1349,478 @@
         <Datatype abbreviatedIRI="xsd:duration"/>
     </Declaration>
     <Declaration>
+        <Datatype abbreviatedIRI="xsd:time"/>
+    </Declaration>
+    <Declaration>
         <Datatype IRI="https://schema.org/DayOfWeek"/>
     </Declaration>
     <Declaration>
-        <Datatype abbreviatedIRI="xsd:time"/>
+        <NamedIndividual abbreviatedIRI="dfc-f:Leaf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OrganicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PigBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Occitania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SugarsFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HealthClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighPolyunsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Corsica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysansDeNature_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GrandEst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Funghi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Algae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LocalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Fruit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RainforestAlliance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GlutenFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Milk-fed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthernIreland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NutritionalClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SheepBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:TasteOfTheYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ireland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Sheep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NouvelleAquitaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ChickenBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Mineral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BiodynamicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BourgogneFrancheComte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NewZealand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IGP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IncreasedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BullBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeWax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Quail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Root"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IleDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowEnergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OtherClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Brittany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProvenceAlpesCotesAzur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Rooster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:VeryLowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bulb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RoosterBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PGS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProductOfTheYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Pig"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Cow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RedLabel_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-BioCoherence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:WholePlant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Belgium"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:isDefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ewe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnitedKingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bacteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Flower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Natural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NatureEtProgres"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Wales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-AB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighUnsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Switzerland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainerInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EthicalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysDeLoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BleuBlancCoeur_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ReducedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeVenom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FairTradeMaxHaavelar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:c_99fce7e0"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:QuailEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CentreValLoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Normandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOC_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePropolis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainsNutrientOrSubstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SodiumOrSaltFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePollen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AuvergneRhoneAlpes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Scotland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SaturatedFatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Stem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HautsDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Netherlands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Hen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HEV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeHoney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Goat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MarketingLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Package"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyReduced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LightLite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyFree"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighMonounsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Tuber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Demeter"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -4359,7 +4827,7 @@
         <ObjectProperty IRI="#characteristicOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="#baseAt"/>
+        <ObjectProperty IRI="#basedAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5239,7 +5707,7 @@
         <Class IRI="#AllergenCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#baseAt"/>
+        <ObjectProperty IRI="#basedAt"/>
         <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5945,7 +6413,7 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#baseAt"/>
+        <ObjectProperty IRI="#basedAt"/>
         <Class IRI="#PhysicalPlace"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -6345,14 +6813,11 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#endDate"/>
-        <Class IRI="#Shipment"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#endDate"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
             <Class IRI="#SaleSession"/>
+            <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
@@ -7828,12 +8293,12 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#baseAt</IRI>
-        <Literal xml:lang="en">base at</Literal>
+        <IRI>#basedAt</IRI>
+        <Literal xml:lang="en">based at</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#baseAt</IRI>
+        <IRI>#basedAt</IRI>
         <Literal xml:lang="fr">est basé à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
