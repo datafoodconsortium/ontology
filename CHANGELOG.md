@@ -36,6 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - transports, domain : Shipment, inverseOf : transportedBy
 - startsAt, domain : Shipment, range : PhysicalPlace
 - endsAt, domain : Shipment, range : PhysicalPlace
+- ships, domain : Vehicle, inverseOf : isShippedIn
+- isShippedIn, domain : Shipment, inverseOf : ships
 
 ### Deleted
 
