@@ -47,6 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Domain : beginDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipping option) ->  (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option)
 - Domain : endDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipping option) ->  (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option)
 
+
 ## [1.14.0] - 2024-11-13
 ### Added
 
