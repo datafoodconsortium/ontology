@@ -242,6 +242,9 @@
         <Class IRI="#SaleSession"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Shipment"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ShippingOption"/>
     </Declaration>
     <Declaration>
@@ -269,6 +272,9 @@
         <Class IRI="#Transformation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Vehicle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#VirtualPlace"/>
     </Declaration>
     <Declaration>
@@ -288,6 +294,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="dfc-p:Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="skos:broader"/>
@@ -315,6 +324,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#basedAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#belongsTo"/>
@@ -372,6 +384,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#deliveredAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#endsAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#facetOf"/>
@@ -512,6 +527,9 @@
         <ObjectProperty IRI="#hasUnit"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasVariant"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#holds"/>
     </Declaration>
     <Declaration>
@@ -536,16 +554,28 @@
         <ObjectProperty IRI="#inputOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isFulfilledBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isIngredientOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isOpenDuring"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isPriceOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isShippedIn"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isTemperatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVariantOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#labellingCharacteristicOf"/>
@@ -686,10 +716,16 @@
         <ObjectProperty IRI="#sells"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#ships"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#socialMediaOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#soldBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#startsAt"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#storedIn"/>
@@ -720,6 +756,12 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#transforms"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transportedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#transports"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#typeOf"/>
@@ -765,6 +807,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#claim"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#closes"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#cost"/>
@@ -905,6 +950,12 @@
         <DataProperty IRI="#websitePage"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="https://schema.org/opens"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Repository_1"/>
     </Declaration>
     <Declaration>
@@ -968,22 +1019,484 @@
         <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOC_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AOP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Algae"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AnimalPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:AuvergneRhoneAlpes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bacteria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeHoney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePollen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeePropolis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeVenom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BeeWax"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Belgium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BiodynamicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BleuBlancCoeur_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BourgogneFrancheComte"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Brittany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bulb"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Bull"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:BullBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CentreValLoire"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:Certification"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ChickenBody"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:Claim"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainerInformation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ContainsNutrientOrSubstance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Corsica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Cow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:CowMilk"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:DFC_ProductGlossary_Facet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Demeter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EnergyReduced"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:England"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EthicalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ewe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:EweMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FairTradeMaxHaavelar"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:FatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Flower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Fruit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Funghi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GlutenFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Goat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GoatMilk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:GrandEst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HEV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HautsDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HealthClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Hen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HenEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighMonounsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighPolyunsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighUnsaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:HighVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IGP_EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IleDeFrance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:IncreasedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Ireland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Italy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Leaf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LightLite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LocalLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowEnergy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSaturatedFat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:LowSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MSC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MarketingLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Milk-fed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Mineral"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:MultiOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Natural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NatureEtProgres"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:NatureOrigin"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Netherlands"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NewZealand"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSugars"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Normandy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NorthernIreland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NouvelleAquitaine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:NutritionalClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Occitania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-AB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-BioCoherence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Organic-EU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OrganicLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:OtherClaim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PGS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Package"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:PartOrigin"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysDeLoire"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PaysansDeNature_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Pig"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PigBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:PlantPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Portugal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProductOfTheYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ProvenceAlpesCotesAzur"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Quail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:QuailEgg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RainforestAlliance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RedLabel_FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:ReducedNutrient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Rooster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:RoosterBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Root"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SaturatedFatFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Scotland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Seed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Sheep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SheepBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SodiumOrSaltFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfFibre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfOmega3FattyAcids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfProtein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfVitaminsMinerals"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SouthAmerica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Stem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:SugarsFree"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Switzerland"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:TasteOfTheYear"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:TerritorialOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Tuber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnitedKingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownGeoOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownNatureOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:UnknownPartOrigin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Vegetarian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:VeryLowSodiumSalt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Wales"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:WholePlant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="dfc-f:c_99fce7e0"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-m:AllergenDimension"/>
@@ -1286,7 +1799,13 @@
         <AnnotationProperty abbreviatedIRI="dc:title"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:hasTopConcept"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:isDefinedBy"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:notation"/>
@@ -1304,472 +1823,10 @@
         <Datatype abbreviatedIRI="xsd:duration"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Leaf"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:OrganicLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:EweBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LowFat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PigBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:MSC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Occitania"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:UnknownGeoOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SugarsFree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HealthClaim"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SouthAmerica"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighPolyunsaturatedFat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Corsica"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PaysansDeNature_FR"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Portugal"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:GrandEst"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Funghi"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfOmega3FattyAcids"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Algae"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:CowMilk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LocalLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Fruit"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:RainforestAlliance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Water"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HenEgg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:GlutenFree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Milk-fed"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NorthernIreland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NutritionalClaim"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:France"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SheepBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:TasteOfTheYear"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Bee"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Ireland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Sheep"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NouvelleAquitaine"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ChickenBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Australia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Mineral"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LowSugars"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BiodynamicLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BourgogneFrancheComte"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NewZealand"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:AnimalOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Italy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:IGP_EU"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:IncreasedNutrient"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BullBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighOmega3FattyAcids"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BeeWax"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Quail"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Asia"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Root"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:IleDeFrance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LowEnergy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:OtherClaim"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Brittany"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ProvenceAlpesCotesAzur"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfVitaminsMinerals"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Rooster"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:VeryLowSodiumSalt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Bull"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LowSodiumSalt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Bulb"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:GoatMilk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Light"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:FSC"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfFibre"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:RoosterBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PGS"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ProductOfTheYear"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Europe"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:CowBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Organic-EU"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Pig"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Cow"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighFibre"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighProtein"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:RedLabel_FR"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Organic-BioCoherence"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:WholePlant"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:MultiNatureOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Belgium"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:isDefinedBy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Ewe"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:UnitedKingdom"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Bacteria"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:UnknownNatureOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Flower"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Natural"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NatureEtProgres"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Vegan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Wales"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Organic-AB"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Spain"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSugars"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighUnsaturatedFat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Switzerland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PlantOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ContainerInformation"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:FatFree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Vegetarian"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:EthicalLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighVitaminsMinerals"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NorthAmerica"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PlantPartOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Germany"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Oceania"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:PaysDeLoire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BleuBlancCoeur_FR"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ReducedNutrient"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BeeVenom"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SourceOfProtein"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LowSaturatedFat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:FairTradeMaxHaavelar"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:c_99fce7e0"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:QuailEgg"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:CentreValLoire"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Normandy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:MultiGeoOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:AOC_FR"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BeePropolis"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:ContainsNutrientOrSubstance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SodiumOrSaltFree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BeePollen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:AuvergneRhoneAlpes"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:NoAddedSodiumSalt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:AnimalPartOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:MultiOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Scotland"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:GoatBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:SaturatedFatFree"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Seed"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:UnknownLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Stem"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:AOP_EU"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Africa"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HautsDeFrance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Netherlands"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Hen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:EweMilk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HenBody"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HEV"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:BeeHoney"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Goat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:England"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:MarketingLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Package"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:EnergyReduced"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:LightLite"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:EnergyFree"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:HighMonounsaturatedFat"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Tuber"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:UnknownPartOrigin"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-f:Demeter"/>
+        <Datatype IRI="https://schema.org/DayOfWeek"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#Address"/>
@@ -2822,6 +2879,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Shipment"/>
+        <Class IRI="#DFC_BusinessOntology_Relation"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ShippingOption"/>
         <Class IRI="#How_Subject"/>
     </SubClassOf>
@@ -2989,6 +3050,10 @@
     <SubClassOf>
         <Class IRI="#Transformation"/>
         <Class IRI="#How_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vehicle"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#VirtualPlace"/>
@@ -4768,6 +4833,10 @@
         <ObjectProperty IRI="#characteristicOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#basedAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#belongsTo"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -4841,6 +4910,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#deliveredAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#endsAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5032,6 +5105,10 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVariant"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#holds"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5064,6 +5141,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5072,11 +5153,23 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOpenDuring"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isPriceOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isShippedIn"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isTemperatureOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isVariantOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5264,11 +5357,19 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ships"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#socialMediaOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#soldBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#startsAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5309,6 +5410,14 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#transforms"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transportedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#transports"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5476,6 +5585,10 @@
         <ObjectProperty IRI="#typeOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVariant"/>
+        <ObjectProperty IRI="#isVariantOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hostedAt"/>
         <ObjectProperty IRI="#hosts"/>
     </InverseObjectProperties>
@@ -5486,6 +5599,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#industrializedBy"/>
         <ObjectProperty IRI="#industrializes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isShippedIn"/>
+        <ObjectProperty IRI="#ships"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#listedIn"/>
@@ -5563,6 +5680,10 @@
         <ObjectProperty IRI="#transformedBy"/>
         <ObjectProperty IRI="#transforms"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#transportedBy"/>
+        <ObjectProperty IRI="#transports"/>
+    </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasCertification"/>
     </FunctionalObjectProperty>
@@ -5602,6 +5723,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#allergenCharacteristicOf"/>
         <Class IRI="#AllergenCharacteristic"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#basedAt"/>
+        <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#belongsTo"/>
@@ -5724,6 +5849,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#deliveredAt"/>
         <Class IRI="#DeliveryOption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#Shipment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#from"/>
@@ -5904,9 +6033,18 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasQuantity"/>
         <ObjectUnionOf>
+            <Class IRI="#ConsumptionFlow"/>
             <Class IRI="#DefinedProduct"/>
             <Class IRI="#Ingredient"/>
+            <Class IRI="#LocalizedProduct"/>
             <Class IRI="#OrderLine"/>
+            <Class IRI="#PhysicalProduct"/>
+            <Class IRI="#ProductionFlow"/>
+            <Class IRI="#SaleSession"/>
+            <Class IRI="#ShippingOption"/>
+            <Class IRI="#Stock"/>
+            <Class IRI="#Transaction"/>
+            <Class IRI="#Vehicle"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -5936,6 +6074,10 @@
             <Class IRI="#DefinedProduct"/>
             <Class IRI="#QuantitativeValue"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVariant"/>
+        <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#holds"/>
@@ -5970,6 +6112,10 @@
         <Class IRI="#ConsumptionFlow"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <Class IRI="#OrderLine"/>
     </ObjectPropertyDomain>
@@ -5978,12 +6124,24 @@
         <Class IRI="#Ingredient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOpenDuring"/>
+        <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPriceOf"/>
         <Class IRI="#Price"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isShippedIn"/>
+        <Class IRI="#Shipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTemperatureOf"/>
         <Class IRI="#Temperature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isVariantOf"/>
+        <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#labellingCharacteristicOf"/>
@@ -6203,12 +6361,20 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ships"/>
+        <Class IRI="#Vehicle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#socialMediaOf"/>
         <Class IRI="#SocialMedia"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#soldBy"/>
         <Class IRI="#Order"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#startsAt"/>
+        <Class IRI="#Shipment"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#storedIn"/>
@@ -6247,6 +6413,14 @@
         <Class IRI="#Enterprise"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transportedBy"/>
+        <Class IRI="#Stock"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#transports"/>
+        <Class IRI="#Shipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#typeOf"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="skos:Concept"/>
@@ -6264,6 +6438,14 @@
             <Class IRI="#PickupOption"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#basedAt"/>
+        <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#endsAt"/>
+        <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasAllergenDimension"/>
         <ObjectIntersectionOf>
@@ -6407,6 +6589,18 @@
                 <NamedIndividual abbreviatedIRI="dfc-m:DFC_ProductGlossary_Measure"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAvailableDuring"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOpenDuring"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#startsAt"/>
+        <Class IRI="#PhysicalPlace"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#availabilityDate"/>
@@ -6593,6 +6787,10 @@
         <Class IRI="#DefinedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#closes"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#cost"/>
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
@@ -6645,6 +6843,7 @@
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
             <Class IRI="#SaleSession"/>
+            <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
@@ -6678,7 +6877,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#frozen"/>
-        <Class IRI="#SuppliedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#SuppliedProduct"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasPercentageOfAlcoholByVolume"/>
@@ -6757,7 +6959,10 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#refrigerated"/>
-        <Class IRI="#SuppliedProduct"/>
+        <ObjectUnionOf>
+            <Class IRI="#SuppliedProduct"/>
+            <Class IRI="#Vehicle"/>
+        </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#region"/>
@@ -6777,6 +6982,7 @@
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
             <Class IRI="#SaleSession"/>
+            <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
         </ObjectUnionOf>
     </DataPropertyDomain>
@@ -6809,6 +7015,14 @@
             <Class IRI="#SocialMedia"/>
             <Class IRI="#VirtualPlace"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="https://schema.org/opens"/>
+        <Class IRI="https://schema.org/OpeningHoursSpecification"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#Image"/>
@@ -6857,6 +7071,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#claim"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#closes"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#cost"/>
@@ -7033,6 +7251,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#websitePage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/dayOfWeek"/>
+        <Datatype IRI="https://schema.org/DayOfWeek"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="https://schema.org/opens"/>
+        <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7733,6 +7959,11 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shipment</IRI>
+        <Literal xml:lang="en">A shipment of a Physical Product that is transported from one Physical Place to another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ShippingOption</IRI>
         <Literal xml:lang="en">An option for shipping orders to customers, associated with a given sales session</Literal>
     </AnnotationAssertion>
@@ -7895,6 +8126,11 @@ The Brand of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
         <Literal xml:lang="fr">soumis à TVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vehicle</IRI>
+        <Literal xml:lang="en">A vehicle used for the transportation of products. E.G. truck, train, bicycle.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -8090,6 +8326,16 @@ The Brand of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#availabilityTime</IRI>
         <Literal xml:lang="fr">délai de disponibilité</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#basedAt</IRI>
+        <Literal xml:lang="en">based at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#basedAt</IRI>
+        <Literal xml:lang="fr">est basé à</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8564,6 +8810,21 @@ Any claims of a Product.
         <Literal xml:lang="en">end date</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="en">The destination of the Shipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="en">ends at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endsAt</IRI>
+        <Literal xml:lang="fr">termine à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#enterpriseID</IRI>
         <Literal xml:lang="en">enterprise unique ID number</Literal>
@@ -8681,7 +8942,7 @@ Any claims of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#frozen</IRI>
-        <Literal xml:lang="en">Does the Product require keeping frozen</Literal>
+        <Literal xml:lang="en">Defines if the parent class supports or requires refrigeration to a safe temperature to maintain frozen products.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9365,6 +9626,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <Literal xml:lang="en">has unit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVariant</IRI>
+        <Literal xml:lang="fr">a pour variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVariant</IRI>
+        <Literal xml:lang="en">has variant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#holds</IRI>
         <Literal xml:lang="en">All Orders that were made during the Sales Session</Literal>
@@ -9383,16 +9654,6 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hostedAt</IRI>
         <Literal xml:lang="en">The location the session is hosted at. This could be a physical (e.g. a shop or market) or virtual place (e.g. online store).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#holds</IRI>
-        <Literal xml:lang="fr">détient</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#holds</IRI>
-        <Literal xml:lang="en">holds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9490,6 +9751,21 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <Literal xml:lang="fr">numéro de facture</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isAvailableDuring</IRI>
+        <Literal xml:lang="en">Operating window of the Vehicle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAvailableDuring</IRI>
+        <Literal xml:lang="fr">est disponible pendant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAvailableDuring</IRI>
+        <Literal xml:lang="en">is available during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isFulfilledBy</IRI>
         <Literal xml:lang="fr">est rempli par</Literal>
@@ -9511,6 +9787,21 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isOpenDuring</IRI>
+        <Literal xml:lang="en">Schedule during which the Physical Place is accessible, may indicate it is open to the public or just for business.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOpenDuring</IRI>
+        <Literal xml:lang="fr">est ouvert pendant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isOpenDuring</IRI>
+        <Literal xml:lang="en">is open during</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#isPriceOf</IRI>
         <Literal xml:lang="en">The Object that the Price relates to, can be an Offer, a PaymentMethod or a Transaction</Literal>
     </AnnotationAssertion>
@@ -9526,6 +9817,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isShippedIn</IRI>
+        <Literal xml:lang="fr">est transporté dans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isShippedIn</IRI>
+        <Literal xml:lang="en">is shipped in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isTemperatureOf</IRI>
         <Literal xml:lang="fr">est la température de</Literal>
     </AnnotationAssertion>
@@ -9533,6 +9834,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isTemperatureOf</IRI>
         <Literal xml:lang="en">is temperature of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isVariantOf</IRI>
+        <Literal xml:lang="fr">est la variant de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isVariantOf</IRI>
+        <Literal xml:lang="en">is variant of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10244,6 +10555,11 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <Literal xml:lang="fr">quantité</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#quantity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#referenceOf</IRI>
         <Literal xml:lang="en">The Localized Product that is created in reference to this Supplied Product</Literal>
@@ -10311,7 +10627,7 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#refrigerated</IRI>
-        <Literal xml:lang="en">Does the Product require keeping refrigerated</Literal>
+        <Literal xml:lang="en">Defines if the parent class supports or requires refrigeration to a safe temperature to maintain refrigerated products (typically 0-5°C).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10434,6 +10750,16 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <Literal xml:lang="fr">vend</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ships</IRI>
+        <Literal xml:lang="en">ships</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ships</IRI>
+        <Literal xml:lang="fr">transporte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sku</IRI>
         <Literal xml:lang="en">Only a general &quot;SKU&quot; id is proposed for now. Agents using GTIN could use GTIN as SKU but other IDs than GTIN can be used.</Literal>
@@ -10512,6 +10838,21 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#startDate</IRI>
         <Literal xml:lang="fr">date de début</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#startsAt</IRI>
+        <Literal xml:lang="en">The origin point of the Shipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startsAt</IRI>
+        <Literal xml:lang="fr">commence à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startsAt</IRI>
+        <Literal>starts at</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10682,6 +11023,36 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#transforms</IRI>
         <Literal xml:lang="en">transforms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transportedBy</IRI>
+        <Literal xml:lang="en">The Shipment that transports Stock.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transportedBy</IRI>
+        <Literal xml:lang="fr">est transporté par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transportedBy</IRI>
+        <Literal xml:lang="en">transported by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#transports</IRI>
+        <Literal xml:lang="en">The Stock that is transported by a Shipment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transports</IRI>
+        <Literal xml:lang="en">transports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transports</IRI>
+        <Literal xml:lang="fr">transports</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11903,3 +12274,4 @@ The Address the delivery will be/was made to
 
 
 <!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
