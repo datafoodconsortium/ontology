@@ -7,20 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Import
-
-#### Class 
-- https://schema.org/OpeningHoursSpecification
-
-#### DataProperty
-- https://schema.org/opens
-- https://schema.org/closes
-- https://schema.org/dayOfWeek
-
-#### DataTypes
-- https://schema.org/DayOfWeek
-
 ### Added
+
+#### Imported concepts from schema.org
+- Class: https://schema.org/OpeningHoursSpecification
+- Data properties:
+    - https://schema.org/opens
+    - https://schema.org/closes
+    - https://schema.org/dayOfWeek
+- Data type : https://schema.org/DayOfWeek
 
 #### Class
 - Shipment, subClassOf DFC_BusinessOntology_Relation
