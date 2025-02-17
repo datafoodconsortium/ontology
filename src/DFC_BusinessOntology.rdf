@@ -776,6 +776,26 @@ PhysicalCharacteristic </rdfs:comment>
     
 
 
+    <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasCountry">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
+        <rdfs:domain rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#Address"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://publications.europa.eu/resource/authority/country/0001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasDimension -->
 
     <owl:ObjectProperty rdf:about="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#hasDimension">
@@ -824,7 +844,7 @@ PhysicalCharacteristic </rdfs:comment>
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
@@ -1051,7 +1071,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
@@ -1138,7 +1158,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#broader"/>
-                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+                        <owl:hasValue rdf:resource="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
@@ -2692,6 +2712,7 @@ Any claims of a Product.
         <rdfs:comment xml:lang="en">The ISO country that the address is located within</rdfs:comment>
         <rdfs:label xml:lang="en">country</rdfs:label>
         <rdfs:label xml:lang="fr">pays</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:DatatypeProperty>
     
 
@@ -5012,6 +5033,14 @@ The Brand of a Product.
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/country/0001 -->
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/country/0001">
+        <skos:prefLabel xml:lang="en">List of current states</skos:prefLabel>
+    </owl:NamedIndividual>
     
 
 
@@ -7356,21 +7385,21 @@ The Brand of a Product.
     
 
 
-    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState -->
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
     
 
 
-    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState -->
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
     
 
 
-    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState -->
+    <!-- https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus -->
 
-    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+    <owl:NamedIndividual rdf:about="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
     
 
 
