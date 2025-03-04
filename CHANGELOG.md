@@ -7,17 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.15.0] - 2025-01-23
+### Added
+- hasCountry, domain: Address, range: skos:concept and (skos:inScheme value http://publications.europa.eu/resource/authority/country/0001)
+
+### Deleted
+- country
+
+### Changed
+- Range : hasFulfilmentStatus (skos:Concept and (skos:broader value FulfilmentState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value FulfilmentStatus) and (skos:inScheme value DFC_Vocabulary))
+- Range : hasOrderStatus (skos:Concept and (skos:broader value OrderState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value OrderStatus) and (skos:inScheme value DFC_Vocabulary))
+- Range : hasPaymentStatus (skos:Concept and (skos:broader value PaymenttState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value PaymenttStatus) and (skos:inScheme value DFC_Vocabulary))
+
+## [1.15.0] - 2025-02-17
+
+### Import
+
+#### Class 
+- https://schema.org/OpeningHoursSpecification
+
+#### DataProperty
+- https://schema.org/opens
+- https://schema.org/closes
+- https://schema.org/dayOfWeek
+
+#### DataTypes
+- https://schema.org/DayOfWeek
 
 ### Added
-
-#### Imported concepts from schema.org
-- Class: https://schema.org/OpeningHoursSpecification
-- Data properties:
-    - https://schema.org/opens
-    - https://schema.org/closes
-    - https://schema.org/dayOfWeek
-- Data type : https://schema.org/DayOfWeek
 
 #### Class
 - Shipment, subClassOf DFC_BusinessOntology_Relation

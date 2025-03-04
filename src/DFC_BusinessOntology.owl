@@ -425,6 +425,9 @@
         <ObjectProperty IRI="#hasContainerInformation"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasDimension"/>
     </Declaration>
     <Declaration>
@@ -954,6 +957,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="https://schema.org/opens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://publications.europa.eu/resource/authority/country/0001"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Repository_1"/>
@@ -1769,13 +1775,13 @@
         <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
@@ -4965,6 +4971,10 @@
         <ObjectProperty IRI="#hasFacet"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasDimension"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
@@ -5912,6 +5922,10 @@
         <Class IRI="#DefinedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCountry"/>
+        <Class IRI="#Address"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasDimension"/>
         <Class IRI="#DFC_BusinessOntology_Characteristic"/>
     </ObjectPropertyDomain>
@@ -6461,6 +6475,16 @@
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="http://publications.europa.eu/resource/authority/country/0001"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasDimension"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="skos:Concept"/>
@@ -6480,7 +6504,7 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentState"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
@@ -6522,7 +6546,7 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderState"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
@@ -6536,7 +6560,7 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentState"/>
+                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
@@ -7260,6 +7284,11 @@
         <DataProperty IRI="https://schema.org/opens"/>
         <Datatype abbreviatedIRI="xsd:time"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:prefLabel"/>
+        <IRI>http://publications.europa.eu/resource/authority/country/0001</IRI>
+        <Literal xml:lang="en">List of current states</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Address</IRI>
@@ -8663,6 +8692,11 @@ Any claims of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#country</IRI>
         <Literal xml:lang="fr">pays</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
+        <IRI>#country</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
