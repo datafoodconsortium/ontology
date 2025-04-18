@@ -8,9 +8,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
+#### ObjectProperty
 - hasCountry, domain: Address, range: skos:concept and (skos:inScheme value http://publications.europa.eu/resource/authority/country/0001)
 
 ### Deleted
+
+#### ObjectProperty
+- composes/composedBy
+
+#### DataProperty
 - country
 
 ### Changed

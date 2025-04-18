@@ -32,12 +32,16 @@
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#bernardC"/>
         <dc:creator rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#florenceA"/>
         <dc:description xml:lang="en">A common vocabulary for digital food platforms (Business Part)</dc:description>
-        <dc:modified>2024-01-25</dc:modified>
+        <dc:modified>2025-04-30</dc:modified>
         <dc:publisher rdf:resource="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#dataFoodConsortium"/>
         <dc:title xml:lang="en">Data Food Consortium Business</dc:title>
+        <terms:requires>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/facets.rdf</terms:requires>
+        <terms:requires>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/measures.rdf</terms:requires>
+        <terms:requires>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/productTypes.rdf</terms:requires>
+        <terms:requires>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/vocabulary.rdf</terms:requires>
         <vann:preferredNamespacePrefix>dfc-b</vann:preferredNamespacePrefix>
         <rdfs:comment xml:lang="en">A common vocabulary for digital food platforms (Business Part)</rdfs:comment>
-        <owl:versionInfo>1.12.0</owl:versionInfo>
+        <owl:versionInfo>1.16.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -86,6 +90,12 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires"/>
     
 
 
@@ -365,6 +375,7 @@
         <rdfs:comment xml:lang="en">That property represents the composition of a food product by a set of ingredients.</rdfs:comment>
         <rdfs:label xml:lang="en">composed of</rdfs:label>
         <rdfs:label xml:lang="fr">composé de</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -377,6 +388,7 @@
         <rdfs:comment xml:lang="en">DEPRECATE</rdfs:comment>
         <rdfs:label xml:lang="fr">compose</rdfs:label>
         <rdfs:label xml:lang="en">composes</rdfs:label>
+        <owl:deprecated></owl:deprecated>
     </owl:ObjectProperty>
     
 
