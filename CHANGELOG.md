@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### ObjectProperty
 - hasCountry, domain: Address, range: skos:concept and (skos:inScheme value http://publications.europa.eu/resource/authority/country/0001)
 
+#### AnnotationProperty
+- terms:requires
+
 ### Deleted
 
 #### ObjectProperty
