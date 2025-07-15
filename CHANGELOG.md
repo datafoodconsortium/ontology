@@ -7,17 +7,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.15.0] - 2025-01-23
+## [1.16.0] - 2025-07-15
 
 ### Added
 
-#### Imported concepts from schema.org
-- Class: https://schema.org/OpeningHoursSpecification
-- Data properties:
-    - https://schema.org/opens
-    - https://schema.org/closes
-    - https://schema.org/dayOfWeek
-- Data type : https://schema.org/DayOfWeek
+#### ObjectProperty
+- hasCountry, domain: Address, range: skos:concept and (skos:inScheme value http://publications.europa.eu/resource/authority/country/0001)
+
+#### AnnotationProperty
+- terms:requires
+
+### Deleted
+
+#### ObjectProperty
+- composes/composedBy
+
+#### DataProperty
+- country
+
+### Changed
+- Range : hasFulfilmentStatus (skos:Concept and (skos:broader value FulfilmentState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value FulfilmentStatus) and (skos:inScheme value DFC_Vocabulary))
+- Range : hasOrderStatus (skos:Concept and (skos:broader value OrderState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value OrderStatus) and (skos:inScheme value DFC_Vocabulary))
+- Range : hasPaymentStatus (skos:Concept and (skos:broader value PaymenttState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value PaymenttStatus) and (skos:inScheme value DFC_Vocabulary))
+
+## [1.15.0] - 2025-02-17
+
+### Import
+
+#### Class 
+- https://schema.org/OpeningHoursSpecification
+
+#### DataProperty
+- https://schema.org/opens
+- https://schema.org/closes
+- https://schema.org/dayOfWeek
+
+#### DataTypes
+- https://schema.org/DayOfWeek
+
+### Added
 
 #### Class
 - Shipment, subClassOf DFC_BusinessOntology_Relation
@@ -400,7 +428,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.15.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.16.0...master
+[1.16.0]: https://github.com/datafoodconsortium/ontology/compare/v1.15.0...1.16.0
 [1.15.0]: https://github.com/datafoodconsortium/ontology/compare/v1.14.0...1.15.0
 [1.14.0]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...1.14.0
 [1.13.0]: https://github.com/datafoodconsortium/ontology/compare/v1.12.1...1.13.0
