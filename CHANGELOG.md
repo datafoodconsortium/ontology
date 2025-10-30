@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
 
+### Namespace 
+The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
+
+
 ### Import
 
 #### Class
