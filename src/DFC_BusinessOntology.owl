@@ -192,6 +192,9 @@
         <Class IRI="#CatalogItem"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Certfication"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ConsumptionFlow"/>
     </Declaration>
     <Declaration>
@@ -414,6 +417,9 @@
         <ObjectProperty IRI="#certificateOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#certifies"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#characteristicOf"/>
     </Declaration>
     <Declaration>
@@ -615,6 +621,9 @@
         <ObjectProperty IRI="#hasTemperature"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasTemplateSaleSession"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasTransformationType"/>
     </Declaration>
     <Declaration>
@@ -657,6 +666,9 @@
         <ObjectProperty IRI="#isAvailableDuring"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isCertifiedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isFulfilledBy"/>
     </Declaration>
     <Declaration>
@@ -676,6 +688,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTemperatureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTemplateSaleSessionOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isVariantOf"/>
@@ -933,6 +948,12 @@
         <DataProperty IRI="#brand"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#certiferReference"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#certificationScore"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#city"/>
     </Declaration>
     <Declaration>
@@ -1024,6 +1045,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#operatorId"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#orderNumber"/>
@@ -2308,6 +2332,10 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#references"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certfication"/>
+        <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ConsumptionFlow"/>
@@ -5062,6 +5090,10 @@
         <ObjectProperty IRI="#facetOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#certifies"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#characteristicOf"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
@@ -5330,6 +5362,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTemplateSaleSession"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTransformationType"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
@@ -5390,6 +5426,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCertifiedBy"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5415,6 +5455,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isTemperatureOf"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isTemplateSaleSessionOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5702,6 +5746,10 @@
         <ObjectProperty IRI="#hasCertification"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#certifies"/>
+        <ObjectProperty IRI="#isCertifiedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#characteristicOf"/>
         <ObjectProperty IRI="#hasCharacteristic"/>
     </InverseObjectProperties>
@@ -5832,6 +5880,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasTemperature"/>
         <ObjectProperty IRI="#isTemperatureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTemplateSaleSession"/>
+        <ObjectProperty IRI="#isTemplateSaleSessionOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasType"/>
@@ -6014,6 +6066,10 @@
                 <NamedIndividual abbreviatedIRI="dfc-f:DFC_ProductGlossary_Facet"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#certifies"/>
+        <Class IRI="#Certfication"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#characteristicOf"/>
@@ -6353,6 +6409,10 @@
         <Class IRI="#SuppliedProduct"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTemplateSaleSession"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTransformationType"/>
         <Class IRI="#AsPlannedTransformation"/>
     </ObjectPropertyDomain>
@@ -6416,6 +6476,10 @@
         <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCertifiedBy"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFulfilledBy"/>
         <Class IRI="#OrderLine"/>
     </ObjectPropertyDomain>
@@ -6442,6 +6506,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTemperatureOf"/>
         <Class IRI="#Temperature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTemplateSaleSessionOf"/>
+        <Class IRI="#TemplateSaleSession"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isVariantOf"/>
@@ -7185,6 +7253,14 @@
         <Class IRI="#DefinedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#certiferReference"/>
+        <Class IRI="#Certfication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#certificationScore"/>
+        <Class IRI="#Certfication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#city"/>
         <Class IRI="#Address"/>
     </DataPropertyDomain>
@@ -7248,6 +7324,7 @@
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
+            <Class IRI="#Catalog"/>
             <Class IRI="#SaleSession"/>
             <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
@@ -7321,6 +7398,10 @@
         <Class IRI="#DFC_BusinessOntology_Subject"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#operatorId"/>
+        <Class IRI="#Certfication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#orderNumber"/>
         <Class IRI="#Order"/>
     </DataPropertyDomain>
@@ -7387,6 +7468,7 @@
         <ObjectUnionOf>
             <Class IRI="#AsPlannedLocalTransformation"/>
             <Class IRI="#AsRealizedTransformation"/>
+            <Class IRI="#Catalog"/>
             <Class IRI="#SaleSession"/>
             <Class IRI="#Shipment"/>
             <Class IRI="#ShippingOption"/>
@@ -7500,6 +7582,14 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#brand"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#certiferReference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#certificationScore"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7617,6 +7707,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#name"/>
         <Datatype abbreviatedIRI="xsd:Name"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#operatorId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#orderNumber"/>
@@ -9073,6 +9167,16 @@ The Brand of a Product.
         <Literal xml:lang="fr">Référence catalogue</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Certfication</IRI>
+        <Literal xml:lang="en">Certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Certfication</IRI>
+        <Literal xml:lang="fr">Certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ConsumptionFlow</IRI>
         <Literal xml:lang="en">Consumption flow</Literal>
@@ -10039,6 +10143,16 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certiferReference</IRI>
+        <Literal xml:lang="en">certification reference</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certiferReference</IRI>
+        <Literal xml:lang="fr">reference de certification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#certificateOf</IRI>
         <Literal xml:lang="fr">certificat/label de</Literal>
     </AnnotationAssertion>
@@ -10046,6 +10160,26 @@ The Brand of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#certificateOf</IRI>
         <Literal xml:lang="en">certificate of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certificationScore</IRI>
+        <Literal xml:lang="en">certification score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certificationScore</IRI>
+        <Literal xml:lang="fr">score de certificationfr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certifies</IRI>
+        <Literal xml:lang="fr">certifie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#certifies</IRI>
+        <Literal xml:lang="en">certifies</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11213,12 +11347,12 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasReferenceProductOption</IRI>
-        <Literal xml:lang="en">has reference product option</Literal>
+        <Literal>a pour reference d&apos;option de produit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasReferenceProductOption</IRI>
-        <Literal>a pour reference d&apos;option de produit</Literal>
+        <Literal xml:lang="en">has reference product option</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11269,6 +11403,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#hasTemperature</IRI>
         <Literal xml:lang="en">has temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTemplateSaleSession</IRI>
+        <Literal xml:lang="fr">a pour session de vente type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTemplateSaleSession</IRI>
+        <Literal xml:lang="en">has template sale session</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11472,6 +11616,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCertifiedBy</IRI>
+        <Literal xml:lang="fr">est certifié par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCertifiedBy</IRI>
+        <Literal xml:lang="en">is certified by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isFulfilledBy</IRI>
         <Literal xml:lang="fr">est rempli par</Literal>
     </AnnotationAssertion>
@@ -11549,6 +11703,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isTemperatureOf</IRI>
         <Literal xml:lang="en">is temperature of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTemplateSaleSessionOf</IRI>
+        <Literal xml:lang="fr">est la session de vente type de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isTemplateSaleSessionOf</IRI>
+        <Literal xml:lang="en">is template sale session of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11899,6 +12063,11 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#offersTo</IRI>
         <Literal xml:lang="fr">offert à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#operatorId</IRI>
+        <Literal xml:lang="en">operator id</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

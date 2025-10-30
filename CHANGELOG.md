@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Description : Migration du namespace, intégration des concepts temporels et géographiques, et ajout des concepts de variantes produits.
+Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
 
 ### Import
 
@@ -56,6 +56,13 @@ Description : Migration du namespace, intégration des concepts temporels et gé
 - hasReferenceProductOptionValue, domain: ProductOption, range: OptionValue
 - hasVariantCaracteristic, domain: Variant, range: VariantCaracteristic
 - isMemberOf, domain: Agent, inverseOf: hasMember
+- isCertifiedBy, domain: Organization, inverseOf: certifies
+- certifies, domain: Certification, inverseOf: isCertifiedBy
+
+#### DataProperty
+- operatorid, domain: Certification, range: xsd:string
+- certificationScore, domain: Certification, range: xsd:string,
+- certificationReference, domain: Certification, range: xsd:string
 
 ### Changed
 - Namespace: https://github.com/datafoodconsortium/... -> https://w3id.org/dfc/...
@@ -67,6 +74,9 @@ Description : Migration du namespace, intégration des concepts temporels et gé
 - Constraint 1:1 for Stock:availabilityDate
 - Constraint 1:1 for PaymentMethod:paymentMethodProvider
 - Constraint 1:1 for PaymentMethod:paymentMethodType
+- Domain : beginDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option) -> (AsPlannedTransformation | AsRealizedTransformation | Catalog | SaleSession | Shipment | Shipping option)
+- Domain : endDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option) -> (AsPlannedTransformation | AsRealizedTransformation | Catalog | SaleSession | Shipment | Shipping option)
+- Domain : isVariantOf, DefinedProduct -> Variant
 
 ## [1.16.0] - 2025-07-10
 
