@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl">
-    <Prefix name="" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl"/>
+    <Prefix name="" IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -19,15 +19,14 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
-    <Prefix name="dfc-b" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#"/>
-    <Prefix name="dfc-f" IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/facets.rdf#"/>
-    <Prefix name="dfc-m" IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/measures.rdf#"/>
-    <Prefix name="dfc-p" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_ProductGlossary.owl#"/>
+    <Prefix name="dfc-b" IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#"/>
+    <Prefix name="dfc-f" IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/facets.rdf#"/>
+    <Prefix name="dfc-m" IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/measures.rdf#"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="protege" IRI="http://protege.stanford.edu/plugins/owl/protege#"/>
-    <Import>https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl</Import>
-    <Import>https://github.com/datafoodconsortium/taxonomies/releases/latest/download/facets.rdf</Import>
+    <Import>http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl</Import>
+    <Import>http://w3id.org/dfc/taxonomies/releases/latest/download/facets.rdf</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
         <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
@@ -66,7 +65,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal>2025-04-30</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-11-04</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -78,19 +77,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/facets.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/facets.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/measures.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/measures.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/productTypes.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/productTypes.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>https://github.com/datafoodconsortium/taxonomies/releases/download/v1.3.0/vocabulary.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/vocabulary.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
@@ -102,8 +101,11 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.16.0</Literal>
+        <Literal>2.0.0</Literal>
     </Annotation>
+    <Declaration>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Process"/>
+    </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2002/12/cal/icaltzd#Value_RECUR"/>
     </Declaration>
@@ -127,9 +129,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2006/vcard/ns#Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="dfc-p:Process"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://purl.org/geojson/vocab#Feature"/>
@@ -219,6 +218,9 @@
         <Class IRI="#DeliveryOption"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DeliveryStep"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Enterprise"/>
     </Declaration>
     <Declaration>
@@ -279,6 +281,9 @@
         <Class IRI="#PhysicalProduct"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#PickUpStep"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PickupOption"/>
     </Declaration>
     <Declaration>
@@ -306,6 +311,9 @@
         <Class IRI="#RealStock"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SaleSession"/>
     </Declaration>
     <Declaration>
@@ -316,6 +324,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SocialMedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Stock"/>
@@ -468,6 +479,9 @@
         <ObjectProperty IRI="#deliveredAt"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#delivery"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#endsAt"/>
     </Declaration>
     <Declaration>
@@ -618,6 +632,9 @@
         <ObjectProperty IRI="#hasStatus"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasStep"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasTemperature"/>
     </Declaration>
     <Declaration>
@@ -685,6 +702,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isShippedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStepOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTemperatureOf"/>
@@ -775,6 +795,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#physicalCharacteristicOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pickUp"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#pickedUpAt"/>
@@ -885,6 +908,12 @@
         <ObjectProperty IRI="#typeOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#useVehicle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#usedInRoute"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#uses"/>
     </Declaration>
     <Declaration>
@@ -931,6 +960,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#accessibilityInfo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#arrivalDate"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#availabilityDate"/>
@@ -985,6 +1017,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#discount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#duration"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#email"/>
@@ -1107,25 +1142,25 @@
         <NamedIndividual IRI="http://publications.europa.eu/resource/authority/country/0001"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Certification"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:Claim"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Claim"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:ContainerInformation"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#ContainerInformation"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#NatureOrigin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#PartOrigin"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#ProductType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#TerritorialOrigin"/>
     </Declaration>
     <Declaration>
         <NamedIndividual abbreviatedIRI="dfc-f:AOC_FR"/>
@@ -1875,22 +1910,22 @@
         <NamedIndividual abbreviatedIRI="dfc-m:Zinc"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Repository_1"/>
@@ -1987,6 +2022,21 @@
     </Declaration>
     <Declaration>
         <Datatype IRI="https://schema.org/DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.w3.org/2006/vcard/ns#Agent"/>
@@ -2402,15 +2452,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Characteristic"/>
-        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
-        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DFC_BusinessOntology_Subject"/>
-        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DefinedProduct"/>
@@ -2434,7 +2484,7 @@
         <Class IRI="#DefinedProduct"/>
         <ObjectAllValuesFrom>
             <ObjectProperty IRI="#hasProcess"/>
-            <Class abbreviatedIRI="dfc-p:Process"/>
+            <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Process"/>
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2473,6 +2523,10 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="#refersTo"/>
         </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliveryStep"/>
+        <Class IRI="#Step"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Enterprise"/>
@@ -2922,6 +2976,10 @@
         </ObjectAllValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#PickUpStep"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#PickupOption"/>
         <Class IRI="#ShippingOption"/>
     </SubClassOf>
@@ -3013,7 +3071,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#QuantitativeValue"/>
-        <Class IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#QuantitativeValue"/>
@@ -3065,6 +3123,10 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Route"/>
+        <Class IRI="#Where_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SaleSession"/>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
     </SubClassOf>
@@ -3114,6 +3176,10 @@
     <SubClassOf>
         <Class IRI="#SocialMedia"/>
         <Class IRI="#What_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Step"/>
+        <Class IRI="#Where_Subject"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Stock"/>
@@ -3328,27 +3394,27 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:Certification"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Certification"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:Claim"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Claim"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:NatureOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#NatureOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:PartOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#PartOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#ProductType"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:ConceptScheme"/>
-        <NamedIndividual abbreviatedIRI="dfc-p:TerritorialOrigin"/>
+        <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#TerritorialOrigin"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="skos:Collection"/>
@@ -5158,6 +5224,10 @@
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#delivery"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#endsAt"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5358,6 +5428,10 @@
         <ObjectProperty IRI="#DFC_Interface_Property"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStep"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasTemperature"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
@@ -5451,6 +5525,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#isShippedIn"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStepOf"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -5572,6 +5650,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#physicalCharacteristicOf"/>
         <ObjectProperty IRI="#characteristicOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#pickUp"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#pickedUpAt"/>
@@ -5716,6 +5798,14 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#typeOf"/>
         <ObjectProperty IRI="#DFC_Interface_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#useVehicle"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#usedInRoute"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#uses"/>
@@ -5878,6 +5968,10 @@
         <ObjectProperty IRI="#socialMediaOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStep"/>
+        <ObjectProperty IRI="#isStepOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#hasTemperature"/>
         <ObjectProperty IRI="#isTemperatureOf"/>
     </InverseObjectProperties>
@@ -5988,6 +6082,10 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#transportedBy"/>
         <ObjectProperty IRI="#transports"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#useVehicle"/>
+        <ObjectProperty IRI="#usedInRoute"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasCertification"/>
@@ -6143,7 +6241,7 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual abbreviatedIRI="dfc-p:ContainerInformation"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#ContainerInformation"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
@@ -6170,6 +6268,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#deliveredAt"/>
         <Class IRI="#DeliveryOption"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#delivery"/>
+        <Class IRI="#Step"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#endsAt"/>
@@ -6246,7 +6348,10 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGeoJsonFeature"/>
-        <Class IRI="#Place"/>
+        <ObjectUnionOf>
+            <Class IRI="#PhysicalPlace"/>
+            <Class IRI="#Route"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasGeographicalOrigin"/>
@@ -6405,6 +6510,10 @@
         <Class IRI="#Agent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStep"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasTemperature"/>
         <Class IRI="#SuppliedProduct"/>
     </ObjectPropertyDomain>
@@ -6502,6 +6611,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isShippedIn"/>
         <Class IRI="#Shipment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStepOf"/>
+        <Class IRI="#Step"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTemperatureOf"/>
@@ -6653,6 +6766,10 @@
         <Class IRI="#PhysicalCharacteristic"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pickUp"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#pickedUpAt"/>
         <Class IRI="#PickupOption"/>
     </ObjectPropertyDomain>
@@ -6798,9 +6915,17 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual abbreviatedIRI="dfc-p:ProductType"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#ProductType"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#useVehicle"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#usedInRoute"/>
+        <Class IRI="#Vehicle"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#uses"/>
@@ -6825,6 +6950,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#basedAt"/>
         <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#delivery"/>
+        <Class IRI="#Shipment"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#endsAt"/>
@@ -6874,11 +7003,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#FulfilmentStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -6920,11 +7049,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#OrderStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -6934,11 +7063,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#PaymentStatus"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -6966,11 +7095,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -6988,11 +7117,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -7002,11 +7131,11 @@
             <Class abbreviatedIRI="skos:Concept"/>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#tranformationType"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
+                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </ObjectPropertyRange>
@@ -7037,9 +7166,17 @@
         <Class IRI="https://schema.org/OpeningHoursSpecification"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#pickUp"/>
+        <Class IRI="#Shipment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#startsAt"/>
         <Class IRI="#PhysicalPlace"/>
     </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#arrivalDate"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#availabilityDate"/>
         <DataProperty IRI="#date"/>
@@ -7233,6 +7370,10 @@
         <Class IRI="#DeliveryOption"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#arrivalDate"/>
+        <Class IRI="#Step"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#availabilityDate"/>
         <Class IRI="#Stock"/>
     </DataPropertyDomain>
@@ -7314,6 +7455,10 @@
             <Class IRI="#Order"/>
             <Class IRI="#OrderLine"/>
         </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#duration"/>
+        <Class IRI="#Step"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#email"/>
@@ -7565,6 +7710,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#arrivalDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#availabilityDate"/>
         <Datatype abbreviatedIRI="xsd:date"/>
     </DataPropertyRange>
@@ -7635,6 +7784,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#discount"/>
         <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#duration"/>
+        <Datatype abbreviatedIRI="xsd:duration"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#email"/>
@@ -9297,6 +9450,16 @@ The Brand of a Product.
         <Literal xml:lang="fr">Option de livraison</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeliveryStep</IRI>
+        <Literal xml:lang="en">Delivery step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeliveryStep</IRI>
+        <Literal xml:lang="fr">Étape de livraison</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="owl:deprecated"/>
         <IRI>#Enterprise</IRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
@@ -9543,6 +9706,16 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickUpStep</IRI>
+        <Literal xml:lang="en">Pick up step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PickUpStep</IRI>
+        <Literal xml:lang="fr">Étape de récupération</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#PickupOption</IRI>
         <Literal xml:lang="fr">Option de retrait</Literal>
     </AnnotationAssertion>
@@ -9705,6 +9878,16 @@ The Brand of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#SocialMedia</IRI>
         <Literal xml:lang="en">Social Media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Step</IRI>
+        <Literal xml:lang="en">Step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Step</IRI>
+        <Literal xml:lang="fr">Étape</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10487,6 +10670,16 @@ Any claims of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#deliveredAt</IRI>
         <Literal xml:lang="fr">délivré à</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#delivery</IRI>
+        <Literal xml:lang="en">delivery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#delivery</IRI>
+        <Literal>livré</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -11390,6 +11583,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <Literal xml:lang="en">has status</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStep</IRI>
+        <Literal xml:lang="fr">a pour étape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStep</IRI>
+        <Literal xml:lang="en">has step</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasTemperature</IRI>
         <Literal xml:lang="en">The maximum storage temperature required by the product (e.g. +5º C )</Literal>
@@ -11693,6 +11896,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#isShippedIn</IRI>
         <Literal xml:lang="en">is shipped in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStepOf</IRI>
+        <Literal xml:lang="fr">est l&apos;étape de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStepOf</IRI>
+        <Literal xml:lang="en">is step of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12290,6 +12503,16 @@ Any Physical Characteristics of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#physicalCharacteristics</IRI>
         <Literal xml:lang="en">physical characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pickUp</IRI>
+        <Literal xml:lang="en">pick up</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#pickUp</IRI>
+        <Literal xml:lang="fr">récupéré</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -12937,6 +13160,26 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#typeOf</IRI>
         <Literal xml:lang="fr">type pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#useVehicle</IRI>
+        <Literal xml:lang="en">use vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#useVehicle</IRI>
+        <Literal xml:lang="fr">utilise comme vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedInRoute</IRI>
+        <Literal xml:lang="en">used in route</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#usedInRoute</IRI>
+        <Literal xml:lang="fr">utilisé sur la route</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

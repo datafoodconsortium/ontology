@@ -26,14 +26,14 @@ with open(args.output, "w") as export_context_f:
     "@context": {
     \t"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     \t"skos" : "http://www.w3.org/2004/02/skos/core#",
-    \t"dfc": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl#",
+    \t"dfc": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_FullModel.owl#",
     \t"dc": "http://purl.org/dc/elements/1.1/#",
-    \t"dfc-b": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
-    \t"dfc-t": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
-    \t"dfc-m": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/measures.rdf#",
-    \t"dfc-pt": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/productTypes.rdf#",
-    \t"dfc-f": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/facets.rdf#",
-    \t"dfc-v": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#",
+    \t"dfc-b": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
+    \t"dfc-t": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
+    \t"dfc-m": "http://w3id.org/dfc/taxonomies/releases/latest/download/measures.rdf#",
+    \t"dfc-pt": "http://w3id.org/dfc/taxonomies/releases/latest/download/productTypes.rdf#",
+    \t"dfc-f": "http://w3id.org/dfc/taxonomies/releases/latest/download/facets.rdf#",
+    \t"dfc-v": "http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#",
     \t"ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#\"""")
 
     for line in ontology_text:
@@ -42,7 +42,7 @@ with open(args.output, "w") as export_context_f:
             line = re.sub("\">", "", line)
             line = re.sub("/>", "", line)
             line = re.sub("\"", "", line)
-            line = re.sub("https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#", "dfc-b:", line)
+            line = re.sub("https://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#", "dfc-b:", line)
             line = re.sub("\t", "", line)
             line = re.sub("    ", "", line)
             if not bool(re.search('http(\S+)', line)):
@@ -67,4 +67,3 @@ with open(args.output, "w") as export_context_f:
 		}""")
 
     export_context_f.write("\n\t}\n}")
-                                       

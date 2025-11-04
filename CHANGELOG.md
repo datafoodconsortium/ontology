@@ -47,12 +47,16 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 - TemplateSaleSession, subClassOf DFC_BusinessOntology_Relation
 - Variant, subClassOf What_Subject
 - VariantCaracteristic, subClassOf What_Subject
+- Route, subClassOf Where_Subject
+- Step, subClassOf Where_Subject
+- PickUpStep, subClassOf Step
+- DeliveryStep, subClassOf Step
 
 #### Property
 - hasTemplateSaleSession, domain : Organization, inverseOf : isTemplateSaleSessionOf
 - isTemplateSaleSessionOf, domain: TemplateSaleSession, inverseOf : hasTemplateSaleSession
 - occursAt, domain: SaleSession, range: cal:Vevent
-- hasGeoJsonFeature, domain: PhysicalPlace, range: geojson:Feature
+- hasGeoJsonFeature, domain: (PhysicalPlace or Route), range: geojson:Feature
 - hasMember, domain: CustomerCategory, inverseOf: isMemberOf
 - hasProductOption, domain: DefinedProduct, range: ProductOption
 - hasProductOptionValue, domain: ProductOption, range: OptionValue
@@ -62,11 +66,17 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 - isMemberOf, domain: Agent, inverseOf: hasMember
 - isCertifiedBy, domain: Organization, inverseOf: certifies
 - certifies, domain: Certification, inverseOf: isCertifiedBy
+- hasStep, domain: Route, inverseOf: isStepOf
+- isStepOf, domain: Step, inverseOf: hasStep
+- usedInRoute, domain: Step, range: Route
+- useVehicle, domain: Step, range: Vehicle
 
 #### DataProperty
 - operatorid, domain: Certification, range: xsd:string
 - certificationScore, domain: Certification, range: xsd:string,
 - certificationReference, domain: Certification, range: xsd:string
+- arrivalDate, domain: Step, range: xsd:dateTime
+- duration, domain: Step, range: xsd:duration
 
 ### Changed
 - Namespace: https://github.com/datafoodconsortium/... -> https://w3id.org/dfc/...
@@ -508,7 +518,8 @@ Context : Addition of telephone numbers (necessary for communication between par
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.16.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v2.0.0...master
+[2.0.0]: https://github.com/datafoodconsortium/ontology/compare/v1.16.0...v2.0.0    
 [1.16.0]: https://github.com/datafoodconsortium/ontology/compare/v1.15.0...1.16.0
 [1.15.0]: https://github.com/datafoodconsortium/ontology/compare/v1.14.0...1.15.0
 [1.14.0]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...1.14.0
