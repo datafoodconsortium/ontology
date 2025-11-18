@@ -41,12 +41,11 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 ### Added
 
 #### Class
-- Option, subClassOf What_Subject
-- OptionValue, subClassOf What_Subject
 - ProductOption, subClassOf Option
-- TemplateSaleSession, subClassOf DFC_BusinessOntology_Relation
+- ProductOptionValue, subClassOf What_Subject
 - Variant, subClassOf What_Subject
 - VariantCaracteristic, subClassOf What_Subject
+- TemplateSaleSession, subClassOf DFC_BusinessOntology_Relation
 - Route, subClassOf Where_Subject
 - Step, subClassOf Where_Subject
 - PickUpStep, subClassOf Step
@@ -58,10 +57,10 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 - occursAt, domain: SaleSession, range: cal:Vevent
 - hasGeoJsonFeature, domain: (PhysicalPlace or Route), range: geojson:Feature
 - hasMember, domain: CustomerCategory, inverseOf: isMemberOf
-- hasProductOption, domain: DefinedProduct, range: ProductOption
-- hasProductOptionValue, domain: ProductOption, range: OptionValue
+- hasProductOption, domain: VariantCaracteristic, range: ProductOption
+- hasProductOptionValue, domain: VariantCaracteristic, range: ProductOptionValue
 - hasReferenceProductOption, domain: DefinedProduct, range: ProductOption
-- hasReferenceProductOptionValue, domain: ProductOption, range: OptionValue
+- hasReferenceProductOptionValue, domain: ProductOption, range: ProductOptionValue
 - hasVariantCaracteristic, domain: Variant, range: VariantCaracteristic
 - isMemberOf, domain: Agent, inverseOf: hasMember
 - isCertifiedBy, domain: Organization, inverseOf: certifies

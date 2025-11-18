@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl"
+     xml:base="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl">
+     ontologyIRI="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl">
     <Prefix name="" IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
@@ -77,19 +77,19 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/facets.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/v2.0.0/facets.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/measures.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/v2.0.0/measures.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/productTypes.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/v2.0.0/productTypes.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
-        <Literal>http://w3id.org/dfc/taxonomies/releases/download/v2.0.0/vocabulary.rdf</Literal>
+        <Literal>http://w3id.org/dfc/taxonomies/v2.0.0/vocabulary.rdf</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
@@ -105,6 +105,9 @@
     </Annotation>
     <Declaration>
         <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_ProductGlossary.owl#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2002/12/cal/icaltzd#Value_RECUR"/>
@@ -129,6 +132,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2006/vcard/ns#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
         <Class IRI="https://purl.org/geojson/vocab#Feature"/>
@@ -248,12 +257,6 @@
         <Class IRI="#Offer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Option"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#OptionValue"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Order"/>
     </Declaration>
     <Declaration>
@@ -300,6 +303,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#ProductOption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductOptionValue"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ProductionFlow"/>
@@ -1970,6 +1976,9 @@
         <NamedIndividual IRI="#simonL"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
@@ -1989,6 +1998,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="terms:requires"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -2022,21 +2034,6 @@
     </Declaration>
     <Declaration>
         <Datatype IRI="https://schema.org/DayOfWeek"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#RepresentedThing"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Person"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty abbreviatedIRI="cc:license"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="http://www.w3.org/2006/vcard/ns#Agent"/>
@@ -2665,14 +2662,6 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Option"/>
-        <Class IRI="#What_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#OptionValue"/>
-        <Class IRI="#What_Subject"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Order"/>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
     </SubClassOf>
@@ -3054,6 +3043,10 @@
         <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#ProductOptionValue"/>
+        <Class IRI="#What_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ProductionFlow"/>
         <Class IRI="#DFC_BusinessOntology_Relation"/>
     </SubClassOf>
@@ -3353,6 +3346,20 @@
     <SubClassOf>
         <Class IRI="#VariantCaracteristic"/>
         <Class IRI="#What_Subject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariantCaracteristic"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProductOption"/>
+            <Class IRI="#ProductOption"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariantCaracteristic"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasProductOptionValue"/>
+            <Class IRI="#ProductOptionValue"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Vehicle"/>
@@ -7091,17 +7098,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasProductOptionValue"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="skos:Concept"/>
-            <ObjectHasValue>
-                <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
-            </ObjectHasValue>
-            <ObjectHasValue>
-                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
-            </ObjectHasValue>
-        </ObjectIntersectionOf>
+        <Class IRI="#ProductOptionValue"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasQuantity"/>
@@ -7113,17 +7110,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasReferenceProductOptionValue"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="skos:Concept"/>
-            <ObjectHasValue>
-                <ObjectProperty abbreviatedIRI="skos:broader"/>
-                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#ProductOptionValue"/>
-            </ObjectHasValue>
-            <ObjectHasValue>
-                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
-                <NamedIndividual IRI="http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#DFC_Vocabulary"/>
-            </ObjectHasValue>
-        </ObjectIntersectionOf>
+        <Class IRI="#ProductOptionValue"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasTransformationType"/>
@@ -9771,6 +9758,16 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductOption</IRI>
+        <Literal xml:lang="en">Product option</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ProductOptionValue</IRI>
+        <Literal xml:lang="en">Product option value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#ProductionFlow</IRI>
         <Literal xml:lang="fr">Fux de production</Literal>
     </AnnotationAssertion>
@@ -10038,6 +10035,11 @@ The Brand of a Product.
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#VATstatus</IRI>
         <Literal xml:lang="fr">soumis à TVA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VariantCaracteristic</IRI>
+        <Literal xml:lang="en">Variant caracteristic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
