@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2025-12-17
+
 Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
 
 ### Namespace 
