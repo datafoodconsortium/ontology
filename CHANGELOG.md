@@ -7,7 +7,93 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.16.0] - 2025-07-15
+Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
+
+### Namespace 
+The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
+
+
+### Import
+
+#### Class
+- http://www.w3.org/2002/12/cal/icaltz#Vevent
+- http://www.w3.org/2002/12/cal/icaltz#Value_RECUR
+- https://purl.org/geojson/vocab#Feature
+- https://purl.org/geojson/vocab#Properties
+- https://purl.org/geojson/vocab#Geometry
+- https://purl.org/geojson/vocab#Point
+- https://purl.org/geojson/vocab#Polygon
+
+#### ObjectProperty
+- http://www.w3.org/2002/12/cal/icaltz#rrule
+- https://purl.org/geojson/vocab#geometry
+- https://purl.org/geojson/vocab#properties
+
+#### DataProperty
+- http://www.w3.org/2002/12/cal/icaltz#byday
+- http://www.w3.org/2002/12/cal/icaltz#bymonth
+- http://www.w3.org/2002/12/cal/icaltz#dtend
+- http://www.w3.org/2002/12/cal/icaltz#dtstart
+- http://www.w3.org/2002/12/cal/icaltz#freq
+- http://www.w3.org/2002/12/cal/icaltz#interval
+- https://purl.org/geojson/vocab#coordinates
+
+### Added
+
+#### Class
+- ProductOption, subClassOf Option
+- ProductOptionValue, subClassOf What_Subject
+- Variant, subClassOf What_Subject
+- VariantCaracteristic, subClassOf What_Subject
+- TemplateSaleSession, subClassOf DFC_BusinessOntology_Relation
+- Route, subClassOf Where_Subject
+- Step, subClassOf Where_Subject
+- PickUpStep, subClassOf Step
+- DeliveryStep, subClassOf Step
+
+#### Property
+- hasTemplateSaleSession, domain : Organization, inverseOf : isTemplateSaleSessionOf
+- isTemplateSaleSessionOf, domain: TemplateSaleSession, inverseOf : hasTemplateSaleSession
+- occursAt, domain: SaleSession, range: cal:Vevent
+- hasGeoJsonFeature, domain: (PhysicalPlace or Route), range: geojson:Feature
+- hasMember, domain: CustomerCategory, inverseOf: isMemberOf
+- hasProductOption, domain: VariantCaracteristic, range: ProductOption
+- hasProductOptionValue, domain: VariantCaracteristic, range: ProductOptionValue
+- hasReferenceProductOption, domain: DefinedProduct, range: ProductOption
+- hasReferenceProductOptionValue, domain: ProductOption, range: ProductOptionValue
+- hasVariantCaracteristic, domain: Variant, range: VariantCaracteristic
+- isMemberOf, domain: Agent, inverseOf: hasMember
+- isCertifiedBy, domain: Organization, inverseOf: certifies
+- certifies, domain: Certification, inverseOf: isCertifiedBy
+- hasStep, domain: Route, inverseOf: isStepOf
+- isStepOf, domain: Step, inverseOf: hasStep
+- usedInRoute, domain: Step, range: Route
+- useVehicle, domain: Step, range: Vehicle
+
+#### DataProperty
+- operatorid, domain: Certification, range: xsd:string
+- certificationScore, domain: Certification, range: xsd:string,
+- certificationReference, domain: Certification, range: xsd:string
+- arrivalDate, domain: Step, range: xsd:dateTime
+- duration, domain: Step, range: xsd:duration
+
+### Changed
+- Namespace: https://github.com/datafoodconsortium/... -> https://w3id.org/dfc/...
+- Rename:: Enterprise -> Organization
+- EquivalentClass: Agent and http://www.w3.org/2006/vcard/ns#Agent
+- EquivalentClass: Person and http://www.w3.org/2006/vcard/ns#Individual
+- EquivalentClass: Organization and http://www.w3.org/2006/vcard/ns#Organization
+- Disjunction: Point and Polygon
+- Constraint 1:1 for Stock:availabilityDate
+- Constraint 1:1 for PaymentMethod:paymentMethodProvider
+- Constraint 1:1 for PaymentMethod:paymentMethodType
+- Domain : beginDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option) -> (AsPlannedTransformation | AsRealizedTransformation | Catalog | SaleSession | Shipment | Shipping option)
+- Domain : endDate, (AsPlannedLocalTransformation | AsRealizedTransformation | SaleSession | Shipment | Shipping option) -> (AsPlannedTransformation | AsRealizedTransformation | Catalog | SaleSession | Shipment | Shipping option)
+- Domain : isVariantOf, DefinedProduct -> Variant
+
+## [1.16.0] - 2025-07-10
+
+Description : Addition of reference list for country
 
 ### Added
 
@@ -31,6 +117,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Range : hasPaymentStatus (skos:Concept and (skos:broader value PaymenttState) and (skos:inScheme value DFC_Vocabulary)) -> (skos:Concept and (skos:broader value PaymenttStatus) and (skos:inScheme value DFC_Vocabulary))
 
 ## [1.15.0] - 2025-02-17
+
+Description : Addition of variant product description and logisitics concepts
 
 ### Import
 
@@ -76,6 +164,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [1.14.0] - 2024-11-13
+
+Description : Addition of a link to connect a command line and the physical product for logistics and traceability, and definitions of classes and properties to enrich the ontology description.
+
 ### Added
 
 #### Definitions
@@ -98,6 +189,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Domain : hasPrice, (Offer|PaymentMethod|Transaction) -> (Offer|PaymentMethod|Transaction|OrderLine)
 
 ## [1.13.0] - 2024-05-30
+
+Descriptin : Addition of classes to describe a product's weight, volume, and length more precisely.
+
 ### Added
 
 #### Class
@@ -129,22 +223,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - file context_1.8.2.json
 
 ## [1.12.0] - 2024-02-01
-### Added
 
-#### Property
-- sold, domain: Agent, inverseOf: soldBy
-- soldBy, domain: Order, inverseOf: sold
-- hasTransformationType, domain: AsPlannedTransformation, range: skos:Concept and (skos:broader value TransformationType) and (skos:inScheme value DFC_Vocabulary)
+Description : Add a link to describe the agent who made a sale.
 
-## [1.11.1] - 2024-01-29
-### Added
-- upgrade context.json to add tech ontology object property and owner (required to prototype)
-    - dfc-t:represent
-    - dfc-t:hasPivot
-    - dfc-t:hostedBy
-    - dfc:owner
-
-## [1.12.0] - 2024-02-01
 ### Added
 
 #### Property
@@ -162,6 +243,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.11.0] - 2024-01-11
 
+Description : Added region to describe geolocation.
+
 ### Added
 
 #### Property
@@ -175,6 +258,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 ## [1.10.0] - 2023-12-22
+
+Description : Addition of fulfillment, order, and payment statuses to characterize the order during its process from purchase to delivery.
 
 ### Added
 
@@ -239,6 +324,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.9.0] - 2023-10-05
 
+Description : Information on temperature (refrigerated, frozen, ambient), delivery options, payment methods, packaging, and delivery restrictions has been included in the common protocol.
+
 ### Added
 
 #### Class
@@ -282,6 +369,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 -   uses.
 
 ## [1.8.0] - 2023-10-03
+
+Context : Addition of telephone numbers (necessary for communication between parties at the time of delivery).
 
 ### Added
 
@@ -428,7 +517,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Brand as a Facet.
 
-[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v1.16.0...master
+[unreleased]: https://github.com/datafoodconsortium/ontology/compare/v2.0.0...master
+[2.0.0]: https://github.com/datafoodconsortium/ontology/compare/v1.16.0...v2.0.0    
 [1.16.0]: https://github.com/datafoodconsortium/ontology/compare/v1.15.0...1.16.0
 [1.15.0]: https://github.com/datafoodconsortium/ontology/compare/v1.14.0...1.15.0
 [1.14.0]: https://github.com/datafoodconsortium/ontology/compare/v1.13.0...1.14.0
