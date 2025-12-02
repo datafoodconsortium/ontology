@@ -8,6 +8,9 @@ parser.add_argument('input', type=str, help='Input file path (should end with .r
 # add argument that should end with .json
 parser.add_argument('output', type=str, help='Output file path (should end with .json)')
 
+parser.add_argument('onto_version', type=str, help='Ontology version number')
+parser.add_argument('taxo_version', type=str, help='Taxonomy version number')
+
 assert parser.parse_args().input.endswith('.rdf'), "Input file should end with .rdf"
 assert parser.parse_args().output.endswith('.json'), "Output file should end with .json"
 
@@ -20,21 +23,24 @@ with open(input_filepath, "r") as ontology_f:
 
 ontology_text = ontology_text.split("\n")
 
+onto_version_number = args.onto_version
+taxo_version_number = args.taxo_version
+
 with open(args.output, "w") as export_context_f:
 
-    export_context_f.write("""{
-    "@context": {
+    export_context_f.write("""{{
+    "@context": {{
     \t"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     \t"skos" : "http://www.w3.org/2004/02/skos/core#",
-    \t"dfc": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_FullModel.owl#",
+    \t"dfc": "http://w3id.org/dfc/ontology/DFC_FullModel.owl#",
     \t"dc": "http://purl.org/dc/elements/1.1/#",
-    \t"dfc-b": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
-    \t"dfc-t": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
-    \t"dfc-m": "http://w3id.org/dfc/taxonomies/releases/latest/download/measures.rdf#",
-    \t"dfc-pt": "http://w3id.org/dfc/taxonomies/releases/latest/download/productTypes.rdf#",
-    \t"dfc-f": "http://w3id.org/dfc/taxonomies/releases/latest/download/facets.rdf#",
-    \t"dfc-v": "http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#",
-    \t"ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#\"""")
+    \t"dfc-b": "http://w3id.org/dfc/ontology/v{onto_version_number}/src/DFC_BusinessOntology.owl#",
+    \t"dfc-t": "http://w3id.org/dfc/ontology/v{onto_version_number}/src/DFC_TechnicalOntology.owl#",
+    \t"dfc-m": "http://w3id.org/dfc/taxonomies/v{taxo_version_number}/measures.rdf#",
+    \t"dfc-pt": "http://w3id.org/dfc/taxonomies/v{taxo_version_number}/productTypes.rdf#",
+    \t"dfc-f": "http://w3id.org/dfc/taxonomies/v{taxo_version_number}/facets.rdf#",
+    \t"dfc-v": "http://w3id.org/dfc/taxonomies/v{taxo_version_number}/vocabulary.rdf#",
+    \t"ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#\"""".format(onto_version_number=onto_version_number, taxo_version_number=taxo_version_number))
 
     for line in ontology_text:
         if re.findall(r"<owl:ObjectProperty (\S+)>", line):
@@ -42,7 +48,7 @@ with open(args.output, "w") as export_context_f:
             line = re.sub("\">", "", line)
             line = re.sub("/>", "", line)
             line = re.sub("\"", "", line)
-            line = re.sub("https://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#", "dfc-b:", line)
+            line = re.sub("https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#", "dfc-b:", line)
             line = re.sub("\t", "", line)
             line = re.sub("    ", "", line)
             if not bool(re.search('http(\S+)', line)):

@@ -2,14 +2,14 @@
     "@context": {
     	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     	"skos" : "http://www.w3.org/2004/02/skos/core#",
-    	"dfc": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_FullModel.owl#",
+    	"dfc": "http://w3id.org/dfc/ontology/DFC_FullModel.owl#",
     	"dc": "http://purl.org/dc/elements/1.1/#",
-    	"dfc-b": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
-    	"dfc-t": "http://w3id.org/dfc/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
-    	"dfc-m": "http://w3id.org/dfc/taxonomies/releases/latest/download/measures.rdf#",
-    	"dfc-pt": "http://w3id.org/dfc/taxonomies/releases/latest/download/productTypes.rdf#",
-    	"dfc-f": "http://w3id.org/dfc/taxonomies/releases/latest/download/facets.rdf#",
-    	"dfc-v": "http://w3id.org/dfc/taxonomies/releases/latest/download/vocabulary.rdf#",
+    	"dfc-b": "http://w3id.org/dfc/ontology/v2.0.0/src/DFC_BusinessOntology.owl#",
+    	"dfc-t": "http://w3id.org/dfc/ontology/v2.0.0/src/DFC_TechnicalOntology.owl#",
+    	"dfc-m": "http://w3id.org/dfc/taxonomies/v2.0.0/measures.rdf#",
+    	"dfc-pt": "http://w3id.org/dfc/taxonomies/v2.0.0/productTypes.rdf#",
+    	"dfc-f": "http://w3id.org/dfc/taxonomies/v2.0.0/facets.rdf#",
+    	"dfc-v": "http://w3id.org/dfc/taxonomies/v2.0.0/vocabulary.rdf#",
     	"ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#",
 		"dfc-b:DFC_BusinessOntology_ObjectProperty": {
 			"@type": "@id"
@@ -216,9 +216,6 @@
 			"@type": "@id"
 		},
 		"dfc-b:hasPrice": {
-			"@type": "@id"
-		},
-		"dfc-b:hasProcess": {
 			"@type": "@id"
 		},
 		"dfc-b:hasProductOption": {
