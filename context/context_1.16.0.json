@@ -2,14 +2,14 @@
     "@context": {
     	"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     	"skos" : "http://www.w3.org/2004/02/skos/core#",
-    	"dfc": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_FullModel.owl#",
+    	"dfc": "https://github.com/datafoodconsortium/ontology/releases/1.16.0/download/DFC_FullModel.owl#",
     	"dc": "http://purl.org/dc/elements/1.1/#",
-    	"dfc-b": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#",
-    	"dfc-t": "https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl#",
-    	"dfc-m": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/measures.rdf#",
-    	"dfc-pt": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/productTypes.rdf#",
-    	"dfc-f": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/facets.rdf#",
-    	"dfc-v": "https://github.com/datafoodconsortium/taxonomies/releases/latest/download/vocabulary.rdf#",
+    	"dfc-b": "https://github.com/datafoodconsortium/ontology/releases/1.16.0/download/DFC_BusinessOntology.owl#",
+    	"dfc-t": "https://github.com/datafoodconsortium/ontology/releases/1.16.0/download/DFC_TechnicalOntology.owl#",
+    	"dfc-m": "https://github.com/datafoodconsortium/taxonomies/releases/1.3.0/download/measures.rdf#",
+    	"dfc-pt": "https://github.com/datafoodconsortium/taxonomies/releases/1.3.0/download/productTypes.rdf#",
+    	"dfc-f": "https://github.com/datafoodconsortium/taxonomies/releases/1.3.0/download/facets.rdf#",
+    	"dfc-v": "https://github.com/datafoodconsortium/taxonomies/releases/1.3.0/download/vocabulary.rdf#",
     	"ontosec": "http://www.semanticweb.org/ontologies/2008/11/OntologySecurity.owl#",
 		"dfc-b:DFC_BusinessOntology_ObjectProperty": {
 			"@type": "@id"
