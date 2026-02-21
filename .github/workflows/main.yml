@@ -14,5 +14,5 @@ jobs:
     - name: 'Auto-assign issue'
       uses: pozil/auto-assign-issue
       with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.RAGGEDSTAFF_PAT }}
           teams: ontology-maintainers
