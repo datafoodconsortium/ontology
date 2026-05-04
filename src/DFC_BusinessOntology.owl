@@ -917,6 +917,9 @@
         <ObjectProperty IRI="#uses"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/occursAt"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="http://www.w3.org/2002/12/cal/icaltzd#byday"/>
     </Declaration>
     <Declaration>
@@ -5786,6 +5789,10 @@
         <ObjectProperty IRI="#uses"/>
         <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/occursAt"/>
+        <ObjectProperty IRI="#DFC_BusinessOntology_ObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#addressOf"/>
         <ObjectProperty IRI="#hasAddress"/>
@@ -6899,6 +6906,10 @@
             <Class IRI="#PickupOption"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/occursAt"/>
+        <Class IRI="#TemplateSaleSession"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2002/12/cal/icaltzd#rrule"/>
         <Class IRI="http://www.w3.org/2002/12/cal/icaltzd#Value_RECUR"/>
@@ -7116,6 +7127,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#startsAt"/>
         <Class IRI="#PhysicalPlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/occursAt"/>
+        <Class IRI="http://www.w3.org/2002/12/cal/icaltzd#Vevent"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#arrivalDate"/>
