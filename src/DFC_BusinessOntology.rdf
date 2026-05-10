@@ -261,7 +261,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#hasAddress"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Address"/>
-        <rdfs:comment xml:lang="en">The Agent (Person or Enterprise) or PhysicalPlace that the Address relates to</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Agent (Person or Organization) or PhysicalPlace that the Address relates to</rdfs:comment>
         <rdfs:label xml:lang="en">address of</rdfs:label>
         <rdfs:label xml:lang="fr">adresse de</rdfs:label>
     </owl:ObjectProperty>
@@ -274,7 +274,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#affiliates"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Agent"/>
-        <rdfs:comment xml:lang="en">URI of a Person associated with the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">URI of a Person associated with the Organization</rdfs:comment>
         <rdfs:label xml:lang="en">affiliated to</rdfs:label>
         <rdfs:label xml:lang="fr">affilié à</rdfs:label>
     </owl:ObjectProperty>
@@ -286,7 +286,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#affiliates">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">Enterprises that the Person is affliated to</rdfs:comment>
+        <rdfs:comment xml:lang="en">Organizations that the Person is affliated to</rdfs:comment>
         <rdfs:label xml:lang="en">affiliates</rdfs:label>
         <rdfs:label xml:lang="fr">affilie</rdfs:label>
     </owl:ObjectProperty>
@@ -323,8 +323,8 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#holds"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Order"/>
-        <rdfs:comment xml:lang="en">A Customer (as an Agent) can belong to a particular CustomerCategory as defined by the owning Enterprise</rdfs:comment>
-        <rdfs:comment xml:lang="en">A Customer Category that the Person has been assigned by the defining Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">A Customer (as an Agent) can belong to a particular CustomerCategory as defined by the owning Organization</rdfs:comment>
+        <rdfs:comment xml:lang="en">A Customer Category that the Person has been assigned by the defining Organization</rdfs:comment>
         <rdfs:comment xml:lang="en">The SaleSession the Order was placed in</rdfs:comment>
         <rdfs:label xml:lang="fr">appartient à</rdfs:label>
         <rdfs:label xml:lang="en">belongs to</rdfs:label>
@@ -590,8 +590,8 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#coordinates"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Coordination"/>
-        <rdfs:comment xml:lang="en">Confirms the Enterprise Coordinates certain SaleSessions, and defines margin %age that the Enterprise takes for managing the SaleSession</rdfs:comment>
-        <rdfs:comment xml:lang="en">The Enterprise managing a Sales Session</rdfs:comment>
+        <rdfs:comment xml:lang="en">Confirms the Organization Coordinates certain SaleSessions, and defines margin %age that the Enterprise takes for managing the SaleSession</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Organization managing a Sales Session</rdfs:comment>
         <rdfs:label xml:lang="en">coordinated by</rdfs:label>
         <rdfs:label xml:lang="fr">coordonné par</rdfs:label>
     </owl:ObjectProperty>
@@ -615,7 +615,7 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#defines"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#CustomerCategory"/>
-        <rdfs:comment xml:lang="en">Determines which Enterprise has defined the CustomerCategory</rdfs:comment>
+        <rdfs:comment xml:lang="en">Determines which Organization has defined the CustomerCategory</rdfs:comment>
         <rdfs:label xml:lang="en">defined by</rdfs:label>
         <rdfs:label xml:lang="fr">defini par</rdfs:label>
     </owl:ObjectProperty>
@@ -627,7 +627,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#defines">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">Defines any/all categories of Customer utilised by the Enterprise for segmentation (primarily for pricing, potentially also for marketing)</rdfs:comment>
+        <rdfs:comment xml:lang="en">Defines any/all categories of Customer utilised by the Organization for segmentation (primarily for pricing, potentially also for marketing)</rdfs:comment>
         <rdfs:label xml:lang="en">defines</rdfs:label>
         <rdfs:label xml:lang="fr">définit</rdfs:label>
     </owl:ObjectProperty>
@@ -796,7 +796,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#hasBrand">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DefinedProduct"/>
-        <rdfs:comment xml:lang="en">The brand a Product is sold under (Enterprises can market under different Brands, some Brands can be collaborative across Enterprises)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The brand a Product is sold under (Organizations can market under different Brands, some Brands can be collaborative across Enterprises)</rdfs:comment>
         <rdfs:label xml:lang="fr">a pour marque</rdfs:label>
         <rdfs:label xml:lang="en">has brand</rdfs:label>
     </owl:ObjectProperty>
@@ -1064,7 +1064,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
             </owl:Class>
         </rdfs:domain>
         <rdfs:comment xml:lang="en">The Person, if any, who is a principal contact for this physical location</rdfs:comment>
-        <rdfs:comment xml:lang="en">URI of Person who is the Main contact for the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">URI of Person who is the Main contact for the Organization</rdfs:comment>
         <rdfs:label xml:lang="fr">a pour contact principal</rdfs:label>
         <rdfs:label xml:lang="en">has for main contact</rdfs:label>
     </owl:ObjectProperty>
@@ -1944,7 +1944,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#mainContactOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Person"/>
-        <rdfs:comment xml:lang="en">An Enterprise that the Person is the Main Contact for</rdfs:comment>
+        <rdfs:comment xml:lang="en">An Organization that the Person is the Main Contact for</rdfs:comment>
         <rdfs:label xml:lang="fr">contact principal pour</rdfs:label>
         <rdfs:label xml:lang="en">main contact of</rdfs:label>
     </owl:ObjectProperty>
@@ -1957,7 +1957,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#maintains"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Catalog"/>
-        <rdfs:comment xml:lang="en">The Enterprise that maintains the Catalog (may differ from the owner of the Products)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Organization that maintains the Catalog (may differ from the owner of the Products)</rdfs:comment>
         <rdfs:label xml:lang="en">maintained by</rdfs:label>
         <rdfs:label xml:lang="fr">maintenu par</rdfs:label>
     </owl:ObjectProperty>
@@ -1982,7 +1982,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#manages"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#CatalogItem"/>
-        <rdfs:comment xml:lang="en">The Enterprise that manages the CatalogItem (may differ from the owner of the Product)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Organization that manages the CatalogItem (may differ from the owner of the Product)</rdfs:comment>
         <rdfs:label xml:lang="fr">géré par</rdfs:label>
         <rdfs:label xml:lang="en">managed by</rdfs:label>
     </owl:ObjectProperty>
@@ -1994,7 +1994,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#manages">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">A reference of a defined product in a catalog managed by an enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">A reference of a defined product in a catalog managed by an organization</rdfs:comment>
         <rdfs:label xml:lang="fr">gère</rdfs:label>
         <rdfs:label xml:lang="en">manages</rdfs:label>
     </owl:ObjectProperty>
@@ -2042,7 +2042,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#objectOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#SaleSession"/>
-        <rdfs:comment xml:lang="en">The Coordination (that defines which Enterprise coordinates the Sales Sesison)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Coordination (that defines which Organization coordinates the Sales Sesison)</rdfs:comment>
         <rdfs:label xml:lang="en">object of</rdfs:label>
         <rdfs:label xml:lang="fr">objet de</rdfs:label>
     </owl:ObjectProperty>
@@ -2220,7 +2220,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#phoneNumberOf">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#PhoneNumber"/>
-        <rdfs:comment xml:lang="en">The Enterprise or Person (Agent) or Physical Place that the phone numbers is associated with.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Organization or Person (Agent) or Physical Place that the phone numbers is associated with.</rdfs:comment>
         <rdfs:label xml:lang="fr">numéro de téléphone de</rdfs:label>
         <rdfs:label xml:lang="en">phone number of</rdfs:label>
     </owl:ObjectProperty>
@@ -2325,7 +2325,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#proposes">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">All TechnicalProducts proposed by the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">All TechnicalProducts proposed by the Organization</rdfs:comment>
         <rdfs:label xml:lang="fr">propose</rdfs:label>
         <rdfs:label xml:lang="en">proposes</rdfs:label>
     </owl:ObjectProperty>
@@ -2516,7 +2516,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#soldBy">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Order"/>
-        <rdfs:comment xml:lang="en">The entity responsible for the sale (could be the Enterprise or a Salesperson within that Enterprise, or a third party)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The entity responsible for the sale (could be the Organization or a Salesperson within that Enterprise, or a third party)</rdfs:comment>
         <rdfs:label xml:lang="en">sold by</rdfs:label>
         <rdfs:label xml:lang="fr">vendu par</rdfs:label>
     </owl:ObjectProperty>
@@ -2566,7 +2566,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <owl:inverseOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#supplies"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#SuppliedProduct"/>
-        <rdfs:comment xml:lang="en">The Enterprise that supplies the Product</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Organization that supplies the Product</rdfs:comment>
         <rdfs:label xml:lang="fr">fourni par</rdfs:label>
         <rdfs:label xml:lang="en">supplied by</rdfs:label>
     </owl:ObjectProperty>
@@ -2578,7 +2578,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#supplies">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">All Products supplied by the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">All Products supplied by the Organization</rdfs:comment>
         <rdfs:label xml:lang="fr">fournit</rdfs:label>
         <rdfs:label xml:lang="en">supplies</rdfs:label>
     </owl:ObjectProperty>
@@ -2647,7 +2647,7 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <owl:ObjectProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#transforms">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_ObjectProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
-        <rdfs:comment xml:lang="en">Any PlannedLocalTransformations owned by the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any PlannedLocalTransformations owned by the Organization</rdfs:comment>
         <rdfs:label xml:lang="fr">transforme</rdfs:label>
         <rdfs:label xml:lang="en">transforms</rdfs:label>
     </owl:ObjectProperty>
@@ -2889,7 +2889,7 @@ The Address the delivery will be/was made to
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Any Tax Registration Number that is applicable to the Enterprise, in the jurisdiction the Enterprise is operating in.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Any Tax Registration Number that is applicable to the Organization, in the jurisdiction the Enterprise is operating in.</rdfs:comment>
         <rdfs:label xml:lang="en">VAT number</rdfs:label>
         <rdfs:label xml:lang="fr">n° de TVA intracommunautaire</rdfs:label>
     </owl:DatatypeProperty>
@@ -2915,7 +2915,7 @@ The Address the delivery will be/was made to
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">Indicates whether the Enterprise charges VAT or not</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates whether the Organization charges VAT or not</rdfs:comment>
         <rdfs:label xml:lang="en">charges VAT</rdfs:label>
         <rdfs:label xml:lang="fr">soumis à TVA</rdfs:label>
     </owl:DatatypeProperty>
@@ -3230,13 +3230,13 @@ Any claims of a Product.
     
 
 
-    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#enterpriseID -->
+    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationID -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#enterpriseID">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationID">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label xml:lang="en">enterprise unique ID number</rdfs:label>
+        <rdfs:label xml:lang="en">organization unique ID number</rdfs:label>
         <rdfs:label xml:lang="fr">n° SIRET</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -3419,7 +3419,7 @@ Any claims of a Product.
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Coordination"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">The percentage margin the coordinating Enterprise is charging as comission for managing the Sales Session (from 0-100%)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The percentage margin the coordinating Organization is charging as comission for managing the Sales Session (from 0-100%)</rdfs:comment>
         <rdfs:label xml:lang="fr">marge</rdfs:label>
         <rdfs:label xml:lang="en">markup</rdfs:label>
     </owl:DatatypeProperty>
@@ -3452,7 +3452,7 @@ Any claims of a Product.
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#DFC_BusinessOntology_Subject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
-        <rdfs:comment xml:lang="en">Name of the Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">Name of the Organization</rdfs:comment>
         <rdfs:label xml:lang="en">name</rdfs:label>
         <rdfs:label xml:lang="fr">nom</rdfs:label>
     </owl:DatatypeProperty>
@@ -4478,9 +4478,9 @@ The Brand of a Product.
     
 
 
-    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Enterprise -->
+    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization -->
 
-    <owl:Class rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Enterprise">
+    <owl:Class rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization">
         <owl:equivalentClass rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Agent"/>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -4663,7 +4663,7 @@ The Brand of a Product.
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A proposal by an Enterprise to sell a product, to a CustomerCategory, at a specific Price with a potential Discount</rdfs:comment>
+        <rdfs:comment xml:lang="en">A proposal by an Organization to sell a product, to a CustomerCategory, at a specific Price with a potential Discount</rdfs:comment>
         <rdfs:label xml:lang="en">Offer</rdfs:label>
         <rdfs:label xml:lang="fr">Offre</rdfs:label>
     </owl:Class>
@@ -5268,7 +5268,7 @@ The Brand of a Product.
                 <owl:allValuesFrom rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Coordination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Time bounded grouping of Offers for an Enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">Time bounded grouping of Offers for an Organization</rdfs:comment>
         <rdfs:label xml:lang="en">Sales session</rdfs:label>
         <rdfs:label xml:lang="fr">Session de vente</rdfs:label>
     </owl:Class>
@@ -5378,7 +5378,7 @@ The Brand of a Product.
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A defined product made by an enterprise, which could be used to fulfils an offer made by an enterprise</rdfs:comment>
+        <rdfs:comment xml:lang="en">A defined product made by an organization, which could be used to fulfils an offer made by an enterprise</rdfs:comment>
         <rdfs:label xml:lang="fr">Produit fourni</rdfs:label>
         <rdfs:label xml:lang="en">Supplied product</rdfs:label>
     </owl:Class>
@@ -7992,8 +7992,8 @@ The Brand of a Product.
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="http://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#EnterpriseID">
-        <rdfs:comment xml:lang="en">Unique Id of the Enterprise</rdfs:comment>
+    <rdf:Description rdf:about="http://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#OrganizationID">
+        <rdfs:comment xml:lang="en">Unique Id of the Organization</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#OrderedBy">
         <rdfs:comment xml:lang="en">The Agent (customer) placing the Order</rdfs:comment>
