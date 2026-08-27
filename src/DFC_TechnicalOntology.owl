@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"
+     xml:base="https://w3id.org/dfc/ontology/latest/DFC_TechnicalOntology.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl">
-    <Prefix name="" IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_TechnicalOntology.owl"/>
+     ontologyIRI="https://w3id.org/dfc/ontology/latest/DFC_TechnicalOntology.owl">
+    <Prefix name="" IRI="https://w3id.org/dfc/ontology/latest/DFC_TechnicalOntology.owl"/>
     <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -16,6 +16,7 @@
     <Prefix name="xsp" IRI="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"/>
     <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
     <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
     <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
@@ -23,6 +24,10 @@
     <Annotation>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
         <IRI>https://www.gnu.org/licenses/agpl-3.0.en.html</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+        <Literal xml:lang="en">Garethe Hughes</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -38,7 +43,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2019-10-21</Literal>
+        <Literal>2025-09-25</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -61,7 +66,13 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.0</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#DFC_DitributedRepresentation"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="foaf:Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DFC_DistributedRepresentation"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Platform"/>
@@ -71,12 +82,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#RepresentedThing"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="foaf:Person"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="https://github.com/datafoodconsortium/ontology/releases/latest/download/DFC_BusinessOntology.owl#DFC_TechnicalOntology_ObjectProperty"/>
@@ -91,13 +96,28 @@
         <ObjectProperty IRI="#represent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="/proxyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#assignedScope"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#requiredScope"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#dataFoodConsortium"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://static.datafoodconsortium.org/data/publication.rdf#simonL"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#scope"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="cc:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -120,9 +140,18 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
     </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </Declaration>
     <SubClassOf>
         <Class IRI="#Platform"/>
-        <Class IRI="#DFC_DitributedRepresentation"/>
+        <Class IRI="#DFC_DistributedRepresentation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Platform"/>
@@ -133,7 +162,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepresentationPivot"/>
-        <Class IRI="#DFC_DitributedRepresentation"/>
+        <Class IRI="#DFC_DistributedRepresentation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepresentationPivot"/>
@@ -151,7 +180,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepresentedThing"/>
-        <Class IRI="#DFC_DitributedRepresentation"/>
+        <Class IRI="#DFC_DistributedRepresentation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RepresentedThing"/>
@@ -206,14 +235,50 @@
         <ObjectProperty IRI="#represent"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/proxyOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#assignedScope"/>
+        <Class abbreviatedIRI="foaf:Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#assignedScope"/>
+        <Class IRI="#Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#requiredScope"/>
+        <Class IRI="#Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#assignedScope"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#scope"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#requiredScope"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="skos:Concept"/>
+            <ObjectHasValue>
+                <ObjectProperty abbreviatedIRI="skos:inScheme"/>
+                <NamedIndividual IRI="https://w3id.org/dfc/taxonomoies/latest/scopes#scope"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_DitributedRepresentation</IRI>
+        <IRI>#DFC_DistributedRepresentation</IRI>
         <Literal xml:lang="fr">Concepts de réconciliation de représentation distribuée</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DFC_DitributedRepresentation</IRI>
+        <IRI>#DFC_DistributedRepresentation</IRI>
         <Literal xml:lang="en">ditributed représentation reconcialition concepts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -265,5 +330,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
 
