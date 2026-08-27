@@ -7,9 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Description : Added missing ObjectProperty occursAt with (correct) Domain: TemplateSaleSession & range: Vevent. Corrected missed occurences of Enterprise. Corrected various typos in Certification class/properties.
+
+### Changed
+
+- Domain: occursAt, (TemplateSaleSession)
+
+#### Class
+- #Certfication -> #Certification
+
+#### Property
+- #certiferReference -> #certifierReference
+
+
+## [2.0.0] - 2026-02-10
+
 Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
 
-### Namespace 
+### Namespace
 The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 
 
@@ -122,7 +137,7 @@ Description : Addition of variant product description and logisitics concepts
 
 ### Import
 
-#### Class 
+#### Class
 - https://schema.org/OpeningHoursSpecification
 
 #### DataProperty
