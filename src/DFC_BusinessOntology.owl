@@ -65,7 +65,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-11-04</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2026-08-27</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:publisher"/>
@@ -101,7 +101,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>2.0.0</Literal>
+        <Literal>2.0.1</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://w3id.org/dfc/ontology/src/DFC_TechnicalOntology.owl#RepresentedThing"/>
@@ -200,7 +200,7 @@
         <Class IRI="#CatalogItem"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Certfication"/>
+        <Class IRI="#Certification"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ConsumptionFlow"/>
@@ -986,7 +986,7 @@
         <DataProperty IRI="#brand"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#certiferReference"/>
+        <DataProperty IRI="#certifierReference"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#certificationScore"/>
@@ -1032,9 +1032,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#endDate"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#organizationID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#expiryDate"/>
@@ -1092,6 +1089,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#orderNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#organizationID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#paymentMethodProvider"/>
@@ -2363,7 +2363,7 @@
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Certfication"/>
+        <Class IRI="#Certification"/>
         <Class IRI="#What_Subject"/>
     </SubClassOf>
     <SubClassOf>
@@ -6142,7 +6142,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#certifies"/>
-        <Class IRI="#Certfication"/>
+        <Class IRI="#Certification"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#characteristicOf"/>
@@ -7205,9 +7205,6 @@
         <DataProperty IRI="#email"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#organizationID"/>
-    </FunctionalDataProperty>
-    <FunctionalDataProperty>
         <DataProperty IRI="#expiryDate"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
@@ -7239,6 +7236,9 @@
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#orderNumber"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#organizationID"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty IRI="#paymentMethodProvider"/>
@@ -7353,12 +7353,12 @@
         <Class IRI="#DefinedProduct"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#certiferReference"/>
-        <Class IRI="#Certfication"/>
+        <DataProperty IRI="#certifierReference"/>
+        <Class IRI="#Certification"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#certificationScore"/>
-        <Class IRI="#Certfication"/>
+        <Class IRI="#Certification"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#city"/>
@@ -7435,10 +7435,6 @@
         </ObjectUnionOf>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#organizationID"/>
-        <Class IRI="#Organization"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#expiryDate"/>
         <Class IRI="#ProductBatch"/>
     </DataPropertyDomain>
@@ -7503,11 +7499,15 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#operatorId"/>
-        <Class IRI="#Certfication"/>
+        <Class IRI="#Certification"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#orderNumber"/>
         <Class IRI="#Order"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#organizationID"/>
+        <Class IRI="#Organization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#paymentMethodProvider"/>
@@ -7693,7 +7693,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#certiferReference"/>
+        <DataProperty IRI="#certifierReference"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7755,10 +7755,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#endDate"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#organizationID"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#expiryDate"/>
@@ -7826,6 +7822,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#orderNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#organizationID"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -7903,13 +7903,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dfc-b:OrganizationID</AbbreviatedIRI>
-        <Literal xml:lang="en">Unique Id of the Organization</Literal>
+        <AbbreviatedIRI>dfc-b:OrderedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">The Agent (customer) placing the Order</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dfc-b:OrderedBy</AbbreviatedIRI>
-        <Literal xml:lang="en">The Agent (customer) placing the Order</Literal>
+        <AbbreviatedIRI>dfc-b:OrganizationID</AbbreviatedIRI>
+        <Literal xml:lang="en">Unique Id of the Organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9234,8 +9234,8 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Brand</IRI>
-        <Literal xml:lang="en"> **Deprecated** 
-The Brand of a Product. 
+        <Literal xml:lang="en"> **Deprecated**
+The Brand of a Product.
 **Deprecated**</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -9280,12 +9280,12 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Certfication</IRI>
+        <IRI>#Certification</IRI>
         <Literal xml:lang="en">Certification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Certfication</IRI>
+        <IRI>#Certification</IRI>
         <Literal xml:lang="fr">Certification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -9871,7 +9871,7 @@ The Brand of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#SuppliedProduct</IRI>
-        <Literal xml:lang="en">A defined product made by an organization, which could be used to fulfils an offer made by an enterprise</Literal>
+        <Literal xml:lang="en">A defined product made by an organization, which could be used to fulfils an offer made by an organization</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9966,7 +9966,7 @@ The Brand of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#VATnumber</IRI>
-        <Literal xml:lang="en">Any Tax Registration Number that is applicable to the Organization, in the jurisdiction the Enterprise is operating in.</Literal>
+        <Literal xml:lang="en">Any Tax Registration Number that is applicable to the Organization, in the jurisdiction the Organization is operating in.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10300,12 +10300,12 @@ The Brand of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#certiferReference</IRI>
+        <IRI>#certifierReference</IRI>
         <Literal xml:lang="en">certification reference</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#certiferReference</IRI>
+        <IRI>#certifierReference</IRI>
         <Literal xml:lang="fr">reference de certification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10366,8 +10366,8 @@ The Brand of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#claim</IRI>
-        <Literal xml:lang="en"> **Deprecated** 
-Any claims of a Product. 
+        <Literal xml:lang="en"> **Deprecated**
+Any claims of a Product.
 **Deprecated**</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -10533,7 +10533,7 @@ Any claims of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#coordinatedBy</IRI>
-        <Literal xml:lang="en">Confirms the Organization Coordinates certain SaleSessions, and defines margin %age that the Enterprise takes for managing the SaleSession</Literal>
+        <Literal xml:lang="en">Confirms the Organization Coordinates certain SaleSessions, and defines margin %age that the Organization takes for managing the SaleSession</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -10752,16 +10752,6 @@ Any claims of a Product.
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#organizationID</IRI>
-        <Literal xml:lang="en">Organization unique ID number</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#organizationID</IRI>
-        <Literal xml:lang="fr">n° SIRET</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#expiryDate</IRI>
         <Literal xml:lang="fr">date limite de consommation (DLC)</Literal>
     </AnnotationAssertion>
@@ -10953,7 +10943,7 @@ Any claims of a Product.
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasBrand</IRI>
-        <Literal xml:lang="en">The brand a Product is sold under (Organizations can market under different Brands, some Brands can be collaborative across Enterprises)</Literal>
+        <Literal xml:lang="en">The brand a Product is sold under (Organizations can market under different Brands, some Brands can be collaborative across Organizations)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -10985,8 +10975,8 @@ Any claims of a Product.
         <IRI>#hasCharacteristic</IRI>
         <Literal xml:lang="en">SuperProperty of:
 AllergenCharacteristic
-LabellingCharacteristic 
-NutrientCharacteristic 
+LabellingCharacteristic
+NutrientCharacteristic
 PhysicalCharacteristic </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -11107,7 +11097,7 @@ PhysicalCharacteristic </Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#hasIngredient</IRI>
-        <Literal xml:lang="en">Links DefinedProducts (via composes relationship) to allow recipe construction 
+        <Literal xml:lang="en">Links DefinedProducts (via composes relationship) to allow recipe construction
 
 N.B. This is similar (simplified) functionality to the AsPlannedTransformation loop. These two options are not compatible.</Literal>
     </AnnotationAssertion>
@@ -12297,6 +12287,16 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
         <Literal xml:lang="en">orders</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#organizationID</IRI>
+        <Literal xml:lang="en">Organization unique ID number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#organizationID</IRI>
+        <Literal xml:lang="fr">n° SIRET</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#outputOf</IRI>
         <Literal xml:lang="en">The transformation the produced product is outputed from</Literal>
@@ -12444,8 +12444,8 @@ N.B. This is similar (simplified) functionality to the AsPlannedTransformation l
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#physicalCharacteristics</IRI>
-        <Literal xml:lang="en"> **Deprecated** 
-Any Physical Characteristics of a Product. 
+        <Literal xml:lang="en"> **Deprecated**
+Any Physical Characteristics of a Product.
 **Deprecated**</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -12853,7 +12853,7 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#soldBy</IRI>
-        <Literal xml:lang="en">The entity responsible for the sale (could be the Organization or a Salesperson within that Enterprise, or a third party)</Literal>
+        <Literal xml:lang="en">The entity responsible for the sale (could be the Organization or a Salesperson within that Organization, or a third party)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -13143,7 +13143,7 @@ N.B. There is an expectation that either the ProductionFlow or the ConsumptionFl
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#uses</IRI>
-        <Literal xml:lang="en">*** DEPRECATED *** 
+        <Literal xml:lang="en">*** DEPRECATED ***
 
 Use `refersTo` instead.
 
@@ -13190,4 +13190,3 @@ The Address the delivery will be/was made to
 
 
 <!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
-
