@@ -15,7 +15,6 @@ Description : Added missing ObjectProperty occursAt with (correct) Domain: Templ
 
 #### Class
 - #Certfication -> #Certification
--
 
 #### Property
 - #certiferReference -> #certifierReference
