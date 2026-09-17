@@ -3480,9 +3480,9 @@ Any claims of a Product.
 
 
 
-    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationID -->
+    <!-- https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationId -->
 
-    <owl:DatatypeProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationID">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#organizationId">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="https://w3id.org/dfc/ontology/src/DFC_BusinessOntology.owl#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
