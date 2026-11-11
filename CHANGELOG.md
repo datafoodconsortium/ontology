@@ -7,17 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Description : Added missing ObjectProperty occursAt with (correct) Domain: TemplateSaleSession & range: Vevent. Corrected missed occurences of Enterprise. Corrected various typos in Certification class/properties.
+
+### Changed
+
+- Domain: occursAt, (TemplateSaleSession)
+
+#### Class
+- #Certfication -> #Certification
+
+#### Property
+- #certiferReference -> #certifierReference
+
+
+## [2.0.0] - 2026-02-10
+
 Description : Namespace migration, import time and geo concepts, integration of temporal and geographical concepts, and addition of product variant concepts.
 
-### Namespace 
+### Namespace
 The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 
 
 ### Import
 
 #### Class
-- http://www.w3.org/2002/12/cal/icaltz#Vevent
-- http://www.w3.org/2002/12/cal/icaltz#Value_RECUR
+- http://www.w3.org/2002/12/cal/icaltzd#Vevent
+- http://www.w3.org/2002/12/cal/icaltzd#Value_RECUR
 - https://purl.org/geojson/vocab#Feature
 - https://purl.org/geojson/vocab#Properties
 - https://purl.org/geojson/vocab#Geometry
@@ -25,17 +40,17 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 - https://purl.org/geojson/vocab#Polygon
 
 #### ObjectProperty
-- http://www.w3.org/2002/12/cal/icaltz#rrule
+- http://www.w3.org/2002/12/cal/icaltzd#rrule
 - https://purl.org/geojson/vocab#geometry
 - https://purl.org/geojson/vocab#properties
 
 #### DataProperty
-- http://www.w3.org/2002/12/cal/icaltz#byday
-- http://www.w3.org/2002/12/cal/icaltz#bymonth
-- http://www.w3.org/2002/12/cal/icaltz#dtend
-- http://www.w3.org/2002/12/cal/icaltz#dtstart
-- http://www.w3.org/2002/12/cal/icaltz#freq
-- http://www.w3.org/2002/12/cal/icaltz#interval
+- http://www.w3.org/2002/12/cal/icaltzd#byday
+- http://www.w3.org/2002/12/cal/icaltzd#bymonth
+- http://www.w3.org/2002/12/cal/icaltzd#dtend
+- http://www.w3.org/2002/12/cal/icaltzd#dtstart
+- http://www.w3.org/2002/12/cal/icaltzd#freq
+- http://www.w3.org/2002/12/cal/icaltzd#interval
 - https://purl.org/geojson/vocab#coordinates
 
 ### Added
@@ -122,7 +137,7 @@ Description : Addition of variant product description and logisitics concepts
 
 ### Import
 
-#### Class 
+#### Class
 - https://schema.org/OpeningHoursSpecification
 
 #### DataProperty
