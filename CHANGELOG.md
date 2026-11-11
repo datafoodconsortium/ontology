@@ -31,8 +31,8 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 ### Import
 
 #### Class
-- http://www.w3.org/2002/12/cal/icaltz#Vevent
-- http://www.w3.org/2002/12/cal/icaltz#Value_RECUR
+- http://www.w3.org/2002/12/cal/icaltzd#Vevent
+- http://www.w3.org/2002/12/cal/icaltzd#Value_RECUR
 - https://purl.org/geojson/vocab#Feature
 - https://purl.org/geojson/vocab#Properties
 - https://purl.org/geojson/vocab#Geometry
@@ -40,17 +40,17 @@ The namespace is updated to be related to w3id : https://w3id.org/dfc/ontology/
 - https://purl.org/geojson/vocab#Polygon
 
 #### ObjectProperty
-- http://www.w3.org/2002/12/cal/icaltz#rrule
+- http://www.w3.org/2002/12/cal/icaltzd#rrule
 - https://purl.org/geojson/vocab#geometry
 - https://purl.org/geojson/vocab#properties
 
 #### DataProperty
-- http://www.w3.org/2002/12/cal/icaltz#byday
-- http://www.w3.org/2002/12/cal/icaltz#bymonth
-- http://www.w3.org/2002/12/cal/icaltz#dtend
-- http://www.w3.org/2002/12/cal/icaltz#dtstart
-- http://www.w3.org/2002/12/cal/icaltz#freq
-- http://www.w3.org/2002/12/cal/icaltz#interval
+- http://www.w3.org/2002/12/cal/icaltzd#byday
+- http://www.w3.org/2002/12/cal/icaltzd#bymonth
+- http://www.w3.org/2002/12/cal/icaltzd#dtend
+- http://www.w3.org/2002/12/cal/icaltzd#dtstart
+- http://www.w3.org/2002/12/cal/icaltzd#freq
+- http://www.w3.org/2002/12/cal/icaltzd#interval
 - https://purl.org/geojson/vocab#coordinates
 
 ### Added
